@@ -1,0 +1,89 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/maxence-charriere/go-app/v9/pkg/app"
+	"github.com/maxence-charriere/go-app/v9/pkg/ui"
+)
+
+// SearchComponent is a component to display search results.
+type SearchComponent struct {
+	app.Compo
+
+	Query   string        // Search query
+	Results searchResults // Search results
+
+}
+
+// Render method for the SearchComponent.
+func (s *SearchComponent) Render() app.UI {
+	return app.Div().Body(
+		app.Label().For("searchInput").Text("Search:"),
+		app.Input().
+			Type("text").
+			ID("searchInput").
+			Value(s.Query).
+			OnChange(s.OnInputChange),
+		app.Button().
+			Text("Search").
+			OnClick(s.OnSearchClick),
+
+		app.Div().
+			Body(
+				ui.Loader().
+					Class("heading").
+					Class("fill").
+					Loading(s.Results.Status == loading).
+					Err(s.Results.Err).
+					Label(fmt.Sprintf("Searching ...")),
+				app.If(s.Results.Status == loaded,
+					app.Text(s.Results.Results),
+				).Else(),
+				app.Text("No Results loaded."),
+			),
+	)
+}
+
+// OnInputChange handles input value changes.
+func (s *SearchComponent) OnInputChange(ctx app.Context, e app.Event) {
+	s.Query = ctx.JSSrc().Get("value").String()
+}
+
+// OnSearchClick handles search button click.
+func (s *SearchComponent) OnSearchClick(ctx app.Context, e app.Event) {
+	// Update the component to reflect the loading state
+
+	handleSearch(ctx, app.Action{Name: "vector_search", Tags: app.Tags{"query": s.Query}})
+	s.load(ctx, s.Query)
+
+}
+
+func (d *SearchComponent) OnPreRender(ctx app.Context) {
+
+}
+
+func (d *SearchComponent) OnMount(ctx app.Context) {
+
+}
+
+func (d *SearchComponent) OnUpdate(ctx app.Context) {
+
+}
+
+func (s *SearchComponent) load(ctx app.Context, query string) {
+
+	app.Log("context query value %s", query)
+	ctx.ObserveState(searchState(query)).
+		While(func() bool {
+			return true
+		}).
+		Value(&s.Results)
+
+}
+
+// UpdateSearchResults updates the search results in the component.
+func (s *SearchComponent) UpdateSearchResults(results searchResults) {
+	//s.Results = results
+	//s.Update()
+}

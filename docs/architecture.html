@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Khalid Ansari">
+<meta name="description" content="Documentation about how go-app parts are working together to form a Progressive Web App (PWA).">
+<meta name="keywords" content="medspa, spa, wellness, beauty, skincare, aesthetics, relaxation, rejuvenation, cosmetic, treatment, massage, facial, body contouring, anti-aging, pampering, health, self-care, medical spa, body sculpting, skin rejuvenation">
+<meta name="theme-color" content="#2e343a">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover">
+<meta property="og:url" content="http://127.0.0.1:65181/architecture">
+<meta property="og:title" content="Understanding go-app Architecture">
+<meta content="Documentation about how go-app parts are working together to form a Progressive Web App (PWA)." property="og:description">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://go-app.dev/web/icon.svg">
+<title>Understanding go-app Architecture</title>
+<link type="text/css" rel="preload" href="/app.css" as="style">
+<link type="text/css" rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" as="style">
+<link type="text/css" rel="preload" href="/web/css/prism.css" as="style">
+<link href="/web/css/docs.css" as="style" type="text/css" rel="preload">
+<link rel="icon" href="https://raw.githubusercontent.com/maxence-charriere/go-app/master/docs/web/icon.svg">
+<link rel="apple-touch-icon" href="/web/icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" type="text/css" href="/app.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+<link rel="stylesheet" type="text/css" href="/web/css/prism.css">
+<link rel="stylesheet" type="text/css" href="/web/css/docs.css">
+<script defer src="/wasm_exec.js"></script>
+<script defer src="/app.js"></script>
+<script src="/web/js/prism.js" defer></script>
+<script crossorigin="anonymous" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1013306768105236"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SW4FQEM9VM"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-SW4FQEM9VM', {'send_page_view': false});
+	</script>
+</head>
+<body>
+<div><div>
+<aside class="heading fill" style="display:none;"><div data-goapp="Stack" style="display:flex;justify-content:center;align-items:center;width:100%;height:100%;">
+<div style="width:56px;height:56px;min-width:56px;min-height:56px;border:2px solid currentColor;border-top:2px solid white;border-radius:50%;animation:goapp-spin-frames 500ms linear infinite;"></div>
+<div style="margin-left:18px;"><div>Loading architecture.md...</div></div>
+</div></aside>
+<div class="fill"><div class="markdown"><h2 id="overview">Overview</h2>
+
+<p>Like traditional websites, <a href="https://developers.google.com/web/progressive-web-apps">progressive web apps</a> are provided by a server and are displayed in a web browser. This document provide a description of the different elements which interact each other to operate a PWA.</p>
+
+<p><img src="/web/images/architecture.svg" alt="architecture diagram" /></p>
+
+<h2 id="web-browser">Web browser</h2>
+
+<p>A web browser is where the PWA is displayed. Here is a list of well-known web browser:</p>
+
+<ul>
+<li><a href="https://www.google.com/chrome">Chrome</a></li>
+<li><a href="https://www.apple.com/safari">Safari</a></li>
+<li><a href="https://www.mozilla.org/firefox">Firefox</a></li>
+<li><a href="https://www.electronjs.org/">Electron (Chromium embedded)</a></li>
+</ul>
+
+<p>When a user wants to use an app, the web browser requests an <a href="#html-pages">HTML pages</a> and their associated resources to the server.</p>
+
+<p>Once the required resources are gathered, it displays the app to the user.</p>
+
+<h2 id="server">Server</h2>
+
+<p>The server is what serves the files to make a go-app progressive web app work into the web browser:</p>
+
+<ul>
+<li><a href="#html-pages">HTML pages</a></li>
+<li><a href="#package-resources">Package resources</a></li>
+<li><a href="#app-wasm">app.wasm</a></li>
+<li><a href="#static-resources">Static resources</a></li>
+</ul>
+
+<p>It is implemented with the standard <a href="https://golang.org/pkg/net/http">Go HTTP package</a> and the <a href="/reference#Handler">Handler</a>.</p>
+
+<h2 id="html-pages">HTML pages</h2>
+
+<p>HTML pages are pages that indicate to <a href="#web-browser">web browsers</a> what other resources are required to run the progressive web app:</p>
+
+<ul>
+<li><a href="#package-resources">Package resources</a></li>
+<li><a href="#app-wasm">app.wasm</a></li>
+<li><a href="#static-resources">Static resources</a></li>
+</ul>
+
+<p>They also contain the markup that provides a pre-rendered version of the requested page and that will be replaced by the app dynamic content once <a href="#app-wasm">app.wasm</a> is loaded.</p>
+
+<h2 id="package-resources">Package resources</h2>
+
+<p>Package resources are the mandatory resources to run a go-app progressive web app into web browsers. Those resources are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Package resource</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>wasm_exec.js</strong></td>
+<td>Script to interop Go and Javascrip APIs.</td>
+</tr>
+
+<tr>
+<td><strong>app.js</strong></td>
+<td>Script that loads app.wasm and go-app service workers.</td>
+</tr>
+
+<tr>
+<td><strong>app-worker.js</strong></td>
+<td>Script that implements go-app required service workers.</td>
+</tr>
+
+<tr>
+<td><strong>manifest.webmanifest</strong></td>
+<td>Manifest that describes the progressive web app.</td>
+</tr>
+
+<tr>
+<td><strong>app.css</strong></td>
+<td>go-app widgets styles.</td>
+</tr>
+</tbody>
+</table>
+<p>They are served by the <a href="#server">server</a>&rsquo;s go-app <a href="/reference#Handler">Handler</a> and are accessible from the root of the app domain. Eg: <code>/app.js</code>.</p>
+
+<h2 id="app-wasm">app.wasm</h2>
+
+<p>app.wasm is the binary that contains the UI logic of the progressive web app. It is the app code, built to run on <code>wasm</code> architecture.</p>
+
+<pre><code class="language-bash">GOARCH=wasm GOOS=js go build -o web/app.wasm
+</code></pre>
+
+<p>It is a <a href="#static-resources">static resource</a> that is <strong>always located at <code>/web/app.wasm</code></strong>, and can be served by the <a href="#server">server</a> or is available from a remote bucket such as <a href="https://aws.amazon.com/s3">S3</a> or <a href="https://cloud.google.com/storage">Google Cloud Storage</a>.</p>
+
+<p>Once loaded in a <a href="#web-browser">web browser</a>, it displays the app content and handles user interactions.</p>
+
+<h2 id="static-resources">Static resources</h2>
+
+<p>Static resource are files such as:</p>
+
+<ul>
+<li>CSS files</li>
+<li>JS files</li>
+<li>Images</li>
+<li>Videos</li>
+<li>Sounds</li>
+<li>Documents</li>
+</ul>
+
+<p>They are always located within a directory named <code>web</code>, and can be served by the <a href="#server">server</a> or are available from a remote bucket such as <a href="https://aws.amazon.com/s3">S3</a> or <a href="https://cloud.google.com/storage">Google Cloud Storage</a>.</p>
+
+<p>Static resources are located in a single directory referred to as the <code>web</code> directory:</p>
+
+<pre><code class="language-sh">/web/RESOURCE_NAME
+</code></pre>
+
+<p>By default served by the server, the <code>web</code> directory can also be located on a remote bucket such as <a href="https://aws.amazon.com/s3">S3</a> or <a href="https://cloud.google.com/storage">Google Cloud Storage</a>.</p>
+
+<h2 id="next">Next</h2>
+
+<ul>
+<li><a href="/reference">Reference</a></li>
+</ul>
+</div></div>
+</div></div>
+<aside class="goapp-app-info" id="app-wasm-loader">
+<img class="goapp-logo goapp-spin" src="/web/icon.png" id="app-wasm-loader-icon">
+<p id="app-wasm-loader-label" class="goapp-label">NooN MedSpa 0%</p>
+</aside>
+</body>
+</html>
