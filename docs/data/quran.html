@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .verse {
+            margin-bottom: 20px;
+        }
+        .arabic {
+            font-size: 1.5em;
+            direction: rtl;
+            text-align: right;
+        }
+        .translation {
+            margin-top: 10px;
+            color: #555;
+        }
+        .selector {
+            margin-bottom: 20px;
+        }
+        .selector label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quran Viewer</h1>
+    <div class="selector">
+        <label for="sura-select">Select Sura:</label>
+        <select id="sura-select"></select>
+
+        <label for="verse-select">Select Verse:</label>
+        <select id="verse-select"></select>
+
+        <button onclick="goToSelectedVerse()">Go</button>
+    </div>
+
+    <div id="quran-container"></div>
+
+    <script>
+let suraData, combinedData, wordsData;
+
+// Fetch all JSON data (sura.json, combined_quran.json, quran_words.json)
+Promise.all([
+    fetch('sura.json').then(response => response.json()),
+    fetch('combined_quran.json').then(response => response.json()),
+    fetch('quran_words.json').then(response => response.json())
+]).then(data => {
+    suraData = data[0];
+    combinedData = data[1];
+    wordsData = data[2];
+    console.log('Sura Data:', suraData);  // Log the data to make sure it loads
+    console.log('Combined Data:', combinedData);
+    console.log('Words Data:', wordsData);
+    populateSuraSelector();
+    displaySura(1); // Start with the first sura by default
+}).catch(error => {
+    console.error('Error loading JSON files:', error);
+});
+
+
+        // Populate Sura Selector
+        function populateSuraSelector() {
+            const suraSelect = document.getElementById('sura-select');
+            suraSelect.innerHTML = '';
+            for (let suraNumber in suraData) {
+                const option = document.createElement('option');
+                option.value = suraNumber;
+                option.textContent = suraNumber + '. ' + suraData[suraNumber].name;
+                suraSelect.appendChild(option);
+            }
+            suraSelect.addEventListener('change', populateVerseSelector);
+            populateVerseSelector(); // Populate verses for the first sura initially
+        }
+
+       // Populate Verse Selector based on selected sura with local verse numbering
+function populateVerseSelector() {
+    const suraNumber = document.getElementById('sura-select').value;
+    const verseSelect = document.getElementById('verse-select');
+    const sura = suraData[suraNumber];
+    verseSelect.innerHTML = '';
+
+    // Loop through the verses of the sura and show local verse numbers
+    for (let verseNumber = sura.start; verseNumber <= sura.end; verseNumber++) {
+        const option = document.createElement('option');
+        const localVerseNumber = verseNumber - sura.start + 1; // Calculate local verse number
+        option.value = verseNumber;
+        option.textContent = localVerseNumber; // Display the local verse number in the selector
+        verseSelect.appendChild(option);
+    }
+}
+
+// Display the selected sura and its verses with local verse numbering
+function displaySura(suraNumber, targetVerse = null) {
+    const sura = suraData[suraNumber];
+    const container = document.getElementById('quran-container');
+    container.innerHTML = `<h2>${suraNumber}. ${sura.name}</h2>`;
+
+    // Loop through the verses in the sura
+    for (let verseNumber = sura.start; verseNumber <= sura.end; verseNumber++) {
+        const verseData = combinedData[verseNumber];
+        const constructedArabic = buildVerseFromWords(verseData.start_word, verseData.end_word);
+
+        // Calculate the local verse number
+        const localVerseNumber = verseNumber - sura.start + 1;
+
+        // Validation check: Compare constructed verse with Arabic text
+        if (constructedArabic !== verseData.arabic) {
+            console.error(`Mismatch in verse ${verseNumber}: ${constructedArabic} !== ${verseData.arabic}`);
+        }
+
+        // Display the verse
+        const verseDiv = document.createElement('div');
+        verseDiv.className = 'verse';
+        verseDiv.innerHTML = `
+            <h3>Verse ${localVerseNumber}</h3>  <!-- Display local verse number -->
+            <p class="arabic">${verseData.arabic}</p>
+            <p class="translation">${verseData.en}</p>
+        `;
+        container.appendChild(verseDiv);
+
+        // Scroll to the selected verse, if specified
+        if (targetVerse && parseInt(targetVerse) === verseNumber) {
+            verseDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+}
+
+
+        // Navigate to the selected sura and verse
+        function goToSelectedVerse() {
+            const suraNumber = document.getElementById('sura-select').value;
+            const verseNumber = document.getElementById('verse-select').value;
+            displaySura(suraNumber, verseNumber);
+        }
+
+
+        // Build a verse using the word indices from quran_words.json
+        function buildVerseFromWords(startIndex, endIndex) {
+            const words = [];
+            for (let i = startIndex; i <= endIndex; i++) {
+                words.push(wordsData[i]);
+            }
+            return words.join(' ');
+        }
+    </script>
+
+</body>
+</html>

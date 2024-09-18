@@ -1,8 +1,10 @@
 ---
-3 Story Townhouse
+fatiha
 ---
-![Greenvile Concept design](/web/images/models/el-front.png)
-![Greenvile Concept design](/web/images/models/back-el.png)
-![Greenvile Concept design](/web/images/models/left-el.png)
-
-![Greenvile Concept design](/web/images/models/right-el.png)
+بسم الله الرحمن الرحيم
+الحمد لله رب العالمين
+الرحمن الرحيم
+ملك يوم الدين
+إياك نعبد وإياك نستعين
+اهدنا الصراط المستقيم
+صراط الذين أنعمت عليهم غير المغضوب عليهم ولا الضالين

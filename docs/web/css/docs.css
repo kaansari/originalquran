@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: 'Qahiri';
+  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
+}
 /* -----------------------------------------------------------------------------
 // Global
 ------------------------------------------------------------------------------*/
@@ -566,10 +569,25 @@ strong {
 /* -----------------------------------------------------------------------------
 // markdown
 ------------------------------------------------------------------------------*/
+
+.markdown * {
+  font-family: 'Qahiri', sans-serif;
+  font-size: 14px;
+  text-align: right;
+}
 .markdown img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 12px;
+  float: left; 
+  margin-left: 20px;
+  
+}
+
+.markdown audio{
+
+  float: right; width: 100px; margin-left: 20px;
+
 }
 
 .markdown .token.keyword {
