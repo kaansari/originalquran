@@ -116,11 +116,18 @@ def main(arabic_file, english_file, output_file):
 
     print(f"Merged data has been saved to {output_file}")
 
-os.makedirs("../build/json", exist_ok=True)
 
-arabic_file = '../data/quran-morphology.txt'
-english_file = '../data/quranic-corpus-morphology-0.4.txt'
-output_file = '../build/json/quran_morphology_output.json'
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the paths dynamically based on the script location
+build_dir = os.path.join(script_dir, '../build/json')
+arabic_file = os.path.join(script_dir, '../data/quran-morphology.txt')
+english_file = os.path.join(script_dir, '../data/quranic-corpus-morphology-0.4.txt')
+output_file = os.path.join(script_dir, '../build/json/quran_morphology_output.json')
+
+# Create the build/json directory if it doesn't exist
+os.makedirs(build_dir, exist_ok=True)
 
 # Run the script
 main(arabic_file, english_file, output_file)

@@ -2,9 +2,20 @@ import json
 import os
 
 
-# Define file paths
-arabic_file = '../data/uthmani.md'  # Update with actual file path
-english_file = '../data/en.md'      # Update with actual file path
+
+
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct the paths dynamically based on the script location
+build_dir = os.path.join(script_dir, '../build/json')
+arabic_file = os.path.join(script_dir, '../data/uthmani.md')
+english_file = os.path.join(script_dir, '../data/en.md')
+combined_output_file_path = os.path.join(script_dir, '../build/json/combined_quran.json')
+words_output_file_path = os.path.join(script_dir, '../build/json/quran_words.json')
+# Create the build/json directory if it doesn't exist
+os.makedirs(build_dir, exist_ok=True)
+
 
 # Function to read the file and store verse numbers and text
 def parse_file(filepath):
@@ -75,15 +86,14 @@ combined_json = json.dumps(combined_data, ensure_ascii=False, indent=2)
 words_json = json.dumps(words_data, ensure_ascii=False, indent=2)
 
 
-os.makedirs("../build/json", exist_ok=True)
 
-# Saving combined JSON (Arabic and English) to a file
-combined_output_file_path = '../build/json/combined_quran.json'
+
+
 with open(combined_output_file_path, 'w', encoding='utf-8') as output_file:
     output_file.write(combined_json)
 
 # Saving the words data to a separate file
-words_output_file_path = '../build/json/quran_words.json'
+
 with open(words_output_file_path, 'w', encoding='utf-8') as words_file:
     words_file.write(words_json)
 
