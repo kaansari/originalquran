@@ -29,11 +29,11 @@ jobs:
       # Step 4: Run Python scripts to generate JSON files
       - name: Run Python Scripts
         run: |
-          python scripts/qurancorpus_combine.py 
+          python scripts/combine-corpus.py 
           python scripts/ayahandword_parser.py
 
       # Step 5: Build and publish to GitHub Pages
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pagess
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
