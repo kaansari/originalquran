@@ -12,10 +12,10 @@ def parse_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as file:
         for line in file:
             line = line.strip()
-            if line.startswith('-'):  # Detecting verse number
+            if line.startswith('#'):  # Detecting verse number
                 if key and verse_text:  # Store the previous verse if exists
                     data[key] = ' '.join(verse_text).strip()
-                key = line.strip('-').strip()  # Extract the verse number
+                key = line.strip('#').strip()  # Extract the verse number
                 verse_text = []  # Reset for the next verse
             elif line:  # If it's a non-empty line, add it to the current verse
                 verse_text.append(line)

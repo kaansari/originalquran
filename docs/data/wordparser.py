@@ -33,4 +33,4 @@ def process_file(input_file, output_file):
     print(f"Words have been parsed and saved to {output_file}")
 
 # Example usage
-process_file('uthmani.md', 'word.json')
+process_file('uthmani-tanzil.md', 'word-harakat.json')

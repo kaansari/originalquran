@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quran Viewer</title>
     <style>
+            @font-face {
+      font-family: 'Qahiri';
+      src: url('fonts/Qahiri-Regular.ttf') format('truetype');
+    }
+
+
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -16,6 +22,10 @@
             margin-bottom: 20px;
         }
         .arabic {
+            font-family: 'Qahiri', sans-serif;
+      font-size: 24px;
+      word-spacing: 10px;
+      font-style: italic;
             font-size: 1.5em;
             direction: rtl;
             text-align: right;
@@ -114,18 +124,15 @@ function displaySura(suraNumber, targetVerse = null) {
         // Calculate the local verse number
         const localVerseNumber = verseNumber - sura.start + 1;
 
-        // Validation check: Compare constructed verse with Arabic text
-        if (constructedArabic !== verseData.arabic) {
-            console.error(`Mismatch in verse ${verseNumber}: ${constructedArabic} !== ${verseData.arabic}`);
-        }
+
 
         // Display the verse
         const verseDiv = document.createElement('div');
         verseDiv.className = 'verse';
         verseDiv.innerHTML = `
             <h3>Verse ${localVerseNumber}</h3>  <!-- Display local verse number -->
-            <p class="arabic">${verseData.arabic}</p>
-            <p class="translation">${verseData.en}</p>
+           
+             <p class="arabic">${ constructedArabic}</p>
         `;
         container.appendChild(verseDiv);
 
@@ -149,7 +156,7 @@ function displaySura(suraNumber, targetVerse = null) {
         function buildVerseFromWords(startIndex, endIndex) {
             const words = [];
             for (let i = startIndex; i <= endIndex; i++) {
-                words.push(wordsData[i]);
+                words.push('<span id="'+i+'">'+wordsData[i] + "</span>");
             }
             return words.join(' ');
         }
