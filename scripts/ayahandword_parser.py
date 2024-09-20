@@ -3,17 +3,34 @@ import os
 
 
 
+# Get the mode (default to 'development' if not set)
+mode = os.getenv('MODE', 'deployment')
+
+# Set the directories based on the mode
+if mode == 'development':
+    json_output_dir = os.path.join(os.path.dirname(__file__), '../src/json')
+elif mode == 'deployment':
+    json_output_dir = os.path.join(os.path.dirname(__file__), '../build/json')
+else:
+    raise ValueError(f"Unknown MODE: {mode}")
+
+# Ensure the output directory exists
+os.makedirs(json_output_dir, exist_ok=True)
+
 # Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Construct the paths dynamically based on the script location
-build_dir = os.path.join(script_dir, '../build/json')
+
+# Define the file paths for input 
 arabic_file = os.path.join(script_dir, '../data/uthmani.md')
 english_file = os.path.join(script_dir, '../data/en.md')
-combined_output_file_path = os.path.join(script_dir, '../build/json/combined_quran.json')
-words_output_file_path = os.path.join(script_dir, '../build/json/quran_words.json')
-# Create the build/json directory if it doesn't exist
-os.makedirs(build_dir, exist_ok=True)
+
+#Define thte file paths for the output files
+combined_output_file_path = os.path.join(json_output_dir, 'combined_quran.json')
+words_output_file_path = os.path.join(json_output_dir, 'quran_words.json')
+
+
+
 
 
 # Function to read the file and store verse numbers and text

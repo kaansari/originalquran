@@ -117,17 +117,29 @@ def main(arabic_file, english_file, output_file):
     print(f"Merged data has been saved to {output_file}")
 
 
+
+# Get the mode (default to 'development' if not set)
+mode = os.getenv('MODE', 'deployment')
+
+# Set the directories based on the mode
+if mode == 'development':
+    json_output_dir = os.path.join(os.path.dirname(__file__), '../src/json')
+elif mode == 'deployment':
+    json_output_dir = os.path.join(os.path.dirname(__file__), '../build/json')
+else:
+    raise ValueError(f"Unknown MODE: {mode}")
+
+# Ensure the output directory exists
+os.makedirs(json_output_dir, exist_ok=True)
+
 # Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Construct the paths dynamically based on the script location
-build_dir = os.path.join(script_dir, '../build/json')
+# Define the file paths for input and output
 arabic_file = os.path.join(script_dir, '../data/quran-morphology.txt')
 english_file = os.path.join(script_dir, '../data/quranic-corpus-morphology-0.4.txt')
-output_file = os.path.join(script_dir, '../build/json/quran_morphology_output.json')
+output_file = os.path.join(json_output_dir, 'quran_morphology_output.json')
 
-# Create the build/json directory if it doesn't exist
-os.makedirs(build_dir, exist_ok=True)
 
 # Run the script
 main(arabic_file, english_file, output_file)
