@@ -18,7 +18,7 @@ else:
 os.makedirs(json_output_dir, exist_ok=True)
 
 # Get the directory of the current script
-script_dir = os.path.dirname(os.path.abspath(__file__))
+script_dir = os.path.dirname(os.path.dirname(__file__))
 
 
 # Define the file paths for input 
