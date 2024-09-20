@@ -4,7 +4,7 @@ import os
 
 
 # Get the mode (default to 'development' if not set)
-mode = os.getenv('MODE', 'deployment')
+mode = os.getenv('MODE', 'development')
 
 # Set the directories based on the mode
 if mode == 'development':
@@ -18,7 +18,7 @@ else:
 os.makedirs(json_output_dir, exist_ok=True)
 
 # Get the directory of the current script
-script_dir = os.path.dirname(os.path.dirname(__file__))
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 # Define the file paths for input 

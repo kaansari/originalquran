@@ -133,8 +133,9 @@ else:
 os.makedirs(json_output_dir, exist_ok=True)
 
 # Get the directory of the current script
-script_dir = os.path.dirname(os.path.dirname(__file__))
-
+script_dir = os.path.dirname(os.path.abspath(__file__))
+print(f"Script dir {script_dir}")
+print(f"json output dir {json_output_dir}")
 # Define the file paths for input and output
 arabic_file = os.path.join(script_dir, '../data/quran-morphology.txt')
 english_file = os.path.join(script_dir, '../data/quranic-corpus-morphology-0.4.txt')
