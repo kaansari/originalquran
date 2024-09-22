@@ -189,7 +189,7 @@
         function displaySura(suraNumber, targetVerse = null) {
             const sura = suraData[suraNumber];
             const container = document.getElementById('quran-container');
-            container.innerHTML = `<h3>${suraNumber}. ${sura.name}</h3>`;
+            container.innerHTML = `<h4>${suraNumber}. ${sura.name}</h4>`;
         
             // Loop through the verses in the sura
             for (let verseNumber = sura.start; verseNumber <= sura.end; verseNumber++) {
@@ -204,7 +204,7 @@
                 verseDiv.className = 'verse';
                 verseDiv.innerHTML = `
                     <h5>${localVerseNumber}</h5>  <!-- Display local verse number -->
-                    <p class="arabic">${constructedArabic}</p>
+                    <span id="${localVerseNumber}" class="arabic">${constructedArabic}</span>
                 `;
                 container.appendChild(verseDiv);
         
