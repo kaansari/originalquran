@@ -112,7 +112,7 @@ print(f"json output dir {json_output_dir}")
 
 # Define the file paths for input and output
 arabic_file = os.path.join(script_dir, '../data/quran-morphology.txt')
-output_file = os.path.join(json_output_dir, 'quran_morphology_output.json')
+output_file = os.path.join(json_output_dir, 'quran_morphology.json')
 
 # Run the script
 main(arabic_file, output_file)
