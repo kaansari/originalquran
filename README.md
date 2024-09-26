@@ -1,4 +1,4 @@
-#The Original Quran
+# The Original Quran
 This project demonstrates how the Quran has been preserved since the time the Prophet Muhammad, the Messenger of Allah, delivered it to humanity.
 
 I have created a simple, single-page HTML version of the Quran for my personal use, and you are welcome to contribute, fork, or use it as you wish.
