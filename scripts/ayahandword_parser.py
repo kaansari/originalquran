@@ -22,7 +22,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 # Define the file paths for input 
-arabic_file = os.path.join(script_dir, '../data/uthmani.md')
+arabic_file = os.path.join(script_dir, '../data/arabic.md')
 english_file = os.path.join(script_dir, '../data/en.md')
 
 #Define thte file paths for the output files
