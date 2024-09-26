@@ -1,5 +1,5 @@
 
-
+```
 Directory Structure
 
 originalquran/
@@ -32,3 +32,4 @@ originalquran/
 ├── .gitignore              # Ignore build folder and other unnecessary files
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project information
+```
