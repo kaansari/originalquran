@@ -6,11 +6,12 @@ I have created a simple, single-page HTML version of the Quran for my personal u
 You can see the demo at https://kaansari.github.io/originalquran/.
 
 ## Features of this Quran:
-The Quran displays the text in the original Kufic script, which was used when the Quran was first written.
-It shows the morphology of each word.
-Each verse has a play button for recitation.
-Each verse is linked to the oldest Quran manuscripts available in the world.
-Purpose
+- The Quran displays the text in the original Kufic script, which was used when the Quran was first written.
+- It shows the morphology of each word.
+- Each verse has a play button for recitation.
+- Each verse is linked to the oldest Quran manuscripts available in the world.
+
+## Purpose
 The purpose of this project is to show that the Quran we have today is exactly the same as it was during the time of the Prophet Muhammad. It allows users to easily compare the modern text with ancient manuscripts.
 
 ## Text of the Quran
@@ -18,6 +19,8 @@ The text, behind the font, is exactly the same as the Warsh/Uthmani and Pakistan
 
 ### Contribution
 I need help in comparing the old manuscripts to this version of the Quran. In 99% of the cases, the script matches the Saudi/Egyptian scripts, but there are a few verses where I found minor differences. For example, "Malaika" is spelled with an Alif, and "Raai3a" is spelled with an Alif, where in the Saudi/Egyptian Quran the Alif is identified as a small Alif.
+
+Also, the project is extremely simple single page html file.  Keep it simple so other people can easily integrate it in their works.
 
 ```
 Directory Structure
