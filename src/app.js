@@ -97,9 +97,7 @@ function displaySura(suraNumber, targetVerse = null) {
     verseDiv.innerHTML = `
       <div class="verse-container" id="verse-${combinedId}">
         <div class="verse-header">
-          <a href="#" onclick="showVerseImages(${verseNumber})" class="icon-link">
-                <i class="fas fa-eye fa-sm"></i>
-          </a>
+  
 
           <h5 class="verse-number">
   <a href="#" onclick="navigateToExternalVerse(${localVerseNumber},${suraNumber})" target="_blank" class="verse-link">${localVerseNumber}</a>
