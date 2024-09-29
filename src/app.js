@@ -97,12 +97,9 @@ function displaySura(suraNumber, targetVerse = null) {
     verseDiv.innerHTML = `
       <div class="verse-container" id="verse-${combinedId}">
         <div class="verse-header">
-  
-
           <h5 class="verse-number">
   <a href="#" onclick="navigateToExternalVerse(${localVerseNumber},${suraNumber})" target="_blank" class="verse-link">${localVerseNumber}</a>
 </h5>
-
           <button class="play-button" data-audio-src="${audioSrc}"></button> <!-- Simple play button -->
         </div>
         <div id="${combinedId}" class="arabic verse-text">${constructedArabic}</div> <!-- Arabic verse right-aligned -->
