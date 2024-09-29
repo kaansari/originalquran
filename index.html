@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="selector">
+        <div class="selector-left">
+            <!-- Quran icon -->
+            <img src="icon.png" alt="Quran Icon" />
+
+            <!-- Sura and Verse Selectors -->
+            <label for="sura-select">Sura:</label>
+            <select id="sura-select"></select>
+
+            <label for="verse-select">Verse:</label>
+            <select id="verse-select"></select>
+        </div>
+
+        <div class="selector-right">
+            <!-- Book icon -->
+            <a href="https://link-to-book" target="_blank">
+                <i class="fas fa-book"></i>
+            </a>
+            <!-- GitHub icon -->
+            <a href="https://github.com/kaansari/originalquran" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <div id="image-popup" class="popup-container" style="display:none;">
+              <div class="popup-content">
+                <!-- Close button -->
+                <button class="popup-close" onclick="closeImagePopup()">x</button>
+            
+                <!-- Verse Text Element -->
+                <div id="verse-text" class="arabic" style="text-align: center;"></div> <!-- This will display the Arabic verse -->
+            
+                <!-- Image Grid -->
+                <div id="image-grid" class="grid-container"></div>
+              </div>
+            </div>
+            
+        
+        </div>  
+ 
+
+
+      
+    </div>
+
+    <!-- Popup container -->
+
+<div id="quran-container">
+
+
+
+</div>
+
+<script src="app.js?v=12"></script>
+</body>
+
+</html>
