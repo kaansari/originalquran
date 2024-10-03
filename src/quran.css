@@ -1,0 +1,352 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=block");
+@font-face {
+    font-family: "Raqq";
+    src: url('fonts/Raqq.ttf');
+    font-weight: 400
+}
+
+
+@font-feature-values "Raqq" {
+    @stylistic {
+        alt-one: 1;
+        alt-two: 2
+    }
+
+    @styleset {
+        dotless: 1
+    }
+}
+
+
+
+:root {
+    --kufi-family: "Raqq", serif;
+    --kufi-color: #DFDFDF;
+}
+
+
+body {
+  
+    font-size: 14pt;
+    font-weight: 400;
+    font-variant-numeric: proportional-nums;
+    background-color: black;
+    color: lightgray;
+    max-width: 1240px;
+    padding: 0 15px;
+    margin: 50px auto;
+    justify-content: space-between;
+    grid-template-areas: "header title title" "header section footer";
+    gap: 15px
+}
+
+
+
+
+
+.custom-text {
+    font-family:var(--kufi-family);
+    fill: var(--kufi-color);
+    font-size: 24px;
+    font-feature-settings: 'ss01' 1; /* Enable Stylistic Set 1 (turn off dots, for example) */
+    word-spacing: 10px;
+    font-size: 1.5em;
+    direction: rtl;
+    text-align: right;
+}
+
+
+
+/*  Verse related css */
+.quran-container {
+    display: flex;
+    align-items: right;
+    margin-top: 150px;
+}
+
+/*  Verse related css */
+.verse-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-bottom: 20px;
+}
+
+.verse-header {
+    display: flex;
+    align-items: right;
+}
+
+.verse-number {
+    margin-right: 5px;
+    /* Space between verse number and play button */
+}
+
+.verse-text {
+    text-align: right;
+    flex-grow: 1;
+    /* Makes the Arabic verse take up the remaining space */
+}
+
+.verse {
+    margin-bottom: 0px;
+}
+
+.translation {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Style to freeze the selector div at the top with icons */
+.selector {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Spread out the elements */
+}
+
+/* Styling for the left side (Quran icon and selectors) */
+.selector-left {
+    display: flex;
+    align-items: center;
+}
+
+.selector-left img {
+    height: 30px;
+    margin-right: 10px;
+    /* Add some space between the icon and the selectors */
+}
+
+/* Add space between the Sura and Verse dropdowns */
+.selector-left label,
+.selector-left select {
+    margin-right: 10px;
+    /* Add 10px space between the Sura and Verse */
+}
+
+/* Styling for the right side (GitHub and TikTok icons) */
+.selector-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.selector-right a {
+    margin-left: 15px;
+    color: #333;
+    /* Default color for the icons */
+    font-size: 24px;
+}
+
+.selector-right a:hover {
+    color: #007bff;
+    /* Change icon color on hover */
+}
+
+/* Audio play button */
+.play-button {
+    background-color: transparent;
+    /* Transparent background */
+    border: 2px solid #0a0a0a;
+    /* Round border with a color */
+    border-radius: 50%;
+    /* Circular button */
+    width: 20px;
+    /* Set width */
+    height: 20px;
+    /* Set height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.play-button:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Light hover effect */
+}
+
+.play-button::before {
+    content: '►';
+    /* Play symbol */
+    font-size: 12px;
+    /* Font size for the play symbol */
+    color: #0e0e0f;
+    /* Play symbol color */
+}
+
+
+
+.morphology-popup {
+    position: absolute;
+    color: black;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    font-size: 12spx;
+    border-radius: 5px;
+  }
+  .morphology-popup span {
+    font-style: italic;
+  }
+  
+  
+  .morphology-popup table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .morphology-popup th {
+    text-align: left;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  
+  .morphology-popup td {
+    padding: 5px 0;
+  }
+  
+  .word {
+      /* Set the text color to black */
+    cursor: pointer;   /* Keep the pointer cursor to show it's clickable */
+    text-decoration: none;  /* Remove the underline for the clickable text */
+  }
+  
+  .word:hover {
+  
+    text-decoration: underline;  /* Optionally, add underline on hover for better UX */
+  }
+  
+
+
+
+/* eye icon link */
+.icon-link i {
+  text-decoration: none; /* Removes underline from the link */
+}
+
+.icon-link {
+  cursor: pointer;
+}
+
+
+
+.lang-switcher-top {
+    grid-area: lang-switcher
+}
+
+header {
+    grid-area: header
+}
+
+#title {
+    grid-area: title
+}
+
+section {
+    grid-area: section
+}
+
+footer {
+    grid-area: footer
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-block-start:20px;margin-block-end:5px;color: var(--kufi-color)
+}
+
+h1,h2,h3 {
+    line-height: 1.4
+}
+
+
+
+
+a {
+    color: #267CB9;
+    text-decoration: none
+}
+
+blockquote {
+    margin: 0;
+    text-align: right; /* Aligns the text to the right */
+    direction: rtl;  
+}
+
+blockquote p {
+    text-align: center
+}
+
+blockquote.kufi p,blockquote.كوفي p {
+    font-size: 8cqw;
+    direction: rtl;
+    font-weight: normal
+}
+
+blockquote.big p,blockquote.كبير p {
+    margin-block-start:0px;margin-block-end:.4em}
+
+code {
+    font-family: "Inconsolata", monospace
+}
+
+img {
+    max-width: 100%
+}
+
+#sitedesigner {
+    font-size: 60%;
+    color: grey
+}
+
+header p {
+    text-align: start;
+    margin-block-end:20%}
+
+#logo {
+    font-family: var(--kufi-family);
+    color: var(--kufi-color);
+    font-size: 55pt;
+    margin-block-end:5%;margin-block-start:0}
+
+#logo a,#foundry a {
+    text-decoration: none;
+    color: unset
+}
+
+#title {
+    font-size: 55pt;
+    font-weight: normal;
+    font-variation-settings: "SPAC" -100;
+    font-variant-alternates: stylistic(alt-two);
+    text-align-last: justify;
+    font-family: var(--kufi-family);
+    margin: 0;
+    color: var(--kufi-color)
+}
+
+footer {
+    align-self: start;
+    position: sticky;
+    top: 0
+}
+
+footer p {
+    text-align: center;
+    margin-block-end:20%}
