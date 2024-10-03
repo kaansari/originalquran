@@ -102,7 +102,7 @@ body {
 
 /* Style to freeze the selector div at the top with icons */
 .selector {
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
