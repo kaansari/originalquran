@@ -282,61 +282,7 @@ function handleOutsideClick(event) {
   }
 }
 
-// Function to show the image popup
-function showVerseImages(verseId) {
-  const directory = `media/images/${verseId}`;
-
-  // Fetch verse from combinedData
-  const verseText = combinedData[verseId]?.arabic || "Verse not found"; // Get the Arabic verse text
-
-  // Set the verse text in the popup
-  const verseElement = document.getElementById("verse-text");
-  verseElement.innerText = verseText; // Set the verse text on the element
-
-  // Fetch images for the grid
-  //fetchImagesFromDirectory(directory, verseId)
-  //  .then((files) => {
- //     const imageGrid = document.getElementById("image-grid");
- //     imageGrid.innerHTML = ""; // Clear previous images
-
-  //    files.forEach((file) => {
- //       const imgElement = document.createElement("img");
- //       imgElement.src = `${directory}/${file}`; // Full image path
-  //      imageGrid.appendChild(imgElement);
-   //   });
-
-//      // Show the image popup
-//     document.getElementById("image-popup").style.display = "block";
- //   })
- //   .catch((error) => {
- //    console.error("Error loading images:", error);
-  //  });
-
-  document.getElementById("image-popup").style.display = "block";
-}
-
 // Function to close the image popup
 function closeImagePopup() {
   document.getElementById("image-popup").style.display = "none";
-}
-
-// Function to fetch images (mock)
-function fetchImagesFromDirectory(directory, verseId) {
-  return new Promise((resolve, reject) => {
-    // Simulating fetching image files
-    resolve([`1.png`, `2.png`, `3.png`, `4.png`]); // Example: 4 PNG files
-  });
-}
-
-// Function to close the image popup
-function closeImagePopup() {
-  document.getElementById("image-popup").style.display = "none";
-}
-
-// Function to fetch images (mock)
-function fetchImagesFromDirectory(directory, verseId) {
-  return new Promise((resolve, reject) => {
-    // Simulating fetching image files
-    resolve([`1.png`, `2.png`, `3.png`, `4.png`]); // Example: 4 PNG files
-  });
 }
