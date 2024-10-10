@@ -35,6 +35,6 @@ def process_unique_words(input_file):
 # Example usage
 if __name__ == "__main__":
     # Replace with your file path
-    input_file = "quran_words.json"
+    input_file = "../src/json/quran_words.json"
     process_unique_words(input_file)
 
