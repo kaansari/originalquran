@@ -306,7 +306,9 @@ function generateAudioUrl(key) {
   const wordStr = String(word).padStart(3, '0');
 
   // Construct the URL
-  const url = `https://audio.qurancdn.com/wbw/${surahStr}_${ayahStr}_${wordStr}.mp3`;
+
+  const url = `https://audios.quranwbw.com/words/${surah}/${surahStr}_${ayahStr}_${wordStr}.mp3`
+ // const url = `https://audio.qurancdn.com/wbw/${surahStr}_${ayahStr}_${wordStr}.mp3`;
 
   return url;
 }
