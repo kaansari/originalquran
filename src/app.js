@@ -14,7 +14,7 @@ Promise.all([
     morphology = data[3];
     // console.log("Sura Data:", suraData); // Log the data to make sure it loads
     //  console.log("Combined Data:", combinedData);
-    console.log("Words Data:", wordsData);
+   // console.log("Words Data:", wordsData);
     populateSuraSelector();
     loadSelections(); // Load the saved selections when the page reloads
   })
@@ -209,7 +209,15 @@ function showWordMorphologyPopup(wordId, wordElement) {
   // If a popup already exists, remove it before showing a new one
   removeExistingPopup();
 
+
+
+  
+
   const wordObjects = wordMorphology.words; // Extract words for the given verse
+
+  // Play audio source for that word
+  console.log(wordMorphology.id);
+ playAudio(generateAudioUrl(wordMorphology.id));
 
   // Generate the table content using the buildMorphologyTable function
   const tableContent = buildMorphologyTable(wordObjects);
@@ -285,4 +293,20 @@ function handleOutsideClick(event) {
 // Function to close the image popup
 function closeImagePopup() {
   document.getElementById("image-popup").style.display = "none";
+}
+
+
+function generateAudioUrl(key) {
+  // Split the key by colon (e.g., '1:1:1' -> ['1', '1', '1'])
+  const [surah, ayah, word] = key.split(':').map(Number);
+
+  // Format each part as a 3-digit number with leading zeros if needed
+  const surahStr = String(surah).padStart(3, '0');
+  const ayahStr = String(ayah).padStart(3, '0');
+  const wordStr = String(word).padStart(3, '0');
+
+  // Construct the URL
+  const url = `https://audio.qurancdn.com/wbw/${surahStr}_${ayahStr}_${wordStr}.mp3`;
+
+  return url;
 }
