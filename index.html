@@ -13,9 +13,9 @@
     <div class="selector">
         <div class="selector-left">
             <!-- Quran icon -->
-            <a href="index.html">
-            <img src="icon.png" alt="Quran Icon" />
-                </a>
+            <a href="index.html" aria-label="Quran Icon">
+                <img src="icon.png" alt="Quran Icon" />
+            </a>
             <!-- Sura and Verse Selectors -->
             <label for="sura-select">Sura:</label>
             <select id="sura-select"></select>
@@ -30,24 +30,9 @@
                 <i class="fas fa-history"></i>
             </a>
             <!-- GitHub icon -->
-            <a href="https://github.com/kaansari/originalquran" target="_blank">
+            <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
                 <i class="fab fa-github"></i>
             </a>
-
-            <div id="image-popup" class="popup-container" style="display:none;">
-              <div class="popup-content">
-                <!-- Close button -->
-                <button class="popup-close" onclick="closeImagePopup()">x</button>
-            
-                <!-- Verse Text Element -->
-                <div id="verse-text" class="arabic" style="text-align: center;"></div> <!-- This will display the Arabic verse -->
-            
-                <!-- Image Grid -->
-                <div id="image-grid" class="grid-container"></div>
-              </div>
-            </div>
-            
-        
         </div>  
  
 
@@ -63,7 +48,7 @@
 
 </div>
 
-<script src="app.js?v=12"></script>
+<script src="app_v2.js"></script>
 </body>
 
 </html>
