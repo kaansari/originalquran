@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Words</title>
+</head>
+
+<body>
+    <h2>Select Root and Word</h2>
+    <label for="root-select">Select Root:</label>
+    <select id="root-select"></select>
+
+    <label for="word-select">Select Word:</label>
+    <select id="word-select"></select>
+
+    <div id="output">
+        <h3>Verse Data:</h3>
+        <pre id="verse-data"></pre>
+        <p><strong>Root Count:</strong> <span id="root-count"></span></p>
+        <p><strong>Word Count:</strong> <span id="word-count"></span></p>
+        <p><strong>Verse Count:</strong> <span id="verse-count"></span></p>
+    </div>
+
+    <script>
+        let rootWordsData = {}; // To store the root_words.json data
+
+        // Fetch the root_words.json data
+        fetch('json/root_words.json')
+            .then(response => response.json())
+            .then(data => {
+                rootWordsData = data;
+                populateRootSelector();
+                loadSavedSelections(); // Load saved selections
+            })
+            .catch(error => console.error('Error loading root_words.json:', error));
+
+        function populateRootSelector() {
+            const rootSelect = document.getElementById('root-select');
+            rootSelect.innerHTML = '';
+
+            // Sort root words in ascending order
+            const sortedRootWords = Object.keys(rootWordsData).sort((a, b) => a.localeCompare(b));
+
+            // Populate root selector with sorted root words
+            sortedRootWords.forEach(root => {
+                const option = document.createElement('option');
+                option.value = root;
+                option.textContent = root;
+                rootSelect.appendChild(option);
+            });
+
+            // Add event listener to root selector
+            rootSelect.addEventListener('change', () => {
+                saveSelections(); // Save the root selection
+                populateWordSelector();
+            });
+
+            populateWordSelector(); // Populate words for the first root initially
+        }
+
+        function populateWordSelector() {
+            const rootSelect = document.getElementById('root-select').value;
+            const wordSelect = document.getElementById('word-select');
+            wordSelect.innerHTML = '';
+
+            const wordList = rootWordsData[rootSelect].Word;
+
+            // Sort the words in ascending order
+            const sortedWords = Object.keys(wordList).sort();
+
+            // Populate word selector with sorted child words
+            sortedWords.forEach((word) => {
+                const option = document.createElement('option');
+                option.value = word;
+                option.textContent = word;
+                wordSelect.appendChild(option);
+            });
+
+            // Add event listener to word selector
+            wordSelect.addEventListener('change', () => {
+                saveSelections(); // Save the word selection
+                displayVerseData();
+            });
+
+            displayVerseData(); // Display verse data for the first word initially
+        }
+
+
+        function displayVerseData() {
+            const rootSelect = document.getElementById('root-select').value;
+            const wordSelect = document.getElementById('word-select').value;
+
+            const wordData = rootWordsData[rootSelect].Word[wordSelect];
+
+            // Display the verses
+            const verseData = wordData.Verses.map(verse => `Key: ${verse.Key}, ID: ${verse.ID}`).join('\n');
+            document.getElementById('verse-data').textContent = verseData;
+
+            // Display RootCount, WordCount, and VerseCount
+            document.getElementById('root-count').textContent = rootWordsData[rootSelect].RootCount;
+            document.getElementById('word-count').textContent = wordData.WordCount;
+            document.getElementById('verse-count').textContent = wordData.VerseCount;
+        }
+
+        function saveSelections() {
+            const rootSelect = document.getElementById('root-select').value;
+            const wordSelect = document.getElementById('word-select').value;
+            localStorage.setItem('selectedRoot', rootSelect);
+            localStorage.setItem('selectedWord', wordSelect);
+        }
+
+        function loadSavedSelections() {
+            const savedRoot = localStorage.getItem('selectedRoot');
+            const savedWord = localStorage.getItem('selectedWord');
+
+            if (savedRoot) {
+                document.getElementById('root-select').value = savedRoot;
+                populateWordSelector(); // Update word selector based on saved root
+                if (savedWord) {
+                    document.getElementById('word-select').value = savedWord;
+                    displayVerseData(); // Display data for saved word
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
