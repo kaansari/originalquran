@@ -57,7 +57,7 @@
   function displaySura(suraNumber, targetVerse = null) {
     const sura = suraData[suraNumber];
     const container = document.getElementById("quran-container");
-    container.innerHTML = `<h3>${suraNumber}. ${sura.name}</h3>`;
+    container.innerHTML = `<h3 class="arabic">${suraNumber}. ${sura.name}</h3>`;
 
     const fragment = document.createDocumentFragment();
     let verseToScroll = null;
@@ -396,3 +396,23 @@ function handleOutsideClick(event) {
     goToSelectedVerse();
   });
 })();
+
+
+/* Theme code */
+const themeToggleBtn = document.getElementById('theme-toggle');
+const currentTheme = localStorage.getItem('theme') || 'light';
+
+// Apply the saved theme on page load
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+}
+
+// Toggle the theme when the button is clicked
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+  
+  // Save the current theme in localStorage
+  const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
+  localStorage.setItem('theme', newTheme);
+});
+
