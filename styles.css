@@ -241,6 +241,9 @@ h1, h2, h3 {
   transition: transform 0.3s ease-in-out;
 }
 
+.menu-content a  { padding: 10px;  /* Add some padding */}
+
+
 #menu-toggle:checked ~ .menu-content {
   display: flex;
   transform: translateX(0); /* Slide in from the left */
