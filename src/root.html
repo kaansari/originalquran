@@ -4,127 +4,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">   
     <title>Root Words</title>
 </head>
 
+
+
 <body>
     <h2>Select Root and Word</h2>
-    <label for="root-select">Select Root:</label>
-    <select id="root-select"></select>
-
-    <label for="word-select">Select Word:</label>
-    <select id="word-select"></select>
-
-    <div id="output">
-        <h3>Verse Data:</h3>
-        <pre id="verse-data"></pre>
-        <p><strong>Root Count:</strong> <span id="root-count"></span></p>
-        <p><strong>Word Count:</strong> <span id="word-count"></span></p>
-        <p><strong>Verse Count:</strong> <span id="verse-count"></span></p>
+    <div id="letter-container">
+        <!-- This will be populated dynamically with clickable letters -->
     </div>
 
+    <select id="root-select">
+        <!-- This will be populated based on the selected letter -->
+    </select>
+
+    <select id="word-select">
+        <!-- This will be populated based on the selected root word -->
+    </select>
+
+    <div id="verse-data">
+        <!-- Verse data will be displayed here -->
+    </div>
+
+
     <script>
-        let rootWordsData = {}; // To store the root_words.json data
 
-        // Fetch the root_words.json data
-        fetch('json/root_words.json')
-            .then(response => response.json())
-            .then(data => {
-                rootWordsData = data;
-                populateRootSelector();
-                loadSavedSelections(); // Load saved selections
-            })
-            .catch(error => console.error('Error loading root_words.json:', error));
+  // Global Variables
+  let suraData, combinedQuranData, quranWordsData, morphology;
+  let rootWordsData = {}; // To store the root_words.json data
 
-        function populateRootSelector() {
-            const rootSelect = document.getElementById('root-select');
-            rootSelect.innerHTML = '';
+  Promise.all([
+    fetch("json/sura.json").then((response) => response.json()),
+    fetch("json/combined_quran.json").then((response) => response.json()),
+    fetch("json/quran_words.json").then((response) => response.json()),
+    fetch("json/quran_morphology.json").then((response) => response.json()),
+  ])
+    .then((data) => {
+      [suraData, combinedQuranData, quranWordsData, morphology] = data;
+    })
+    .catch((error) => {
+      console.error("Error loading JSON files:", error);
+      alert("Failed to load data. Please try refreshing the page.");
+    });
 
-            // Sort root words in ascending order
-            const sortedRootWords = Object.keys(rootWordsData).sort((a, b) => a.localeCompare(b));
 
-            // Populate root selector with sorted root words
-            sortedRootWords.forEach(root => {
-                const option = document.createElement('option');
-                option.value = root;
-                option.textContent = root;
-                rootSelect.appendChild(option);
-            });
+    // Fetch the root_words.json data
+    fetch('json/root_words.json')
+        .then(response => response.json())
+        .then(data => {
+            rootWordsData = data;
+            populateLetterLabels(); // Populate letters after data is loaded
+            loadSavedSelections(); // Load saved selections
+        })
+        .catch(error => console.error('Error loading root_words.json:', error));
 
-            // Add event listener to root selector
-            rootSelect.addEventListener('change', () => {
-                saveSelections(); // Save the root selection
-                populateWordSelector();
-            });
+    // Populate the clickable letters as labels
+    function populateLetterLabels() {
+        const letterContainer = document.getElementById('letter-container');
+        letterContainer.innerHTML = ''; // Clear any existing labels
+        const uniqueLetters = new Set();
 
-            populateWordSelector(); // Populate words for the first root initially
+        // Extract the first letter of each root word and add it to the Set
+        for (const root in rootWordsData) {
+            uniqueLetters.add(root.charAt(0));
         }
 
-        function populateWordSelector() {
-            const rootSelect = document.getElementById('root-select').value;
-            const wordSelect = document.getElementById('word-select');
-            wordSelect.innerHTML = '';
+        // Sort the letters and create clickable labels
+        const sortedLetters = Array.from(uniqueLetters).sort();
+        sortedLetters.forEach(letter => {
+            const letterLabel = document.createElement('span');
+            letterLabel.textContent = letter;
+            letterLabel.classList.add('letter-label'); // Add some styling class
+            letterLabel.style.cursor = 'pointer'; // Make it look clickable
+            letterLabel.style.marginRight = '10px';
 
-            const wordList = rootWordsData[rootSelect].Word;
-
-            // Sort the words in ascending order
-            const sortedWords = Object.keys(wordList).sort();
-
-            // Populate word selector with sorted child words
-            sortedWords.forEach((word) => {
-                const option = document.createElement('option');
-                option.value = word;
-                option.textContent = word;
-                wordSelect.appendChild(option);
+            // Add click event to each label
+            letterLabel.addEventListener('click', () => {
+                populateRootSelectorByLetter(letter);
+                saveSelections(); // Save the selected letter
             });
 
-            // Add event listener to word selector
-            wordSelect.addEventListener('change', () => {
-                saveSelections(); // Save the word selection
-                displayVerseData();
-            });
+            // Append the label to the container
+            letterContainer.appendChild(letterLabel);
+        });
 
-            displayVerseData(); // Display verse data for the first word initially
+        // Automatically populate root selector for the first letter by default
+        if (sortedLetters.length > 0) {
+            populateRootSelectorByLetter(sortedLetters[0]); // Default to the first letter
         }
+    }
 
+    // Populate the root selector based on the selected letter
+    function populateRootSelectorByLetter(letter) {
+        const rootSelect = document.getElementById('root-select');
+        rootSelect.innerHTML = '';
 
-        function displayVerseData() {
-            const rootSelect = document.getElementById('root-select').value;
-            const wordSelect = document.getElementById('word-select').value;
+        // Filter and sort the root words that start with the selected letter
+        const filteredRoots = Object.keys(rootWordsData).filter(root => root.startsWith(letter)).sort();
 
-            const wordData = rootWordsData[rootSelect].Word[wordSelect];
+        // Populate root selector with filtered roots
+        filteredRoots.forEach(root => {
+            const option = document.createElement('option');
+            option.value = root;
+            option.textContent = root;
+            rootSelect.appendChild(option);
+        });
 
-            // Display the verses
-            const verseData = wordData.Verses.map(verse => `Key: ${verse.Key}, ID: ${verse.ID}`).join('\n');
-            document.getElementById('verse-data').textContent = verseData;
+        // Add event listener to root select
+        rootSelect.addEventListener('change', () => {
+            populateWordSelector();
+            saveSelections(); // Save the selected root word
+        });
 
-            // Display RootCount, WordCount, and VerseCount
-            document.getElementById('root-count').textContent = rootWordsData[rootSelect].RootCount;
-            document.getElementById('word-count').textContent = wordData.WordCount;
-            document.getElementById('verse-count').textContent = wordData.VerseCount;
+        // Populate word selector for the first root word by default
+        if (filteredRoots.length > 0) {
+            rootSelect.value = filteredRoots[0]; // Default to the first root word
+            populateWordSelector();
         }
+    }
 
-        function saveSelections() {
-            const rootSelect = document.getElementById('root-select').value;
-            const wordSelect = document.getElementById('word-select').value;
-            localStorage.setItem('selectedRoot', rootSelect);
-            localStorage.setItem('selectedWord', wordSelect);
-        }
+    // Populate the word selector based on the selected root word
+    function populateWordSelector() {
+        const rootSelect = document.getElementById('root-select').value;
+        const wordSelect = document.getElementById('word-select');
+        wordSelect.innerHTML = '';
 
-        function loadSavedSelections() {
-            const savedRoot = localStorage.getItem('selectedRoot');
-            const savedWord = localStorage.getItem('selectedWord');
+        const wordList = rootWordsData[rootSelect].Word;
 
-            if (savedRoot) {
-                document.getElementById('root-select').value = savedRoot;
-                populateWordSelector(); // Update word selector based on saved root
-                if (savedWord) {
-                    document.getElementById('word-select').value = savedWord;
-                    displayVerseData(); // Display data for saved word
-                }
+        // Sort the words in ascending order
+        const sortedWords = Object.keys(wordList).sort();
+
+        // Populate word selector with sorted child words
+        sortedWords.forEach((word) => {
+            const option = document.createElement('option');
+            option.value = word;
+            option.textContent = word;
+            wordSelect.appendChild(option);
+        });
+
+        // Add event listener to word selector
+        wordSelect.addEventListener('change', () => {
+            saveSelections(); // Save the word selection
+            displayVerseData();
+        });
+
+        displayVerseData(); // Display verse data for the first word initially
+    }
+
+    // Display the verse data (as already implemented)
+    function displayVerseData() {
+        const wordSelect = document.getElementById('word-select').value;
+        const rootSelect = document.getElementById('root-select').value;
+        const verseData = rootWordsData[rootSelect].Word[wordSelect].Verses;
+        const rootCount = rootWordsData[rootSelect].RootCount;
+        const wordCount = rootWordsData[rootSelect].Word[wordSelect].WordCount;
+        const verseCount = rootWordsData[rootSelect].Word[wordSelect].VerseCount;
+
+        const verseContainer = document.getElementById('verse-data');
+        verseContainer.innerHTML = `
+  <p>${verseCount} out of total  ${rootCount} words</p>
+  <ul>
+    ${verseData.map(verse => `<div class="arabic-modern">${buildVerse(verse)}</div>`).join('')}
+  </ul>
+`;
+    }
+
+    // Call populateLetterLabels after the JSON data is loaded
+    function saveSelections() {
+        const rootSelect = document.getElementById('root-select').value;
+        const wordSelect = document.getElementById('word-select').value;
+        localStorage.setItem('selectedRoot', rootSelect);
+        localStorage.setItem('selectedWord', wordSelect);
+    }
+
+    function loadSavedSelections() {
+        const savedRoot = localStorage.getItem('selectedRoot');
+        const savedWord = localStorage.getItem('selectedWord');
+
+        if (savedRoot) {
+            document.getElementById('root-select').value = savedRoot;
+            populateWordSelector(); // Update word selector based on saved root
+            if (savedWord) {
+                document.getElementById('word-select').value = savedWord;
+                displayVerseData(); // Display data for saved word
             }
         }
-    </script>
+    }
+
+    // This function gets the sura data based on sura number
+function getSuraData(suraNumber) {
+  return suraData[suraNumber];
+}
+
+// This function gets the verse data based on index (calculated from sura start)
+function getVerseData(verseIndex) {
+  return combinedQuranData[verseIndex];
+}
+
+// This function gets words from quran_words.json between the start and end word positions
+function getWordsFromRange(start, end) {
+  const words = [];
+  for (let i = start; i <= end; i++) {
+    words.push(quranWordsData[i.toString()]);  // Convert the word position to string since keys are strings
+  }
+  return words;
+}
+
+// Function to build the verse with the specified highlight based on Key
+function buildVerse(verseObject) {
+    const { Key, ID } = verseObject;
+    
+    // Extract sura number, verse number, and word position from ID
+    const [suraNumber, verseNumber] = ID.split(":").map(Number);
+    
+    // Fetch sura data from json/sura.json
+    const suraInfo = getSuraData(suraNumber);
+    
+    // Calculate the verse index from combined_quran.json
+    const verseIndex = suraInfo.start + (verseNumber - 1);
+    
+    // Fetch the verse from combined_quran.json using verseIndex
+    const verseData = getVerseData(verseIndex);
+    
+    // Build the verse using words from quran_words.json
+    const words = getWordsFromRange(verseData.start_word, verseData.end_word);
+    
+    // Highlight the word with ID matching the Key
+    const highlightedWords = words.map((word, index) => {
+        const wordPosition = verseData.start_word + index;
+        if (wordPosition === Number(Key)) {
+            return `<span class="highlight">${word}</span>`;
+        }
+        return word;
+    });
+    
+    // Return the verse as a string of words
+    return highlightedWords.join(" ");
+}
+
+</script>
+
 </body>
 
 </html>

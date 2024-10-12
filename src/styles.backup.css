@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Qahiri';
+  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
+
+}
+
+
+body {
+    margin: 20px;
+    padding-top: 40px;
+    /* Adjust based on the height of the .selector */
+
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+/*  Verse related css */
+.verse-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.verse-header {
+    display: flex;
+    align-items: center;
+}
+
+.verse-number {
+    margin-right: 5px;
+    /* Space between verse number and play button */
+}
+
+.verse-text {
+    text-align: right;
+    flex-grow: 1;
+    /* Makes the Arabic verse take up the remaining space */
+}
+
+.verse {
+    margin-bottom: 20px;
+}
+
+.arabic {
+    font-family: 'Qahiri', sans-serif;
+    font-size: 24px;
+    word-spacing: 10px;
+    font-style: italic;
+    font-size: 1.5em;
+    direction: rtl;
+    text-align: right;
+}
+
+.arabic-modern {
+
+  font-size: 14px;
+  word-spacing: 5px;
+  font-size: 1.5em;
+  direction: rtl;
+  text-align: right;
+  font-style: italic;
+}
+
+.translation {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Style to freeze the selector div at the top with icons */
+.selector {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Spread out the elements */
+}
+
+/* Styling for the left side (Quran icon and selectors) */
+.selector-left {
+    display: flex;
+    align-items: center;
+}
+
+.selector-left img {
+    height: 30px;
+    margin-right: 10px;
+    /* Add some space between the icon and the selectors */
+}
+
+/* Add space between the Sura and Verse dropdowns */
+.selector-left label,
+.selector-left select {
+    margin-right: 10px;
+    /* Add 10px space between the Sura and Verse */
+}
+
+/* Styling for the right side (GitHub and TikTok icons) */
+.selector-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.selector-right a {
+  margin-left: 15px;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.selector-right a:hover {
+    color: #007bff;
+    /* Change icon color on hover */
+}
+
+/* Audio play button */
+.play-button {
+    background-color: transparent;
+    /* Transparent background */
+    border: 2px solid #0a0a0a;
+    /* Round border with a color */
+    border-radius: 50%;
+    /* Circular button */
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+    /* Set height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.play-button:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Light hover effect */
+}
+
+.play-button::before {
+    content: '►';
+    /* Play symbol */
+    font-size: 12px;
+    /* Font size for the play symbol */
+    color: #0e0e0f;
+    /* Play symbol color */
+}
+
+
+
+.morphology-popup {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .morphology-popup span {
+    font-style: italic;
+  }
+  
+  
+  .morphology-popup table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .morphology-popup th {
+    text-align: left;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+  
+  .morphology-popup td {
+    padding: 5px 0;
+  }
+  
+  .word {
+    color: black;      /* Set the text color to black */
+    cursor: pointer;   /* Keep the pointer cursor to show it's clickable */
+    text-decoration: none;  /* Remove the underline for the clickable text */
+  }
+  
+  .word:hover {
+    color: black;      /* Ensure that on hover, the text remains black */
+    text-decoration: underline;  /* Optionally, add underline on hover for better UX */
+  }
+  
+
+/* eye icon link */
+.icon-link i {
+  color: black;
+  text-decoration: none; /* Removes underline from the link */
+}
+
+.icon-link {
+  cursor: pointer;
+}
+
+
+
+/* Higlight words*/
+.highlight {
+  background-color: yellow;  /* Highlight the background with yellow */
+  font-weight: bold;         /* Make the highlighted word bold */
+  color: black;              /* Ensure the text color is black for readability */
+  padding: 2px 4px;          /* Add some padding for better visibility */
+  border-radius: 4px;        /* Slightly round the edges for a smoother look */
+}
+
+
+#letter-container {
+  display: flex;          /* Enables flexbox layout */
+  flex-wrap: wrap;        /* Allows the content to wrap into multiple rows */
+  justify-content: flex-end;  /* Aligns items to the left (or adjust as needed) */
+  gap: 5px;              /* Adds space between the letters */
+  padding: 5px;          /* Adds some padding around the container */
+  max-width: 100%;        /* Ensures the container doesn’t exceed the page width */
+  box-sizing: border-box; /* Includes padding and border in the element's total width */
+  direction: rtl;
+}
+
+#letter-container > div {
+  flex: 0 1 auto;         /* Allows each item to size based on its content */
+  min-width: 50px;        /* Minimum width for each letter box */
+  text-align: center;     /* Center the text inside each letter box */
+  padding: 5px;           /* Padding inside each letter box */
+  background-color: #f0f0f0; /* A light background color for each letter box */
+  border-radius: 5px;     /* Optional: Adds rounded corners */
+  cursor: pointer;        /* Adds a pointer cursor on hover */
+}
+
+
+@media (max-width: 600px) {
+  .popup-content {
+      max-width: 95%;
+      max-height: 95%;
+  }
+}
