@@ -1,14 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block");
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+@font-face {
+  font-family: "Raqq";
+  src: url("fonts/Raqq.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Qahiri';
+  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
+
+}
+
+@font-feature-values "Raqq" {
+  @stylistic {
+      alt-one: 1;
+      alt-two: 2
+  }
+
+  @styleset {
+      dotless: 1
+  }
+}
+
 :root {
-  /* Light theme (default) */
+  --kufi-family: "Raqq", serif;
+  --kufi-color: #333;
+  --heading-family: "Reem Kufi", sans-serif;
+  --reem-family: "Reem Kufi", sans-serif;
+  --h1-font-size: 40px;
+  --qahiri-family:'Qahiri', sans-serif;
+  --amiri-family: "Amiri Quran", serif;
   --background-color: #ffffff;
-  --text-color: #000000;
+  --text-color: #333;
   --highlight-color: yellow;
   --secondary-text-color: #555;
   --verse-text-color: #333;
   --selector-bg-color: white;
   --icon-hover-color: #007bff;
-  --play-button-border-color: #0a0a0a;
+  --play-button-border-color: white;
   --morphology-popup-bg-color: white;
+  --latin-font: "DM Sans", "Amiri", sans-serif;
 }
 
 .dark-theme {
@@ -24,14 +57,14 @@
   --morphology-popup-bg-color: #444;
 }
 
-@font-face {
-  font-family: 'Qahiri';
-  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
-
+body * {
+  font-palette: dark
 }
+
 
 /* Apply the theme variables */
 body {
+  font-family: var(--latin-fonts);
   margin: 20px;
   padding-top: 40px;
   background-color: var(--background-color);
@@ -64,12 +97,13 @@ h1, h2, h3 {
   text-align: right;
   flex-grow: 1;
   color: var(--verse-text-color);
+  font-weight: normal
 }
 
 .arabic {
-  font-family: 'Qahiri', sans-serif;
+  font-family: var(--amiri-family); 
   word-spacing: 10px;
-  font-size: 24px;
+  font-size: 14px;
   font-size: 1.5em;
   direction: rtl;
   text-align: right;
@@ -77,16 +111,36 @@ h1, h2, h3 {
   color: var(--text-color);
 }
 
+
+.font-raqq {
+  font-family: var(--kufi-family);  /* Applies the Raqq font */
+  font-feature-settings: 'ss01' 1;
+}
+
+.font-qahiri {
+  font-family: var(--qahiri-family) /* Applies the Qahiri font */
+}
+
+.font-amiri {
+  font-family: var(--amiri-family) /* Applies the Amiri Quran font */
+}
+
+.font-reem {
+  font-family: var(--reem-family) /* Applies the Amiri Quran font */
+}
+
 .arabic-modern {
+  font-family: var(--amiri-family);
   font-size: 1.5em;
   direction: rtl;
   text-align: right;
-  font-style: italic;
+  word-spacing: 10px;
   color: var(--text-color);
 }
 
 .translation {
-  margin-top: 10px;
+  font-family: var(--latin-font);
+  font-size: 12px;
   color: var(--secondary-text-color);
 }
 
@@ -116,7 +170,6 @@ h1, h2, h3 {
 
 .play-button {
   background-color: transparent;
-  border: 2px solid var(--play-button-border-color);
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
@@ -136,7 +189,7 @@ h1, h2, h3 {
   /* Play symbol */
   font-size: 12px;
   /* Font size for the play symbol */
-  color: var(--play-button-border-color);
+  color: var(--text-color);
   /* Play symbol color */
 }
 
@@ -149,6 +202,7 @@ h1, h2, h3 {
   padding: 10px;
   font-size: 12px;
 }
+
 
 .highlight {
   background-color: var(--highlight-color);
@@ -167,6 +221,12 @@ h1, h2, h3 {
   max-width: 100%;
   box-sizing: border-box;
   direction: rtl;
+  background-color: #fff; /* White background for the card */
+  padding: 20px; /* Add some padding inside the container */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Create a shadow */
+  margin: 0 auto; /* Optional: center the container */
+  margin-top: 40px;
 }
 
 #letter-container > div {
@@ -366,6 +426,7 @@ input:checked + .slider:before {
   }
 
 }
+
 
 
 
