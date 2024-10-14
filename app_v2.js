@@ -1,11 +1,14 @@
 (() => {
   // Constants
   const AUDIO_BASE_URL = "https://audios.quranwbw.com/words/";
-  const EXTERNAL_VERSE_BASE_URL = "https://corpuscoranicum.de/en/verse-navigator/";
+  const EXTERNAL_VERSE_BASE_URL =
+    "https://corpuscoranicum.de/en/verse-navigator/";
 
   // Global Variables
   let suraData, combinedData, wordsData, morphology;
   let currentAudio = null;
+  let showTranslation =
+    localStorage.getItem("translate") === "en" ? true : false; // Load translation setting from local storage
 
   // Fetch all JSON data
   Promise.all([
@@ -110,6 +113,12 @@
       verseHeader.appendChild(playButton);
       verseContainer.appendChild(verseHeader);
 
+      const verseTransText = document.createElement("div");
+      verseTransText.id = combinedId;
+      verseTransText.className = "translation";
+      verseTransText.style.display = "none";
+      verseTransText.innerHTML = verseData.en; // English translation
+
       const verseText = document.createElement("div");
       verseText.id = combinedId;
       verseText.className = "arabic verse-text";
@@ -117,6 +126,7 @@
 
       verseContainer.appendChild(verseText);
       verseDiv.appendChild(verseContainer);
+      verseDiv.appendChild(verseTransText);
       fragment.appendChild(verseDiv);
 
       if (targetVerse && parseInt(targetVerse) === verseNumber) {
@@ -125,7 +135,8 @@
     }
 
     container.appendChild(fragment);
-
+    loadDefaultFont();
+ 
     if (verseToScroll) {
       verseToScroll.scrollIntoView({ behavior: "smooth" });
     }
@@ -134,7 +145,7 @@
   // Navigate to External Verse
   function navigateToExternalVerse(verseNumber, sura) {
     const fullURL = `${EXTERNAL_VERSE_BASE_URL}sura/${sura}/verse/${verseNumber}/manuscripts`;
-    window.open(fullURL, '_blank');
+    window.open(fullURL, "_blank");
   }
 
   // Play Audio
@@ -215,6 +226,7 @@
   // Load Selections from Local Storage
   function loadSelections() {
     try {
+      console.log("loading verse");
       const savedSura = localStorage.getItem("selectedSura");
       const savedVerse = localStorage.getItem("selectedVerse");
 
@@ -235,7 +247,7 @@
         populateVerseSelector();
         verseSelect.selectedIndex = 0;
       }
-
+     
       goToSelectedVerse();
     } catch (error) {
       console.error("Error loading selections from localStorage:", error);
@@ -278,7 +290,7 @@
     document.body.appendChild(popup);
 
     // Add a click listener to remove the popup when clicking outside
-  document.addEventListener("click", handleOutsideClick);
+    document.addEventListener("click", handleOutsideClick);
 
     const rect = wordElement.getBoundingClientRect();
     const popupRect = popup.getBoundingClientRect();
@@ -303,57 +315,74 @@
   }
 
   // Build Morphology Table
-  function buildMorphologyTable(wordObjects) {
-    let tableContent = "";
+function buildMorphologyTable(wordObjects) {
+  let tableContent = "";
 
-    for (let wordId in wordObjects) {
+  for (let wordId in wordObjects) {
       const wordMorphology = wordObjects[wordId];
 
       tableContent += `
-        <tr><th>Word</th><td>${wordMorphology.word || "N/A"}</td></tr>
-        <tr><th>POS</th><td>${wordMorphology.pos || "N/A"}</td></tr>
-        <tr><th>Root</th><td>${wordMorphology.root || "N/A"}</td></tr>
-        <tr><th>Lemma</th><td>${wordMorphology.lemma || "N/A"}</td></tr>
-        <tr><th>Morphology</th><td>${wordMorphology.morphology || "N/A"}</td></tr>
-        <tr><td colspan="2"><hr></td></tr>
+      <tr><th>Word</th><td>${wordMorphology.word || "N/A"}</td></tr>
+      <tr><th>POS</th><td>${wordMorphology.pos || "N/A"}</td></tr>
+      <tr><th>Root</th><td>${wordMorphology.root && wordMorphology.root !== "N/A" ? 
+          `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${wordMorphology.root}</span>` : 
+          "N/A"
+      }</td></tr>
+      <tr><th>Lemma</th><td>${wordMorphology.lemma || "N/A"}</td></tr>
+      <tr><th>Morphology</th><td>${wordMorphology.morphology || "N/A"}</td></tr>
+      <tr><td colspan="2"><hr></td></tr>
       `;
-    }
-
-    return tableContent;
   }
+
+  // After generating the table content, attach the event listeners for root clicks
+  setTimeout(() => {
+      const clickableRoots = document.querySelectorAll('.clickable-root');
+      
+      clickableRoots.forEach(rootElement => {
+          rootElement.addEventListener('click', () => {
+              const rootWord = rootElement.textContent;
+
+              // Save the root word to localStorage
+              localStorage.setItem('selectedRoot', rootWord);
+
+              // Open the root.html page in a new tab
+              window.open('root.html', '_blank');
+          });
+      });
+  }, 0);  // Small delay to ensure the DOM elements are rendered before attaching the event listeners
+
+  return tableContent;
+}
 
 
   // Remove existing popups if any
-function removeExistingPopup() {
-  const existingPopup = document.querySelector(".morphology-popup");
-  if (existingPopup) {
-    existingPopup.remove();
-    document.removeEventListener("click", handleOutsideClick);
+  function removeExistingPopup() {
+    const existingPopup = document.querySelector(".morphology-popup");
+    if (existingPopup) {
+      existingPopup.remove();
+      document.removeEventListener("click", handleOutsideClick);
+    }
   }
-}
 
-// Handle clicking outside of the popup to close it
-function handleOutsideClick(event) {
-  // Check if the clicked target is neither inside the popup nor a word element
-  if (!event.target.closest(".morphology-popup") && !event.target.closest(".word")) {
-    removeExistingPopup(); // Close the popup
-  }
-}
-
-
-  // Close Image Popup
-  function closeImagePopup() {
-    document.getElementById("image-popup").style.display = "none";
+  // Handle clicking outside of the popup to close it
+  function handleOutsideClick(event) {
+    // Check if the clicked target is neither inside the popup nor a word element
+    if (
+      !event.target.closest(".morphology-popup") &&
+      !event.target.closest(".word")
+    ) {
+      removeExistingPopup(); // Close the popup
+    }
   }
 
   // Generate Audio URL
   function generateAudioUrl(key) {
-    if (typeof key !== 'string' || !key.includes(':')) {
+    if (typeof key !== "string" || !key.includes(":")) {
       console.error("Invalid key format:", key);
       return null;
     }
 
-    const parts = key.split(':');
+    const parts = key.split(":");
     if (parts.length !== 3) {
       console.error("Invalid key parts:", key);
       return null;
@@ -365,24 +394,26 @@ function handleOutsideClick(event) {
       return null;
     }
 
-    const surahStr = String(surah).padStart(3, '0');
-    const ayahStr = String(ayah).padStart(3, '0');
-    const wordStr = String(word).padStart(3, '0');
+    const surahStr = String(surah).padStart(3, "0");
+    const ayahStr = String(ayah).padStart(3, "0");
+    const wordStr = String(word).padStart(3, "0");
 
     const url = `${AUDIO_BASE_URL}${surah}/${surahStr}_${ayahStr}_${wordStr}.mp3`;
     return url;
   }
 
   // Event Delegation for Play Buttons and Words
-  document.getElementById("quran-container").addEventListener("click", (event) => {
-    if (event.target.matches(".play-button")) {
-      const audioSrc = event.target.getAttribute("data-audio-src");
-      playAudio(audioSrc);
-    } else if (event.target.matches(".word")) {
-      const wordId = event.target.dataset.wordId;
-      showWordMorphologyPopup(wordId, event.target);
-    }
-  });
+  document
+    .getElementById("quran-container")
+    .addEventListener("click", (event) => {
+      if (event.target.matches(".play-button")) {
+        const audioSrc = event.target.getAttribute("data-audio-src");
+        playAudio(audioSrc);
+      } else if (event.target.matches(".word")) {
+        const wordId = event.target.dataset.wordId;
+        showWordMorphologyPopup(wordId, event.target);
+      }
+    });
 
   // Initialize Event Listeners for Selectors
   document.getElementById("sura-select").addEventListener("change", () => {
@@ -395,24 +426,138 @@ function handleOutsideClick(event) {
     saveSelections();
     goToSelectedVerse();
   });
+
+
+ // Predefined default fonts for each page
+const pageDefaultFonts = {
+  "/": "Qahiri",
+  "/index.html": "Qahiri",
+  "/root.html": "Amiri Quran",
+  "/quran.html": "Raqq" // Add more pages and their default fonts here
+};
+
+// Function to update the font by applying the correct class
+function updateFontClass(selectedFont) {
+  const arabicElements = document.querySelectorAll(".arabic");
+
+  // Remove any previously applied font classes
+  arabicElements.forEach((element) => {
+    element.classList.remove("font-raqq", "font-qahiri", "font-amiri");
+
+    // Apply the correct font class based on the selection
+    if (selectedFont === "Raqq") {
+      element.classList.add("font-raqq");
+    } else if (selectedFont === "Qahiri") {
+      element.classList.add("font-qahiri");
+    } else if (selectedFont === "Amiri Quran") {
+      element.classList.add("font-amiri");
+    }
+  });
+}
+// Function to load the default font for the page
+function loadDefaultFont() {
+  const page = window.location.pathname; // Get the current page path
+  const savedFont = localStorage.getItem(`selectedFont_${page}`);
+  let fontToApply;
+
+  if (savedFont) {
+    fontToApply = savedFont;
+  } else {
+    // If no font is saved, set the predefined default for the page
+    fontToApply = pageDefaultFonts[page] || "Amiri Quran"; // Fallback to Amiri if not defined
+    localStorage.setItem(`selectedFont_${page}`, fontToApply); // Save the default font to localStorage
+  }
+
+  console.log(fontToApply);
+  // Apply the font by setting the class
+  updateFontClass(fontToApply);
+
+  // Set the dropdown to reflect the applied font
+  const fontSelectElement = document.getElementById("font-select");
+  if (fontSelectElement) {
+    fontSelectElement.value = fontToApply;
+  }
+}
+
+
+// Font Selection Event Listener
+document.getElementById("font-select").addEventListener("change", (event) => {
+  const selectedFont = event.target.value;
+  updateFontClass(selectedFont);
+  console.log("saving font"+selectedFont);
+  vpage = window.location.pathname;
+  localStorage.setItem(`selectedFont_${vpage}`, selectedFont); // Save the selected font to local storage
+});
+
+
+// Load the default font when the page is loaded
+//window.addEventListener("load", loadDefaultFont);
+
+
+// Initialize Font on Page Load
+document.addEventListener("DOMContentLoaded", () => {
+  vpage = window.location.pathname;
+  const savedFont = localStorage.getItem(`selectedFont_${vpage}`) || pageDefaultFonts[window.location.pathname];
+  updateFontClass(savedFont);
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const translationToggleBtn = document.getElementById("translation-toggle"); // Make sure this element exists
+
+  const currentTheme = localStorage.getItem("theme") || "light";
+  const currentTranslate = localStorage.getItem("translate") || "notrans";
+
+  // Apply the saved theme on page load
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggleBtn.checked = true;
+  } else {
+    themeToggleBtn.checked = false;
+  }
+
+  // Apply the saved translation status on page load
+  if (currentTranslate === "en") {
+    showTranslation = true;
+    translationToggleBtn.checked = true; // Set the toggle button to checked if translation is enabled
+  } else {
+    showTranslation = false;
+    translationToggleBtn.checked = false; // Set it to unchecked if no translation is set
+  }
+
+  // Toggle the theme when the button is clicked
+  themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+
+    // Save the current theme in localStorage
+    const newTheme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+    localStorage.setItem("theme", newTheme);
+  });
+
+  // Toggle the translation visibility without page reload
+  translationToggleBtn.addEventListener("change", () => {
+    showTranslation = translationToggleBtn.checked; // Update based on checkbox status
+
+    // Save the current translation setting in localStorage
+    localStorage.setItem("translate", showTranslation ? "en" : "notrans");
+
+    // Toggle translation display in the DOM
+    const translationElements = document.querySelectorAll(".translation");
+    translationElements.forEach((element) => {
+      element.style.display = showTranslation ? "block" : "none";
+    });
+  });
+});
+
+
 })();
 
 
-/* Theme code */
-const themeToggleBtn = document.getElementById('theme-toggle');
-const currentTheme = localStorage.getItem('theme') || 'light';
 
-// Apply the saved theme on page load
-if (currentTheme === 'dark') {
-  document.body.classList.add('dark-theme');
-}
-
-// Toggle the theme when the button is clicked
-themeToggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-theme');
-  
-  // Save the current theme in localStorage
-  const newTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
-  localStorage.setItem('theme', newTheme);
-});
 
