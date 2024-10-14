@@ -288,8 +288,12 @@ function buildVerse(verseObject) {
         return word;
     });
 
+    // English translation
+
+    const translation = `<div class="translation">${verseData.en}</div>`;
+
     // Return the verse as a string of words followed by sura:verse (e.g., "2:12")
-    return `${highlightedWords.join(" ")} (${suraNumber}:${verseNumber})`;
+    return `${highlightedWords.join(" ")} (${suraNumber}:${verseNumber}) ${translation}`;
 }
 
 
