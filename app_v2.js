@@ -430,10 +430,10 @@ function buildMorphologyTable(wordObjects) {
 
  // Predefined default fonts for each page
 const pageDefaultFonts = {
-  "/": "Qahiri",
-  "/index.html": "Qahiri",
-  "/root.html": "Amiri Quran",
-  "/quran.html": "Raqq" // Add more pages and their default fonts here
+  "/originalquran/": "Qahiri",
+  "originalquran/index.html": "Qahiri",
+  "originalquran/root.html": "Amiri Quran",
+  "originalquran/quran.html": "Raqq" // Add more pages and their default fonts here
 };
 
 // Function to update the font by applying the correct class
