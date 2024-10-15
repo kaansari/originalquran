@@ -16,9 +16,10 @@
     fetch("json/combined_harakat_quran.json").then((response) => response.json()),
     fetch("json/quran_harakat_words.json").then((response) => response.json()),
     fetch("json/quran_morphology.json").then((response) => response.json()),
+    fetch("json/en-word.json").then((response) => response.json()),
   ])
     .then((data) => {
-      [suraData, combinedData, wordsData, morphology] = data;
+      [suraData, combinedData, wordsData, morphology,enWords] = data;
       populateSuraSelector();
       loadSelections();
     })
@@ -272,11 +273,12 @@ function formatVerseNumber(verseNumber) {
 
     for (let i = startIndex; i <= endIndex; i++) {
       const wordData = wordsData[i];
-
+      const enWordData = enWords[i];
       const span = document.createElement("span");
       span.className = "word";
       span.textContent = wordData; // Prevent XSS
       span.dataset.wordId = i;
+      span.dataset.en = enWordData;
 
       fragment.appendChild(span);
       fragment.appendChild(document.createTextNode(" "));
@@ -332,7 +334,8 @@ function formatVerseNumber(verseNumber) {
 
   // Show Morphology Popup
   function showWordMorphologyPopup(wordId, wordElement) {
-    const wordData = wordsData[wordId];
+    const wordData = wordElement.innerHTML;
+    const enData = wordElement.getAttribute('data-en');
     const wordMorphology = morphology[wordId];
 
     if (!wordData || !wordMorphology) {
@@ -349,7 +352,7 @@ function formatVerseNumber(verseNumber) {
 
     const popupContent = `
       <span id="morphology-popup-title">
-        ${wordData}
+         ${wordData}, ${enData}
         <table>
           ${tableContent}
         </table>
@@ -509,7 +512,7 @@ const pageDefaultFonts = {
   "/originalquran/": "Qahiri",
   "/originalquran/index.html": "Qahiri",
   "/originalquran/root.html": "Amiri Quran",
-  "/originalquran/quran.html": "Raqq"// Add more pages and their default fonts here
+  "/originalquran/quran.html": "Amiri Quran", // Add more pages and their default fonts here
 };
 
 // Function to update the font by applying the correct class
@@ -544,8 +547,6 @@ function loadDefaultFont() {
     localStorage.setItem(`selectedFont_${page}`, fontToApply); // Save the default font to localStorage
   }
 
-  console.log(fontToApply);
-  // Apply the font by setting the class
   updateFontClass(fontToApply);
 
   // Set the dropdown to reflect the applied font

@@ -16,9 +16,10 @@
     fetch("json/combined_quran.json").then((response) => response.json()),
     fetch("json/quran_words.json").then((response) => response.json()),
     fetch("json/quran_morphology.json").then((response) => response.json()),
+    fetch("json/en-word.json").then((response) => response.json()),
   ])
     .then((data) => {
-      [suraData, combinedData, wordsData, morphology] = data;
+      [suraData, combinedData, wordsData, morphology,enWords] = data;
       populateSuraSelector();
       loadSelections();
     })
@@ -196,11 +197,13 @@
 
     for (let i = startIndex; i <= endIndex; i++) {
       const wordData = wordsData[i];
+      const enWordData = enWords[i];
 
       const span = document.createElement("span");
       span.className = "word";
       span.textContent = wordData; // Prevent XSS
       span.dataset.wordId = i;
+      span.dataset.en = enWordData;
 
       fragment.appendChild(span);
       fragment.appendChild(document.createTextNode(" "));
@@ -256,7 +259,8 @@
 
   // Show Morphology Popup
   function showWordMorphologyPopup(wordId, wordElement) {
-    const wordData = wordsData[wordId];
+    const wordData = wordElement.innerHTML;
+    const enData = wordElement.getAttribute('data-en');
     const wordMorphology = morphology[wordId];
 
     if (!wordData || !wordMorphology) {
@@ -273,7 +277,7 @@
 
     const popupContent = `
       <span id="morphology-popup-title">
-        ${wordData}
+        ${wordData}, ${enData}
         <table>
           ${tableContent}
         </table>
@@ -488,20 +492,6 @@ document.getElementById("font-select").addEventListener("change", (event) => {
   vpage = window.location.pathname;
   localStorage.setItem(`selectedFont_${vpage}`, selectedFont); // Save the selected font to local storage
 });
-
-
-// Load the default font when the page is loaded
-//window.addEventListener("load", loadDefaultFont);
-
-
-// Initialize Font on Page Load
-document.addEventListener("DOMContentLoaded", () => {
-  vpage = window.location.pathname;
-  const savedFont = localStorage.getItem(`selectedFont_${vpage}`) || pageDefaultFonts[window.location.pathname];
-  updateFontClass(savedFont);
-});
-
-
 
 
 

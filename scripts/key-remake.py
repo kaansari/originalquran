@@ -24,5 +24,5 @@ def reassign_keys_sequentially(input_file):
 # Example usage
 if __name__ == "__main__":
     # Replace with your file path
-    input_file = "ar-hafs-pronounce.json"
+    input_file = "../data/en-wordtranslation.json"
     reassign_keys_sequentially(input_file)
