@@ -10,20 +10,6 @@
 </head>
 
 <body>
-  <div class="selector">
-    <div class="selector-left">
-      <!-- Quran icon -->
-      <a href="index.html" style="text-decoration: none;">
-        <img src="icon.png" alt="Quran Icon" />
-      </a>
-      <!-- Sura and Verse Selectors -->
-      <label for="sura-select">Sura:</label>
-      <select id="sura-select"></select>
-
-      <label for="verse-select">Verse:</label>
-      <select id="verse-select"></select>
-     
-    </div>
 
     <div class="hamburger-menu">
       <input type="checkbox" id="menu-toggle" />
@@ -34,6 +20,19 @@
       </label>
 
       <div class="menu-content">
+
+         <!-- Sura and Verse Selectors -->
+      <label for="sura-select">Sura:</label>
+      <select id="sura-select"></select>
+
+      <label for="verse-select">Verse:</label>
+      <select id="verse-select"></select>
+
+      <span>Show Translation</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="translation-toggle">
+        <span class="slider"></span>
+      </label>
         <a href="quran.html">
           <i class="fas fa-book"> </i>
         </a>
@@ -50,22 +49,16 @@
         <option value="Raqq">Raqq</option>
       </select>
 
-      <span>Show Translation</span>
-      <label class="toggle-switch">
-        <input type="checkbox" id="translation-toggle">
-        <span class="slider"></span>
-      </label>
+
         <span>Dark Theme</span>
         <label class="toggle-switch">
 
           <input type="checkbox" id="theme-toggle">
           <span class="slider"></span>
         </label>
-      </div>
-
-    </div>
 
 
+</div>
 
 
 
@@ -73,11 +66,7 @@
 
 
 
-  <div id="quran-container">
-
-
-
-  </div>
+  <div id="quran-container"></div>
 
   <script src="app_v2.js"></script>
 </body>
