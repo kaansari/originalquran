@@ -32,9 +32,9 @@
   --h1-font-size: 40px;
   --qahiri-family:'Qahiri', sans-serif;
   --amiri-family: "Amiri Quran", serif;
-  --background-color: #ffffff;
+  --background-color:#FEFFFE;
   --text-color: #333;
-  --highlight-color: yellow;
+  --highlight-color: #E5FCF5;
   --secondary-text-color: #555;
   --verse-text-color: #333;
   --selector-bg-color: white;
@@ -48,7 +48,7 @@
 .dark-theme {
   /* Dark theme overrides */
   --background-color: #1c1c1c;
-  --text-color: #ffffff;
+  --text-color: #cccccc;
   --highlight-color: #ffaa00;
   --secondary-text-color: #dddddd;
   --verse-text-color: #cccccc;
