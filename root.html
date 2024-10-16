@@ -42,7 +42,12 @@
               <input type="checkbox" id="translation-toggle">
               <span class="slider"></span>
             </label>
-    
+              <span>Dark Theme</span>
+              <label class="toggle-switch">
+      
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+              </label>
              <!-- Font Selection Dropdown -->
           </div>
     
@@ -507,6 +512,65 @@ function buildMorphologyTable(wordObjects) {
         showWordMorphologyPopup(wordId, event.target);
       }
     });
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const translationToggleBtn = document.getElementById("translation-toggle"); // Make sure this element exists
+
+  const currentTheme = localStorage.getItem("theme") || "light";
+  const currentTranslate = localStorage.getItem("translate") || "notrans";
+
+  // Apply the saved theme on page load
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggleBtn.checked = true;
+  } else {
+    themeToggleBtn.checked = false;
+  }
+console.log("saved translaton"+ currentTranslate)
+
+  // Apply the saved translation status on page load
+  if (currentTranslate === "en") {
+    showTranslation = true;
+    translationToggleBtn.checked = true; // Set the toggle button to checked if translation is enabled
+  } else {
+    showTranslation = false;
+    translationToggleBtn.checked = false; // Set it to unchecked if no translation is set
+  }
+
+  // Toggle the theme when the button is clicked
+  themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+
+    // Save the current theme in localStorage
+    const newTheme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+    localStorage.setItem("theme", newTheme);
+  });
+
+  // Toggle the translation visibility without page reload
+  translationToggleBtn.addEventListener("change", () => {
+    showTranslation = translationToggleBtn.checked; // Update based on checkbox status
+
+    // Save the current translation setting in localStorage
+    localStorage.setItem("translate", showTranslation ? "en" : "notrans");
+
+    // Toggle translation display in the DOM
+    const translationElements = document.querySelectorAll(".translation");
+    translationElements.forEach((element) => {
+      element.style.display = showTranslation ? "block" : "none";
+    });
+  });
+});
+
+
+
+
+
+
 
     </script>
 

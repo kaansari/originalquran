@@ -49,12 +49,12 @@
   /* Dark theme overrides */
   --background-color: #1c1c1c;
   --text-color: #cccccc;
-  --highlight-color: #ffaa00;
+  --highlight-color: #555;
   --secondary-text-color: #dddddd;
   --verse-text-color: #cccccc;
   --selector-bg-color: #333;
   --icon-hover-color: #ffa500;
-  --play-button-border-color: #ffffff;
+  --play-button-border-color: #333;
   --morphology-popup-bg-color: #444;
   --menu-line:#ffff;
 
@@ -232,7 +232,8 @@ h1, h2, h3 {
   max-width: 100%;
   box-sizing: border-box;
   direction: rtl;
-  background-color: #fff; /* White background for the card */
+  background-color:var(--background-color);
+  color: var(--text-color);
   padding: 20px; /* Add some padding inside the container */
   border-radius: 10px; /* Slightly rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Create a shadow */
