@@ -42,6 +42,7 @@
   --play-button-border-color: white;
   --morphology-popup-bg-color: white;
   --latin-font: "DM Sans", "Amiri", sans-serif;
+  --menu-line: #333;
 }
 
 .dark-theme {
@@ -55,6 +56,8 @@
   --icon-hover-color: #ffa500;
   --play-button-border-color: #ffffff;
   --morphology-popup-bg-color: #444;
+  --menu-line:#ffff;
+
 }
 
 body * {
@@ -96,6 +99,12 @@ h1, h2, h3 {
 .verse-text {
   text-align: right;
   flex-grow: 1;
+  color: var(--verse-text-color);
+  font-weight: normal
+}
+
+.verse-link {
+  text-align: left;
   color: var(--verse-text-color);
   font-weight: normal
 }
@@ -259,7 +268,7 @@ h1, h2, h3 {
 .menu-line {
   width: 25px;
   height: 2px;
-  background-color: #333;
+  background-color: var(--menu-line);
   margin: 4px 0;
   transition: all 0.3s ease-in-out;
 }
@@ -290,7 +299,7 @@ h1, h2, h3 {
   top: 50px;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: var(--background-color);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding: 20px;
@@ -299,9 +308,12 @@ h1, h2, h3 {
   flex-direction: column;
   transform: translateX(-100%); /* Hidden by default */
   transition: transform 0.3s ease-in-out;
+  color: var(--text-color);
 }
 
-.menu-content a  { padding: 10px;  /* Add some padding */}
+.menu-content a  { padding: 10px; 
+  text-decoration: none; 
+  color: var(--text-color);/* Add some padding */}
 
 
 #menu-toggle:checked ~ .menu-content {
@@ -367,7 +379,8 @@ input:checked + .slider:before {
     width: 100%; /* Full width for mobile */
     display: none;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 10px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   }
