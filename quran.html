@@ -10,20 +10,7 @@
 </head>
 
 <body>
-  <div class="selector">
-    <div class="selector-left">
-      <!-- Quran icon -->
-      <a href="index.html" style="text-decoration: none;">
-        <img src="icon.png" alt="Quran Icon" />
-      </a>
-      <!-- Sura and Verse Selectors -->
-      <label for="sura-select">Sura:</label>
-      <select id="sura-select"></select>
 
-      <label for="verse-select">Verse:</label>
-      <select id="verse-select"></select>
-     
-    </div>
 
     <div class="hamburger-menu">
       <input type="checkbox" id="menu-toggle" />
@@ -34,17 +21,24 @@
       </label>
 
       <div class="menu-content">
-        <a href="quran.html">
-          <i class="fas fa-book"> </i>
-        </a>
-        <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
-          <i class="fab fa-github"> </i>
-        </a>
+        <label for="sura-select">Sura:</label>
+        <select id="sura-select"></select>
+  
+        <label for="verse-select">Verse:</label>
+        <select id="verse-select"></select>
+
         <span>Show Translation</span>
         <label class="toggle-switch">
           <input type="checkbox" id="translation-toggle">
           <span class="slider"></span>
         </label>
+        <a href="index.html">
+          <i class="fas fa-book"> </i>
+        </a>
+        <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
+          <i class="fab fa-github"> </i>
+        </a>
+  
 
          <!-- Font Selection Dropdown -->
       <label for="font-select">Choose Font:</label>
@@ -67,14 +61,9 @@
 
 
 
-  </div>
-    <!-- Popup container -->
-
-<blockquote id="quran-container">
 
 
-
-</blockquote>
+<blockquote id="quran-container"></blockquote>
 
 <script src="app_quran.js">
 </script>
