@@ -93,7 +93,9 @@ h1, h2, h3 {
 }
 
 .verse-number {
-  margin-right: 5px;
+  margin-right: 0px;
+  flex-direction: row;
+  align-items: start;
 }
 
 .verse-text {

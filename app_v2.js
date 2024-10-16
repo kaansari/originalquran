@@ -83,21 +83,21 @@
       const verseDiv = document.createElement("div");
       verseDiv.className = "verse";
 
-      const verseContainer = document.createElement("div");
+      const verseContainer = document.createElement("span");
       verseContainer.className = "verse-container";
       verseContainer.id = `verse-${combinedId}`;
 
-      const verseHeader = document.createElement("div");
+      const verseHeader = document.createElement("span");
       verseHeader.className = "verse-header";
 
-      const verseNumberElem = document.createElement("h5");
+      const verseNumberElem = document.createElement("span");
       verseNumberElem.className = "verse-number";
 
       const verseLink = document.createElement("a");
       verseLink.href = "#";
       verseLink.target = "_blank";
       verseLink.className = "verse-link";
-      verseLink.textContent = localVerseNumber;
+      verseLink.textContent = "("+localVerseNumber+")";
       verseLink.addEventListener("click", (e) => {
         e.preventDefault();
         navigateToExternalVerse(localVerseNumber, suraNumber);
@@ -111,9 +111,8 @@
       playButton.setAttribute("aria-label", `Play Verse ${localVerseNumber}`);
       // Play button handled via event delegation
 
-      verseHeader.appendChild(verseNumberElem);
-      verseHeader.appendChild(playButton);
-      verseContainer.appendChild(verseHeader);
+      verseContainer.appendChild(playButton);
+ 
 
       const verseTransText = document.createElement("div");
       verseTransText.id = combinedId;
@@ -131,6 +130,7 @@
       verseText.className = "arabic verse-text";
       verseText.innerHTML = constructedArabic; // Ensure sanitization
 
+      verseText.appendChild(verseNumberElem);
       verseContainer.appendChild(verseText);
       verseDiv.appendChild(verseContainer);
       verseDiv.appendChild(verseTransText);
