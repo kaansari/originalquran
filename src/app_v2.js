@@ -62,6 +62,7 @@
     const sura = suraData[suraNumber];
     const container = document.getElementById("quran-container");
     container.innerHTML = `<h3 class="arabic">${suraNumber}. ${sura.name}</h3>`;
+    const currentTranslate = localStorage.getItem("translate") || "notrans";
 
     const fragment = document.createDocumentFragment();
     let verseToScroll = null;
@@ -117,7 +118,12 @@
       const verseTransText = document.createElement("div");
       verseTransText.id = combinedId;
       verseTransText.className = "translation";
-      verseTransText.style.display = "none";
+      if (currentTranslate == "en")
+      {verseTransText.style.display = "block";}
+      else{
+        verseTransText.style.display = "none";
+      }
+      
       verseTransText.innerHTML = verseData.en; // English translation
 
       const verseText = document.createElement("div");
@@ -488,7 +494,6 @@ function loadDefaultFont() {
 document.getElementById("font-select").addEventListener("change", (event) => {
   const selectedFont = event.target.value;
   updateFontClass(selectedFont);
-  console.log("saving font"+selectedFont);
   vpage = window.location.pathname;
   localStorage.setItem(`selectedFont_${vpage}`, selectedFont); // Save the selected font to local storage
 });
@@ -509,6 +514,7 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     themeToggleBtn.checked = false;
   }
+console.log("saved translaton"+ currentTranslate)
 
   // Apply the saved translation status on page load
   if (currentTranslate === "en") {
