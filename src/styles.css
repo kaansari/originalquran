@@ -38,6 +38,7 @@
   --secondary-text-color: #555;
   --verse-text-color: #333;
   --selector-bg-color: white;
+  --broder-color : #555;
   --icon-hover-color: #007bff;
   --play-button-border-color: white;
   --morphology-popup-bg-color: white;
@@ -50,6 +51,7 @@
   --background-color: #1c1c1c;
   --text-color: #cccccc;
   --highlight-color: #555;
+  --broder-color : #555;
   --secondary-text-color: #dddddd;
   --verse-text-color: #cccccc;
   --selector-bg-color: #333;
@@ -158,27 +160,31 @@ h1, h2, h3 {
 
 /* Selector styling */
 .selector {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--selector-bg-color);
-  z-index: 1000;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+ padding: 30px;
+  
 }
 
-.selector-right a {
+/* Dark theme for the select element */
+select {
+  background-color:  var(--selector-bg-color);
   color: var(--text-color);
-  transition: color 0.3s;
+  border: 1px solid var(--broder-color); /* Darker border */
+  padding: 5px;
+  border-radius: 4px;
 }
 
-.selector-right a:hover {
-  color: var(--icon-hover-color);
+/* Style the dropdown options */
+select option {
+  background-color: var(--selector-bg-color);; /* Dark background for options */
+  color:  var(--text-color); /* Light text */
 }
+
+/* Optionally, change on hover or focus */
+select:focus {
+  outline: none;
+  border-color: var(--highlight-color); /* Add custom highlight color */
+}
+
 
 .play-button {
   background-color: transparent;
