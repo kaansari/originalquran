@@ -376,6 +376,13 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+
+.verse-data{
+  max-height: 80vh; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+
+  }
 /* Responsive media queries for mobile */
 @media (max-width: 350px) {
   .menu-icon {
