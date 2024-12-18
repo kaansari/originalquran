@@ -90,6 +90,17 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
+
+.book-container {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border: 10px solid #8b5a2b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
 .verse-header {
   display: flex;
   align-items: center;
@@ -304,7 +315,7 @@ select:focus {
 
 /* Menu content styles */
 .menu-content {
-  display: none;
+  display: block;
   position: fixed;
   top: 60px;
   padding: 10px;
@@ -317,7 +328,7 @@ select:focus {
   width: 50%; /* Ensure full width */
   border-radius: 5px;
   flex-direction: column;
-  transform: translateX(-100%); /* Hidden by default */
+  transform: translateX(-100%);  /*Hidden by default */
   transition: transform 0.3s ease-in-out;
   color: var(--text-color);
 }

@@ -61,6 +61,7 @@
   function displaySura(suraNumber, targetVerse = null) {
     const sura = suraData[suraNumber];
     const container = document.getElementById("quran-container");
+    container.className = "book-container";
     container.innerHTML = `<h3 class="arabic">${suraNumber}. ${sura.name}</h3>`;
     const currentTranslate = localStorage.getItem("translate") || "notrans";
 
@@ -105,13 +106,13 @@
 
       verseNumberElem.appendChild(verseLink);
 
-      const playButton = document.createElement("button");
-      playButton.className = "play-button";
-      playButton.setAttribute("data-audio-src", audioSrc);
-      playButton.setAttribute("aria-label", `Play Verse ${localVerseNumber}`);
+     // const playButton = document.createElement("button");
+    //  playButton.className = "play-button";
+     // playButton.setAttribute("data-audio-src", audioSrc);
+    //  playButton.setAttribute("aria-label", `Play Verse ${localVerseNumber}`);
       // Play button handled via event delegation
 
-      verseContainer.appendChild(playButton);
+     // verseContainer.appendChild(playButton);
  
 
       const verseTransText = document.createElement("div");
@@ -137,6 +138,7 @@
       fragment.appendChild(verseDiv);
 
       if (targetVerse && parseInt(targetVerse) === verseNumber) {
+        verseDiv.style.background = "rgb(2 174 37)" ;
         verseToScroll = verseDiv;
       }
     }

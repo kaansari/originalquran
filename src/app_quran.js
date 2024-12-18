@@ -62,7 +62,7 @@
 function displaySura(suraNumber, targetVerse = null) {
     const sura = suraData[suraNumber];
     const container = document.getElementById("quran-container");
-    container.className = "verse-text";
+    container.className = "verse-text book-container";
     container.innerHTML = `<h3>${suraNumber}. ${sura.name}</h3>`;
   
     let verseToScroll = null; // To store the element we need to scroll to
@@ -99,6 +99,7 @@ function displaySura(suraNumber, targetVerse = null) {
   
       // If targetVerse is provided and matches the current global verse number
       if (targetVerse && parseInt(targetVerse) === verseNumber) {
+        verseDiv.style.background = "rgb(2 174 37)" ;
         verseToScroll = verseDiv;
       }
     }
