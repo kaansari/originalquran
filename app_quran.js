@@ -99,7 +99,7 @@ function displaySura(suraNumber, targetVerse = null) {
   
       // If targetVerse is provided and matches the current global verse number
       if (targetVerse && parseInt(targetVerse) === verseNumber) {
-        verseDiv.style.background = "rgb(2 174 37)" ;
+        verseDiv.style.background = "#66FFFF" ;
         verseToScroll = verseDiv;
       }
     }

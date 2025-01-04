@@ -138,7 +138,7 @@
       fragment.appendChild(verseDiv);
 
       if (targetVerse && parseInt(targetVerse) === verseNumber) {
-        verseDiv.style.background = "rgb(2 174 37)" ;
+        verseDiv.style.background = "#66FFFF" ;
         verseToScroll = verseDiv;
       }
     }
