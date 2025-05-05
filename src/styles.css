@@ -248,29 +248,29 @@ select:focus {
 .letter-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: right;
   gap: 5px;
   padding: 5px;
   max-width: 100%;
   box-sizing: border-box;
-  direction: rtl;
   background-color:var(--background-color);
   color: var(--text-color);
-  padding: 20px; /* Add some padding inside the container */
   border-radius: 10px; /* Slightly rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Create a shadow */
   margin: 0 auto; /* Optional: center the container */
+
 
 }
 
 .letter-container > div {
   flex: 0 1 auto;
   min-width: 50px;
-  text-align: center;
   padding: 5px;
   background-color:var(--highlight-color);
   border-radius: 5px;
   cursor: pointer;
+  direction: rtl;
+  text-align: right;
 }
 
 /* Menu */
