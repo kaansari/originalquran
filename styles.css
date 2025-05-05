@@ -92,13 +92,17 @@ h1, h2, h3 {
 
 
 .book-container {
-  width: 80%;
-  max-width: 600px;
+
   padding: 10px;
-  border: 10px solid #8b5a2b;
+  border: 1px solid #8b5a2b;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+  direction: rtl; /* optional: ensures text flows right-to-left */
 }
+
 
 
 .verse-header {
