@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@700&display=block");
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+@font-face {
+  font-family: "Raqq";
+  src: url("fonts/Raqq.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Qahiri';
+  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
+
+}
+
+@font-feature-values "Raqq" {
+  @stylistic {
+      alt-one: 1;
+      alt-two: 2
+  }
+
+  @styleset {
+      dotless: 1
+  }
+}
+
+:root {
+  --kufi-family: "Raqq", serif;
+  --kufi-color: #333;
+  --heading-family: "Reem Kufi", sans-serif;
+  --reem-family: "Reem Kufi", sans-serif;
+  --h1-font-size: 40px;
+  --qahiri-family:'Qahiri', sans-serif;
+  --amiri-family: "Amiri Quran", serif;
+  --background-color:#FEFFFE;
+  --text-color: #333;
+  --highlight-color: #E5FCF5;
+  --secondary-text-color: #555;
+  --verse-text-color: #333;
+  --selector-bg-color: white;
+  --broder-color : #555;
+  --icon-hover-color: #007bff;
+  --play-button-border-color: white;
+  --morphology-popup-bg-color: white;
+  --latin-font: "DM Sans", "Amiri", sans-serif;
+  --menu-line: #333;
+}
+
+.dark-theme {
+  /* Dark theme overrides */
+  --background-color: #1c1c1c;
+  --text-color: #cccccc;
+  --highlight-color: #555;
+  --broder-color : #555;
+  --secondary-text-color: #dddddd;
+  --verse-text-color: #cccccc;
+  --selector-bg-color: #333;
+  --icon-hover-color: #ffa500;
+  --play-button-border-color: #333;
+  --morphology-popup-bg-color: #444;
+  --menu-line:#ffff;
+
+}
+
+body * {
+  font-palette: dark
+}
+
+
+/* Apply the theme variables */
+body {
+  font-family: var(--latin-fonts);
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+  color: var(--verse-text-color);
+}
+
+/* Verse related styling */
+.verse-container {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.book-container {
+
+  padding: 10px;
+  border: 1px solid #8b5a2b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+  direction: rtl; /* optional: ensures text flows right-to-left */
+}
+
+
+
+.verse-header {
+  display: flex;
+  align-items: center;
+}
+
+.verse-number {
+  margin-right: 0px;
+  flex-direction: row;
+  align-items: start;
+}
+
+.verse-text {
+  text-align: right;
+  flex-grow: 1;
+  color: var(--verse-text-color);
+  font-weight: normal
+}
+
+.verse-link {
+  text-align: left;
+  color: var(--verse-text-color);
+  font-weight: normal
+}
+
+.arabic {
+  font-family:var(--qahiri-family); 
+  word-spacing: 10px;
+  font-size: 24px;
+  font-size: 1.5em;
+  direction: rtl;
+  text-align: right;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+
+.font-raqq {
+  font-family: var(--kufi-family);  /* Applies the Raqq font */
+  font-feature-settings: 'ss01' 1;
+}
+
+.font-qahiri {
+  font-family: var(--qahiri-family) /* Applies the Qahiri font */
+}
+
+.font-amiri {
+  font-family: var(--amiri-family) /* Applies the Amiri Quran font */
+}
+
+.font-reem {
+  font-family: var(--reem-family) /* Applies the Amiri Quran font */
+}
+
+.arabic-modern {
+  font-family: var(--amiri-family);
+  font-size: 1.5em;
+  direction: rtl;
+  text-align: right;
+  word-spacing: 10px;
+  color: var(--text-color);
+}
+
+.translation {
+  font-family: var(--latin-font);
+  font-size: 12px;
+  color: var(--secondary-text-color);
+}
+
+/* Selector styling */
+.selector {
+ padding: 30px;
+  
+}
+
+/* Dark theme for the select element */
+select {
+  background-color:  var(--selector-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--broder-color); /* Darker border */
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Style the dropdown options */
+select option {
+  background-color: var(--selector-bg-color);; /* Dark background for options */
+  color:  var(--text-color); /* Light text */
+}
+
+/* Optionally, change on hover or focus */
+select:focus {
+  outline: none;
+  border-color: var(--highlight-color); /* Add custom highlight color */
+}
+
+
+.play-button {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+.play-button::before {
+  content: '►';
+  /* Play symbol */
+  font-size: 12px;
+  /* Font size for the play symbol */
+  color: var(--text-color);
+  /* Play symbol color */
+}
+
+
+
+.morphology-popup {
+  position: absolute;
+  background-color: var(--morphology-popup-bg-color);
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 12px;
+}
+
+
+.highlight {
+  background-color: var(--highlight-color);
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.letter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 5px;
+  padding: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color:var(--background-color);
+  color: var(--text-color);
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Create a shadow */
+  margin: 0 auto; /* Optional: center the container */
+
+
+}
+
+.letter-container > div {
+  flex: 0 1 auto;
+  min-width: 50px;
+  padding: 5px;
+  background-color:var(--highlight-color);
+  border-radius: 5px;
+  cursor: pointer;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Menu */
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  position: fixed;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.menu-line {
+  width: 25px;
+  height: 2px;
+  background-color: var(--menu-line);
+  margin: 4px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Make the lines thinner and shorter when transformed into 'X' */
+#menu-toggle:checked + .menu-icon .menu-line:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+  width: 20px;  /* Reduce the width of the line */
+}
+
+#menu-toggle:checked + .menu-icon .menu-line:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon .menu-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+  width: 20px;  /* Reduce the width of the line */
+}
+
+/* Menu content styles */
+.menu-content {
+  display: block;
+  position: fixed;
+  top: 60px;
+  padding: 10px;
+  padding-right: 10px;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 50%; /* Ensure full width */
+  border-radius: 5px;
+  flex-direction: column;
+  transform: translateX(-100%);  /*Hidden by default */
+  transition: transform 0.3s ease-in-out;
+  color: var(--text-color);
+}
+
+.menu-content a  { padding: 10px; 
+  text-decoration: none; 
+  color: var(--text-color);/* Add some padding */}
+
+
+#menu-toggle:checked ~ .menu-content {
+  display: flex;
+  transform: translateX(0); /* Slide in from the left */
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+.verse-data{
+  max-height: 80vh; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+
+  }
+/* Responsive media queries for mobile */
+@media (max-width: 350px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-content {
+    position: fixed;
+    top: 50px;
+    left: 0; /* Ensure it starts from the left */
+    right: 0;
+    width: 100%; /* Full width for mobile */
+    display: none;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  #menu-toggle:checked ~ .menu-content {
+    display: flex;
+  }
+
+  .menu-content a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  /* Smaller toggle switch for mobile */
+  .toggle-switch {
+    width: 40px;
+    height: 20px;
+  }
+
+  .slider:before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .popup-content {
+    max-width: 85%;
+    max-height: 85%;
+  }
+}
+
+/* Even smaller screens (phones under 480px wide) */
+@media (max-width: 300px) {
+  .menu-content {
+    left: 0;
+    right: 0;
+    width: 100%; /* Ensure full width */
+  }
+
+  .menu-content a {
+    font-size: 16px;
+  }
+
+  .toggle-switch {
+    width: 35px;
+    height: 18px;
+  }
+
+  .slider:before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .popup-content {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+}
+
+
+
+
