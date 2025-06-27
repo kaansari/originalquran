@@ -80,6 +80,40 @@ h1, h2, h3 {
   color: var(--verse-text-color);
 }
 
+
+.page {
+  height: 100%;
+  line-height: 64px;
+  color: #888;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+
+    /* Top solid blue line */
+    #007bff 0px, #007bff 1px, white 1px, white 14px,
+
+    /* First dashed middle line */
+    transparent 14px,
+    #aaa 14px, #aaa 15px, transparent 15px, transparent 29px,
+
+    /* Second dashed middle line */
+    transparent 29px,
+    #aaa 29px, #aaa 30px, transparent 30px, transparent 43px,
+
+    /* Bottom solid blue line */
+    #007bff 43px, #007bff 44px, white 44px, white 64px
+  );
+  background-repeat: repeat-y;
+  background-position: left 11px; /* tweak for vertical alignment */
+
+}
+
+.row {
+  padding: 0;
+  color: #aaa;
+}
+
+
 /* Verse related styling */
 .verse-container {
   display: flex;
@@ -132,8 +166,7 @@ h1, h2, h3 {
 .arabic {
   font-family:var(--qahiri-family); 
   word-spacing: 10px;
-  font-size: 24px;
-  font-size: 1.5em;
+  font-size: 40px;
   direction: rtl;
   text-align: right;
   font-style: italic;
@@ -472,7 +505,14 @@ input:checked + .slider:before {
   }
 
 }
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 
+
+}
 
 
 

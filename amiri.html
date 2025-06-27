@@ -12,6 +12,48 @@
 html, body {
   height: 100%;
 }
+.page {
+  height: 100%;
+  line-height: 64px;
+  color: #888;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+
+    /* Top solid blue line */
+    #007bff 0px, #007bff 1px, white 1px, white 14px,
+
+    /* First dashed middle line */
+    transparent 14px,
+    #aaa 14px, #aaa 15px, transparent 15px, transparent 29px,
+
+    /* Second dashed middle line */
+    transparent 29px,
+    #aaa 29px, #aaa 30px, transparent 30px, transparent 43px,
+
+    /* Bottom solid blue line */
+    #007bff 43px, #007bff 44px, white 44px, white 64px
+  );
+  background-repeat: repeat-y;
+  background-position: left 25px; /* tweak for vertical alignment */
+}
+
+.row {
+  font-size: 40px;
+  color: #aaa;
+}
+
+
+
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+
+}
 </style>
 
 </head>
@@ -21,7 +63,7 @@ html, body {
         <div class="row arabic">
     ا ب ح ذ ر س ص ط غ ف ق ك ل م ن ه و ي  
     </div>
-    <div class="arabic row">
+    <div class="row arabic">
       بسم الله الرحمن الرحيم
     الحمد لله رب العلمين  
     الرحمن الرحيم
