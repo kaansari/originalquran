@@ -9,40 +9,42 @@
   <link rel="stylesheet" href="writing.css">
 
 <style>
-.paper {
-  width: 8.5in;
-  height: 11in;
-  margin: auto;
-  border: 1px solid #ccc;
-  padding: 38px;
-  box-sizing: border-box;
+html, body {
+  height: 100%;
+}
+.page {
+  height: 100%;
+  line-height: 64px;
+  color: #888;
+
   background-image: repeating-linear-gradient(
     to bottom,
 
     /* Top solid blue line */
-    #007bff 0px, #007bff 1px, white 1px, white 10px,
+    #007bff 0px, #007bff 1px, white 1px, white 14px,
 
     /* First dashed middle line */
-    transparent 10px,
-    #aaa 10px, #aaa 11px, transparent 11px, transparent 20px,
+    transparent 14px,
+    #aaa 14px, #aaa 15px, transparent 15px, transparent 29px,
 
     /* Second dashed middle line */
-    transparent 20px,
-    #aaa 20px, #aaa 21px, transparent 21px, transparent 30px,
+    transparent 29px,
+    #aaa 29px, #aaa 30px, transparent 30px, transparent 43px,
 
     /* Bottom solid blue line */
-    #007bff 30px, #007bff 31px, white 31px, white 48px
+    #007bff 43px, #007bff 44px, white 44px, white 64px
   );
+  background-repeat: repeat-y;
+  background-position: left 10px; /* tweak for vertical alignment */
 }
 
 .row {
-  height: 48px;
-  line-height: 48px;
-  font-size: 30px;
-
-  padding-left: 20px;
-  color: #888;
+  font-size: 40px;
+  color: #aaa;
 }
+
+
+
 
 @media print {
   * {
@@ -50,28 +52,26 @@
     print-color-adjust: exact;
   }
 
-  .paper {
-    border: none;
-  }
+
 }
 </style>
 
 </head>
 
 <body>
-<div class="paper">
-  <div class="row arabic">
- ا ب ح ذ ر س ص ط غ ف ق ك ل م ن ه و ي  
-</div>
-<div class="row arabic">
-  بسم الله الرحمن الرحيم
-الحمد لله رب العلمين  
-الرحمن الرحيم
-ملك يوم الدين
-اياك نعبد واياك نستعين
-اهدنا الصرط المستقيم
-صرط الذين انعمت عليهم غير المغضوب عليهم ولا الضالين
-</div>
-  
+<div class="page">
+        <div class="row arabic">
+    ا ب ح ذ ر س ص ط غ ف ق ك ل م ن ه و ي  
+    </div>
+    <div class="row arabic">
+      بسم الله الرحمن الرحيم
+    الحمد لله رب العلمين  
+    الرحمن الرحيم
+    ملك يوم الدين
+    اياك نعبد واياك نستعين
+    اهدنا الصرط المستقيم
+    صرط الذين انعمت عليهم غير المغضوب عليهم ولا الضالين
+    </div>
+  </div>
 </body> 
 </html>
