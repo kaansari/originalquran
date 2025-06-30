@@ -63,7 +63,7 @@
     container.className = "page";
     container.innerHTML = `<div class="arabic row"> ${suraNumber}. ${sura.name}:  بسم الله الرحمن الرحيم</div>`;
     container.innerHTML += `<div class="row arabic">
-    ا ب ح د س ص ط غ ف ق ك ل م ن ه و ي  
+    ا ب ح د ر س ص ط غ ف ق ك ل م ن ه و ي  
     </div>`;
 
 
