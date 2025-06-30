@@ -184,7 +184,7 @@ h1, h2, h3 {
 
 
 .book-container {
-
+  padding-top: 20px;
   padding: 10px;
   border: 1px solid #8b5a2b;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -263,10 +263,20 @@ h1, h2, h3 {
 }
 
 /* Selector styling */
-.selector {
- padding: 30px;
-  
+#selectors {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10; /* Ensure it stays on top */
+  background: var(--background-color);
+  padding: 10px;
 }
+
+#quran-container {
+  position: relative;
+  z-index: 1;
+}
+
+
 
 /* Dark theme for the select element */
 select {
