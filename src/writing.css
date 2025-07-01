@@ -95,32 +95,6 @@
 }
 
 
-.raqq-theme{
-
-  --kufi-family: "Raqq", serif;
-  --kufi-color:  #aaa;
-  --heading-family: "Reem Kufi", sans-serif;
-  --reem-family: "Reem Kufi", sans-serif;
-  --h1-font-size: 40px;
-  --qahiri-family:'Qahiri', sans-serif;
-  --amiri-family: "Amiri Quran", serif;
-  --background-color:#FEFFFE;
-  --text-color: #aaa;
-  --highlight-color: #E5FCF5;
-  --secondary-text-color: #555;
-  --verse-text-color: color: #aaa;;
-  --selector-bg-color: white;
-  --broder-color : #555;
-  --icon-hover-color: #007bff;
-  --play-button-border-color: white;
-  --morphology-popup-bg-color: white;
-  --latin-font: "DM Sans", "Amiri", sans-serif;
-  --menu-line: #333;
-  --background-position: left 15px;
-  --row-font-size: 30px;
-
-
-}
 
 body * {
   font-palette: dark
@@ -134,13 +108,14 @@ html, body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
-  padding: 20px;
+  padding: 5px;
 }
 
 h1, h2, h3 {
   color: var(--verse-text-color);
 }
 .page {
+
   min-height: 100vh;
   line-height: 64px;
   color: #888;
@@ -184,7 +159,7 @@ h1, h2, h3 {
 
 
 .book-container {
-  padding-top: 20px;
+
   padding: 10px;
   border: 1px solid #8b5a2b;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -262,21 +237,12 @@ h1, h2, h3 {
   color: var(--secondary-text-color);
 }
 
-/* Selector styling */
+
 #selectors {
   margin-bottom: 20px;
-  position: relative;
-  z-index: 10; /* Ensure it stays on top */
   background: var(--background-color);
-  padding: 10px;
+  padding: 20px;
 }
-
-#quran-container {
-  position: relative;
-  z-index: 1;
-}
-
-
 
 /* Dark theme for the select element */
 select {
