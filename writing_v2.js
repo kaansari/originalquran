@@ -61,12 +61,10 @@
     const sura = suraData[suraNumber];
     const container = document.getElementById("quran-container");
     container.className = "page";
-    container.innerHTML = `<div class="arabic row"> ${suraNumber}. ${sura.name}:  بسم الله الرحمن الرحيم</div>`;
-    container.innerHTML += `<div class="row arabic">
-    ا ب ح د ر س ص ط غ ف ق ك ل م ن ه و ي  
-    </div>`;
-
-
+    container.innerHTML = `<div class="arabic row"> ${suraNumber}. ${sura.name}</div>`;
+    if (suraNumber !=1){
+    container.innerHTML += `<div class="arabic row">بسم الله الرحمن الرحيم</div>`;
+    }
     const fragment = document.createDocumentFragment();
     let verseToScroll = null;
 
