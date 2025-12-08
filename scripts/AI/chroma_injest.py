@@ -1,36 +1,26 @@
 import json
-import chromadb
+from chromadb import Client
 from chromadb.config import Settings
 
-# Load your file
-with open("../../src/json/quran_embeds.json", "r", encoding="utf-8") as f:
+# Use local persistent DB
+client = Client(Settings(
+    chroma_api_impl="local",
+    persist_directory="./chroma-db"
+))
+collection = client.get_or_create_collection("quran")
+
+# Load your verse file
+with open("/home/kaansari/Work/originalquran/src/json/quran_embeddings.json", "r") as f:
     data = json.load(f)
 
-# Initialize Chroma (local folder: ./quran_db)
-client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet",
-                                  persist_directory="./quran_db"))
-
-# Create a collection
-collection = client.get_or_create_collection(
-    name="quran",
-    embedding_function=None  # we already have embeddings
-)
-
 ids = []
-embeds = []
-metadatas = []
+documents = []
+embeddings = []
 
-for verse_id, info in data.items():
+for verse_id, row in data.items():
     ids.append(verse_id)
-    embeds.append(info["embedding"])
-    metadatas.append({"arabic": info["arabic"]})
+    documents.append(row["arabic"])
+    embeddings.append(row["embedding"])
 
-# Insert data
-collection.add(
-    ids=ids,
-    embeddings=embeds,
-    metadatas=metadatas
-)
-
-# Save DB
-print("Done! Vector DB created at ./quran_db")
+collection.add(ids=ids, embeddings=embeddings, documents=documents)
+client.persist()
