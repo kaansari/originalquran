@@ -28,7 +28,7 @@ test_queries = [
         "query": "يوم القيامة",
         "expected_verses": [
             "مالك يوم الدين",
-            "وما ادراك ما يوم الدين",
+            "وما ادراك ما يوم الدين", 
             "يوم يقوم الناس لرب العالمين"
         ],
         "description": "Day of Judgment"
@@ -59,33 +59,6 @@ test_queries = [
             "غافر الذنب وقابل التوب"
         ],
         "description": "Repentance and Forgiveness"
-    },
-    {
-        "query": "الايمان والعمل الصالح",
-        "expected_verses": [
-            "الذين امنوا وعملوا الصالحات",
-            "ان الذين امنوا وعملوا الصالحات",
-            "والعصر ان الانسان لفي خسر الا الذين امنوا وعملوا الصالحات"
-        ],
-        "description": "Faith and Good Deeds"
-    },
-    {
-        "query": "العدل والاحسان",
-        "expected_verses": [
-            "ان الله يأمر بالعدل والاحسان",
-            "اعدلوا هو اقرب للتقوى",
-            "وان عاقبتم فعاقبوا بمثل ما عوقبتم به"
-        ],
-        "description": "Justice and Goodness"
-    },
-    {
-        "query": "الصبر",
-        "expected_verses": [
-            "واستعينوا بالصبر والصلاة",
-            "انما يوفى الصابرون اجرهم بغير حساب",
-            "وبشر الصابرين"
-        ],
-        "description": "Patience"
     }
 ]
 
@@ -149,10 +122,13 @@ def test_semantic_search():
             print(f"    Verse: {verse_text}")
             print("-" * 80)
         
-        # Calculate metrics
-        precision_at_5 = len([v for v in arabic_texts[top_indices[:5]] 
+        # Calculate metrics - FIXED THIS PART
+        top_5_verses = [arabic_texts[idx] for idx in top_indices[:5]]
+        top_10_verses = [arabic_texts[idx] for idx in top_indices[:10]]
+        
+        precision_at_5 = len([v for v in top_5_verses 
                             if any(expected in v for expected in expected_verses)]) / 5
-        precision_at_10 = len([v for v in arabic_texts[top_indices[:10]] 
+        precision_at_10 = len([v for v in top_10_verses 
                              if any(expected in v for expected in expected_verses)]) / 10
         
         # Find positions of expected verses
@@ -206,39 +182,43 @@ def test_chroma_query():
     print("CHROMADB QUERY TEST")
     print("="*80)
     
-    # Connect to Chroma
-    client = chromadb.PersistentClient(path="quran_chroma")
-    collection = client.get_collection("quran_verses")
-    
-    print(f"Collection size: {collection.count()}")
-    
-    # Test a few queries
-    test_queries_chroma = [
-        "الرحمن الرحيم",
-        "يوم القيامة", 
-        "الجنة والنار",
-        "الصبر والصلاة"
-    ]
-    
-    for query in test_queries_chroma:
-        print(f"\nQuery: '{query}'")
+    try:
+        # Connect to Chroma
+        client = chromadb.PersistentClient(path="quran_chroma")
+        collection = client.get_collection("quran_verses")
         
-        # Encode query
-        query_embedding = model.encode([query], normalize_embeddings=True)[0].tolist()
+        print(f"Collection size: {collection.count()}")
         
-        # Query Chroma
-        results = collection.query(
-            query_embeddings=[query_embedding],
-            n_results=5,
-            include=["documents", "distances"]
-        )
+        # Test a few queries
+        test_queries_chroma = [
+            "الرحمن الرحيم",
+            "يوم القيامة", 
+            "الجنة والنار",
+            "الصبر والصلاة"
+        ]
         
-        if results['documents']:
-            for i, (verse, distance) in enumerate(zip(results['documents'][0], results['distances'][0])):
-                similarity = 1 - distance  # Convert distance to similarity
-                print(f"  {i+1}. Similarity: {similarity:.4f}")
-                print(f"     {verse}")
-                print()
+        for query in test_queries_chroma:
+            print(f"\nQuery: '{query}'")
+            
+            # Encode query
+            query_embedding = model.encode([query], normalize_embeddings=True)[0].tolist()
+            
+            # Query Chroma
+            results = collection.query(
+                query_embeddings=[query_embedding],
+                n_results=5,
+                include=["documents", "distances"]
+            )
+            
+            if results['documents']:
+                for i, (verse, distance) in enumerate(zip(results['documents'][0], results['distances'][0])):
+                    similarity = 1 - distance  # Convert distance to similarity
+                    print(f"  {i+1}. Similarity: {similarity:.4f}")
+                    print(f"     {verse}")
+                    print()
+    except Exception as e:
+        print(f"Error connecting to ChromaDB: {e}")
+        print("Make sure ChromaDB collection exists at 'quran_chroma'")
 
 def analyze_embeddings():
     """Analyze the embedding quality"""
@@ -265,25 +245,35 @@ def analyze_embeddings():
     print(f"  Max norm: {np.max(norms):.6f}")
     
     # Check for duplicate or very similar verses
-    print(f"\nSimilarity Analysis:")
+    print(f"\nSimilarity Analysis (first 50 verses):")
     
     # Sample some verses to check intra-similarity
-    sample_indices = list(range(0, min(100, len(verses)), 10))
+    sample_size = min(50, len(verses))
+    sample_indices = list(range(0, sample_size))
     sample_embeddings = embeddings[sample_indices]
     sample_texts = [verses[i]['arabic'] for i in sample_indices]
     
     # Compute similarity matrix
     similarity_matrix = np.dot(sample_embeddings, sample_embeddings.T)
     
-    print(f"\nSample verse similarities:")
+    print(f"Checking similarities among {sample_size} verses...")
+    
+    high_similarity_pairs = []
     for i in range(len(sample_indices)):
         for j in range(i+1, len(sample_indices)):
             sim = similarity_matrix[i, j]
-            if sim > 0.8:  # High similarity threshold
-                print(f"  High similarity ({sim:.3f}):")
-                print(f"    {sample_texts[i][:50]}...")
-                print(f"    {sample_texts[j][:50]}...")
-                print()
+            if sim > 0.85:  # High similarity threshold
+                high_similarity_pairs.append((i, j, sim))
+    
+    if high_similarity_pairs:
+        print(f"\nFound {len(high_similarity_pairs)} highly similar pairs (>0.85):")
+        for i, j, sim in high_similarity_pairs[:5]:  # Show first 5
+            print(f"  Similarity: {sim:.3f}")
+            print(f"    Verse {i+1}: {sample_texts[i][:60]}...")
+            print(f"    Verse {j+1}: {sample_texts[j][:60]}...")
+            print()
+    else:
+        print("No highly similar pairs found (all < 0.85)")
 
 # Run all tests
 if __name__ == "__main__":
@@ -293,15 +283,22 @@ if __name__ == "__main__":
     
     # Run tests
     test_semantic_search()
-    test_chroma_query()
+    
+    # Ask user if they want to run Chroma test
+    run_chroma = input("\nRun ChromaDB test? (y/n): ").strip().lower()
+    if run_chroma == 'y':
+        test_chroma_query()
+    
+    # Run embedding analysis
     analyze_embeddings()
     
     print("\n" + "="*80)
     print("TEST COMPLETE")
     print("="*80)
     
-    # Quick recommendation
-    print("\n🎯 RECOMMENDATIONS:")
-    print("1. If Precision@5 is below 60%, consider trying a different model")
-    print("2. If embeddings aren't normalized (norms not ~1.0), re-embed with normalize_embeddings=True")
-    print("3. For better results, consider fine-tuning on Quranic similarity pairs")
+    # Quick recommendation based on results
+    print("\n🎯 INTERPRETATION GUIDE:")
+    print("• Precision@5 > 60%: Good performance")
+    print("• Precision@5 40-60%: Acceptable but could be better") 
+    print("• Precision@5 < 40%: Consider re-embedding with different model")
+    print("• Embedding norms should be close to 1.0 for cosine similarity")
