@@ -18,7 +18,7 @@ for key, value in tqdm(verses.items(), desc="Processing verses"):
     arabic_text = value["arabic"]
 
     # Generate embedding (Arabic text only)
-    embedding = model.encode([arabic_text], convert_to_numpy=True)[0].tolist()
+    embedding = model.encode([arabic_text], convert_to_numpy=True,batch_size=64, show_progress_bar=True)[0].tolist()
 
     # Append to output
     output.append({
