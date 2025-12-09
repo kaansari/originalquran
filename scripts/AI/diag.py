@@ -39,9 +39,9 @@ model = SentenceTransformer('intfloat/multilingual-e5-large')
 
 # Test cases
 test_cases = [
-    ("يوم القيامة", "مالك يوم الدين"),
-    ("الصلاة", "اقم الصلاة"), 
-    ("الجنة", "جنات تجري من تحتها الانهار"),
+    ("Day of Judgement", "مالك يوم الدين"),
+    ("prayer", "اقم الصلاة"), 
+    ("heaven", "جنات تجري من تحتها الانهار"),
 ]
 
 for query, target in test_cases:
