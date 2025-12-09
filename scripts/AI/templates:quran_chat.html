@@ -1,0 +1,272 @@
+<!-- filename: templates/quran_chat.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساعد القرآن الكريم</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a5e63 0%, #2d8f85 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .chat-container {
+            padding: 20px;
+            height: 500px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            max-width: 80%;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .user-message {
+            background: #e3f2fd;
+            margin-left: auto;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .bot-message {
+            background: white;
+            margin-right: auto;
+            border-bottom-left-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+        }
+        
+        #user-input {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        #user-input:focus {
+            border-color: #2d8f85;
+        }
+        
+        #send-btn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #2d8f85 0%, #1a5e63 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        
+        #send-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .verse {
+            background: #f0f8ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-right: 4px solid #2d8f85;
+        }
+        
+        .similarity {
+            color: #2d8f85;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .metadata {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        .typing-indicator {
+            display: none;
+            padding: 10px;
+        }
+        
+        .typing-dots {
+            display: inline-block;
+        }
+        
+        .typing-dots span {
+            animation: blink 1.4s infinite;
+            animation-fill-mode: both;
+            background: #2d8f85;
+            border-radius: 50%;
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            margin: 0 2px;
+        }
+        
+        .typing-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .typing-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🕋 مساعد القرآن الكريم</h1>
+            <p>اسأل عن أي موضوع وسأجد لك الآيات القرآنية المناسبة</p>
+        </div>
+        
+        <div class="chat-container" id="chat-container">
+            <div class="message bot-message">
+                السلام عليكم ورحمة الله وبركاته<br>
+                أنا مساعد القرآن الكريم. يمكنك سؤالي عن أي موضوع وسأبحث لك عن الآيات المناسبة من القرآن.
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="اكتب سؤالك هنا..." autocomplete="off">
+            <button id="send-btn">إرسال</button>
+        </div>
+        
+        <div class="typing-indicator" id="typing">
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatContainer = document.getElementById('chat-container');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const typingIndicator = document.getElementById('typing');
+        
+        function addMessage(text, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            messageDiv.innerHTML = text;
+            chatContainer.appendChild(messageDiv);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        function showTyping() {
+            typingIndicator.style.display = 'block';
+            chatContainer.appendChild(typingIndicator);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+        
+        function hideTyping() {
+            typingIndicator.style.display = 'none';
+        }
+        
+        async function sendMessage() {
+            const query = userInput.value.trim();
+            if (!query) return;
+            
+            // Add user message
+            addMessage(query, true);
+            userInput.value = '';
+            
+            // Show typing indicator
+            showTyping();
+            
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ query: query })
+                });
+                
+                const data = await response.json();
+                hideTyping();
+                
+                if (data.error) {
+                    addMessage(`⚠️ خطأ: ${data.error}`);
+                } else {
+                    addMessage(data.response);
+                }
+                
+            } catch (error) {
+                hideTyping();
+                addMessage('⚠️ حدث خطأ في الاتصال بالخادم');
+                console.error('Error:', error);
+            }
+        }
+        
+        sendBtn.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Focus input on load
+        userInput.focus();
+    </script>
+</body>
+</html>
