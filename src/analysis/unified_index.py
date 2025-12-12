@@ -12,78 +12,6 @@ from collections import defaultdict
 
 class QuranUnifiedIndex:
     """Unified index connecting all Quran data files"""
-
-
-      # Add this method to the QuranUnifiedIndex class:
-
-def _load_root_csv(self, csv_file: str = "root_words.txt"):
-    """Load root words from CSV file"""
-    print(f"   Loading root CSV: {csv_file}")
-    
-    import csv
-    
-    root_word_map = {}  # root → [words]
-    word_root_map = {}  # word → [roots]
-    
-    try:
-        with open(csv_file, 'r', encoding='utf-8') as f:
-            # Skip header if exists
-            if f.read(5) == "Root,":
-                f.seek(0)
-                next(f)  # Skip header
-        
-            f.seek(0)
-            reader = csv.reader(f)
-            
-            for row in reader:
-                if len(row) < 3:
-                    continue
-                
-                root = row[0].strip()
-                word = row[1].strip()
-                # count = row[2]  # We don't need count for indexing
-                
-                if not root or not word:
-                    continue
-                
-                # Add to root → words map
-                if root not in root_word_map:
-                    root_word_map[root] = []
-                if word not in root_word_map[root]:
-                    root_word_map[root].append(word)
-                
-                # Add to word → roots map
-                if word not in word_root_map:
-                    word_root_map[word] = []
-                if root not in word_root_map[word]:
-                    word_root_map[word].append(root)
-        
-        print(f"   Loaded {len(root_word_map)} roots, {len(word_root_map)} unique words")
-        
-        # Update the existing root_index
-        for root, words in root_word_map.items():
-            # For each word, find its word_id(s) and add to root_index
-            for word in words:
-                # Search for this word in our words dictionary
-                for word_id_str, arabic_word in self.words.items():
-                    if word == arabic_word:
-                        try:
-                            word_id = int(word_id_str)
-                            self.root_index[root].append(word_id)
-                            self.stats['words_with_root'] += 1
-                        except ValueError:
-                            continue
-        
-        self.stats['unique_roots'] = len(root_word_map)
-        
-        # Store the maps for later use
-        self.root_word_map = root_word_map
-        self.word_root_map = word_root_map
-        
-    except FileNotFoundError:
-        print(f"   Warning: CSV file {csv_file} not found")
-    except Exception as e:
-        print(f"   Error loading CSV: {e}")
     
     def __init__(self, data_dir: str = "."):
         self.data_dir = data_dir
@@ -197,13 +125,8 @@ def _load_root_csv(self, csv_file: str = "root_words.txt"):
                 print(f"   Found {self.stats['words_with_root']} word-root mappings")
             else:
                 print("   Root words file not found, skipping")
-
-    # With this:
-            print("6. Loading root words from CSV...")
-            csv_file = os.path.join(self.data_dir, 'root_words.txt')
-            self._load_root_csv(csv_file)
             
-            # 8. Build derived indices
+            # 7. Build derived indices
             print("7. Building derived indices...")
             self._build_derived_indices()
             
@@ -362,8 +285,9 @@ def _load_root_csv(self, csv_file: str = "root_words.txt"):
                 pass
         
         if missing_morphology:
-            print(f"   Missing morphology for words: {missing_morphology[:10]}{'...' if len(missing_morphology) > 10 else ''}")   
+            print(f"   Missing morphology for words: {missing_morphology[:10]}{'...' if len(missing_morphology) > 10 else ''}")
     # ===== QUERY METHODS =====
+    
     def get_word_info(self, word_id: int) -> Optional[Dict]:
         """Get complete information for a word"""
         # Convert word_id to string for dictionary lookup
@@ -420,36 +344,6 @@ def _load_root_csv(self, csv_file: str = "root_words.txt"):
         
         return results
     
-    def search_by_arabic(self, arabic_text: str, exact: bool = False) -> List[Dict]:
-        """Search for words by Arabic text"""
-        results = []
-        arabic_lower = arabic_text.strip()
-        
-        for word_id_str, text in self.words.items():
-            # Convert string key to integer for get_word_info
-            try:
-                word_id = int(word_id_str)
-            except ValueError:
-                continue
-            
-            if exact:
-                if text == arabic_lower:
-                    word_info = self.get_word_info(word_id)
-                    if word_info:
-                        results.append(word_info)
-            else:
-                if arabic_lower in text:
-                    word_info = self.get_word_info(word_id)
-                    if word_info:
-                        results.append(word_info)
-        
-        return results
-    
-    
-   
-    
-    
-    
     def analyze_verse_syntax(self, verse_id: int) -> List[Dict]:
         """Analyze syntactic structure of a verse"""
         words = self.get_verse_words(verse_id)
@@ -494,7 +388,30 @@ def _load_root_csv(self, csv_file: str = "root_words.txt"):
         
         return 'unknown'
     
-   
+    def search_by_arabic(self, arabic_text: str, exact: bool = False) -> List[Dict]:
+        """Search for words by Arabic text"""
+        results = []
+        arabic_lower = arabic_text.strip()
+        
+        for word_id_str, text in self.words.items():
+            # Convert string key to integer for get_word_info
+            try:
+                word_id = int(word_id_str)
+            except ValueError:
+                continue
+            
+            if exact:
+                if text == arabic_lower:
+                    word_info = self.get_word_info(word_id)
+                    if word_info:
+                        results.append(word_info)
+            else:
+                if arabic_lower in text:
+                    word_info = self.get_word_info(word_id)
+                    if word_info:
+                        results.append(word_info)
+        
+        return results
     
     def get_sura_verse(self, sura: int, ayah: int) -> Optional[Dict]:
         """Get verse by sura and ayah number"""
