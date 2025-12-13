@@ -296,11 +296,32 @@ class QuranUnifiedIndex:
         if word_id_str not in self.words:
             return None
         
+        # Get the full morphology data
+        morph_data = self.morphology.get(word_id)
+        
+        # Process all subtokens if they exist
+        subtokens = []
+        if morph_data and 'words' in morph_data:
+            # Get all subtokens as a list (sorted by key to maintain order)
+            subtoken_keys = sorted(morph_data['words'].keys())
+            for subtoken_key in subtoken_keys:
+                subtoken_data = morph_data['words'][subtoken_key]
+                subtokens.append({
+                    'subtoken_id': subtoken_key,
+                    'word': subtoken_data.get('word', ''),
+                    'pos': subtoken_data.get('pos', ''),
+                    'root': subtoken_data.get('root'),
+                    'lemma': subtoken_data.get('lemma', ''),
+                    'morphology': subtoken_data.get('morphology', ''),
+                    'syntax_role': self._infer_syntax_role(subtoken_data)
+                })
+        
         info = {
             'word_id': word_id,
             'arabic': self.words.get(word_id_str),
             'translation': self.word_translations.get(word_id_str),  # Use string key
-            'morphology': self.morphology.get(word_id),  # morphology uses int keys
+            'morphology': morph_data,  # Include full morphology data
+            'morphology_subtokens': subtokens if subtokens else None,  # Add processed subtokens
             'verse_id': self.word_to_verse.get(word_id)  # word_to_verse uses int keys
         }
         
@@ -348,16 +369,7 @@ class QuranUnifiedIndex:
         """Analyze syntactic structure of a verse"""
         words = self.get_verse_words(verse_id)
         
-        for word_info in words:
-            # Infer syntax role from morphology
-            morph = word_info.get('morphology', {})
-            if morph and 'words' in morph:
-                # Get first subtoken's morphology (simplified)
-                first_subtoken = next(iter(morph['words'].values()))
-                word_info['syntax_role'] = self._infer_syntax_role(first_subtoken)
-            else:
-                word_info['syntax_role'] = 'unknown'
-        
+        # Now each word already has its subtokens processed in get_word_info
         return words
     
     def _infer_syntax_role(self, morph_data: Dict) -> str:
@@ -471,8 +483,18 @@ def interactive_test(index: QuranUnifiedIndex):
                                 print(f"Verse text: {info['verse_arabic']}")
                         if info.get('roots'):
                             print(f"Roots: {', '.join(info['roots'])}")
-                        if info.get('morphology'):
-                            print(f"Morphology: {info['morphology'].get('id', 'N/A')}")
+                        
+                        # Display all morphology subtokens
+                        if info.get('morphology_subtokens'):
+                            print("\nMorphology Subtokens:")
+                            for i, subtoken in enumerate(info['morphology_subtokens'], 1):
+                                print(f"  {i}. {subtoken['word']} - POS: {subtoken['pos']}, "
+                                    f"Root: {subtoken['root'] or 'N/A'}, "
+                                    f"Lemma: {subtoken['lemma']}, "
+                                    f"Morphology: {subtoken['morphology']}, "
+                                    f"Role: {subtoken['syntax_role']}")
+                        elif info.get('morphology'):
+                            print(f"Morphology ID: {info['morphology'].get('id', 'N/A')}")
                     else:
                         print(f"Word ID {word_id} not found")
                 except ValueError:
@@ -488,8 +510,12 @@ def interactive_test(index: QuranUnifiedIndex):
                         print(f"Translation: {verse_data.get('en', 'N/A')}")
                         print("\nSyntax Analysis:")
                         for word in words:
-                            role = word.get('syntax_role', 'unknown')
-                            print(f"  {word['arabic']} ({role})")
+                            print(f"\n  Word {word['word_id']}: {word['arabic']}")
+                            if word.get('morphology_subtokens'):
+                                for subtoken in word['morphology_subtokens']:
+                                    print(f"    {subtoken['word']} ({subtoken['syntax_role']})")
+                            else:
+                                print(f"    No detailed morphology available")
                     else:
                         print(f"Verse ID {verse_id} not found")
                 except ValueError:
