@@ -188,16 +188,16 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     verseArabicContainer.appendChild(document.createTextNode(" ")); // Space after number
     
     // Create translation element
-    const verseTransText = document.createElement("div");
+    const verseTransText = document.createElement("span");
     verseTransText.id = `trans-${combinedId}`;
     verseTransText.className = "translation";
     
     // Create translation header with verse reference
-    const transHeader = document.createElement("div");
+    const transHeader = document.createElement("span");
     transHeader.className = "translation-header";
     transHeader.textContent = `(${currentSura}:${currentVerse})`;
     
-    const transContent = document.createElement("div");
+    const transContent = document.createElement("span");
     transContent.className = "translation-content";
     transContent.innerHTML = verseData.en;
     
@@ -206,7 +206,7 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     
     // Show/hide translation based on toggle
     if (currentTranslate === "en") {
-      verseTransText.style.display = "block";
+     verseTransText.style.display = "inline";
     } else {
       verseTransText.style.display = "none";
     }
