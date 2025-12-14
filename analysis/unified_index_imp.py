@@ -1,0 +1,868 @@
+#!/usr/bin/env python3
+"""
+Quran Unified Index System
+Connects all data files using global word IDs
+"""
+
+import json
+import os
+import sys
+import csv
+from typing import Dict, List, Any, Optional, Set, Tuple
+from collections import defaultdict
+
+class QuranUnifiedIndex:
+    """Unified index connecting all Quran data files"""
+    
+    def __init__(self, data_dir: str = "."):
+        self.data_dir = data_dir
+        
+        # Core indices
+        self.words = {}               # word_id → arabic_text
+        self.word_translations = {}   # word_id → english_translation
+        self.morphology = {}          # word_id → morphology_data
+        self.verses = {}              # verse_id → verse_data
+        self.suras = {}               # sura_id → sura_data
+        
+        # Derived indices
+        self.word_to_verse = {}       # word_id → verse_id
+        self.verse_to_words = {}      # verse_id → [word_ids]
+        self.root_index = defaultdict(list)  # root → [word_ids]
+        self.sura_verse_index = {}    # (sura, ayah) → verse_id
+        
+        # Imperative verbs index
+        self.imperative_verbs_by_root = defaultdict(list)  # root → list of (word_id, arabic, morphology)
+        self.imperative_verbs_flat = []  # list of all imperative verbs
+        
+        # Statistics
+        self.stats = {
+            'total_words': 0,
+            'total_verses': 0,
+            'total_suras': 0,
+            'words_with_morphology': 0,
+            'words_with_translation': 0,
+            'words_with_root': 0,
+            'unique_roots': 0,
+            'imperative_verbs': 0,
+            'imperative_verbs_by_root': {}  # root → count
+        }
+    
+    def load_all_data(self):
+        """Load all data files and build indices"""
+        print("="*60)
+        print("Loading Quran Data Files")
+        print("="*60)
+        
+        try:
+            # 1. Load quran_words.json
+            print("1. Loading words...")
+            with open(os.path.join(self.data_dir, 'quran_words.json'), 'r', encoding='utf-8') as f:
+                self.words = json.load(f)
+            self.stats['total_words'] = len(self.words)
+            print(f"   Loaded {self.stats['total_words']} words")
+            
+            # 2. Load word translations
+            print("2. Loading word translations...")
+            word_trans_file = os.path.join(self.data_dir, 'word_translations.json')
+            if os.path.exists(word_trans_file):
+                with open(word_trans_file, 'r', encoding='utf-8') as f:
+                    self.word_translations = json.load(f)
+                self.stats['words_with_translation'] = len(self.word_translations)
+                print(f"   Loaded {self.stats['words_with_translation']} word translations")
+            else:
+                print("   Word translations file not found, skipping")
+            
+            # 3. Load morphology
+            print("3. Loading morphology...")
+            with open(os.path.join(self.data_dir, 'morphology.json'), 'r', encoding='utf-8') as f:
+                morph_data = json.load(f)
+                
+                # Convert keys to integers and store
+                for key_str, value in morph_data.items():
+                    try:
+                        word_id = int(key_str)
+                        self.morphology[word_id] = value
+                    except ValueError:
+                        print(f"   Warning: Non-integer key in morphology: {key_str}")
+                        continue
+                
+                self.stats['words_with_morphology'] = len(self.morphology)
+                print(f"   Loaded {self.stats['words_with_morphology']} morphology entries")
+            
+            # 4. Load verses
+            print("4. Loading verses...")
+            with open(os.path.join(self.data_dir, 'verses.json'), 'r', encoding='utf-8') as f:
+                verses_data = json.load(f)
+                
+                for key_str, value in verses_data.items():
+                    try:
+                        verse_id = int(key_str)
+                        self.verses[verse_id] = value
+                    except ValueError:
+                        print(f"   Warning: Non-integer key in verses: {key_str}")
+                        continue
+                
+                self.stats['total_verses'] = len(self.verses)
+                print(f"   Loaded {self.stats['total_verses']} verses")
+            
+            # 5. Load suras
+            print("5. Loading suras...")
+            with open(os.path.join(self.data_dir, 'sura.json'), 'r', encoding='utf-8') as f:
+                sura_data = json.load(f)
+                
+                for key_str, value in sura_data.items():
+                    try:
+                        sura_id = int(key_str)
+                        self.suras[sura_id] = value
+                    except ValueError:
+                        print(f"   Warning: Non-integer key in suras: {key_str}")
+                        continue
+                
+                self.stats['total_suras'] = len(self.suras)
+                print(f"   Loaded {self.stats['total_suras']} suras")
+            
+            # 6. Load root words (optional)
+            print("6. Loading root words...")
+            root_file = os.path.join(self.data_dir, 'root_words.json')
+            if os.path.exists(root_file):
+                with open(root_file, 'r', encoding='utf-8') as f:
+                    root_data = json.load(f)
+                self._build_root_index(root_data)
+                print(f"   Loaded {self.stats['unique_roots']} unique roots")
+                print(f"   Found {self.stats['words_with_root']} word-root mappings")
+            else:
+                print("   Root words file not found, skipping")
+            
+            # 7. Build derived indices
+            print("7. Building derived indices...")
+            self._build_derived_indices()
+            
+            # 8. Build imperative verbs index
+            print("8. Building imperative verbs index...")
+            self._build_imperative_verbs_index()
+            
+            print("\n" + "="*60)
+            print("DATA LOADING COMPLETE")
+            print("="*60)
+            self.print_stats()
+            
+        except FileNotFoundError as e:
+            print(f"\n❌ ERROR: File not found: {e}")
+            print("\nRequired files in {data_dir}:")
+            print("  - quran_words.json")
+            print("  - morphology.json")
+            print("  - verses.json")
+            print("  - sura.json")
+            print("\nOptional files:")
+            print("  - word_translations.json")
+            print("  - root_words.json")
+            sys.exit(1)
+        except json.JSONDecodeError as e:
+            print(f"\n❌ ERROR: Invalid JSON: {e}")
+            sys.exit(1)
+    
+    def _build_imperative_verbs_index(self):
+        """Build index of imperative verbs from morphology data"""
+        imperative_verbs = 0
+        root_counts = defaultdict(int)
+        
+        for word_id, morph_data in self.morphology.items():
+            if 'words' not in morph_data:
+                continue
+            
+            for subtoken_key, subtoken_data in morph_data['words'].items():
+                morphology_str = subtoken_data.get('morphology', '')
+                
+                # Check if this is an imperative verb
+                if 'IMPV' in morphology_str:
+                    # Get the Arabic word
+                    arabic_word = self.words.get(str(word_id), '')
+                    
+                    # Get the root from this subtoken
+                    root = subtoken_data.get('root')
+                    
+                    # Prepare the entry
+                    entry = {
+                        'word_id': word_id,
+                        'arabic_word': arabic_word,
+                        'morphology': morphology_str,
+                        'subtoken_word': subtoken_data.get('word', ''),
+                        'pos': subtoken_data.get('pos', ''),
+                        'lemma': subtoken_data.get('lemma', ''),
+                        'verse_id': self.word_to_verse.get(word_id),
+                        'root': root
+                    }
+                    
+                    # Add to flat list
+                    self.imperative_verbs_flat.append(entry)
+                    imperative_verbs += 1
+                    
+                    # Add to root-based index (use root from subtoken)
+                    if root:
+                        self.imperative_verbs_by_root[root].append(entry)
+                        root_counts[root] += 1
+                    else:
+                        # Store without root key for rootless imperatives
+                        self.imperative_verbs_by_root['NO_ROOT'].append(entry)
+                        root_counts['NO_ROOT'] += 1
+        
+        # Update statistics
+        self.stats['imperative_verbs'] = imperative_verbs
+        self.stats['imperative_verbs_by_root'] = dict(root_counts)
+        
+        print(f"   Found {imperative_verbs} imperative verbs")
+        print(f"   Across {len(root_counts)} unique roots (including NO_ROOT)")
+    
+    def _build_root_index(self, root_data: Dict):
+        """Build index from root_words.json"""
+        roots_found = set()
+        words_with_root = 0
+        
+        for root, root_info in root_data.items():
+            if 'Word' not in root_info:
+                continue
+                
+            for derived_word, word_info in root_info['Word'].items():
+                if 'Verses' not in word_info:
+                    continue
+                    
+                for verse_ref in word_info['Verses']:
+                    if 'Key' not in verse_ref:
+                        continue
+                    
+                    try:
+                        word_id = int(verse_ref['Key'])
+                        # Add to root index
+                        self.root_index[root].append(word_id)
+                        roots_found.add(root)
+                        words_with_root += 1
+                    except ValueError:
+                        # Skip non-integer keys
+                        continue
+        
+        self.stats['unique_roots'] = len(roots_found)
+        self.stats['words_with_root'] = words_with_root
+    
+    def _build_derived_indices(self):
+        """Build derived lookup indices"""
+        print("   Building word-to-verse mapping...")
+        for verse_id, verse_data in self.verses.items():
+            start = verse_data.get('start_word')
+            end = verse_data.get('end_word')
+            
+            if start is None or end is None:
+                continue
+            
+            # Ensure start and end are integers
+            try:
+                start_int = int(start)
+                end_int = int(end)
+            except (ValueError, TypeError):
+                continue
+            
+            # Build verse_to_words
+            word_ids = list(range(start_int, end_int + 1))
+            self.verse_to_words[verse_id] = word_ids
+            
+            # Build word_to_verse
+            for word_id in word_ids:
+                self.word_to_verse[word_id] = verse_id
+        
+        print("   Building sura-verse index...")
+        # Build (sura, ayah) → verse_id mapping
+        for sura_id, sura_info in self.suras.items():
+            start_verse = sura_info.get('start')
+            end_verse = sura_info.get('end')
+            n_ayah = sura_info.get('nAyah', 0)
+            
+            if start_verse and end_verse and n_ayah > 0:
+                for ayah in range(1, n_ayah + 1):
+                    verse_id = start_verse + ayah - 1
+                    self.sura_verse_index[(sura_id, ayah)] = verse_id
+        
+        print("   Derived indices built successfully")
+    
+    def print_stats(self):
+        """Print loading statistics"""
+        print(f"\n📊 STATISTICS:")
+        print(f"   Words: {self.stats['total_words']:,}")
+        print(f"   Verses: {self.stats['total_verses']:,}")
+        print(f"   Suras: {self.stats['total_suras']:,}")
+        print(f"   Words with morphology: {self.stats['words_with_morphology']:,} ({self.stats['words_with_morphology']/self.stats['total_words']*100:.1f}%)")
+        
+        if self.stats['words_with_translation'] > 0:
+            print(f"   Words with translation: {self.stats['words_with_translation']:,} ({self.stats['words_with_translation']/self.stats['total_words']*100:.1f}%)")
+        
+        if self.stats['unique_roots'] > 0:
+            print(f"   Unique roots: {self.stats['unique_roots']:,}")
+            print(f"   Word-root mappings: {self.stats['words_with_root']:,}")
+        
+        print(f"   Imperative verbs: {self.stats['imperative_verbs']:,}")
+        
+        # Show top 10 roots with most imperative verbs
+        if self.stats['imperative_verbs_by_root']:
+            sorted_roots = sorted(
+                self.stats['imperative_verbs_by_root'].items(),
+                key=lambda x: x[1],
+                reverse=True
+            )[:10]
+            
+            print(f"\n   Top roots with imperative verbs:")
+            for root, count in sorted_roots:
+                if root != 'NO_ROOT':
+                    print(f"     {root}: {count}")
+        
+        # Check for data integrity
+        print(f"\n🔍 DATA INTEGRITY:")
+        
+        # Check word ranges - FIXED: Convert keys to integers
+        word_keys = self.words.keys()
+        if word_keys:
+            # Convert all keys to integers and find max
+            int_keys = []
+            for key in word_keys:
+                try:
+                    int_keys.append(int(key))
+                except (ValueError, TypeError):
+                    continue
+            
+            if int_keys:
+                max_word_id = max(int_keys)
+                words_in_verses = sum(len(words) for words in self.verse_to_words.values())
+                print(f"   Max word ID: {max_word_id}")
+                print(f"   Words accounted in verses: {words_in_verses:,}")
+                
+                coverage = words_in_verses / max_word_id * 100
+                print(f"   Coverage: {coverage:.1f}%")
+            else:
+                print(f"   No valid integer word IDs found")
+        else:
+            print(f"   No words loaded")
+        
+        # Check morphology coverage
+        missing_morphology = []
+        # Get max word ID safely
+        max_id_to_check = 0
+        if word_keys:
+            try:
+                # Get first 100 valid integer IDs
+                int_keys = []
+                for key in word_keys:
+                    try:
+                        int_keys.append(int(key))
+                    except (ValueError, TypeError):
+                        continue
+                
+                if int_keys:
+                    max_id_to_check = min(100, max(int_keys))
+                
+                for word_id in range(1, max_id_to_check + 1):
+                    if word_id not in self.morphology:
+                        missing_morphology.append(word_id)
+            except:
+                pass
+        
+        if missing_morphology:
+            print(f"   Missing morphology for words: {missing_morphology[:10]}{'...' if len(missing_morphology) > 10 else ''}")
+    
+    # ===== QUERY METHODS =====
+    
+    def get_word_info(self, word_id: int) -> Optional[Dict]:
+        """Get complete information for a word"""
+        # Convert word_id to string for dictionary lookup
+        word_id_str = str(word_id)
+        
+        if word_id_str not in self.words:
+            return None
+        
+        # Get the full morphology data
+        morph_data = self.morphology.get(word_id)
+        
+        # Process all subtokens if they exist
+        subtokens = []
+        is_imperative = False
+        if morph_data and 'words' in morph_data:
+            # Get all subtokens as a list
+            for subtoken_key, subtoken_data in morph_data['words'].items():
+                subtokens.append({
+                    'subtoken_id': subtoken_key,
+                    'word': subtoken_data.get('word', ''),
+                    'pos': subtoken_data.get('pos', ''),
+                    'root': subtoken_data.get('root'),
+                    'lemma': subtoken_data.get('lemma', ''),
+                    'morphology': subtoken_data.get('morphology', ''),
+                    'syntax_role': self._infer_syntax_role(subtoken_data),
+                    'is_imperative': 'IMPV' in subtoken_data.get('morphology', '')
+                })
+                
+                # Check if any subtoken is imperative
+                if 'IMPV' in subtoken_data.get('morphology', ''):
+                    is_imperative = True
+        
+        info = {
+            'word_id': word_id,
+            'arabic': self.words.get(word_id_str),
+            'translation': self.word_translations.get(word_id_str),
+            'morphology': morph_data,
+            'morphology_subtokens': subtokens if subtokens else None,
+            'is_imperative': is_imperative,
+            'verse_id': self.word_to_verse.get(word_id)
+        }
+        
+        # Add verse context if available
+        if info['verse_id']:
+            verse_data = self.verses.get(info['verse_id'], {})
+            info['verse_arabic'] = verse_data.get('arabic')
+            info['verse_translation'] = verse_data.get('en')
+        
+        # Add root information if available
+        info['roots'] = []
+        for root, word_ids in self.root_index.items():
+            if word_id in word_ids:
+                info['roots'].append(root)
+        
+        return info
+    
+    def commands_by_root(self, root: str) -> List[Dict]:
+        """Get all imperative verbs for a specific root"""
+        if root in self.imperative_verbs_by_root:
+            return self.imperative_verbs_by_root[root]
+        else:
+            return []
+    
+    def export_imperative_verbs_report(self, output_file: str = "imperative_verbs_report.csv"):
+        """Export imperative verbs report to CSV file"""
+        print(f"\nExporting imperative verbs report to {output_file}...")
+        
+        with open(output_file, 'w', encoding='utf-8', newline='') as csvfile:
+            fieldnames = [
+                'word_id', 
+                'arabic_word', 
+                'subtoken_word',
+                'root', 
+                'morphology', 
+                'pos', 
+                'lemma',
+                'verse_id',
+                'sura',
+                'ayah',
+                'word_position'
+            ]
+            
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            
+            for entry in self.imperative_verbs_flat:
+                row = entry.copy()
+                
+                # Get verse details if available
+                verse_id = entry.get('verse_id')
+                if verse_id and verse_id in self.verses:
+                    verse_data = self.verses[verse_id]
+                    row['verse_arabic'] = verse_data.get('arabic', '')
+                    row['verse_translation'] = verse_data.get('en', '')
+                
+                # Get sura and ayah
+                sura_ayah = None
+                for (s, a), v_id in self.sura_verse_index.items():
+                    if v_id == verse_id:
+                        sura_ayah = (s, a)
+                        break
+                
+                if sura_ayah:
+                    row['sura'], row['ayah'] = sura_ayah
+                    
+                    # Calculate word position in verse
+                    verse_words = self.verse_to_words.get(verse_id, [])
+                    if entry['word_id'] in verse_words:
+                        row['word_position'] = verse_words.index(entry['word_id']) + 1
+                    else:
+                        row['word_position'] = ''
+                else:
+                    row['sura'] = ''
+                    row['ayah'] = ''
+                    row['word_position'] = ''
+                
+                # Write the row (only include defined fieldnames)
+                writer.writerow({k: row.get(k, '') for k in fieldnames})
+        
+        print(f"Exported {len(self.imperative_verbs_flat)} imperative verbs to {output_file}")
+        
+        # Also create a summary JSON file
+        summary_file = output_file.replace('.csv', '_summary.json')
+        summary = {
+            'total_imperative_verbs': self.stats['imperative_verbs'],
+            'roots_with_imperatives': len(self.imperative_verbs_by_root),
+            'root_distribution': self.stats['imperative_verbs_by_root'],
+            'sample_verbs': self.imperative_verbs_flat[:10]  # First 10 as sample
+        }
+        
+        with open(summary_file, 'w', encoding='utf-8') as f:
+            json.dump(summary, f, ensure_ascii=False, indent=2)
+        
+        print(f"Created summary file: {summary_file}")
+    
+    def get_verse_words(self, verse_id: int) -> List[Dict]:
+        """Get all words in a verse with their information"""
+        if verse_id not in self.verse_to_words:
+            return []
+        
+        words_info = []
+        for word_id in self.verse_to_words[verse_id]:
+            word_info = self.get_word_info(word_id)
+            if word_info:
+                words_info.append(word_info)
+        
+        return words_info
+    
+    def find_words_by_root(self, root: str) -> List[Dict]:
+        """Find all words derived from a root"""
+        if root not in self.root_index:
+            return []
+        
+        results = []
+        for word_id in self.root_index[root]:
+            word_info = self.get_word_info(word_id)
+            if word_info:
+                results.append(word_info)
+        
+        return results
+    
+    def analyze_verse_syntax(self, verse_id: int) -> List[Dict]:
+        """Analyze syntactic structure of a verse"""
+        words = self.get_verse_words(verse_id)
+        
+        for word_info in words:
+            # Infer syntax role from morphology
+            morph = word_info.get('morphology', {})
+            if morph and 'words' in morph:
+                # Get first subtoken's morphology (simplified)
+                first_subtoken = next(iter(morph['words'].values()))
+                word_info['syntax_role'] = self._infer_syntax_role(first_subtoken)
+            else:
+                word_info['syntax_role'] = 'unknown'
+        
+        return words
+    
+    def _infer_syntax_role(self, morph_data: Dict) -> str:
+        """Infer syntax role from morphology data"""
+        morph_str = morph_data.get('morphology', '')
+        pos = morph_data.get('pos', '')
+        
+        # Check for imperative first
+        if 'IMPV' in morph_str:
+            return 'imperative_verb'
+        
+        # Simple inference rules
+        if 'PREF' in morph_str:
+            return 'preposition'
+        elif 'GEN' in morph_str:
+            if 'ADJ' in morph_str:
+                return 'adjective'
+            elif 'PN' in morph_str:
+                return 'proper_noun'
+            else:
+                return 'noun_genitive'
+        elif 'NOM' in morph_str:
+            return 'noun_nominative'
+        elif 'ACC' in morph_str:
+            return 'noun_accusative'
+        elif pos == 'V':
+            return 'verb'
+        elif pos == 'N':
+            return 'noun'
+        elif pos == 'P':
+            return 'particle'
+        
+        return 'unknown'
+    
+    def search_by_arabic(self, arabic_text: str, exact: bool = False) -> List[Dict]:
+        """Search for words by Arabic text"""
+        results = []
+        arabic_lower = arabic_text.strip()
+        
+        for word_id_str, text in self.words.items():
+            # Convert string key to integer for get_word_info
+            try:
+                word_id = int(word_id_str)
+            except ValueError:
+                continue
+            
+            if exact:
+                if text == arabic_lower:
+                    word_info = self.get_word_info(word_id)
+                    if word_info:
+                        results.append(word_info)
+            else:
+                if arabic_lower in text:
+                    word_info = self.get_word_info(word_id)
+                    if word_info:
+                        results.append(word_info)
+        
+        return results
+    
+    def get_sura_verse(self, sura: int, ayah: int) -> Optional[Dict]:
+        """Get verse by sura and ayah number"""
+        verse_id = self.sura_verse_index.get((sura, ayah))
+        if not verse_id:
+            return None
+        
+        verse_data = self.verses.get(verse_id, {}).copy()
+        verse_data['verse_id'] = verse_id
+        verse_data['sura'] = sura
+        verse_data['ayah'] = ayah
+        verse_data['words'] = self.get_verse_words(verse_id)
+        
+        return verse_data
+
+def interactive_test(index: QuranUnifiedIndex):
+    """Interactive testing of the index"""
+    print("\n" + "="*60)
+    print("INTERACTIVE TEST MODE")
+    print("="*60)
+    print("\nCommands:")
+    print("  word [id]       - Show word information")
+    print("  verse [id]      - Show verse with syntax analysis")
+    print("  root [root]     - Find words by root")
+    print("  commands [root] - Find imperative verbs by root")
+    print("  search [text]   - Search Arabic text")
+    print("  sura [s:aya]    - Get verse by sura:ayah")
+    print("  stats           - Show statistics")
+    print("  export          - Export imperative verbs report")
+    print("  test            - Run automated tests")
+    print("  quit            - Exit")
+    print("-" * 60)
+    
+    while True:
+        try:
+            cmd = input("\n> ").strip().lower()
+            
+            if cmd == 'quit' or cmd == 'exit':
+                break
+            
+            elif cmd == 'stats':
+                index.print_stats()
+            
+            elif cmd == 'export':
+                index.export_imperative_verbs_report()
+                print("Report exported!")
+            
+            elif cmd == 'test':
+                run_automated_tests(index)
+            
+            elif cmd.startswith('word '):
+                try:
+                    word_id = int(cmd[5:])
+                    info = index.get_word_info(word_id)
+                    if info:
+                        print(f"\nWord ID: {word_id}")
+                        print(f"Arabic: {info['arabic']}")
+                        if info.get('translation'):
+                            print(f"Translation: {info['translation']}")
+                        if info.get('verse_id'):
+                            print(f"Verse: {info['verse_id']}")
+                            if info.get('verse_arabic'):
+                                print(f"Verse text: {info['verse_arabic']}")
+                        if info.get('roots'):
+                            print(f"Roots: {', '.join(info['roots'])}")
+                        print(f"Is imperative: {info.get('is_imperative', False)}")
+                        
+                        # Display all morphology subtokens
+                        if info.get('morphology_subtokens'):
+                            print("\nMorphology Subtokens:")
+                            for i, subtoken in enumerate(info['morphology_subtokens'], 1):
+                                impv_marker = " [IMPV]" if subtoken.get('is_imperative') else ""
+                                print(f"  {i}. {subtoken['word']} - POS: {subtoken['pos']}, "
+                                      f"Root: {subtoken['root'] or 'N/A'}, "
+                                      f"Lemma: {subtoken['lemma']}, "
+                                      f"Morphology: {subtoken['morphology']}, "
+                                      f"Role: {subtoken['syntax_role']}{impv_marker}")
+                        elif info.get('morphology'):
+                            print(f"Morphology ID: {info['morphology'].get('id', 'N/A')}")
+                    else:
+                        print(f"Word ID {word_id} not found")
+                except ValueError:
+                    print("Invalid word ID")
+            
+            elif cmd.startswith('commands '):
+                root = cmd[9:].strip()
+                imperative_verbs = index.commands_by_root(root)
+                if imperative_verbs:
+                    print(f"\nFound {len(imperative_verbs)} imperative verbs with root '{root}':")
+                    for i, verb in enumerate(imperative_verbs[:20], 1):
+                        verse_text = ""
+                        if verb.get('verse_id'):
+                            verse_data = index.verses.get(verb['verse_id'], {})
+                            verse_text = verse_data.get('arabic', '')[:50]
+                            if len(verse_text) == 50:
+                                verse_text += "..."
+                        
+                        print(f"  {i}. Word {verb['word_id']}: {verb['arabic_word']}")
+                        print(f"     Morphology: {verb['morphology']}")
+                        print(f"     Verse: {verse_text}")
+                    if len(imperative_verbs) > 20:
+                        print(f"  ... and {len(imperative_verbs) - 20} more")
+                else:
+                    print(f"No imperative verbs found with root '{root}'")
+            
+            elif cmd.startswith('verse '):
+                try:
+                    verse_id = int(cmd[6:])
+                    words = index.analyze_verse_syntax(verse_id)
+                    if words:
+                        verse_data = index.verses.get(verse_id, {})
+                        print(f"\nVerse {verse_id}: {verse_data.get('arabic', 'N/A')}")
+                        print(f"Translation: {verse_data.get('en', 'N/A')}")
+                        print("\nSyntax Analysis:")
+                        for word in words:
+                            impv_marker = " [IMPV]" if word.get('is_imperative') else ""
+                            print(f"  {word['arabic']} ({word.get('syntax_role', 'unknown')}{impv_marker})")
+                    else:
+                        print(f"Verse ID {verse_id} not found")
+                except ValueError:
+                    print("Invalid verse ID")
+            
+            elif cmd.startswith('root '):
+                root = cmd[5:].strip()
+                words = index.find_words_by_root(root)
+                if words:
+                    print(f"\nFound {len(words)} words with root '{root}':")
+                    for word in words[:10]:  # Show first 10
+                        impv_marker = " [IMPV]" if word.get('is_imperative') else ""
+                        print(f"  {word['word_id']}: {word['arabic']} (Verse {word['verse_id']}){impv_marker}")
+                    if len(words) > 10:
+                        print(f"  ... and {len(words) - 10} more")
+                else:
+                    print(f"No words found with root '{root}'")
+            
+            elif cmd.startswith('search '):
+                text = cmd[7:].strip()
+                words = index.search_by_arabic(text)
+                if words:
+                    print(f"\nFound {len(words)} words containing '{text}':")
+                    for word in words[:10]:  # Show first 10
+                        impv_marker = " [IMPV]" if word.get('is_imperative') else ""
+                        print(f"  {word['word_id']}: {word['arabic']} (Verse {word['verse_id']}){impv_marker}")
+                    if len(words) > 10:
+                        print(f"  ... and {len(words) - 10} more")
+                else:
+                    print(f"No words found containing '{text}'")
+            
+            elif cmd.startswith('sura '):
+                try:
+                    parts = cmd[5:].split(':')
+                    if len(parts) != 2:
+                        print("Format: sura s:aya (e.g., 'sura 1:1')")
+                        continue
+                    
+                    sura = int(parts[0])
+                    ayah = int(parts[1])
+                    verse = index.get_sura_verse(sura, ayah)
+                    
+                    if verse:
+                        print(f"\nSurah {sura}:{ayah} ({verse['verse_id']})")
+                        print(f"Arabic: {verse.get('arabic', 'N/A')}")
+                        print(f"Translation: {verse.get('en', 'N/A')}")
+                    else:
+                        print(f"Surah {sura}:{ayah} not found")
+                except ValueError:
+                    print("Invalid sura:ayah format")
+            
+            elif cmd:
+                print("Unknown command. Type 'help' for commands list.")
+        
+        except KeyboardInterrupt:
+            print("\n\nExiting...")
+            break
+        except Exception as e:
+            print(f"Error: {e}")
+
+def run_automated_tests(index: QuranUnifiedIndex):
+    """Run automated tests on the index"""
+    print("\n" + "="*60)
+    print("RUNNING AUTOMATED TESTS")
+    print("="*60)
+    
+    tests_passed = 0
+    tests_failed = 0
+    
+    # Test 1: Basic word lookup
+    print("\n1. Testing word lookup...")
+    word_info = index.get_word_info(1)
+    if word_info and word_info['arabic'] == 'بسم':
+        print("   ✓ Word 1 is 'بسم'")
+        tests_passed += 1
+    else:
+        print("   ✗ Word 1 lookup failed")
+        tests_failed += 1
+    
+    # Test 2: Verse words
+    print("\n2. Testing verse words...")
+    verse_words = index.get_verse_words(1)
+    if len(verse_words) >= 4:
+        print(f"   ✓ Verse 1 has {len(verse_words)} words")
+        tests_passed += 1
+    else:
+        print(f"   ✗ Verse 1 has only {len(verse_words)} words")
+        tests_failed += 1
+    
+    # Test 3: Imperative verbs index
+    print("\n3. Testing imperative verbs index...")
+    if index.stats['imperative_verbs'] > 0:
+        print(f"   ✓ Found {index.stats['imperative_verbs']} imperative verbs")
+        tests_passed += 1
+    else:
+        print("   ✗ No imperative verbs found")
+        tests_failed += 1
+    
+    # Test 4: Commands by root
+    if index.stats['imperative_verbs_by_root']:
+        print("\n4. Testing commands_by_root method...")
+        # Get first root with imperative verbs
+        first_root = next(iter(index.stats['imperative_verbs_by_root'].keys()))
+        if first_root != 'NO_ROOT':
+            commands = index.commands_by_root(first_root)
+            if commands:
+                print(f"   ✓ Found {len(commands)} imperative verbs for root '{first_root}'")
+                tests_passed += 1
+            else:
+                print(f"   ✗ No imperative verbs for root '{first_root}'")
+                tests_failed += 1
+    
+    # Test 5: Sura:ayah lookup
+    print("\n5. Testing sura:ayah lookup...")
+    verse = index.get_sura_verse(1, 1)
+    if verse:
+        print(f"   ✓ Surah 1:1 found as verse {verse['verse_id']}")
+        tests_passed += 1
+    else:
+        print("   ✗ Surah 1:1 not found")
+        tests_failed += 1
+    
+    print("\n" + "="*60)
+    print(f"TESTS COMPLETE: {tests_passed} passed, {tests_failed} failed")
+    print("="*60)
+
+def main():
+    """Main function"""
+    print("Quran Unified Index System")
+    print("="*60)
+    
+    # Get data directory
+    data_dir = input("Enter data directory path [default: current]: ").strip()
+    if not data_dir:
+        data_dir = "."
+    
+    # Build index
+    index = QuranUnifiedIndex(data_dir)
+    index.load_all_data()
+    
+    # Run interactive test
+    interactive_test(index)
+    
+    print("\n" + "="*60)
+    print("Thank you for using Quran Unified Index System")
+    print("="*60)
+
+if __name__ == "__main__":
+    main()
