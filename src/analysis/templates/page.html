@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>صفحة {{ page_number }}</title>
+<style>
+body {
+font-family: 'Scheherazade New', serif;
+direction: rtl;
+text-align: right;
+margin: 40px;
+line-height: 2.2;
+}
+.ayah { margin-bottom: 12px; }
+.arabic { font-size: 28px; }
+.en { font-size: 14px; color: #555; direction: ltr; text-align: left; }
+nav { margin-top: 40px; }
+.form-container {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+select, button {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+label {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>القرآن الكريم</h1>
+
+<div class="form-container">
+  <form action="/goto" method="get">
+    <label>السورة:</label>
+    <select name="surah" onchange="updateAyahs()" id="surah">
+      {% for sid, s in suras.items() %}
+        <option value="{{ sid }}">{{ sid }} – {{ s.name }}</option>
+      {% endfor %}
+    </select>
+
+    <label>الآية:</label>
+    <select name="ayah" id="ayah"></select>
+
+    <button type="submit">اذهب إلى الآية</button>
+  </form>
+</div>
+
+<h2>صفحة {{ page_number }}</h2>
+
+{% for a in ayat %}
+<span class="ayah">
+<span class="arabic">{{ a.arabic }} ﴿{{ a.surah }}:{{ a.ayah }}﴾</span>
+
+</div>
+{% endfor %}
+
+<nav>
+{% if page_number > 1 %}
+<a href="/page/{{ page_number - 1 }}">◀ السابق</a>
+{% endif %}
+|
+{% if page_number < total_pages %}
+<a href="/page/{{ page_number + 1 }}">التالي ▶</a>
+{% endif %}
+</nav>
+
+<script>
+const suraData = {{ suras | tojson }};
+
+function updateAyahs() {
+  const surah = document.getElementById('surah').value;
+  const ayahSelect = document.getElementById('ayah');
+  ayahSelect.innerHTML = '';
+
+  const count = suraData[surah].nAyah;
+  for (let i = 1; i <= count; i++) {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = i;
+    ayahSelect.appendChild(opt);
+  }
+}
+
+// Initialize the dropdowns
+updateAyahs();
+</script>
+
+</body>
+</html>
