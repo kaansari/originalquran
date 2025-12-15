@@ -38,7 +38,7 @@
       option.textContent = `${suraNumber}. ${suraData[suraNumber].name}`;
       suraSelect.appendChild(option);
     }
-    populateVerseSelector(); // Populate verses for the first sura initially
+   
   }
 
   // Populate Verse Selector
