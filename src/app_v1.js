@@ -95,8 +95,7 @@
   }
 
 
-  // Display Page
-// Display Page (updated with minimal styling)
+  // Display Page (updated with Sura names)
 function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
   const pageData = getPageData(pageNumber);
   if (!pageData) {
@@ -108,8 +107,8 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
   const toRef = parseRef(pageData.to);
   
   const container = document.getElementById("quran-container");
-  container.className = "book-container";
-  container.innerHTML = `<div class="page-header">${pageNumber} (${pageData.word_count} words)</div>`;
+  container.className = "page";
+  container.innerHTML = `<div class="page-header">Page ${pageNumber} (${pageData.word_count} words)</div>`;
   
   const currentTranslate = localStorage.getItem("translate") || "notrans";
   
@@ -125,6 +124,7 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
   let verseToScroll = null;
   let currentSura = fromRef.sura;
   let currentVerse = fromRef.verse;
+  let lastSura = null; // Track the last sura we displayed
   
   // Create document fragment for Arabic text
   const arabicFragment = document.createDocumentFragment();
@@ -139,6 +139,20 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     if (!combinedData[globalVerseId]) {
       console.error("Verse not found:", currentSura, currentVerse);
       break;
+    }
+    
+    // Add Sura name if this is a new Sura
+    if (lastSura !== currentSura) {
+      // Add sura name separator
+ 
+      
+      // Add sura name in bold
+      const suraNameElem = document.createElement("span");
+      suraNameElem.className = "sura-name";
+      suraNameElem.innerHTML = `<strong>${suraMeta.name} (${currentSura})</strong>`;
+      arabicFragment.appendChild(suraNameElem);
+      
+      lastSura = currentSura;
     }
     
     const verseData = combinedData[globalVerseId];
@@ -191,16 +205,16 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     verseArabicContainer.appendChild(document.createTextNode(" ")); // Space after number
     
     // Create translation element
-    const verseTransText = document.createElement("span");
+    const verseTransText = document.createElement("div");
     verseTransText.id = `trans-${combinedId}`;
     verseTransText.className = "translation";
     
     // Create translation header with verse reference
-    const transHeader = document.createElement("span");
+    const transHeader = document.createElement("div");
     transHeader.className = "translation-header";
     transHeader.textContent = `(${currentSura}:${currentVerse})`;
     
-    const transContent = document.createElement("span");
+    const transContent = document.createElement("div");
     transContent.className = "translation-content";
     transContent.innerHTML = verseData.en;
     
@@ -209,7 +223,7 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     
     // Show/hide translation based on toggle
     if (currentTranslate === "en") {
-     verseTransText.style.display = "inline";
+      verseTransText.style.display = "block";
     } else {
       verseTransText.style.display = "none";
     }
@@ -250,7 +264,6 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
   localStorage.setItem("currentPage", currentPage);
   updatePageButtons();
 }
-
 
   // Navigate to External Verse
   function navigateToExternalVerse(verseNumber, sura) {
