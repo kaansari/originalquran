@@ -80,15 +80,26 @@ h1, h2, h3 {
 /*
 
 
-/* Add these styles to your existing styles.css file */
+/* Page and Row */
+
+.page {
+
+
+  padding: 20px;
+}
+
+
+.row {
+  font-size: var(--row-font-size);
+}
+
+
 
 /* Page Navigation Styles */
 .page-navigation {
-  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 10px;
   background-color: var(--background-color);
 
@@ -127,27 +138,23 @@ h1, h2, h3 {
 /* Continuous Arabic Text Layout */
 .arabic-text-container {
   text-align: right;
-  line-height: 2.5;
-  font-size: 28px;
+  line-height: 1.5;
   direction: rtl;
   margin-bottom: 30px;
-  padding: 20px;
   background-color: var(--background-color);
-  border: 1px solid var(--broder-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: var(--text-color);
+  font-style: italic;
 }
-
-.arabic {
+/*
+.arabic{
   word-spacing: 10px;
-  font-size: 14px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   direction: rtl;
   text-align: right;
   font-style: italic;
   color: var(--text-color);
 }
-
+*/
 
 
 .verse-arabic.highlighted {
@@ -164,7 +171,6 @@ h1, h2, h3 {
   color: var(--verse-text-color);
   font-weight: normal;
   margin: 0 8px;
-  font-size: 20px;
   vertical-align: middle;
 }
 
@@ -183,8 +189,6 @@ h1, h2, h3 {
   margin-top: 30px;
   padding: 10px;
   background-color: var(--background-color);
-  border: 1px solid var(--broder-color);
-  border-radius: 8px;
 }
 
 .translation {
@@ -237,10 +241,17 @@ h1, h2, h3 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+  .page {
+
+
+  padding: 5px;
+}
+
   .arabic-text-container {
-    font-size: 22px;
-    line-height: 2.2;
-    padding: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
   }
   
   .verse-number-inline {
@@ -249,7 +260,7 @@ h1, h2, h3 {
   }
   
   .page-header {
-    font-size: 1.4em;
+    font-size: 1;
   }
   
 
