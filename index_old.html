@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quran Viewer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="styles_page.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -28,8 +28,8 @@
         <input type="checkbox" id="translation-toggle">
         <span class="slider"></span>
       </label>
-        <a href="index.html">
-          <i class="fas fa-book">Quran Old </i>
+        <a href="quran.html">
+          <i class="fas fa-book"> </i>
         </a>
         <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
           <i class="fab fa-github"> </i>
@@ -38,10 +38,11 @@
 
          <!-- Font Selection Dropdown -->
       <label for="font-select">Choose Font:</label>
-<select id="font-select">
-  <option value="Amiri Quran">Uthmani- Turkish Script</option>
-  <option value="Raqq">Abbasi Script</option>
-</select>
+      <select id="font-select">
+        <option value="Qahiri">Qahiri</option>
+        <option value="Amiri Quran">Amiri Quran</option>
+        <option value="Raqq">Raqq</option>
+      </select>
 
 
         <span>Dark Theme</span>
@@ -58,24 +59,17 @@
 
   </div>
 
-  <!-- Page Navigation Buttons -->
-  <div class="page-navigation">
-    <button id="prev-page" class="nav-button" disabled>
-      <i class="fas fa-chevron-right"></i> 
-    </button>
-    
-    <span style="margin-left: 100px;">
-      <!-- Sura and Verse Selectors -->
-      <select id="sura-select"></select>
-      <select id="verse-select"></select>
-    </span>
-    
-    <button id="next-page" class="nav-button">
-       <i class="fas fa-chevron-left"></i>
-    </button>
-  </div>
 
-  <div class="page" id="quran-container"></div>
+  <span style="margin-left: 100px;">
+
+       <!-- Sura and Verse Selectors -->
+     
+       <select id="sura-select"></select>
+ 
+   
+       <select id="verse-select"></select>
+  </span>
+  <blockquote id="quran-container"></blockquote>
 
   <script src="app_v2.js"></script>
 </body>

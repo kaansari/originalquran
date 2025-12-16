@@ -5,23 +5,29 @@
     "https://corpuscoranicum.de/en/verse-navigator/";
 
   // Global Variables
-  let suraData, combinedData, wordsData, morphology;
+  let suraData, combinedData, wordsData, morphology, enWords, paginationData;
   let currentAudio = null;
   let showTranslation =
-    localStorage.getItem("translate") === "en" ? true : false; // Load translation setting from local storage
+    localStorage.getItem("translate") === "en" ? true : false;
+  let currentPage = parseInt(localStorage.getItem("currentPage")) || 1;
+  let currentSura = parseInt(localStorage.getItem("selectedSura")) || 1;
+  let currentVerse = parseInt(localStorage.getItem("selectedVerse")) || 1;
+  let isPageView = true; // We'll use page view by default
 
   // Fetch all JSON data
   Promise.all([
     fetch("json/sura.json").then((response) => response.json()),
     fetch("json/combined_quran.json").then((response) => response.json()),
-    fetch("json/quran_words.json").then((response) => response.json()),
+    fetch("json/quran_harakat_words.json").then((response) => response.json()),
     fetch("json/quran_morphology.json").then((response) => response.json()),
     fetch("json/en-word.json").then((response) => response.json()),
+    fetch("json/pagination_map.json").then((response) => response.json())
   ])
     .then((data) => {
-      [suraData, combinedData, wordsData, morphology,enWords] = data;
+      [suraData, combinedData, wordsData, morphology, enWords, paginationData] = data;
       populateSuraSelector();
       loadSelections();
+      updatePageButtons();
     })
     .catch((error) => {
       console.error("Error loading JSON files:", error);
@@ -38,7 +44,7 @@
       option.textContent = `${suraNumber}. ${suraData[suraNumber].name}`;
       suraSelect.appendChild(option);
     }
-    populateVerseSelector(); // Populate verses for the first sura initially
+    suraSelect.value = currentSura;
   }
 
   // Populate Verse Selector
@@ -48,108 +54,216 @@
     const sura = suraData[suraNumber];
     verseSelect.innerHTML = "";
 
-    for (let verseNumber = sura.start; verseNumber <= sura.end; verseNumber++) {
+    for (let verseNumber = 1; verseNumber <= sura.nAyah; verseNumber++) {
       const option = document.createElement("option");
-      const localVerseNumber = verseNumber - sura.start + 1;
       option.value = verseNumber;
-      option.textContent = localVerseNumber;
+      option.textContent = verseNumber;
       verseSelect.appendChild(option);
     }
+    if (currentVerse > sura.nAyah) {
+  currentVerse = 1;
+}
+
+    verseSelect.value = currentVerse;
   }
 
-  // Display Sura
-  function displaySura(suraNumber, targetVerse = null) {
-    const sura = suraData[suraNumber];
-    const container = document.getElementById("quran-container");
-    container.className = "book-container";
-    container.innerHTML = `<h3 class="arabic">${suraNumber}. ${sura.name}</h3>`;
-    const currentTranslate = localStorage.getItem("translate") || "notrans";
+  // Parse sura:verse reference
+  function parseRef(ref) {
+    const [sura, verse] = ref.split(":").map(Number);
+    return { sura, verse };
+  }
 
-    const fragment = document.createDocumentFragment();
-    let verseToScroll = null;
-
-    for (let verseNumber = sura.start; verseNumber <= sura.end; verseNumber++) {
-      const verseData = combinedData[verseNumber];
-      const constructedArabic = buildVerseFromWords(
-        verseData.start_word,
-        verseData.end_word
-      );
-
-      const localVerseNumber = verseNumber - sura.start + 1;
-      const formattedSuraNumber = String(suraNumber).padStart(3, "0");
-      const formattedVerseNumber = String(localVerseNumber).padStart(3, "0");
-      const combinedId = `${formattedSuraNumber}${formattedVerseNumber}`;
-      const audioSrc = `https://everyayah.com/data/Husary_64kbps/${combinedId}.mp3`;
-
-      const verseDiv = document.createElement("div");
-      verseDiv.className = "verse";
-
-      const verseContainer = document.createElement("span");
-      verseContainer.className = "verse-container";
-      verseContainer.id = `verse-${combinedId}`;
-
-      const verseHeader = document.createElement("span");
-      verseHeader.className = "verse-header";
-
-      const verseNumberElem = document.createElement("span");
-      verseNumberElem.className = "verse-number";
-
-      const verseLink = document.createElement("a");
-      verseLink.href = "#";
-      verseLink.target = "_blank";
-      verseLink.className = "verse-link";
-      verseLink.textContent = "("+localVerseNumber+")";
-      verseLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        navigateToExternalVerse(localVerseNumber, suraNumber);
-      });
-
-      verseNumberElem.appendChild(verseLink);
-
-     // const playButton = document.createElement("button");
-    //  playButton.className = "play-button";
-     // playButton.setAttribute("data-audio-src", audioSrc);
-    //  playButton.setAttribute("aria-label", `Play Verse ${localVerseNumber}`);
-      // Play button handled via event delegation
-
-     // verseContainer.appendChild(playButton);
- 
-
-      const verseTransText = document.createElement("div");
-      verseTransText.id = combinedId;
-      verseTransText.className = "translation";
-      if (currentTranslate == "en")
-      {verseTransText.style.display = "block";}
-      else{
-        verseTransText.style.display = "none";
-      }
+  // Find page containing a specific sura:verse
+  function findPageByVerse(sura, verse) {
+    for (const page of paginationData) {
+      const fromRef = parseRef(page.from);
+      const toRef = parseRef(page.to);
       
-      verseTransText.innerHTML = verseData.en; // English translation
-
-      const verseText = document.createElement("div");
-      verseText.id = combinedId;
-      verseText.className = "arabic verse-text";
-      verseText.innerHTML = constructedArabic; // Ensure sanitization
-
-      verseText.appendChild(verseNumberElem);
-      verseContainer.appendChild(verseText);
-      verseDiv.appendChild(verseContainer);
-      verseDiv.appendChild(verseTransText);
-      fragment.appendChild(verseDiv);
-
-      if (targetVerse && parseInt(targetVerse) === verseNumber) {
-        verseDiv.style.background = "#66FFFF" ;
-        verseToScroll = verseDiv;
+      // Check if verse is within page range
+      if (sura > fromRef.sura || (sura === fromRef.sura && verse >= fromRef.verse)) {
+        if (sura < toRef.sura || (sura === toRef.sura && verse <= toRef.verse)) {
+          return page.page;
+        }
       }
     }
+    return 1; // Default to first page
+  }
 
-    container.appendChild(fragment);
-    loadDefaultFont();
+  // Get page data by page number
+  function getPageData(pageNumber) {
+    return paginationData.find(page => page.page === pageNumber);
+  }
+
+
+  // Display Page (updated with Sura names)
+function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
+  const pageData = getPageData(pageNumber);
+  if (!pageData) {
+    console.error("Page not found:", pageNumber);
+    return;
+  }
+
+  const fromRef = parseRef(pageData.from);
+  const toRef = parseRef(pageData.to);
+  
+  const container = document.getElementById("quran-container");
+  container.className = "page";
+  container.innerHTML = `<div class="page-header">Page ${pageNumber} (${pageData.word_count} words)</div>`;
+  
+  const currentTranslate = localStorage.getItem("translate") || "notrans";
+  
+  // Create main Arabic text container
+  const arabicContainer = document.createElement("div");
+  arabicContainer.className = "arabic-text-container";
+  
+  // Create translations container
+  const translationsContainer = document.createElement("div");
+  translationsContainer.className = "translations-container";
+  
+  // Variables to track verse positions
+  let verseToScroll = null;
+  let currentSura = fromRef.sura;
+  let currentVerse = fromRef.verse;
+  let lastSura = null; // Track the last sura we displayed
+  
+  // Create document fragment for Arabic text
+  const arabicFragment = document.createDocumentFragment();
+  // Create document fragment for translations
+  const translationsFragment = document.createDocumentFragment();
+  
+  while (true) {
+    // Get global verse ID
+    const suraMeta = suraData[currentSura];
+    const globalVerseId = suraMeta.start + currentVerse - 1;
+    
+    if (!combinedData[globalVerseId]) {
+      console.error("Verse not found:", currentSura, currentVerse);
+      break;
+    }
+    
+    // Add Sura name if this is a new Sura
+    if (lastSura !== currentSura) {
+      // Add sura name separator
  
-    if (verseToScroll) {
-      verseToScroll.scrollIntoView({ behavior: "smooth" });
+      
+      // Add sura name in bold
+      const suraNameElem = document.createElement("span");
+      suraNameElem.className = "sura-name";
+      suraNameElem.innerHTML = `<strong>${suraMeta.name} (${currentSura})</strong>`;
+      arabicFragment.appendChild(suraNameElem);
+      
+      lastSura = currentSura;
+    }
+    
+    const verseData = combinedData[globalVerseId];
+    const constructedArabic = buildVerseFromWords(
+      verseData.start_word,
+      verseData.end_word
+    );
+
+    const formattedSuraNumber = String(currentSura).padStart(3, "0");
+    const formattedVerseNumber = String(currentVerse).padStart(3, "0");
+    const combinedId = `${formattedSuraNumber}${formattedVerseNumber}`;
+
+    // Create verse number element
+    const verseNumberElem = document.createElement("span");
+    verseNumberElem.className = "verse-number-inline";
+    
+    const verseLink = document.createElement("a");
+    verseLink.href = "#";
+    verseLink.target = "_blank";
+    verseLink.className = "verse-link";
+    verseLink.textContent = `﴿${currentVerse}﴾`;
+    verseLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      navigateToExternalVerse(currentVerse, currentSura);
+    });
+    
+    verseNumberElem.appendChild(verseLink);
+
+    // Create Arabic text container for this verse
+    const verseArabicContainer = document.createElement("span");
+    verseArabicContainer.className = "verse-arabic";
+    verseArabicContainer.id = `verse-${combinedId}`;
+    
+    // Check if this verse should be highlighted
+    if (highlightSura && highlightVerse && 
+        currentSura === highlightSura && currentVerse === highlightVerse) {
+      verseArabicContainer.classList.add("highlighted");
+      verseToScroll = verseArabicContainer;
+    }
+    
+    // Create Arabic text element
+    const verseText = document.createElement("span");
+    verseText.className = "arabic verse-text";
+    verseText.innerHTML = constructedArabic;
+    
+    // Append Arabic text and verse number to Arabic container
+    verseArabicContainer.appendChild(verseText);
+    verseArabicContainer.appendChild(document.createTextNode(" ")); // Space between text and number
+    verseArabicContainer.appendChild(verseNumberElem);
+    verseArabicContainer.appendChild(document.createTextNode(" ")); // Space after number
+    
+    // Create translation element
+    const verseTransText = document.createElement("div");
+    verseTransText.id = `trans-${combinedId}`;
+    verseTransText.className = "translation";
+    
+    // Create translation header with verse reference
+    const transHeader = document.createElement("div");
+    transHeader.className = "translation-header";
+    transHeader.textContent = `(${currentSura}:${currentVerse})`;
+    
+    const transContent = document.createElement("div");
+    transContent.className = "translation-content";
+    transContent.innerHTML = verseData.en;
+    
+    verseTransText.appendChild(transHeader);
+    verseTransText.appendChild(transContent);
+    
+    // Show/hide translation based on toggle
+    if (currentTranslate === "en") {
+      verseTransText.style.display = "block";
+    } else {
+      verseTransText.style.display = "none";
+    }
+    
+    // Append to fragments
+    arabicFragment.appendChild(verseArabicContainer);
+    translationsFragment.appendChild(verseTransText);
+    
+    // Break if we reached the end of the page
+    if (currentSura === toRef.sura && currentVerse === toRef.verse) {
+      break;
+    }
+    
+    // Move to next verse
+    currentVerse++;
+    if (currentVerse > suraMeta.nAyah) {
+      currentSura++;
+      currentVerse = 1;
     }
   }
+  
+  // Append fragments to containers
+  arabicContainer.appendChild(arabicFragment);
+  translationsContainer.appendChild(translationsFragment);
+  
+  // Append containers to main container
+  container.appendChild(arabicContainer);
+  container.appendChild(translationsContainer);
+  
+  loadDefaultFont();
+  
+  if (verseToScroll) {
+    verseToScroll.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+  
+  // Update current page
+  currentPage = pageNumber;
+  localStorage.setItem("currentPage", currentPage);
+  updatePageButtons();
+}
 
   // Navigate to External Verse
   function navigateToExternalVerse(verseNumber, sura) {
@@ -192,11 +306,20 @@
     });
   }
 
-  // Go To Selected Verse
+  // Go To Selected Verse (and display its page)
   function goToSelectedVerse() {
-    const suraNumber = document.getElementById("sura-select").value;
-    const verseNumber = document.getElementById("verse-select").value;
-    displaySura(suraNumber, verseNumber);
+    const suraNumber = parseInt(document.getElementById("sura-select").value);
+    const verseNumber = parseInt(document.getElementById("verse-select").value);
+    
+    // Update current sura/verse
+    currentSura = suraNumber;
+    currentVerse = verseNumber;
+    localStorage.setItem("selectedSura", currentSura);
+    localStorage.setItem("selectedVerse", currentVerse);
+    
+    // Find and display the page containing this verse
+    const pageNumber = findPageByVerse(suraNumber, verseNumber);
+    displayPage(pageNumber, suraNumber, verseNumber);
   }
 
   // Build Verse From Words
@@ -209,7 +332,7 @@
 
       const span = document.createElement("span");
       span.className = "word";
-      span.textContent = wordData; // Prevent XSS
+      span.textContent = wordData;
       span.dataset.wordId = i;
       span.dataset.en = enWordData;
 
@@ -217,7 +340,7 @@
       fragment.appendChild(document.createTextNode(" "));
     }
 
-    const div = document.createElement("div");
+    const div = document.createElement("span");
     div.appendChild(fragment);
     return div.innerHTML;
   }
@@ -234,34 +357,49 @@
     }
   }
 
-  // Load Selections from Local Storage
-  function loadSelections() {
-    try {
-      console.log("loading verse");
-      const savedSura = localStorage.getItem("selectedSura");
-      const savedVerse = localStorage.getItem("selectedVerse");
+function loadSelections() {
+  try {
+    const savedSura = localStorage.getItem("selectedSura");
+    const savedVerse = localStorage.getItem("selectedVerse");
+    const savedPage = localStorage.getItem("currentPage");
+
+    if (savedSura && savedVerse) {
+      currentSura = parseInt(savedSura);
+      currentVerse = parseInt(savedVerse);
+
+      currentPage = savedPage
+        ? parseInt(savedPage)
+        : findPageByVerse(currentSura, currentVerse);
 
       const suraSelect = document.getElementById("sura-select");
       const verseSelect = document.getElementById("verse-select");
 
-      if (savedSura && suraData[savedSura]) {
-        suraSelect.value = savedSura;
-        populateVerseSelector();
+      suraSelect.value = currentSura;
 
-        if (savedVerse && combinedData[savedVerse]) {
-          verseSelect.value = savedVerse;
-        } else {
-          verseSelect.selectedIndex = 0;
-        }
-      } else {
-        suraSelect.selectedIndex = 0;
-        populateVerseSelector();
-        verseSelect.selectedIndex = 0;
-      }
-     
-      goToSelectedVerse();
-    } catch (error) {
-      console.error("Error loading selections from localStorage:", error);
+      populateVerseSelector();        // ✅ populate once
+      verseSelect.value = currentVerse; // ✅ then set value
+
+      displayPage(currentPage, currentSura, currentVerse);
+    } else {
+      displayPage(1);
+    }
+  } catch (error) {
+    console.error("Error loading selections:", error);
+    displayPage(1);
+  }
+}
+
+  // Update Page Navigation Buttons
+  function updatePageButtons() {
+    const prevButton = document.getElementById("prev-page");
+    const nextButton = document.getElementById("next-page");
+    
+    if (prevButton) {
+      prevButton.disabled = currentPage <= 1;
+    }
+    
+    if (nextButton) {
+      nextButton.disabled = currentPage >= paginationData.length;
     }
   }
 
@@ -427,16 +565,27 @@ function buildMorphologyTable(wordObjects) {
       }
     });
 
-  // Initialize Event Listeners for Selectors
+  // Initialize Event Listeners
   document.getElementById("sura-select").addEventListener("change", () => {
-    saveSelections();
     populateVerseSelector();
     goToSelectedVerse();
   });
 
   document.getElementById("verse-select").addEventListener("change", () => {
-    saveSelections();
     goToSelectedVerse();
+  });
+
+  // Page Navigation Event Listeners
+  document.getElementById("prev-page").addEventListener("click", () => {
+    if (currentPage > 1) {
+      displayPage(currentPage - 1);
+    }
+  });
+
+  document.getElementById("next-page").addEventListener("click", () => {
+    if (currentPage < paginationData.length) {
+      displayPage(currentPage + 1);
+    }
   });
 
 
@@ -448,24 +597,30 @@ const pageDefaultFonts = {
   "/originalquran/quran.html": "Raqq" // Add more pages and their default fonts here
 };
 
-// Function to update the font by applying the correct class
 function updateFontClass(selectedFont) {
   const arabicElements = document.querySelectorAll(".arabic");
 
-  // Remove any previously applied font classes
   arabicElements.forEach((element) => {
-    element.classList.remove("font-raqq", "font-qahiri", "font-amiri");
+    // Reset font classes
+    element.classList.remove(
+      "font-raqq",
+      "font-qahiri",
+      "font-amiri",
+      "is-italic"
+    );
 
-    // Apply the correct font class based on the selection
     if (selectedFont === "Raqq") {
       element.classList.add("font-raqq");
-    } else if (selectedFont === "Qahiri") {
-      element.classList.add("font-qahiri");
-    } else if (selectedFont === "Amiri Quran") {
+    } 
+    else if (selectedFont === "Qahiri") {
+      element.classList.add("font-qahiri", "is-italic");
+    } 
+    else if (selectedFont === "Amiri Quran") {
       element.classList.add("font-amiri");
     }
   });
 }
+
 // Function to load the default font for the page
 function loadDefaultFont() {
   const page = window.location.pathname; // Get the current page path
@@ -504,7 +659,7 @@ document.getElementById("font-select").addEventListener("change", (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggleBtn = document.getElementById("theme-toggle");
-  const translationToggleBtn = document.getElementById("translation-toggle"); // Make sure this element exists
+  const translationToggleBtn = document.getElementById("translation-toggle");
 
   const currentTheme = localStorage.getItem("theme") || "light";
   const currentTranslate = localStorage.getItem("translate") || "notrans";
@@ -516,15 +671,14 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     themeToggleBtn.checked = false;
   }
-console.log("saved translaton"+ currentTranslate)
 
   // Apply the saved translation status on page load
   if (currentTranslate === "en") {
     showTranslation = true;
-    translationToggleBtn.checked = true; // Set the toggle button to checked if translation is enabled
+    translationToggleBtn.checked = true;
   } else {
     showTranslation = false;
-    translationToggleBtn.checked = false; // Set it to unchecked if no translation is set
+    translationToggleBtn.checked = false;
   }
 
   // Toggle the theme when the button is clicked
@@ -540,7 +694,7 @@ console.log("saved translaton"+ currentTranslate)
 
   // Toggle the translation visibility without page reload
   translationToggleBtn.addEventListener("change", () => {
-    showTranslation = translationToggleBtn.checked; // Update based on checkbox status
+    showTranslation = translationToggleBtn.checked;
 
     // Save the current translation setting in localStorage
     localStorage.setItem("translate", showTranslation ? "en" : "notrans");
@@ -553,9 +707,4 @@ console.log("saved translaton"+ currentTranslate)
   });
 });
 
-
 })();
-
-
-
-

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="root.css">
   <title>Quran Root Words</title>
 </head>
 
@@ -24,11 +24,11 @@
     </label>
 
     <div class="menu-content">
-      <a href="quran.html">
-        <i class="fas fa-book"> </i>
+      <a href="index.html">
+        <i class="fas fa-book">Old Quran </i>
       </a>
       <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
-        <i class="fab fa-github"> </i>
+        <i class="fab fa-github"></i>
       </a>
       <span>Show Translation</span>
       <label class="toggle-switch">
@@ -42,6 +42,7 @@
         <span class="slider"></span>
       </label>
       <!-- Font Selection Dropdown -->
+    </div>
     </div>
 
     <div class="book-container">
@@ -198,27 +199,29 @@
         displayVerseData(); // Display verse data for the first word initially
       }
 
-      // Display the verse data (as already implemented)
-      function displayVerseData() {
-        const wordSelect = document.getElementById('word-select').value;
-        const rootSelect = document.getElementById('root-select').value;
-        const verseData = rootWordsData[rootSelect].Word[wordSelect].Verses;
-        const rootCount = rootWordsData[rootSelect].RootCount;
-        const wordCount = rootWordsData[rootSelect].Word[wordSelect].WordCount;
-        const verseCount = rootWordsData[rootSelect].Word[wordSelect].VerseCount;
-
-        const verseContainer = document.getElementById('verse-data');
-        verseContainer.innerHTML = `
-  <ul>
-    ${verseData.map(verse => `<div class="arabic-modern">${buildVerse(verse)}</div>`).join('')}
-  </ul>
-`;
-
-
-
-
-
-      }
+function displayVerseData() {
+  const wordSelect = document.getElementById('word-select').value;
+  const rootSelect = document.getElementById('root-select').value;
+  const verseData = rootWordsData[rootSelect].Word[wordSelect].Verses;
+  
+  const showTranslation = localStorage.getItem("translate") === "en";
+  
+  const verseContainer = document.getElementById('verse-data');
+  verseContainer.innerHTML = `
+    <ul>
+      ${verseData.map(verse => {
+        const verseContent = buildVerse(verse, showTranslation);
+        return `<div class="arabic">${verseContent}</div>`;
+      }).join('')}
+    </ul>
+  `;
+  
+  // Apply translation visibility based on current state
+  const translationElements = verseContainer.querySelectorAll(".translation");
+  translationElements.forEach((element) => {
+    element.style.display = showTranslation ? "block" : "none";
+  });
+}
 
       // Call populateLetterLabels after the JSON data is loaded
       function saveSelections() {
@@ -297,42 +300,43 @@
         return words;
       }
 
-      // Function to build the verse with the specified highlight based on Key
-      function buildVerse(verseObject) {
-        const { Key, ID } = verseObject;
+      function buildVerse(verseObject, showTranslation = false) {
+  const { Key, ID } = verseObject;
 
-        // Extract sura number, verse number, and word position from ID
-        const [suraNumber, verseNumber] = ID.split(":").map(Number);
+  // Extract sura number, verse number, and word position from ID
+  const [suraNumber, verseNumber] = ID.split(":").map(Number);
 
-        // Fetch sura data from json/sura.json
-        const suraInfo = getSuraData(suraNumber);
+  // Fetch sura data from json/sura.json
+  const suraInfo = getSuraData(suraNumber);
 
-        // Calculate the verse index from combined_quran.json
-        const verseIndex = suraInfo.start + (verseNumber - 1);
+  // Calculate the verse index from combined_quran.json
+  const verseIndex = suraInfo.start + (verseNumber - 1);
 
-        // Fetch the verse from combined_quran.json using verseIndex
-        const verseData = getVerseData(verseIndex);
+  // Fetch the verse from combined_quran.json using verseIndex
+  const verseData = getVerseData(verseIndex);
 
-        // Build the verse using words from quran_words.json
-        const words = getWordsFromRange(verseData.start_word, verseData.end_word);
+  // Build the verse using words from quran_words.json
+  const words = getWordsFromRange(verseData.start_word, verseData.end_word);
 
-        // Highlight the word with ID matching the Key
-        const highlightedWords = words.map((word, index) => {
-          const wordPosition = verseData.start_word + index;
-          if (wordPosition === Number(Key)) {
-            return `<span class="highlight">${word}</span>`;
-          }
-          return word;
-        });
+  // Highlight the word with ID matching the Key
+  const highlightedWords = words.map((word, index) => {
+    const wordPosition = verseData.start_word + index;
+    if (wordPosition === Number(Key)) {
+      return `<span class="highlight">${word}</span>`;
+    }
+    return word;
+  });
 
-        // English translation
+  // English translation - conditionally include based on showTranslation
+  const translation = showTranslation ? 
+    `<div class="translation" style="display: block;">${verseData.en}</div>` : 
+    `<div class="translation" style="display: none;">${verseData.en}</div>`;
+    
+  const verseLink = `<span class="verseid" style="cursor:pointer; color:blue; text-decoration: underline;" verse=${verseIndex} sura=${suraNumber}>${suraNumber}:${verseNumber}</span>`
 
-        const translation = `<div class="translation">${verseData.en}</div>`;
-        const verseLink = `<span class="verseid" style="cursor:pointer; color:blue; text-decoration: underline;" verse=${verseIndex} sura=${suraNumber}>${suraNumber}:${verseNumber}</span>`
-
-        // Return the verse as a string of words followed by sura:verse (e.g., "2:12")
-        return `${highlightedWords.join(" ")} ${verseLink} ${translation}`;
-      }
+  // Return the verse as a string of words followed by sura:verse (e.g., "2:12")
+  return `${highlightedWords.join(" ")} ${verseLink} ${translation}`;
+}
 
 
 
@@ -581,56 +585,63 @@
 
 
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const themeToggleBtn = document.getElementById("theme-toggle");
-        const translationToggleBtn = document.getElementById("translation-toggle"); // Make sure this element exists
+     document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const translationToggleBtn = document.getElementById("translation-toggle");
 
-        const currentTheme = localStorage.getItem("theme") || "light";
-        const currentTranslate = localStorage.getItem("translate") || "notrans";
+  const currentTheme = localStorage.getItem("theme") || "light";
+  const currentTranslate = localStorage.getItem("translate") || "notrans";
 
-        // Apply the saved theme on page load
-        if (currentTheme === "dark") {
-          document.body.classList.add("dark-theme");
-          themeToggleBtn.checked = true;
-        } else {
-          themeToggleBtn.checked = false;
-        }
-        console.log("saved translaton" + currentTranslate)
+  // Apply the saved theme on page load
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggleBtn.checked = true;
+  } else {
+    themeToggleBtn.checked = false;
+  }
 
-        // Apply the saved translation status on page load
-        if (currentTranslate === "en") {
-          showTranslation = true;
-          translationToggleBtn.checked = true; // Set the toggle button to checked if translation is enabled
-        } else {
-          showTranslation = false;
-          translationToggleBtn.checked = false; // Set it to unchecked if no translation is set
-        }
+  // Apply the saved translation status on page load
+  if (currentTranslate === "en") {
+    translationToggleBtn.checked = true;
+  } else {
+    translationToggleBtn.checked = false;
+  }
 
-        // Toggle the theme when the button is clicked
-        themeToggleBtn.addEventListener("click", () => {
-          document.body.classList.toggle("dark-theme");
+  // Toggle the theme when the button is clicked
+  themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
 
-          // Save the current theme in localStorage
-          const newTheme = document.body.classList.contains("dark-theme")
-            ? "dark"
-            : "light";
-          localStorage.setItem("theme", newTheme);
-        });
+    // Save the current theme in localStorage
+    const newTheme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+    localStorage.setItem("theme", newTheme);
+  });
 
-        // Toggle the translation visibility without page reload
-        translationToggleBtn.addEventListener("change", () => {
-          showTranslation = translationToggleBtn.checked; // Update based on checkbox status
+  // Toggle the translation visibility without page reload
+  translationToggleBtn.addEventListener("change", () => {
+    const showTranslation = translationToggleBtn.checked;
+    
+    // Save the current translation setting in localStorage
+    localStorage.setItem("translate", showTranslation ? "en" : "notrans");
 
-          // Save the current translation setting in localStorage
-          localStorage.setItem("translate", showTranslation ? "en" : "notrans");
+    // Toggle translation display in the DOM
+    const translationElements = document.querySelectorAll(".translation");
+    translationElements.forEach((element) => {
+      element.style.display = showTranslation ? "block" : "none";
+    });
+    
+    // Re-render the verse data with the new translation setting
+    if (document.getElementById('word-select').value) {
+      displayVerseData();
+    }
+  });
+  
+  // Load saved selections after the toggles are initialized
+  loadSavedSelections();
+});
 
-          // Toggle translation display in the DOM
-          const translationElements = document.querySelectorAll(".translation");
-          translationElements.forEach((element) => {
-            element.style.display = showTranslation ? "block" : "none";
-          });
-        });
-      });
+
 
 
 
