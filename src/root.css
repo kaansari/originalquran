@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block");
-@font-face {
-  font-family: "Raqq";
-  src: url("fonts/Raqq.ttf");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Qahiri';
-  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
-
-}
-
 
 @font-face {
   font-family: "UthmaniHafs";
@@ -21,25 +9,14 @@
   font-display: swap;
 }
 
-@font-feature-values "Raqq" {
-  @stylistic {
-      alt-one: 1;
-      alt-two: 2
-  }
-
-  @styleset {
-      dotless: 1
-  }
-}
-
 :root {
-  --kufi-family: "Raqq", serif;
+  --kufi-family: "UthmaniHafs", serif;
   --kufi-color: #333;
-  --heading-family: "UthmaniHafs", serif;
+  --heading-family: "UthmaniHafs", sans-serif;
+  --reem-family: "UthmaniHafs", sans-serif;
   --h1-font-size: 40px;
-  --qahiri-family:'Qahiri', sans-serif;
+  --qahiri-family:"UthmaniHafs", sans-serif;
   --amiri-family: "UthmaniHafs", serif;
-  --uthmaniHafs: "UthmaniHafs", serif;
   --background-color:#FEFFFE;
   --text-color: #333;
   --highlight-color: #E5FCF5;
@@ -50,7 +27,7 @@
   --icon-hover-color: #007bff;
   --play-button-border-color: white;
   --morphology-popup-bg-color: white;
-  --latin-font: "DM Sans", "UthmaniHafs", serif;
+  --latin-font: "DM Sans", "UthmaniHafs", sans-serif;
   --menu-line: #333;
 }
 
@@ -77,244 +54,74 @@ body * {
 
 /* Apply the theme variables */
 body {
-  font-family: var(--latin-font);
+  font-family: var(--latin-fonts);
+
   background-color: var(--background-color);
+  color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 }
 
 h1, h2, h3 {
   color: var(--verse-text-color);
 }
-/*
 
-
-/* Page and Row */
-
-.page {
-  padding: 20px;
-}
-
-
-.row {
-  font-size: var(--row-font-size);
-}
-
-
-
-/* Page Navigation Styles */
-.page-navigation {
+/* Verse related styling */
+.verse-container {
   display: flex;
+  padding-left: 40px;
+  padding-right: 10px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-  background-color: var(--background-color);
-  padding-inline: 40px;
-
 }
 
-.nav-button {
-  padding: 4px 8px;          /* smaller padding */
-  background-color: var(--selector-bg-color);
-  color: var(--text-color);
-  border: 1px solid var(--broder-color);
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-  transition: background-color 0.2s;
-  display: inline-flex;      /* IMPORTANT */
+
+.book-container {
+
+  padding: 10px;
+  border: 1px solid #8b5a2b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   align-items: center;
-  gap: 4px;                  /* smaller icon gap */
-  width: auto;               /* prevent stretching */
-  white-space: nowrap;       /* keep text on one line */
-}
-
-.nav-button:hover:not(:disabled) {
-  background-color: var(--highlight-color);
-}
-
-.nav-button:disabled {
-  background-color: var(--background-color);
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-.nav-button i {
-  font-size: 12px;
+  margin-left: auto;
+  margin-right: 0;
+  direction: rtl; /* optional: ensures text flows right-to-left */
 }
 
 
 
-/* Sura Name Styling */
-.sura-separator {
-  display: block;
-  font-size: 14px;
-  letter-spacing: 3px;
+.verse-header {
+  display: flex;
+  align-items: center;
 }
 
-.sura-name {
-  display: block;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--verse-text-color);
-  direction: rtl;
+.verse-number {
+  margin-right: 0px;
+  flex-direction: row;
+  align-items: start;
 }
-/* Continuous Arabic Text Layout */
-.arabic-text-container {
+
+.verse-text {
   text-align: right;
-  line-height: 1.5;
-  direction: rtl;
-  margin-bottom: 30px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.arabic{
-  word-spacing: 3px;
-  font-size: 1.5rem;
-  direction: rtl;
-  text-align: right;
-  color: var(--text-color);
-}
-/**/
-
-.is-italic {
-  font-style: italic;
-}
-
-
-.verse-arabic.highlighted {
-  background-color: var(--highlight-color) !important;
-  padding: 2px 8px;
-  border-radius: 4px;
-  box-shadow: 0 0 8px rgba(102, 255, 255, 0.5);
-}
-
-
-
-.verse-number-inline {
-  display: inline-block;
+  flex-grow: 1;
   color: var(--verse-text-color);
-  font-weight: normal;
-  margin: 0 8px;
-  vertical-align: middle;
-  font-size: 12px;
+  font-weight: normal
 }
 
 .verse-link {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-.verse-link:hover {
-  text-decoration: underline;
-  color: var(--icon-hover-color);
-}
-
-.translations-container {
-  margin-top: 30px;
-  padding: 10px;
-  background-color: var(--background-color);
-}
-
-.translation {
-  display: inline;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
-}
-
-.translation:hover {
-  background-color: var(--highlight-color);
-}
-
-.translation-header {
-  font-weight: bold;
-  margin-bottom: 5px;
+  text-align: left;
   color: var(--verse-text-color);
-  font-family: var(--latin-font);
-    display: inline;
+  font-weight: normal
 }
 
-.translation-content {
-  font-family: var(--latin-font);
+.arabic {
+  font-family: var(--amiri-family); 
+  word-spacing: 10px;
   font-size: 14px;
-  color: var(--secondary-text-color);
-    display: inline;
-}
-
-/* Page header */
-.page-header {
-  text-align: center;
-  color: var(--verse-text-color);
-  padding-bottom: 10px;
-
-}
-
-/* Word styling for continuous text */
-.word {
-  display: inline;
-  cursor: pointer;
-  padding: 1px 2px;
-  border-radius: 2px;
-  transition: background-color 0.2s;
-}
-
-.word:hover {
-  background-color: var(--highlight-color);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-
-  .page {
-
-
-  padding: 5px;
-}
-
-  .arabic-text-container {
-    font-size: 18px;
-    line-height: 1.5;
-    padding: 10px;
-  }
-  
-  .verse-number-inline {
-    font-size: 12px;
-    margin: 0 4px;
-  }
-  
-  .page-header {
-    font-size: 1;
-  }
-  
-
-  
-  .nav-button {
-    width: 100%;
-    justify-content: center;
-  }
-
-   .page-navigation {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 8px;
-  }
-
-  .nav-center {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-button {
-    font-size: 11px;
-    padding: 4px 6px;
-  }
-
-  select {
-    font-size: 11px;
-  }
+  font-size: 1.5em;
+  direction: rtl;
+  text-align: right;
+  color: var(--text-color);
 }
 
 
@@ -331,17 +138,18 @@ h1, h2, h3 {
   font-family: var(--amiri-family) /* Applies the Amiri Quran font */
 }
 
+.font-reem {
+  font-family: var(--reem-family) /* Applies the Amiri Quran font */
+}
 
 
 .translation {
-  font-family: var(--latin-font);
   font-size: 12px;
-  color: var(--secondary-text-color);
 }
 
 /* Selector styling */
 .selector {
- padding: 30px;
+ padding: 10px;
   
 }
 
@@ -366,6 +174,34 @@ select:focus {
   border-color: var(--highlight-color); /* Add custom highlight color */
 }
 
+
+.play-button {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+.play-button::before {
+  content: '►';
+  /* Play symbol */
+  font-size: 12px;
+  /* Font size for the play symbol */
+  color: var(--text-color);
+  /* Play symbol color */
+}
+
+
+
 .morphology-popup {
   position: absolute;
   background-color: var(--morphology-popup-bg-color);
@@ -374,6 +210,42 @@ select:focus {
   font-size: 12px;
 }
 
+
+.highlight {
+  background-color: var(--highlight-color);
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.letter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 5px;
+  padding: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color:var(--background-color);
+  color: var(--text-color);
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Create a shadow */
+  margin: 40px
+
+
+}
+
+.letter-container > div {
+  flex: 0 1 auto;
+  min-width: 50px;
+  padding: 5px;
+  background-color:var(--highlight-color);
+  border-radius: 5px;
+  cursor: pointer;
+  direction: rtl;
+  text-align: right;
+}
 
 /* Menu */
 
@@ -493,6 +365,94 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+
+.verse-data{
+  max-height: 80vh; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+
+  }
+.verse-data > ul{
+
+    padding: 5px;
+
+  }
+
+
+/* Responsive media queries for mobile */
+@media (max-width: 350px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-content {
+    position: fixed;
+    top: 50px;
+    left: 0; /* Ensure it starts from the left */
+    right: 0;
+    width: 100%; /* Full width for mobile */
+    display: none;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  #menu-toggle:checked ~ .menu-content {
+    display: flex;
+  }
+
+  .menu-content a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  /* Smaller toggle switch for mobile */
+  .toggle-switch {
+    width: 40px;
+    height: 20px;
+  }
+
+  .slider:before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .popup-content {
+    max-width: 85%;
+    max-height: 85%;
+  }
+}
+
+/* Even smaller screens (phones under 480px wide) */
+@media (max-width: 300px) {
+  .menu-content {
+    left: 0;
+    right: 0;
+    width: 100%; /* Ensure full width */
+  }
+
+  .menu-content a {
+    font-size: 16px;
+  }
+
+  .toggle-switch {
+    width: 35px;
+    height: 18px;
+  }
+
+  .slider:before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .popup-content {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+}
 
 
 

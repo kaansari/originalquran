@@ -173,7 +173,7 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     verseLink.href = "#";
     verseLink.target = "_blank";
     verseLink.className = "verse-link";
-    verseLink.textContent = `﴿${currentSura}:${currentVerse}﴾`;
+    verseLink.textContent = `﴿${currentVerse}﴾`;
     verseLink.addEventListener("click", (e) => {
       e.preventDefault();
       navigateToExternalVerse(currentVerse, currentSura);
@@ -597,24 +597,30 @@ const pageDefaultFonts = {
   "/originalquran/quran.html": "Raqq" // Add more pages and their default fonts here
 };
 
-// Function to update the font by applying the correct class
 function updateFontClass(selectedFont) {
   const arabicElements = document.querySelectorAll(".arabic");
 
-  // Remove any previously applied font classes
   arabicElements.forEach((element) => {
-    element.classList.remove("font-raqq", "font-qahiri", "font-amiri");
+    // Reset font classes
+    element.classList.remove(
+      "font-raqq",
+      "font-qahiri",
+      "font-amiri",
+      "is-italic"
+    );
 
-    // Apply the correct font class based on the selection
     if (selectedFont === "Raqq") {
       element.classList.add("font-raqq");
-    } else if (selectedFont === "Qahiri") {
-      element.classList.add("font-qahiri");
-    } else if (selectedFont === "Amiri Quran") {
+    } 
+    else if (selectedFont === "Qahiri") {
+      element.classList.add("font-qahiri", "is-italic");
+    } 
+    else if (selectedFont === "Amiri Quran") {
       element.classList.add("font-amiri");
     }
   });
 }
+
 // Function to load the default font for the page
 function loadDefaultFont() {
   const page = window.location.pathname; // Get the current page path
