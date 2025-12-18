@@ -18,7 +18,7 @@
   Promise.all([
     fetch("json/sura.json").then((response) => response.json()),
     fetch("json/combined_quran.json").then((response) => response.json()),
-    fetch("json/quran_harakat_words.json").then((response) => response.json()),
+    fetch("json/quranic_words.json").then((response) => response.json()),
     fetch("json/quran_morphology.json").then((response) => response.json()),
     fetch("json/en-word.json").then((response) => response.json()),
     fetch("json/pagination_map.json").then((response) => response.json())
@@ -170,15 +170,10 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     verseNumberElem.className = "verse-number-inline";
     
     const verseLink = document.createElement("a");
-    verseLink.href = "#";
+    verseLink.href = navigateToExternalVerse(currentVerse, currentSura);;
     verseLink.target = "_blank";
     verseLink.className = "verse-link";
     verseLink.textContent = `﴿${currentVerse}﴾`;
-    verseLink.addEventListener("click", (e) => {
-      e.preventDefault();
-      navigateToExternalVerse(currentVerse, currentSura);
-    });
-    
     verseNumberElem.appendChild(verseLink);
 
     // Create Arabic text container for this verse
@@ -268,7 +263,7 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
   // Navigate to External Verse
   function navigateToExternalVerse(verseNumber, sura) {
     const fullURL = `${EXTERNAL_VERSE_BASE_URL}sura/${sura}/verse/${verseNumber}/manuscripts`;
-    window.open(fullURL, "_blank");
+    return fullURL;
   }
 
   // Play Audio
