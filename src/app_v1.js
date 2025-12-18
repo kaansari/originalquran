@@ -170,15 +170,10 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
     verseNumberElem.className = "verse-number-inline";
     
     const verseLink = document.createElement("a");
-    verseLink.href = "#";
+    verseLink.href = navigateToExternalVerse(currentVerse, currentSura);;
     verseLink.target = "_blank";
     verseLink.className = "verse-link";
     verseLink.textContent = `﴿${currentVerse}﴾`;
-    verseLink.addEventListener("click", (e) => {
-      e.preventDefault();
-      navigateToExternalVerse(currentVerse, currentSura);
-    });
-    
     verseNumberElem.appendChild(verseLink);
 
     // Create Arabic text container for this verse
@@ -267,8 +262,8 @@ function displayPage(pageNumber, highlightSura = null, highlightVerse = null) {
 
   // Navigate to External Verse
   function navigateToExternalVerse(verseNumber, sura) {
-    const fullURL = `${EXTERNAL_VERSE_BASE_URL}sura/${sura}/verse/${verseNumber}/manuscripts`;
-    window.open(fullURL, "_blank");
+    return fullURL = `${EXTERNAL_VERSE_BASE_URL}sura/${sura}/verse/${verseNumber}/manuscripts`;
+    
   }
 
   // Play Audio
