@@ -81,8 +81,8 @@ def parse_quranic_text_enhanced(input_file, output_file):
 
 if __name__ == "__main__":
     # Configuration
-    input_filename = "../data/quran-uthmani.txt"  # Your input file name
-    output_filename = "../src/json/quranic_words.json"  # Output JSON file name
+    input_filename = "../data/uthmani-warsh.txt"  # Your input file name
+    output_filename = "../src/json/quranic_warsh_words.json"  # Output JSON file name
     
     # Run the parser
     try:
