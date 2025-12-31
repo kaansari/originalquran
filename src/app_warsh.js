@@ -18,7 +18,7 @@
   Promise.all([
     fetch("json/sura.json").then((response) => response.json()),
     fetch("json/combined_quran.json").then((response) => response.json()),
-    fetch("json/quranic_words.json").then((response) => response.json()),
+    fetch("json/quranic_warsh_words.json").then((response) => response.json()),
     fetch("json/quran_morphology.json").then((response) => response.json()),
     fetch("json/en-word.json").then((response) => response.json()),
     fetch("json/pagination_map.json").then((response) => response.json())
