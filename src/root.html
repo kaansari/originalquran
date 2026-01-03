@@ -43,171 +43,185 @@
       </label>
       <!-- Font Selection Dropdown -->
     </div>
+  </div>
+
+  <div class="book-container">
+    <div id="letter-container" class="letter-container">
     </div>
 
-    <div class="book-container">
-      <div id="letter-container" class="letter-container">
+    <div class="selector">
+      <select id="root-select"></select>
+      <!-- This will be populated based on the selected letter -->
+
+
+      <select id="word-select">
+        <!-- This will be populated based on the selected root word -->
+      </select>
+    </div>
+    <div id="quran-container">
+      <div id="verse-data" class="verse-data">
+        <!-- Verse data will be displayed here -->
       </div>
-
-      <div class="selector">
-        <select id="root-select"></select>
-        <!-- This will be populated based on the selected letter -->
-
-
-        <select id="word-select">
-          <!-- This will be populated based on the selected root word -->
-        </select>
-      </div>
-      <div id="quran-container">
-        <div id="verse-data" class="verse-data">
-          <!-- Verse data will be displayed here -->
-        </div>
-      </div>
-
     </div>
 
-    <script>
+  </div>
 
-      // Global Variables
-      const AUDIO_BASE_URL = "https://audios.quranwbw.com/words/";
-      let currentAudio = null;
-      let suraData, combinedQuranData, quranWordsData, morphology;
-      let rootWordsData = {}; // To store the root_words.json data
-      let paginationData = [];
+  <script>
 
-
-
-
-      Promise.all([
-        fetch("json/sura.json").then((response) => response.json()),
-        fetch("json/combined_harakat_quran.json").then((response) => response.json()),
-        fetch("json/quran_harakat_words.json").then((response) => response.json()),
-        fetch("json/quran_morphology.json").then((response) => response.json()),
-        fetch("json/en-word.json").then((response) => response.json()),
-        fetch("json/pagination_map.json").then((response) => response.json()),
-      ])
-        .then((data) => {
-          [suraData, combinedQuranData, quranWordsData, morphology, enData, paginationData] = data;
-        })
-        .catch((error) => {
-          console.error("Error loading JSON files:", error);
-          alert("Failed to load data. Please try refreshing the page.");
-        });
+    // Global Variables
+    const AUDIO_BASE_URL = "https://audios.quranwbw.com/words/";
+    let currentAudio = null;
+    let suraData, combinedQuranData, quranWordsData, morphology;
+    let rootWordsData = {}; // To store the root_words.json data
+    let paginationData = [];
 
 
-      // Fetch the root_words.json data
-      fetch('json/root_words.json')
-        .then(response => response.json())
-        .then(data => {
-          rootWordsData = data;
-          populateLetterLabels(); // Populate letters after data is loaded
-          loadSavedSelections(); // Load saved selections
-        })
-        .catch(error => console.error('Error loading root_words.json:', error));
 
-      // Populate the clickable letters as labels
-      function populateLetterLabels() {
-        const letterContainer = document.getElementById('letter-container');
-        letterContainer.innerHTML = ''; // Clear any existing labels
-        const uniqueLetters = new Set();
 
-        // Extract the first letter of each root word and add it to the Set
-        for (const root in rootWordsData) {
-          uniqueLetters.add(root.charAt(0));
-        }
+    Promise.all([
+      fetch("json/sura.json").then((response) => response.json()),
+      fetch("json/combined_harakat_quran.json").then((response) => response.json()),
+      fetch("json/quran_harakat_words.json").then((response) => response.json()),
+      fetch("json/quran_morphology.json").then((response) => response.json()),
+      fetch("json/en-word.json").then((response) => response.json()),
+      fetch("json/pagination_map.json").then((response) => response.json()),
+    ])
+      .then((data) => {
+        [suraData, combinedQuranData, quranWordsData, morphology, enData, paginationData] = data;
+      })
+      .catch((error) => {
+        console.error("Error loading JSON files:", error);
+        alert("Failed to load data. Please try refreshing the page.");
+      });
 
-        // Sort the letters and create clickable labels
-        const sortedLetters = Array.from(uniqueLetters).sort();
-        sortedLetters.forEach(letter => {
-          const letterLabel = document.createElement('span');
-          letterLabel.textContent = letter;
-          letterLabel.classList.add('letter-label'); // Add some styling class
-          letterLabel.style.cursor = 'pointer'; // Make it look clickable
-          letterLabel.style.marginRight = '10px';
 
-          // Add click event to each label
-          letterLabel.addEventListener('click', () => {
-            populateRootSelectorByLetter(letter);
-            saveSelections(); // Save the selected letter
-          });
+    // Fetch the root_words.json data
+    fetch('json/root_words.json')
+      .then(response => response.json())
+      .then(data => {
+        rootWordsData = data;
+        bindSelectListenersOnce();
+        populateLetterLabels(); // Populate letters after data is loaded
+        loadSavedSelections(); // Load saved selections
+      })
+      .catch(error => console.error('Error loading root_words.json:', error));
 
-          // Append the label to the container
-          letterContainer.appendChild(letterLabel);
-        });
+    // Populate the clickable letters as labels
+    function populateLetterLabels() {
+      const letterContainer = document.getElementById('letter-container');
+      letterContainer.innerHTML = ''; // Clear any existing labels
+      const uniqueLetters = new Set();
 
-        // Automatically populate root selector for the first letter by default
-        if (!localStorage.getItem("selectedRoot") && sortedLetters.length > 0) {
-  populateRootSelectorByLetter(sortedLetters[0]);
-}
-
+      // Extract the first letter of each root word and add it to the Set
+      for (const root in rootWordsData) {
+        uniqueLetters.add(root.charAt(0));
       }
 
-      // Populate the root selector based on the selected letter
-      function populateRootSelectorByLetter(letter) {
-        const rootSelect = document.getElementById('root-select');
-        rootSelect.innerHTML = '';
+      // Sort the letters and create clickable labels
+      const sortedLetters = Array.from(uniqueLetters).sort();
+      sortedLetters.forEach(letter => {
+        const letterLabel = document.createElement('span');
+        letterLabel.textContent = letter;
+        letterLabel.classList.add('letter-label'); // Add some styling class
+        letterLabel.style.cursor = 'pointer'; // Make it look clickable
+        letterLabel.style.marginRight = '10px';
 
-        // Filter and sort the root words that start with the selected letter
-        const filteredRoots = Object.keys(rootWordsData).filter(root => root.startsWith(letter)).sort();
-
-        // Populate root selector with filtered roots
-        filteredRoots.forEach(root => {
-          const option = document.createElement('option');
-          option.value = root;
-          option.textContent = root;
-          rootSelect.appendChild(option);
+        // Add click event to each label
+        letterLabel.addEventListener('click', () => {
+          populateRootSelectorByLetter(letter);
+          saveSelections(); // Save the selected letter
         });
 
-        // Add event listener to root select
-        rootSelect.addEventListener('change', () => {
-          populateWordSelector();
-          saveSelections(); // Save the selected root word
-        });
+        // Append the label to the container
+        letterContainer.appendChild(letterLabel);
+      });
 
-        // Populate word selector for the first root word by default
-        if (filteredRoots.length > 0) {
-          rootSelect.value = filteredRoots[0]; // Default to the first root word
-          populateWordSelector();
-        }
+      // Automatically populate root selector for the first letter by default
+      if (!localStorage.getItem("selectedRoot") && sortedLetters.length > 0) {
+        populateRootSelectorByLetter(sortedLetters[0]);
       }
 
-      // Populate the word selector based on the selected root word
-      function populateWordSelector() {
-        const rootSelect = document.getElementById('root-select').value;
-        const wordSelect = document.getElementById('word-select');
-        wordSelect.innerHTML = '';
+    }
 
-        const wordList = rootWordsData[rootSelect].Word;
 
-        // Sort the words in ascending order
-        const sortedWords = Object.keys(wordList).sort();
+    let listenersBound = false;
 
-        // Populate word selector with sorted child words
-        sortedWords.forEach((word) => {
-          const option = document.createElement('option');
-          option.value = word;
-          option.textContent = word;
-          wordSelect.appendChild(option);
-        });
+    function bindSelectListenersOnce() {
+      if (listenersBound) return;
+      listenersBound = true;
 
-        // Add event listener to word selector
-        wordSelect.addEventListener('change', () => {
-          saveSelections(); // Save the word selection
-          displayVerseData();
-        });
+      const rootSelectEl = document.getElementById("root-select");
+      const wordSelectEl = document.getElementById("word-select");
 
-        displayVerseData(); // Display verse data for the first word initially
+      rootSelectEl.addEventListener("change", () => {
+        populateWordSelector();   // must still happen
+        saveSelections();
+      });
+
+      wordSelectEl.addEventListener("change", () => {
+        saveSelections();
+        displayVerseData();
+      });
+    }
+
+
+    // Populate the root selector based on the selected letter
+    function populateRootSelectorByLetter(letter) {
+      const rootSelect = document.getElementById('root-select');
+      rootSelect.innerHTML = '';
+
+      // Filter and sort the root words that start with the selected letter
+      const filteredRoots = Object.keys(rootWordsData).filter(root => root.startsWith(letter)).sort();
+
+      // Populate root selector with filtered roots
+      filteredRoots.forEach(root => {
+        const option = document.createElement('option');
+        option.value = root;
+        option.textContent = root;
+        rootSelect.appendChild(option);
+      });
+
+
+
+      // Populate word selector for the first root word by default
+      if (filteredRoots.length > 0) {
+        rootSelect.value = filteredRoots[0]; // Default to the first root word
+        populateWordSelector();
       }
+    }
 
-function displayVerseData() {
-  const wordSelect = document.getElementById('word-select').value;
-  const rootSelect = document.getElementById('root-select').value;
-  const verseData = rootWordsData[rootSelect].Word[wordSelect].Verses;
-  
-  const showTranslation = localStorage.getItem("translate") === "en";
-  
-  const verseContainer = document.getElementById('verse-data');
-  verseContainer.innerHTML = `
+    // Populate the word selector based on the selected root word
+    function populateWordSelector() {
+      const rootSelect = document.getElementById('root-select').value;
+      const wordSelect = document.getElementById('word-select');
+      wordSelect.innerHTML = '';
+
+      const wordList = rootWordsData[rootSelect].Word;
+
+      // Sort the words in ascending order
+      const sortedWords = Object.keys(wordList).sort();
+
+      // Populate word selector with sorted child words
+      sortedWords.forEach((word) => {
+        const option = document.createElement('option');
+        option.value = word;
+        option.textContent = word;
+        wordSelect.appendChild(option);
+      });
+
+
+      displayVerseData(); // Display verse data for the first word initially
+    }
+
+    function displayVerseData() {
+      const wordSelect = document.getElementById('word-select').value;
+      const rootSelect = document.getElementById('root-select').value;
+      const verseData = rootWordsData[rootSelect].Word[wordSelect].Verses;
+
+      const showTranslation = localStorage.getItem("translate") === "en";
+
+      const verseContainer = document.getElementById('verse-data');
+      verseContainer.innerHTML = `
     <ul>
       ${verseData.map(verse => {
         const verseContent = buildVerse(verse, showTranslation);
@@ -215,164 +229,164 @@ function displayVerseData() {
       }).join('')}
     </ul>
   `;
-  
-  // Apply translation visibility based on current state
-  const translationElements = verseContainer.querySelectorAll(".translation");
-  translationElements.forEach((element) => {
-    element.style.display = showTranslation ? "block" : "none";
-  });
-}
 
-      // Call populateLetterLabels after the JSON data is loaded
-      function saveSelections() {
-        const rootSelect = document.getElementById('root-select').value;
-        const wordSelect = document.getElementById('word-select').value;
-        localStorage.setItem('selectedRoot', rootSelect);
-        localStorage.setItem('selectedWord', wordSelect);
-      }
-
-
-
-      function loadSavedSelections() {
-  const savedRoot = localStorage.getItem('selectedRoot');
-  const savedWord = localStorage.getItem('selectedWord');
-
-  if (!savedRoot || !rootWordsData[savedRoot]) return;
-
-  const firstLetter = savedRoot.charAt(0);
-
-  // Step 1: populate roots for the correct letter
-  populateRootSelectorByLetter(firstLetter);
-
-  const rootSelect = document.getElementById('root-select');
-  rootSelect.value = savedRoot;
-
-  // Step 2: populate words
-  populateWordSelector();
-
-  const wordSelect = document.getElementById('word-select');
-  if (savedWord && rootWordsData[savedRoot].Word[savedWord]) {
-    wordSelect.value = savedWord;
-  }
-
-  displayVerseData();
-}
-
-
-      // This function gets the sura data based on sura number
-      function getSuraData(suraNumber) {
-        return suraData[suraNumber];
-      }
-
-      // This function gets the verse data based on index (calculated from sura start)
-      function getVerseData(verseIndex) {
-        return combinedQuranData[verseIndex];
-      }
-
-      // This function gets words from quran_words.json between the start and end word positions
-      function getWordsFromRange(start, end) {
-        const words = [];
-        for (let i = start; i <= end; i++) {
-
-
-          const wordData = quranWordsData[i.toString()];
-          const enWordData = enData[i.toString()];
-          const span = document.createElement("span");
-          span.className = "word";
-          span.dataset.wordId = i;
-          span.dataset.en = enWordData;
-          span.textContent = wordData; // Prevent XSS
-
-          // wordEle = `<span>${quranWordsData[i.toString()]}</span>`
-          words.push(span.outerHTML);  // Convert the word position to string since keys are strings
-        }
-        return words;
-      }
-
-      function buildVerse(verseObject, showTranslation = false) {
-  const { Key, ID } = verseObject;
-
-  // Extract sura number, verse number, and word position from ID
-  const [suraNumber, verseNumber] = ID.split(":").map(Number);
-
-  // Fetch sura data from json/sura.json
-  const suraInfo = getSuraData(suraNumber);
-
-  // Calculate the verse index from combined_quran.json
-  const verseIndex = suraInfo.start + (verseNumber - 1);
-
-  // Fetch the verse from combined_quran.json using verseIndex
-  const verseData = getVerseData(verseIndex);
-
-  // Build the verse using words from quran_words.json
-  const words = getWordsFromRange(verseData.start_word, verseData.end_word);
-
-  // Highlight the word with ID matching the Key
-  const highlightedWords = words.map((word, index) => {
-    const wordPosition = verseData.start_word + index;
-    if (wordPosition === Number(Key)) {
-      return `<span class="highlight">${word}</span>`;
+      // Apply translation visibility based on current state
+      const translationElements = verseContainer.querySelectorAll(".translation");
+      translationElements.forEach((element) => {
+        element.style.display = showTranslation ? "block" : "none";
+      });
     }
-    return word;
-  });
 
-  // English translation - conditionally include based on showTranslation
-  const translation = showTranslation ? 
-    `<div class="translation" style="display: block;">${verseData.en}</div>` : 
-    `<div class="translation" style="display: none;">${verseData.en}</div>`;
-    
-  const verseLink = `<span class="verseid" style="cursor:pointer; color:blue; text-decoration: underline;" verse=${verseIndex} sura=${suraNumber}>${suraNumber}:${verseNumber}</span>`
-
-  // Return the verse as a string of words followed by sura:verse (e.g., "2:12")
-  return `${highlightedWords.join(" ")} ${verseLink} ${translation}`;
-}
+    // Call populateLetterLabels after the JSON data is loaded
+    function saveSelections() {
+      const rootSelect = document.getElementById('root-select').value;
+      const wordSelect = document.getElementById('word-select').value;
+      localStorage.setItem('selectedRoot', rootSelect);
+      localStorage.setItem('selectedWord', wordSelect);
+    }
 
 
 
-      function parseRef(ref) {
-        const [sura, verse] = ref.split(":").map(Number);
-        return { sura, verse };
+    function loadSavedSelections() {
+      const savedRoot = localStorage.getItem('selectedRoot');
+      const savedWord = localStorage.getItem('selectedWord');
+
+      if (!savedRoot || !rootWordsData[savedRoot]) return;
+
+      const firstLetter = savedRoot.charAt(0);
+
+      // Step 1: populate roots for the correct letter
+      populateRootSelectorByLetter(firstLetter);
+
+      const rootSelect = document.getElementById('root-select');
+      rootSelect.value = savedRoot;
+
+      // Step 2: populate words
+      populateWordSelector();
+
+      const wordSelect = document.getElementById('word-select');
+      if (savedWord && rootWordsData[savedRoot].Word[savedWord]) {
+        wordSelect.value = savedWord;
       }
 
-      function findPageByVerse(sura, verse) {
-        for (const page of paginationData) {
-          const fromRef = parseRef(page.from);
-          const toRef = parseRef(page.to);
+      displayVerseData();
+    }
 
+
+    // This function gets the sura data based on sura number
+    function getSuraData(suraNumber) {
+      return suraData[suraNumber];
+    }
+
+    // This function gets the verse data based on index (calculated from sura start)
+    function getVerseData(verseIndex) {
+      return combinedQuranData[verseIndex];
+    }
+
+    // This function gets words from quran_words.json between the start and end word positions
+    function getWordsFromRange(start, end) {
+      const words = [];
+      for (let i = start; i <= end; i++) {
+
+
+        const wordData = quranWordsData[i.toString()];
+        const enWordData = enData[i.toString()];
+        const span = document.createElement("span");
+        span.className = "word";
+        span.dataset.wordId = i;
+        span.dataset.en = enWordData;
+        span.textContent = wordData; // Prevent XSS
+
+        // wordEle = `<span>${quranWordsData[i.toString()]}</span>`
+        words.push(span.outerHTML);  // Convert the word position to string since keys are strings
+      }
+      return words;
+    }
+
+    function buildVerse(verseObject, showTranslation = false) {
+      const { Key, ID } = verseObject;
+
+      // Extract sura number, verse number, and word position from ID
+      const [suraNumber, verseNumber] = ID.split(":").map(Number);
+
+      // Fetch sura data from json/sura.json
+      const suraInfo = getSuraData(suraNumber);
+
+      // Calculate the verse index from combined_quran.json
+      const verseIndex = suraInfo.start + (verseNumber - 1);
+
+      // Fetch the verse from combined_quran.json using verseIndex
+      const verseData = getVerseData(verseIndex);
+
+      // Build the verse using words from quran_words.json
+      const words = getWordsFromRange(verseData.start_word, verseData.end_word);
+
+      // Highlight the word with ID matching the Key
+      const highlightedWords = words.map((word, index) => {
+        const wordPosition = verseData.start_word + index;
+        if (wordPosition === Number(Key)) {
+          return `<span class="highlight">${word}</span>`;
+        }
+        return word;
+      });
+
+      // English translation - conditionally include based on showTranslation
+      const translation = showTranslation ?
+        `<div class="translation" style="display: block;">${verseData.en}</div>` :
+        `<div class="translation" style="display: none;">${verseData.en}</div>`;
+
+      const verseLink = `<span class="verseid" style="cursor:pointer; color:blue; text-decoration: underline;" verse=${verseIndex} sura=${suraNumber}>${suraNumber}:${verseNumber}</span>`
+
+      // Return the verse as a string of words followed by sura:verse (e.g., "2:12")
+      return `${highlightedWords.join(" ")} ${verseLink} ${translation}`;
+    }
+
+
+
+    function parseRef(ref) {
+      const [sura, verse] = ref.split(":").map(Number);
+      return { sura, verse };
+    }
+
+    function findPageByVerse(sura, verse) {
+      for (const page of paginationData) {
+        const fromRef = parseRef(page.from);
+        const toRef = parseRef(page.to);
+
+        if (
+          sura > fromRef.sura || (sura === fromRef.sura && verse >= fromRef.verse)
+        ) {
           if (
-            sura > fromRef.sura || (sura === fromRef.sura && verse >= fromRef.verse)
+            sura < toRef.sura || (sura === toRef.sura && verse <= toRef.verse)
           ) {
-            if (
-              sura < toRef.sura || (sura === toRef.sura && verse <= toRef.verse)
-            ) {
-              return page.page;
-            }
+            return page.page;
           }
         }
-        return 1;
+      }
+      return 1;
+    }
+
+
+
+    // Show Morphology Popup
+    function showWordMorphologyPopup(wordId, wordElement) {
+      const wordData = wordElement.innerHTML;
+      const enData = wordElement.getAttribute('data-en');
+      const wordMorphology = morphology[wordId];
+
+      if (!wordData || !wordMorphology) {
+        console.error("No data found for wordId:", wordId);
+        return;
       }
 
+      removeExistingPopup();
 
+      const wordObjects = wordMorphology.words;
+      playAudio(generateAudioUrl(wordMorphology.id));
 
-      // Show Morphology Popup
-      function showWordMorphologyPopup(wordId, wordElement) {
-        const wordData = wordElement.innerHTML;
-        const enData = wordElement.getAttribute('data-en');
-        const wordMorphology = morphology[wordId];
+      const tableContent = buildMorphologyTable(wordObjects);
 
-        if (!wordData || !wordMorphology) {
-          console.error("No data found for wordId:", wordId);
-          return;
-        }
-
-        removeExistingPopup();
-
-        const wordObjects = wordMorphology.words;
-        playAudio(generateAudioUrl(wordMorphology.id));
-
-        const tableContent = buildMorphologyTable(wordObjects);
-
-        const popupContent = `
+      const popupContent = `
       <span id="morphology-popup-title">
         ${wordData}, ${enData}
         <table>
@@ -381,254 +395,254 @@ function displayVerseData() {
       </span>
     `;
 
-        const popup = document.createElement("div");
-        popup.className = "morphology-popup";
-        popup.setAttribute("role", "dialog");
-        popup.setAttribute("aria-modal", "true");
-        popup.setAttribute("aria-labelledby", "morphology-popup-title");
-        popup.innerHTML = popupContent;
+      const popup = document.createElement("div");
+      popup.className = "morphology-popup";
+      popup.setAttribute("role", "dialog");
+      popup.setAttribute("aria-modal", "true");
+      popup.setAttribute("aria-labelledby", "morphology-popup-title");
+      popup.innerHTML = popupContent;
 
-        document.body.appendChild(popup);
+      document.body.appendChild(popup);
 
-        // Add a click listener to remove the popup when clicking outside
-        document.addEventListener("click", handleOutsideClick);
+      // Add a click listener to remove the popup when clicking outside
+      document.addEventListener("click", handleOutsideClick);
 
-        const rect = wordElement.getBoundingClientRect();
-        const popupRect = popup.getBoundingClientRect();
+      const rect = wordElement.getBoundingClientRect();
+      const popupRect = popup.getBoundingClientRect();
 
-        let top = rect.bottom + window.scrollY;
-        let left = rect.left + window.scrollX;
+      let top = rect.bottom + window.scrollY;
+      let left = rect.left + window.scrollX;
 
-        // Adjust position if popup goes beyond viewport
-        if (left + popupRect.width > window.innerWidth) {
-          left = window.innerWidth - popupRect.width - 10;
-        }
-
-        if (top + popupRect.height > window.innerHeight + window.scrollY) {
-          top = rect.top + window.scrollY - popupRect.height;
-        }
-
-        popup.style.top = `${top}px`;
-        popup.style.left = `${left}px`;
-        popup.setAttribute("tabindex", "-1");
-        popup.focus();
-        popup.dataset.triggerId = wordId;
+      // Adjust position if popup goes beyond viewport
+      if (left + popupRect.width > window.innerWidth) {
+        left = window.innerWidth - popupRect.width - 10;
       }
 
-      // Build Morphology Table
-      function buildMorphologyTable(wordObjects) {
-        let tableContent = "";
+      if (top + popupRect.height > window.innerHeight + window.scrollY) {
+        top = rect.top + window.scrollY - popupRect.height;
+      }
 
-        for (let wordId in wordObjects) {
-          const wordMorphology = wordObjects[wordId];
+      popup.style.top = `${top}px`;
+      popup.style.left = `${left}px`;
+      popup.setAttribute("tabindex", "-1");
+      popup.focus();
+      popup.dataset.triggerId = wordId;
+    }
 
-          tableContent += `
+    // Build Morphology Table
+    function buildMorphologyTable(wordObjects) {
+      let tableContent = "";
+
+      for (let wordId in wordObjects) {
+        const wordMorphology = wordObjects[wordId];
+
+        tableContent += `
       <tr><th>Word</th><td>${wordMorphology.word || "N/A"}</td></tr>
       <tr><th>POS</th><td>${wordMorphology.pos || "N/A"}</td></tr>
       <tr><th>Root</th><td>${wordMorphology.root && wordMorphology.root !== "N/A" ?
-              `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${wordMorphology.root}</span>` :
-              "N/A"
-            }</td></tr>
+            `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${wordMorphology.root}</span>` :
+            "N/A"
+          }</td></tr>
       <tr><th>Lemma</th><td>${wordMorphology.lemma || "N/A"}</td></tr>
       <tr><th>Morphology</th><td>${wordMorphology.morphology || "N/A"}</td></tr>
       <tr><td colspan="2"><hr></td></tr>
       `;
-        }
+      }
 
-        // After generating the table content, attach the event listeners for root clicks
-        setTimeout(() => {
-          const clickableRoots = document.querySelectorAll('.clickable-root');
+      // After generating the table content, attach the event listeners for root clicks
+      setTimeout(() => {
+        const clickableRoots = document.querySelectorAll('.clickable-root');
 
-          clickableRoots.forEach(rootElement => {
-            rootElement.addEventListener('click', () => {
-              const rootWord = rootElement.textContent;
+        clickableRoots.forEach(rootElement => {
+          rootElement.addEventListener('click', () => {
+            const rootWord = rootElement.textContent;
 
-              // Save the root word to localStorage
-              localStorage.setItem('selectedRoot', rootWord);
+            // Save the root word to localStorage
+            localStorage.setItem('selectedRoot', rootWord);
 
-              // Open the root.html page in a new tab
-              window.open('root.html', '_blank');
-            });
+            // Open the root.html page in a new tab
+            window.open('root.html', '_blank');
           });
-        }, 0);  // Small delay to ensure the DOM elements are rendered before attaching the event listeners
-
-        return tableContent;
-      }
-
-
-      // Remove existing popups if any
-      function removeExistingPopup() {
-        const existingPopup = document.querySelector(".morphology-popup");
-        if (existingPopup) {
-          existingPopup.remove();
-          document.removeEventListener("click", handleOutsideClick);
-        }
-      }
-
-      // Handle clicking outside of the popup to close it
-      function handleOutsideClick(event) {
-        // Check if the clicked target is neither inside the popup nor a word element
-        if (
-          !event.target.closest(".morphology-popup") &&
-          !event.target.closest(".word")
-        ) {
-          removeExistingPopup(); // Close the popup
-        }
-      }
-
-
-      // Generate Audio URL
-      function generateAudioUrl(key) {
-        if (typeof key !== "string" || !key.includes(":")) {
-          console.error("Invalid key format:", key);
-          return null;
-        }
-
-        const parts = key.split(":");
-        if (parts.length !== 3) {
-          console.error("Invalid key parts:", key);
-          return null;
-        }
-
-        const [surah, ayah, word] = parts.map(Number);
-        if (isNaN(surah) || isNaN(ayah) || isNaN(word)) {
-          console.error("Invalid numerical values in key:", key);
-          return null;
-        }
-
-        const surahStr = String(surah).padStart(3, "0");
-        const ayahStr = String(ayah).padStart(3, "0");
-        const wordStr = String(word).padStart(3, "0");
-
-        const url = `${AUDIO_BASE_URL}${surah}/${surahStr}_${ayahStr}_${wordStr}.mp3`;
-        return url;
-      }
-      // Play Audio
-      function playAudio(audioSrc) {
-        if (!audioSrc) {
-          console.error("Invalid audio source.");
-          return;
-        }
-
-        if (currentAudio) {
-          currentAudio.pause();
-          currentAudio.currentTime = 0;
-        }
-
-        currentAudio = new Audio(audioSrc);
-
-        currentAudio.addEventListener("play", () => {
-          // Optional: Visual feedback
         });
+      }, 0);  // Small delay to ensure the DOM elements are rendered before attaching the event listeners
 
-        currentAudio.addEventListener("ended", () => {
-          currentAudio = null;
-          // Optional: Remove visual feedback
-        });
-
-        currentAudio.addEventListener("error", (e) => {
-          console.error("Error playing audio:", e);
-          alert("Failed to play audio.");
-          currentAudio = null;
-        });
-
-        currentAudio.play().catch((error) => {
-          console.error("Playback failed:", error);
-          alert("Unable to play the selected audio.");
-        });
-      }
-
-
-
-      // Event Delegation for navigation.
-      document
-        .getElementById("verse-data")
-        .addEventListener("click", (event) => {
-          if (event.target.matches(".word")) {
-            const wordId = event.target.dataset.wordId;
-            showWordMorphologyPopup(wordId, event.target);
-          }
-          if (event.target.matches(".verseid")) {
-            try {
-              const suraNumber = parseInt(event.target.getAttribute("sura"));
-
-              // verseIndex is global index → convert to ayah number
-              const verseIndex = parseInt(event.target.getAttribute("verse"));
-              const suraInfo = suraData[suraNumber];
-              const verseNumber = verseIndex - suraInfo.start + 1;
-
-              const pageNumber = findPageByVerse(suraNumber, verseNumber);
-
-              // Save everything page.html expects
-              localStorage.setItem("selectedSura", suraNumber);
-              localStorage.setItem("selectedVerse", verseNumber);
-              localStorage.setItem("currentPage", pageNumber);
-
-              window.open("page.html", "_blank");
-            } catch (error) {
-              console.error("Navigation error:", error);
-            }
-          }
-
-        });
-
-
-
-     document.addEventListener("DOMContentLoaded", () => {
-  const themeToggleBtn = document.getElementById("theme-toggle");
-  const translationToggleBtn = document.getElementById("translation-toggle");
-
-  const currentTheme = localStorage.getItem("theme") || "light";
-  const currentTranslate = localStorage.getItem("translate") || "notrans";
-
-  // Apply the saved theme on page load
-  if (currentTheme === "dark") {
-    document.body.classList.add("dark-theme");
-    themeToggleBtn.checked = true;
-  } else {
-    themeToggleBtn.checked = false;
-  }
-
-  // Apply the saved translation status on page load
-  if (currentTranslate === "en") {
-    translationToggleBtn.checked = true;
-  } else {
-    translationToggleBtn.checked = false;
-  }
-
-  // Toggle the theme when the button is clicked
-  themeToggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-
-    // Save the current theme in localStorage
-    const newTheme = document.body.classList.contains("dark-theme")
-      ? "dark"
-      : "light";
-    localStorage.setItem("theme", newTheme);
-  });
-
-  // Toggle the translation visibility without page reload
-  translationToggleBtn.addEventListener("change", () => {
-    const showTranslation = translationToggleBtn.checked;
-    
-    // Save the current translation setting in localStorage
-    localStorage.setItem("translate", showTranslation ? "en" : "notrans");
-
-    // Toggle translation display in the DOM
-    const translationElements = document.querySelectorAll(".translation");
-    translationElements.forEach((element) => {
-      element.style.display = showTranslation ? "block" : "none";
-    });
-    
-    // Re-render the verse data with the new translation setting
-    if (document.getElementById('word-select').value) {
-      displayVerseData();
+      return tableContent;
     }
-  });
-  
-  // Load saved selections after the toggles are initialized
-  loadSavedSelections();
-});
+
+
+    // Remove existing popups if any
+    function removeExistingPopup() {
+      const existingPopup = document.querySelector(".morphology-popup");
+      if (existingPopup) {
+        existingPopup.remove();
+        document.removeEventListener("click", handleOutsideClick);
+      }
+    }
+
+    // Handle clicking outside of the popup to close it
+    function handleOutsideClick(event) {
+      // Check if the clicked target is neither inside the popup nor a word element
+      if (
+        !event.target.closest(".morphology-popup") &&
+        !event.target.closest(".word")
+      ) {
+        removeExistingPopup(); // Close the popup
+      }
+    }
+
+
+    // Generate Audio URL
+    function generateAudioUrl(key) {
+      if (typeof key !== "string" || !key.includes(":")) {
+        console.error("Invalid key format:", key);
+        return null;
+      }
+
+      const parts = key.split(":");
+      if (parts.length !== 3) {
+        console.error("Invalid key parts:", key);
+        return null;
+      }
+
+      const [surah, ayah, word] = parts.map(Number);
+      if (isNaN(surah) || isNaN(ayah) || isNaN(word)) {
+        console.error("Invalid numerical values in key:", key);
+        return null;
+      }
+
+      const surahStr = String(surah).padStart(3, "0");
+      const ayahStr = String(ayah).padStart(3, "0");
+      const wordStr = String(word).padStart(3, "0");
+
+      const url = `${AUDIO_BASE_URL}${surah}/${surahStr}_${ayahStr}_${wordStr}.mp3`;
+      return url;
+    }
+    // Play Audio
+    function playAudio(audioSrc) {
+      if (!audioSrc) {
+        console.error("Invalid audio source.");
+        return;
+      }
+
+      if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+
+      currentAudio = new Audio(audioSrc);
+
+      currentAudio.addEventListener("play", () => {
+        // Optional: Visual feedback
+      });
+
+      currentAudio.addEventListener("ended", () => {
+        currentAudio = null;
+        // Optional: Remove visual feedback
+      });
+
+      currentAudio.addEventListener("error", (e) => {
+        console.error("Error playing audio:", e);
+        alert("Failed to play audio.");
+        currentAudio = null;
+      });
+
+      currentAudio.play().catch((error) => {
+        console.error("Playback failed:", error);
+        alert("Unable to play the selected audio.");
+      });
+    }
+
+
+
+    // Event Delegation for navigation.
+    document
+      .getElementById("verse-data")
+      .addEventListener("click", (event) => {
+        if (event.target.matches(".word")) {
+          const wordId = event.target.dataset.wordId;
+          showWordMorphologyPopup(wordId, event.target);
+        }
+        if (event.target.matches(".verseid")) {
+          try {
+            const suraNumber = parseInt(event.target.getAttribute("sura"));
+
+            // verseIndex is global index → convert to ayah number
+            const verseIndex = parseInt(event.target.getAttribute("verse"));
+            const suraInfo = suraData[suraNumber];
+            const verseNumber = verseIndex - suraInfo.start + 1;
+
+            const pageNumber = findPageByVerse(suraNumber, verseNumber);
+
+            // Save everything page.html expects
+            localStorage.setItem("selectedSura", suraNumber);
+            localStorage.setItem("selectedVerse", verseNumber);
+            localStorage.setItem("currentPage", pageNumber);
+
+            window.open("page.html", "_blank");
+          } catch (error) {
+            console.error("Navigation error:", error);
+          }
+        }
+
+      });
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const translationToggleBtn = document.getElementById("translation-toggle");
+
+      const currentTheme = localStorage.getItem("theme") || "light";
+      const currentTranslate = localStorage.getItem("translate") || "notrans";
+
+      // Apply the saved theme on page load
+      if (currentTheme === "dark") {
+        document.body.classList.add("dark-theme");
+        themeToggleBtn.checked = true;
+      } else {
+        themeToggleBtn.checked = false;
+      }
+
+      // Apply the saved translation status on page load
+      if (currentTranslate === "en") {
+        translationToggleBtn.checked = true;
+      } else {
+        translationToggleBtn.checked = false;
+      }
+
+      // Toggle the theme when the button is clicked
+      themeToggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+
+        // Save the current theme in localStorage
+        const newTheme = document.body.classList.contains("dark-theme")
+          ? "dark"
+          : "light";
+        localStorage.setItem("theme", newTheme);
+      });
+
+      // Toggle the translation visibility without page reload
+      translationToggleBtn.addEventListener("change", () => {
+        const showTranslation = translationToggleBtn.checked;
+
+        // Save the current translation setting in localStorage
+        localStorage.setItem("translate", showTranslation ? "en" : "notrans");
+
+        // Toggle translation display in the DOM
+        const translationElements = document.querySelectorAll(".translation");
+        translationElements.forEach((element) => {
+          element.style.display = showTranslation ? "block" : "none";
+        });
+
+        // Re-render the verse data with the new translation setting
+        if (document.getElementById('word-select').value) {
+          displayVerseData();
+        }
+      });
+
+      // Load saved selections after the toggles are initialized
+      loadSavedSelections();
+    });
 
 
 
@@ -638,7 +652,7 @@ function displayVerseData() {
 
 
 
-    </script>
+  </script>
 
 </body>
 
