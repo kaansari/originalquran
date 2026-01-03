@@ -52,7 +52,7 @@
       <div class="selector">
         <select id="root-select"></select>
         <!-- This will be populated based on the selected letter -->
-        </select>
+
 
         <select id="word-select">
           <!-- This will be populated based on the selected root word -->
@@ -211,7 +211,7 @@ function displayVerseData() {
     <ul>
       ${verseData.map(verse => {
         const verseContent = buildVerse(verse, showTranslation);
-        return `<div class="arabic">${verseContent}</div>`;
+        return `<li class="arabic">${verseContent}</li>`;
       }).join('')}
     </ul>
   `;
@@ -230,18 +230,7 @@ function displayVerseData() {
         localStorage.setItem('selectedRoot', rootSelect);
         localStorage.setItem('selectedWord', wordSelect);
       }
-      function loadSavedSelections() {
-        const savedRoot = localStorage.getItem('selectedRoot');
-        const savedWord = localStorage.getItem('selectedWord');
-        console.log(savedRoot);
-        if (savedRoot) {
-          // Set the root select value to the saved root
-          populateRootSelectorByLetter(savedRoot.charAt(0)); // Populate based on first letter
 
-          // Wait for the root selector to be populated
-           loadSavedSelections();
-        }
-      }
 
 
       function loadSavedSelections() {
@@ -253,13 +242,13 @@ function displayVerseData() {
   const firstLetter = savedRoot.charAt(0);
 
   // Step 1: populate roots for the correct letter
-  populateRootSelectorByLetter(firstLetter, false);
+  populateRootSelectorByLetter(firstLetter);
 
   const rootSelect = document.getElementById('root-select');
   rootSelect.value = savedRoot;
 
   // Step 2: populate words
-  populateWordSelector(false);
+  populateWordSelector();
 
   const wordSelect = document.getElementById('word-select');
   if (savedWord && rootWordsData[savedRoot].Word[savedWord]) {
