@@ -67,6 +67,15 @@ h1, h2, h3 {
   color: var(--verse-text-color);
 }
 
+
+/*Search Panel*/
+.search-panel { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+.search-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.search-row input { flex: 1; min-width: 220px; padding: 6px; }
+.search-results { margin-top: 10px; }
+.search-status { margin-top: 6px; font-size: 12px; opacity: 0.8; }
+
+
 /* Verse related styling */
 .verse-container {
   display: flex;
