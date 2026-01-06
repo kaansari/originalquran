@@ -882,8 +882,9 @@
       function searchRootWordsWordToVerseObjects(wordQuery) {
         // Search for surface word under any root: includes match
 
-        const qt = wordQuery.trim();
-       const q = normalizeArabic(qt);
+        const q = wordQuery.trim().replace(/[\u064B-\u0652\u0670\u0640]/g, "") ;
+        
+        
        
         if (!q) return [];
 
@@ -961,6 +962,13 @@
           .replace(/ؤ/g, "و")
           .replace(/ئ/g, "ي")
           .replace(/ة/g, "ه")
+          .trim();
+      }
+
+            // Arabic normalization similar to earlier suggestions
+      function removeTashkeel(s) {
+        return String(s)
+          .replace(/[\u064B-\u0652\u0670\u0640]/g, "") // tashkeel + tatweel
           .trim();
       }
 
