@@ -62,8 +62,8 @@
     <div id="search-panel" class="search-panel">
       <div class="search-row">
         <select id="search-mode">
-           <option value="arabic">Arabic Text Search</option>
-            <option value="word">Arabic Word Search</option>
+          <option value="arabic">Arabic Text Search</option>
+          <option value="word">Arabic Word Search</option>
           <option value="english">English (translation)</option>
           <option value="ref">Ref (2:255)</option>
           <option value="root">Root Word</option>
@@ -799,7 +799,7 @@
         }
 
         const ms = Math.round(performance.now() - t0);
-      setSearchStatus(`${verseObjects.length} result(s)`);
+        setSearchStatus(`${verseObjects.length} result(s)`);
         renderSearchVerses(verseObjects);
       }
 
@@ -879,29 +879,32 @@
         return verseHits.slice(0, 500); // UI cap
       }
 
+
+
+
       function searchRootWordsWordToVerseObjects(wordQuery) {
-        // Search for surface word under any root: includes match
+        const qTrim = (wordQuery || "").trim().replace(/[\u064B-\u0652\u0670\u0640]/g, "");;
+        if (!qTrim) return [];
 
-        const q = wordQuery.trim().replace(/[\u064B-\u0652\u0670\u0640]/g, "") ;
-        
-        
-       
-        if (!q) return [];
-
+        const qLen = qTrim.length;
         const verseHits = [];
         const seen = new Set();
 
         for (const root of Object.keys(rootWordsData)) {
           const wordsObj = rootWordsData[root]?.Word || {};
           for (const w of Object.keys(wordsObj)) {
-            if (!w.includes(q)) continue;
+            const isMatch = (qLen < 3) ? (w === qTrim) : w.includes(qTrim);
+            if (!isMatch) continue;
 
             const verses = wordsObj[w]?.Verses || [];
             for (const hit of verses) {
               if (!hit?.Key || !hit?.ID) continue;
+
+              // de-dupe
               const unique = `${hit.Key}|${hit.ID}`;
               if (seen.has(unique)) continue;
               seen.add(unique);
+
               verseHits.push({ Key: hit.Key, ID: hit.ID });
             }
           }
@@ -910,6 +913,7 @@
         verseHits.sort((a, b) => parseInt(a.Key, 10) - parseInt(b.Key, 10));
         return verseHits.slice(0, 500);
       }
+
 
       function searchArabicToVerseObjects(q) {
         const qn = normalizeArabic(q);
@@ -965,7 +969,7 @@
           .trim();
       }
 
-            // Arabic normalization similar to earlier suggestions
+      // Arabic normalization similar to earlier suggestions
       function removeTashkeel(s) {
         return String(s)
           .replace(/[\u064B-\u0652\u0670\u0640]/g, "") // tashkeel + tatweel
