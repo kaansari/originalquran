@@ -259,7 +259,9 @@
         const showTranslation = localStorage.getItem("translate") === "en";
 
         const verseContainer = document.getElementById('verse-data');
+       
         verseContainer.innerHTML = `
+         <div>result(s) ${verseData.length}</div>
     <ul>
       ${verseData.map(verse => {
           const verseContent = buildVerse(verse, showTranslation);
