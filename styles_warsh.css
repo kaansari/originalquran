@@ -102,6 +102,27 @@ h1, h2, h3 {
   padding: 20px;
 }
 
+@media (min-width: 769px) {
+  .page-navigation {
+    max-width: 960px;
+    margin: 24px auto 0;
+    padding-inline: 24px;
+    box-sizing: border-box;
+  }
+
+  .page {
+    max-width: 960px;
+    margin: 20px auto 48px;
+    padding: 40px 48px 52px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid rgba(109, 85, 44, 0.18);
+    border-radius: 10px;
+    box-shadow:
+      0 24px 60px rgba(50, 36, 18, 0.08),
+      0 6px 16px rgba(50, 36, 18, 0.05);
+  }
+}
 
 .row {
   font-size: var(--row-font-size);
