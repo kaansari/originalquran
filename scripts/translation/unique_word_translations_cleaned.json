@@ -228,8 +228,14 @@
     "count": 18,
     "translations": [
       "for the pious",
+      "for those who fear (Allah)",
+      "(is) for the God fearing",
       "for the righteous",
-      "for the God conscious"
+      "for the Godfearing",
+      "for the God conscious",
+      "for the Allahfearing",
+      "to the righteous",
+      "for the Godconscious"
     ]
   },
   "يؤمنون": {
@@ -237,6 +243,7 @@
     "translations": [
       "will they believe",
       "They believe",
+      "believed",
       "believe",
       "they will believe",
       "who believe"
@@ -245,6 +252,8 @@
   "بالغيب": {
     "count": 12,
     "translations": [
+      "unseen",
+      "about the unseen",
       "in secret",
       "in the unseen"
     ]
@@ -305,8 +314,22 @@
       "by what",
       "Because",
       "about what",
+      "how long",
+      "[of] what",
+      "in what",
+      "to what",
+      "at what",
       "with water",
-      "with what"
+      "for what",
+      "what",
+      "[of what]",
+      "that which",
+      "[in] what",
+      "water",
+      "Of how",
+      "(in spite) of its vastness",
+      "of what",
+      "though"
     ]
   },
   "انزل": {
@@ -314,7 +337,7 @@
     "translations": [
       "Has sent down",
       "sent down",
-     "send down",
+      "send down",
       "Allah has revealed",
       "been sent down",
       "was sent down",
