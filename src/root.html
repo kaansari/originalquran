@@ -85,7 +85,7 @@
       <div id="verse-data" class="verse-data">
         <!-- Verse data will be displayed here -->
       </div>
-      <div id="letter-container" class="letter-container">
+      <div id="letter-container-inner" class="letter-container">
       </div>
 
     </div>
@@ -596,9 +596,9 @@
 
 
       // Event Delegation for navigation.
-      document
-        .getElementById("verse-data")
-        .addEventListener("click", (event) => {
+      const _verseDataEl = document.getElementById("verse-data");
+      if (_verseDataEl) {
+        _verseDataEl.addEventListener("click", (event) => {
           if (event.target.matches(".word")) {
             const wordId = event.target.dataset.wordId;
             showWordMorphologyPopup(wordId, event.target);
@@ -626,6 +626,7 @@
           }
 
         });
+      }
 
 
 
@@ -636,59 +637,62 @@
         const currentTheme = localStorage.getItem("theme") || "light";
         const currentTranslate = localStorage.getItem("translate") || "notrans";
 
-        // Apply the saved theme on page load
+        // Apply the saved theme on page load (apply regardless of presence of toggles)
         if (currentTheme === "dark") {
           document.body.classList.add("dark-theme");
-          themeToggleBtn.checked = true;
         } else {
-          themeToggleBtn.checked = false;
+          document.body.classList.remove("dark-theme");
         }
+
+        // Reflect saved theme on checkbox if present
+        if (themeToggleBtn) themeToggleBtn.checked = (currentTheme === "dark");
 
         // Apply the saved translation status on page load
-        if (currentTranslate === "en") {
-          translationToggleBtn.checked = true;
-        } else {
-          translationToggleBtn.checked = false;
-        }
+        if (translationToggleBtn) translationToggleBtn.checked = (currentTranslate === "en");
 
         // Toggle the theme when the button is clicked
-        themeToggleBtn.addEventListener("click", () => {
-          document.body.classList.toggle("dark-theme");
+        if (themeToggleBtn) {
+          themeToggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-theme");
 
-          // Save the current theme in localStorage
-          const newTheme = document.body.classList.contains("dark-theme")
-            ? "dark"
-            : "light";
-          localStorage.setItem("theme", newTheme);
-        });
+            // Save the current theme in localStorage
+            const newTheme = document.body.classList.contains("dark-theme")
+              ? "dark"
+              : "light";
+            localStorage.setItem("theme", newTheme);
+          });
+        }
 
         // Toggle the translation visibility without page reload
-        translationToggleBtn.addEventListener("change", () => {
-          const showTranslation = translationToggleBtn.checked;
+        if (translationToggleBtn) {
+          translationToggleBtn.addEventListener("change", () => {
+            const showTranslation = translationToggleBtn.checked;
 
-          // Save the current translation setting in localStorage
-          localStorage.setItem("translate", showTranslation ? "en" : "notrans");
+            // Save the current translation setting in localStorage
+            localStorage.setItem("translate", showTranslation ? "en" : "notrans");
 
-          // Toggle translation display in the DOM
-          const translationElements = document.querySelectorAll(".translation");
-          translationElements.forEach((element) => {
-            element.style.display = showTranslation ? "block" : "none";
+            // Toggle translation display in the DOM
+            const translationElements = document.querySelectorAll(".translation");
+            translationElements.forEach((element) => {
+              element.style.display = showTranslation ? "block" : "none";
+            });
+
+            // Re-render the verse data with the new translation setting
+            const wordSelectEl = document.getElementById('word-select');
+            if (wordSelectEl && wordSelectEl.value) {
+              displayVerseData();
+            }
           });
-
-          // Re-render the verse data with the new translation setting
-          if (document.getElementById('word-select').value) {
-            displayVerseData();
-          }
-        });
+        }
 
         // Load saved selections after the toggles are initialized
         loadSavedSelections();
       });
 
 
-      document
-        .getElementById("search-verse-data")
-        .addEventListener("click", (event) => {
+      const _searchVerseDataEl = document.getElementById("search-verse-data");
+      if (_searchVerseDataEl) {
+        _searchVerseDataEl.addEventListener("click", (event) => {
           if (event.target.matches(".word")) {
             const wordId = event.target.dataset.wordId;
             showWordMorphologyPopup(wordId, event.target);
@@ -712,6 +716,7 @@
             }
           }
         });
+      }
 
 
 
@@ -727,6 +732,8 @@
         const inputEl = document.getElementById("search-input");
         const clearEl = document.getElementById("search-clear");
 
+        if (!modeEl || !inputEl || !clearEl) return;
+
         inputEl.addEventListener("input", () => {
           if (searchTimer) clearTimeout(searchTimer);
           searchTimer = setTimeout(runSearch, 180);
@@ -737,7 +744,8 @@
         clearEl.addEventListener("click", () => {
           inputEl.value = "";
           setSearchStatus("");
-          document.getElementById("search-verse-data").innerHTML = "";
+          const svd = document.getElementById("search-verse-data");
+          if (svd) svd.innerHTML = "";
         });
       }
 

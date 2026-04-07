@@ -99,6 +99,25 @@ h1, h2, h3 {
   direction: rtl; /* optional: ensures text flows right-to-left */
 }
 
+/* Desktop: make .book-container look like a page (centered, page padding, shadow) */
+@media (min-width: 769px) {
+  .book-container {
+    box-sizing: border-box;
+    max-width: 960px; /* same as .page */
+    width: 100%;
+    margin: 20px auto 48px; /* center horizontally */
+    padding: 40px 48px 52px; /* roomy page padding */
+    background-color: var(--page-bg-color, var(--background-color));
+    border: 1px solid rgba(109, 85, 44, 0.18);
+    border-radius: 10px;
+    box-shadow:
+      0 24px 60px rgba(50, 36, 18, 0.08),
+      0 6px 16px rgba(50, 36, 18, 0.05);
+    /* ensure book content aligns correctly */
+    display: block;
+  }
+}
+
 
 
 .verse-header {
