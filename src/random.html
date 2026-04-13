@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
+  <title>Random Verse</title>
+  <!-- Open Graph / Twitter meta for richer embeds -->
+  <meta property="og:title" content="Random Quran Verse">
+  <meta property="og:description" content="A randomly selected Quran verse — refresh for a new verse or share a specific one with ?verse=123">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Quran+Verse">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@yourhandle">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles_page.css">
+  <style>
+    /* Minimal tweaks for a shareable single-verse page */
+    body { display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; }
+    .card { max-width:900px; width:100%; padding:36px; box-shadow:0 6px 30px rgba(0,0,0,0.12); border-radius:8px; text-align:center; background:var(--page-bg,#fff); }
+    .arabic-verse { font-size:48px; line-height:1.4; direction:rtl; unicode-bidi:isolate; margin-bottom:18px; }
+    .meta { margin-top:8px; color:#555; }
+    .translation { margin-top:14px; color:#333; font-size:18px; }
+    .actions { margin-top:18px; }
+    .btn { display:inline-block; padding:8px 14px; border-radius:6px; background:#1da1f2; color:#fff; text-decoration:none; margin:0 6px; }
+  </style>
+</head>
+
+<body class="font-qahiri">
+  <div class="card">
+    <div id="svg-container" style="width:100%; display:flex; justify-content:center;">Loading…</div>
+    <div id="meta" class="meta" style="display:none"></div>
+    <div id="en" class="translation" style="display:none"></div>
+    <div class="actions">
+      <a id="tweet" class="btn" target="_blank" rel="noopener">Share on Twitter</a>
+      <a id="copy" class="btn" href="#">Copy</a>
+    </div>
+  </div>
+
+  <script>
+    // Fetch minimal data, pick a random verse (or use ?verse=) and render it.
+    async function loadRandomVerse() {
+      try {
+        const [suraRes, combinedRes, wordsRes, enRes] = await Promise.all([
+          fetch('json/sura.json'),
+          fetch('json/combined_quran.json'),
+          fetch('json/quran_words.json'),
+          fetch('json/en-word.json')
+        ]);
+
+        if (!suraRes.ok || !combinedRes.ok || !wordsRes.ok) {
+          throw new Error('Failed to load JSON data');
+        }
+
+        const [suraData, combined, words, enWords] = await Promise.all([
+          suraRes.json(), combinedRes.json(), wordsRes.json(), enRes.ok ? enRes.json() : {}
+        ]);
+
+        const verseKeys = Object.keys(combined);
+        if (!verseKeys.length) throw new Error('No verses');
+
+        // Support deterministic verse selection via ?verse=
+        const params = new URLSearchParams(window.location.search);
+        const vparam = params.get('verse');
+        let randKey = null;
+        if (vparam) {
+          // numeric global id
+          if (/^\d+$/.test(vparam) && combined[vparam]) {
+            randKey = String(parseInt(vparam, 10));
+          } else {
+            // try sura:ayah form
+            const m = vparam.match(/^(\d+)\s*[:,-]\s*(\d+)$/);
+            if (m) {
+              const sNo = m[1];
+              const ay = parseInt(m[2], 10);
+              const s = suraData[String(sNo)];
+              if (s && typeof s.start === 'number') {
+                const gid = s.start + (ay - 1);
+                if (combined[String(gid)]) randKey = String(gid);
+              }
+            }
+          }
+        }
+
+        if (!randKey) {
+          randKey = verseKeys[Math.floor(Math.random() * verseKeys.length)];
+        }
+        const verseObj = combined[randKey];
+
+        // Build Arabic from word positions
+        const start = verseObj.start_word;
+        const end = verseObj.end_word;
+        const wordsArr = [];
+        for (let i = start; i <= end; i++) {
+          const w = words[i.toString()];
+          if (w) wordsArr.push(w);
+        }
+
+        const arabic = wordsArr.join(' ');
+        const en = (enWords && enWords[randKey]) ? enWords[randKey] : (verseObj.en || '');
+
+        const meta = (() => {
+          // find sura & ayah
+          // combined keys are global verse ids; need to find which sura contains this verse
+          for (const k of Object.keys(suraData)) {
+            const s = suraData[k];
+            if (verseObj && s && typeof s.start === 'number') {
+              const startIdx = s.start;
+              const endIdx = s.end;
+              const vid = parseInt(randKey, 10);
+              if (vid >= startIdx && vid <= endIdx) {
+                const ayah = vid - startIdx + 1;
+                return `${s.name} — ${k}:${ayah}`;
+              }
+            }
+          }
+          return '';
+        })();
+
+        // Render embedded SVG with the verse text so the page shows an image-like card
+        // We'll embed the Qahiri font into the SVG (base64) so the SVG is self-contained.
+        const svgContainer = document.getElementById('svg-container');
+          const svgW = 1200;
+          const svgH = 630;
+        const esc = (s) => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+        async function embedFontAndRender(ttfPath) {
+          try {
+            const resp = await fetch(ttfPath);
+            const ab = await resp.arrayBuffer();
+            const b64 = btoa(String.fromCharCode(...new Uint8Array(ab)));
+
+            const fontFaceCss = `@font-face{font-family:QahiriEmbedded;src:url('data:font/ttf;base64,${b64}') format('truetype');}`;
+
+            // Create a hidden container so we can measure text using a real SVG in DOM
+            const hidden = document.createElement('div');
+            hidden.style.position = 'absolute';
+            hidden.style.left = '-99999px';
+            hidden.style.top = '0';
+            hidden.style.width = svgW + 'px';
+            hidden.style.height = svgH + 'px';
+            hidden.style.overflow = 'hidden';
+            document.body.appendChild(hidden);
+
+            const svgns = 'http://www.w3.org/2000/svg';
+            const svgEl = document.createElementNS(svgns, 'svg');
+            svgEl.setAttribute('width', svgW);
+            svgEl.setAttribute('height', svgH);
+            // Use a simple 0..svgW / 0..svgH viewBox for measurement and final output.
+            svgEl.setAttribute('viewBox', `0 0 ${svgW} ${svgH}`);
+
+            const defs = document.createElementNS(svgns, 'defs');
+            const style = document.createElementNS(svgns, 'style');
+            style.setAttribute('type', 'text/css');
+            style.textContent = `<![CDATA[ ${fontFaceCss} .arabic{font-family:QahiriEmbedded; font-size:56px; direction:rtl; text-anchor:end;} .en{font-family:Arial, sans-serif; font-size:20px; fill:#333;} .meta{font-family:Arial, sans-serif; font-size:16px; fill:#666;} ]]>`;
+            defs.appendChild(style);
+            svgEl.appendChild(defs);
+
+            const rect = document.createElementNS(svgns, 'rect');
+            rect.setAttribute('width', '100%');
+            rect.setAttribute('height', '100%');
+            rect.setAttribute('fill', '#ffffff');
+            svgEl.appendChild(rect);
+
+            // Arabic text container for measurement
+            const textEl = document.createElementNS(svgns, 'text');
+            textEl.setAttribute('class', 'arabic');
+            textEl.setAttribute('text-anchor', 'end');
+            svgEl.appendChild(textEl);
+            svgEl.appendChild(textEl);
+
+            // Add the measurement SVG to the hidden container so getComputedTextLength
+            // uses the same CSS/font context. Load the embedded font via FontFace API
+            // before measuring to ensure accurate metrics (avoids flash/fallback).
+            try {
+              const fontFace = new FontFace('QahiriEmbedded', `url(data:font/ttf;base64,${b64})`);
+              await fontFace.load();
+              document.fonts.add(fontFace);
+            } catch (fontErr) {
+              console.warn('FontFace load failed (continuing):', fontErr);
+            }
+
+            hidden.appendChild(svgEl);
+
+            // Build lines by measuring
+            const padding = 60;
+            // maxWidth is the usable width inside the svg coordinate space
+            const maxWidth = svgW - padding * 2;
+            const wordsArr = arabic.split(/\s+/).filter(Boolean);
+            const lines = [];
+            let cur = '';
+
+            for (let i = 0; i < wordsArr.length; i++) {
+              const w = wordsArr[i];
+              const candidate = cur ? (cur + ' ' + w) : w;
+              // create temporary tspan to measure
+              textEl.textContent = candidate;
+              const length = textEl.getComputedTextLength ? textEl.getComputedTextLength() : candidate.length * 20;
+              if (length > maxWidth && cur) {
+                lines.push(cur);
+                cur = w;
+              } else {
+                cur = candidate;
+              }
+            }
+            if (cur) lines.push(cur);
+
+            // Remove hidden measurement svg
+            hidden.remove();
+
+            // Now build final SVG string with embedded font and measured lines
+            let textTSpans = '';
+            const lineHeight = 56;
+            // Vertically center the block within the svg coordinate space
+            const startY = Math.round((svgH - (lines.length * lineHeight)) / 2) + Math.round(lineHeight / 2);
+            const absX = svgW - padding;
+            for (let i = 0; i < lines.length; i++) {
+              const y = startY + i * lineHeight;
+              textTSpans += `<tspan x="${absX}" y="${y}">${esc(lines[i])}</tspan>`;
+            }
+
+            const enLine = esc(en || '');
+            const metaLine = esc(meta || '');
+
+            const svg = `<?xml version="1.0" encoding="utf-8"?>\n` +
+              `<svg xmlns="http://www.w3.org/2000/svg" width="${svgW}" height="${svgH}" viewBox="0 0 ${svgW} ${svgH}">` +
+              `<defs><style type="text/css"><![CDATA[ ${fontFaceCss} .arabic{font-family:QahiriEmbedded; font-size:56px; direction:rtl; text-anchor:end;} .en{font-family:Arial, sans-serif; font-size:20px; fill:#333;} .meta{font-family:Arial, sans-serif; font-size:16px; fill:#666;} ]]></style></defs>` +
+              `<rect width="100%" height="100%" fill="#ffffff"/>` +
+              `<g>
+                <text class="arabic">${textTSpans}</text>
+                <text class="en" x="${viewBoxX + viewBoxW - padding}" y="${viewBoxY + viewBoxH - padding - 30}" text-anchor="end">${enLine}</text>
+                <text class="meta" x="${viewBoxX + viewBoxW - padding}" y="${viewBoxY + viewBoxH - padding}" text-anchor="end">${metaLine}</text>
+              </g>` +
+              `</svg>`;
+
+            svgContainer.innerHTML = svg;
+            document.getElementById('meta').textContent = meta;
+            document.getElementById('en').textContent = en;
+          } catch (e) {
+            console.error('Font embedding failed', e);
+            // fallback to previous foreignObject rendering
+            const svgFallback = `<?xml version="1.0" encoding="utf-8"?>\n` +
+              `<svg xmlns="http://www.w3.org/2000/svg" width="${svgW}" height="${svgH}" viewBox="0 0 ${svgW} ${svgH}">` +
+              `<rect width="100%" height="100%" fill="#ffffff"/>` +
+              `<foreignObject x="0" y="0" width="${svgW}" height="${svgH}">` +
+              `<div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:40px;box-sizing:border-box;">` +
+              `<div style="width:100%;text-align:right;font-family: 'Qahiri', serif;color:#111;">` +
+              `<div style="font-size:56px;line-height:1.3;">${esc(arabic)}</div>` +
+              `<div style="margin-top:10px;color:#555;font-size:16px;">${esc(meta)}</div>` +
+              `</div></div></foreignObject></svg>`;
+            svgContainer.innerHTML = svgFallback;
+            document.getElementById('meta').textContent = meta;
+            document.getElementById('en').textContent = en;
+          }
+        }
+
+        // Attempt to embed the font from local fonts folder; if missing, fallback will run.
+        embedFontAndRender('fonts/Qahiri-Regular.ttf');
+
+        const tweet = document.getElementById('tweet');
+        // share the current full URL (includes ?verse= if used)
+        const shareUrl = window.location.href;
+        const shareText = `${arabic} — ${meta}`;
+        tweet.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(shareUrl);
+
+        const copyBtn = document.getElementById('copy');
+        copyBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const text = `${arabic}\n\n${meta}\n\n${en}`;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(() => {
+              copyBtn.textContent = 'Copied';
+              setTimeout(() => copyBtn.textContent = 'Copy', 1500);
+            }).catch(() => alert('Copy failed'));
+          } else {
+            // Fallback: create temporary textarea
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); copyBtn.textContent = 'Copied'; setTimeout(() => copyBtn.textContent = 'Copy', 1500); } catch { alert('Copy failed'); }
+            ta.remove();
+          }
+        });
+
+      } catch (err) {
+        console.error(err);
+        document.getElementById('verse').textContent = 'Failed to load verse.';
+      }
+    }
+
+    loadRandomVerse();
+  </script>
+</body>
+
+</html>
