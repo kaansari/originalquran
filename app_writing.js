@@ -12,11 +12,11 @@
 
   // Fetch all JSON data
   Promise.all([
-    fetch("json/sura.json").then((response) => response.json()),
-    fetch("json/combined_quran.json").then((response) => response.json()),
-    fetch("json/quran_words.json").then((response) => response.json()),
-    fetch("json/quran_morphology.json").then((response) => response.json()),
-    fetch("json/en-word.json").then((response) => response.json()),
+    QuranUtils.loadJSON("json/sura.json"),
+    QuranUtils.loadJSON("json/combined_quran.json"),
+    QuranUtils.loadJSON("json/quran_words.json"),
+    QuranUtils.loadJSON("json/quran_morphology.json"),
+    QuranUtils.loadJSON("json/en-word.json"),
   ])
     .then((data) => {
       [suraData, combinedData, wordsData, morphology,enWords] = data;
@@ -122,13 +122,18 @@
   // Navigate to External Verse
   function navigateToExternalVerse(verseNumber, sura) {
     const fullURL = `${EXTERNAL_VERSE_BASE_URL}sura/${sura}/verse/${verseNumber}/manuscripts`;
-    window.open(fullURL, "_blank");
+    QuranUtils.openInNewTab(fullURL);
   }
 
   // Play Audio
   function playAudio(audioSrc) {
     if (!audioSrc) {
       console.error("Invalid audio source.");
+      return;
+    }
+
+    if (QuranUtils.externalNetworkRequired(audioSrc)) {
+      QuranUtils.notifyOnlineFeature("Audio playback");
       return;
     }
 
@@ -216,7 +221,7 @@
         suraSelect.value = savedSura;
         populateVerseSelector();
 
-        if (savedVerse && combinedData[savedVerse]) {
+        if (savedVerse && Number(savedVerse) >= 1 && Number(savedVerse) <= suraData[savedSura].nAyah) {
           verseSelect.value = savedVerse;
         } else {
           verseSelect.selectedIndex = 0;
@@ -235,7 +240,7 @@
 
   // Show Morphology Popup
   function showWordMorphologyPopup(wordId, wordElement) {
-    const wordData = wordElement.innerHTML;
+    const wordData = wordElement.textContent;
     const enData = wordElement.getAttribute('data-en');
     const wordMorphology = morphology[wordId];
 
@@ -253,7 +258,7 @@
 
     const popupContent = `
       <span id="morphology-popup-title">
-        ${wordData}, ${enData}
+        ${QuranUtils.escapeHTML(wordData)}, ${QuranUtils.escapeHTML(enData)}
         <table>
           ${tableContent}
         </table>
@@ -302,14 +307,14 @@ function buildMorphologyTable(wordObjects) {
       const wordMorphology = wordObjects[wordId];
 
       tableContent += `
-      <tr><th>Word</th><td>${wordMorphology.word || "N/A"}</td></tr>
-      <tr><th>POS</th><td>${wordMorphology.pos || "N/A"}</td></tr>
+      <tr><th>Word</th><td>${QuranUtils.escapeHTML(wordMorphology.word || "N/A")}</td></tr>
+      <tr><th>POS</th><td>${QuranUtils.escapeHTML(wordMorphology.pos || "N/A")}</td></tr>
       <tr><th>Root</th><td>${wordMorphology.root && wordMorphology.root !== "N/A" ? 
-          `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${wordMorphology.root}</span>` : 
+          `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${QuranUtils.escapeHTML(wordMorphology.root)}</span>` : 
           "N/A"
       }</td></tr>
-      <tr><th>Lemma</th><td>${wordMorphology.lemma || "N/A"}</td></tr>
-      <tr><th>Morphology</th><td>${wordMorphology.morphology || "N/A"}</td></tr>
+      <tr><th>Lemma</th><td>${QuranUtils.escapeHTML(wordMorphology.lemma || "N/A")}</td></tr>
+      <tr><th>Morphology</th><td>${QuranUtils.escapeHTML(wordMorphology.morphology || "N/A")}</td></tr>
       <tr><td colspan="2"><hr></td></tr>
       `;
   }
@@ -326,7 +331,7 @@ function buildMorphologyTable(wordObjects) {
               localStorage.setItem('selectedRoot', rootWord);
 
               // Open the root.html page in a new tab
-              window.open('root.html', '_blank');
+              QuranUtils.openInNewTab("root.html");
           });
       });
   }, 0);  // Small delay to ensure the DOM elements are rendered before attaching the event listeners
@@ -410,10 +415,9 @@ function buildMorphologyTable(wordObjects) {
 
  // Predefined default fonts for each page
 const pageDefaultFonts = {
-  "/originalquran/": "Qahiri",
-  "/originalquran/index.html": "Qahiri",
-  "/originalquran/root.html": "Amiri Quran",
-  "/originalquran/quran.html": "Raqq" // Add more pages and their default fonts here
+  "home": "Qahiri",
+  "root.html": "Amiri Quran",
+  "quran.html": "Raqq" // Add more pages and their default fonts here
 };
 
 // Function to update the font by applying the correct class
@@ -436,7 +440,7 @@ function updateFontClass(selectedFont) {
 }
 // Function to load the default font for the page
 function loadDefaultFont() {
-  const page = window.location.pathname; // Get the current page path
+  const page = window.location.pathname.split("/").pop() || "home"; // Get the current page path
   const savedFont = localStorage.getItem(`selectedFont_${page}`);
   let fontToApply;
 
@@ -464,7 +468,7 @@ function loadDefaultFont() {
 document.getElementById("font-select").addEventListener("change", (event) => {
   const selectedFont = event.target.value;
   updateFontClass(selectedFont);
-  vpage = window.location.pathname;
+  const vpage = window.location.pathname;
   localStorage.setItem(`selectedFont_${vpage}`, selectedFont); // Save the selected font to local storage
 });
 

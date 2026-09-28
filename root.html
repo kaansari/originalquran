@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="root.css">
   <title>Quran Root Words</title>
+  <script src="common.js"></script>
 </head>
 
 
@@ -25,10 +28,10 @@
     </label>
 
     <div class="menu-content">
-      <a href="index.html">
+      <a href="./">
         <i class="fas fa-book">Old Quran </i>
       </a>
-      <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
+      <a href="https://github.com/kaansari/originalquran" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
         <i class="fab fa-github"></i>
       </a>
       <span>Show Translation</span>
@@ -114,12 +117,12 @@
 
 
       Promise.all([
-        fetch("json/sura.json").then((response) => response.json()),
-        fetch("json/combined_harakat_quran.json").then((response) => response.json()),
-        fetch("json/quran_harakat_words.json").then((response) => response.json()),
-        fetch("json/quran_morphology.json").then((response) => response.json()),
-        fetch("json/en-word.json").then((response) => response.json()),
-        fetch("json/pagination_map.json").then((response) => response.json()),
+        QuranUtils.loadJSON("json/sura.json"),
+        QuranUtils.loadJSON("json/combined_harakat_quran.json"),
+        QuranUtils.loadJSON("json/quran_harakat_words.json"),
+        QuranUtils.loadJSON("json/quran_morphology.json"),
+        QuranUtils.loadJSON("json/en-word.json"),
+        QuranUtils.loadJSON("json/pagination_map.json"),
       ])
         .then((data) => {
           [suraData, combinedQuranData, quranWordsData, morphology, enData, paginationData] = data;
@@ -133,8 +136,7 @@
 
 
       // Fetch the root_words.json data
-      fetch('json/root_words.json')
-        .then(response => response.json())
+      QuranUtils.loadJSON('json/root_words.json')
         .then(data => {
           rootWordsData = data;
           rootsLoaded = true;
@@ -373,8 +375,8 @@
 
         // English translation - conditionally include based on showTranslation
         const translation = showTranslation ?
-          `<div class="translation" style="display: block;">${verseData.en}</div>` :
-          `<div class="translation" style="display: none;">${verseData.en}</div>`;
+          `<div class="translation" style="display: block;">${QuranUtils.escapeHTML(verseData.en || "")}</div>` :
+          `<div class="translation" style="display: none;">${QuranUtils.escapeHTML(verseData.en || "")}</div>`;
 
         const verseLink = `<span class="verseid" style="cursor:pointer; color:blue; text-decoration: underline;" verse=${verseIndex} sura=${suraNumber}>${suraNumber}:${verseNumber}</span>`
 
@@ -411,7 +413,7 @@
 
       // Show Morphology Popup
       function showWordMorphologyPopup(wordId, wordElement) {
-        const wordData = wordElement.innerHTML;
+        const wordData = wordElement.textContent;
         const enData = wordElement.getAttribute('data-en');
         const wordMorphology = morphology[wordId];
 
@@ -429,7 +431,7 @@
 
         const popupContent = `
       <span id="morphology-popup-title">
-        ${wordData}, ${enData}
+        ${QuranUtils.escapeHTML(wordData)}, ${QuranUtils.escapeHTML(enData)}
         <table>
           ${tableContent}
         </table>
@@ -478,14 +480,14 @@
           const wordMorphology = wordObjects[wordId];
 
           tableContent += `
-      <tr><th>Word</th><td>${wordMorphology.word || "N/A"}</td></tr>
-      <tr><th>POS</th><td>${wordMorphology.pos || "N/A"}</td></tr>
+      <tr><th>Word</th><td>${QuranUtils.escapeHTML(wordMorphology.word || "N/A")}</td></tr>
+      <tr><th>POS</th><td>${QuranUtils.escapeHTML(wordMorphology.pos || "N/A")}</td></tr>
       <tr><th>Root</th><td>${wordMorphology.root && wordMorphology.root !== "N/A" ?
-              `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${wordMorphology.root}</span>` :
+              `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${QuranUtils.escapeHTML(wordMorphology.root)}</span>` :
               "N/A"
             }</td></tr>
-      <tr><th>Lemma</th><td>${wordMorphology.lemma || "N/A"}</td></tr>
-      <tr><th>Morphology</th><td>${wordMorphology.morphology || "N/A"}</td></tr>
+      <tr><th>Lemma</th><td>${QuranUtils.escapeHTML(wordMorphology.lemma || "N/A")}</td></tr>
+      <tr><th>Morphology</th><td>${QuranUtils.escapeHTML(wordMorphology.morphology || "N/A")}</td></tr>
       <tr><td colspan="2"><hr></td></tr>
       `;
         }
@@ -502,7 +504,7 @@
               localStorage.setItem('selectedRoot', rootWord);
 
               // Open the root.html page in a new tab
-              window.open('root.html', '_blank');
+              QuranUtils.openInNewTab("root.html");
             });
           });
         }, 0);  // Small delay to ensure the DOM elements are rendered before attaching the event listeners
@@ -565,6 +567,11 @@
           return;
         }
 
+        if (QuranUtils.externalNetworkRequired(audioSrc)) {
+          QuranUtils.notifyOnlineFeature("Audio playback");
+          return;
+        }
+
         if (currentAudio) {
           currentAudio.pause();
           currentAudio.currentTime = 0;
@@ -619,7 +626,7 @@
               localStorage.setItem("selectedVerse", verseNumber);
               localStorage.setItem("currentPage", pageNumber);
 
-              window.open("page.html", "_blank");
+              QuranUtils.openInNewTab("page.html");
             } catch (error) {
               console.error("Navigation error:", error);
             }
@@ -710,7 +717,7 @@
               localStorage.setItem("selectedVerse", verseNumber);
               localStorage.setItem("currentPage", pageNumber);
 
-              window.open("page.html", "_blank");
+              QuranUtils.openInNewTab("page.html");
             } catch (error) {
               console.error("Navigation error:", error);
             }

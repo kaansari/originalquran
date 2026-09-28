@@ -12,11 +12,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="icons.css">
   <meta name="quran-words-file" content="json/quranic_words.json">
   <title>Quran Viewer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="styles_page.css">
+  <script src="common.js"></script>
 </head>
 
 <body>
@@ -38,13 +41,13 @@
         <input type="checkbox" id="translation-toggle">
         <span class="slider"></span>
       </label>
-        <a href="index.html">
+        <a href="./">
           <i class="fas fa-book"> Quran Old </i>
         </a>
             <a href="warsh.html">
           <i class="fas fa-book">  Quran with Taskheel Warsh</i>
         </a>
-        <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
+        <a href="https://github.com/kaansari/originalquran" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
           <i class="fab fa-github"> </i>
         </a>
        
@@ -83,7 +86,7 @@
       <select id="verse-select"></select>
     </span>
     
-    <button id="next-page" class="nav-button">
+    <button id="next-page" class="nav-button" disabled>
        <i class="fas fa-chevron-left"></i>
     </button>
   </div>

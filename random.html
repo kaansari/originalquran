@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="icons.css">
   <title>Random Verse</title>
   <!-- Open Graph / Twitter meta for richer embeds -->
   <meta property="og:title" content="Random Quran Verse">
   <meta property="og:description" content="A randomly selected Quran verse — refresh for a new verse or share a specific one with ?verse=123">
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Quran+Verse">
+  <meta property="og:image" content="icon.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@yourhandle">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="styles_page.css">
   <style>
     /* Minimal tweaks for a shareable single-verse page */
@@ -24,6 +26,7 @@
     .actions { margin-top:18px; }
     .btn { display:inline-block; padding:8px 14px; border-radius:6px; background:#1da1f2; color:#fff; text-decoration:none; margin:0 6px; }
   </style>
+  <script src="common.js"></script>
 </head>
 
 <body class="font-qahiri">
@@ -32,7 +35,7 @@
     <div id="meta" class="meta" style="display:none"></div>
     <div id="en" class="translation" style="display:none"></div>
     <div class="actions">
-      <a id="tweet" class="btn" target="_blank" rel="noopener">Share on Twitter</a>
+      <a id="tweet" class="btn" target="_blank" rel="noopener noreferrer">Share on Twitter</a>
       <a id="copy" class="btn" href="#">Copy</a>
     </div>
   </div>
@@ -41,19 +44,11 @@
     // Fetch minimal data, pick a random verse (or use ?verse=) and render it.
     async function loadRandomVerse() {
       try {
-        const [suraRes, combinedRes, wordsRes, enRes] = await Promise.all([
-          fetch('json/sura.json'),
-          fetch('json/combined_quran.json'),
-          fetch('json/quran_words.json'),
-          fetch('json/en-word.json')
-        ]);
-
-        if (!suraRes.ok || !combinedRes.ok || !wordsRes.ok) {
-          throw new Error('Failed to load JSON data');
-        }
-
         const [suraData, combined, words, enWords] = await Promise.all([
-          suraRes.json(), combinedRes.json(), wordsRes.json(), enRes.ok ? enRes.json() : {}
+          QuranUtils.loadJSON('json/sura.json'),
+          QuranUtils.loadJSON('json/combined_quran.json'),
+          QuranUtils.loadJSON('json/quran_words.json'),
+          QuranUtils.loadJSON('json/en-word.json')
         ]);
 
         const verseKeys = Object.keys(combined);
