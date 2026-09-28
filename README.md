@@ -58,3 +58,8 @@ originalquran/
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project information
 ```
+## GitHub Pages deployment
+
+This repository is ready to deploy as an installable browser/PWA from GitHub Pages. Set **Settings → Pages → Source** to **GitHub Actions**, then push to `main`. The workflow in `.github/workflows/deploy-pages.yml` validates the Go source and publishes only `src/`.
+
+See `GITHUB_PAGES.md` for details. GitHub Pages itself does not run `main.go`; the Go server remains available for local use or deployment to a Go-capable host.

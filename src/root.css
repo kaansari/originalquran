@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=block");
 
 
 /* load default font */
@@ -29,7 +28,7 @@ url('fonts/hafs/hafs.otf') format('opentype');
   --icon-hover-color: #007bff;
   --play-button-border-color: white;
   --morphology-popup-bg-color: white;
-  --latin-font: "DM Sans", "hafs", sans-serif;
+  --latin-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --menu-line: #333;
 }
 
@@ -56,7 +55,7 @@ body * {
 
 /* Apply the theme variables */
 body {
-  font-family: var(--latin-fonts);
+  font-family: var(--latin-font);
 
   background-color: var(--background-color);
   color: var(--text-color);

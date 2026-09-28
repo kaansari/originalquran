@@ -4,14 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="icons.css">
   <meta name="quran-words-file" content="json/quran_words.json">
   <title>Quran</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="styles_page.css">
+  <script src="common.js"></script>
+
+  <style>
+    /* Critical loader styles live inline so the animation starts before cached CSS/JS loads. */
+    #quran-loader{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:radial-gradient(circle at 50% 43%,rgba(27,124,89,.12),transparent 28%),radial-gradient(circle at 50% 50%,#fff 0%,#fafbf9 58%,#f1f5f2 100%);color:#173f31;opacity:1;visibility:visible;transition:opacity .5s ease,visibility .5s ease}
+    #quran-loader.quran-loader--done{opacity:0;visibility:hidden;pointer-events:none}
+    #quran-loader .quran-loader-orbit{position:relative;width:154px;height:154px;display:grid;place-items:center}
+    #quran-loader .quran-loader-icon{width:88px;height:88px;object-fit:contain;border-radius:22px;animation:oq-icon-spin 2.4s cubic-bezier(.4,0,.2,1) infinite;will-change:transform}
+    #quran-loader .quran-loader-ring{position:absolute;inset:0;border-radius:50%}
+    #quran-loader .quran-loader-ring-outer{background:conic-gradient(from 35deg,transparent 0 12%,rgba(22,117,82,.2) 12% 29%,#1f8a62 29% 40%,transparent 40% 64%,rgba(174,137,62,.75) 64% 72%,transparent 72% 100%);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 0);mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 0);animation:oq-ring-spin 1.8s linear infinite}
+    #quran-loader .quran-loader-ring-inner{inset:13px;border:1px solid rgba(31,138,98,.22);border-left-color:rgba(174,137,62,.8);border-right-color:rgba(31,138,98,.7);animation:oq-ring-reverse 3s linear infinite}
+    #quran-loader .quran-loader-spark{position:absolute;width:7px;height:7px;border-radius:50%;background:#1f8a62;box-shadow:0 0 0 5px rgba(31,138,98,.08),0 0 18px rgba(31,138,98,.28);animation:oq-spark 1.2s ease-in-out infinite}
+    #quran-loader .quran-loader-spark-1{top:17px;right:23px}#quran-loader .quran-loader-spark-2{bottom:22px;left:19px;animation-delay:.3s;background:#ae893e}#quran-loader .quran-loader-spark-3{bottom:9px;right:48px;animation-delay:.6s;width:5px;height:5px}
+    #quran-loader .quran-loader-title{margin-top:6px;font:600 20px/1.2 system-ui,sans-serif;letter-spacing:.02em}#quran-loader .quran-loader-subtitle{font:400 13px/1.4 system-ui,sans-serif;color:rgba(23,63,49,.62)}
+    #quran-loader .quran-loader-dots{display:flex;gap:6px;height:12px;align-items:center}#quran-loader .quran-loader-dots span{width:5px;height:5px;border-radius:50%;background:rgba(31,138,98,.75);animation:oq-dot 1s ease-in-out infinite}#quran-loader .quran-loader-dots span:nth-child(2){animation-delay:.14s}#quran-loader .quran-loader-dots span:nth-child(3){animation-delay:.28s}
+    @keyframes oq-icon-spin{0%{transform:rotate(0deg) scale(.94)}50%{transform:rotate(180deg) scale(1.06)}100%{transform:rotate(360deg) scale(.94)}}@keyframes oq-ring-spin{to{transform:rotate(360deg)}}@keyframes oq-ring-reverse{to{transform:rotate(-360deg)}}@keyframes oq-spark{0%,100%{transform:scale(.7);opacity:.45}50%{transform:scale(1.2);opacity:1}}@keyframes oq-dot{0%,80%,100%{transform:translateY(0);opacity:.35}40%{transform:translateY(-4px);opacity:1}}
+  </style>
 </head>
 
 <body>
+  <div id="quran-loader" class="quran-loader" role="status" aria-live="polite" aria-label="Loading Original Quran">
+    <div class="quran-loader-orbit" aria-hidden="true">
+      <span class="quran-loader-ring quran-loader-ring-outer"></span>
+      <span class="quran-loader-ring quran-loader-ring-inner"></span>
+      <img src="icon.png" alt="" class="quran-loader-icon">
+      <span class="quran-loader-spark quran-loader-spark-1"></span>
+      <span class="quran-loader-spark quran-loader-spark-2"></span>
+      <span class="quran-loader-spark quran-loader-spark-3"></span>
+    </div>
+    <div class="quran-loader-title">Original Quran</div>
+    <div class="quran-loader-subtitle">Preparing the Quran…</div>
+    <div class="quran-loader-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+
 
     <div class="hamburger-menu">
       <input type="checkbox" id="menu-toggle" />
@@ -36,7 +69,7 @@
         <a href="warsh.html">
           <i class="fas fa-book">  Quran with Taskheel Warsh</i>
         </a>
-        <a href="https://github.com/kaansari/originalquran" target="_blank" aria-label="GitHub Repository">
+        <a href="https://github.com/kaansari/originalquran" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
           <i class="fab fa-github"> </i>
         </a>
        
@@ -64,6 +97,12 @@
 
   </div>
 
+  <section class="pwa-actions" id="pwa-actions" aria-label="App installation and updates">
+    <button id="pwa-install-button" type="button">Install App</button>
+    <button id="pwa-update-button" type="button" hidden>Update App</button>
+    <span id="pwa-status" role="status" aria-live="polite"></span>
+  </section>
+
   <!-- Page Navigation Buttons -->
   <div class="page-navigation">
     <button id="prev-page" class="nav-button" disabled>
@@ -76,13 +115,38 @@
       <select id="verse-select"></select>
     </span>
     
-    <button id="next-page" class="nav-button">
+    <button id="next-page" class="nav-button" disabled>
        <i class="fas fa-chevron-left"></i>
     </button>
   </div>
 
   <div class="page" id="quran-container"></div>
 
+  <script>
+    (() => {
+      const loader = document.getElementById('quran-loader');
+      const loaderStartedAt = performance.now();
+      const minimumVisibleMs = 1100;
+      let hidden = false;
+      const hideLoader = () => {
+        if (!loader || hidden) return;
+        const remaining = Math.max(0, minimumVisibleMs - (performance.now() - loaderStartedAt));
+        window.setTimeout(() => {
+          if (hidden) return;
+          hidden = true;
+          loader.classList.add('quran-loader--done');
+          window.setTimeout(() => loader.remove(), 550);
+        }, remaining);
+      };
+      window.addEventListener('quran:ready', hideLoader, { once: true });
+      window.addEventListener('quran:error', () => {
+        const subtitle = loader?.querySelector('.quran-loader-subtitle');
+        if (subtitle) subtitle.textContent = 'Unable to load Quran data';
+        window.setTimeout(hideLoader, 1400);
+      }, { once: true });
+      window.setTimeout(hideLoader, 12000);
+    })();
+  </script>
   <script src="app.js"></script>
 </body>
 
