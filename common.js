@@ -73,6 +73,7 @@
   let installPrompt = null;
   let serviceWorkerRegistration = null;
   let reloadForUpdate = false;
+  let installedThisSession = false;
 
   const isStandalone = () =>
     window.matchMedia?.("(display-mode: standalone)").matches ||
@@ -93,13 +94,7 @@
     const { installButton } = getUI();
     if (!installButton) return;
 
-    if (isStandalone()) {
-      installButton.disabled = true;
-      installButton.textContent = "App Installed";
-      setStatus("");
-      return;
-    }
-
+    installButton.hidden = isStandalone() || installedThisSession;
     installButton.disabled = false;
     installButton.textContent = "Install App";
   }
@@ -186,6 +181,7 @@
 
   window.addEventListener("appinstalled", () => {
     installPrompt = null;
+    installedThisSession = true;
     refreshInstallUI();
     setStatus("Original Quran is installed.");
   });

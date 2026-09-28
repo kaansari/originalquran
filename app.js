@@ -393,7 +393,9 @@
 
         displayPage(currentPage, currentSura, currentVerse);
       } else {
-        displayPage(1);
+        populateVerseSelector();
+        const savedPageNumber = Number(savedPage);
+        displayPage(getPageData(savedPageNumber) ? savedPageNumber : 1);
       }
     } catch (error) {
       console.error("Error loading selections:", error);
