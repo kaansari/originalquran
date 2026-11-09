@@ -313,6 +313,7 @@ function buildMorphologyTable(wordObjects) {
           `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${QuranUtils.escapeHTML(wordMorphology.root)}</span>` : 
           "N/A"
       }</td></tr>
+      ${QuranUtils.rootNotesRow(wordMorphology.root)}
       <tr><th>Lemma</th><td>${QuranUtils.escapeHTML(wordMorphology.lemma || "N/A")}</td></tr>
       <tr><th>Morphology</th><td>${QuranUtils.escapeHTML(wordMorphology.morphology || "N/A")}</td></tr>
       <tr><td colspan="2"><hr></td></tr>

@@ -1,0 +1,26 @@
+{
+  "رحم": {
+    "source": "notes_dir/رحم.md"
+  },
+  "كتب": {
+    "source": "notes_dir/كتب.md"
+  },
+  "علم": {
+    "source": "notes_dir/علم.md"
+  },
+  "حمد": {
+    "source": "notes_dir/حمد.md"
+  },
+  "غفر": {
+    "source": "notes_dir/غفر.md"
+  },
+  "صبر": {
+    "source": "notes_dir/صبر.md"
+  },
+  "رزق": {
+    "source": "notes_dir/رزق.md"
+  },
+  "هدي": {
+    "source": "notes_dir/هدي.md"
+  }
+}
