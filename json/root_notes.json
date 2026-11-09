@@ -1,26 +1,5045 @@
 {
-  "رحم": {
-    "source": "notes/%D8%B1%D8%AD%D9%85.md"
+  "آزر": {
+    "source": "notes/%D8%A2%D8%B2%D8%B1.md"
   },
-  "كتب": {
-    "source": "notes/%D9%83%D8%AA%D8%A8.md"
+  "أبب": {
+    "source": "notes/%D8%A3%D8%A8%D8%A8.md"
   },
-  "علم": {
-    "source": "notes/%D8%B9%D9%84%D9%85.md"
+  "أبد": {
+    "source": "notes/%D8%A3%D8%A8%D8%AF.md"
+  },
+  "أبق": {
+    "source": "notes/%D8%A3%D8%A8%D9%82.md"
+  },
+  "أبل": {
+    "source": "notes/%D8%A3%D8%A8%D9%84.md"
+  },
+  "أبي": {
+    "source": "notes/%D8%A3%D8%A8%D9%8A.md"
+  },
+  "أثث": {
+    "source": "notes/%D8%A3%D8%AB%D8%AB.md"
+  },
+  "أثر": {
+    "source": "notes/%D8%A3%D8%AB%D8%B1.md"
+  },
+  "أثل": {
+    "source": "notes/%D8%A3%D8%AB%D9%84.md"
+  },
+  "أثم": {
+    "source": "notes/%D8%A3%D8%AB%D9%85.md"
+  },
+  "أجج": {
+    "source": "notes/%D8%A3%D8%AC%D8%AC.md"
+  },
+  "أجر": {
+    "source": "notes/%D8%A3%D8%AC%D8%B1.md"
+  },
+  "أجل": {
+    "source": "notes/%D8%A3%D8%AC%D9%84.md"
+  },
+  "أحد": {
+    "source": "notes/%D8%A3%D8%AD%D8%AF.md"
+  },
+  "أخر": {
+    "source": "notes/%D8%A3%D8%AE%D8%B1.md"
+  },
+  "أخو": {
+    "source": "notes/%D8%A3%D8%AE%D9%88.md"
+  },
+  "أدد": {
+    "source": "notes/%D8%A3%D8%AF%D8%AF.md"
+  },
+  "أدم": {
+    "source": "notes/%D8%A3%D8%AF%D9%85.md"
+  },
+  "أدي": {
+    "source": "notes/%D8%A3%D8%AF%D9%8A.md"
+  },
+  "أذن": {
+    "source": "notes/%D8%A3%D8%B0%D9%86.md"
+  },
+  "أذي": {
+    "source": "notes/%D8%A3%D8%B0%D9%8A.md"
+  },
+  "أرب": {
+    "source": "notes/%D8%A3%D8%B1%D8%A8.md"
+  },
+  "أرض": {
+    "source": "notes/%D8%A3%D8%B1%D8%B6.md"
+  },
+  "أرك": {
+    "source": "notes/%D8%A3%D8%B1%D9%83.md"
+  },
+  "أزر": {
+    "source": "notes/%D8%A3%D8%B2%D8%B1.md"
+  },
+  "أزز": {
+    "source": "notes/%D8%A3%D8%B2%D8%B2.md"
+  },
+  "أزف": {
+    "source": "notes/%D8%A3%D8%B2%D9%81.md"
+  },
+  "أسر": {
+    "source": "notes/%D8%A3%D8%B3%D8%B1.md"
+  },
+  "أسس": {
+    "source": "notes/%D8%A3%D8%B3%D8%B3.md"
+  },
+  "أسف": {
+    "source": "notes/%D8%A3%D8%B3%D9%81.md"
+  },
+  "أسن": {
+    "source": "notes/%D8%A3%D8%B3%D9%86.md"
+  },
+  "أسو": {
+    "source": "notes/%D8%A3%D8%B3%D9%88.md"
+  },
+  "أشر": {
+    "source": "notes/%D8%A3%D8%B4%D8%B1.md"
+  },
+  "أصر": {
+    "source": "notes/%D8%A3%D8%B5%D8%B1.md"
+  },
+  "أصل": {
+    "source": "notes/%D8%A3%D8%B5%D9%84.md"
+  },
+  "أفف": {
+    "source": "notes/%D8%A3%D9%81%D9%81.md"
+  },
+  "أفق": {
+    "source": "notes/%D8%A3%D9%81%D9%82.md"
+  },
+  "أفك": {
+    "source": "notes/%D8%A3%D9%81%D9%83.md"
+  },
+  "أفل": {
+    "source": "notes/%D8%A3%D9%81%D9%84.md"
+  },
+  "أكل": {
+    "source": "notes/%D8%A3%D9%83%D9%84.md"
+  },
+  "ألت": {
+    "source": "notes/%D8%A3%D9%84%D8%AA.md"
+  },
+  "ألف": {
+    "source": "notes/%D8%A3%D9%84%D9%81.md"
+  },
+  "ألل": {
+    "source": "notes/%D8%A3%D9%84%D9%84.md"
+  },
+  "ألم": {
+    "source": "notes/%D8%A3%D9%84%D9%85.md"
+  },
+  "ألو": {
+    "source": "notes/%D8%A3%D9%84%D9%88.md"
+  },
+  "أمت": {
+    "source": "notes/%D8%A3%D9%85%D8%AA.md"
+  },
+  "أمد": {
+    "source": "notes/%D8%A3%D9%85%D8%AF.md"
+  },
+  "أمر": {
+    "source": "notes/%D8%A3%D9%85%D8%B1.md"
+  },
+  "أمس": {
+    "source": "notes/%D8%A3%D9%85%D8%B3.md"
+  },
+  "أمل": {
+    "source": "notes/%D8%A3%D9%85%D9%84.md"
+  },
+  "أمن": {
+    "source": "notes/%D8%A3%D9%85%D9%86.md"
+  },
+  "أمو": {
+    "source": "notes/%D8%A3%D9%85%D9%88.md"
+  },
+  "أنث": {
+    "source": "notes/%D8%A3%D9%86%D8%AB.md"
+  },
+  "أنف": {
+    "source": "notes/%D8%A3%D9%86%D9%81.md"
+  },
+  "أنم": {
+    "source": "notes/%D8%A3%D9%86%D9%85.md"
+  },
+  "أني": {
+    "source": "notes/%D8%A3%D9%86%D9%8A.md"
+  },
+  "أهل": {
+    "source": "notes/%D8%A3%D9%87%D9%84.md"
+  },
+  "أوب": {
+    "source": "notes/%D8%A3%D9%88%D8%A8.md"
+  },
+  "أود": {
+    "source": "notes/%D8%A3%D9%88%D8%AF.md"
+  },
+  "أول": {
+    "source": "notes/%D8%A3%D9%88%D9%84.md"
+  },
+  "أون": {
+    "source": "notes/%D8%A3%D9%88%D9%86.md"
+  },
+  "أوه": {
+    "source": "notes/%D8%A3%D9%88%D9%87.md"
+  },
+  "أوي": {
+    "source": "notes/%D8%A3%D9%88%D9%8A.md"
+  },
+  "أيد": {
+    "source": "notes/%D8%A3%D9%8A%D8%AF.md"
+  },
+  "أيكة": {
+    "source": "notes/%D8%A3%D9%8A%D9%83%D8%A9.md"
+  },
+  "أيم": {
+    "source": "notes/%D8%A3%D9%8A%D9%85.md"
+  },
+  "أيوب": {
+    "source": "notes/%D8%A3%D9%8A%D9%88%D8%A8.md"
+  },
+  "إبراهيم": {
+    "source": "notes/%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85.md"
+  },
+  "إبليس": {
+    "source": "notes/%D8%A5%D8%A8%D9%84%D9%8A%D8%B3.md"
+  },
+  "إدريس": {
+    "source": "notes/%D8%A5%D8%AF%D8%B1%D9%8A%D8%B3.md"
+  },
+  "إرم": {
+    "source": "notes/%D8%A5%D8%B1%D9%85.md"
+  },
+  "إستبرق": {
+    "source": "notes/%D8%A5%D8%B3%D8%AA%D8%A8%D8%B1%D9%82.md"
+  },
+  "إسحاق": {
+    "source": "notes/%D8%A5%D8%B3%D8%AD%D8%A7%D9%82.md"
+  },
+  "إسرائيل": {
+    "source": "notes/%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84.md"
+  },
+  "إسماعيل": {
+    "source": "notes/%D8%A5%D8%B3%D9%85%D8%A7%D8%B9%D9%8A%D9%84.md"
+  },
+  "إل": {
+    "source": "notes/%D8%A5%D9%84.md"
+  },
+  "إلياس": {
+    "source": "notes/%D8%A5%D9%84%D9%8A%D8%A7%D8%B3.md"
+  },
+  "إنجيل": {
+    "source": "notes/%D8%A5%D9%86%D8%AC%D9%8A%D9%84.md"
+  },
+  "اللات": {
+    "source": "notes/%D8%A7%D9%84%D9%84%D8%A7%D8%AA.md"
+  },
+  "اليسع": {
+    "source": "notes/%D8%A7%D9%84%D9%8A%D8%B3%D8%B9.md"
+  },
+  "بأر": {
+    "source": "notes/%D8%A8%D8%A3%D8%B1.md"
+  },
+  "بأس": {
+    "source": "notes/%D8%A8%D8%A3%D8%B3.md"
+  },
+  "بابل": {
+    "source": "notes/%D8%A8%D8%A7%D8%A8%D9%84.md"
+  },
+  "بتر": {
+    "source": "notes/%D8%A8%D8%AA%D8%B1.md"
+  },
+  "بتك": {
+    "source": "notes/%D8%A8%D8%AA%D9%83.md"
+  },
+  "بتل": {
+    "source": "notes/%D8%A8%D8%AA%D9%84.md"
+  },
+  "بثث": {
+    "source": "notes/%D8%A8%D8%AB%D8%AB.md"
+  },
+  "بجس": {
+    "source": "notes/%D8%A8%D8%AC%D8%B3.md"
+  },
+  "بحث": {
+    "source": "notes/%D8%A8%D8%AD%D8%AB.md"
+  },
+  "بحر": {
+    "source": "notes/%D8%A8%D8%AD%D8%B1.md"
+  },
+  "بخس": {
+    "source": "notes/%D8%A8%D8%AE%D8%B3.md"
+  },
+  "بخع": {
+    "source": "notes/%D8%A8%D8%AE%D8%B9.md"
+  },
+  "بخل": {
+    "source": "notes/%D8%A8%D8%AE%D9%84.md"
+  },
+  "بدأ": {
+    "source": "notes/%D8%A8%D8%AF%D8%A3.md"
+  },
+  "بدر": {
+    "source": "notes/%D8%A8%D8%AF%D8%B1.md"
+  },
+  "بدع": {
+    "source": "notes/%D8%A8%D8%AF%D8%B9.md"
+  },
+  "بدل": {
+    "source": "notes/%D8%A8%D8%AF%D9%84.md"
+  },
+  "بدن": {
+    "source": "notes/%D8%A8%D8%AF%D9%86.md"
+  },
+  "بدو": {
+    "source": "notes/%D8%A8%D8%AF%D9%88.md"
+  },
+  "بذر": {
+    "source": "notes/%D8%A8%D8%B0%D8%B1.md"
+  },
+  "برأ": {
+    "source": "notes/%D8%A8%D8%B1%D8%A3.md"
+  },
+  "برج": {
+    "source": "notes/%D8%A8%D8%B1%D8%AC.md"
+  },
+  "برح": {
+    "source": "notes/%D8%A8%D8%B1%D8%AD.md"
+  },
+  "برد": {
+    "source": "notes/%D8%A8%D8%B1%D8%AF.md"
+  },
+  "برر": {
+    "source": "notes/%D8%A8%D8%B1%D8%B1.md"
+  },
+  "برز": {
+    "source": "notes/%D8%A8%D8%B1%D8%B2.md"
+  },
+  "برزخ": {
+    "source": "notes/%D8%A8%D8%B1%D8%B2%D8%AE.md"
+  },
+  "برص": {
+    "source": "notes/%D8%A8%D8%B1%D8%B5.md"
+  },
+  "برق": {
+    "source": "notes/%D8%A8%D8%B1%D9%82.md"
+  },
+  "برك": {
+    "source": "notes/%D8%A8%D8%B1%D9%83.md"
+  },
+  "برم": {
+    "source": "notes/%D8%A8%D8%B1%D9%85.md"
+  },
+  "برهن": {
+    "source": "notes/%D8%A8%D8%B1%D9%87%D9%86.md"
+  },
+  "بزغ": {
+    "source": "notes/%D8%A8%D8%B2%D8%BA.md"
+  },
+  "بسر": {
+    "source": "notes/%D8%A8%D8%B3%D8%B1.md"
+  },
+  "بسس": {
+    "source": "notes/%D8%A8%D8%B3%D8%B3.md"
+  },
+  "بسط": {
+    "source": "notes/%D8%A8%D8%B3%D8%B7.md"
+  },
+  "بسق": {
+    "source": "notes/%D8%A8%D8%B3%D9%82.md"
+  },
+  "بسل": {
+    "source": "notes/%D8%A8%D8%B3%D9%84.md"
+  },
+  "بسم": {
+    "source": "notes/%D8%A8%D8%B3%D9%85.md"
+  },
+  "بشر": {
+    "source": "notes/%D8%A8%D8%B4%D8%B1.md"
+  },
+  "بصر": {
+    "source": "notes/%D8%A8%D8%B5%D8%B1.md"
+  },
+  "بصل": {
+    "source": "notes/%D8%A8%D8%B5%D9%84.md"
+  },
+  "بضع": {
+    "source": "notes/%D8%A8%D8%B6%D8%B9.md"
+  },
+  "بطأ": {
+    "source": "notes/%D8%A8%D8%B7%D8%A3.md"
+  },
+  "بطر": {
+    "source": "notes/%D8%A8%D8%B7%D8%B1.md"
+  },
+  "بطش": {
+    "source": "notes/%D8%A8%D8%B7%D8%B4.md"
+  },
+  "بطل": {
+    "source": "notes/%D8%A8%D8%B7%D9%84.md"
+  },
+  "بطن": {
+    "source": "notes/%D8%A8%D8%B7%D9%86.md"
+  },
+  "بعث": {
+    "source": "notes/%D8%A8%D8%B9%D8%AB.md"
+  },
+  "بعثر": {
+    "source": "notes/%D8%A8%D8%B9%D8%AB%D8%B1.md"
+  },
+  "بعد": {
+    "source": "notes/%D8%A8%D8%B9%D8%AF.md"
+  },
+  "بعر": {
+    "source": "notes/%D8%A8%D8%B9%D8%B1.md"
+  },
+  "بعض": {
+    "source": "notes/%D8%A8%D8%B9%D8%B6.md"
+  },
+  "بعل": {
+    "source": "notes/%D8%A8%D8%B9%D9%84.md"
+  },
+  "بغت": {
+    "source": "notes/%D8%A8%D8%BA%D8%AA.md"
+  },
+  "بغض": {
+    "source": "notes/%D8%A8%D8%BA%D8%B6.md"
+  },
+  "بغل": {
+    "source": "notes/%D8%A8%D8%BA%D9%84.md"
+  },
+  "بغي": {
+    "source": "notes/%D8%A8%D8%BA%D9%8A.md"
+  },
+  "بقر": {
+    "source": "notes/%D8%A8%D9%82%D8%B1.md"
+  },
+  "بقع": {
+    "source": "notes/%D8%A8%D9%82%D8%B9.md"
+  },
+  "بقل": {
+    "source": "notes/%D8%A8%D9%82%D9%84.md"
+  },
+  "بقي": {
+    "source": "notes/%D8%A8%D9%82%D9%8A.md"
+  },
+  "بكة": {
+    "source": "notes/%D8%A8%D9%83%D8%A9.md"
+  },
+  "بكر": {
+    "source": "notes/%D8%A8%D9%83%D8%B1.md"
+  },
+  "بكم": {
+    "source": "notes/%D8%A8%D9%83%D9%85.md"
+  },
+  "بكي": {
+    "source": "notes/%D8%A8%D9%83%D9%8A.md"
+  },
+  "بلد": {
+    "source": "notes/%D8%A8%D9%84%D8%AF.md"
+  },
+  "بلس": {
+    "source": "notes/%D8%A8%D9%84%D8%B3.md"
+  },
+  "بلع": {
+    "source": "notes/%D8%A8%D9%84%D8%B9.md"
+  },
+  "بلغ": {
+    "source": "notes/%D8%A8%D9%84%D8%BA.md"
+  },
+  "بلو": {
+    "source": "notes/%D8%A8%D9%84%D9%88.md"
+  },
+  "بنن": {
+    "source": "notes/%D8%A8%D9%86%D9%86.md"
+  },
+  "بني": {
+    "source": "notes/%D8%A8%D9%86%D9%8A.md"
+  },
+  "بهت": {
+    "source": "notes/%D8%A8%D9%87%D8%AA.md"
+  },
+  "بهج": {
+    "source": "notes/%D8%A8%D9%87%D8%AC.md"
+  },
+  "بهل": {
+    "source": "notes/%D8%A8%D9%87%D9%84.md"
+  },
+  "بهم": {
+    "source": "notes/%D8%A8%D9%87%D9%85.md"
+  },
+  "بوأ": {
+    "source": "notes/%D8%A8%D9%88%D8%A3.md"
+  },
+  "بوب": {
+    "source": "notes/%D8%A8%D9%88%D8%A8.md"
+  },
+  "بور": {
+    "source": "notes/%D8%A8%D9%88%D8%B1.md"
+  },
+  "بول": {
+    "source": "notes/%D8%A8%D9%88%D9%84.md"
+  },
+  "بيت": {
+    "source": "notes/%D8%A8%D9%8A%D8%AA.md"
+  },
+  "بيد": {
+    "source": "notes/%D8%A8%D9%8A%D8%AF.md"
+  },
+  "بيض": {
+    "source": "notes/%D8%A8%D9%8A%D8%B6.md"
+  },
+  "بيع": {
+    "source": "notes/%D8%A8%D9%8A%D8%B9.md"
+  },
+  "تابوت": {
+    "source": "notes/%D8%AA%D8%A7%D8%A8%D9%88%D8%AA.md"
+  },
+  "تبب": {
+    "source": "notes/%D8%AA%D8%A8%D8%A8.md"
+  },
+  "تبر": {
+    "source": "notes/%D8%AA%D8%A8%D8%B1.md"
+  },
+  "تبع": {
+    "source": "notes/%D8%AA%D8%A8%D8%B9.md"
+  },
+  "تجر": {
+    "source": "notes/%D8%AA%D8%AC%D8%B1.md"
+  },
+  "تحت": {
+    "source": "notes/%D8%AA%D8%AD%D8%AA.md"
+  },
+  "ترب": {
+    "source": "notes/%D8%AA%D8%B1%D8%A8.md"
+  },
+  "ترف": {
+    "source": "notes/%D8%AA%D8%B1%D9%81.md"
+  },
+  "ترق": {
+    "source": "notes/%D8%AA%D8%B1%D9%82.md"
+  },
+  "ترك": {
+    "source": "notes/%D8%AA%D8%B1%D9%83.md"
+  },
+  "تسع": {
+    "source": "notes/%D8%AA%D8%B3%D8%B9.md"
+  },
+  "تعس": {
+    "source": "notes/%D8%AA%D8%B9%D8%B3.md"
+  },
+  "تفث": {
+    "source": "notes/%D8%AA%D9%81%D8%AB.md"
+  },
+  "تقن": {
+    "source": "notes/%D8%AA%D9%82%D9%86.md"
+  },
+  "تلل": {
+    "source": "notes/%D8%AA%D9%84%D9%84.md"
+  },
+  "تلو": {
+    "source": "notes/%D8%AA%D9%84%D9%88.md"
+  },
+  "تمم": {
+    "source": "notes/%D8%AA%D9%85%D9%85.md"
+  },
+  "تنور": {
+    "source": "notes/%D8%AA%D9%86%D9%88%D8%B1.md"
+  },
+  "توب": {
+    "source": "notes/%D8%AA%D9%88%D8%A8.md"
+  },
+  "تور": {
+    "source": "notes/%D8%AA%D9%88%D8%B1.md"
+  },
+  "توراة": {
+    "source": "notes/%D8%AA%D9%88%D8%B1%D8%A7%D8%A9.md"
+  },
+  "تين": {
+    "source": "notes/%D8%AA%D9%8A%D9%86.md"
+  },
+  "تيه": {
+    "source": "notes/%D8%AA%D9%8A%D9%87.md"
+  },
+  "ثبت": {
+    "source": "notes/%D8%AB%D8%A8%D8%AA.md"
+  },
+  "ثبر": {
+    "source": "notes/%D8%AB%D8%A8%D8%B1.md"
+  },
+  "ثبط": {
+    "source": "notes/%D8%AB%D8%A8%D8%B7.md"
+  },
+  "ثبي": {
+    "source": "notes/%D8%AB%D8%A8%D9%8A.md"
+  },
+  "ثجج": {
+    "source": "notes/%D8%AB%D8%AC%D8%AC.md"
+  },
+  "ثخن": {
+    "source": "notes/%D8%AB%D8%AE%D9%86.md"
+  },
+  "ثرب": {
+    "source": "notes/%D8%AB%D8%B1%D8%A8.md"
+  },
+  "ثري": {
+    "source": "notes/%D8%AB%D8%B1%D9%8A.md"
+  },
+  "ثعب": {
+    "source": "notes/%D8%AB%D8%B9%D8%A8.md"
+  },
+  "ثقب": {
+    "source": "notes/%D8%AB%D9%82%D8%A8.md"
+  },
+  "ثقف": {
+    "source": "notes/%D8%AB%D9%82%D9%81.md"
+  },
+  "ثقل": {
+    "source": "notes/%D8%AB%D9%82%D9%84.md"
+  },
+  "ثلث": {
+    "source": "notes/%D8%AB%D9%84%D8%AB.md"
+  },
+  "ثلل": {
+    "source": "notes/%D8%AB%D9%84%D9%84.md"
+  },
+  "ثمر": {
+    "source": "notes/%D8%AB%D9%85%D8%B1.md"
+  },
+  "ثمن": {
+    "source": "notes/%D8%AB%D9%85%D9%86.md"
+  },
+  "ثمود": {
+    "source": "notes/%D8%AB%D9%85%D9%88%D8%AF.md"
+  },
+  "ثني": {
+    "source": "notes/%D8%AB%D9%86%D9%8A.md"
+  },
+  "ثوب": {
+    "source": "notes/%D8%AB%D9%88%D8%A8.md"
+  },
+  "ثور": {
+    "source": "notes/%D8%AB%D9%88%D8%B1.md"
+  },
+  "ثوي": {
+    "source": "notes/%D8%AB%D9%88%D9%8A.md"
+  },
+  "ثيب": {
+    "source": "notes/%D8%AB%D9%8A%D8%A8.md"
+  },
+  "جأر": {
+    "source": "notes/%D8%AC%D8%A3%D8%B1.md"
+  },
+  "جالوت": {
+    "source": "notes/%D8%AC%D8%A7%D9%84%D9%88%D8%AA.md"
+  },
+  "جبب": {
+    "source": "notes/%D8%AC%D8%A8%D8%A8.md"
+  },
+  "جبت": {
+    "source": "notes/%D8%AC%D8%A8%D8%AA.md"
+  },
+  "جبر": {
+    "source": "notes/%D8%AC%D8%A8%D8%B1.md"
+  },
+  "جبريل": {
+    "source": "notes/%D8%AC%D8%A8%D8%B1%D9%8A%D9%84.md"
+  },
+  "جبل": {
+    "source": "notes/%D8%AC%D8%A8%D9%84.md"
+  },
+  "جبن": {
+    "source": "notes/%D8%AC%D8%A8%D9%86.md"
+  },
+  "جبه": {
+    "source": "notes/%D8%AC%D8%A8%D9%87.md"
+  },
+  "جبي": {
+    "source": "notes/%D8%AC%D8%A8%D9%8A.md"
+  },
+  "جثث": {
+    "source": "notes/%D8%AC%D8%AB%D8%AB.md"
+  },
+  "جثم": {
+    "source": "notes/%D8%AC%D8%AB%D9%85.md"
+  },
+  "جثو": {
+    "source": "notes/%D8%AC%D8%AB%D9%88.md"
+  },
+  "جحد": {
+    "source": "notes/%D8%AC%D8%AD%D8%AF.md"
+  },
+  "جحم": {
+    "source": "notes/%D8%AC%D8%AD%D9%85.md"
+  },
+  "جدث": {
+    "source": "notes/%D8%AC%D8%AF%D8%AB.md"
+  },
+  "جدد": {
+    "source": "notes/%D8%AC%D8%AF%D8%AF.md"
+  },
+  "جدر": {
+    "source": "notes/%D8%AC%D8%AF%D8%B1.md"
+  },
+  "جدل": {
+    "source": "notes/%D8%AC%D8%AF%D9%84.md"
+  },
+  "جذذ": {
+    "source": "notes/%D8%AC%D8%B0%D8%B0.md"
+  },
+  "جذع": {
+    "source": "notes/%D8%AC%D8%B0%D8%B9.md"
+  },
+  "جذو": {
+    "source": "notes/%D8%AC%D8%B0%D9%88.md"
+  },
+  "جرح": {
+    "source": "notes/%D8%AC%D8%B1%D8%AD.md"
+  },
+  "جرد": {
+    "source": "notes/%D8%AC%D8%B1%D8%AF.md"
+  },
+  "جرر": {
+    "source": "notes/%D8%AC%D8%B1%D8%B1.md"
+  },
+  "جرز": {
+    "source": "notes/%D8%AC%D8%B1%D8%B2.md"
+  },
+  "جرع": {
+    "source": "notes/%D8%AC%D8%B1%D8%B9.md"
+  },
+  "جرف": {
+    "source": "notes/%D8%AC%D8%B1%D9%81.md"
+  },
+  "جرم": {
+    "source": "notes/%D8%AC%D8%B1%D9%85.md"
+  },
+  "جري": {
+    "source": "notes/%D8%AC%D8%B1%D9%8A.md"
+  },
+  "جزأ": {
+    "source": "notes/%D8%AC%D8%B2%D8%A3.md"
+  },
+  "جزع": {
+    "source": "notes/%D8%AC%D8%B2%D8%B9.md"
+  },
+  "جزي": {
+    "source": "notes/%D8%AC%D8%B2%D9%8A.md"
+  },
+  "جسد": {
+    "source": "notes/%D8%AC%D8%B3%D8%AF.md"
+  },
+  "جسس": {
+    "source": "notes/%D8%AC%D8%B3%D8%B3.md"
+  },
+  "جسم": {
+    "source": "notes/%D8%AC%D8%B3%D9%85.md"
+  },
+  "جعل": {
+    "source": "notes/%D8%AC%D8%B9%D9%84.md"
+  },
+  "جفأ": {
+    "source": "notes/%D8%AC%D9%81%D8%A3.md"
+  },
+  "جفن": {
+    "source": "notes/%D8%AC%D9%81%D9%86.md"
+  },
+  "جفو": {
+    "source": "notes/%D8%AC%D9%81%D9%88.md"
+  },
+  "جلب": {
+    "source": "notes/%D8%AC%D9%84%D8%A8.md"
+  },
+  "جلد": {
+    "source": "notes/%D8%AC%D9%84%D8%AF.md"
+  },
+  "جلس": {
+    "source": "notes/%D8%AC%D9%84%D8%B3.md"
+  },
+  "جلل": {
+    "source": "notes/%D8%AC%D9%84%D9%84.md"
+  },
+  "جلو": {
+    "source": "notes/%D8%AC%D9%84%D9%88.md"
+  },
+  "جمح": {
+    "source": "notes/%D8%AC%D9%85%D8%AD.md"
+  },
+  "جمد": {
+    "source": "notes/%D8%AC%D9%85%D8%AF.md"
+  },
+  "جمع": {
+    "source": "notes/%D8%AC%D9%85%D8%B9.md"
+  },
+  "جمل": {
+    "source": "notes/%D8%AC%D9%85%D9%84.md"
+  },
+  "جمم": {
+    "source": "notes/%D8%AC%D9%85%D9%85.md"
+  },
+  "جنب": {
+    "source": "notes/%D8%AC%D9%86%D8%A8.md"
+  },
+  "جنح": {
+    "source": "notes/%D8%AC%D9%86%D8%AD.md"
+  },
+  "جند": {
+    "source": "notes/%D8%AC%D9%86%D8%AF.md"
+  },
+  "جنف": {
+    "source": "notes/%D8%AC%D9%86%D9%81.md"
+  },
+  "جنن": {
+    "source": "notes/%D8%AC%D9%86%D9%86.md"
+  },
+  "جني": {
+    "source": "notes/%D8%AC%D9%86%D9%8A.md"
+  },
+  "جهد": {
+    "source": "notes/%D8%AC%D9%87%D8%AF.md"
+  },
+  "جهر": {
+    "source": "notes/%D8%AC%D9%87%D8%B1.md"
+  },
+  "جهز": {
+    "source": "notes/%D8%AC%D9%87%D8%B2.md"
+  },
+  "جهل": {
+    "source": "notes/%D8%AC%D9%87%D9%84.md"
+  },
+  "جهنم": {
+    "source": "notes/%D8%AC%D9%87%D9%86%D9%85.md"
+  },
+  "جوب": {
+    "source": "notes/%D8%AC%D9%88%D8%A8.md"
+  },
+  "جود": {
+    "source": "notes/%D8%AC%D9%88%D8%AF.md"
+  },
+  "جور": {
+    "source": "notes/%D8%AC%D9%88%D8%B1.md"
+  },
+  "جوز": {
+    "source": "notes/%D8%AC%D9%88%D8%B2.md"
+  },
+  "جوس": {
+    "source": "notes/%D8%AC%D9%88%D8%B3.md"
+  },
+  "جوع": {
+    "source": "notes/%D8%AC%D9%88%D8%B9.md"
+  },
+  "جوف": {
+    "source": "notes/%D8%AC%D9%88%D9%81.md"
+  },
+  "جوو": {
+    "source": "notes/%D8%AC%D9%88%D9%88.md"
+  },
+  "جيأ": {
+    "source": "notes/%D8%AC%D9%8A%D8%A3.md"
+  },
+  "جيب": {
+    "source": "notes/%D8%AC%D9%8A%D8%A8.md"
+  },
+  "جيد": {
+    "source": "notes/%D8%AC%D9%8A%D8%AF.md"
+  },
+  "حبب": {
+    "source": "notes/%D8%AD%D8%A8%D8%A8.md"
+  },
+  "حبر": {
+    "source": "notes/%D8%AD%D8%A8%D8%B1.md"
+  },
+  "حبس": {
+    "source": "notes/%D8%AD%D8%A8%D8%B3.md"
+  },
+  "حبط": {
+    "source": "notes/%D8%AD%D8%A8%D8%B7.md"
+  },
+  "حبك": {
+    "source": "notes/%D8%AD%D8%A8%D9%83.md"
+  },
+  "حبل": {
+    "source": "notes/%D8%AD%D8%A8%D9%84.md"
+  },
+  "حتم": {
+    "source": "notes/%D8%AD%D8%AA%D9%85.md"
+  },
+  "حثث": {
+    "source": "notes/%D8%AD%D8%AB%D8%AB.md"
+  },
+  "حجب": {
+    "source": "notes/%D8%AD%D8%AC%D8%A8.md"
+  },
+  "حجج": {
+    "source": "notes/%D8%AD%D8%AC%D8%AC.md"
+  },
+  "حجر": {
+    "source": "notes/%D8%AD%D8%AC%D8%B1.md"
+  },
+  "حجز": {
+    "source": "notes/%D8%AD%D8%AC%D8%B2.md"
+  },
+  "حدب": {
+    "source": "notes/%D8%AD%D8%AF%D8%A8.md"
+  },
+  "حدث": {
+    "source": "notes/%D8%AD%D8%AF%D8%AB.md"
+  },
+  "حدد": {
+    "source": "notes/%D8%AD%D8%AF%D8%AF.md"
+  },
+  "حدق": {
+    "source": "notes/%D8%AD%D8%AF%D9%82.md"
+  },
+  "حذر": {
+    "source": "notes/%D8%AD%D8%B0%D8%B1.md"
+  },
+  "حرب": {
+    "source": "notes/%D8%AD%D8%B1%D8%A8.md"
+  },
+  "حرث": {
+    "source": "notes/%D8%AD%D8%B1%D8%AB.md"
+  },
+  "حرج": {
+    "source": "notes/%D8%AD%D8%B1%D8%AC.md"
+  },
+  "حرد": {
+    "source": "notes/%D8%AD%D8%B1%D8%AF.md"
+  },
+  "حرر": {
+    "source": "notes/%D8%AD%D8%B1%D8%B1.md"
+  },
+  "حرس": {
+    "source": "notes/%D8%AD%D8%B1%D8%B3.md"
+  },
+  "حرص": {
+    "source": "notes/%D8%AD%D8%B1%D8%B5.md"
+  },
+  "حرض": {
+    "source": "notes/%D8%AD%D8%B1%D8%B6.md"
+  },
+  "حرف": {
+    "source": "notes/%D8%AD%D8%B1%D9%81.md"
+  },
+  "حرق": {
+    "source": "notes/%D8%AD%D8%B1%D9%82.md"
+  },
+  "حرك": {
+    "source": "notes/%D8%AD%D8%B1%D9%83.md"
+  },
+  "حرم": {
+    "source": "notes/%D8%AD%D8%B1%D9%85.md"
+  },
+  "حري": {
+    "source": "notes/%D8%AD%D8%B1%D9%8A.md"
+  },
+  "حزب": {
+    "source": "notes/%D8%AD%D8%B2%D8%A8.md"
+  },
+  "حزن": {
+    "source": "notes/%D8%AD%D8%B2%D9%86.md"
+  },
+  "حسب": {
+    "source": "notes/%D8%AD%D8%B3%D8%A8.md"
+  },
+  "حسد": {
+    "source": "notes/%D8%AD%D8%B3%D8%AF.md"
+  },
+  "حسر": {
+    "source": "notes/%D8%AD%D8%B3%D8%B1.md"
+  },
+  "حسس": {
+    "source": "notes/%D8%AD%D8%B3%D8%B3.md"
+  },
+  "حسم": {
+    "source": "notes/%D8%AD%D8%B3%D9%85.md"
+  },
+  "حسن": {
+    "source": "notes/%D8%AD%D8%B3%D9%86.md"
+  },
+  "حشر": {
+    "source": "notes/%D8%AD%D8%B4%D8%B1.md"
+  },
+  "حصب": {
+    "source": "notes/%D8%AD%D8%B5%D8%A8.md"
+  },
+  "حصحص": {
+    "source": "notes/%D8%AD%D8%B5%D8%AD%D8%B5.md"
+  },
+  "حصد": {
+    "source": "notes/%D8%AD%D8%B5%D8%AF.md"
+  },
+  "حصر": {
+    "source": "notes/%D8%AD%D8%B5%D8%B1.md"
+  },
+  "حصل": {
+    "source": "notes/%D8%AD%D8%B5%D9%84.md"
+  },
+  "حصن": {
+    "source": "notes/%D8%AD%D8%B5%D9%86.md"
+  },
+  "حصي": {
+    "source": "notes/%D8%AD%D8%B5%D9%8A.md"
+  },
+  "حضر": {
+    "source": "notes/%D8%AD%D8%B6%D8%B1.md"
+  },
+  "حضض": {
+    "source": "notes/%D8%AD%D8%B6%D8%B6.md"
+  },
+  "حطب": {
+    "source": "notes/%D8%AD%D8%B7%D8%A8.md"
+  },
+  "حطط": {
+    "source": "notes/%D8%AD%D8%B7%D8%B7.md"
+  },
+  "حطم": {
+    "source": "notes/%D8%AD%D8%B7%D9%85.md"
+  },
+  "حظر": {
+    "source": "notes/%D8%AD%D8%B8%D8%B1.md"
+  },
+  "حظظ": {
+    "source": "notes/%D8%AD%D8%B8%D8%B8.md"
+  },
+  "حفد": {
+    "source": "notes/%D8%AD%D9%81%D8%AF.md"
+  },
+  "حفر": {
+    "source": "notes/%D8%AD%D9%81%D8%B1.md"
+  },
+  "حفظ": {
+    "source": "notes/%D8%AD%D9%81%D8%B8.md"
+  },
+  "حفف": {
+    "source": "notes/%D8%AD%D9%81%D9%81.md"
+  },
+  "حفو": {
+    "source": "notes/%D8%AD%D9%81%D9%88.md"
+  },
+  "حقب": {
+    "source": "notes/%D8%AD%D9%82%D8%A8.md"
+  },
+  "حقف": {
+    "source": "notes/%D8%AD%D9%82%D9%81.md"
+  },
+  "حكم": {
+    "source": "notes/%D8%AD%D9%83%D9%85.md"
+  },
+  "حلف": {
+    "source": "notes/%D8%AD%D9%84%D9%81.md"
+  },
+  "حلق": {
+    "source": "notes/%D8%AD%D9%84%D9%82.md"
+  },
+  "حلل": {
+    "source": "notes/%D8%AD%D9%84%D9%84.md"
+  },
+  "حلم": {
+    "source": "notes/%D8%AD%D9%84%D9%85.md"
+  },
+  "حلي": {
+    "source": "notes/%D8%AD%D9%84%D9%8A.md"
+  },
+  "حمأ": {
+    "source": "notes/%D8%AD%D9%85%D8%A3.md"
   },
   "حمد": {
     "source": "notes/%D8%AD%D9%85%D8%AF.md"
   },
-  "غفر": {
-    "source": "notes/%D8%BA%D9%81%D8%B1.md"
+  "حمر": {
+    "source": "notes/%D8%AD%D9%85%D8%B1.md"
   },
-  "صبر": {
-    "source": "notes/%D8%B5%D8%A8%D8%B1.md"
+  "حمل": {
+    "source": "notes/%D8%AD%D9%85%D9%84.md"
+  },
+  "حمم": {
+    "source": "notes/%D8%AD%D9%85%D9%85.md"
+  },
+  "حمي": {
+    "source": "notes/%D8%AD%D9%85%D9%8A.md"
+  },
+  "حنث": {
+    "source": "notes/%D8%AD%D9%86%D8%AB.md"
+  },
+  "حنجر": {
+    "source": "notes/%D8%AD%D9%86%D8%AC%D8%B1.md"
+  },
+  "حنذ": {
+    "source": "notes/%D8%AD%D9%86%D8%B0.md"
+  },
+  "حنف": {
+    "source": "notes/%D8%AD%D9%86%D9%81.md"
+  },
+  "حنك": {
+    "source": "notes/%D8%AD%D9%86%D9%83.md"
+  },
+  "حنن": {
+    "source": "notes/%D8%AD%D9%86%D9%86.md"
+  },
+  "حنين": {
+    "source": "notes/%D8%AD%D9%86%D9%8A%D9%86.md"
+  },
+  "حوب": {
+    "source": "notes/%D8%AD%D9%88%D8%A8.md"
+  },
+  "حوت": {
+    "source": "notes/%D8%AD%D9%88%D8%AA.md"
+  },
+  "حوج": {
+    "source": "notes/%D8%AD%D9%88%D8%AC.md"
+  },
+  "حوذ": {
+    "source": "notes/%D8%AD%D9%88%D8%B0.md"
+  },
+  "حور": {
+    "source": "notes/%D8%AD%D9%88%D8%B1.md"
+  },
+  "حوز": {
+    "source": "notes/%D8%AD%D9%88%D8%B2.md"
+  },
+  "حوش": {
+    "source": "notes/%D8%AD%D9%88%D8%B4.md"
+  },
+  "حوط": {
+    "source": "notes/%D8%AD%D9%88%D8%B7.md"
+  },
+  "حول": {
+    "source": "notes/%D8%AD%D9%88%D9%84.md"
+  },
+  "حوي": {
+    "source": "notes/%D8%AD%D9%88%D9%8A.md"
+  },
+  "حيث": {
+    "source": "notes/%D8%AD%D9%8A%D8%AB.md"
+  },
+  "حيد": {
+    "source": "notes/%D8%AD%D9%8A%D8%AF.md"
+  },
+  "حير": {
+    "source": "notes/%D8%AD%D9%8A%D8%B1.md"
+  },
+  "حيص": {
+    "source": "notes/%D8%AD%D9%8A%D8%B5.md"
+  },
+  "حيض": {
+    "source": "notes/%D8%AD%D9%8A%D8%B6.md"
+  },
+  "حيف": {
+    "source": "notes/%D8%AD%D9%8A%D9%81.md"
+  },
+  "حيق": {
+    "source": "notes/%D8%AD%D9%8A%D9%82.md"
+  },
+  "حين": {
+    "source": "notes/%D8%AD%D9%8A%D9%86.md"
+  },
+  "خبأ": {
+    "source": "notes/%D8%AE%D8%A8%D8%A3.md"
+  },
+  "خبت": {
+    "source": "notes/%D8%AE%D8%A8%D8%AA.md"
+  },
+  "خبث": {
+    "source": "notes/%D8%AE%D8%A8%D8%AB.md"
+  },
+  "خبر": {
+    "source": "notes/%D8%AE%D8%A8%D8%B1.md"
+  },
+  "خبز": {
+    "source": "notes/%D8%AE%D8%A8%D8%B2.md"
+  },
+  "خبط": {
+    "source": "notes/%D8%AE%D8%A8%D8%B7.md"
+  },
+  "خبل": {
+    "source": "notes/%D8%AE%D8%A8%D9%84.md"
+  },
+  "خبو": {
+    "source": "notes/%D8%AE%D8%A8%D9%88.md"
+  },
+  "ختر": {
+    "source": "notes/%D8%AE%D8%AA%D8%B1.md"
+  },
+  "ختم": {
+    "source": "notes/%D8%AE%D8%AA%D9%85.md"
+  },
+  "خدد": {
+    "source": "notes/%D8%AE%D8%AF%D8%AF.md"
+  },
+  "خدع": {
+    "source": "notes/%D8%AE%D8%AF%D8%B9.md"
+  },
+  "خدن": {
+    "source": "notes/%D8%AE%D8%AF%D9%86.md"
+  },
+  "خذل": {
+    "source": "notes/%D8%AE%D8%B0%D9%84.md"
+  },
+  "خرب": {
+    "source": "notes/%D8%AE%D8%B1%D8%A8.md"
+  },
+  "خرج": {
+    "source": "notes/%D8%AE%D8%B1%D8%AC.md"
+  },
+  "خردل": {
+    "source": "notes/%D8%AE%D8%B1%D8%AF%D9%84.md"
+  },
+  "خرر": {
+    "source": "notes/%D8%AE%D8%B1%D8%B1.md"
+  },
+  "خرص": {
+    "source": "notes/%D8%AE%D8%B1%D8%B5.md"
+  },
+  "خرطم": {
+    "source": "notes/%D8%AE%D8%B1%D8%B7%D9%85.md"
+  },
+  "خرق": {
+    "source": "notes/%D8%AE%D8%B1%D9%82.md"
+  },
+  "خزن": {
+    "source": "notes/%D8%AE%D8%B2%D9%86.md"
+  },
+  "خزي": {
+    "source": "notes/%D8%AE%D8%B2%D9%8A.md"
+  },
+  "خسأ": {
+    "source": "notes/%D8%AE%D8%B3%D8%A3.md"
+  },
+  "خسر": {
+    "source": "notes/%D8%AE%D8%B3%D8%B1.md"
+  },
+  "خسف": {
+    "source": "notes/%D8%AE%D8%B3%D9%81.md"
+  },
+  "خشب": {
+    "source": "notes/%D8%AE%D8%B4%D8%A8.md"
+  },
+  "خشع": {
+    "source": "notes/%D8%AE%D8%B4%D8%B9.md"
+  },
+  "خشي": {
+    "source": "notes/%D8%AE%D8%B4%D9%8A.md"
+  },
+  "خصص": {
+    "source": "notes/%D8%AE%D8%B5%D8%B5.md"
+  },
+  "خصف": {
+    "source": "notes/%D8%AE%D8%B5%D9%81.md"
+  },
+  "خصم": {
+    "source": "notes/%D8%AE%D8%B5%D9%85.md"
+  },
+  "خضد": {
+    "source": "notes/%D8%AE%D8%B6%D8%AF.md"
+  },
+  "خضر": {
+    "source": "notes/%D8%AE%D8%B6%D8%B1.md"
+  },
+  "خضع": {
+    "source": "notes/%D8%AE%D8%B6%D8%B9.md"
+  },
+  "خطأ": {
+    "source": "notes/%D8%AE%D8%B7%D8%A3.md"
+  },
+  "خطب": {
+    "source": "notes/%D8%AE%D8%B7%D8%A8.md"
+  },
+  "خطط": {
+    "source": "notes/%D8%AE%D8%B7%D8%B7.md"
+  },
+  "خطف": {
+    "source": "notes/%D8%AE%D8%B7%D9%81.md"
+  },
+  "خطو": {
+    "source": "notes/%D8%AE%D8%B7%D9%88.md"
+  },
+  "خفت": {
+    "source": "notes/%D8%AE%D9%81%D8%AA.md"
+  },
+  "خفض": {
+    "source": "notes/%D8%AE%D9%81%D8%B6.md"
+  },
+  "خفف": {
+    "source": "notes/%D8%AE%D9%81%D9%81.md"
+  },
+  "خفي": {
+    "source": "notes/%D8%AE%D9%81%D9%8A.md"
+  },
+  "خلد": {
+    "source": "notes/%D8%AE%D9%84%D8%AF.md"
+  },
+  "خلص": {
+    "source": "notes/%D8%AE%D9%84%D8%B5.md"
+  },
+  "خلط": {
+    "source": "notes/%D8%AE%D9%84%D8%B7.md"
+  },
+  "خلع": {
+    "source": "notes/%D8%AE%D9%84%D8%B9.md"
+  },
+  "خلف": {
+    "source": "notes/%D8%AE%D9%84%D9%81.md"
+  },
+  "خلق": {
+    "source": "notes/%D8%AE%D9%84%D9%82.md"
+  },
+  "خلل": {
+    "source": "notes/%D8%AE%D9%84%D9%84.md"
+  },
+  "خلو": {
+    "source": "notes/%D8%AE%D9%84%D9%88.md"
+  },
+  "خمد": {
+    "source": "notes/%D8%AE%D9%85%D8%AF.md"
+  },
+  "خمر": {
+    "source": "notes/%D8%AE%D9%85%D8%B1.md"
+  },
+  "خمس": {
+    "source": "notes/%D8%AE%D9%85%D8%B3.md"
+  },
+  "خمص": {
+    "source": "notes/%D8%AE%D9%85%D8%B5.md"
+  },
+  "خمط": {
+    "source": "notes/%D8%AE%D9%85%D8%B7.md"
+  },
+  "خنزر": {
+    "source": "notes/%D8%AE%D9%86%D8%B2%D8%B1.md"
+  },
+  "خنس": {
+    "source": "notes/%D8%AE%D9%86%D8%B3.md"
+  },
+  "خنق": {
+    "source": "notes/%D8%AE%D9%86%D9%82.md"
+  },
+  "خور": {
+    "source": "notes/%D8%AE%D9%88%D8%B1.md"
+  },
+  "خوض": {
+    "source": "notes/%D8%AE%D9%88%D8%B6.md"
+  },
+  "خوف": {
+    "source": "notes/%D8%AE%D9%88%D9%81.md"
+  },
+  "خول": {
+    "source": "notes/%D8%AE%D9%88%D9%84.md"
+  },
+  "خون": {
+    "source": "notes/%D8%AE%D9%88%D9%86.md"
+  },
+  "خوي": {
+    "source": "notes/%D8%AE%D9%88%D9%8A.md"
+  },
+  "خيب": {
+    "source": "notes/%D8%AE%D9%8A%D8%A8.md"
+  },
+  "خير": {
+    "source": "notes/%D8%AE%D9%8A%D8%B1.md"
+  },
+  "خيط": {
+    "source": "notes/%D8%AE%D9%8A%D8%B7.md"
+  },
+  "خيل": {
+    "source": "notes/%D8%AE%D9%8A%D9%84.md"
+  },
+  "خيم": {
+    "source": "notes/%D8%AE%D9%8A%D9%85.md"
+  },
+  "دأب": {
+    "source": "notes/%D8%AF%D8%A3%D8%A8.md"
+  },
+  "داود": {
+    "source": "notes/%D8%AF%D8%A7%D9%88%D8%AF.md"
+  },
+  "دبب": {
+    "source": "notes/%D8%AF%D8%A8%D8%A8.md"
+  },
+  "دبر": {
+    "source": "notes/%D8%AF%D8%A8%D8%B1.md"
+  },
+  "دثر": {
+    "source": "notes/%D8%AF%D8%AB%D8%B1.md"
+  },
+  "دحر": {
+    "source": "notes/%D8%AF%D8%AD%D8%B1.md"
+  },
+  "دحض": {
+    "source": "notes/%D8%AF%D8%AD%D8%B6.md"
+  },
+  "دحو": {
+    "source": "notes/%D8%AF%D8%AD%D9%88.md"
+  },
+  "دخر": {
+    "source": "notes/%D8%AF%D8%AE%D8%B1.md"
+  },
+  "دخل": {
+    "source": "notes/%D8%AF%D8%AE%D9%84.md"
+  },
+  "دخن": {
+    "source": "notes/%D8%AF%D8%AE%D9%86.md"
+  },
+  "درأ": {
+    "source": "notes/%D8%AF%D8%B1%D8%A3.md"
+  },
+  "درج": {
+    "source": "notes/%D8%AF%D8%B1%D8%AC.md"
+  },
+  "درر": {
+    "source": "notes/%D8%AF%D8%B1%D8%B1.md"
+  },
+  "درس": {
+    "source": "notes/%D8%AF%D8%B1%D8%B3.md"
+  },
+  "درك": {
+    "source": "notes/%D8%AF%D8%B1%D9%83.md"
+  },
+  "درهم": {
+    "source": "notes/%D8%AF%D8%B1%D9%87%D9%85.md"
+  },
+  "دري": {
+    "source": "notes/%D8%AF%D8%B1%D9%8A.md"
+  },
+  "دسر": {
+    "source": "notes/%D8%AF%D8%B3%D8%B1.md"
+  },
+  "دسس": {
+    "source": "notes/%D8%AF%D8%B3%D8%B3.md"
+  },
+  "دسو": {
+    "source": "notes/%D8%AF%D8%B3%D9%88.md"
+  },
+  "دعع": {
+    "source": "notes/%D8%AF%D8%B9%D8%B9.md"
+  },
+  "دفأ": {
+    "source": "notes/%D8%AF%D9%81%D8%A3.md"
+  },
+  "دفع": {
+    "source": "notes/%D8%AF%D9%81%D8%B9.md"
+  },
+  "دفق": {
+    "source": "notes/%D8%AF%D9%81%D9%82.md"
+  },
+  "دكك": {
+    "source": "notes/%D8%AF%D9%83%D9%83.md"
+  },
+  "دلك": {
+    "source": "notes/%D8%AF%D9%84%D9%83.md"
+  },
+  "دلل": {
+    "source": "notes/%D8%AF%D9%84%D9%84.md"
+  },
+  "دلو": {
+    "source": "notes/%D8%AF%D9%84%D9%88.md"
+  },
+  "دمدم": {
+    "source": "notes/%D8%AF%D9%85%D8%AF%D9%85.md"
+  },
+  "دمر": {
+    "source": "notes/%D8%AF%D9%85%D8%B1.md"
+  },
+  "دمع": {
+    "source": "notes/%D8%AF%D9%85%D8%B9.md"
+  },
+  "دمغ": {
+    "source": "notes/%D8%AF%D9%85%D8%BA.md"
+  },
+  "دمو": {
+    "source": "notes/%D8%AF%D9%85%D9%88.md"
+  },
+  "دنر": {
+    "source": "notes/%D8%AF%D9%86%D8%B1.md"
+  },
+  "دنو": {
+    "source": "notes/%D8%AF%D9%86%D9%88.md"
+  },
+  "دهر": {
+    "source": "notes/%D8%AF%D9%87%D8%B1.md"
+  },
+  "دهق": {
+    "source": "notes/%D8%AF%D9%87%D9%82.md"
+  },
+  "دهم": {
+    "source": "notes/%D8%AF%D9%87%D9%85.md"
+  },
+  "دهن": {
+    "source": "notes/%D8%AF%D9%87%D9%86.md"
+  },
+  "دهي": {
+    "source": "notes/%D8%AF%D9%87%D9%8A.md"
+  },
+  "دور": {
+    "source": "notes/%D8%AF%D9%88%D8%B1.md"
+  },
+  "دول": {
+    "source": "notes/%D8%AF%D9%88%D9%84.md"
+  },
+  "دوم": {
+    "source": "notes/%D8%AF%D9%88%D9%85.md"
+  },
+  "دون": {
+    "source": "notes/%D8%AF%D9%88%D9%86.md"
+  },
+  "دين": {
+    "source": "notes/%D8%AF%D9%8A%D9%86.md"
+  },
+  "ذأب": {
+    "source": "notes/%D8%B0%D8%A3%D8%A8.md"
+  },
+  "ذأم": {
+    "source": "notes/%D8%B0%D8%A3%D9%85.md"
+  },
+  "ذبب": {
+    "source": "notes/%D8%B0%D8%A8%D8%A8.md"
+  },
+  "ذبح": {
+    "source": "notes/%D8%B0%D8%A8%D8%AD.md"
+  },
+  "ذبذب": {
+    "source": "notes/%D8%B0%D8%A8%D8%B0%D8%A8.md"
+  },
+  "ذخر": {
+    "source": "notes/%D8%B0%D8%AE%D8%B1.md"
+  },
+  "ذرأ": {
+    "source": "notes/%D8%B0%D8%B1%D8%A3.md"
+  },
+  "ذرر": {
+    "source": "notes/%D8%B0%D8%B1%D8%B1.md"
+  },
+  "ذرع": {
+    "source": "notes/%D8%B0%D8%B1%D8%B9.md"
+  },
+  "ذرو": {
+    "source": "notes/%D8%B0%D8%B1%D9%88.md"
+  },
+  "ذعن": {
+    "source": "notes/%D8%B0%D8%B9%D9%86.md"
+  },
+  "ذقن": {
+    "source": "notes/%D8%B0%D9%82%D9%86.md"
+  },
+  "ذكر": {
+    "source": "notes/%D8%B0%D9%83%D8%B1.md"
+  },
+  "ذكو": {
+    "source": "notes/%D8%B0%D9%83%D9%88.md"
+  },
+  "ذلل": {
+    "source": "notes/%D8%B0%D9%84%D9%84.md"
+  },
+  "ذمم": {
+    "source": "notes/%D8%B0%D9%85%D9%85.md"
+  },
+  "ذنب": {
+    "source": "notes/%D8%B0%D9%86%D8%A8.md"
+  },
+  "ذهب": {
+    "source": "notes/%D8%B0%D9%87%D8%A8.md"
+  },
+  "ذهل": {
+    "source": "notes/%D8%B0%D9%87%D9%84.md"
+  },
+  "ذود": {
+    "source": "notes/%D8%B0%D9%88%D8%AF.md"
+  },
+  "ذوق": {
+    "source": "notes/%D8%B0%D9%88%D9%82.md"
+  },
+  "ذيع": {
+    "source": "notes/%D8%B0%D9%8A%D8%B9.md"
+  },
+  "رأس": {
+    "source": "notes/%D8%B1%D8%A3%D8%B3.md"
+  },
+  "رأف": {
+    "source": "notes/%D8%B1%D8%A3%D9%81.md"
+  },
+  "رأي": {
+    "source": "notes/%D8%B1%D8%A3%D9%8A.md"
+  },
+  "ربب": {
+    "source": "notes/%D8%B1%D8%A8%D8%A8.md"
+  },
+  "ربح": {
+    "source": "notes/%D8%B1%D8%A8%D8%AD.md"
+  },
+  "ربص": {
+    "source": "notes/%D8%B1%D8%A8%D8%B5.md"
+  },
+  "ربط": {
+    "source": "notes/%D8%B1%D8%A8%D8%B7.md"
+  },
+  "ربع": {
+    "source": "notes/%D8%B1%D8%A8%D8%B9.md"
+  },
+  "ربو": {
+    "source": "notes/%D8%B1%D8%A8%D9%88.md"
+  },
+  "رتع": {
+    "source": "notes/%D8%B1%D8%AA%D8%B9.md"
+  },
+  "رتق": {
+    "source": "notes/%D8%B1%D8%AA%D9%82.md"
+  },
+  "رتل": {
+    "source": "notes/%D8%B1%D8%AA%D9%84.md"
+  },
+  "رجج": {
+    "source": "notes/%D8%B1%D8%AC%D8%AC.md"
+  },
+  "رجز": {
+    "source": "notes/%D8%B1%D8%AC%D8%B2.md"
+  },
+  "رجس": {
+    "source": "notes/%D8%B1%D8%AC%D8%B3.md"
+  },
+  "رجع": {
+    "source": "notes/%D8%B1%D8%AC%D8%B9.md"
+  },
+  "رجف": {
+    "source": "notes/%D8%B1%D8%AC%D9%81.md"
+  },
+  "رجل": {
+    "source": "notes/%D8%B1%D8%AC%D9%84.md"
+  },
+  "رجم": {
+    "source": "notes/%D8%B1%D8%AC%D9%85.md"
+  },
+  "رجو": {
+    "source": "notes/%D8%B1%D8%AC%D9%88.md"
+  },
+  "رحب": {
+    "source": "notes/%D8%B1%D8%AD%D8%A8.md"
+  },
+  "رحق": {
+    "source": "notes/%D8%B1%D8%AD%D9%82.md"
+  },
+  "رحل": {
+    "source": "notes/%D8%B1%D8%AD%D9%84.md"
+  },
+  "رحم": {
+    "source": "notes/%D8%B1%D8%AD%D9%85.md"
+  },
+  "رخو": {
+    "source": "notes/%D8%B1%D8%AE%D9%88.md"
+  },
+  "ردأ": {
+    "source": "notes/%D8%B1%D8%AF%D8%A3.md"
+  },
+  "ردد": {
+    "source": "notes/%D8%B1%D8%AF%D8%AF.md"
+  },
+  "ردف": {
+    "source": "notes/%D8%B1%D8%AF%D9%81.md"
+  },
+  "ردم": {
+    "source": "notes/%D8%B1%D8%AF%D9%85.md"
+  },
+  "ردي": {
+    "source": "notes/%D8%B1%D8%AF%D9%8A.md"
+  },
+  "رذل": {
+    "source": "notes/%D8%B1%D8%B0%D9%84.md"
   },
   "رزق": {
     "source": "notes/%D8%B1%D8%B2%D9%82.md"
   },
+  "رسخ": {
+    "source": "notes/%D8%B1%D8%B3%D8%AE.md"
+  },
+  "رسس": {
+    "source": "notes/%D8%B1%D8%B3%D8%B3.md"
+  },
+  "رسو": {
+    "source": "notes/%D8%B1%D8%B3%D9%88.md"
+  },
+  "رشد": {
+    "source": "notes/%D8%B1%D8%B4%D8%AF.md"
+  },
+  "رصد": {
+    "source": "notes/%D8%B1%D8%B5%D8%AF.md"
+  },
+  "رصص": {
+    "source": "notes/%D8%B1%D8%B5%D8%B5.md"
+  },
+  "رضع": {
+    "source": "notes/%D8%B1%D8%B6%D8%B9.md"
+  },
+  "رضو": {
+    "source": "notes/%D8%B1%D8%B6%D9%88.md"
+  },
+  "رطب": {
+    "source": "notes/%D8%B1%D8%B7%D8%A8.md"
+  },
+  "رعب": {
+    "source": "notes/%D8%B1%D8%B9%D8%A8.md"
+  },
+  "رعد": {
+    "source": "notes/%D8%B1%D8%B9%D8%AF.md"
+  },
+  "رعي": {
+    "source": "notes/%D8%B1%D8%B9%D9%8A.md"
+  },
+  "رغب": {
+    "source": "notes/%D8%B1%D8%BA%D8%A8.md"
+  },
+  "رغد": {
+    "source": "notes/%D8%B1%D8%BA%D8%AF.md"
+  },
+  "رغم": {
+    "source": "notes/%D8%B1%D8%BA%D9%85.md"
+  },
+  "رفت": {
+    "source": "notes/%D8%B1%D9%81%D8%AA.md"
+  },
+  "رفث": {
+    "source": "notes/%D8%B1%D9%81%D8%AB.md"
+  },
+  "رفد": {
+    "source": "notes/%D8%B1%D9%81%D8%AF.md"
+  },
+  "رفرف": {
+    "source": "notes/%D8%B1%D9%81%D8%B1%D9%81.md"
+  },
+  "رفع": {
+    "source": "notes/%D8%B1%D9%81%D8%B9.md"
+  },
+  "رفق": {
+    "source": "notes/%D8%B1%D9%81%D9%82.md"
+  },
+  "رقب": {
+    "source": "notes/%D8%B1%D9%82%D8%A8.md"
+  },
+  "رقد": {
+    "source": "notes/%D8%B1%D9%82%D8%AF.md"
+  },
+  "رقق": {
+    "source": "notes/%D8%B1%D9%82%D9%82.md"
+  },
+  "رقم": {
+    "source": "notes/%D8%B1%D9%82%D9%85.md"
+  },
+  "رقي": {
+    "source": "notes/%D8%B1%D9%82%D9%8A.md"
+  },
+  "ركب": {
+    "source": "notes/%D8%B1%D9%83%D8%A8.md"
+  },
+  "ركد": {
+    "source": "notes/%D8%B1%D9%83%D8%AF.md"
+  },
+  "ركز": {
+    "source": "notes/%D8%B1%D9%83%D8%B2.md"
+  },
+  "ركس": {
+    "source": "notes/%D8%B1%D9%83%D8%B3.md"
+  },
+  "ركض": {
+    "source": "notes/%D8%B1%D9%83%D8%B6.md"
+  },
+  "ركع": {
+    "source": "notes/%D8%B1%D9%83%D8%B9.md"
+  },
+  "ركم": {
+    "source": "notes/%D8%B1%D9%83%D9%85.md"
+  },
+  "ركن": {
+    "source": "notes/%D8%B1%D9%83%D9%86.md"
+  },
+  "رمح": {
+    "source": "notes/%D8%B1%D9%85%D8%AD.md"
+  },
+  "رمد": {
+    "source": "notes/%D8%B1%D9%85%D8%AF.md"
+  },
+  "رمز": {
+    "source": "notes/%D8%B1%D9%85%D8%B2.md"
+  },
+  "رمض": {
+    "source": "notes/%D8%B1%D9%85%D8%B6.md"
+  },
+  "رمم": {
+    "source": "notes/%D8%B1%D9%85%D9%85.md"
+  },
+  "رمن": {
+    "source": "notes/%D8%B1%D9%85%D9%86.md"
+  },
+  "رمي": {
+    "source": "notes/%D8%B1%D9%85%D9%8A.md"
+  },
+  "رهب": {
+    "source": "notes/%D8%B1%D9%87%D8%A8.md"
+  },
+  "رهط": {
+    "source": "notes/%D8%B1%D9%87%D8%B7.md"
+  },
+  "رهق": {
+    "source": "notes/%D8%B1%D9%87%D9%82.md"
+  },
+  "رهن": {
+    "source": "notes/%D8%B1%D9%87%D9%86.md"
+  },
+  "رهو": {
+    "source": "notes/%D8%B1%D9%87%D9%88.md"
+  },
+  "روح": {
+    "source": "notes/%D8%B1%D9%88%D8%AD.md"
+  },
+  "روض": {
+    "source": "notes/%D8%B1%D9%88%D8%B6.md"
+  },
+  "روع": {
+    "source": "notes/%D8%B1%D9%88%D8%B9.md"
+  },
+  "روغ": {
+    "source": "notes/%D8%B1%D9%88%D8%BA.md"
+  },
+  "روم": {
+    "source": "notes/%D8%B1%D9%88%D9%85.md"
+  },
+  "ريب": {
+    "source": "notes/%D8%B1%D9%8A%D8%A8.md"
+  },
+  "ريش": {
+    "source": "notes/%D8%B1%D9%8A%D8%B4.md"
+  },
+  "ريع": {
+    "source": "notes/%D8%B1%D9%8A%D8%B9.md"
+  },
+  "رين": {
+    "source": "notes/%D8%B1%D9%8A%D9%86.md"
+  },
+  "زبد": {
+    "source": "notes/%D8%B2%D8%A8%D8%AF.md"
+  },
+  "زبر": {
+    "source": "notes/%D8%B2%D8%A8%D8%B1.md"
+  },
+  "زبن": {
+    "source": "notes/%D8%B2%D8%A8%D9%86.md"
+  },
+  "زجج": {
+    "source": "notes/%D8%B2%D8%AC%D8%AC.md"
+  },
+  "زجر": {
+    "source": "notes/%D8%B2%D8%AC%D8%B1.md"
+  },
+  "زجو": {
+    "source": "notes/%D8%B2%D8%AC%D9%88.md"
+  },
+  "زحزح": {
+    "source": "notes/%D8%B2%D8%AD%D8%B2%D8%AD.md"
+  },
+  "زحف": {
+    "source": "notes/%D8%B2%D8%AD%D9%81.md"
+  },
+  "زخرف": {
+    "source": "notes/%D8%B2%D8%AE%D8%B1%D9%81.md"
+  },
+  "زرب": {
+    "source": "notes/%D8%B2%D8%B1%D8%A8.md"
+  },
+  "زرع": {
+    "source": "notes/%D8%B2%D8%B1%D8%B9.md"
+  },
+  "زرق": {
+    "source": "notes/%D8%B2%D8%B1%D9%82.md"
+  },
+  "زري": {
+    "source": "notes/%D8%B2%D8%B1%D9%8A.md"
+  },
+  "زعم": {
+    "source": "notes/%D8%B2%D8%B9%D9%85.md"
+  },
+  "زفر": {
+    "source": "notes/%D8%B2%D9%81%D8%B1.md"
+  },
+  "زفف": {
+    "source": "notes/%D8%B2%D9%81%D9%81.md"
+  },
+  "زقم": {
+    "source": "notes/%D8%B2%D9%82%D9%85.md"
+  },
+  "زكريا": {
+    "source": "notes/%D8%B2%D9%83%D8%B1%D9%8A%D8%A7.md"
+  },
+  "زكو": {
+    "source": "notes/%D8%B2%D9%83%D9%88.md"
+  },
+  "زلزل": {
+    "source": "notes/%D8%B2%D9%84%D8%B2%D9%84.md"
+  },
+  "زلف": {
+    "source": "notes/%D8%B2%D9%84%D9%81.md"
+  },
+  "زلق": {
+    "source": "notes/%D8%B2%D9%84%D9%82.md"
+  },
+  "زلل": {
+    "source": "notes/%D8%B2%D9%84%D9%84.md"
+  },
+  "زلم": {
+    "source": "notes/%D8%B2%D9%84%D9%85.md"
+  },
+  "زمر": {
+    "source": "notes/%D8%B2%D9%85%D8%B1.md"
+  },
+  "زمل": {
+    "source": "notes/%D8%B2%D9%85%D9%84.md"
+  },
+  "زمهر": {
+    "source": "notes/%D8%B2%D9%85%D9%87%D8%B1.md"
+  },
+  "زنجبيل": {
+    "source": "notes/%D8%B2%D9%86%D8%AC%D8%A8%D9%8A%D9%84.md"
+  },
+  "زنم": {
+    "source": "notes/%D8%B2%D9%86%D9%85.md"
+  },
+  "زني": {
+    "source": "notes/%D8%B2%D9%86%D9%8A.md"
+  },
+  "زهد": {
+    "source": "notes/%D8%B2%D9%87%D8%AF.md"
+  },
+  "زهر": {
+    "source": "notes/%D8%B2%D9%87%D8%B1.md"
+  },
+  "زهق": {
+    "source": "notes/%D8%B2%D9%87%D9%82.md"
+  },
+  "زوج": {
+    "source": "notes/%D8%B2%D9%88%D8%AC.md"
+  },
+  "زود": {
+    "source": "notes/%D8%B2%D9%88%D8%AF.md"
+  },
+  "زور": {
+    "source": "notes/%D8%B2%D9%88%D8%B1.md"
+  },
+  "زول": {
+    "source": "notes/%D8%B2%D9%88%D9%84.md"
+  },
+  "زيت": {
+    "source": "notes/%D8%B2%D9%8A%D8%AA.md"
+  },
+  "زيد": {
+    "source": "notes/%D8%B2%D9%8A%D8%AF.md"
+  },
+  "زيغ": {
+    "source": "notes/%D8%B2%D9%8A%D8%BA.md"
+  },
+  "زيل": {
+    "source": "notes/%D8%B2%D9%8A%D9%84.md"
+  },
+  "زين": {
+    "source": "notes/%D8%B2%D9%8A%D9%86.md"
+  },
+  "سأم": {
+    "source": "notes/%D8%B3%D8%A3%D9%85.md"
+  },
+  "سبأ": {
+    "source": "notes/%D8%B3%D8%A8%D8%A3.md"
+  },
+  "سبب": {
+    "source": "notes/%D8%B3%D8%A8%D8%A8.md"
+  },
+  "سبت": {
+    "source": "notes/%D8%B3%D8%A8%D8%AA.md"
+  },
+  "سبح": {
+    "source": "notes/%D8%B3%D8%A8%D8%AD.md"
+  },
+  "سبط": {
+    "source": "notes/%D8%B3%D8%A8%D8%B7.md"
+  },
+  "سبع": {
+    "source": "notes/%D8%B3%D8%A8%D8%B9.md"
+  },
+  "سبغ": {
+    "source": "notes/%D8%B3%D8%A8%D8%BA.md"
+  },
+  "سبق": {
+    "source": "notes/%D8%B3%D8%A8%D9%82.md"
+  },
+  "ستت": {
+    "source": "notes/%D8%B3%D8%AA%D8%AA.md"
+  },
+  "ستر": {
+    "source": "notes/%D8%B3%D8%AA%D8%B1.md"
+  },
+  "سجد": {
+    "source": "notes/%D8%B3%D8%AC%D8%AF.md"
+  },
+  "سجر": {
+    "source": "notes/%D8%B3%D8%AC%D8%B1.md"
+  },
+  "سجل": {
+    "source": "notes/%D8%B3%D8%AC%D9%84.md"
+  },
+  "سجن": {
+    "source": "notes/%D8%B3%D8%AC%D9%86.md"
+  },
+  "سجو": {
+    "source": "notes/%D8%B3%D8%AC%D9%88.md"
+  },
+  "سحب": {
+    "source": "notes/%D8%B3%D8%AD%D8%A8.md"
+  },
+  "سحت": {
+    "source": "notes/%D8%B3%D8%AD%D8%AA.md"
+  },
+  "سحر": {
+    "source": "notes/%D8%B3%D8%AD%D8%B1.md"
+  },
+  "سحق": {
+    "source": "notes/%D8%B3%D8%AD%D9%82.md"
+  },
+  "سحل": {
+    "source": "notes/%D8%B3%D8%AD%D9%84.md"
+  },
+  "سخر": {
+    "source": "notes/%D8%B3%D8%AE%D8%B1.md"
+  },
+  "سخط": {
+    "source": "notes/%D8%B3%D8%AE%D8%B7.md"
+  },
+  "سدد": {
+    "source": "notes/%D8%B3%D8%AF%D8%AF.md"
+  },
+  "سدر": {
+    "source": "notes/%D8%B3%D8%AF%D8%B1.md"
+  },
+  "سدس": {
+    "source": "notes/%D8%B3%D8%AF%D8%B3.md"
+  },
+  "سدي": {
+    "source": "notes/%D8%B3%D8%AF%D9%8A.md"
+  },
+  "سرب": {
+    "source": "notes/%D8%B3%D8%B1%D8%A8.md"
+  },
+  "سربل": {
+    "source": "notes/%D8%B3%D8%B1%D8%A8%D9%84.md"
+  },
+  "سرج": {
+    "source": "notes/%D8%B3%D8%B1%D8%AC.md"
+  },
+  "سرح": {
+    "source": "notes/%D8%B3%D8%B1%D8%AD.md"
+  },
+  "سرد": {
+    "source": "notes/%D8%B3%D8%B1%D8%AF.md"
+  },
+  "سردق": {
+    "source": "notes/%D8%B3%D8%B1%D8%AF%D9%82.md"
+  },
+  "سرر": {
+    "source": "notes/%D8%B3%D8%B1%D8%B1.md"
+  },
+  "سرع": {
+    "source": "notes/%D8%B3%D8%B1%D8%B9.md"
+  },
+  "سرف": {
+    "source": "notes/%D8%B3%D8%B1%D9%81.md"
+  },
+  "سرق": {
+    "source": "notes/%D8%B3%D8%B1%D9%82.md"
+  },
+  "سرمد": {
+    "source": "notes/%D8%B3%D8%B1%D9%85%D8%AF.md"
+  },
+  "سري": {
+    "source": "notes/%D8%B3%D8%B1%D9%8A.md"
+  },
+  "سطح": {
+    "source": "notes/%D8%B3%D8%B7%D8%AD.md"
+  },
+  "سطر": {
+    "source": "notes/%D8%B3%D8%B7%D8%B1.md"
+  },
+  "سطو": {
+    "source": "notes/%D8%B3%D8%B7%D9%88.md"
+  },
+  "سعد": {
+    "source": "notes/%D8%B3%D8%B9%D8%AF.md"
+  },
+  "سعر": {
+    "source": "notes/%D8%B3%D8%B9%D8%B1.md"
+  },
+  "سعي": {
+    "source": "notes/%D8%B3%D8%B9%D9%8A.md"
+  },
+  "سغب": {
+    "source": "notes/%D8%B3%D8%BA%D8%A8.md"
+  },
+  "سفح": {
+    "source": "notes/%D8%B3%D9%81%D8%AD.md"
+  },
+  "سفر": {
+    "source": "notes/%D8%B3%D9%81%D8%B1.md"
+  },
+  "سفع": {
+    "source": "notes/%D8%B3%D9%81%D8%B9.md"
+  },
+  "سفك": {
+    "source": "notes/%D8%B3%D9%81%D9%83.md"
+  },
+  "سفل": {
+    "source": "notes/%D8%B3%D9%81%D9%84.md"
+  },
+  "سفن": {
+    "source": "notes/%D8%B3%D9%81%D9%86.md"
+  },
+  "سفه": {
+    "source": "notes/%D8%B3%D9%81%D9%87.md"
+  },
+  "سقر": {
+    "source": "notes/%D8%B3%D9%82%D8%B1.md"
+  },
+  "سقط": {
+    "source": "notes/%D8%B3%D9%82%D8%B7.md"
+  },
+  "سقف": {
+    "source": "notes/%D8%B3%D9%82%D9%81.md"
+  },
+  "سقم": {
+    "source": "notes/%D8%B3%D9%82%D9%85.md"
+  },
+  "سقي": {
+    "source": "notes/%D8%B3%D9%82%D9%8A.md"
+  },
+  "سكب": {
+    "source": "notes/%D8%B3%D9%83%D8%A8.md"
+  },
+  "سكت": {
+    "source": "notes/%D8%B3%D9%83%D8%AA.md"
+  },
+  "سكر": {
+    "source": "notes/%D8%B3%D9%83%D8%B1.md"
+  },
+  "سكن": {
+    "source": "notes/%D8%B3%D9%83%D9%86.md"
+  },
+  "سلب": {
+    "source": "notes/%D8%B3%D9%84%D8%A8.md"
+  },
+  "سلح": {
+    "source": "notes/%D8%B3%D9%84%D8%AD.md"
+  },
+  "سلخ": {
+    "source": "notes/%D8%B3%D9%84%D8%AE.md"
+  },
+  "سلسبيل": {
+    "source": "notes/%D8%B3%D9%84%D8%B3%D8%A8%D9%8A%D9%84.md"
+  },
+  "سلسل": {
+    "source": "notes/%D8%B3%D9%84%D8%B3%D9%84.md"
+  },
+  "سلط": {
+    "source": "notes/%D8%B3%D9%84%D8%B7.md"
+  },
+  "سلف": {
+    "source": "notes/%D8%B3%D9%84%D9%81.md"
+  },
+  "سلق": {
+    "source": "notes/%D8%B3%D9%84%D9%82.md"
+  },
+  "سلك": {
+    "source": "notes/%D8%B3%D9%84%D9%83.md"
+  },
+  "سلل": {
+    "source": "notes/%D8%B3%D9%84%D9%84.md"
+  },
+  "سلم": {
+    "source": "notes/%D8%B3%D9%84%D9%85.md"
+  },
+  "سلو": {
+    "source": "notes/%D8%B3%D9%84%D9%88.md"
+  },
+  "سليمان": {
+    "source": "notes/%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86.md"
+  },
+  "سمد": {
+    "source": "notes/%D8%B3%D9%85%D8%AF.md"
+  },
+  "سمر": {
+    "source": "notes/%D8%B3%D9%85%D8%B1.md"
+  },
+  "سمع": {
+    "source": "notes/%D8%B3%D9%85%D8%B9.md"
+  },
+  "سمك": {
+    "source": "notes/%D8%B3%D9%85%D9%83.md"
+  },
+  "سمم": {
+    "source": "notes/%D8%B3%D9%85%D9%85.md"
+  },
+  "سمن": {
+    "source": "notes/%D8%B3%D9%85%D9%86.md"
+  },
+  "سمو": {
+    "source": "notes/%D8%B3%D9%85%D9%88.md"
+  },
+  "سمو،وسم": {
+    "source": "notes/%D8%B3%D9%85%D9%88%D8%8C%D9%88%D8%B3%D9%85.md"
+  },
+  "سنبل": {
+    "source": "notes/%D8%B3%D9%86%D8%A8%D9%84.md"
+  },
+  "سند": {
+    "source": "notes/%D8%B3%D9%86%D8%AF.md"
+  },
+  "سندس": {
+    "source": "notes/%D8%B3%D9%86%D8%AF%D8%B3.md"
+  },
+  "سنم": {
+    "source": "notes/%D8%B3%D9%86%D9%85.md"
+  },
+  "سنن": {
+    "source": "notes/%D8%B3%D9%86%D9%86.md"
+  },
+  "سنه": {
+    "source": "notes/%D8%B3%D9%86%D9%87.md"
+  },
+  "سنو": {
+    "source": "notes/%D8%B3%D9%86%D9%88.md"
+  },
+  "سهر": {
+    "source": "notes/%D8%B3%D9%87%D8%B1.md"
+  },
+  "سهل": {
+    "source": "notes/%D8%B3%D9%87%D9%84.md"
+  },
+  "سهم": {
+    "source": "notes/%D8%B3%D9%87%D9%85.md"
+  },
+  "سهو": {
+    "source": "notes/%D8%B3%D9%87%D9%88.md"
+  },
+  "سوح": {
+    "source": "notes/%D8%B3%D9%88%D8%AD.md"
+  },
+  "سود": {
+    "source": "notes/%D8%B3%D9%88%D8%AF.md"
+  },
+  "سور": {
+    "source": "notes/%D8%B3%D9%88%D8%B1.md"
+  },
+  "سوط": {
+    "source": "notes/%D8%B3%D9%88%D8%B7.md"
+  },
+  "سوع": {
+    "source": "notes/%D8%B3%D9%88%D8%B9.md"
+  },
+  "سوغ": {
+    "source": "notes/%D8%B3%D9%88%D8%BA.md"
+  },
+  "سوق": {
+    "source": "notes/%D8%B3%D9%88%D9%82.md"
+  },
+  "سول": {
+    "source": "notes/%D8%B3%D9%88%D9%84.md"
+  },
+  "سوم": {
+    "source": "notes/%D8%B3%D9%88%D9%85.md"
+  },
+  "سوي": {
+    "source": "notes/%D8%B3%D9%88%D9%8A.md"
+  },
+  "سيب": {
+    "source": "notes/%D8%B3%D9%8A%D8%A8.md"
+  },
+  "سيح": {
+    "source": "notes/%D8%B3%D9%8A%D8%AD.md"
+  },
+  "سير": {
+    "source": "notes/%D8%B3%D9%8A%D8%B1.md"
+  },
+  "سيل": {
+    "source": "notes/%D8%B3%D9%8A%D9%84.md"
+  },
+  "سيناء": {
+    "source": "notes/%D8%B3%D9%8A%D9%86%D8%A7%D8%A1.md"
+  },
+  "سينين": {
+    "source": "notes/%D8%B3%D9%8A%D9%86%D9%8A%D9%86.md"
+  },
+  "شأم": {
+    "source": "notes/%D8%B4%D8%A3%D9%85.md"
+  },
+  "شأن": {
+    "source": "notes/%D8%B4%D8%A3%D9%86.md"
+  },
+  "شبه": {
+    "source": "notes/%D8%B4%D8%A8%D9%87.md"
+  },
+  "شتت": {
+    "source": "notes/%D8%B4%D8%AA%D8%AA.md"
+  },
+  "شتو": {
+    "source": "notes/%D8%B4%D8%AA%D9%88.md"
+  },
+  "شجر": {
+    "source": "notes/%D8%B4%D8%AC%D8%B1.md"
+  },
+  "شحح": {
+    "source": "notes/%D8%B4%D8%AD%D8%AD.md"
+  },
+  "شحم": {
+    "source": "notes/%D8%B4%D8%AD%D9%85.md"
+  },
+  "شحن": {
+    "source": "notes/%D8%B4%D8%AD%D9%86.md"
+  },
+  "شخص": {
+    "source": "notes/%D8%B4%D8%AE%D8%B5.md"
+  },
+  "شدد": {
+    "source": "notes/%D8%B4%D8%AF%D8%AF.md"
+  },
+  "شرب": {
+    "source": "notes/%D8%B4%D8%B1%D8%A8.md"
+  },
+  "شرح": {
+    "source": "notes/%D8%B4%D8%B1%D8%AD.md"
+  },
+  "شرد": {
+    "source": "notes/%D8%B4%D8%B1%D8%AF.md"
+  },
+  "شرذم": {
+    "source": "notes/%D8%B4%D8%B1%D8%B0%D9%85.md"
+  },
+  "شرر": {
+    "source": "notes/%D8%B4%D8%B1%D8%B1.md"
+  },
+  "شرط": {
+    "source": "notes/%D8%B4%D8%B1%D8%B7.md"
+  },
+  "شرع": {
+    "source": "notes/%D8%B4%D8%B1%D8%B9.md"
+  },
+  "شرق": {
+    "source": "notes/%D8%B4%D8%B1%D9%82.md"
+  },
+  "شرك": {
+    "source": "notes/%D8%B4%D8%B1%D9%83.md"
+  },
+  "شري": {
+    "source": "notes/%D8%B4%D8%B1%D9%8A.md"
+  },
+  "شطأ": {
+    "source": "notes/%D8%B4%D8%B7%D8%A3.md"
+  },
+  "شطر": {
+    "source": "notes/%D8%B4%D8%B7%D8%B1.md"
+  },
+  "شطط": {
+    "source": "notes/%D8%B4%D8%B7%D8%B7.md"
+  },
+  "شطن": {
+    "source": "notes/%D8%B4%D8%B7%D9%86.md"
+  },
+  "شعب": {
+    "source": "notes/%D8%B4%D8%B9%D8%A8.md"
+  },
+  "شعر": {
+    "source": "notes/%D8%B4%D8%B9%D8%B1.md"
+  },
+  "شعل": {
+    "source": "notes/%D8%B4%D8%B9%D9%84.md"
+  },
+  "شعيب": {
+    "source": "notes/%D8%B4%D8%B9%D9%8A%D8%A8.md"
+  },
+  "شغف": {
+    "source": "notes/%D8%B4%D8%BA%D9%81.md"
+  },
+  "شغل": {
+    "source": "notes/%D8%B4%D8%BA%D9%84.md"
+  },
+  "شفع": {
+    "source": "notes/%D8%B4%D9%81%D8%B9.md"
+  },
+  "شفق": {
+    "source": "notes/%D8%B4%D9%81%D9%82.md"
+  },
+  "شفه": {
+    "source": "notes/%D8%B4%D9%81%D9%87.md"
+  },
+  "شفو": {
+    "source": "notes/%D8%B4%D9%81%D9%88.md"
+  },
+  "شفي": {
+    "source": "notes/%D8%B4%D9%81%D9%8A.md"
+  },
+  "شقق": {
+    "source": "notes/%D8%B4%D9%82%D9%82.md"
+  },
+  "شقو": {
+    "source": "notes/%D8%B4%D9%82%D9%88.md"
+  },
+  "شكر": {
+    "source": "notes/%D8%B4%D9%83%D8%B1.md"
+  },
+  "شكس": {
+    "source": "notes/%D8%B4%D9%83%D8%B3.md"
+  },
+  "شكك": {
+    "source": "notes/%D8%B4%D9%83%D9%83.md"
+  },
+  "شكل": {
+    "source": "notes/%D8%B4%D9%83%D9%84.md"
+  },
+  "شكو": {
+    "source": "notes/%D8%B4%D9%83%D9%88.md"
+  },
+  "شمت": {
+    "source": "notes/%D8%B4%D9%85%D8%AA.md"
+  },
+  "شمخ": {
+    "source": "notes/%D8%B4%D9%85%D8%AE.md"
+  },
+  "شمز": {
+    "source": "notes/%D8%B4%D9%85%D8%B2.md"
+  },
+  "شمس": {
+    "source": "notes/%D8%B4%D9%85%D8%B3.md"
+  },
+  "شمل": {
+    "source": "notes/%D8%B4%D9%85%D9%84.md"
+  },
+  "شنأ": {
+    "source": "notes/%D8%B4%D9%86%D8%A3.md"
+  },
+  "شهب": {
+    "source": "notes/%D8%B4%D9%87%D8%A8.md"
+  },
+  "شهر": {
+    "source": "notes/%D8%B4%D9%87%D8%B1.md"
+  },
+  "شهق": {
+    "source": "notes/%D8%B4%D9%87%D9%82.md"
+  },
+  "شهو": {
+    "source": "notes/%D8%B4%D9%87%D9%88.md"
+  },
+  "شوب": {
+    "source": "notes/%D8%B4%D9%88%D8%A8.md"
+  },
+  "شور": {
+    "source": "notes/%D8%B4%D9%88%D8%B1.md"
+  },
+  "شوظ": {
+    "source": "notes/%D8%B4%D9%88%D8%B8.md"
+  },
+  "شوك": {
+    "source": "notes/%D8%B4%D9%88%D9%83.md"
+  },
+  "شوي": {
+    "source": "notes/%D8%B4%D9%88%D9%8A.md"
+  },
+  "شيأ": {
+    "source": "notes/%D8%B4%D9%8A%D8%A3.md"
+  },
+  "شيب": {
+    "source": "notes/%D8%B4%D9%8A%D8%A8.md"
+  },
+  "شيخ": {
+    "source": "notes/%D8%B4%D9%8A%D8%AE.md"
+  },
+  "شيد": {
+    "source": "notes/%D8%B4%D9%8A%D8%AF.md"
+  },
+  "شيع": {
+    "source": "notes/%D8%B4%D9%8A%D8%B9.md"
+  },
+  "صبأ": {
+    "source": "notes/%D8%B5%D8%A8%D8%A3.md"
+  },
+  "صبب": {
+    "source": "notes/%D8%B5%D8%A8%D8%A8.md"
+  },
+  "صبح": {
+    "source": "notes/%D8%B5%D8%A8%D8%AD.md"
+  },
+  "صبر": {
+    "source": "notes/%D8%B5%D8%A8%D8%B1.md"
+  },
+  "صبع": {
+    "source": "notes/%D8%B5%D8%A8%D8%B9.md"
+  },
+  "صبغ": {
+    "source": "notes/%D8%B5%D8%A8%D8%BA.md"
+  },
+  "صبو": {
+    "source": "notes/%D8%B5%D8%A8%D9%88.md"
+  },
+  "صحب": {
+    "source": "notes/%D8%B5%D8%AD%D8%A8.md"
+  },
+  "صحف": {
+    "source": "notes/%D8%B5%D8%AD%D9%81.md"
+  },
+  "صخخ": {
+    "source": "notes/%D8%B5%D8%AE%D8%AE.md"
+  },
+  "صخر": {
+    "source": "notes/%D8%B5%D8%AE%D8%B1.md"
+  },
+  "صدد": {
+    "source": "notes/%D8%B5%D8%AF%D8%AF.md"
+  },
+  "صدر": {
+    "source": "notes/%D8%B5%D8%AF%D8%B1.md"
+  },
+  "صدع": {
+    "source": "notes/%D8%B5%D8%AF%D8%B9.md"
+  },
+  "صدف": {
+    "source": "notes/%D8%B5%D8%AF%D9%81.md"
+  },
+  "صدي": {
+    "source": "notes/%D8%B5%D8%AF%D9%8A.md"
+  },
+  "صرح": {
+    "source": "notes/%D8%B5%D8%B1%D8%AD.md"
+  },
+  "صرخ": {
+    "source": "notes/%D8%B5%D8%B1%D8%AE.md"
+  },
+  "صرر": {
+    "source": "notes/%D8%B5%D8%B1%D8%B1.md"
+  },
+  "صرصر": {
+    "source": "notes/%D8%B5%D8%B1%D8%B5%D8%B1.md"
+  },
+  "صرط": {
+    "source": "notes/%D8%B5%D8%B1%D8%B7.md"
+  },
+  "صرع": {
+    "source": "notes/%D8%B5%D8%B1%D8%B9.md"
+  },
+  "صرف": {
+    "source": "notes/%D8%B5%D8%B1%D9%81.md"
+  },
+  "صرم": {
+    "source": "notes/%D8%B5%D8%B1%D9%85.md"
+  },
+  "صعد": {
+    "source": "notes/%D8%B5%D8%B9%D8%AF.md"
+  },
+  "صعر": {
+    "source": "notes/%D8%B5%D8%B9%D8%B1.md"
+  },
+  "صعق": {
+    "source": "notes/%D8%B5%D8%B9%D9%82.md"
+  },
+  "صغر": {
+    "source": "notes/%D8%B5%D8%BA%D8%B1.md"
+  },
+  "صغو": {
+    "source": "notes/%D8%B5%D8%BA%D9%88.md"
+  },
+  "صفا": {
+    "source": "notes/%D8%B5%D9%81%D8%A7.md"
+  },
+  "صفح": {
+    "source": "notes/%D8%B5%D9%81%D8%AD.md"
+  },
+  "صفد": {
+    "source": "notes/%D8%B5%D9%81%D8%AF.md"
+  },
+  "صفر": {
+    "source": "notes/%D8%B5%D9%81%D8%B1.md"
+  },
+  "صفصف": {
+    "source": "notes/%D8%B5%D9%81%D8%B5%D9%81.md"
+  },
+  "صفف": {
+    "source": "notes/%D8%B5%D9%81%D9%81.md"
+  },
+  "صفن": {
+    "source": "notes/%D8%B5%D9%81%D9%86.md"
+  },
+  "صفو": {
+    "source": "notes/%D8%B5%D9%81%D9%88.md"
+  },
+  "صكك": {
+    "source": "notes/%D8%B5%D9%83%D9%83.md"
+  },
+  "صلب": {
+    "source": "notes/%D8%B5%D9%84%D8%A8.md"
+  },
+  "صلد": {
+    "source": "notes/%D8%B5%D9%84%D8%AF.md"
+  },
+  "صلصل": {
+    "source": "notes/%D8%B5%D9%84%D8%B5%D9%84.md"
+  },
+  "صلو": {
+    "source": "notes/%D8%B5%D9%84%D9%88.md"
+  },
+  "صلي": {
+    "source": "notes/%D8%B5%D9%84%D9%8A.md"
+  },
+  "صمت": {
+    "source": "notes/%D8%B5%D9%85%D8%AA.md"
+  },
+  "صمد": {
+    "source": "notes/%D8%B5%D9%85%D8%AF.md"
+  },
+  "صمع": {
+    "source": "notes/%D8%B5%D9%85%D8%B9.md"
+  },
+  "صمم": {
+    "source": "notes/%D8%B5%D9%85%D9%85.md"
+  },
+  "صنع": {
+    "source": "notes/%D8%B5%D9%86%D8%B9.md"
+  },
+  "صنم": {
+    "source": "notes/%D8%B5%D9%86%D9%85.md"
+  },
+  "صنو": {
+    "source": "notes/%D8%B5%D9%86%D9%88.md"
+  },
+  "صهر": {
+    "source": "notes/%D8%B5%D9%87%D8%B1.md"
+  },
+  "صوب": {
+    "source": "notes/%D8%B5%D9%88%D8%A8.md"
+  },
+  "صوت": {
+    "source": "notes/%D8%B5%D9%88%D8%AA.md"
+  },
+  "صور": {
+    "source": "notes/%D8%B5%D9%88%D8%B1.md"
+  },
+  "صوع": {
+    "source": "notes/%D8%B5%D9%88%D8%B9.md"
+  },
+  "صوف": {
+    "source": "notes/%D8%B5%D9%88%D9%81.md"
+  },
+  "صوم": {
+    "source": "notes/%D8%B5%D9%88%D9%85.md"
+  },
+  "صيح": {
+    "source": "notes/%D8%B5%D9%8A%D8%AD.md"
+  },
+  "صيد": {
+    "source": "notes/%D8%B5%D9%8A%D8%AF.md"
+  },
+  "صير": {
+    "source": "notes/%D8%B5%D9%8A%D8%B1.md"
+  },
+  "صيص": {
+    "source": "notes/%D8%B5%D9%8A%D8%B5.md"
+  },
+  "صيف": {
+    "source": "notes/%D8%B5%D9%8A%D9%81.md"
+  },
+  "ضأن": {
+    "source": "notes/%D8%B6%D8%A3%D9%86.md"
+  },
+  "ضبح": {
+    "source": "notes/%D8%B6%D8%A8%D8%AD.md"
+  },
+  "ضجع": {
+    "source": "notes/%D8%B6%D8%AC%D8%B9.md"
+  },
+  "ضحك": {
+    "source": "notes/%D8%B6%D8%AD%D9%83.md"
+  },
+  "ضحو": {
+    "source": "notes/%D8%B6%D8%AD%D9%88.md"
+  },
+  "ضدد": {
+    "source": "notes/%D8%B6%D8%AF%D8%AF.md"
+  },
+  "ضرب": {
+    "source": "notes/%D8%B6%D8%B1%D8%A8.md"
+  },
+  "ضرر": {
+    "source": "notes/%D8%B6%D8%B1%D8%B1.md"
+  },
+  "ضرع": {
+    "source": "notes/%D8%B6%D8%B1%D8%B9.md"
+  },
+  "ضعف": {
+    "source": "notes/%D8%B6%D8%B9%D9%81.md"
+  },
+  "ضغث": {
+    "source": "notes/%D8%B6%D8%BA%D8%AB.md"
+  },
+  "ضغن": {
+    "source": "notes/%D8%B6%D8%BA%D9%86.md"
+  },
+  "ضفدع": {
+    "source": "notes/%D8%B6%D9%81%D8%AF%D8%B9.md"
+  },
+  "ضمر": {
+    "source": "notes/%D8%B6%D9%85%D8%B1.md"
+  },
+  "ضمم": {
+    "source": "notes/%D8%B6%D9%85%D9%85.md"
+  },
+  "ضنك": {
+    "source": "notes/%D8%B6%D9%86%D9%83.md"
+  },
+  "ضنن": {
+    "source": "notes/%D8%B6%D9%86%D9%86.md"
+  },
+  "ضهأ": {
+    "source": "notes/%D8%B6%D9%87%D8%A3.md"
+  },
+  "ضوأ": {
+    "source": "notes/%D8%B6%D9%88%D8%A3.md"
+  },
+  "ضير": {
+    "source": "notes/%D8%B6%D9%8A%D8%B1.md"
+  },
+  "ضيز": {
+    "source": "notes/%D8%B6%D9%8A%D8%B2.md"
+  },
+  "ضيع": {
+    "source": "notes/%D8%B6%D9%8A%D8%B9.md"
+  },
+  "ضيف": {
+    "source": "notes/%D8%B6%D9%8A%D9%81.md"
+  },
+  "ضيق": {
+    "source": "notes/%D8%B6%D9%8A%D9%82.md"
+  },
+  "طالوت": {
+    "source": "notes/%D8%B7%D8%A7%D9%84%D9%88%D8%AA.md"
+  },
+  "طبع": {
+    "source": "notes/%D8%B7%D8%A8%D8%B9.md"
+  },
+  "طبق": {
+    "source": "notes/%D8%B7%D8%A8%D9%82.md"
+  },
+  "طحو": {
+    "source": "notes/%D8%B7%D8%AD%D9%88.md"
+  },
+  "طرح": {
+    "source": "notes/%D8%B7%D8%B1%D8%AD.md"
+  },
+  "طرد": {
+    "source": "notes/%D8%B7%D8%B1%D8%AF.md"
+  },
+  "طرف": {
+    "source": "notes/%D8%B7%D8%B1%D9%81.md"
+  },
+  "طرق": {
+    "source": "notes/%D8%B7%D8%B1%D9%82.md"
+  },
+  "طرو": {
+    "source": "notes/%D8%B7%D8%B1%D9%88.md"
+  },
+  "طعم": {
+    "source": "notes/%D8%B7%D8%B9%D9%85.md"
+  },
+  "طعن": {
+    "source": "notes/%D8%B7%D8%B9%D9%86.md"
+  },
+  "طغي": {
+    "source": "notes/%D8%B7%D8%BA%D9%8A.md"
+  },
+  "طفأ": {
+    "source": "notes/%D8%B7%D9%81%D8%A3.md"
+  },
+  "طفف": {
+    "source": "notes/%D8%B7%D9%81%D9%81.md"
+  },
+  "طفق": {
+    "source": "notes/%D8%B7%D9%81%D9%82.md"
+  },
+  "طفل": {
+    "source": "notes/%D8%B7%D9%81%D9%84.md"
+  },
+  "طلب": {
+    "source": "notes/%D8%B7%D9%84%D8%A8.md"
+  },
+  "طلح": {
+    "source": "notes/%D8%B7%D9%84%D8%AD.md"
+  },
+  "طلع": {
+    "source": "notes/%D8%B7%D9%84%D8%B9.md"
+  },
+  "طلق": {
+    "source": "notes/%D8%B7%D9%84%D9%82.md"
+  },
+  "طلل": {
+    "source": "notes/%D8%B7%D9%84%D9%84.md"
+  },
+  "طمأن": {
+    "source": "notes/%D8%B7%D9%85%D8%A3%D9%86.md"
+  },
+  "طمث": {
+    "source": "notes/%D8%B7%D9%85%D8%AB.md"
+  },
+  "طمس": {
+    "source": "notes/%D8%B7%D9%85%D8%B3.md"
+  },
+  "طمع": {
+    "source": "notes/%D8%B7%D9%85%D8%B9.md"
+  },
+  "طمم": {
+    "source": "notes/%D8%B7%D9%85%D9%85.md"
+  },
+  "طهر": {
+    "source": "notes/%D8%B7%D9%87%D8%B1.md"
+  },
+  "طود": {
+    "source": "notes/%D8%B7%D9%88%D8%AF.md"
+  },
+  "طور": {
+    "source": "notes/%D8%B7%D9%88%D8%B1.md"
+  },
+  "طوف": {
+    "source": "notes/%D8%B7%D9%88%D9%81.md"
+  },
+  "طوق": {
+    "source": "notes/%D8%B7%D9%88%D9%82.md"
+  },
+  "طول": {
+    "source": "notes/%D8%B7%D9%88%D9%84.md"
+  },
+  "طوي": {
+    "source": "notes/%D8%B7%D9%88%D9%8A.md"
+  },
+  "طيب": {
+    "source": "notes/%D8%B7%D9%8A%D8%A8.md"
+  },
+  "طير": {
+    "source": "notes/%D8%B7%D9%8A%D8%B1.md"
+  },
+  "طين": {
+    "source": "notes/%D8%B7%D9%8A%D9%86.md"
+  },
+  "ظعن": {
+    "source": "notes/%D8%B8%D8%B9%D9%86.md"
+  },
+  "ظفر": {
+    "source": "notes/%D8%B8%D9%81%D8%B1.md"
+  },
+  "ظلل": {
+    "source": "notes/%D8%B8%D9%84%D9%84.md"
+  },
+  "ظمأ": {
+    "source": "notes/%D8%B8%D9%85%D8%A3.md"
+  },
+  "ظنن": {
+    "source": "notes/%D8%B8%D9%86%D9%86.md"
+  },
+  "ظهر": {
+    "source": "notes/%D8%B8%D9%87%D8%B1.md"
+  },
+  "عبأ": {
+    "source": "notes/%D8%B9%D8%A8%D8%A3.md"
+  },
+  "عبث": {
+    "source": "notes/%D8%B9%D8%A8%D8%AB.md"
+  },
+  "عبر": {
+    "source": "notes/%D8%B9%D8%A8%D8%B1.md"
+  },
+  "عبس": {
+    "source": "notes/%D8%B9%D8%A8%D8%B3.md"
+  },
+  "عبقر": {
+    "source": "notes/%D8%B9%D8%A8%D9%82%D8%B1.md"
+  },
+  "عتب": {
+    "source": "notes/%D8%B9%D8%AA%D8%A8.md"
+  },
+  "عتد": {
+    "source": "notes/%D8%B9%D8%AA%D8%AF.md"
+  },
+  "عتق": {
+    "source": "notes/%D8%B9%D8%AA%D9%82.md"
+  },
+  "عتل": {
+    "source": "notes/%D8%B9%D8%AA%D9%84.md"
+  },
+  "عتو": {
+    "source": "notes/%D8%B9%D8%AA%D9%88.md"
+  },
+  "عثر": {
+    "source": "notes/%D8%B9%D8%AB%D8%B1.md"
+  },
+  "عثو": {
+    "source": "notes/%D8%B9%D8%AB%D9%88.md"
+  },
+  "عجب": {
+    "source": "notes/%D8%B9%D8%AC%D8%A8.md"
+  },
+  "عجز": {
+    "source": "notes/%D8%B9%D8%AC%D8%B2.md"
+  },
+  "عجف": {
+    "source": "notes/%D8%B9%D8%AC%D9%81.md"
+  },
+  "عجل": {
+    "source": "notes/%D8%B9%D8%AC%D9%84.md"
+  },
+  "عجم": {
+    "source": "notes/%D8%B9%D8%AC%D9%85.md"
+  },
+  "عدد": {
+    "source": "notes/%D8%B9%D8%AF%D8%AF.md"
+  },
+  "عدس": {
+    "source": "notes/%D8%B9%D8%AF%D8%B3.md"
+  },
+  "عدل": {
+    "source": "notes/%D8%B9%D8%AF%D9%84.md"
+  },
+  "عدن": {
+    "source": "notes/%D8%B9%D8%AF%D9%86.md"
+  },
+  "عدو": {
+    "source": "notes/%D8%B9%D8%AF%D9%88.md"
+  },
+  "عذر": {
+    "source": "notes/%D8%B9%D8%B0%D8%B1.md"
+  },
+  "عرب": {
+    "source": "notes/%D8%B9%D8%B1%D8%A8.md"
+  },
+  "عرج": {
+    "source": "notes/%D8%B9%D8%B1%D8%AC.md"
+  },
+  "عرجن": {
+    "source": "notes/%D8%B9%D8%B1%D8%AC%D9%86.md"
+  },
+  "عرر": {
+    "source": "notes/%D8%B9%D8%B1%D8%B1.md"
+  },
+  "عرش": {
+    "source": "notes/%D8%B9%D8%B1%D8%B4.md"
+  },
+  "عرض": {
+    "source": "notes/%D8%B9%D8%B1%D8%B6.md"
+  },
+  "عرف": {
+    "source": "notes/%D8%B9%D8%B1%D9%81.md"
+  },
+  "عرم": {
+    "source": "notes/%D8%B9%D8%B1%D9%85.md"
+  },
+  "عرو": {
+    "source": "notes/%D8%B9%D8%B1%D9%88.md"
+  },
+  "عري": {
+    "source": "notes/%D8%B9%D8%B1%D9%8A.md"
+  },
+  "عزب": {
+    "source": "notes/%D8%B9%D8%B2%D8%A8.md"
+  },
+  "عزر": {
+    "source": "notes/%D8%B9%D8%B2%D8%B1.md"
+  },
+  "عزل": {
+    "source": "notes/%D8%B9%D8%B2%D9%84.md"
+  },
+  "عزم": {
+    "source": "notes/%D8%B9%D8%B2%D9%85.md"
+  },
+  "عزو": {
+    "source": "notes/%D8%B9%D8%B2%D9%88.md"
+  },
+  "عزير": {
+    "source": "notes/%D8%B9%D8%B2%D9%8A%D8%B1.md"
+  },
+  "عسر": {
+    "source": "notes/%D8%B9%D8%B3%D8%B1.md"
+  },
+  "عسعس": {
+    "source": "notes/%D8%B9%D8%B3%D8%B9%D8%B3.md"
+  },
+  "عسل": {
+    "source": "notes/%D8%B9%D8%B3%D9%84.md"
+  },
+  "عسي": {
+    "source": "notes/%D8%B9%D8%B3%D9%8A.md"
+  },
+  "عشر": {
+    "source": "notes/%D8%B9%D8%B4%D8%B1.md"
+  },
+  "عشو": {
+    "source": "notes/%D8%B9%D8%B4%D9%88.md"
+  },
+  "عصب": {
+    "source": "notes/%D8%B9%D8%B5%D8%A8.md"
+  },
+  "عصر": {
+    "source": "notes/%D8%B9%D8%B5%D8%B1.md"
+  },
+  "عصف": {
+    "source": "notes/%D8%B9%D8%B5%D9%81.md"
+  },
+  "عصم": {
+    "source": "notes/%D8%B9%D8%B5%D9%85.md"
+  },
+  "عصو": {
+    "source": "notes/%D8%B9%D8%B5%D9%88.md"
+  },
+  "عصي": {
+    "source": "notes/%D8%B9%D8%B5%D9%8A.md"
+  },
+  "عضد": {
+    "source": "notes/%D8%B9%D8%B6%D8%AF.md"
+  },
+  "عضض": {
+    "source": "notes/%D8%B9%D8%B6%D8%B6.md"
+  },
+  "عضل": {
+    "source": "notes/%D8%B9%D8%B6%D9%84.md"
+  },
+  "عضو": {
+    "source": "notes/%D8%B9%D8%B6%D9%88.md"
+  },
+  "عطف": {
+    "source": "notes/%D8%B9%D8%B7%D9%81.md"
+  },
+  "عطل": {
+    "source": "notes/%D8%B9%D8%B7%D9%84.md"
+  },
+  "عطو": {
+    "source": "notes/%D8%B9%D8%B7%D9%88.md"
+  },
+  "عفر": {
+    "source": "notes/%D8%B9%D9%81%D8%B1.md"
+  },
+  "عفف": {
+    "source": "notes/%D8%B9%D9%81%D9%81.md"
+  },
+  "عفو": {
+    "source": "notes/%D8%B9%D9%81%D9%88.md"
+  },
+  "عقب": {
+    "source": "notes/%D8%B9%D9%82%D8%A8.md"
+  },
+  "عقد": {
+    "source": "notes/%D8%B9%D9%82%D8%AF.md"
+  },
+  "عقر": {
+    "source": "notes/%D8%B9%D9%82%D8%B1.md"
+  },
+  "عقل": {
+    "source": "notes/%D8%B9%D9%82%D9%84.md"
+  },
+  "عقم": {
+    "source": "notes/%D8%B9%D9%82%D9%85.md"
+  },
+  "عكف": {
+    "source": "notes/%D8%B9%D9%83%D9%81.md"
+  },
+  "علق": {
+    "source": "notes/%D8%B9%D9%84%D9%82.md"
+  },
+  "علم": {
+    "source": "notes/%D8%B9%D9%84%D9%85.md"
+  },
+  "علن": {
+    "source": "notes/%D8%B9%D9%84%D9%86.md"
+  },
+  "علو": {
+    "source": "notes/%D8%B9%D9%84%D9%88.md"
+  },
+  "عمد": {
+    "source": "notes/%D8%B9%D9%85%D8%AF.md"
+  },
+  "عمر": {
+    "source": "notes/%D8%B9%D9%85%D8%B1.md"
+  },
+  "عمران": {
+    "source": "notes/%D8%B9%D9%85%D8%B1%D8%A7%D9%86.md"
+  },
+  "عمق": {
+    "source": "notes/%D8%B9%D9%85%D9%82.md"
+  },
+  "عمم": {
+    "source": "notes/%D8%B9%D9%85%D9%85.md"
+  },
+  "عمه": {
+    "source": "notes/%D8%B9%D9%85%D9%87.md"
+  },
+  "عمي": {
+    "source": "notes/%D8%B9%D9%85%D9%8A.md"
+  },
+  "عنب": {
+    "source": "notes/%D8%B9%D9%86%D8%A8.md"
+  },
+  "عنت": {
+    "source": "notes/%D8%B9%D9%86%D8%AA.md"
+  },
+  "عنق": {
+    "source": "notes/%D8%B9%D9%86%D9%82.md"
+  },
+  "عنكب": {
+    "source": "notes/%D8%B9%D9%86%D9%83%D8%A8.md"
+  },
+  "عنو": {
+    "source": "notes/%D8%B9%D9%86%D9%88.md"
+  },
+  "عهد": {
+    "source": "notes/%D8%B9%D9%87%D8%AF.md"
+  },
+  "عهن": {
+    "source": "notes/%D8%B9%D9%87%D9%86.md"
+  },
+  "عوج": {
+    "source": "notes/%D8%B9%D9%88%D8%AC.md"
+  },
+  "عود": {
+    "source": "notes/%D8%B9%D9%88%D8%AF.md"
+  },
+  "عوذ": {
+    "source": "notes/%D8%B9%D9%88%D8%B0.md"
+  },
+  "عور": {
+    "source": "notes/%D8%B9%D9%88%D8%B1.md"
+  },
+  "عوق": {
+    "source": "notes/%D8%B9%D9%88%D9%82.md"
+  },
+  "عول": {
+    "source": "notes/%D8%B9%D9%88%D9%84.md"
+  },
+  "عوم": {
+    "source": "notes/%D8%B9%D9%88%D9%85.md"
+  },
+  "عون": {
+    "source": "notes/%D8%B9%D9%88%D9%86.md"
+  },
+  "عيب": {
+    "source": "notes/%D8%B9%D9%8A%D8%A8.md"
+  },
+  "عير": {
+    "source": "notes/%D8%B9%D9%8A%D8%B1.md"
+  },
+  "عيسى": {
+    "source": "notes/%D8%B9%D9%8A%D8%B3%D9%89.md"
+  },
+  "عيش": {
+    "source": "notes/%D8%B9%D9%8A%D8%B4.md"
+  },
+  "عيل": {
+    "source": "notes/%D8%B9%D9%8A%D9%84.md"
+  },
+  "عين": {
+    "source": "notes/%D8%B9%D9%8A%D9%86.md"
+  },
+  "عيي": {
+    "source": "notes/%D8%B9%D9%8A%D9%8A.md"
+  },
+  "غبر": {
+    "source": "notes/%D8%BA%D8%A8%D8%B1.md"
+  },
+  "غبن": {
+    "source": "notes/%D8%BA%D8%A8%D9%86.md"
+  },
+  "غثو": {
+    "source": "notes/%D8%BA%D8%AB%D9%88.md"
+  },
+  "غدر": {
+    "source": "notes/%D8%BA%D8%AF%D8%B1.md"
+  },
+  "غدق": {
+    "source": "notes/%D8%BA%D8%AF%D9%82.md"
+  },
+  "غدو": {
+    "source": "notes/%D8%BA%D8%AF%D9%88.md"
+  },
+  "غرب": {
+    "source": "notes/%D8%BA%D8%B1%D8%A8.md"
+  },
+  "غرر": {
+    "source": "notes/%D8%BA%D8%B1%D8%B1.md"
+  },
+  "غرف": {
+    "source": "notes/%D8%BA%D8%B1%D9%81.md"
+  },
+  "غرق": {
+    "source": "notes/%D8%BA%D8%B1%D9%82.md"
+  },
+  "غرم": {
+    "source": "notes/%D8%BA%D8%B1%D9%85.md"
+  },
+  "غرو": {
+    "source": "notes/%D8%BA%D8%B1%D9%88.md"
+  },
+  "غزل": {
+    "source": "notes/%D8%BA%D8%B2%D9%84.md"
+  },
+  "غزو": {
+    "source": "notes/%D8%BA%D8%B2%D9%88.md"
+  },
+  "غسق": {
+    "source": "notes/%D8%BA%D8%B3%D9%82.md"
+  },
+  "غسل": {
+    "source": "notes/%D8%BA%D8%B3%D9%84.md"
+  },
+  "غشو": {
+    "source": "notes/%D8%BA%D8%B4%D9%88.md"
+  },
+  "غصب": {
+    "source": "notes/%D8%BA%D8%B5%D8%A8.md"
+  },
+  "غصص": {
+    "source": "notes/%D8%BA%D8%B5%D8%B5.md"
+  },
+  "غضب": {
+    "source": "notes/%D8%BA%D8%B6%D8%A8.md"
+  },
+  "غضض": {
+    "source": "notes/%D8%BA%D8%B6%D8%B6.md"
+  },
+  "غطش": {
+    "source": "notes/%D8%BA%D8%B7%D8%B4.md"
+  },
+  "غطو": {
+    "source": "notes/%D8%BA%D8%B7%D9%88.md"
+  },
+  "غفر": {
+    "source": "notes/%D8%BA%D9%81%D8%B1.md"
+  },
+  "غفل": {
+    "source": "notes/%D8%BA%D9%81%D9%84.md"
+  },
+  "غلب": {
+    "source": "notes/%D8%BA%D9%84%D8%A8.md"
+  },
+  "غلظ": {
+    "source": "notes/%D8%BA%D9%84%D8%B8.md"
+  },
+  "غلف": {
+    "source": "notes/%D8%BA%D9%84%D9%81.md"
+  },
+  "غلق": {
+    "source": "notes/%D8%BA%D9%84%D9%82.md"
+  },
+  "غلل": {
+    "source": "notes/%D8%BA%D9%84%D9%84.md"
+  },
+  "غلم": {
+    "source": "notes/%D8%BA%D9%84%D9%85.md"
+  },
+  "غلو": {
+    "source": "notes/%D8%BA%D9%84%D9%88.md"
+  },
+  "غلي": {
+    "source": "notes/%D8%BA%D9%84%D9%8A.md"
+  },
+  "غمر": {
+    "source": "notes/%D8%BA%D9%85%D8%B1.md"
+  },
+  "غمز": {
+    "source": "notes/%D8%BA%D9%85%D8%B2.md"
+  },
+  "غمض": {
+    "source": "notes/%D8%BA%D9%85%D8%B6.md"
+  },
+  "غمم": {
+    "source": "notes/%D8%BA%D9%85%D9%85.md"
+  },
+  "غنم": {
+    "source": "notes/%D8%BA%D9%86%D9%85.md"
+  },
+  "غني": {
+    "source": "notes/%D8%BA%D9%86%D9%8A.md"
+  },
+  "غوث": {
+    "source": "notes/%D8%BA%D9%88%D8%AB.md"
+  },
+  "غور": {
+    "source": "notes/%D8%BA%D9%88%D8%B1.md"
+  },
+  "غوص": {
+    "source": "notes/%D8%BA%D9%88%D8%B5.md"
+  },
+  "غوط": {
+    "source": "notes/%D8%BA%D9%88%D8%B7.md"
+  },
+  "غول": {
+    "source": "notes/%D8%BA%D9%88%D9%84.md"
+  },
+  "غوي": {
+    "source": "notes/%D8%BA%D9%88%D9%8A.md"
+  },
+  "غيب": {
+    "source": "notes/%D8%BA%D9%8A%D8%A8.md"
+  },
+  "غيث": {
+    "source": "notes/%D8%BA%D9%8A%D8%AB.md"
+  },
+  "غيض": {
+    "source": "notes/%D8%BA%D9%8A%D8%B6.md"
+  },
+  "غيظ": {
+    "source": "notes/%D8%BA%D9%8A%D8%B8.md"
+  },
+  "فأد": {
+    "source": "notes/%D9%81%D8%A3%D8%AF.md"
+  },
+  "فأي": {
+    "source": "notes/%D9%81%D8%A3%D9%8A.md"
+  },
+  "فتأ": {
+    "source": "notes/%D9%81%D8%AA%D8%A3.md"
+  },
+  "فتح": {
+    "source": "notes/%D9%81%D8%AA%D8%AD.md"
+  },
+  "فتر": {
+    "source": "notes/%D9%81%D8%AA%D8%B1.md"
+  },
+  "فتق": {
+    "source": "notes/%D9%81%D8%AA%D9%82.md"
+  },
+  "فتل": {
+    "source": "notes/%D9%81%D8%AA%D9%84.md"
+  },
+  "فتن": {
+    "source": "notes/%D9%81%D8%AA%D9%86.md"
+  },
+  "فتي": {
+    "source": "notes/%D9%81%D8%AA%D9%8A.md"
+  },
+  "فجج": {
+    "source": "notes/%D9%81%D8%AC%D8%AC.md"
+  },
+  "فجر": {
+    "source": "notes/%D9%81%D8%AC%D8%B1.md"
+  },
+  "فجو": {
+    "source": "notes/%D9%81%D8%AC%D9%88.md"
+  },
+  "فحش": {
+    "source": "notes/%D9%81%D8%AD%D8%B4.md"
+  },
+  "فخر": {
+    "source": "notes/%D9%81%D8%AE%D8%B1.md"
+  },
+  "فدي": {
+    "source": "notes/%D9%81%D8%AF%D9%8A.md"
+  },
+  "فرت": {
+    "source": "notes/%D9%81%D8%B1%D8%AA.md"
+  },
+  "فرث": {
+    "source": "notes/%D9%81%D8%B1%D8%AB.md"
+  },
+  "فرج": {
+    "source": "notes/%D9%81%D8%B1%D8%AC.md"
+  },
+  "فرح": {
+    "source": "notes/%D9%81%D8%B1%D8%AD.md"
+  },
+  "فرد": {
+    "source": "notes/%D9%81%D8%B1%D8%AF.md"
+  },
+  "فردوس": {
+    "source": "notes/%D9%81%D8%B1%D8%AF%D9%88%D8%B3.md"
+  },
+  "فرر": {
+    "source": "notes/%D9%81%D8%B1%D8%B1.md"
+  },
+  "فرش": {
+    "source": "notes/%D9%81%D8%B1%D8%B4.md"
+  },
+  "فرض": {
+    "source": "notes/%D9%81%D8%B1%D8%B6.md"
+  },
+  "فرط": {
+    "source": "notes/%D9%81%D8%B1%D8%B7.md"
+  },
+  "فرع": {
+    "source": "notes/%D9%81%D8%B1%D8%B9.md"
+  },
+  "فرعون": {
+    "source": "notes/%D9%81%D8%B1%D8%B9%D9%88%D9%86.md"
+  },
+  "فرغ": {
+    "source": "notes/%D9%81%D8%B1%D8%BA.md"
+  },
+  "فرق": {
+    "source": "notes/%D9%81%D8%B1%D9%82.md"
+  },
+  "فره": {
+    "source": "notes/%D9%81%D8%B1%D9%87.md"
+  },
+  "فري": {
+    "source": "notes/%D9%81%D8%B1%D9%8A.md"
+  },
+  "فزز": {
+    "source": "notes/%D9%81%D8%B2%D8%B2.md"
+  },
+  "فزع": {
+    "source": "notes/%D9%81%D8%B2%D8%B9.md"
+  },
+  "فسح": {
+    "source": "notes/%D9%81%D8%B3%D8%AD.md"
+  },
+  "فسد": {
+    "source": "notes/%D9%81%D8%B3%D8%AF.md"
+  },
+  "فسر": {
+    "source": "notes/%D9%81%D8%B3%D8%B1.md"
+  },
+  "فسق": {
+    "source": "notes/%D9%81%D8%B3%D9%82.md"
+  },
+  "فشل": {
+    "source": "notes/%D9%81%D8%B4%D9%84.md"
+  },
+  "فصح": {
+    "source": "notes/%D9%81%D8%B5%D8%AD.md"
+  },
+  "فصل": {
+    "source": "notes/%D9%81%D8%B5%D9%84.md"
+  },
+  "فصم": {
+    "source": "notes/%D9%81%D8%B5%D9%85.md"
+  },
+  "فضح": {
+    "source": "notes/%D9%81%D8%B6%D8%AD.md"
+  },
+  "فضض": {
+    "source": "notes/%D9%81%D8%B6%D8%B6.md"
+  },
+  "فضل": {
+    "source": "notes/%D9%81%D8%B6%D9%84.md"
+  },
+  "فضو": {
+    "source": "notes/%D9%81%D8%B6%D9%88.md"
+  },
+  "فطر": {
+    "source": "notes/%D9%81%D8%B7%D8%B1.md"
+  },
+  "فظظ": {
+    "source": "notes/%D9%81%D8%B8%D8%B8.md"
+  },
+  "فعل": {
+    "source": "notes/%D9%81%D8%B9%D9%84.md"
+  },
+  "فقد": {
+    "source": "notes/%D9%81%D9%82%D8%AF.md"
+  },
+  "فقر": {
+    "source": "notes/%D9%81%D9%82%D8%B1.md"
+  },
+  "فقع": {
+    "source": "notes/%D9%81%D9%82%D8%B9.md"
+  },
+  "فقه": {
+    "source": "notes/%D9%81%D9%82%D9%87.md"
+  },
+  "فكر": {
+    "source": "notes/%D9%81%D9%83%D8%B1.md"
+  },
+  "فكك": {
+    "source": "notes/%D9%81%D9%83%D9%83.md"
+  },
+  "فكه": {
+    "source": "notes/%D9%81%D9%83%D9%87.md"
+  },
+  "فلح": {
+    "source": "notes/%D9%81%D9%84%D8%AD.md"
+  },
+  "فلق": {
+    "source": "notes/%D9%81%D9%84%D9%82.md"
+  },
+  "فلك": {
+    "source": "notes/%D9%81%D9%84%D9%83.md"
+  },
+  "فلن": {
+    "source": "notes/%D9%81%D9%84%D9%86.md"
+  },
+  "فند": {
+    "source": "notes/%D9%81%D9%86%D8%AF.md"
+  },
+  "فنن": {
+    "source": "notes/%D9%81%D9%86%D9%86.md"
+  },
+  "فني": {
+    "source": "notes/%D9%81%D9%86%D9%8A.md"
+  },
+  "فهم": {
+    "source": "notes/%D9%81%D9%87%D9%85.md"
+  },
+  "فوت": {
+    "source": "notes/%D9%81%D9%88%D8%AA.md"
+  },
+  "فوج": {
+    "source": "notes/%D9%81%D9%88%D8%AC.md"
+  },
+  "فور": {
+    "source": "notes/%D9%81%D9%88%D8%B1.md"
+  },
+  "فوز": {
+    "source": "notes/%D9%81%D9%88%D8%B2.md"
+  },
+  "فوض": {
+    "source": "notes/%D9%81%D9%88%D8%B6.md"
+  },
+  "فوق": {
+    "source": "notes/%D9%81%D9%88%D9%82.md"
+  },
+  "فوم": {
+    "source": "notes/%D9%81%D9%88%D9%85.md"
+  },
+  "فوه": {
+    "source": "notes/%D9%81%D9%88%D9%87.md"
+  },
+  "فيأ": {
+    "source": "notes/%D9%81%D9%8A%D8%A3.md"
+  },
+  "فيض": {
+    "source": "notes/%D9%81%D9%8A%D8%B6.md"
+  },
+  "فيل": {
+    "source": "notes/%D9%81%D9%8A%D9%84.md"
+  },
+  "قارون": {
+    "source": "notes/%D9%82%D8%A7%D8%B1%D9%88%D9%86.md"
+  },
+  "قبح": {
+    "source": "notes/%D9%82%D8%A8%D8%AD.md"
+  },
+  "قبر": {
+    "source": "notes/%D9%82%D8%A8%D8%B1.md"
+  },
+  "قبس": {
+    "source": "notes/%D9%82%D8%A8%D8%B3.md"
+  },
+  "قبض": {
+    "source": "notes/%D9%82%D8%A8%D8%B6.md"
+  },
+  "قتر": {
+    "source": "notes/%D9%82%D8%AA%D8%B1.md"
+  },
+  "قتل": {
+    "source": "notes/%D9%82%D8%AA%D9%84.md"
+  },
+  "قثأ": {
+    "source": "notes/%D9%82%D8%AB%D8%A3.md"
+  },
+  "قحم": {
+    "source": "notes/%D9%82%D8%AD%D9%85.md"
+  },
+  "قدح": {
+    "source": "notes/%D9%82%D8%AF%D8%AD.md"
+  },
+  "قدد": {
+    "source": "notes/%D9%82%D8%AF%D8%AF.md"
+  },
+  "قدس": {
+    "source": "notes/%D9%82%D8%AF%D8%B3.md"
+  },
+  "قدم": {
+    "source": "notes/%D9%82%D8%AF%D9%85.md"
+  },
+  "قدو": {
+    "source": "notes/%D9%82%D8%AF%D9%88.md"
+  },
+  "قذف": {
+    "source": "notes/%D9%82%D8%B0%D9%81.md"
+  },
+  "قرأ": {
+    "source": "notes/%D9%82%D8%B1%D8%A3.md"
+  },
+  "قرب": {
+    "source": "notes/%D9%82%D8%B1%D8%A8.md"
+  },
+  "قرح": {
+    "source": "notes/%D9%82%D8%B1%D8%AD.md"
+  },
+  "قرد": {
+    "source": "notes/%D9%82%D8%B1%D8%AF.md"
+  },
+  "قرر": {
+    "source": "notes/%D9%82%D8%B1%D8%B1.md"
+  },
+  "قرش": {
+    "source": "notes/%D9%82%D8%B1%D8%B4.md"
+  },
+  "قرض": {
+    "source": "notes/%D9%82%D8%B1%D8%B6.md"
+  },
+  "قرطس": {
+    "source": "notes/%D9%82%D8%B1%D8%B7%D8%B3.md"
+  },
+  "قرع": {
+    "source": "notes/%D9%82%D8%B1%D8%B9.md"
+  },
+  "قرف": {
+    "source": "notes/%D9%82%D8%B1%D9%81.md"
+  },
+  "قرن": {
+    "source": "notes/%D9%82%D8%B1%D9%86.md"
+  },
+  "قري": {
+    "source": "notes/%D9%82%D8%B1%D9%8A.md"
+  },
+  "قسر": {
+    "source": "notes/%D9%82%D8%B3%D8%B1.md"
+  },
+  "قسس": {
+    "source": "notes/%D9%82%D8%B3%D8%B3.md"
+  },
+  "قسط": {
+    "source": "notes/%D9%82%D8%B3%D8%B7.md"
+  },
+  "قسطس": {
+    "source": "notes/%D9%82%D8%B3%D8%B7%D8%B3.md"
+  },
+  "قسم": {
+    "source": "notes/%D9%82%D8%B3%D9%85.md"
+  },
+  "قسو": {
+    "source": "notes/%D9%82%D8%B3%D9%88.md"
+  },
+  "قشعر": {
+    "source": "notes/%D9%82%D8%B4%D8%B9%D8%B1.md"
+  },
+  "قصد": {
+    "source": "notes/%D9%82%D8%B5%D8%AF.md"
+  },
+  "قصر": {
+    "source": "notes/%D9%82%D8%B5%D8%B1.md"
+  },
+  "قصص": {
+    "source": "notes/%D9%82%D8%B5%D8%B5.md"
+  },
+  "قصف": {
+    "source": "notes/%D9%82%D8%B5%D9%81.md"
+  },
+  "قصم": {
+    "source": "notes/%D9%82%D8%B5%D9%85.md"
+  },
+  "قصو": {
+    "source": "notes/%D9%82%D8%B5%D9%88.md"
+  },
+  "قضب": {
+    "source": "notes/%D9%82%D8%B6%D8%A8.md"
+  },
+  "قضض": {
+    "source": "notes/%D9%82%D8%B6%D8%B6.md"
+  },
+  "قضي": {
+    "source": "notes/%D9%82%D8%B6%D9%8A.md"
+  },
+  "قطر": {
+    "source": "notes/%D9%82%D8%B7%D8%B1.md"
+  },
+  "قطط": {
+    "source": "notes/%D9%82%D8%B7%D8%B7.md"
+  },
+  "قطع": {
+    "source": "notes/%D9%82%D8%B7%D8%B9.md"
+  },
+  "قطف": {
+    "source": "notes/%D9%82%D8%B7%D9%81.md"
+  },
+  "قطمر": {
+    "source": "notes/%D9%82%D8%B7%D9%85%D8%B1.md"
+  },
+  "قعد": {
+    "source": "notes/%D9%82%D8%B9%D8%AF.md"
+  },
+  "قعر": {
+    "source": "notes/%D9%82%D8%B9%D8%B1.md"
+  },
+  "قفل": {
+    "source": "notes/%D9%82%D9%81%D9%84.md"
+  },
+  "قفو": {
+    "source": "notes/%D9%82%D9%81%D9%88.md"
+  },
+  "قلد": {
+    "source": "notes/%D9%82%D9%84%D8%AF.md"
+  },
+  "قلع": {
+    "source": "notes/%D9%82%D9%84%D8%B9.md"
+  },
+  "قلل": {
+    "source": "notes/%D9%82%D9%84%D9%84.md"
+  },
+  "قلم": {
+    "source": "notes/%D9%82%D9%84%D9%85.md"
+  },
+  "قلي": {
+    "source": "notes/%D9%82%D9%84%D9%8A.md"
+  },
+  "قمح": {
+    "source": "notes/%D9%82%D9%85%D8%AD.md"
+  },
+  "قمر": {
+    "source": "notes/%D9%82%D9%85%D8%B1.md"
+  },
+  "قمص": {
+    "source": "notes/%D9%82%D9%85%D8%B5.md"
+  },
+  "قمطر": {
+    "source": "notes/%D9%82%D9%85%D8%B7%D8%B1.md"
+  },
+  "قمع": {
+    "source": "notes/%D9%82%D9%85%D8%B9.md"
+  },
+  "قمل": {
+    "source": "notes/%D9%82%D9%85%D9%84.md"
+  },
+  "قنت": {
+    "source": "notes/%D9%82%D9%86%D8%AA.md"
+  },
+  "قنط": {
+    "source": "notes/%D9%82%D9%86%D8%B7.md"
+  },
+  "قنطر": {
+    "source": "notes/%D9%82%D9%86%D8%B7%D8%B1.md"
+  },
+  "قنع": {
+    "source": "notes/%D9%82%D9%86%D8%B9.md"
+  },
+  "قنو": {
+    "source": "notes/%D9%82%D9%86%D9%88.md"
+  },
+  "قني": {
+    "source": "notes/%D9%82%D9%86%D9%8A.md"
+  },
+  "قهر": {
+    "source": "notes/%D9%82%D9%87%D8%B1.md"
+  },
+  "قوب": {
+    "source": "notes/%D9%82%D9%88%D8%A8.md"
+  },
+  "قوت": {
+    "source": "notes/%D9%82%D9%88%D8%AA.md"
+  },
+  "قوس": {
+    "source": "notes/%D9%82%D9%88%D8%B3.md"
+  },
+  "قوع": {
+    "source": "notes/%D9%82%D9%88%D8%B9.md"
+  },
+  "قوي": {
+    "source": "notes/%D9%82%D9%88%D9%8A.md"
+  },
+  "قيض": {
+    "source": "notes/%D9%82%D9%8A%D8%B6.md"
+  },
+  "قيل": {
+    "source": "notes/%D9%82%D9%8A%D9%84.md"
+  },
+  "كأس": {
+    "source": "notes/%D9%83%D8%A3%D8%B3.md"
+  },
+  "كبب": {
+    "source": "notes/%D9%83%D8%A8%D8%A8.md"
+  },
+  "كبت": {
+    "source": "notes/%D9%83%D8%A8%D8%AA.md"
+  },
+  "كبد": {
+    "source": "notes/%D9%83%D8%A8%D8%AF.md"
+  },
+  "كبكب": {
+    "source": "notes/%D9%83%D8%A8%D9%83%D8%A8.md"
+  },
+  "كتب": {
+    "source": "notes/%D9%83%D8%AA%D8%A8.md"
+  },
+  "كتم": {
+    "source": "notes/%D9%83%D8%AA%D9%85.md"
+  },
+  "كثب": {
+    "source": "notes/%D9%83%D8%AB%D8%A8.md"
+  },
+  "كدح": {
+    "source": "notes/%D9%83%D8%AF%D8%AD.md"
+  },
+  "كدر": {
+    "source": "notes/%D9%83%D8%AF%D8%B1.md"
+  },
+  "كدي": {
+    "source": "notes/%D9%83%D8%AF%D9%8A.md"
+  },
+  "كرب": {
+    "source": "notes/%D9%83%D8%B1%D8%A8.md"
+  },
+  "كرر": {
+    "source": "notes/%D9%83%D8%B1%D8%B1.md"
+  },
+  "كرس": {
+    "source": "notes/%D9%83%D8%B1%D8%B3.md"
+  },
+  "كرم": {
+    "source": "notes/%D9%83%D8%B1%D9%85.md"
+  },
+  "كره": {
+    "source": "notes/%D9%83%D8%B1%D9%87.md"
+  },
+  "كسب": {
+    "source": "notes/%D9%83%D8%B3%D8%A8.md"
+  },
+  "كسد": {
+    "source": "notes/%D9%83%D8%B3%D8%AF.md"
+  },
+  "كسف": {
+    "source": "notes/%D9%83%D8%B3%D9%81.md"
+  },
+  "كسل": {
+    "source": "notes/%D9%83%D8%B3%D9%84.md"
+  },
+  "كسو": {
+    "source": "notes/%D9%83%D8%B3%D9%88.md"
+  },
+  "كشط": {
+    "source": "notes/%D9%83%D8%B4%D8%B7.md"
+  },
+  "كشف": {
+    "source": "notes/%D9%83%D8%B4%D9%81.md"
+  },
+  "كظم": {
+    "source": "notes/%D9%83%D8%B8%D9%85.md"
+  },
+  "كعب": {
+    "source": "notes/%D9%83%D8%B9%D8%A8.md"
+  },
+  "كفأ": {
+    "source": "notes/%D9%83%D9%81%D8%A3.md"
+  },
+  "كفت": {
+    "source": "notes/%D9%83%D9%81%D8%AA.md"
+  },
+  "كفف": {
+    "source": "notes/%D9%83%D9%81%D9%81.md"
+  },
+  "كفل": {
+    "source": "notes/%D9%83%D9%81%D9%84.md"
+  },
+  "كفي": {
+    "source": "notes/%D9%83%D9%81%D9%8A.md"
+  },
+  "كلأ": {
+    "source": "notes/%D9%83%D9%84%D8%A3.md"
+  },
+  "كلب": {
+    "source": "notes/%D9%83%D9%84%D8%A8.md"
+  },
+  "كلح": {
+    "source": "notes/%D9%83%D9%84%D8%AD.md"
+  },
+  "كلف": {
+    "source": "notes/%D9%83%D9%84%D9%81.md"
+  },
+  "كلم": {
+    "source": "notes/%D9%83%D9%84%D9%85.md"
+  },
+  "كلو": {
+    "source": "notes/%D9%83%D9%84%D9%88.md"
+  },
+  "كمل": {
+    "source": "notes/%D9%83%D9%85%D9%84.md"
+  },
+  "كمم": {
+    "source": "notes/%D9%83%D9%85%D9%85.md"
+  },
+  "كمه": {
+    "source": "notes/%D9%83%D9%85%D9%87.md"
+  },
+  "كند": {
+    "source": "notes/%D9%83%D9%86%D8%AF.md"
+  },
+  "كنز": {
+    "source": "notes/%D9%83%D9%86%D8%B2.md"
+  },
+  "كنس": {
+    "source": "notes/%D9%83%D9%86%D8%B3.md"
+  },
+  "كنن": {
+    "source": "notes/%D9%83%D9%86%D9%86.md"
+  },
+  "كهف": {
+    "source": "notes/%D9%83%D9%87%D9%81.md"
+  },
+  "كهل": {
+    "source": "notes/%D9%83%D9%87%D9%84.md"
+  },
+  "كهن": {
+    "source": "notes/%D9%83%D9%87%D9%86.md"
+  },
+  "كوب": {
+    "source": "notes/%D9%83%D9%88%D8%A8.md"
+  },
+  "كود": {
+    "source": "notes/%D9%83%D9%88%D8%AF.md"
+  },
+  "كور": {
+    "source": "notes/%D9%83%D9%88%D8%B1.md"
+  },
+  "كوكب": {
+    "source": "notes/%D9%83%D9%88%D9%83%D8%A8.md"
+  },
+  "كون": {
+    "source": "notes/%D9%83%D9%88%D9%86.md"
+  },
+  "كوي": {
+    "source": "notes/%D9%83%D9%88%D9%8A.md"
+  },
+  "كيد": {
+    "source": "notes/%D9%83%D9%8A%D8%AF.md"
+  },
+  "كيف": {
+    "source": "notes/%D9%83%D9%8A%D9%81.md"
+  },
+  "كيل": {
+    "source": "notes/%D9%83%D9%8A%D9%84.md"
+  },
+  "كين": {
+    "source": "notes/%D9%83%D9%8A%D9%86.md"
+  },
+  "لؤلؤ": {
+    "source": "notes/%D9%84%D8%A4%D9%84%D8%A4.md"
+  },
+  "لبب": {
+    "source": "notes/%D9%84%D8%A8%D8%A8.md"
+  },
+  "لبث": {
+    "source": "notes/%D9%84%D8%A8%D8%AB.md"
+  },
+  "لبد": {
+    "source": "notes/%D9%84%D8%A8%D8%AF.md"
+  },
+  "لبس": {
+    "source": "notes/%D9%84%D8%A8%D8%B3.md"
+  },
+  "لبن": {
+    "source": "notes/%D9%84%D8%A8%D9%86.md"
+  },
+  "لجأ": {
+    "source": "notes/%D9%84%D8%AC%D8%A3.md"
+  },
+  "لجج": {
+    "source": "notes/%D9%84%D8%AC%D8%AC.md"
+  },
+  "لحد": {
+    "source": "notes/%D9%84%D8%AD%D8%AF.md"
+  },
+  "لحف": {
+    "source": "notes/%D9%84%D8%AD%D9%81.md"
+  },
+  "لحق": {
+    "source": "notes/%D9%84%D8%AD%D9%82.md"
+  },
+  "لحم": {
+    "source": "notes/%D9%84%D8%AD%D9%85.md"
+  },
+  "لحن": {
+    "source": "notes/%D9%84%D8%AD%D9%86.md"
+  },
+  "لحي": {
+    "source": "notes/%D9%84%D8%AD%D9%8A.md"
+  },
+  "لدد": {
+    "source": "notes/%D9%84%D8%AF%D8%AF.md"
+  },
+  "لدن": {
+    "source": "notes/%D9%84%D8%AF%D9%86.md"
+  },
+  "لذذ": {
+    "source": "notes/%D9%84%D8%B0%D8%B0.md"
+  },
+  "لزب": {
+    "source": "notes/%D9%84%D8%B2%D8%A8.md"
+  },
+  "لزم": {
+    "source": "notes/%D9%84%D8%B2%D9%85.md"
+  },
+  "لسن": {
+    "source": "notes/%D9%84%D8%B3%D9%86.md"
+  },
+  "لطف": {
+    "source": "notes/%D9%84%D8%B7%D9%81.md"
+  },
+  "لظى": {
+    "source": "notes/%D9%84%D8%B8%D9%89.md"
+  },
+  "لظي": {
+    "source": "notes/%D9%84%D8%B8%D9%8A.md"
+  },
+  "لعب": {
+    "source": "notes/%D9%84%D8%B9%D8%A8.md"
+  },
+  "لعن": {
+    "source": "notes/%D9%84%D8%B9%D9%86.md"
+  },
+  "لغب": {
+    "source": "notes/%D9%84%D8%BA%D8%A8.md"
+  },
+  "لغو": {
+    "source": "notes/%D9%84%D8%BA%D9%88.md"
+  },
+  "لفت": {
+    "source": "notes/%D9%84%D9%81%D8%AA.md"
+  },
+  "لفح": {
+    "source": "notes/%D9%84%D9%81%D8%AD.md"
+  },
+  "لفظ": {
+    "source": "notes/%D9%84%D9%81%D8%B8.md"
+  },
+  "لفف": {
+    "source": "notes/%D9%84%D9%81%D9%81.md"
+  },
+  "لفو": {
+    "source": "notes/%D9%84%D9%81%D9%88.md"
+  },
+  "لقب": {
+    "source": "notes/%D9%84%D9%82%D8%A8.md"
+  },
+  "لقح": {
+    "source": "notes/%D9%84%D9%82%D8%AD.md"
+  },
+  "لقط": {
+    "source": "notes/%D9%84%D9%82%D8%B7.md"
+  },
+  "لقف": {
+    "source": "notes/%D9%84%D9%82%D9%81.md"
+  },
+  "لقم": {
+    "source": "notes/%D9%84%D9%82%D9%85.md"
+  },
+  "لقمان": {
+    "source": "notes/%D9%84%D9%82%D9%85%D8%A7%D9%86.md"
+  },
+  "لقي": {
+    "source": "notes/%D9%84%D9%82%D9%8A.md"
+  },
+  "لمح": {
+    "source": "notes/%D9%84%D9%85%D8%AD.md"
+  },
+  "لمز": {
+    "source": "notes/%D9%84%D9%85%D8%B2.md"
+  },
+  "لمس": {
+    "source": "notes/%D9%84%D9%85%D8%B3.md"
+  },
+  "لمم": {
+    "source": "notes/%D9%84%D9%85%D9%85.md"
+  },
+  "لهب": {
+    "source": "notes/%D9%84%D9%87%D8%A8.md"
+  },
+  "لهث": {
+    "source": "notes/%D9%84%D9%87%D8%AB.md"
+  },
+  "لهم": {
+    "source": "notes/%D9%84%D9%87%D9%85.md"
+  },
+  "لهو": {
+    "source": "notes/%D9%84%D9%87%D9%88.md"
+  },
+  "لوت": {
+    "source": "notes/%D9%84%D9%88%D8%AA.md"
+  },
+  "لوح": {
+    "source": "notes/%D9%84%D9%88%D8%AD.md"
+  },
+  "لوذ": {
+    "source": "notes/%D9%84%D9%88%D8%B0.md"
+  },
+  "لوط": {
+    "source": "notes/%D9%84%D9%88%D8%B7.md"
+  },
+  "لوم": {
+    "source": "notes/%D9%84%D9%88%D9%85.md"
+  },
+  "لون": {
+    "source": "notes/%D9%84%D9%88%D9%86.md"
+  },
+  "لوه": {
+    "source": "notes/%D9%84%D9%88%D9%87.md"
+  },
+  "لوي": {
+    "source": "notes/%D9%84%D9%88%D9%8A.md"
+  },
+  "ليت": {
+    "source": "notes/%D9%84%D9%8A%D8%AA.md"
+  },
+  "ليس": {
+    "source": "notes/%D9%84%D9%8A%D8%B3.md"
+  },
+  "ليل": {
+    "source": "notes/%D9%84%D9%8A%D9%84.md"
+  },
+  "لين": {
+    "source": "notes/%D9%84%D9%8A%D9%86.md"
+  },
+  "مأجوج": {
+    "source": "notes/%D9%85%D8%A3%D8%AC%D9%88%D8%AC.md"
+  },
+  "مأي": {
+    "source": "notes/%D9%85%D8%A3%D9%8A.md"
+  },
+  "ماروت": {
+    "source": "notes/%D9%85%D8%A7%D8%B1%D9%88%D8%AA.md"
+  },
+  "متع": {
+    "source": "notes/%D9%85%D8%AA%D8%B9.md"
+  },
+  "متن": {
+    "source": "notes/%D9%85%D8%AA%D9%86.md"
+  },
+  "مثل": {
+    "source": "notes/%D9%85%D8%AB%D9%84.md"
+  },
+  "مجد": {
+    "source": "notes/%D9%85%D8%AC%D8%AF.md"
+  },
+  "مجس": {
+    "source": "notes/%D9%85%D8%AC%D8%B3.md"
+  },
+  "محص": {
+    "source": "notes/%D9%85%D8%AD%D8%B5.md"
+  },
+  "محق": {
+    "source": "notes/%D9%85%D8%AD%D9%82.md"
+  },
+  "محل": {
+    "source": "notes/%D9%85%D8%AD%D9%84.md"
+  },
+  "محن": {
+    "source": "notes/%D9%85%D8%AD%D9%86.md"
+  },
+  "محو": {
+    "source": "notes/%D9%85%D8%AD%D9%88.md"
+  },
+  "مخر": {
+    "source": "notes/%D9%85%D8%AE%D8%B1.md"
+  },
+  "مخض": {
+    "source": "notes/%D9%85%D8%AE%D8%B6.md"
+  },
+  "مدد": {
+    "source": "notes/%D9%85%D8%AF%D8%AF.md"
+  },
+  "مدن": {
+    "source": "notes/%D9%85%D8%AF%D9%86.md"
+  },
+  "مرأ": {
+    "source": "notes/%D9%85%D8%B1%D8%A3.md"
+  },
+  "مرج": {
+    "source": "notes/%D9%85%D8%B1%D8%AC.md"
+  },
+  "مرح": {
+    "source": "notes/%D9%85%D8%B1%D8%AD.md"
+  },
+  "مرد": {
+    "source": "notes/%D9%85%D8%B1%D8%AF.md"
+  },
+  "مرر": {
+    "source": "notes/%D9%85%D8%B1%D8%B1.md"
+  },
+  "مرض": {
+    "source": "notes/%D9%85%D8%B1%D8%B6.md"
+  },
+  "مرو": {
+    "source": "notes/%D9%85%D8%B1%D9%88.md"
+  },
+  "مري": {
+    "source": "notes/%D9%85%D8%B1%D9%8A.md"
+  },
+  "مريم": {
+    "source": "notes/%D9%85%D8%B1%D9%8A%D9%85.md"
+  },
+  "مزج": {
+    "source": "notes/%D9%85%D8%B2%D8%AC.md"
+  },
+  "مزق": {
+    "source": "notes/%D9%85%D8%B2%D9%82.md"
+  },
+  "مزن": {
+    "source": "notes/%D9%85%D8%B2%D9%86.md"
+  },
+  "مسح": {
+    "source": "notes/%D9%85%D8%B3%D8%AD.md"
+  },
+  "مسخ": {
+    "source": "notes/%D9%85%D8%B3%D8%AE.md"
+  },
+  "مسد": {
+    "source": "notes/%D9%85%D8%B3%D8%AF.md"
+  },
+  "مسس": {
+    "source": "notes/%D9%85%D8%B3%D8%B3.md"
+  },
+  "مسك": {
+    "source": "notes/%D9%85%D8%B3%D9%83.md"
+  },
+  "مسو": {
+    "source": "notes/%D9%85%D8%B3%D9%88.md"
+  },
+  "مشج": {
+    "source": "notes/%D9%85%D8%B4%D8%AC.md"
+  },
+  "مشي": {
+    "source": "notes/%D9%85%D8%B4%D9%8A.md"
+  },
+  "مصر": {
+    "source": "notes/%D9%85%D8%B5%D8%B1.md"
+  },
+  "مضغ": {
+    "source": "notes/%D9%85%D8%B6%D8%BA.md"
+  },
+  "مضي": {
+    "source": "notes/%D9%85%D8%B6%D9%8A.md"
+  },
+  "مطر": {
+    "source": "notes/%D9%85%D8%B7%D8%B1.md"
+  },
+  "مطو": {
+    "source": "notes/%D9%85%D8%B7%D9%88.md"
+  },
+  "معز": {
+    "source": "notes/%D9%85%D8%B9%D8%B2.md"
+  },
+  "معي": {
+    "source": "notes/%D9%85%D8%B9%D9%8A.md"
+  },
+  "مقت": {
+    "source": "notes/%D9%85%D9%82%D8%AA.md"
+  },
+  "مكة": {
+    "source": "notes/%D9%85%D9%83%D8%A9.md"
+  },
+  "مكث": {
+    "source": "notes/%D9%85%D9%83%D8%AB.md"
+  },
+  "مكر": {
+    "source": "notes/%D9%85%D9%83%D8%B1.md"
+  },
+  "مكن": {
+    "source": "notes/%D9%85%D9%83%D9%86.md"
+  },
+  "مكو": {
+    "source": "notes/%D9%85%D9%83%D9%88.md"
+  },
+  "ملأ": {
+    "source": "notes/%D9%85%D9%84%D8%A3.md"
+  },
+  "ملح": {
+    "source": "notes/%D9%85%D9%84%D8%AD.md"
+  },
+  "ملق": {
+    "source": "notes/%D9%85%D9%84%D9%82.md"
+  },
+  "ملك": {
+    "source": "notes/%D9%85%D9%84%D9%83.md"
+  },
+  "ملل": {
+    "source": "notes/%D9%85%D9%84%D9%84.md"
+  },
+  "ملو": {
+    "source": "notes/%D9%85%D9%84%D9%88.md"
+  },
+  "منع": {
+    "source": "notes/%D9%85%D9%86%D8%B9.md"
+  },
+  "منن": {
+    "source": "notes/%D9%85%D9%86%D9%86.md"
+  },
+  "مني": {
+    "source": "notes/%D9%85%D9%86%D9%8A.md"
+  },
+  "مهد": {
+    "source": "notes/%D9%85%D9%87%D8%AF.md"
+  },
+  "مهل": {
+    "source": "notes/%D9%85%D9%87%D9%84.md"
+  },
+  "مهن": {
+    "source": "notes/%D9%85%D9%87%D9%86.md"
+  },
+  "موت": {
+    "source": "notes/%D9%85%D9%88%D8%AA.md"
+  },
+  "موج": {
+    "source": "notes/%D9%85%D9%88%D8%AC.md"
+  },
+  "مور": {
+    "source": "notes/%D9%85%D9%88%D8%B1.md"
+  },
+  "موسى": {
+    "source": "notes/%D9%85%D9%88%D8%B3%D9%89.md"
+  },
+  "مول": {
+    "source": "notes/%D9%85%D9%88%D9%84.md"
+  },
+  "موه": {
+    "source": "notes/%D9%85%D9%88%D9%87.md"
+  },
+  "ميد": {
+    "source": "notes/%D9%85%D9%8A%D8%AF.md"
+  },
+  "مير": {
+    "source": "notes/%D9%85%D9%8A%D8%B1.md"
+  },
+  "ميز": {
+    "source": "notes/%D9%85%D9%8A%D8%B2.md"
+  },
+  "ميكال": {
+    "source": "notes/%D9%85%D9%8A%D9%83%D8%A7%D9%84.md"
+  },
+  "ميل": {
+    "source": "notes/%D9%85%D9%8A%D9%84.md"
+  },
+  "نأي": {
+    "source": "notes/%D9%86%D8%A3%D9%8A.md"
+  },
+  "نبأ": {
+    "source": "notes/%D9%86%D8%A8%D8%A3.md"
+  },
+  "نبت": {
+    "source": "notes/%D9%86%D8%A8%D8%AA.md"
+  },
+  "نبذ": {
+    "source": "notes/%D9%86%D8%A8%D8%B0.md"
+  },
+  "نبز": {
+    "source": "notes/%D9%86%D8%A8%D8%B2.md"
+  },
+  "نبط": {
+    "source": "notes/%D9%86%D8%A8%D8%B7.md"
+  },
+  "نبع": {
+    "source": "notes/%D9%86%D8%A8%D8%B9.md"
+  },
+  "نتق": {
+    "source": "notes/%D9%86%D8%AA%D9%82.md"
+  },
+  "نثر": {
+    "source": "notes/%D9%86%D8%AB%D8%B1.md"
+  },
+  "نجد": {
+    "source": "notes/%D9%86%D8%AC%D8%AF.md"
+  },
+  "نجس": {
+    "source": "notes/%D9%86%D8%AC%D8%B3.md"
+  },
+  "نجم": {
+    "source": "notes/%D9%86%D8%AC%D9%85.md"
+  },
+  "نجو": {
+    "source": "notes/%D9%86%D8%AC%D9%88.md"
+  },
+  "نحب": {
+    "source": "notes/%D9%86%D8%AD%D8%A8.md"
+  },
+  "نحت": {
+    "source": "notes/%D9%86%D8%AD%D8%AA.md"
+  },
+  "نحر": {
+    "source": "notes/%D9%86%D8%AD%D8%B1.md"
+  },
+  "نحس": {
+    "source": "notes/%D9%86%D8%AD%D8%B3.md"
+  },
+  "نحل": {
+    "source": "notes/%D9%86%D8%AD%D9%84.md"
+  },
+  "نخر": {
+    "source": "notes/%D9%86%D8%AE%D8%B1.md"
+  },
+  "نخل": {
+    "source": "notes/%D9%86%D8%AE%D9%84.md"
+  },
+  "ندد": {
+    "source": "notes/%D9%86%D8%AF%D8%AF.md"
+  },
+  "ندم": {
+    "source": "notes/%D9%86%D8%AF%D9%85.md"
+  },
+  "ندي": {
+    "source": "notes/%D9%86%D8%AF%D9%8A.md"
+  },
+  "نزع": {
+    "source": "notes/%D9%86%D8%B2%D8%B9.md"
+  },
+  "نزغ": {
+    "source": "notes/%D9%86%D8%B2%D8%BA.md"
+  },
+  "نزف": {
+    "source": "notes/%D9%86%D8%B2%D9%81.md"
+  },
+  "نزل": {
+    "source": "notes/%D9%86%D8%B2%D9%84.md"
+  },
+  "نسأ": {
+    "source": "notes/%D9%86%D8%B3%D8%A3.md"
+  },
+  "نسب": {
+    "source": "notes/%D9%86%D8%B3%D8%A8.md"
+  },
+  "نسخ": {
+    "source": "notes/%D9%86%D8%B3%D8%AE.md"
+  },
+  "نسر": {
+    "source": "notes/%D9%86%D8%B3%D8%B1.md"
+  },
+  "نسف": {
+    "source": "notes/%D9%86%D8%B3%D9%81.md"
+  },
+  "نسك": {
+    "source": "notes/%D9%86%D8%B3%D9%83.md"
+  },
+  "نسل": {
+    "source": "notes/%D9%86%D8%B3%D9%84.md"
+  },
+  "نسو": {
+    "source": "notes/%D9%86%D8%B3%D9%88.md"
+  },
+  "نسي": {
+    "source": "notes/%D9%86%D8%B3%D9%8A.md"
+  },
+  "نشأ": {
+    "source": "notes/%D9%86%D8%B4%D8%A3.md"
+  },
+  "نشر": {
+    "source": "notes/%D9%86%D8%B4%D8%B1.md"
+  },
+  "نشز": {
+    "source": "notes/%D9%86%D8%B4%D8%B2.md"
+  },
+  "نشط": {
+    "source": "notes/%D9%86%D8%B4%D8%B7.md"
+  },
+  "نصب": {
+    "source": "notes/%D9%86%D8%B5%D8%A8.md"
+  },
+  "نصت": {
+    "source": "notes/%D9%86%D8%B5%D8%AA.md"
+  },
+  "نصح": {
+    "source": "notes/%D9%86%D8%B5%D8%AD.md"
+  },
+  "نصر": {
+    "source": "notes/%D9%86%D8%B5%D8%B1.md"
+  },
+  "نصف": {
+    "source": "notes/%D9%86%D8%B5%D9%81.md"
+  },
+  "نصي": {
+    "source": "notes/%D9%86%D8%B5%D9%8A.md"
+  },
+  "نضج": {
+    "source": "notes/%D9%86%D8%B6%D8%AC.md"
+  },
+  "نضخ": {
+    "source": "notes/%D9%86%D8%B6%D8%AE.md"
+  },
+  "نضد": {
+    "source": "notes/%D9%86%D8%B6%D8%AF.md"
+  },
+  "نضر": {
+    "source": "notes/%D9%86%D8%B6%D8%B1.md"
+  },
+  "نطح": {
+    "source": "notes/%D9%86%D8%B7%D8%AD.md"
+  },
+  "نطف": {
+    "source": "notes/%D9%86%D8%B7%D9%81.md"
+  },
+  "نطق": {
+    "source": "notes/%D9%86%D8%B7%D9%82.md"
+  },
+  "نعج": {
+    "source": "notes/%D9%86%D8%B9%D8%AC.md"
+  },
+  "نعس": {
+    "source": "notes/%D9%86%D8%B9%D8%B3.md"
+  },
+  "نعق": {
+    "source": "notes/%D9%86%D8%B9%D9%82.md"
+  },
+  "نعل": {
+    "source": "notes/%D9%86%D8%B9%D9%84.md"
+  },
+  "نغض": {
+    "source": "notes/%D9%86%D8%BA%D8%B6.md"
+  },
+  "نفث": {
+    "source": "notes/%D9%86%D9%81%D8%AB.md"
+  },
+  "نفح": {
+    "source": "notes/%D9%86%D9%81%D8%AD.md"
+  },
+  "نفخ": {
+    "source": "notes/%D9%86%D9%81%D8%AE.md"
+  },
+  "نفد": {
+    "source": "notes/%D9%86%D9%81%D8%AF.md"
+  },
+  "نفذ": {
+    "source": "notes/%D9%86%D9%81%D8%B0.md"
+  },
+  "نفر": {
+    "source": "notes/%D9%86%D9%81%D8%B1.md"
+  },
+  "نفش": {
+    "source": "notes/%D9%86%D9%81%D8%B4.md"
+  },
+  "نفع": {
+    "source": "notes/%D9%86%D9%81%D8%B9.md"
+  },
+  "نفق": {
+    "source": "notes/%D9%86%D9%81%D9%82.md"
+  },
+  "نفل": {
+    "source": "notes/%D9%86%D9%81%D9%84.md"
+  },
+  "نفي": {
+    "source": "notes/%D9%86%D9%81%D9%8A.md"
+  },
+  "نقب": {
+    "source": "notes/%D9%86%D9%82%D8%A8.md"
+  },
+  "نقذ": {
+    "source": "notes/%D9%86%D9%82%D8%B0.md"
+  },
+  "نقر": {
+    "source": "notes/%D9%86%D9%82%D8%B1.md"
+  },
+  "نقص": {
+    "source": "notes/%D9%86%D9%82%D8%B5.md"
+  },
+  "نقض": {
+    "source": "notes/%D9%86%D9%82%D8%B6.md"
+  },
+  "نقع": {
+    "source": "notes/%D9%86%D9%82%D8%B9.md"
+  },
+  "نقم": {
+    "source": "notes/%D9%86%D9%82%D9%85.md"
+  },
+  "نكب": {
+    "source": "notes/%D9%86%D9%83%D8%A8.md"
+  },
+  "نكث": {
+    "source": "notes/%D9%86%D9%83%D8%AB.md"
+  },
+  "نكح": {
+    "source": "notes/%D9%86%D9%83%D8%AD.md"
+  },
+  "نكد": {
+    "source": "notes/%D9%86%D9%83%D8%AF.md"
+  },
+  "نكر": {
+    "source": "notes/%D9%86%D9%83%D8%B1.md"
+  },
+  "نكس": {
+    "source": "notes/%D9%86%D9%83%D8%B3.md"
+  },
+  "نكص": {
+    "source": "notes/%D9%86%D9%83%D8%B5.md"
+  },
+  "نكف": {
+    "source": "notes/%D9%86%D9%83%D9%81.md"
+  },
+  "نكل": {
+    "source": "notes/%D9%86%D9%83%D9%84.md"
+  },
+  "نمرق": {
+    "source": "notes/%D9%86%D9%85%D8%B1%D9%82.md"
+  },
+  "نمل": {
+    "source": "notes/%D9%86%D9%85%D9%84.md"
+  },
+  "نمم": {
+    "source": "notes/%D9%86%D9%85%D9%85.md"
+  },
+  "نهج": {
+    "source": "notes/%D9%86%D9%87%D8%AC.md"
+  },
+  "نهر": {
+    "source": "notes/%D9%86%D9%87%D8%B1.md"
+  },
+  "نهي": {
+    "source": "notes/%D9%86%D9%87%D9%8A.md"
+  },
+  "نوأ": {
+    "source": "notes/%D9%86%D9%88%D8%A3.md"
+  },
+  "نوب": {
+    "source": "notes/%D9%86%D9%88%D8%A8.md"
+  },
+  "نوح": {
+    "source": "notes/%D9%86%D9%88%D8%AD.md"
+  },
+  "نور": {
+    "source": "notes/%D9%86%D9%88%D8%B1.md"
+  },
+  "نوش": {
+    "source": "notes/%D9%86%D9%88%D8%B4.md"
+  },
+  "نوص": {
+    "source": "notes/%D9%86%D9%88%D8%B5.md"
+  },
+  "نوق": {
+    "source": "notes/%D9%86%D9%88%D9%82.md"
+  },
+  "نوم": {
+    "source": "notes/%D9%86%D9%88%D9%85.md"
+  },
+  "نون": {
+    "source": "notes/%D9%86%D9%88%D9%86.md"
+  },
+  "نوي": {
+    "source": "notes/%D9%86%D9%88%D9%8A.md"
+  },
+  "نيل": {
+    "source": "notes/%D9%86%D9%8A%D9%84.md"
+  },
+  "هاء": {
+    "source": "notes/%D9%87%D8%A7%D8%A1.md"
+  },
+  "هات": {
+    "source": "notes/%D9%87%D8%A7%D8%AA.md"
+  },
+  "هاروت": {
+    "source": "notes/%D9%87%D8%A7%D8%B1%D9%88%D8%AA.md"
+  },
+  "هارون": {
+    "source": "notes/%D9%87%D8%A7%D8%B1%D9%88%D9%86.md"
+  },
+  "هامان": {
+    "source": "notes/%D9%87%D8%A7%D9%85%D8%A7%D9%86.md"
+  },
+  "هبط": {
+    "source": "notes/%D9%87%D8%A8%D8%B7.md"
+  },
+  "هبو": {
+    "source": "notes/%D9%87%D8%A8%D9%88.md"
+  },
+  "هجد": {
+    "source": "notes/%D9%87%D8%AC%D8%AF.md"
+  },
+  "هجر": {
+    "source": "notes/%D9%87%D8%AC%D8%B1.md"
+  },
+  "هجع": {
+    "source": "notes/%D9%87%D8%AC%D8%B9.md"
+  },
+  "هدد": {
+    "source": "notes/%D9%87%D8%AF%D8%AF.md"
+  },
+  "هدم": {
+    "source": "notes/%D9%87%D8%AF%D9%85.md"
+  },
+  "هدهد": {
+    "source": "notes/%D9%87%D8%AF%D9%87%D8%AF.md"
+  },
   "هدي": {
     "source": "notes/%D9%87%D8%AF%D9%8A.md"
+  },
+  "هرب": {
+    "source": "notes/%D9%87%D8%B1%D8%A8.md"
+  },
+  "هرع": {
+    "source": "notes/%D9%87%D8%B1%D8%B9.md"
+  },
+  "هزأ": {
+    "source": "notes/%D9%87%D8%B2%D8%A3.md"
+  },
+  "هزز": {
+    "source": "notes/%D9%87%D8%B2%D8%B2.md"
+  },
+  "هزل": {
+    "source": "notes/%D9%87%D8%B2%D9%84.md"
+  },
+  "هزم": {
+    "source": "notes/%D9%87%D8%B2%D9%85.md"
+  },
+  "هشش": {
+    "source": "notes/%D9%87%D8%B4%D8%B4.md"
+  },
+  "هشم": {
+    "source": "notes/%D9%87%D8%B4%D9%85.md"
+  },
+  "هضم": {
+    "source": "notes/%D9%87%D8%B6%D9%85.md"
+  },
+  "هطع": {
+    "source": "notes/%D9%87%D8%B7%D8%B9.md"
+  },
+  "هلع": {
+    "source": "notes/%D9%87%D9%84%D8%B9.md"
+  },
+  "هلك": {
+    "source": "notes/%D9%87%D9%84%D9%83.md"
+  },
+  "هلل": {
+    "source": "notes/%D9%87%D9%84%D9%84.md"
+  },
+  "هلم": {
+    "source": "notes/%D9%87%D9%84%D9%85.md"
+  },
+  "همد": {
+    "source": "notes/%D9%87%D9%85%D8%AF.md"
+  },
+  "همر": {
+    "source": "notes/%D9%87%D9%85%D8%B1.md"
+  },
+  "همز": {
+    "source": "notes/%D9%87%D9%85%D8%B2.md"
+  },
+  "همس": {
+    "source": "notes/%D9%87%D9%85%D8%B3.md"
+  },
+  "همم": {
+    "source": "notes/%D9%87%D9%85%D9%85.md"
+  },
+  "همن": {
+    "source": "notes/%D9%87%D9%85%D9%86.md"
+  },
+  "هنأ": {
+    "source": "notes/%D9%87%D9%86%D8%A3.md"
+  },
+  "هود": {
+    "source": "notes/%D9%87%D9%88%D8%AF.md"
+  },
+  "هور": {
+    "source": "notes/%D9%87%D9%88%D8%B1.md"
+  },
+  "هون": {
+    "source": "notes/%D9%87%D9%88%D9%86.md"
+  },
+  "هوي": {
+    "source": "notes/%D9%87%D9%88%D9%8A.md"
+  },
+  "هيأ": {
+    "source": "notes/%D9%87%D9%8A%D8%A3.md"
+  },
+  "هيت": {
+    "source": "notes/%D9%87%D9%8A%D8%AA.md"
+  },
+  "هيج": {
+    "source": "notes/%D9%87%D9%8A%D8%AC.md"
+  },
+  "هيل": {
+    "source": "notes/%D9%87%D9%8A%D9%84.md"
+  },
+  "هيم": {
+    "source": "notes/%D9%87%D9%8A%D9%85.md"
+  },
+  "وأد": {
+    "source": "notes/%D9%88%D8%A3%D8%AF.md"
+  },
+  "وأل": {
+    "source": "notes/%D9%88%D8%A3%D9%84.md"
+  },
+  "وبر": {
+    "source": "notes/%D9%88%D8%A8%D8%B1.md"
+  },
+  "وبق": {
+    "source": "notes/%D9%88%D8%A8%D9%82.md"
+  },
+  "وبل": {
+    "source": "notes/%D9%88%D8%A8%D9%84.md"
+  },
+  "وتد": {
+    "source": "notes/%D9%88%D8%AA%D8%AF.md"
+  },
+  "وتر": {
+    "source": "notes/%D9%88%D8%AA%D8%B1.md"
+  },
+  "وتن": {
+    "source": "notes/%D9%88%D8%AA%D9%86.md"
+  },
+  "وثق": {
+    "source": "notes/%D9%88%D8%AB%D9%82.md"
+  },
+  "وثن": {
+    "source": "notes/%D9%88%D8%AB%D9%86.md"
+  },
+  "وجب": {
+    "source": "notes/%D9%88%D8%AC%D8%A8.md"
+  },
+  "وجد": {
+    "source": "notes/%D9%88%D8%AC%D8%AF.md"
+  },
+  "وجس": {
+    "source": "notes/%D9%88%D8%AC%D8%B3.md"
+  },
+  "وجف": {
+    "source": "notes/%D9%88%D8%AC%D9%81.md"
+  },
+  "وجل": {
+    "source": "notes/%D9%88%D8%AC%D9%84.md"
+  },
+  "وجه": {
+    "source": "notes/%D9%88%D8%AC%D9%87.md"
+  },
+  "وحد": {
+    "source": "notes/%D9%88%D8%AD%D8%AF.md"
+  },
+  "وحش": {
+    "source": "notes/%D9%88%D8%AD%D8%B4.md"
+  },
+  "وحي": {
+    "source": "notes/%D9%88%D8%AD%D9%8A.md"
+  },
+  "ودد": {
+    "source": "notes/%D9%88%D8%AF%D8%AF.md"
+  },
+  "ودع": {
+    "source": "notes/%D9%88%D8%AF%D8%B9.md"
+  },
+  "ودق": {
+    "source": "notes/%D9%88%D8%AF%D9%82.md"
+  },
+  "ودي": {
+    "source": "notes/%D9%88%D8%AF%D9%8A.md"
+  },
+  "وذر": {
+    "source": "notes/%D9%88%D8%B0%D8%B1.md"
+  },
+  "ورث": {
+    "source": "notes/%D9%88%D8%B1%D8%AB.md"
+  },
+  "ورد": {
+    "source": "notes/%D9%88%D8%B1%D8%AF.md"
+  },
+  "ورق": {
+    "source": "notes/%D9%88%D8%B1%D9%82.md"
+  },
+  "وري": {
+    "source": "notes/%D9%88%D8%B1%D9%8A.md"
+  },
+  "وزر": {
+    "source": "notes/%D9%88%D8%B2%D8%B1.md"
+  },
+  "وزع": {
+    "source": "notes/%D9%88%D8%B2%D8%B9.md"
+  },
+  "وزن": {
+    "source": "notes/%D9%88%D8%B2%D9%86.md"
+  },
+  "وسط": {
+    "source": "notes/%D9%88%D8%B3%D8%B7.md"
+  },
+  "وسع": {
+    "source": "notes/%D9%88%D8%B3%D8%B9.md"
+  },
+  "وسق": {
+    "source": "notes/%D9%88%D8%B3%D9%82.md"
+  },
+  "وسل": {
+    "source": "notes/%D9%88%D8%B3%D9%84.md"
+  },
+  "وسم": {
+    "source": "notes/%D9%88%D8%B3%D9%85.md"
+  },
+  "وسن": {
+    "source": "notes/%D9%88%D8%B3%D9%86.md"
+  },
+  "وسوس": {
+    "source": "notes/%D9%88%D8%B3%D9%88%D8%B3.md"
+  },
+  "وشي": {
+    "source": "notes/%D9%88%D8%B4%D9%8A.md"
+  },
+  "وصب": {
+    "source": "notes/%D9%88%D8%B5%D8%A8.md"
+  },
+  "وصد": {
+    "source": "notes/%D9%88%D8%B5%D8%AF.md"
+  },
+  "وصف": {
+    "source": "notes/%D9%88%D8%B5%D9%81.md"
+  },
+  "وصل": {
+    "source": "notes/%D9%88%D8%B5%D9%84.md"
+  },
+  "وصي": {
+    "source": "notes/%D9%88%D8%B5%D9%8A.md"
+  },
+  "وضع": {
+    "source": "notes/%D9%88%D8%B6%D8%B9.md"
+  },
+  "وضن": {
+    "source": "notes/%D9%88%D8%B6%D9%86.md"
+  },
+  "وطأ": {
+    "source": "notes/%D9%88%D8%B7%D8%A3.md"
+  },
+  "وطر": {
+    "source": "notes/%D9%88%D8%B7%D8%B1.md"
+  },
+  "وطن": {
+    "source": "notes/%D9%88%D8%B7%D9%86.md"
+  },
+  "وعد": {
+    "source": "notes/%D9%88%D8%B9%D8%AF.md"
+  },
+  "وعظ": {
+    "source": "notes/%D9%88%D8%B9%D8%B8.md"
+  },
+  "وعي": {
+    "source": "notes/%D9%88%D8%B9%D9%8A.md"
+  },
+  "وفد": {
+    "source": "notes/%D9%88%D9%81%D8%AF.md"
+  },
+  "وفر": {
+    "source": "notes/%D9%88%D9%81%D8%B1.md"
+  },
+  "وفض": {
+    "source": "notes/%D9%88%D9%81%D8%B6.md"
+  },
+  "وفق": {
+    "source": "notes/%D9%88%D9%81%D9%82.md"
+  },
+  "وفي": {
+    "source": "notes/%D9%88%D9%81%D9%8A.md"
+  },
+  "وقب": {
+    "source": "notes/%D9%88%D9%82%D8%A8.md"
+  },
+  "وقت": {
+    "source": "notes/%D9%88%D9%82%D8%AA.md"
+  },
+  "وقد": {
+    "source": "notes/%D9%88%D9%82%D8%AF.md"
+  },
+  "وقذ": {
+    "source": "notes/%D9%88%D9%82%D8%B0.md"
+  },
+  "وقر": {
+    "source": "notes/%D9%88%D9%82%D8%B1.md"
+  },
+  "وقع": {
+    "source": "notes/%D9%88%D9%82%D8%B9.md"
+  },
+  "وقف": {
+    "source": "notes/%D9%88%D9%82%D9%81.md"
+  },
+  "وقي": {
+    "source": "notes/%D9%88%D9%82%D9%8A.md"
+  },
+  "وكأ": {
+    "source": "notes/%D9%88%D9%83%D8%A3.md"
+  },
+  "وكد": {
+    "source": "notes/%D9%88%D9%83%D8%AF.md"
+  },
+  "وكز": {
+    "source": "notes/%D9%88%D9%83%D8%B2.md"
+  },
+  "وكل": {
+    "source": "notes/%D9%88%D9%83%D9%84.md"
+  },
+  "ولج": {
+    "source": "notes/%D9%88%D9%84%D8%AC.md"
+  },
+  "ولد": {
+    "source": "notes/%D9%88%D9%84%D8%AF.md"
+  },
+  "ولي": {
+    "source": "notes/%D9%88%D9%84%D9%8A.md"
+  },
+  "وني": {
+    "source": "notes/%D9%88%D9%86%D9%8A.md"
+  },
+  "وهب": {
+    "source": "notes/%D9%88%D9%87%D8%A8.md"
+  },
+  "وهج": {
+    "source": "notes/%D9%88%D9%87%D8%AC.md"
+  },
+  "وهن": {
+    "source": "notes/%D9%88%D9%87%D9%86.md"
+  },
+  "وهي": {
+    "source": "notes/%D9%88%D9%87%D9%8A.md"
+  },
+  "ويل": {
+    "source": "notes/%D9%88%D9%8A%D9%84.md"
+  },
+  "يأجوج": {
+    "source": "notes/%D9%8A%D8%A3%D8%AC%D9%88%D8%AC.md"
+  },
+  "يأس": {
+    "source": "notes/%D9%8A%D8%A3%D8%B3.md"
+  },
+  "ياس": {
+    "source": "notes/%D9%8A%D8%A7%D8%B3.md"
+  },
+  "ياقوت": {
+    "source": "notes/%D9%8A%D8%A7%D9%82%D9%88%D8%AA.md"
+  },
+  "يبس": {
+    "source": "notes/%D9%8A%D8%A8%D8%B3.md"
+  },
+  "يتم": {
+    "source": "notes/%D9%8A%D8%AA%D9%85.md"
+  },
+  "يثرب": {
+    "source": "notes/%D9%8A%D8%AB%D8%B1%D8%A8.md"
+  },
+  "يدي": {
+    "source": "notes/%D9%8A%D8%AF%D9%8A.md"
+  },
+  "يسر": {
+    "source": "notes/%D9%8A%D8%B3%D8%B1.md"
+  },
+  "يعقوب": {
+    "source": "notes/%D9%8A%D8%B9%D9%82%D9%88%D8%A8.md"
+  },
+  "يعوق": {
+    "source": "notes/%D9%8A%D8%B9%D9%88%D9%82.md"
+  },
+  "يغوث": {
+    "source": "notes/%D9%8A%D8%BA%D9%88%D8%AB.md"
+  },
+  "يقطين": {
+    "source": "notes/%D9%8A%D9%82%D8%B7%D9%8A%D9%86.md"
+  },
+  "يقظ": {
+    "source": "notes/%D9%8A%D9%82%D8%B8.md"
+  },
+  "يقن": {
+    "source": "notes/%D9%8A%D9%82%D9%86.md"
+  },
+  "يمم": {
+    "source": "notes/%D9%8A%D9%85%D9%85.md"
+  },
+  "يمن": {
+    "source": "notes/%D9%8A%D9%85%D9%86.md"
+  },
+  "ينع": {
+    "source": "notes/%D9%8A%D9%86%D8%B9.md"
+  },
+  "يوسف": {
+    "source": "notes/%D9%8A%D9%88%D8%B3%D9%81.md"
+  },
+  "يوم": {
+    "source": "notes/%D9%8A%D9%88%D9%85.md"
+  },
+  "يونس": {
+    "source": "notes/%D9%8A%D9%88%D9%86%D8%B3.md"
   }
 }
