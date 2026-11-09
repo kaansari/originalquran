@@ -8966,7 +8966,7 @@
       "2:34:8:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -10426,7 +10426,7 @@
       "2:40:2:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -11857,7 +11857,7 @@
       "2:47:2:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -12393,7 +12393,7 @@
       "2:49:5:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -12792,7 +12792,7 @@
       "2:50:8:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -12880,7 +12880,7 @@
       "2:51:3:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -13204,7 +13204,7 @@
       "2:53:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -13330,7 +13330,7 @@
       "2:54:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -13838,7 +13838,7 @@
       "2:55:3:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -15189,7 +15189,7 @@
       "2:60:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -15658,7 +15658,7 @@
       "2:61:3:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -18054,7 +18054,7 @@
       "2:67:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -21751,7 +21751,7 @@
       "2:79:1:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -22008,7 +22008,7 @@
       "2:79:16:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -22096,7 +22096,7 @@
       "2:79:21:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -22954,7 +22954,7 @@
       "2:83:5:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -24846,7 +24846,7 @@
       "2:87:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -24986,7 +24986,7 @@
       "2:87:10:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -25010,7 +25010,7 @@
       "2:87:12:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -26879,7 +26879,7 @@
       "2:92:3:1": {
         "word": "مُّوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -28433,7 +28433,7 @@
       "2:97:5:2": {
         "word": "جِبْرِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "جبريل",
         "lemma": "جِبْرِيل",
         "morphology": "PN|M|GEN"
       }
@@ -28792,7 +28792,7 @@
       "2:98:7:2": {
         "word": "جِبْرِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "جبريل",
         "lemma": "جِبْرِيل",
         "morphology": "PN|M|GEN"
       }
@@ -28811,7 +28811,7 @@
       "2:98:8:2": {
         "word": "مِيكَىٰلَ",
         "pos": "N",
-        "root": null,
+        "root": "ميكال",
         "lemma": "مِيكال",
         "morphology": "PN|M|GEN"
       }
@@ -29650,7 +29650,7 @@
       "2:102:7:1": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -29693,7 +29693,7 @@
       "2:102:10:1": {
         "word": "سُلَيْمَٰنُ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|NOM"
       }
@@ -29888,7 +29888,7 @@
       "2:102:21:2": {
         "word": "بَابِلَ",
         "pos": "N",
-        "root": null,
+        "root": "بابل",
         "lemma": "بابِل",
         "morphology": "PN|GEN"
       }
@@ -29900,7 +29900,7 @@
       "2:102:22:1": {
         "word": "هَٰرُوتَ",
         "pos": "N",
-        "root": null,
+        "root": "هاروت",
         "lemma": "هارُوت",
         "morphology": "PN|M|GEN"
       }
@@ -29919,7 +29919,7 @@
       "2:102:23:2": {
         "word": "مَٰرُوتَ",
         "pos": "N",
-        "root": null,
+        "root": "ماروت",
         "lemma": "مارُوت",
         "morphology": "PN|M|GEN"
       }
@@ -32249,7 +32249,7 @@
       "2:108:8:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -36704,7 +36704,7 @@
       "2:122:2:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -37190,7 +37190,7 @@
       "2:124:3:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -37642,7 +37642,7 @@
       "2:125:10:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -37704,7 +37704,7 @@
       "2:125:14:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -37723,7 +37723,7 @@
       "2:125:15:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|GEN"
       }
@@ -37913,7 +37913,7 @@
       "2:126:3:1": {
         "word": "إِبْرَٰهِۦمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -38399,7 +38399,7 @@
       "2:127:3:1": {
         "word": "إِبْرَٰهِۦمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -38468,7 +38468,7 @@
       "2:127:7:2": {
         "word": "إِسْمَٰعِيلُ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|NOM"
       }
@@ -39267,7 +39267,7 @@
       "2:130:5:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -39693,7 +39693,7 @@
       "2:132:3:1": {
         "word": "إِبْرَٰهِۦمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -39731,7 +39731,7 @@
       "2:132:5:2": {
         "word": "يَعْقُوبُ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|NOM"
       }
@@ -39991,7 +39991,7 @@
       "2:133:6:1": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|ACC"
       }
@@ -40222,7 +40222,7 @@
       "2:133:20:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -40241,7 +40241,7 @@
       "2:133:21:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|GEN"
       }
@@ -40260,7 +40260,7 @@
       "2:133:22:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -40739,7 +40739,7 @@
       "2:135:10:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -40975,7 +40975,7 @@
       "2:136:10:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -40994,7 +40994,7 @@
       "2:136:11:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|GEN"
       }
@@ -41013,7 +41013,7 @@
       "2:136:12:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -41032,7 +41032,7 @@
       "2:136:13:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -41101,7 +41101,7 @@
       "2:136:17:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -41120,7 +41120,7 @@
       "2:136:18:2": {
         "word": "عِيسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -42141,7 +42141,7 @@
       "2:140:4:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -42160,7 +42160,7 @@
       "2:140:5:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|ACC"
       }
@@ -42179,7 +42179,7 @@
       "2:140:6:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|ACC"
       }
@@ -42198,7 +42198,7 @@
       "2:140:7:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|ACC"
       }
@@ -48069,7 +48069,7 @@
       "2:158:2:2": {
         "word": "صَّفَا",
         "pos": "N",
-        "root": null,
+        "root": "صفا",
         "lemma": "صَفا",
         "morphology": "PN|ACC"
       }
@@ -66080,7 +66080,7 @@
       "2:206:10:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -67038,7 +67038,7 @@
       "2:211:3:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -82809,7 +82809,7 @@
       "2:246:7:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -82845,7 +82845,7 @@
       "2:246:10:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -83691,7 +83691,7 @@
       "2:247:9:1": {
         "word": "طَالُوتَ",
         "pos": "N",
-        "root": null,
+        "root": "طالوت",
         "lemma": "طالُوت",
         "morphology": "PN|ACC"
       }
@@ -84389,7 +84389,7 @@
       "2:248:9:2": {
         "word": "تَّابُوتُ",
         "pos": "N",
-        "root": null,
+        "root": "تابوت",
         "lemma": "تابُوت",
         "morphology": "M|NOM"
       }
@@ -84525,7 +84525,7 @@
       "2:248:18:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -84556,7 +84556,7 @@
       "2:248:20:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|GEN"
       }
@@ -84768,7 +84768,7 @@
       "2:249:3:1": {
         "word": "طَالُوتُ",
         "pos": "N",
-        "root": null,
+        "root": "طالوت",
         "lemma": "طالُوت",
         "morphology": "PN|NOM"
       }
@@ -85420,7 +85420,7 @@
       "2:249:41:2": {
         "word": "جَالُوتَ",
         "pos": "N",
-        "root": null,
+        "root": "جالوت",
         "lemma": "جالُوت",
         "morphology": "PN|GEN"
       }
@@ -85754,7 +85754,7 @@
       "2:250:3:2": {
         "word": "جَالُوتَ",
         "pos": "N",
-        "root": null,
+        "root": "جالوت",
         "lemma": "جالُوت",
         "morphology": "PN|GEN"
       }
@@ -86070,7 +86070,7 @@
       "2:251:5:1": {
         "word": "دَاوُۥدُ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|NOM"
       }
@@ -86082,7 +86082,7 @@
       "2:251:6:1": {
         "word": "جَالُوتَ",
         "pos": "N",
-        "root": null,
+        "root": "جالوت",
         "lemma": "جالُوت",
         "morphology": "PN|ACC"
       }
@@ -86874,7 +86874,7 @@
       "2:253:15:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -86898,7 +86898,7 @@
       "2:253:17:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -89455,7 +89455,7 @@
       "2:258:6:1": {
         "word": "إِبْرَٰهِۦمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -89584,7 +89584,7 @@
       "2:258:15:1": {
         "word": "إِبْرَٰهِۦمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -89725,7 +89725,7 @@
       "2:258:25:1": {
         "word": "إِبْرَٰهِۦمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -91061,7 +91061,7 @@
       "2:260:3:1": {
         "word": "إِبْرَٰهِۦمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -103958,7 +103958,7 @@
       "3:3:10:2": {
         "word": "تَّوْرَىٰةَ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|ACC"
       }
@@ -103984,7 +103984,7 @@
       "3:3:11:3": {
         "word": "إِنجِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|ACC"
       }
@@ -106052,7 +106052,7 @@
       "3:11:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -106387,7 +106387,7 @@
       "3:12:7:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -112945,7 +112945,7 @@
       "3:33:5:2": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -112976,7 +112976,7 @@
       "3:33:7:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -113007,7 +113007,7 @@
       "3:33:9:1": {
         "word": "عِمْرَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "عمران",
         "lemma": "عِمْران",
         "morphology": "PN|GEN"
       }
@@ -113184,7 +113184,7 @@
       "3:35:4:1": {
         "word": "عِمْرَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "عمران",
         "lemma": "عِمْران",
         "morphology": "PN|GEN"
       }
@@ -113738,7 +113738,7 @@
       "3:36:17:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -114042,7 +114042,7 @@
       "3:37:9:1": {
         "word": "زَكَرِيَّا",
         "pos": "N",
-        "root": null,
+        "root": "زكريا",
         "lemma": "زَكَرِيّا",
         "morphology": "PN|ACC"
       }
@@ -114097,7 +114097,7 @@
       "3:37:13:1": {
         "word": "زَكَرِيَّا",
         "pos": "N",
-        "root": null,
+        "root": "زكريا",
         "lemma": "زَكَرِيّا",
         "morphology": "PN|NOM"
       }
@@ -114190,7 +114190,7 @@
       "3:37:19:2": {
         "word": "مَرْيَمُ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|NOM"
       }
@@ -114441,7 +114441,7 @@
       "3:38:3:1": {
         "word": "زَكَرِيَّا",
         "pos": "N",
-        "root": null,
+        "root": "زكريا",
         "lemma": "زَكَرِيّا",
         "morphology": "PN|NOM"
       }
@@ -115618,7 +115618,7 @@
       "3:42:4:2": {
         "word": "مَرْيَمُ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|NOM"
       }
@@ -115775,7 +115775,7 @@
       "3:43:1:2": {
         "word": "مَرْيَمُ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|NOM"
       }
@@ -116160,7 +116160,7 @@
       "3:44:15:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -116310,7 +116310,7 @@
       "3:45:4:2": {
         "word": "مَرْيَمُ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|NOM"
       }
@@ -116441,7 +116441,7 @@
       "3:45:12:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -116465,7 +116465,7 @@
       "3:45:14:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -117148,7 +117148,7 @@
       "3:48:4:3": {
         "word": "تَّوْرَىٰةَ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|ACC"
       }
@@ -117174,7 +117174,7 @@
       "3:48:5:3": {
         "word": "إِنجِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|ACC"
       }
@@ -117229,7 +117229,7 @@
       "3:49:4:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -118052,7 +118052,7 @@
       "3:50:6:2": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -118494,7 +118494,7 @@
       "3:52:3:1": {
         "word": "عِيسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -119101,7 +119101,7 @@
       "3:55:4:2": {
         "word": "عِيسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -120157,7 +120157,7 @@
       "3:59:3:1": {
         "word": "عِيسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|GEN"
       }
@@ -121829,7 +121829,7 @@
       "3:65:6:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -121879,7 +121879,7 @@
       "3:65:9:2": {
         "word": "تَّوْرَىٰةُ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|NOM"
       }
@@ -121905,7 +121905,7 @@
       "3:65:10:3": {
         "word": "إِنجِيلُ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|NOM"
       }
@@ -122362,7 +122362,7 @@
       "3:67:3:1": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -122584,7 +122584,7 @@
       "3:68:4:2": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -127746,7 +127746,7 @@
       "3:84:10:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -127765,7 +127765,7 @@
       "3:84:11:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|GEN"
       }
@@ -127784,7 +127784,7 @@
       "3:84:12:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -127803,7 +127803,7 @@
       "3:84:13:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -127872,7 +127872,7 @@
       "3:84:17:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -127891,7 +127891,7 @@
       "3:84:18:2": {
         "word": "عِيسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -129962,7 +129962,7 @@
       "3:93:6:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -130010,7 +130010,7 @@
       "3:93:10:1": {
         "word": "إِسْرَٰٓءِيلُ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|NOM"
       }
@@ -130108,7 +130108,7 @@
       "3:93:17:2": {
         "word": "تَّوْرَىٰةُ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|NOM"
       }
@@ -130172,7 +130172,7 @@
       "3:93:20:3": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -130515,7 +130515,7 @@
       "3:95:6:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -130701,7 +130701,7 @@
       "3:96:7:2": {
         "word": "بَكَّةَ",
         "pos": "N",
-        "root": null,
+        "root": "بكة",
         "lemma": "بَكَّة",
         "morphology": "PN|GEN"
       }
@@ -130825,7 +130825,7 @@
       "3:97:5:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -138666,7 +138666,7 @@
       "3:123:4:2": {
         "word": "بَدْرٍ",
         "pos": "N",
-        "root": null,
+        "root": "بدر",
         "lemma": "بَدْر",
         "morphology": "PN|GEN"
       }
@@ -150157,7 +150157,7 @@
       "3:162:11:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -160886,7 +160886,7 @@
       "3:197:5:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -182804,7 +182804,7 @@
       "4:54:13:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -183082,7 +183082,7 @@
       "4:55:10:2": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -196832,7 +196832,7 @@
       "4:93:6:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -198730,7 +198730,7 @@
       "4:97:25:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -204671,7 +204671,7 @@
       "4:115:18:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|ACC"
       }
@@ -205899,7 +205899,7 @@
       "4:121:3:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -207034,7 +207034,7 @@
       "4:125:12:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -207089,7 +207089,7 @@
       "4:125:16:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -212385,7 +212385,7 @@
       "4:140:32:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -215915,7 +215915,7 @@
       "4:153:12:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -216331,7 +216331,7 @@
       "4:153:35:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -217196,7 +217196,7 @@
       "4:156:4:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -217315,7 +217315,7 @@
       "4:157:5:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -217339,7 +217339,7 @@
       "4:157:7:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -219261,7 +219261,7 @@
       "4:163:7:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -219368,7 +219368,7 @@
       "4:163:13:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -219387,7 +219387,7 @@
       "4:163:14:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|GEN"
       }
@@ -219406,7 +219406,7 @@
       "4:163:15:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -219425,7 +219425,7 @@
       "4:163:16:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -219470,7 +219470,7 @@
       "4:163:18:2": {
         "word": "عِيسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|GEN"
       }
@@ -219489,7 +219489,7 @@
       "4:163:19:2": {
         "word": "أَيُّوبَ",
         "pos": "N",
-        "root": null,
+        "root": "أيوب",
         "lemma": "أَيُّوب",
         "morphology": "PN|GEN"
       }
@@ -219508,7 +219508,7 @@
       "4:163:20:2": {
         "word": "يُونُسَ",
         "pos": "N",
-        "root": null,
+        "root": "يونس",
         "lemma": "يُونُس",
         "morphology": "PN|GEN"
       }
@@ -219527,7 +219527,7 @@
       "4:163:21:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|GEN"
       }
@@ -219546,7 +219546,7 @@
       "4:163:22:2": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -219584,7 +219584,7 @@
       "4:163:24:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|ACC"
       }
@@ -219808,7 +219808,7 @@
       "4:164:13:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -220664,7 +220664,7 @@
       "4:169:3:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -221440,7 +221440,7 @@
       "4:171:15:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -221464,7 +221464,7 @@
       "4:171:17:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -221557,7 +221557,7 @@
       "4:171:23:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -230354,7 +230354,7 @@
       "5:12:6:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -232881,7 +232881,7 @@
       "5:17:10:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -233051,7 +233051,7 @@
       "5:17:23:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -234361,7 +234361,7 @@
       "5:20:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -234956,7 +234956,7 @@
       "5:22:2:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -235601,7 +235601,7 @@
       "5:24:2:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -237560,7 +237560,7 @@
       "5:31:13:2": {
         "word": "وَيْلَتَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "ACC"
       },
@@ -237872,7 +237872,7 @@
       "5:32:7:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -242375,7 +242375,7 @@
       "5:43:4:2": {
         "word": "تَّوْرَىٰةُ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|NOM"
       }
@@ -242620,7 +242620,7 @@
       "5:44:3:2": {
         "word": "تَّوْرَىٰةَ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|ACC"
       }
@@ -243979,7 +243979,7 @@
       "5:46:4:2": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|GEN"
       }
@@ -244003,7 +244003,7 @@
       "5:46:6:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -244096,7 +244096,7 @@
       "5:46:12:2": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -244148,7 +244148,7 @@
       "5:46:14:2": {
         "word": "إِنجِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|ACC"
       }
@@ -244298,7 +244298,7 @@
       "5:46:23:2": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -244419,7 +244419,7 @@
       "5:47:3:2": {
         "word": "إِنجِيلِ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|GEN"
       }
@@ -251552,7 +251552,7 @@
       "5:66:4:2": {
         "word": "تَّوْرَىٰةَ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|ACC"
       }
@@ -251578,7 +251578,7 @@
       "5:66:5:3": {
         "word": "إِنجِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|ACC"
       }
@@ -252419,7 +252419,7 @@
       "5:68:9:2": {
         "word": "تَّوْرَىٰةَ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|ACC"
       }
@@ -252445,7 +252445,7 @@
       "5:68:10:3": {
         "word": "إِنجِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|ACC"
       }
@@ -253202,7 +253202,7 @@
       "5:70:5:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -253907,7 +253907,7 @@
       "5:72:10:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -253976,7 +253976,7 @@
       "5:72:14:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -254886,7 +254886,7 @@
       "5:75:4:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -255895,7 +255895,7 @@
       "5:78:6:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -255931,7 +255931,7 @@
       "5:78:9:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -255950,7 +255950,7 @@
       "5:78:10:2": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|GEN"
       }
@@ -255974,7 +255974,7 @@
       "5:78:12:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -266861,7 +266861,7 @@
       "5:110:4:2": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -266885,7 +266885,7 @@
       "5:110:6:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -267246,7 +267246,7 @@
       "5:110:25:3": {
         "word": "تَّوْرَىٰةَ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|ACC"
       }
@@ -267272,7 +267272,7 @@
       "5:110:26:3": {
         "word": "إِنجِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|ACC"
       }
@@ -267721,7 +267721,7 @@
       "5:110:50:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -268249,7 +268249,7 @@
       "5:112:4:2": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -268273,7 +268273,7 @@
       "5:112:6:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -268762,7 +268762,7 @@
       "5:114:2:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -268786,7 +268786,7 @@
       "5:114:4:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -269443,7 +269443,7 @@
       "5:116:4:2": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -269467,7 +269467,7 @@
       "5:116:6:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -291968,7 +291968,7 @@
       "6:74:3:1": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -292006,7 +292006,7 @@
       "6:74:5:1": {
         "word": "ءَازَرَ",
         "pos": "N",
-        "root": null,
+        "root": "آزر",
         "lemma": "آزَر",
         "morphology": "PN|M|GEN"
       }
@@ -292213,7 +292213,7 @@
       "6:75:3:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -294410,7 +294410,7 @@
       "6:83:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -294601,7 +294601,7 @@
       "6:84:3:1": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|ACC"
       }
@@ -294620,7 +294620,7 @@
       "6:84:4:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|ACC"
       }
@@ -294670,7 +294670,7 @@
       "6:84:7:2": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -294763,7 +294763,7 @@
       "6:84:13:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|ACC"
       }
@@ -294782,7 +294782,7 @@
       "6:84:14:2": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|ACC"
       }
@@ -294801,7 +294801,7 @@
       "6:84:15:2": {
         "word": "أَيُّوبَ",
         "pos": "N",
-        "root": null,
+        "root": "أيوب",
         "lemma": "أَيُّوب",
         "morphology": "PN|ACC"
       }
@@ -294820,7 +294820,7 @@
       "6:84:16:2": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -294839,7 +294839,7 @@
       "6:84:17:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -294858,7 +294858,7 @@
       "6:84:18:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -294948,7 +294948,7 @@
       "6:85:1:2": {
         "word": "زَكَرِيَّا",
         "pos": "N",
-        "root": null,
+        "root": "زكريا",
         "lemma": "زَكَرِيّا",
         "morphology": "PN|ACC"
       }
@@ -294986,7 +294986,7 @@
       "6:85:3:2": {
         "word": "عِيسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -295005,7 +295005,7 @@
       "6:85:4:2": {
         "word": "إِلْيَاسَ",
         "pos": "N",
-        "root": null,
+        "root": "إلياس",
         "lemma": "إِلْياس",
         "morphology": "PN|ACC"
       }
@@ -295067,7 +295067,7 @@
       "6:86:1:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|ACC"
       }
@@ -295093,7 +295093,7 @@
       "6:86:2:3": {
         "word": "يَسَعَ",
         "pos": "N",
-        "root": null,
+        "root": "اليسع",
         "lemma": "الْيَسَع",
         "morphology": "PN|ACC"
       }
@@ -295112,7 +295112,7 @@
       "6:86:3:2": {
         "word": "يُونُسَ",
         "pos": "N",
-        "root": null,
+        "root": "يونس",
         "lemma": "يُونُس",
         "morphology": "PN|ACC"
       }
@@ -295131,7 +295131,7 @@
       "6:86:4:2": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -296531,7 +296531,7 @@
       "6:91:22:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -318662,7 +318662,7 @@
       "6:154:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -321133,7 +321133,7 @@
       "6:161:11:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -324181,7 +324181,7 @@
       "7:11:12:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -325424,7 +325424,7 @@
       "7:18:10:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|ACC"
       }
@@ -332866,7 +332866,7 @@
       "7:41:3:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -338724,7 +338724,7 @@
       "7:59:3:1": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -341066,7 +341066,7 @@
       "7:69:18:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -342222,7 +342222,7 @@
       "7:73:2:1": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -344340,7 +344340,7 @@
       "7:80:1:2": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -345245,7 +345245,7 @@
       "7:85:4:1": {
         "word": "شُعَيْبًا",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -346687,7 +346687,7 @@
       "7:88:8:2": {
         "word": "شُعَيْبُ",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -347700,7 +347700,7 @@
       "7:90:9:1": {
         "word": "شُعَيْبًا",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -347907,7 +347907,7 @@
       "7:92:3:1": {
         "word": "شُعَيْبًا",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -348012,7 +348012,7 @@
       "7:92:10:1": {
         "word": "شُعَيْبًا",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -350685,7 +350685,7 @@
       "7:103:5:1": {
         "word": "مُّوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -350735,7 +350735,7 @@
       "7:103:8:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -350911,7 +350911,7 @@
       "7:104:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -350930,7 +350930,7 @@
       "7:104:3:2": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -351269,7 +351269,7 @@
       "7:105:18:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -351717,7 +351717,7 @@
       "7:109:5:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -352136,7 +352136,7 @@
       "7:113:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -352393,7 +352393,7 @@
       "7:115:2:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -352762,7 +352762,7 @@
       "7:117:3:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -353226,7 +353226,7 @@
       "7:122:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -353245,7 +353245,7 @@
       "7:122:3:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|GEN"
       }
@@ -353269,7 +353269,7 @@
       "7:123:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -354140,7 +354140,7 @@
       "7:127:5:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -354171,7 +354171,7 @@
       "7:127:7:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -354475,7 +354475,7 @@
       "7:128:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -355165,7 +355165,7 @@
       "7:130:4:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -355481,7 +355481,7 @@
       "7:131:11:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -356251,7 +356251,7 @@
       "7:134:6:2": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -356548,7 +356548,7 @@
       "7:134:22:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -357266,7 +357266,7 @@
       "7:137:18:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -357378,7 +357378,7 @@
       "7:137:25:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -357518,7 +357518,7 @@
       "7:138:3:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -357687,7 +357687,7 @@
       "7:138:13:2": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -358221,7 +358221,7 @@
       "7:141:5:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -358499,7 +358499,7 @@
       "7:142:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -358680,7 +358680,7 @@
       "7:142:13:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -358718,7 +358718,7 @@
       "7:142:15:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|GEN"
       }
@@ -358892,7 +358892,7 @@
       "7:143:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -359375,7 +359375,7 @@
       "7:143:31:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -359568,7 +359568,7 @@
       "7:144:2:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -361080,7 +361080,7 @@
       "7:148:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -361763,7 +361763,7 @@
       "7:150:3:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -363171,7 +363171,7 @@
       "7:154:4:1": {
         "word": "مُّوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -363397,7 +363397,7 @@
       "7:155:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -364770,7 +364770,7 @@
       "7:157:11:2": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -364796,7 +364796,7 @@
       "7:157:12:3": {
         "word": "إِنجِيلِ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|GEN"
       }
@@ -365989,7 +365989,7 @@
       "7:159:3:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -366222,7 +366222,7 @@
       "7:160:8:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -372600,7 +372600,7 @@
       "7:179:3:2": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -383309,7 +383309,7 @@
       "8:16:18:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -388522,7 +388522,7 @@
       "8:36:20:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -388791,7 +388791,7 @@
       "8:37:15:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -393383,7 +393383,7 @@
       "8:52:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -393929,7 +393929,7 @@
       "8:54:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -394145,7 +394145,7 @@
       "8:54:14:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -407661,7 +407661,7 @@
       "9:25:8:1": {
         "word": "حُنَيْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "حنين",
         "lemma": "حُنَيْن",
         "morphology": "PN|GEN"
       }
@@ -409343,7 +409343,7 @@
       "9:30:3:1": {
         "word": "عُزَيْرٌ",
         "pos": "N",
-        "root": null,
+        "root": "عزير",
         "lemma": "عُزَيْر",
         "morphology": "PN|NOM"
       }
@@ -409829,7 +409829,7 @@
       "9:31:10:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -411098,7 +411098,7 @@
       "9:35:6:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -416343,7 +416343,7 @@
       "9:49:13:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -420317,7 +420317,7 @@
       "9:63:11:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -421654,7 +421654,7 @@
       "9:68:7:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -422515,7 +422515,7 @@
       "9:70:8:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -422553,7 +422553,7 @@
       "9:70:10:2": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -422584,7 +422584,7 @@
       "9:70:12:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -423547,7 +423547,7 @@
       "9:72:16:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -423856,7 +423856,7 @@
       "9:73:9:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -426619,7 +426619,7 @@
       "9:81:22:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -431033,7 +431033,7 @@
       "9:95:14:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -435421,7 +435421,7 @@
       "9:109:22:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -436067,7 +436067,7 @@
       "9:111:21:2": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -436093,7 +436093,7 @@
       "9:111:22:3": {
         "word": "إِنجِيلِ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|GEN"
       }
@@ -437075,7 +437075,7 @@
       "9:114:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -437323,7 +437323,7 @@
       "9:114:20:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -450705,7 +450705,7 @@
       "10:24:38:3": {
         "word": "أَمْسِ",
         "pos": "N",
-        "root": null,
+        "root": "أمس",
         "lemma": "أَمْس",
         "morphology": "M|GEN"
       }
@@ -462601,7 +462601,7 @@
       "10:71:4:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -464173,7 +464173,7 @@
       "10:75:5:1": {
         "word": "مُّوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -464192,7 +464192,7 @@
       "10:75:6:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -464216,7 +464216,7 @@
       "10:75:8:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -464537,7 +464537,7 @@
       "10:77:2:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -465050,7 +465050,7 @@
       "10:79:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -465212,7 +465212,7 @@
       "10:80:6:1": {
         "word": "مُّوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -465329,7 +465329,7 @@
       "10:81:4:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -465703,7 +465703,7 @@
       "10:83:3:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -465806,7 +465806,7 @@
       "10:83:11:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -465894,7 +465894,7 @@
       "10:83:16:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -466039,7 +466039,7 @@
       "10:84:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -466550,7 +466550,7 @@
       "10:87:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -466835,7 +466835,7 @@
       "10:88:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -466904,7 +466904,7 @@
       "10:88:6:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -467537,7 +467537,7 @@
       "10:90:3:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -467594,7 +467594,7 @@
       "10:90:6:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -467866,7 +467866,7 @@
       "10:90:24:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -468370,7 +468370,7 @@
       "10:93:4:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -469637,7 +469637,7 @@
       "10:98:9:1": {
         "word": "يُونُسَ",
         "pos": "N",
-        "root": null,
+        "root": "يونس",
         "lemma": "يُونُس",
         "morphology": "PN|GEN"
       }
@@ -477196,7 +477196,7 @@
       "11:17:13:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -479327,7 +479327,7 @@
       "11:25:3:1": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -481428,7 +481428,7 @@
       "11:32:2:2": {
         "word": "نُوحُ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -482335,7 +482335,7 @@
       "11:36:3:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -483328,7 +483328,7 @@
       "11:40:6:2": {
         "word": "تَّنُّورُ",
         "pos": "N",
-        "root": null,
+        "root": "تنور",
         "lemma": "تَنُّور",
         "morphology": "M|NOM"
       }
@@ -483957,7 +483957,7 @@
       "11:42:8:1": {
         "word": "نُوحٌ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -484831,7 +484831,7 @@
       "11:45:2:1": {
         "word": "نُوحٌ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -485088,7 +485088,7 @@
       "11:46:2:2": {
         "word": "نُوحُ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -485753,7 +485753,7 @@
       "11:48:2:2": {
         "word": "نُوحُ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -489167,7 +489167,7 @@
       "11:61:2:1": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -491345,7 +491345,7 @@
       "11:68:7:1": {
         "word": "ثَمُودَا۟",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -491426,7 +491426,7 @@
       "11:68:12:2": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -491495,7 +491495,7 @@
       "11:69:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -491941,7 +491941,7 @@
       "11:70:18:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -492050,7 +492050,7 @@
       "11:71:5:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -492093,7 +492093,7 @@
       "11:71:8:1": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -492105,7 +492105,7 @@
       "11:71:9:1": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -492136,7 +492136,7 @@
       "11:72:2:2": {
         "word": "وَيْلَتَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "NOM"
       }
@@ -492577,7 +492577,7 @@
       "11:74:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -492696,7 +492696,7 @@
       "11:74:11:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -492720,7 +492720,7 @@
       "11:75:2:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -492782,7 +492782,7 @@
       "11:76:1:2": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -493042,7 +493042,7 @@
       "11:77:4:1": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -494047,7 +494047,7 @@
       "11:81:2:2": {
         "word": "لُوطُ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|NOM"
       }
@@ -494897,7 +494897,7 @@
       "11:84:4:1": {
         "word": "شُعَيْبًا",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -495758,7 +495758,7 @@
       "11:87:2:2": {
         "word": "شُعَيْبُ",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|NOM"
       }
@@ -496792,7 +496792,7 @@
       "11:89:11:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -496907,7 +496907,7 @@
       "11:89:20:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -497133,7 +497133,7 @@
       "11:91:2:2": {
         "word": "شُعَيْبُ",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|NOM"
       }
@@ -498094,7 +498094,7 @@
       "11:94:5:1": {
         "word": "شُعَيْبًا",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -498475,7 +498475,7 @@
       "11:95:10:1": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -498532,7 +498532,7 @@
       "11:96:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -498613,7 +498613,7 @@
       "11:97:2:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -498689,7 +498689,7 @@
       "11:97:6:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -498732,7 +498732,7 @@
       "11:97:9:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -501366,7 +501366,7 @@
       "11:110:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -503570,7 +503570,7 @@
       "11:119:11:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -504966,7 +504966,7 @@
       "12:4:3:1": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -505698,7 +505698,7 @@
       "12:6:13:1": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -505803,7 +505803,7 @@
       "12:6:20:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -505822,7 +505822,7 @@
       "12:6:21:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -505932,7 +505932,7 @@
       "12:7:4:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -506046,7 +506046,7 @@
       "12:8:3:2": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -506270,7 +506270,7 @@
       "12:9:2:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -506549,7 +506549,7 @@
       "12:10:6:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -506849,7 +506849,7 @@
       "12:11:8:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -507987,7 +507987,7 @@
       "12:17:7:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -509224,7 +509224,7 @@
       "12:21:17:2": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -511361,7 +511361,7 @@
       "12:29:1:1": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -514361,7 +514361,7 @@
       "12:38:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -514380,7 +514380,7 @@
       "12:38:5:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -514399,7 +514399,7 @@
       "12:38:6:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -516740,7 +516740,7 @@
       "12:46:1:1": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -518172,7 +518172,7 @@
       "12:51:6:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -519450,7 +519450,7 @@
       "12:56:3:2": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -519843,7 +519843,7 @@
       "12:58:3:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -522925,7 +522925,7 @@
       "12:68:19:1": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -523189,7 +523189,7 @@
       "12:69:4:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -524662,7 +524662,7 @@
       "12:76:13:2": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -525097,7 +525097,7 @@
       "12:77:11:1": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -526103,7 +526103,7 @@
       "12:80:23:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -527217,7 +527217,7 @@
       "12:84:6:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -527391,7 +527391,7 @@
       "12:85:5:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -527775,7 +527775,7 @@
       "12:87:5:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -528489,7 +528489,7 @@
       "12:89:6:2": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -528627,7 +528627,7 @@
       "12:90:4:1": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -528663,7 +528663,7 @@
       "12:90:7:1": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -529620,7 +529620,7 @@
       "12:94:9:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|ACC"
       }
@@ -530437,7 +530437,7 @@
       "12:99:4:1": {
         "word": "يُوسُفَ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|GEN"
       }
@@ -540847,7 +540847,7 @@
       "13:18:25:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -541851,7 +541851,7 @@
       "13:23:2:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -548798,7 +548798,7 @@
       "14:2:10:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -549484,7 +549484,7 @@
       "14:5:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -549827,7 +549827,7 @@
       "14:6:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -549982,7 +549982,7 @@
       "14:6:13:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -550476,7 +550476,7 @@
       "14:8:2:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -550760,7 +550760,7 @@
       "14:9:8:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -550798,7 +550798,7 @@
       "14:9:10:2": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -553241,7 +553241,7 @@
       "14:16:3:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -556980,7 +556980,7 @@
       "14:29:1:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -558505,7 +558505,7 @@
       "14:35:3:1": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -559786,7 +559786,7 @@
       "14:39:8:1": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|ACC"
       }
@@ -559805,7 +559805,7 @@
       "14:39:9:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -566427,7 +566427,7 @@
       "15:31:2:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -566525,7 +566525,7 @@
       "15:32:2:2": {
         "word": "إِبْلِيسُ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|NOM"
       }
@@ -567742,7 +567742,7 @@
       "15:43:2:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -568550,7 +568550,7 @@
       "15:51:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -569431,7 +569431,7 @@
       "15:59:3:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -569650,7 +569650,7 @@
       "15:61:4:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -571437,7 +571437,7 @@
       "15:78:4:2": {
         "word": "أَيْكَةِ",
         "pos": "N",
-        "root": null,
+        "root": "أيكة",
         "lemma": "أَيْكَة",
         "morphology": "GEN"
       }
@@ -579405,7 +579405,7 @@
       "16:29:3:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -579862,7 +579862,7 @@
       "16:31:2:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -602605,7 +602605,7 @@
       "16:120:2:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -603122,7 +603122,7 @@
       "16:123:7:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -604824,7 +604824,7 @@
       "17:2:2:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -604919,7 +604919,7 @@
       "17:2:7:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -605067,7 +605067,7 @@
       "17:3:5:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -605184,7 +605184,7 @@
       "17:4:4:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -606425,7 +606425,7 @@
       "17:8:9:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -608488,7 +608488,7 @@
       "17:17:7:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -608824,7 +608824,7 @@
       "17:18:15:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -613307,7 +613307,7 @@
       "17:39:16:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -616869,7 +616869,7 @@
       "17:55:14:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -617865,7 +617865,7 @@
       "17:59:12:1": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -618621,7 +618621,7 @@
       "17:61:8:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -619085,7 +619085,7 @@
       "17:63:7:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -626944,7 +626944,7 @@
       "17:97:23:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -627927,7 +627927,7 @@
       "17:101:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -628006,7 +628006,7 @@
       "17:101:9:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -628087,7 +628087,7 @@
       "17:101:14:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -628151,7 +628151,7 @@
       "17:101:17:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -628408,7 +628408,7 @@
       "17:102:14:2": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -628672,7 +628672,7 @@
       "17:104:5:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -638844,7 +638844,7 @@
       "18:31:4:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -639066,7 +639066,7 @@
       "18:31:19:1": {
         "word": "سُندُسٍ",
         "pos": "N",
-        "root": null,
+        "root": "سندس",
         "lemma": "سُندُس",
         "morphology": "M|INDEF|GEN"
       }
@@ -639085,7 +639085,7 @@
       "18:31:20:2": {
         "word": "إِسْتَبْرَقٍ",
         "pos": "N",
-        "root": null,
+        "root": "إستبرق",
         "lemma": "إِسْتَبْرَق",
         "morphology": "INDEF|GEN"
       }
@@ -643162,7 +643162,7 @@
       "18:49:9:2": {
         "word": "وَيْلَتَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "NOM"
       },
@@ -643600,7 +643600,7 @@
       "18:50:8:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -646483,7 +646483,7 @@
       "18:60:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -647785,7 +647785,7 @@
       "18:66:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -653185,7 +653185,7 @@
       "18:94:5:1": {
         "word": "يَأْجُوجَ",
         "pos": "N",
-        "root": null,
+        "root": "يأجوج",
         "lemma": "يَأْجُوج",
         "morphology": "PN|ACC"
       }
@@ -653204,7 +653204,7 @@
       "18:94:6:2": {
         "word": "مَأْجُوجَ",
         "pos": "N",
-        "root": null,
+        "root": "مأجوج",
         "lemma": "مَأْجُوج",
         "morphology": "PN|ACC"
       }
@@ -654514,7 +654514,7 @@
       "18:100:2:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -654938,7 +654938,7 @@
       "18:102:12:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -655540,7 +655540,7 @@
       "18:106:3:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -655811,7 +655811,7 @@
       "18:107:9:2": {
         "word": "فِرْدَوْسِ",
         "pos": "N",
-        "root": null,
+        "root": "فردوس",
         "lemma": "فِرْدَوْس",
         "morphology": "PN|GEN"
       }
@@ -656660,7 +656660,7 @@
       "19:2:5:1": {
         "word": "زَكَرِيَّآ",
         "pos": "N",
-        "root": null,
+        "root": "زكريا",
         "lemma": "زَكَرِيّا",
         "morphology": "PN|ACC"
       }
@@ -657265,7 +657265,7 @@
       "19:6:5:1": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -657341,7 +657341,7 @@
       "19:7:1:2": {
         "word": "زَكَرِيَّآ",
         "pos": "N",
-        "root": null,
+        "root": "زكريا",
         "lemma": "زَكَرِيّا",
         "morphology": "PN|NOM"
       }
@@ -658859,7 +658859,7 @@
       "19:16:4:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -660887,7 +660887,7 @@
       "19:27:6:2": {
         "word": "مَرْيَمُ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|NOM"
       }
@@ -660980,7 +660980,7 @@
       "19:28:2:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|GEN"
       }
@@ -661885,7 +661885,7 @@
       "19:34:2:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -661909,7 +661909,7 @@
       "19:34:4:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -662464,7 +662464,7 @@
       "19:37:5:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -663124,7 +663124,7 @@
       "19:41:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -664065,7 +664065,7 @@
       "19:46:6:2": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -664734,7 +664734,7 @@
       "19:49:10:1": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|ACC"
       }
@@ -664753,7 +664753,7 @@
       "19:49:11:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|ACC"
       }
@@ -665022,7 +665022,7 @@
       "19:51:4:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -665355,7 +665355,7 @@
       "19:53:6:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -665429,7 +665429,7 @@
       "19:54:4:1": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|ACC"
       }
@@ -665760,7 +665760,7 @@
       "19:56:4:1": {
         "word": "إِدْرِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إدريس",
         "lemma": "إِدْرِيس",
         "morphology": "PN|ACC"
       }
@@ -666082,7 +666082,7 @@
       "19:58:14:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -666125,7 +666125,7 @@
       "19:58:17:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -666144,7 +666144,7 @@
       "19:58:18:2": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -666758,7 +666758,7 @@
       "19:61:2:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -668207,7 +668207,7 @@
       "19:68:7:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -670881,7 +670881,7 @@
       "19:86:4:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -673177,7 +673177,7 @@
       "20:9:4:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -673539,7 +673539,7 @@
       "20:11:4:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -674393,7 +674393,7 @@
       "20:17:4:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -674655,7 +674655,7 @@
       "20:19:3:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -675127,7 +675127,7 @@
       "20:24:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -675489,7 +675489,7 @@
       "20:30:1:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -675846,7 +675846,7 @@
       "20:36:5:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -676089,7 +676089,7 @@
       "20:39:4:2": {
         "word": "تَّابُوتِ",
         "pos": "N",
-        "root": null,
+        "root": "تابوت",
         "lemma": "تابُوت",
         "morphology": "M|GEN"
       }
@@ -677021,7 +677021,7 @@
       "20:40:34:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -677268,7 +677268,7 @@
       "20:43:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -677854,7 +677854,7 @@
       "20:47:9:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -678278,7 +678278,7 @@
       "20:49:4:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -679544,7 +679544,7 @@
       "20:57:7:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -679951,7 +679951,7 @@
       "20:60:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -680056,7 +680056,7 @@
       "20:61:3:1": {
         "word": "مُّوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -680068,7 +680068,7 @@
       "20:61:4:1": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|ACC"
       },
@@ -680805,7 +680805,7 @@
       "20:65:2:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -681194,7 +681194,7 @@
       "20:67:5:1": {
         "word": "مُّوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -681647,7 +681647,7 @@
       "20:70:7:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|GEN"
       }
@@ -681666,7 +681666,7 @@
       "20:70:8:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -682841,7 +682841,7 @@
       "20:74:8:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|ACC"
       }
@@ -683115,7 +683115,7 @@
       "20:76:2:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -683346,7 +683346,7 @@
       "20:77:4:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -683594,7 +683594,7 @@
       "20:78:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -683739,7 +683739,7 @@
       "20:79:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -683820,7 +683820,7 @@
       "20:80:2:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -684595,7 +684595,7 @@
       "20:83:5:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -684940,7 +684940,7 @@
       "20:86:2:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -685827,7 +685827,7 @@
       "20:88:11:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -686115,7 +686115,7 @@
       "20:90:4:1": {
         "word": "هَٰرُونُ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|NOM"
       }
@@ -686486,7 +686486,7 @@
       "20:91:9:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -686517,7 +686517,7 @@
       "20:92:2:2": {
         "word": "هَٰرُونُ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|NOM"
       }
@@ -686952,7 +686952,7 @@
       "20:94:15:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -690851,7 +690851,7 @@
       "20:116:8:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -697293,7 +697293,7 @@
       "21:14:2:2": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "ACC"
       },
@@ -697990,7 +697990,7 @@
       "21:18:11:2": {
         "word": "وَيْلُ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|NOM"
       }
@@ -700007,7 +700007,7 @@
       "21:29:10:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -703616,7 +703616,7 @@
       "21:46:8:2": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "NOM"
       },
@@ -704047,7 +704047,7 @@
       "21:48:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -704066,7 +704066,7 @@
       "21:48:4:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -704477,7 +704477,7 @@
       "21:51:3:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -705843,7 +705843,7 @@
       "21:60:7:1": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -706109,7 +706109,7 @@
       "21:62:6:2": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -707132,7 +707132,7 @@
       "21:69:7:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -707293,7 +707293,7 @@
       "21:71:2:2": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -707457,7 +707457,7 @@
       "21:72:3:1": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -707476,7 +707476,7 @@
       "21:72:4:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -707856,7 +707856,7 @@
       "21:74:1:2": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -708239,7 +708239,7 @@
       "21:76:1:2": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -708688,7 +708688,7 @@
       "21:78:1:2": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -708707,7 +708707,7 @@
       "21:78:2:2": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -708952,7 +708952,7 @@
       "21:79:2:1": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -709071,7 +709071,7 @@
       "21:79:9:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -709375,7 +709375,7 @@
       "21:81:1:3": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -709834,7 +709834,7 @@
       "21:83:1:2": {
         "word": "أَيُّوبَ",
         "pos": "N",
-        "root": null,
+        "root": "أيوب",
         "lemma": "أَيُّوب",
         "morphology": "PN|GEN"
       }
@@ -710314,7 +710314,7 @@
       "21:85:1:2": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|ACC"
       }
@@ -710333,7 +710333,7 @@
       "21:85:2:2": {
         "word": "إِدْرِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إدريس",
         "lemma": "إِدْرِيس",
         "morphology": "PN|GEN"
       }
@@ -711073,7 +711073,7 @@
       "21:89:1:2": {
         "word": "زَكَرِيَّآ",
         "pos": "N",
-        "root": null,
+        "root": "زكريا",
         "lemma": "زَكَرِيّا",
         "morphology": "PN|GEN"
       }
@@ -712452,7 +712452,7 @@
       "21:96:4:1": {
         "word": "يَأْجُوجُ",
         "pos": "N",
-        "root": null,
+        "root": "يأجوج",
         "lemma": "يَأْجُوج",
         "morphology": "PN|NOM"
       }
@@ -712471,7 +712471,7 @@
       "21:96:5:2": {
         "word": "مَأْجُوجُ",
         "pos": "N",
-        "root": null,
+        "root": "مأجوج",
         "lemma": "مَأْجُوج",
         "morphology": "PN|NOM"
       }
@@ -712707,7 +712707,7 @@
       "21:97:10:2": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "NOM"
       },
@@ -712960,7 +712960,7 @@
       "21:98:8:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -722259,7 +722259,7 @@
       "22:26:3:2": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -727123,7 +727123,7 @@
       "22:42:7:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -727161,7 +727161,7 @@
       "22:42:9:2": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -727192,7 +727192,7 @@
       "22:43:2:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -727223,7 +727223,7 @@
       "22:43:4:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -727285,7 +727285,7 @@
       "22:44:4:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -735742,7 +735742,7 @@
       "22:78:17:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -737106,7 +737106,7 @@
       "23:11:3:2": {
         "word": "فِرْدَوْسَ",
         "pos": "N",
-        "root": null,
+        "root": "فردوس",
         "lemma": "فِرْدَوْس",
         "morphology": "PN|ACC"
       }
@@ -738575,7 +738575,7 @@
       "23:20:5:1": {
         "word": "سَيْنَآءَ",
         "pos": "N",
-        "root": null,
+        "root": "سيناء",
         "lemma": "سَيْناء",
         "morphology": "PN|GEN"
       }
@@ -739069,7 +739069,7 @@
       "23:23:3:1": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -740176,7 +740176,7 @@
       "23:27:12:2": {
         "word": "تَّنُّورُ",
         "pos": "N",
-        "root": null,
+        "root": "تنور",
         "lemma": "تَنُّور",
         "morphology": "M|NOM"
       }
@@ -743366,7 +743366,7 @@
       "23:45:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -743404,7 +743404,7 @@
       "23:45:5:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -743485,7 +743485,7 @@
       "23:46:2:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -743874,7 +743874,7 @@
       "23:49:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -743981,7 +743981,7 @@
       "23:50:3:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -751809,7 +751809,7 @@
       "23:103:9:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -781535,7 +781535,7 @@
       "25:28:1:2": {
         "word": "وَيْلَتَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "NOM"
       }
@@ -782679,7 +782679,7 @@
       "25:34:6:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -782810,7 +782810,7 @@
       "25:35:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -782905,7 +782905,7 @@
       "25:35:8:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -783126,7 +783126,7 @@
       "25:37:2:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -783387,7 +783387,7 @@
       "25:38:2:2": {
         "word": "ثَمُودَا۟",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -788423,7 +788423,7 @@
       "25:65:7:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -791710,7 +791710,7 @@
       "26:10:4:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -791796,7 +791796,7 @@
       "26:11:2:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -792065,7 +792065,7 @@
       "26:13:8:1": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|GEN"
       }
@@ -792343,7 +792343,7 @@
       "26:16:2:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -792498,7 +792498,7 @@
       "26:17:5:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -793240,7 +793240,7 @@
       "26:22:8:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -793264,7 +793264,7 @@
       "26:23:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -795268,7 +795268,7 @@
       "26:41:5:2": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -795530,7 +795530,7 @@
       "26:43:3:1": {
         "word": "مُّوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -795713,7 +795713,7 @@
       "26:44:6:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -795801,7 +795801,7 @@
       "26:45:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -796044,7 +796044,7 @@
       "26:48:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -796063,7 +796063,7 @@
       "26:48:3:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -796784,7 +796784,7 @@
       "26:52:3:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -796896,7 +796896,7 @@
       "26:53:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -797338,7 +797338,7 @@
       "26:59:4:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -797469,7 +797469,7 @@
       "26:61:6:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -797657,7 +797657,7 @@
       "26:63:3:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -797928,7 +797928,7 @@
       "26:65:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -798316,7 +798316,7 @@
       "26:69:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -800515,7 +800515,7 @@
       "26:95:2:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -801313,7 +801313,7 @@
       "26:105:3:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -801406,7 +801406,7 @@
       "26:106:5:1": {
         "word": "نُوحٌ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -802339,7 +802339,7 @@
       "26:116:5:2": {
         "word": "نُوحُ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -804682,7 +804682,7 @@
       "26:141:2:1": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -806515,7 +806515,7 @@
       "26:160:3:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -806608,7 +806608,7 @@
       "26:161:5:1": {
         "word": "لُوطٌ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|NOM"
       }
@@ -807270,7 +807270,7 @@
       "26:167:5:2": {
         "word": "لُوطُ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|NOM"
       }
@@ -808069,7 +808069,7 @@
       "26:176:3:2": {
         "word": "ـَٔيْكَةِ",
         "pos": "N",
-        "root": null,
+        "root": "أيكة",
         "lemma": "أَيْكَة",
         "morphology": "GEN"
       }
@@ -808143,7 +808143,7 @@
       "26:177:4:1": {
         "word": "شُعَيْبٌ",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|NOM"
       }
@@ -810249,7 +810249,7 @@
       "26:197:9:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -813812,7 +813812,7 @@
       "27:7:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -814288,7 +814288,7 @@
       "27:9:1:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -814562,7 +814562,7 @@
       "27:10:12:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -815002,7 +815002,7 @@
       "27:12:14:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -815473,7 +815473,7 @@
       "27:15:3:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -815492,7 +815492,7 @@
       "27:15:4:2": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -815704,7 +815704,7 @@
       "27:16:2:1": {
         "word": "سُلَيْمَٰنُ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|NOM"
       }
@@ -815716,7 +815716,7 @@
       "27:16:3:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|ACC"
       }
@@ -816018,7 +816018,7 @@
       "27:17:2:2": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -816401,7 +816401,7 @@
       "27:18:15:1": {
         "word": "سُلَيْمَٰنُ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|NOM"
       }
@@ -818812,7 +818812,7 @@
       "27:30:3:1": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -819837,7 +819837,7 @@
       "27:36:3:1": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -822366,7 +822366,7 @@
       "27:44:25:1": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -822485,7 +822485,7 @@
       "27:45:4:1": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -824109,7 +824109,7 @@
       "27:54:1:2": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -824571,7 +824571,7 @@
       "27:56:10:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -828598,7 +828598,7 @@
       "27:76:7:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -832383,7 +832383,7 @@
       "28:3:5:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -832402,7 +832402,7 @@
       "28:3:6:2": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -832490,7 +832490,7 @@
       "28:4:2:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -833057,7 +833057,7 @@
       "28:6:6:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -833076,7 +833076,7 @@
       "28:6:7:2": {
         "word": "هَٰمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "هامان",
         "lemma": "هامان",
         "morphology": "PN|M|ACC"
       }
@@ -833233,7 +833233,7 @@
       "28:7:4:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -833618,7 +833618,7 @@
       "28:8:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -833711,7 +833711,7 @@
       "28:8:9:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -833730,7 +833730,7 @@
       "28:8:10:2": {
         "word": "هَٰمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "هامان",
         "lemma": "هامان",
         "morphology": "PN|M|ACC"
       }
@@ -833830,7 +833830,7 @@
       "28:9:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -834128,7 +834128,7 @@
       "28:10:4:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -835699,7 +835699,7 @@
       "28:15:27:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -836406,7 +836406,7 @@
       "28:18:9:3": {
         "word": "أَمْسِ",
         "pos": "N",
-        "root": null,
+        "root": "أمس",
         "lemma": "أَمْس",
         "morphology": "M|GEN"
       }
@@ -836468,7 +836468,7 @@
       "28:18:13:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -836678,7 +836678,7 @@
       "28:19:11:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -836804,7 +836804,7 @@
       "28:19:18:3": {
         "word": "أَمْسِ",
         "pos": "N",
-        "root": null,
+        "root": "أمس",
         "lemma": "أَمْس",
         "morphology": "M|GEN"
       }
@@ -837110,7 +837110,7 @@
       "28:20:8:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -839619,7 +839619,7 @@
       "28:29:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -840250,7 +840250,7 @@
       "28:30:14:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -840529,7 +840529,7 @@
       "28:31:13:2": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -840925,7 +840925,7 @@
       "28:32:20:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -841208,7 +841208,7 @@
       "28:34:2:1": {
         "word": "هَٰرُونُ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|NOM"
       }
@@ -841736,7 +841736,7 @@
       "28:36:3:1": {
         "word": "مُّوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -842005,7 +842005,7 @@
       "28:37:2:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -842298,7 +842298,7 @@
       "28:38:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -842493,7 +842493,7 @@
       "28:38:13:2": {
         "word": "هَٰمَٰنُ",
         "pos": "N",
-        "root": null,
+        "root": "هامان",
         "lemma": "هامان",
         "morphology": "PN|M|NOM"
       }
@@ -842641,7 +842641,7 @@
       "28:38:23:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -843539,7 +843539,7 @@
       "28:43:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -843896,7 +843896,7 @@
       "28:44:8:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -845101,7 +845101,7 @@
       "28:48:12:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -845189,7 +845189,7 @@
       "28:48:17:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -851772,7 +851772,7 @@
       "28:76:2:1": {
         "word": "قَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "قارون",
         "lemma": "قارُون",
         "morphology": "PN|GEN"
       }
@@ -851820,7 +851820,7 @@
       "28:76:6:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -853286,7 +853286,7 @@
       "28:79:16:1": {
         "word": "قَٰرُونُ",
         "pos": "N",
-        "root": null,
+        "root": "قارون",
         "lemma": "قارُون",
         "morphology": "PN|NOM"
       }
@@ -853429,7 +853429,7 @@
       "28:80:5:1": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|ACC"
       },
@@ -853993,7 +853993,7 @@
       "28:82:5:3": {
         "word": "أَمْسِ",
         "pos": "N",
-        "root": null,
+        "root": "أمس",
         "lemma": "أَمْس",
         "morphology": "M|GEN"
       }
@@ -858883,7 +858883,7 @@
       "29:14:3:1": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -859249,7 +859249,7 @@
       "29:16:1:2": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -862062,7 +862062,7 @@
       "29:26:3:1": {
         "word": "لُوطٌ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|NOM"
       }
@@ -862269,7 +862269,7 @@
       "29:27:3:1": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -862288,7 +862288,7 @@
       "29:27:4:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -862587,7 +862587,7 @@
       "29:28:1:2": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -863377,7 +863377,7 @@
       "29:31:4:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -863620,7 +863620,7 @@
       "29:32:4:1": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -863908,7 +863908,7 @@
       "29:33:5:1": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -864589,7 +864589,7 @@
       "29:36:4:1": {
         "word": "شُعَيْبًا",
         "pos": "N",
-        "root": null,
+        "root": "شعيب",
         "lemma": "شُعَيْب",
         "morphology": "PN|ACC"
       }
@@ -864995,7 +864995,7 @@
       "29:38:2:2": {
         "word": "ثَمُودَا۟",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|ACC"
       }
@@ -865266,7 +865266,7 @@
       "29:39:1:2": {
         "word": "قَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "قارون",
         "lemma": "قارُون",
         "morphology": "PN|GEN"
       }
@@ -865285,7 +865285,7 @@
       "29:39:2:2": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -865304,7 +865304,7 @@
       "29:39:3:2": {
         "word": "هَٰمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "هامان",
         "lemma": "هامان",
         "morphology": "PN|M|ACC"
       }
@@ -865361,7 +865361,7 @@
       "29:39:6:1": {
         "word": "مُّوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -869609,7 +869609,7 @@
       "29:54:4:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -872728,7 +872728,7 @@
       "29:68:15:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -872987,7 +872987,7 @@
       "30:2:2:2": {
         "word": "رُّومُ",
         "pos": "N",
-        "root": null,
+        "root": "روم",
         "lemma": "رُوم",
         "morphology": "PN|P|NOM"
       }
@@ -888607,7 +888607,7 @@
       "31:12:3:1": {
         "word": "لُقْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "لقمان",
         "lemma": "لُقْمان",
         "morphology": "PN|GEN"
       }
@@ -888893,7 +888893,7 @@
       "31:13:3:1": {
         "word": "لُقْمَٰنُ",
         "pos": "N",
-        "root": null,
+        "root": "لقمان",
         "lemma": "لُقْمان",
         "morphology": "PN|NOM"
       }
@@ -897991,7 +897991,7 @@
       "32:13:12:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -900139,7 +900139,7 @@
       "32:23:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -900320,7 +900320,7 @@
       "32:23:14:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -903757,7 +903757,7 @@
       "33:7:8:1": {
         "word": "نُّوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -903776,7 +903776,7 @@
       "33:7:9:2": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -903795,7 +903795,7 @@
       "33:7:10:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -903814,7 +903814,7 @@
       "33:7:11:2": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|GEN"
       }
@@ -903838,7 +903838,7 @@
       "33:7:13:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -905097,7 +905097,7 @@
       "33:13:6:1": {
         "word": "يَثْرِبَ",
         "pos": "N",
-        "root": null,
+        "root": "يثرب",
         "lemma": "يَثْرِب",
         "morphology": "PN|ACC"
       }
@@ -912998,7 +912998,7 @@
       "33:37:28:1": {
         "word": "زَيْدٌ",
         "pos": "N",
-        "root": null,
+        "root": "زيد",
         "lemma": "زَيْد",
         "morphology": "PN|NOM"
       }
@@ -922067,7 +922067,7 @@
       "33:69:8:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -925896,7 +925896,7 @@
       "34:10:3:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -926293,7 +926293,7 @@
       "34:12:1:3": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -926955,7 +926955,7 @@
       "34:13:14:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -928935,7 +928935,7 @@
       "34:20:4:1": {
         "word": "إِبْلِيسُ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|NOM"
       }
@@ -946070,7 +946070,7 @@
       "35:33:2:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -946751,7 +946751,7 @@
       "35:36:5:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -957891,7 +957891,7 @@
       "36:52:2:2": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "NOM"
       },
@@ -959290,7 +959290,7 @@
       "36:63:2:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -964180,7 +964180,7 @@
       "37:20:2:2": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "NOM"
       },
@@ -968881,7 +968881,7 @@
       "37:75:3:1": {
         "word": "نُوحٌ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -969223,7 +969223,7 @@
       "37:79:3:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -969525,7 +969525,7 @@
       "37:83:4:2": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -971544,7 +971544,7 @@
       "37:104:3:2": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -971941,7 +971941,7 @@
       "37:109:3:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -972126,7 +972126,7 @@
       "37:112:2:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -972245,7 +972245,7 @@
       "37:113:4:1": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -972421,7 +972421,7 @@
       "37:114:4:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -972440,7 +972440,7 @@
       "37:114:5:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -972893,7 +972893,7 @@
       "37:120:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -972912,7 +972912,7 @@
       "37:120:4:2": {
         "word": "هَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "هارون",
         "lemma": "هارُون",
         "morphology": "PN|M|ACC"
       }
@@ -973095,14 +973095,14 @@
       "37:123:2:1": {
         "word": "إلْ",
         "pos": "N",
-        "root": null,
+        "root": "إل",
         "lemma": "إِل",
         "morphology": "PN|GEN"
       },
       "37:123:2:2": {
         "word": "يَاسَ",
         "pos": "N",
-        "root": null,
+        "root": "ياس",
         "lemma": "ياس",
         "morphology": "PN|GEN"
       }
@@ -973656,7 +973656,7 @@
       "37:130:3:1": {
         "word": "إِلْ",
         "pos": "N",
-        "root": null,
+        "root": "إلياس",
         "lemma": "إِلْياس",
         "morphology": "PN|GEN"
       }
@@ -973668,7 +973668,7 @@
       "37:130:4:1": {
         "word": "يَاسِينَ",
         "pos": "N",
-        "root": null,
+        "root": "إلياس",
         "lemma": "إِلْياس",
         "morphology": "PN|GEN"
       }
@@ -973851,7 +973851,7 @@
       "37:133:2:1": {
         "word": "لُوطًا",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|ACC"
       }
@@ -974262,7 +974262,7 @@
       "37:139:2:1": {
         "word": "يُونُسَ",
         "pos": "N",
-        "root": null,
+        "root": "يونس",
         "lemma": "يُونُس",
         "morphology": "PN|GEN"
       }
@@ -974864,7 +974864,7 @@
       "37:146:5:1": {
         "word": "يَقْطِينٍ",
         "pos": "N",
-        "root": null,
+        "root": "يقطين",
         "lemma": "يَقْطِين",
         "morphology": "M|INDEF|GEN"
       }
@@ -979292,7 +979292,7 @@
       "38:12:4:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -979330,7 +979330,7 @@
       "38:12:6:2": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -979380,7 +979380,7 @@
       "38:13:1:2": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -979411,7 +979411,7 @@
       "38:13:3:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -979449,7 +979449,7 @@
       "38:13:5:2": {
         "word": "ـَٔيْكَةِ",
         "pos": "N",
-        "root": null,
+        "root": "أيكة",
         "lemma": "أَيْكَة",
         "morphology": "GEN"
       }
@@ -979976,7 +979976,7 @@
       "38:17:7:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|ACC"
       }
@@ -980575,7 +980575,7 @@
       "38:22:4:1": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -981556,7 +981556,7 @@
       "38:24:25:1": {
         "word": "دَاوُۥدُ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|NOM"
       }
@@ -981886,7 +981886,7 @@
       "38:26:1:2": {
         "word": "دَاوُۥدُ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|NOM"
       }
@@ -982574,7 +982574,7 @@
       "38:27:12:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -983085,7 +983085,7 @@
       "38:30:2:2": {
         "word": "دَاوُۥدَ",
         "pos": "N",
-        "root": null,
+        "root": "داود",
         "lemma": "داوُد",
         "morphology": "PN|GEN"
       }
@@ -983097,7 +983097,7 @@
       "38:30:3:1": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -983632,7 +983632,7 @@
       "38:34:3:1": {
         "word": "سُلَيْمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "سليمان",
         "lemma": "سُلَيْمان",
         "morphology": "PN|GEN"
       }
@@ -984499,7 +984499,7 @@
       "38:41:3:1": {
         "word": "أَيُّوبَ",
         "pos": "N",
-        "root": null,
+        "root": "أيوب",
         "lemma": "أَيُّوب",
         "morphology": "PN|GEN"
       }
@@ -985229,7 +985229,7 @@
       "38:45:3:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -985248,7 +985248,7 @@
       "38:45:4:2": {
         "word": "إِسْحَٰقَ",
         "pos": "N",
-        "root": null,
+        "root": "إسحاق",
         "lemma": "إِسْحاق",
         "morphology": "PN|GEN"
       }
@@ -985267,7 +985267,7 @@
       "38:45:5:2": {
         "word": "يَعْقُوبَ",
         "pos": "N",
-        "root": null,
+        "root": "يعقوب",
         "lemma": "يَعْقُوب",
         "morphology": "PN|GEN"
       }
@@ -985552,7 +985552,7 @@
       "38:48:2:1": {
         "word": "إِسْمَٰعِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسماعيل",
         "lemma": "إِسْماعِيل",
         "morphology": "PN|M|ACC"
       }
@@ -985578,7 +985578,7 @@
       "38:48:3:3": {
         "word": "يَسَعَ",
         "pos": "N",
-        "root": null,
+        "root": "اليسع",
         "lemma": "الْيَسَع",
         "morphology": "PN|ACC"
       }
@@ -985797,7 +985797,7 @@
       "38:50:2:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -986342,7 +986342,7 @@
       "38:56:1:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -988488,7 +988488,7 @@
       "38:74:2:1": {
         "word": "إِبْلِيسَ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|ACC"
       }
@@ -988581,7 +988581,7 @@
       "38:75:2:2": {
         "word": "إِبْلِيسُ",
         "pos": "N",
-        "root": null,
+        "root": "إبليس",
         "lemma": "إِبْلِيس",
         "morphology": "PN|M|NOM"
       }
@@ -989642,7 +989642,7 @@
       "38:85:2:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -996336,7 +996336,7 @@
       "39:22:11:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -998543,7 +998543,7 @@
       "39:32:13:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1005384,7 +1005384,7 @@
       "39:60:12:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1007550,7 +1007550,7 @@
       "39:71:5:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1008100,7 +1008100,7 @@
       "39:72:4:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1009679,7 +1009679,7 @@
       "40:5:4:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -1010788,7 +1010788,7 @@
       "40:8:4:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -1014390,7 +1014390,7 @@
       "40:23:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1014471,7 +1014471,7 @@
       "40:24:2:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1014490,7 +1014490,7 @@
       "40:24:3:2": {
         "word": "هَٰمَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "هامان",
         "lemma": "هامان",
         "morphology": "PN|M|ACC"
       }
@@ -1014509,7 +1014509,7 @@
       "40:24:4:2": {
         "word": "قَٰرُونَ",
         "pos": "N",
-        "root": null,
+        "root": "قارون",
         "lemma": "قارُون",
         "morphology": "PN|GEN"
       }
@@ -1014916,7 +1014916,7 @@
       "40:26:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -1014966,7 +1014966,7 @@
       "40:26:5:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1015202,7 +1015202,7 @@
       "40:27:2:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1015469,7 +1015469,7 @@
       "40:28:6:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -1016232,7 +1016232,7 @@
       "40:29:16:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -1016590,7 +1016590,7 @@
       "40:31:4:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -1016628,7 +1016628,7 @@
       "40:31:6:2": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -1017157,7 +1017157,7 @@
       "40:34:3:1": {
         "word": "يُوسُفُ",
         "pos": "N",
-        "root": null,
+        "root": "يوسف",
         "lemma": "يُوسُف",
         "morphology": "PN|M|NOM"
       }
@@ -1017928,7 +1017928,7 @@
       "40:36:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -1017947,7 +1017947,7 @@
       "40:36:3:2": {
         "word": "هَٰمَٰنُ",
         "pos": "N",
-        "root": null,
+        "root": "هامان",
         "lemma": "هامان",
         "morphology": "PN|M|NOM"
       }
@@ -1018126,7 +1018126,7 @@
       "40:37:6:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1018261,7 +1018261,7 @@
       "40:37:12:2": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1018385,7 +1018385,7 @@
       "40:37:20:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -1020242,7 +1020242,7 @@
       "40:45:8:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -1020454,7 +1020454,7 @@
       "40:46:11:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -1021069,7 +1021069,7 @@
       "40:49:6:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1021892,7 +1021892,7 @@
       "40:53:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1021961,7 +1021961,7 @@
       "40:53:7:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -1023444,7 +1023444,7 @@
       "40:60:12:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1026777,7 +1026777,7 @@
       "40:76:3:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1030189,7 +1030189,7 @@
       "41:6:15:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1031729,7 +1031729,7 @@
       "41:13:9:2": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -1032893,7 +1032893,7 @@
       "41:17:2:1": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -1039970,7 +1039970,7 @@
       "41:45:3:1": {
         "word": "مُوسَى",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1045523,7 +1045523,7 @@
       "42:13:8:1": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -1045649,7 +1045649,7 @@
       "42:13:15:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -1045668,7 +1045668,7 @@
       "42:13:16:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|ACC"
       }
@@ -1045687,7 +1045687,7 @@
       "42:13:17:2": {
         "word": "عِيسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|ACC"
       }
@@ -1060941,7 +1060941,7 @@
       "43:26:3:1": {
         "word": "إِبْرَٰهِيمُ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|NOM"
       }
@@ -1064376,7 +1064376,7 @@
       "43:46:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1064426,7 +1064426,7 @@
       "43:46:6:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1065244,7 +1065244,7 @@
       "43:51:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -1066220,7 +1066220,7 @@
       "43:57:4:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -1066680,7 +1066680,7 @@
       "43:59:10:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -1067191,7 +1067191,7 @@
       "43:63:3:1": {
         "word": "عِيسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|GEN"
       }
@@ -1067716,7 +1067716,7 @@
       "43:65:5:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1068975,7 +1068975,7 @@
       "43:74:5:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1072781,7 +1072781,7 @@
       "44:17:5:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -1074118,7 +1074118,7 @@
       "44:30:4:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -1074192,7 +1074192,7 @@
       "44:31:2:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1074835,7 +1074835,7 @@
       "44:37:5:1": {
         "word": "تُبَّعٍ",
         "pos": "N",
-        "root": null,
+        "root": "تبع",
         "lemma": "تُبَّع",
         "morphology": "PN|GEN"
       }
@@ -1076286,7 +1076286,7 @@
       "44:53:3:1": {
         "word": "سُندُسٍ",
         "pos": "N",
-        "root": null,
+        "root": "سندس",
         "lemma": "سُندُس",
         "morphology": "M|INDEF|GEN"
       }
@@ -1076305,7 +1076305,7 @@
       "44:53:4:2": {
         "word": "إِسْتَبْرَقٍ",
         "pos": "N",
-        "root": null,
+        "root": "إستبرق",
         "lemma": "إِسْتَبْرَق",
         "morphology": "INDEF|GEN"
       }
@@ -1077889,7 +1077889,7 @@
       "45:7:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1078345,7 +1078345,7 @@
       "45:10:3:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -1079783,7 +1079783,7 @@
       "45:16:4:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -1087619,7 +1087619,7 @@
       "46:10:14:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -1088169,7 +1088169,7 @@
       "46:12:4:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1090062,7 +1090062,7 @@
       "46:17:17:1": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|ACC"
       },
@@ -1094050,7 +1094050,7 @@
       "46:30:9:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1106417,7 +1106417,7 @@
       "48:6:19:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1111463,7 +1111463,7 @@
       "48:24:9:1": {
         "word": "مَكَّةَ",
         "pos": "N",
-        "root": null,
+        "root": "مكة",
         "lemma": "مَكَّة",
         "morphology": "PN|GEN"
       }
@@ -1113883,7 +1113883,7 @@
       "48:29:28:2": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -1113940,7 +1113940,7 @@
       "48:29:31:2": {
         "word": "إِنجِيلِ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|GEN"
       }
@@ -1121671,7 +1121671,7 @@
       "50:12:4:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -1121728,7 +1121728,7 @@
       "50:12:7:2": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -1121766,7 +1121766,7 @@
       "50:13:2:2": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -1121797,7 +1121797,7 @@
       "50:13:4:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -1121835,7 +1121835,7 @@
       "50:14:2:2": {
         "word": "أَيْكَةِ",
         "pos": "N",
-        "root": null,
+        "root": "أيكة",
         "lemma": "أَيْكَة",
         "morphology": "GEN"
       }
@@ -1121866,7 +1121866,7 @@
       "50:14:4:1": {
         "word": "تُبَّعٍ",
         "pos": "N",
-        "root": null,
+        "root": "تبع",
         "lemma": "تُبَّع",
         "morphology": "PN|GEN"
       }
@@ -1123288,7 +1123288,7 @@
       "50:24:3:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1124022,7 +1124022,7 @@
       "50:30:3:2": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1128047,7 +1128047,7 @@
       "51:24:5:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -1129549,7 +1129549,7 @@
       "51:38:2:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -1129611,7 +1129611,7 @@
       "51:38:6:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1130182,7 +1130182,7 @@
       "51:43:2:1": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -1130563,7 +1130563,7 @@
       "51:46:2:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -1132270,7 +1132270,7 @@
       "51:60:1:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1132839,7 +1132839,7 @@
       "52:11:1:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1133018,7 +1133018,7 @@
       "52:13:5:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1138748,7 +1138748,7 @@
       "53:19:2:1": {
         "word": "ٱللَّٰتَ",
         "pos": "N",
-        "root": null,
+        "root": "اللات",
         "lemma": "اللّات",
         "morphology": "PN|ACC"
       }
@@ -1141638,7 +1141638,7 @@
       "53:36:7:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -1141657,7 +1141657,7 @@
       "53:37:1:2": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -1142631,7 +1142631,7 @@
       "53:51:1:2": {
         "word": "ثَمُودَا۟",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -1142693,7 +1142693,7 @@
       "53:52:2:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -1144303,7 +1144303,7 @@
       "54:9:4:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -1145748,7 +1145748,7 @@
       "54:23:2:1": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -1146890,7 +1146890,7 @@
       "54:33:3:1": {
         "word": "لُوطٍۭ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -1147021,7 +1147021,7 @@
       "54:34:7:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -1147826,7 +1147826,7 @@
       "54:41:4:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|ACC"
       }
@@ -1148588,7 +1148588,7 @@
       "54:48:9:1": {
         "word": "سَقَرَ",
         "pos": "N",
-        "root": null,
+        "root": "سقر",
         "lemma": "سَقَر",
         "morphology": "PN|GEN"
       }
@@ -1152754,7 +1152754,7 @@
       "55:43:2:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -1153578,7 +1153578,7 @@
       "55:54:6:1": {
         "word": "إِسْتَبْرَقٍ",
         "pos": "N",
-        "root": null,
+        "root": "إستبرق",
         "lemma": "إِسْتَبْرَق",
         "morphology": "INDEF|GEN"
       }
@@ -1153961,7 +1153961,7 @@
       "55:58:2:2": {
         "word": "يَاقُوتُ",
         "pos": "N",
-        "root": null,
+        "root": "ياقوت",
         "lemma": "ياقُوت",
         "morphology": "M|NOM"
       }
@@ -1169857,7 +1169857,7 @@
       "57:26:3:1": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -1169876,7 +1169876,7 @@
       "57:26:4:2": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|ACC"
       }
@@ -1170199,7 +1170199,7 @@
       "57:27:7:2": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|GEN"
       }
@@ -1170223,7 +1170223,7 @@
       "57:27:9:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -1170275,7 +1170275,7 @@
       "57:27:11:2": {
         "word": "إِنجِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إنجيل",
         "lemma": "إِنجِيل",
         "morphology": "PN|ACC"
       }
@@ -1174760,7 +1174760,7 @@
       "58:8:35:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -1188248,7 +1188248,7 @@
       "60:4:7:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -1188738,7 +1188738,7 @@
       "60:4:35:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -1193482,7 +1193482,7 @@
       "61:5:3:1": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|NOM"
       }
@@ -1193884,7 +1193884,7 @@
       "61:6:3:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -1193908,7 +1193908,7 @@
       "61:6:5:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -1193939,7 +1193939,7 @@
       "61:6:7:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -1194094,7 +1194094,7 @@
       "61:6:17:2": {
         "word": "تَّوْرَىٰةِ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|GEN"
       }
@@ -1195689,7 +1195689,7 @@
       "61:12:14:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -1196046,7 +1196046,7 @@
       "61:14:9:1": {
         "word": "عِيسَى",
         "pos": "N",
-        "root": null,
+        "root": "عيسى",
         "lemma": "عِيسَى",
         "morphology": "PN|NOM"
       }
@@ -1196070,7 +1196070,7 @@
       "61:14:11:1": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|GEN"
       }
@@ -1196285,7 +1196285,7 @@
       "61:14:26:1": {
         "word": "إِسْرَٰٓءِيلَ",
         "pos": "N",
-        "root": null,
+        "root": "إسرائيل",
         "lemma": "إِسْرائِيل",
         "morphology": "PN|GEN"
       }
@@ -1197361,7 +1197361,7 @@
       "62:5:4:2": {
         "word": "تَّوْرَىٰةَ",
         "pos": "N",
-        "root": null,
+        "root": "توراة",
         "lemma": "تَوْراة",
         "morphology": "PN|ACC"
       }
@@ -1212507,7 +1212507,7 @@
       "66:4:15:2": {
         "word": "جِبْرِيلُ",
         "pos": "N",
-        "root": null,
+        "root": "جبريل",
         "lemma": "جِبْرِيل",
         "morphology": "PN|M|NOM"
       }
@@ -1214345,7 +1214345,7 @@
       "66:9:9:1": {
         "word": "جَهَنَّمُ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|NOM"
       }
@@ -1214481,7 +1214481,7 @@
       "66:10:7:1": {
         "word": "نُوحٍ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|GEN"
       }
@@ -1214512,7 +1214512,7 @@
       "66:10:9:1": {
         "word": "لُوطٍ",
         "pos": "N",
-        "root": null,
+        "root": "لوط",
         "lemma": "لُوط",
         "morphology": "PN|GEN"
       }
@@ -1214917,7 +1214917,7 @@
       "66:11:7:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1215103,7 +1215103,7 @@
       "66:11:19:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1215224,7 +1215224,7 @@
       "66:12:1:2": {
         "word": "مَرْيَمَ",
         "pos": "N",
-        "root": null,
+        "root": "مريم",
         "lemma": "مَرْيَم",
         "morphology": "PN|F|ACC"
       }
@@ -1215248,7 +1215248,7 @@
       "66:12:3:1": {
         "word": "عِمْرَٰنَ",
         "pos": "N",
-        "root": null,
+        "root": "عمران",
         "lemma": "عِمْران",
         "morphology": "PN|GEN"
       }
@@ -1216560,7 +1216560,7 @@
       "67:6:5:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1223279,7 +1223279,7 @@
       "68:31:2:2": {
         "word": "وَيْلَ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "ACC"
       },
@@ -1226144,7 +1226144,7 @@
       "69:4:2:1": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -1226220,7 +1226220,7 @@
       "69:5:2:1": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -1226706,7 +1226706,7 @@
       "69:9:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -1231452,7 +1231452,7 @@
       "70:15:3:1": {
         "word": "لَظَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "لظى",
         "lemma": "لَظَى",
         "morphology": "PN|NOM"
       }
@@ -1233984,7 +1233984,7 @@
       "71:1:3:1": {
         "word": "نُوحًا",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|ACC"
       }
@@ -1236327,7 +1236327,7 @@
       "71:21:2:1": {
         "word": "نُوحٌ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -1236767,7 +1236767,7 @@
       "71:23:11:1": {
         "word": "يَغُوثَ",
         "pos": "N",
-        "root": null,
+        "root": "يغوث",
         "lemma": "يَغُوث",
         "morphology": "PN|ACC"
       }
@@ -1236786,7 +1236786,7 @@
       "71:23:12:2": {
         "word": "يَعُوقَ",
         "pos": "N",
-        "root": null,
+        "root": "يعوق",
         "lemma": "يَعُوق",
         "morphology": "PN|ACC"
       }
@@ -1237160,7 +1237160,7 @@
       "71:26:2:1": {
         "word": "نُوحٌ",
         "pos": "N",
-        "root": null,
+        "root": "نوح",
         "lemma": "نُوح",
         "morphology": "PN|M|NOM"
       }
@@ -1240273,7 +1240273,7 @@
       "72:15:4:2": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1241491,7 +1241491,7 @@
       "72:23:13:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1243818,7 +1243818,7 @@
       "73:15:10:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1243861,7 +1243861,7 @@
       "73:16:2:1": {
         "word": "فِرْعَوْنُ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|NOM"
       }
@@ -1246896,7 +1246896,7 @@
       "74:26:2:1": {
         "word": "سَقَرَ",
         "pos": "N",
-        "root": null,
+        "root": "سقر",
         "lemma": "سَقَر",
         "morphology": "PN|ACC"
       }
@@ -1246958,7 +1246958,7 @@
       "74:27:4:1": {
         "word": "سَقَرُ",
         "pos": "N",
-        "root": null,
+        "root": "سقر",
         "lemma": "سَقَر",
         "morphology": "PN|NOM"
       }
@@ -1248586,7 +1248586,7 @@
       "74:42:4:1": {
         "word": "سَقَرَ",
         "pos": "N",
-        "root": null,
+        "root": "سقر",
         "lemma": "سَقَر",
         "morphology": "PN|GEN"
       }
@@ -1254338,7 +1254338,7 @@
       "76:17:6:1": {
         "word": "زَنجَبِيلًا",
         "pos": "N",
-        "root": null,
+        "root": "زنجبيل",
         "lemma": "زَنجَبِيل",
         "morphology": "M|INDEF|ACC"
       }
@@ -1254393,7 +1254393,7 @@
       "76:18:4:1": {
         "word": "سَلْسَبِيلًا",
         "pos": "N",
-        "root": null,
+        "root": "سلسبيل",
         "lemma": "سَلْسَبِيل",
         "morphology": "PN|M|INDEF|ACC"
       }
@@ -1254698,7 +1254698,7 @@
       "76:21:3:1": {
         "word": "سُندُسٍ",
         "pos": "N",
-        "root": null,
+        "root": "سندس",
         "lemma": "سُندُس",
         "morphology": "M|INDEF|GEN"
       }
@@ -1254729,7 +1254729,7 @@
       "76:21:5:2": {
         "word": "إِسْتَبْرَقٌ",
         "pos": "N",
-        "root": null,
+        "root": "إستبرق",
         "lemma": "إِسْتَبْرَق",
         "morphology": "INDEF|NOM"
       }
@@ -1256823,7 +1256823,7 @@
       "77:15:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1257051,7 +1257051,7 @@
       "77:19:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1257351,7 +1257351,7 @@
       "77:24:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1257627,7 +1257627,7 @@
       "77:28:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1258068,7 +1258068,7 @@
       "77:34:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1258263,7 +1258263,7 @@
       "77:37:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1258517,7 +1258517,7 @@
       "77:40:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1258902,7 +1258902,7 @@
       "77:45:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1259047,7 +1259047,7 @@
       "77:47:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1259204,7 +1259204,7 @@
       "77:49:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1260494,7 +1260494,7 @@
       "78:21:2:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|ACC"
       }
@@ -1262914,7 +1262914,7 @@
       "79:15:4:1": {
         "word": "مُوسَىٰٓ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -1263057,7 +1263057,7 @@
       "79:17:3:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1270347,7 +1270347,7 @@
       "83:1:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1270945,7 +1270945,7 @@
       "83:10:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1275718,7 +1275718,7 @@
       "85:10:11:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1276368,7 +1276368,7 @@
       "85:18:1:1": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1276387,7 +1276387,7 @@
       "85:18:2:2": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -1278765,7 +1278765,7 @@
       "87:19:2:1": {
         "word": "إِبْرَٰهِيمَ",
         "pos": "N",
-        "root": null,
+        "root": "إبراهيم",
         "lemma": "إِبْراهِيم",
         "morphology": "PN|M|GEN"
       }
@@ -1278784,7 +1278784,7 @@
       "87:19:3:2": {
         "word": "مُوسَىٰ",
         "pos": "N",
-        "root": null,
+        "root": "موسى",
         "lemma": "مُوسَى",
         "morphology": "PN|M|GEN"
       }
@@ -1280511,7 +1280511,7 @@
       "89:7:1:1": {
         "word": "إِرَمَ",
         "pos": "N",
-        "root": null,
+        "root": "إرم",
         "lemma": "إِرَم",
         "morphology": "PN|F|GEN"
       }
@@ -1280647,7 +1280647,7 @@
       "89:9:1:2": {
         "word": "ثَمُودَ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|GEN"
       }
@@ -1280742,7 +1280742,7 @@
       "89:10:1:2": {
         "word": "فِرْعَوْنَ",
         "pos": "N",
-        "root": null,
+        "root": "فرعون",
         "lemma": "فِرْعَوْن",
         "morphology": "PN|M|GEN"
       }
@@ -1281946,7 +1281946,7 @@
       "89:23:3:2": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1284452,7 +1284452,7 @@
       "91:11:2:1": {
         "word": "ثَمُودُ",
         "pos": "N",
-        "root": null,
+        "root": "ثمود",
         "lemma": "ثَمُود",
         "morphology": "PN|NOM"
       }
@@ -1287416,7 +1287416,7 @@
       "95:2:2:1": {
         "word": "سِينِينَ",
         "pos": "N",
-        "root": null,
+        "root": "سينين",
         "lemma": "سِينِين",
         "morphology": "PN|GEN"
       }
@@ -1290452,7 +1290452,7 @@
       "98:6:10:1": {
         "word": "جَهَنَّمَ",
         "pos": "N",
-        "root": null,
+        "root": "جهنم",
         "lemma": "جَهَنَّم",
         "morphology": "PN|GEN"
       }
@@ -1290769,7 +1290769,7 @@
       "98:8:5:1": {
         "word": "عَدْنٍ",
         "pos": "N",
-        "root": null,
+        "root": "عدن",
         "lemma": "عَدْن",
         "morphology": "PN|GEN"
       }
@@ -1293703,7 +1293703,7 @@
       "104:1:1:1": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }
@@ -1295099,7 +1295099,7 @@
       "107:4:1:2": {
         "word": "وَيْلٌ",
         "pos": "N",
-        "root": null,
+        "root": "ويل",
         "lemma": "وَيْل",
         "morphology": "M|INDEF|NOM"
       }

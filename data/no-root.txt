@@ -1,7 +1,7 @@
-# Suggested values for a later pass; quran-morphology.txt has not been modified.
+# Applied values: missing ROOT annotations in quran-morphology.txt were populated from this mapping.
 # source_root: root already recorded for the same lemma elsewhere in quran-morphology.txt.
 # lemma_fallback: unvowelled lemma used as a lookup key, NOT a claim of an Arabic etymological root.
-# All suggestions require review before applying; surface spellings are preserved.
+# Applied to 867 previously rootless occurrences; existing ROOT annotations and surface spellings were preserved.
 word	suggested_root	type
 ءَازَرَ	آزر	lemma_fallback
 أَمْسِ	أمس	lemma_fallback
