@@ -11900,7 +11900,8 @@
                 "VerseCount": 1
             }
         },
-        "RootCount": 339
+        "RootCount": 339,
+        "Notes": "# رحم\n\nRahm in Alemani/German, mercy; compassion; affection; wombs; kinship\nArabic **رَحْمَة (raḥma)** expresses **mercy, kindness, tenderness, and gentle care**. German **Rahm** means **cream**—the rich, **soft, smooth, and gentle-textured** part of milk.\n\nThis creates an interesting sound-and-meaning parallel:\n\n**Raḥma** → kindness, tenderness, softness in treatment  \n**Rahm** → cream, something physically soft, smooth, and rich\n\nThe image becomes even more suggestive because cream comes from **milk**, and milk is naturally associated with **a mother nourishing and caring for her child**. This brings in the Arabic word **رَحِم (raḥim)**, “womb,” from the same Arabic root **R-Ḥ-M** as *raḥma*. The expression **صِلَةُ الرَّحِم (ṣilat al-raḥim)** literally means maintaining the bonds of the womb—that is, maintaining **family and kinship ties**.\n\n**mother → womb → milk → nourishment → tenderness → mercy**\n\nThis makes the resemblance between German **Rahm** “cream” and Arabic **R-Ḥ-M** especially striking at the level of imagery and meaning."
     },
     "حمد": {
         "Word": {
@@ -12255,7 +12256,8 @@
                 "VerseCount": 1
             }
         },
-        "RootCount": 68
+        "RootCount": 68,
+        "Notes": "# حمد\n\npraise; praiseworthy\n"
     },
     "أله": {
         "Word": {
@@ -21076,10 +21078,14 @@
                     {
                         "Key": "49460",
                         "ID": "27:84:10"
+                    },
+                    {
+                        "Key": "72212",
+                        "ID": "65:12:25"
                     }
                 ],
-                "WordCount": 8,
-                "VerseCount": 8
+                "WordCount": 9,
+                "VerseCount": 9
             },
             "وعلمتم": {
                 "Verses": [
@@ -21826,19 +21832,10 @@
                 ],
                 "WordCount": 1,
                 "VerseCount": 1
-            },
-            "علمۢا": {
-                "Verses": [
-                    {
-                        "Key": "72212",
-                        "ID": "65:12:25"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
             }
         },
-        "RootCount": 854
+        "RootCount": 854,
+        "Notes": "# علم\n\nAlim of alimentary (soul food),knowing; knowledge; teaching; learning; landmarks; worlds; mountains\n\n **alimentary** and **alimony** ultimately come from the same Latin verb, but they were formed with **different Latin endings**.\n\n**Alimentary** comes from Latin **alimentum** = “food, nourishment,” from **alere** = “to nourish, feed, raise.” Then **alimentarius** meant “relating to nourishment,” which gave English **alimentary**. \n\n**Alimony** comes from Latin **alimonia** = “nourishment, sustenance, support,” also from **alere**. The ending **-monia** expresses a state, condition, or provision/support. \n\nSo the breakdown is roughly:\n\n- **alere** = nourish\n- **alimentum** = nourishment/food\n- **alimentarius** → **alimentary** = relating to nourishment\n- **alimonia** → **alimony** = sustenance/support\n\nIn **modern German**, **Alim** is not a native German word with an old Germanic meaning. When used, it is generally the borrowed Arabic **ʿālim (عالم)**, meaning a **learned scholar**, especially an Islamic religious scholar.\n\nIn **Old Norse**, **alim** really does occur, but it is a **verb form**, not a noun meaning “scholar.” It is the **first-person plural present subjunctive of _ala_**, a verb meaning **to give birth, rear, raise, nourish**. So **alim** would mean approximately:\n\n**“that we may raise / nourish / bring up.”** \n\nThere is also an Old Norse personal name **Álim**, recorded as a shortening of **Áleifr / Óláfr**. \n\nSo the striking comparison is:\n\n**Arabic عالِم ʿālim** → “knowing person, scholar”  \n**Old Norse alim** → “we may raise/nourish”  \n**German Alim** → normally a borrowing from Arabic, not an inherited Germanic word.\n"
     },
     "ملك": {
         "Word": {
@@ -24658,6 +24655,10 @@
                         "ID": "88:8:2"
                     },
                     {
+                        "Key": "76505",
+                        "ID": "89:23:2"
+                    },
+                    {
                         "Key": "76507",
                         "ID": "89:23:4"
                     },
@@ -24678,8 +24679,8 @@
                         "ID": "102:8:3"
                     }
                 ],
-                "WordCount": 60,
-                "VerseCount": 60
+                "WordCount": 61,
+                "VerseCount": 61
             },
             "باليوم": {
                 "Verses": [
@@ -24880,14 +24881,10 @@
                     {
                         "Key": "74628",
                         "ID": "75:24:2"
-                    },
-                    {
-                        "Key": "76505",
-                        "ID": "89:23:2"
                     }
                 ],
-                "WordCount": 5,
-                "VerseCount": 5
+                "WordCount": 4,
+                "VerseCount": 4
             }
         },
         "RootCount": 475
@@ -28866,7 +28863,8 @@
                 "VerseCount": 1
             }
         },
-        "RootCount": 316
+        "RootCount": 316,
+        "Notes": "# هدي\nhood, head\nYes. There are several very close historical forms to **HADA / HĀD / HOD / HOOD** in the Germanic languages, but they actually represent **two different word families**.\n\n| Language | Form | Meaning |\n|---|---|---|\n| **Old English** | **hād** | state, condition, rank, order, character |\n| **Old Saxon** | **hēd** | condition, rank |\n| **Old High German** | **heit** | state, condition, rank |\n| **Old Norse** | **heiðr** | honor, dignity, rank |\n| **Old English** | **hōd** | hood, head-covering |\n| **Old High German** | **huot** | hat, helmet |\n| **Old Saxon / Frisian** | **hod** | hood |\n| **German** | **Hut** | hat |\n\nThe first group is especially interesting for your **HADA** search. Old English **hād** was originally an independent noun meaning roughly **“state, condition, character, rank, or manner of being.”** It later survived mainly as English **-hood**:\n\n**childhood** = child + **hād**  \n**priesthood** = priest + **hād**  \n**manhood** = man + **hād**\n\nIt corresponds to German **-heit** as in *Freiheit* “freedom.” Old Norse **heiðr**, meaning **honor/dignity**, is generally connected with this Germanic family. :chatgpt-content-reference{index=\"0\"}\n\nBut English **hood**, meaning the thing that **covers the head**, is a separate word:\n\n**Old English hōd → Middle English hod/hood → English hood**\n\nwith cognates **Old High German huot**, modern German **Hut**, Dutch **hoed**, and Old Saxon **hod**. The reconstructed Germanic form is **\\*hōd- / \\*hōdaz**, probably associated with the idea **“cover, covering/protection.”** :chatgpt-content-reference{index=\"1\"}\n\nThere is also an intriguing Old Norse word:\n\n**höð / hǫð** = **battle, combat**\n\nand the mythological name **Hǫðr (Höðr/Hodr)** is generally associated with that word. :chatgpt-content-reference{index=\"2\"}\n\nSo if you're looking specifically for a sound sequence like **H-D / HĀD / HOD**, you have a surprisingly strong cluster:\n\n**hād** → state / rank / condition  \n**hōd** → covering / hood  \n**hod / huot / Hut** → head covering  \n**höð** → battle\n\nThe strongest exact match to **HADA** phonetically is probably **Old English hād**, pronounced approximately with a long **ā**, rather than modern English *hood*."
     },
     "صرط": {
         "Word": {
@@ -30690,8 +30688,16 @@
                         "ID": "3:117:14"
                     },
                     {
+                        "Key": "11593",
+                        "ID": "4:90:5"
+                    },
+                    {
                         "Key": "11682",
                         "ID": "4:92:26"
+                    },
+                    {
+                        "Key": "11693",
+                        "ID": "4:92:37"
                     },
                     {
                         "Key": "13426",
@@ -30768,6 +30774,10 @@
                     {
                         "Key": "23576",
                         "ID": "8:65:24"
+                    },
+                    {
+                        "Key": "23720",
+                        "ID": "8:72:38"
                     },
                     {
                         "Key": "23899",
@@ -30990,8 +31000,8 @@
                         "ID": "59:14:21"
                     }
                 ],
-                "WordCount": 76,
-                "VerseCount": 76
+                "WordCount": 79,
+                "VerseCount": 79
             },
             "قيما": {
                 "Verses": [
@@ -31062,24 +31072,6 @@
                 ],
                 "WordCount": 6,
                 "VerseCount": 6
-            },
-            "قومۭ": {
-                "Verses": [
-                    {
-                        "Key": "11593",
-                        "ID": "4:90:5"
-                    },
-                    {
-                        "Key": "11693",
-                        "ID": "4:92:37"
-                    },
-                    {
-                        "Key": "23720",
-                        "ID": "8:72:38"
-                    }
-                ],
-                "WordCount": 3,
-                "VerseCount": 3
             },
             "قومهم": {
                 "Verses": [
@@ -36689,7 +36681,8 @@
                 "VerseCount": 1
             }
         },
-        "RootCount": 319
+        "RootCount": 319,
+        "Notes": "# كتب\n\nwriting; prescribing; ordaining; book; letter; scribe\n\nIn german, **Ketib und Qere** = **“Ketib and Qere.”** or Katib and Qari in arabic.\n\nIn English, more meaningfully:\n\n- **Ketib** = “what is written”\n- **Qere** = “what is read”\n\nSo the phrase means **“the written form and the read form.”**\n\nKatib/Ketib is a word found in German scholarly usage with the meaning “written” or “that which is written.” German biblical literature uses the established expression Ketib und Qere, where Ketib is translated directly as German Geschriebenes (“the written [text]”), contrasted with Qere, “what is read.” The consonantal structure K-T-B is therefore visibly present in German technical vocabulary associated specifically with writing. Historically, however, German scholars borrowed the term from the Aramaic/Hebrew textual tradition; it is not currently established as an indigenous Old Germanic K-T-B root. Die Bibel\n\nOne more useful point: Ketib, Ketiv, Kethib, and Kethiv are simply different Latin-letter spellings used for essentially the same textual term.\n\n\nWhat is interesting is this: book goes back to Old English bōc, Proto-Germanic *bōk-, and is traditionally connected with beech, probably because writing or runes were carved on wooden tablets. So the history of book is closely tied to the physical act of inscribing/writing. Etymonline\nMeanwhile, Semitic K-T-B is the well-known writing root, and one proposed older sense is “prick, cut, scratch, scrape,” from which the meaning “write” developed. Wiktionary\nSo the striking comparison is:\nK-T-B → scratch/carve → write\nB-K / bōk → beech/wooden writing surface → book/written document\nThat gives them a real conceptual overlap around carving and writing, but there is no accepted evidence that Germanic *bōk- arose by reversing K-T-B into B-K-T/BKT. The consonant reversal is an observation, not an established etymological relationship."
     },
     "ريب": {
         "Word": {
@@ -43967,7 +43960,8 @@
                 "VerseCount": 4
             }
         },
-        "RootCount": 123
+        "RootCount": 123,
+        "Notes": "# رزق\nRisk\nprovision; providing; provider\n\n**Rizq and risk:**\n\nProposed connection: Arabic رِزْق (rizq) → medieval Latin resicum → Italian forms such as risco/rischio → French risque → English risk. The Arabic origin is a hypothesis, not an uncontested etymology.\n\nSarina Kuersteiner's 2026 Speculum article studies Judeo-Arabic and Latin commercial evidence from 1154–1164. Its abstract identifies a 1156 contract by the Genoese notary Giovanni Scriba as the earlsiest documented occurrence of resicum.\n\nJudeo-Arabic merchants used بما رزق الله (bimā razaqa Allāh), referring to what God provides. Latin notaries used quod deus dederit, expressing what God would give. Kuersteiner argues that Scriba's later use of ad tuum resicum reflects borrowing for an idea already present in commercial language.\n\nThe proposed semantic shift runs from divine provision or a venture's outcome toward commercial uncertainty. The article distinguishes early resicum from its insurance-related use around 1400.\n\nMerriam-Webster traces English risk through French risque to Italian risco. Treccani describes the etymology of Italian risico as uncertain. These dictionary entries should be distinguished from the newer Arabic-origin argument.\n\nThe contrast is between rizq as provision or what one receives and the modern emphasis of risk on possible harm or loss. This historical proposal does not make risk a translation of the Quranic word rizq.\n\nReferences: [Whatever God Gives: Arabic and Judeo-Arabic Rizq and Latin Resicum in Commercial Vocabulary, 1154–1164 CE](https://doi.org/10.1086/741592); [Risk — Word History](https://www.merriam-webster.com/dictionary/risk); [Risico](https://www.treccani.it/vocabolario/risico/).\n\nPublisher abstract and bibliographic details checked; full article not accessed.\n"
     },
     "نفق": {
         "Word": {
@@ -51723,6 +51717,10 @@
                         "ID": "2:108:17"
                     },
                     {
+                        "Key": "7211",
+                        "ID": "3:64:7"
+                    },
+                    {
                         "Key": "8059",
                         "ID": "3:113:2"
                     },
@@ -51815,8 +51813,8 @@
                         "ID": "63:6:1"
                     }
                 ],
-                "WordCount": 25,
-                "VerseCount": 25
+                "WordCount": 26,
+                "VerseCount": 26
             },
             "استوى": {
                 "Verses": [
@@ -51865,16 +51863,6 @@
                     {
                         "Key": "445",
                         "ID": "2:29:13"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
-            },
-            "سواۭ": {
-                "Verses": [
-                    {
-                        "Key": "7211",
-                        "ID": "3:64:7"
                     }
                 ],
                 "WordCount": 1,
@@ -69639,6 +69627,16 @@
                 "WordCount": 3,
                 "VerseCount": 3
             },
+            "زيد": {
+                "Verses": [
+                    {
+                        "Key": "54403",
+                        "ID": "33:37:28"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
             "يزيدون": {
                 "Verses": [
                     {
@@ -69772,7 +69770,7 @@
                 "VerseCount": 1
             }
         },
-        "RootCount": 61
+        "RootCount": 62
     },
     "ألم": {
         "Word": {
@@ -99598,6 +99596,10 @@
                         "ID": "5:40:19"
                     },
                     {
+                        "Key": "16177",
+                        "ID": "5:120:11"
+                    },
+                    {
                         "Key": "16425",
                         "ID": "6:17:17"
                     },
@@ -99690,8 +99692,8 @@
                         "ID": "67:1:9"
                     }
                 ],
-                "WordCount": 36,
-                "VerseCount": 36
+                "WordCount": 37,
+                "VerseCount": 37
             },
             "قدره": {
                 "Verses": [
@@ -99780,16 +99782,6 @@
                 ],
                 "WordCount": 2,
                 "VerseCount": 2
-            },
-            "قديرۢ": {
-                "Verses": [
-                    {
-                        "Key": "16177",
-                        "ID": "5:120:11"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
             },
             "قادر": {
                 "Verses": [
@@ -113810,6 +113802,10 @@
                         "ID": "3:3:5"
                     },
                     {
+                        "Key": "6829",
+                        "ID": "3:39:12"
+                    },
+                    {
                         "Key": "10757",
                         "ID": "4:47:8"
                     },
@@ -113834,8 +113830,8 @@
                         "ID": "61:6:12"
                     }
                 ],
-                "WordCount": 10,
-                "VerseCount": 10
+                "WordCount": 11,
+                "VerseCount": 11
             },
             "مصدق": {
                 "Verses": [
@@ -113974,16 +113970,6 @@
                 ],
                 "WordCount": 2,
                 "VerseCount": 2
-            },
-            "مصدقۢا": {
-                "Verses": [
-                    {
-                        "Key": "6829",
-                        "ID": "3:39:12"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
             },
             "ومصدقا": {
                 "Verses": [
@@ -137748,6 +137734,67 @@
         },
         "RootCount": 92
     },
+    "إبليس": {
+        "Word": {
+            "ابليس": {
+                "Verses": [
+                    {
+                        "Key": "536",
+                        "ID": "2:34:8"
+                    },
+                    {
+                        "Key": "19332",
+                        "ID": "7:11:12"
+                    },
+                    {
+                        "Key": "33722",
+                        "ID": "15:31:2"
+                    },
+                    {
+                        "Key": "36836",
+                        "ID": "17:61:8"
+                    },
+                    {
+                        "Key": "38336",
+                        "ID": "18:50:8"
+                    },
+                    {
+                        "Key": "41181",
+                        "ID": "20:116:8"
+                    },
+                    {
+                        "Key": "47704",
+                        "ID": "26:95:2"
+                    },
+                    {
+                        "Key": "55363",
+                        "ID": "34:20:4"
+                    },
+                    {
+                        "Key": "58903",
+                        "ID": "38:74:2"
+                    }
+                ],
+                "WordCount": 9,
+                "VerseCount": 9
+            },
+            "يابليس": {
+                "Verses": [
+                    {
+                        "Key": "33729",
+                        "ID": "15:32:2"
+                    },
+                    {
+                        "Key": "58909",
+                        "ID": "38:75:2"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 11
+    },
     "أبي": {
         "Word": {
             "ابى": {
@@ -143721,10 +143768,18 @@
                     {
                         "Key": "7349",
                         "ID": "3:73:5"
+                    },
+                    {
+                        "Key": "64089",
+                        "ID": "44:37:5"
+                    },
+                    {
+                        "Key": "66897",
+                        "ID": "50:14:4"
                     }
                 ],
-                "WordCount": 2,
-                "VerseCount": 2
+                "WordCount": 4,
+                "VerseCount": 4
             },
             "واتبعوا": {
                 "Verses": [
@@ -144809,7 +144864,7 @@
                 "VerseCount": 1
             }
         },
-        "RootCount": 172
+        "RootCount": 174
     },
     "خوف": {
         "Word": {
@@ -146345,6 +146400,195 @@
             }
         },
         "RootCount": 97
+    },
+    "إسرائيل": {
+        "Word": {
+            "اسريل": {
+                "Verses": [
+                    {
+                        "Key": "618",
+                        "ID": "2:40:2"
+                    },
+                    {
+                        "Key": "690",
+                        "ID": "2:47:2"
+                    },
+                    {
+                        "Key": "1333",
+                        "ID": "2:83:5"
+                    },
+                    {
+                        "Key": "2158",
+                        "ID": "2:122:2"
+                    },
+                    {
+                        "Key": "3938",
+                        "ID": "2:211:3"
+                    },
+                    {
+                        "Key": "4869",
+                        "ID": "2:246:7"
+                    },
+                    {
+                        "Key": "6972",
+                        "ID": "3:49:4"
+                    },
+                    {
+                        "Key": "7728",
+                        "ID": "3:93:6"
+                    },
+                    {
+                        "Key": "7732",
+                        "ID": "3:93:10"
+                    },
+                    {
+                        "Key": "13735",
+                        "ID": "5:12:6"
+                    },
+                    {
+                        "Key": "14183",
+                        "ID": "5:32:7"
+                    },
+                    {
+                        "Key": "15086",
+                        "ID": "5:70:5"
+                    },
+                    {
+                        "Key": "15133",
+                        "ID": "5:72:14"
+                    },
+                    {
+                        "Key": "15255",
+                        "ID": "5:78:6"
+                    },
+                    {
+                        "Key": "15957",
+                        "ID": "5:110:50"
+                    },
+                    {
+                        "Key": "20929",
+                        "ID": "7:105:18"
+                    },
+                    {
+                        "Key": "21233",
+                        "ID": "7:134:22"
+                    },
+                    {
+                        "Key": "21273",
+                        "ID": "7:137:18"
+                    },
+                    {
+                        "Key": "21287",
+                        "ID": "7:138:3"
+                    },
+                    {
+                        "Key": "27797",
+                        "ID": "10:90:3"
+                    },
+                    {
+                        "Key": "27818",
+                        "ID": "10:90:24"
+                    },
+                    {
+                        "Key": "27846",
+                        "ID": "10:93:4"
+                    },
+                    {
+                        "Key": "36015",
+                        "ID": "17:2:7"
+                    },
+                    {
+                        "Key": "36033",
+                        "ID": "17:4:4"
+                    },
+                    {
+                        "Key": "37404",
+                        "ID": "17:101:9"
+                    },
+                    {
+                        "Key": "37442",
+                        "ID": "17:104:5"
+                    },
+                    {
+                        "Key": "40410",
+                        "ID": "20:47:9"
+                    },
+                    {
+                        "Key": "40766",
+                        "ID": "20:80:2"
+                    },
+                    {
+                        "Key": "40943",
+                        "ID": "20:94:15"
+                    },
+                    {
+                        "Key": "47236",
+                        "ID": "26:17:5"
+                    },
+                    {
+                        "Key": "47278",
+                        "ID": "26:22:8"
+                    },
+                    {
+                        "Key": "47518",
+                        "ID": "26:59:4"
+                    },
+                    {
+                        "Key": "48276",
+                        "ID": "26:197:9"
+                    },
+                    {
+                        "Key": "49374",
+                        "ID": "27:76:7"
+                    },
+                    {
+                        "Key": "53651",
+                        "ID": "32:23:14"
+                    },
+                    {
+                        "Key": "60944",
+                        "ID": "40:53:7"
+                    },
+                    {
+                        "Key": "63613",
+                        "ID": "43:59:10"
+                    },
+                    {
+                        "Key": "64045",
+                        "ID": "44:30:4"
+                    },
+                    {
+                        "Key": "64387",
+                        "ID": "45:16:4"
+                    },
+                    {
+                        "Key": "64858",
+                        "ID": "46:10:14"
+                    },
+                    {
+                        "Key": "71177",
+                        "ID": "61:6:7"
+                    },
+                    {
+                        "Key": "71320",
+                        "ID": "61:14:26"
+                    }
+                ],
+                "WordCount": 42,
+                "VerseCount": 42
+            },
+            "واسريل": {
+                "Verses": [
+                    {
+                        "Key": "39706",
+                        "ID": "19:58:18"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 43
     },
     "ذكر": {
         "Word": {
@@ -152403,7 +152647,8 @@
                 "VerseCount": 2
             }
         },
-        "RootCount": 103
+        "RootCount": 103,
+        "Notes": "# صبر\n\nSober,patience; steadfastness\nThe Arabic **صَبْر (ṣabr)** and English **sober** show a striking resemblance in both **sound structure and meaning**.\n\nArabic **ṣabr** is built on the consonants **Ṣ-B-R** and expresses ideas such as **restraint, patience, endurance, self-control, and holding oneself back from impulsive action**. A **ṣābir** is therefore someone who remains controlled and does not react hastily.\n\nOlder forms of English **sober** were **sobre, sobor, and sobur**, giving essentially the same consonantal framework:\n\n**Ṣ-B-R → S-B-R**\n\nThe semantic correspondence is equally notable. Historically, **sober** did not mean only “not drunk.” It also carried meanings such as **temperate, restrained, moderate, calm, sensible, and self-controlled**. Old English **sýfre** likewise described someone who was **temperate, restrained, and not ruled by appetite or passion**.\n\nSo the comparison can be summarized:\n\n**ṣabr** — restraint, endurance, patience, self-control  \n**ṣābir** — a restrained, patient person  \n**sobre / sober** — restrained, moderate, calm, self-controlled\n\nThis is more than a superficial similarity: both words preserve an **S-B-R-type consonantal pattern** and center around essentially the same human quality—**controlling oneself rather than acting impulsively or hastily**.\n\nThe conventional etymology traces English *sober* through Old French **sobre** to Latin **sōbrius**, so a direct Arabic origin is not currently established. But the combination of **close consonantal structure and unusually close meaning** makes **ṣabr–sober** an interesting linguistic hypothesis that deserves comparison rather than being dismissed simply because the standard dictionaries give a Latin transmission history."
     },
     "خشع": {
         "Word": {
@@ -158090,6 +158335,331 @@
         },
         "RootCount": 84
     },
+    "فرعون": {
+        "Word": {
+            "فرعون": {
+                "Verses": [
+                    {
+                        "Key": "723",
+                        "ID": "2:49:5"
+                    },
+                    {
+                        "Key": "744",
+                        "ID": "2:50:8"
+                    },
+                    {
+                        "Key": "6299",
+                        "ID": "3:11:3"
+                    },
+                    {
+                        "Key": "20895",
+                        "ID": "7:103:8"
+                    },
+                    {
+                        "Key": "20957",
+                        "ID": "7:109:5"
+                    },
+                    {
+                        "Key": "20982",
+                        "ID": "7:113:3"
+                    },
+                    {
+                        "Key": "21049",
+                        "ID": "7:123:2"
+                    },
+                    {
+                        "Key": "21100",
+                        "ID": "7:127:5"
+                    },
+                    {
+                        "Key": "21158",
+                        "ID": "7:130:4"
+                    },
+                    {
+                        "Key": "21280",
+                        "ID": "7:137:25"
+                    },
+                    {
+                        "Key": "21331",
+                        "ID": "7:141:5"
+                    },
+                    {
+                        "Key": "23364",
+                        "ID": "8:52:3"
+                    },
+                    {
+                        "Key": "23399",
+                        "ID": "8:54:3"
+                    },
+                    {
+                        "Key": "23410",
+                        "ID": "8:54:14"
+                    },
+                    {
+                        "Key": "27606",
+                        "ID": "10:75:8"
+                    },
+                    {
+                        "Key": "27651",
+                        "ID": "10:79:2"
+                    },
+                    {
+                        "Key": "27700",
+                        "ID": "10:83:11"
+                    },
+                    {
+                        "Key": "27705",
+                        "ID": "10:83:16"
+                    },
+                    {
+                        "Key": "27760",
+                        "ID": "10:88:6"
+                    },
+                    {
+                        "Key": "27800",
+                        "ID": "10:90:6"
+                    },
+                    {
+                        "Key": "29682",
+                        "ID": "11:97:2"
+                    },
+                    {
+                        "Key": "29686",
+                        "ID": "11:97:6"
+                    },
+                    {
+                        "Key": "29689",
+                        "ID": "11:97:9"
+                    },
+                    {
+                        "Key": "32757",
+                        "ID": "14:6:13"
+                    },
+                    {
+                        "Key": "37409",
+                        "ID": "17:101:14"
+                    },
+                    {
+                        "Key": "40251",
+                        "ID": "20:24:3"
+                    },
+                    {
+                        "Key": "40374",
+                        "ID": "20:43:3"
+                    },
+                    {
+                        "Key": "40534",
+                        "ID": "20:60:2"
+                    },
+                    {
+                        "Key": "40753",
+                        "ID": "20:78:2"
+                    },
+                    {
+                        "Key": "40761",
+                        "ID": "20:79:2"
+                    },
+                    {
+                        "Key": "44292",
+                        "ID": "23:46:2"
+                    },
+                    {
+                        "Key": "47195",
+                        "ID": "26:11:2"
+                    },
+                    {
+                        "Key": "47226",
+                        "ID": "26:16:2"
+                    },
+                    {
+                        "Key": "47280",
+                        "ID": "26:23:2"
+                    },
+                    {
+                        "Key": "47424",
+                        "ID": "26:44:6"
+                    },
+                    {
+                        "Key": "47494",
+                        "ID": "26:53:2"
+                    },
+                    {
+                        "Key": "48563",
+                        "ID": "27:12:14"
+                    },
+                    {
+                        "Key": "49605",
+                        "ID": "28:4:2"
+                    },
+                    {
+                        "Key": "49640",
+                        "ID": "28:6:6"
+                    },
+                    {
+                        "Key": "49671",
+                        "ID": "28:8:3"
+                    },
+                    {
+                        "Key": "49677",
+                        "ID": "28:8:9"
+                    },
+                    {
+                        "Key": "49684",
+                        "ID": "28:9:3"
+                    },
+                    {
+                        "Key": "50123",
+                        "ID": "28:32:20"
+                    },
+                    {
+                        "Key": "50203",
+                        "ID": "28:38:2"
+                    },
+                    {
+                        "Key": "60482",
+                        "ID": "40:24:2"
+                    },
+                    {
+                        "Key": "60508",
+                        "ID": "40:26:2"
+                    },
+                    {
+                        "Key": "60543",
+                        "ID": "40:28:6"
+                    },
+                    {
+                        "Key": "60592",
+                        "ID": "40:29:16"
+                    },
+                    {
+                        "Key": "60703",
+                        "ID": "40:36:2"
+                    },
+                    {
+                        "Key": "60730",
+                        "ID": "40:37:20"
+                    },
+                    {
+                        "Key": "60841",
+                        "ID": "40:45:8"
+                    },
+                    {
+                        "Key": "60854",
+                        "ID": "40:46:11"
+                    },
+                    {
+                        "Key": "63480",
+                        "ID": "43:46:6"
+                    },
+                    {
+                        "Key": "63526",
+                        "ID": "43:51:2"
+                    },
+                    {
+                        "Key": "63968",
+                        "ID": "44:17:5"
+                    },
+                    {
+                        "Key": "64050",
+                        "ID": "44:31:2"
+                    },
+                    {
+                        "Key": "67361",
+                        "ID": "51:38:6"
+                    },
+                    {
+                        "Key": "68456",
+                        "ID": "54:41:4"
+                    },
+                    {
+                        "Key": "72427",
+                        "ID": "66:11:7"
+                    },
+                    {
+                        "Key": "72439",
+                        "ID": "66:11:19"
+                    },
+                    {
+                        "Key": "73137",
+                        "ID": "69:9:2"
+                    },
+                    {
+                        "Key": "74171",
+                        "ID": "73:15:10"
+                    },
+                    {
+                        "Key": "74174",
+                        "ID": "73:16:2"
+                    },
+                    {
+                        "Key": "75349",
+                        "ID": "79:17:3"
+                    },
+                    {
+                        "Key": "76159",
+                        "ID": "85:18:1"
+                    }
+                ],
+                "WordCount": 65,
+                "VerseCount": 65
+            },
+            "يفرعون": {
+                "Verses": [
+                    {
+                        "Key": "20906",
+                        "ID": "7:104:3"
+                    },
+                    {
+                        "Key": "37427",
+                        "ID": "17:102:14"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "لفرعون": {
+                "Verses": [
+                    {
+                        "Key": "47398",
+                        "ID": "26:41:5"
+                    },
+                    {
+                        "Key": "60722",
+                        "ID": "40:37:12"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "وفرعون": {
+                "Verses": [
+                    {
+                        "Key": "49600",
+                        "ID": "28:3:6"
+                    },
+                    {
+                        "Key": "51558",
+                        "ID": "29:39:2"
+                    },
+                    {
+                        "Key": "58365",
+                        "ID": "38:12:6"
+                    },
+                    {
+                        "Key": "66891",
+                        "ID": "50:13:2"
+                    },
+                    {
+                        "Key": "76436",
+                        "ID": "89:10:1"
+                    }
+                ],
+                "WordCount": 5,
+                "VerseCount": 5
+            }
+        },
+        "RootCount": 74
+    },
     "سوم": {
         "Word": {
             "يسومونكم": {
@@ -162441,6 +163011,585 @@
             }
         },
         "RootCount": 151
+    },
+    "موسى": {
+        "Word": {
+            "موسى": {
+                "Verses": [
+                    {
+                        "Key": "749",
+                        "ID": "2:51:3"
+                    },
+                    {
+                        "Key": "769",
+                        "ID": "2:53:3"
+                    },
+                    {
+                        "Key": "776",
+                        "ID": "2:54:3"
+                    },
+                    {
+                        "Key": "879",
+                        "ID": "2:60:3"
+                    },
+                    {
+                        "Key": "1039",
+                        "ID": "2:67:3"
+                    },
+                    {
+                        "Key": "1437",
+                        "ID": "2:87:3"
+                    },
+                    {
+                        "Key": "1558",
+                        "ID": "2:92:3"
+                    },
+                    {
+                        "Key": "1883",
+                        "ID": "2:108:8"
+                    },
+                    {
+                        "Key": "2420",
+                        "ID": "2:136:17"
+                    },
+                    {
+                        "Key": "4872",
+                        "ID": "2:246:10"
+                    },
+                    {
+                        "Key": "4977",
+                        "ID": "2:248:18"
+                    },
+                    {
+                        "Key": "7597",
+                        "ID": "3:84:17"
+                    },
+                    {
+                        "Key": "12894",
+                        "ID": "4:153:12"
+                    },
+                    {
+                        "Key": "12917",
+                        "ID": "4:153:35"
+                    },
+                    {
+                        "Key": "13114",
+                        "ID": "4:164:13"
+                    },
+                    {
+                        "Key": "13975",
+                        "ID": "5:20:3"
+                    },
+                    {
+                        "Key": "17694",
+                        "ID": "6:91:22"
+                    },
+                    {
+                        "Key": "19001",
+                        "ID": "6:154:3"
+                    },
+                    {
+                        "Key": "20892",
+                        "ID": "7:103:5"
+                    },
+                    {
+                        "Key": "20905",
+                        "ID": "7:104:2"
+                    },
+                    {
+                        "Key": "21019",
+                        "ID": "7:117:3"
+                    },
+                    {
+                        "Key": "21046",
+                        "ID": "7:122:2"
+                    },
+                    {
+                        "Key": "21102",
+                        "ID": "7:127:7"
+                    },
+                    {
+                        "Key": "21118",
+                        "ID": "7:128:2"
+                    },
+                    {
+                        "Key": "21346",
+                        "ID": "7:142:2"
+                    },
+                    {
+                        "Key": "21357",
+                        "ID": "7:142:13"
+                    },
+                    {
+                        "Key": "21370",
+                        "ID": "7:143:3"
+                    },
+                    {
+                        "Key": "21398",
+                        "ID": "7:143:31"
+                    },
+                    {
+                        "Key": "21494",
+                        "ID": "7:148:3"
+                    },
+                    {
+                        "Key": "21534",
+                        "ID": "7:150:3"
+                    },
+                    {
+                        "Key": "21614",
+                        "ID": "7:154:4"
+                    },
+                    {
+                        "Key": "21627",
+                        "ID": "7:155:2"
+                    },
+                    {
+                        "Key": "21773",
+                        "ID": "7:159:3"
+                    },
+                    {
+                        "Key": "21786",
+                        "ID": "7:160:8"
+                    },
+                    {
+                        "Key": "27603",
+                        "ID": "10:75:5"
+                    },
+                    {
+                        "Key": "27624",
+                        "ID": "10:77:2"
+                    },
+                    {
+                        "Key": "27661",
+                        "ID": "10:80:6"
+                    },
+                    {
+                        "Key": "27669",
+                        "ID": "10:81:4"
+                    },
+                    {
+                        "Key": "27713",
+                        "ID": "10:84:2"
+                    },
+                    {
+                        "Key": "27741",
+                        "ID": "10:87:3"
+                    },
+                    {
+                        "Key": "27756",
+                        "ID": "10:88:2"
+                    },
+                    {
+                        "Key": "28389",
+                        "ID": "11:17:13"
+                    },
+                    {
+                        "Key": "29677",
+                        "ID": "11:96:3"
+                    },
+                    {
+                        "Key": "29849",
+                        "ID": "11:110:3"
+                    },
+                    {
+                        "Key": "32726",
+                        "ID": "14:5:3"
+                    },
+                    {
+                        "Key": "32747",
+                        "ID": "14:6:3"
+                    },
+                    {
+                        "Key": "32783",
+                        "ID": "14:8:2"
+                    },
+                    {
+                        "Key": "36010",
+                        "ID": "17:2:2"
+                    },
+                    {
+                        "Key": "37398",
+                        "ID": "17:101:3"
+                    },
+                    {
+                        "Key": "38501",
+                        "ID": "18:60:3"
+                    },
+                    {
+                        "Key": "38578",
+                        "ID": "18:66:3"
+                    },
+                    {
+                        "Key": "39637",
+                        "ID": "19:51:4"
+                    },
+                    {
+                        "Key": "40134",
+                        "ID": "20:9:4"
+                    },
+                    {
+                        "Key": "40541",
+                        "ID": "20:61:3"
+                    },
+                    {
+                        "Key": "40609",
+                        "ID": "20:67:5"
+                    },
+                    {
+                        "Key": "40737",
+                        "ID": "20:77:4"
+                    },
+                    {
+                        "Key": "40829",
+                        "ID": "20:86:2"
+                    },
+                    {
+                        "Key": "40879",
+                        "ID": "20:88:11"
+                    },
+                    {
+                        "Key": "40917",
+                        "ID": "20:91:9"
+                    },
+                    {
+                        "Key": "41947",
+                        "ID": "21:48:3"
+                    },
+                    {
+                        "Key": "43320",
+                        "ID": "22:44:4"
+                    },
+                    {
+                        "Key": "44285",
+                        "ID": "23:45:3"
+                    },
+                    {
+                        "Key": "44311",
+                        "ID": "23:49:3"
+                    },
+                    {
+                        "Key": "46648",
+                        "ID": "25:35:3"
+                    },
+                    {
+                        "Key": "47189",
+                        "ID": "26:10:4"
+                    },
+                    {
+                        "Key": "47414",
+                        "ID": "26:43:3"
+                    },
+                    {
+                        "Key": "47429",
+                        "ID": "26:45:2"
+                    },
+                    {
+                        "Key": "47444",
+                        "ID": "26:48:2"
+                    },
+                    {
+                        "Key": "47487",
+                        "ID": "26:52:3"
+                    },
+                    {
+                        "Key": "47526",
+                        "ID": "26:61:6"
+                    },
+                    {
+                        "Key": "47537",
+                        "ID": "26:63:3"
+                    },
+                    {
+                        "Key": "47552",
+                        "ID": "26:65:2"
+                    },
+                    {
+                        "Key": "48486",
+                        "ID": "27:7:3"
+                    },
+                    {
+                        "Key": "49599",
+                        "ID": "28:3:5"
+                    },
+                    {
+                        "Key": "49650",
+                        "ID": "28:7:4"
+                    },
+                    {
+                        "Key": "49703",
+                        "ID": "28:10:4"
+                    },
+                    {
+                        "Key": "49796",
+                        "ID": "28:15:27"
+                    },
+                    {
+                        "Key": "49842",
+                        "ID": "28:18:13"
+                    },
+                    {
+                        "Key": "50041",
+                        "ID": "28:29:3"
+                    },
+                    {
+                        "Key": "50169",
+                        "ID": "28:36:3"
+                    },
+                    {
+                        "Key": "50185",
+                        "ID": "28:37:2"
+                    },
+                    {
+                        "Key": "50224",
+                        "ID": "28:38:23"
+                    },
+                    {
+                        "Key": "50272",
+                        "ID": "28:43:3"
+                    },
+                    {
+                        "Key": "50293",
+                        "ID": "28:44:8"
+                    },
+                    {
+                        "Key": "50366",
+                        "ID": "28:48:12"
+                    },
+                    {
+                        "Key": "50371",
+                        "ID": "28:48:17"
+                    },
+                    {
+                        "Key": "50762",
+                        "ID": "28:76:6"
+                    },
+                    {
+                        "Key": "51562",
+                        "ID": "29:39:6"
+                    },
+                    {
+                        "Key": "53640",
+                        "ID": "32:23:3"
+                    },
+                    {
+                        "Key": "54954",
+                        "ID": "33:69:8"
+                    },
+                    {
+                        "Key": "57973",
+                        "ID": "37:114:4"
+                    },
+                    {
+                        "Key": "57996",
+                        "ID": "37:120:3"
+                    },
+                    {
+                        "Key": "60477",
+                        "ID": "40:23:3"
+                    },
+                    {
+                        "Key": "60511",
+                        "ID": "40:26:5"
+                    },
+                    {
+                        "Key": "60526",
+                        "ID": "40:27:2"
+                    },
+                    {
+                        "Key": "60716",
+                        "ID": "40:37:6"
+                    },
+                    {
+                        "Key": "60940",
+                        "ID": "40:53:3"
+                    },
+                    {
+                        "Key": "62009",
+                        "ID": "41:45:3"
+                    },
+                    {
+                        "Key": "63477",
+                        "ID": "43:46:3"
+                    },
+                    {
+                        "Key": "64891",
+                        "ID": "46:12:4"
+                    },
+                    {
+                        "Key": "65237",
+                        "ID": "46:30:9"
+                    },
+                    {
+                        "Key": "67357",
+                        "ID": "51:38:2"
+                    },
+                    {
+                        "Key": "68092",
+                        "ID": "53:36:7"
+                    },
+                    {
+                        "Key": "71150",
+                        "ID": "61:5:3"
+                    },
+                    {
+                        "Key": "75340",
+                        "ID": "79:15:4"
+                    }
+                ],
+                "WordCount": 105,
+                "VerseCount": 105
+            },
+            "يموسى": {
+                "Verses": [
+                    {
+                        "Key": "802",
+                        "ID": "2:55:3"
+                    },
+                    {
+                        "Key": "907",
+                        "ID": "2:61:3"
+                    },
+                    {
+                        "Key": "14010",
+                        "ID": "5:22:2"
+                    },
+                    {
+                        "Key": "14048",
+                        "ID": "5:24:2"
+                    },
+                    {
+                        "Key": "20997",
+                        "ID": "7:115:2"
+                    },
+                    {
+                        "Key": "21217",
+                        "ID": "7:134:6"
+                    },
+                    {
+                        "Key": "21297",
+                        "ID": "7:138:13"
+                    },
+                    {
+                        "Key": "21410",
+                        "ID": "7:144:2"
+                    },
+                    {
+                        "Key": "37412",
+                        "ID": "17:101:17"
+                    },
+                    {
+                        "Key": "40156",
+                        "ID": "20:11:4"
+                    },
+                    {
+                        "Key": "40205",
+                        "ID": "20:17:4"
+                    },
+                    {
+                        "Key": "40221",
+                        "ID": "20:19:3"
+                    },
+                    {
+                        "Key": "40294",
+                        "ID": "20:36:5"
+                    },
+                    {
+                        "Key": "40361",
+                        "ID": "20:40:34"
+                    },
+                    {
+                        "Key": "40436",
+                        "ID": "20:49:4"
+                    },
+                    {
+                        "Key": "40510",
+                        "ID": "20:57:7"
+                    },
+                    {
+                        "Key": "40583",
+                        "ID": "20:65:2"
+                    },
+                    {
+                        "Key": "40809",
+                        "ID": "20:83:5"
+                    },
+                    {
+                        "Key": "48514",
+                        "ID": "27:9:1"
+                    },
+                    {
+                        "Key": "48531",
+                        "ID": "27:10:12"
+                    },
+                    {
+                        "Key": "49856",
+                        "ID": "28:19:11"
+                    },
+                    {
+                        "Key": "49885",
+                        "ID": "28:20:8"
+                    },
+                    {
+                        "Key": "50079",
+                        "ID": "28:30:14"
+                    },
+                    {
+                        "Key": "50097",
+                        "ID": "28:31:13"
+                    }
+                ],
+                "WordCount": 24,
+                "VerseCount": 24
+            },
+            "وموسى": {
+                "Verses": [
+                    {
+                        "Key": "17595",
+                        "ID": "6:84:17"
+                    },
+                    {
+                        "Key": "40639",
+                        "ID": "20:70:8"
+                    },
+                    {
+                        "Key": "53856",
+                        "ID": "33:7:10"
+                    },
+                    {
+                        "Key": "62352",
+                        "ID": "42:13:16"
+                    },
+                    {
+                        "Key": "76309",
+                        "ID": "87:19:3"
+                    }
+                ],
+                "WordCount": 5,
+                "VerseCount": 5
+            },
+            "بموسى": {
+                "Verses": [
+                    {
+                        "Key": "21175",
+                        "ID": "7:131:11"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "لموسى": {
+                "Verses": [
+                    {
+                        "Key": "27692",
+                        "ID": "10:83:3"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 136
     },
     "ربع": {
         "Word": {
@@ -173256,7 +174405,8 @@
                 "VerseCount": 1
             }
         },
-        "RootCount": 234
+        "RootCount": 234,
+        "Notes": "# غفر\n\ngefera, fare, companion, comrade, partner; literally a “fellow traveler\n\n\n\n| Language | Form | Meaning |\n|---|---|---|\n| **Old English** | **ġefēra / gefera** | companion, comrade, partner; literally a “fellow traveler”|\n| **Old English** | **ġefar** | an imperative form of **ġefaran**, “to go/travel” |\n| **Early New High German** | **gefar / gefär** | danger, threat; earlier also hostile intent, deceit, Jaffar  جَعْفَر|\n| **Old Norse** | **gifr-** | savage, fierce, excessive; e.g. *gifrliga*, “savagely” Jaffar جَعْفَر|\n\n### The most interesting match: **Old English gefera**\n\n**ġefēra** was pronounced roughly **ye-FEH-ra / ge-FERA** and meant **companion, comrade, partner**. Its structure was *ge-* + a word connected with **faran**, “to travel/go,” so the literal idea is roughly **“one who goes together with another.”** \n\nIt survives indirectly in archaic English **fere**, meaning **companion, mate, spouse**. \n\nSo purely phonetically:\n\n**GAFARA / GEFERA**\n\nis a remarkably close sequence:\n\n**G-F-R**\n\nand even the full three-syllable pattern is close.\n\nThere is also German **Gefährte**, “companion,” which belongs to the same Germanic family as Old English **ġefēra**.\n"
     },
     "خطأ": {
         "Word": {
@@ -189749,18 +190899,12 @@
                         "ID": "2:137:14"
                     },
                     {
-                        "Key": "10500",
-                        "ID": "4:35:3"
-                    }
-                ],
-                "WordCount": 2,
-                "VerseCount": 2
-            },
-            "شقاقۭ": {
-                "Verses": [
-                    {
                         "Key": "3173",
                         "ID": "2:176:13"
+                    },
+                    {
+                        "Key": "10500",
+                        "ID": "4:35:3"
                     },
                     {
                         "Key": "43455",
@@ -189771,8 +190915,8 @@
                         "ID": "41:52:16"
                     }
                 ],
-                "WordCount": 3,
-                "VerseCount": 3
+                "WordCount": 5,
+                "VerseCount": 5
             },
             "يشاقق": {
                 "Verses": [
@@ -191692,6 +192836,10 @@
                         "ID": "3:113:6"
                     },
                     {
+                        "Key": "10620",
+                        "ID": "4:41:6"
+                    },
+                    {
                         "Key": "14614",
                         "ID": "5:48:34"
                     },
@@ -191848,8 +192996,8 @@
                         "ID": "45:28:6"
                     }
                 ],
-                "WordCount": 47,
-                "VerseCount": 47
+                "WordCount": 48,
+                "VerseCount": 48
             },
             "ام": {
                 "Verses": [
@@ -191976,20 +193124,6 @@
                 ],
                 "WordCount": 1,
                 "VerseCount": 1
-            },
-            "امةۭ": {
-                "Verses": [
-                    {
-                        "Key": "10620",
-                        "ID": "4:41:6"
-                    },
-                    {
-                        "Key": "60210",
-                        "ID": "40:5:10"
-                    }
-                ],
-                "WordCount": 2,
-                "VerseCount": 2
             },
             "امين": {
                 "Verses": [
@@ -192267,6 +193401,16 @@
                 "WordCount": 1,
                 "VerseCount": 1
             },
+            "امةۭ": {
+                "Verses": [
+                    {
+                        "Key": "60210",
+                        "ID": "40:5:10"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
             "امامه": {
                 "Verses": [
                     {
@@ -192484,6 +193628,225 @@
             }
         },
         "RootCount": 22
+    },
+    "ويل": {
+        "Word": {
+            "فويل": {
+                "Verses": [
+                    {
+                        "Key": "1259",
+                        "ID": "2:79:1"
+                    },
+                    {
+                        "Key": "1274",
+                        "ID": "2:79:16"
+                    },
+                    {
+                        "Key": "39481",
+                        "ID": "19:37:5"
+                    },
+                    {
+                        "Key": "58556",
+                        "ID": "38:27:12"
+                    },
+                    {
+                        "Key": "59389",
+                        "ID": "39:22:11"
+                    },
+                    {
+                        "Key": "63669",
+                        "ID": "43:65:5"
+                    },
+                    {
+                        "Key": "67519",
+                        "ID": "51:60:1"
+                    },
+                    {
+                        "Key": "67553",
+                        "ID": "52:11:1"
+                    },
+                    {
+                        "Key": "77283",
+                        "ID": "107:4:1"
+                    }
+                ],
+                "WordCount": 9,
+                "VerseCount": 9
+            },
+            "وويل": {
+                "Verses": [
+                    {
+                        "Key": "1279",
+                        "ID": "2:79:21"
+                    },
+                    {
+                        "Key": "32684",
+                        "ID": "14:2:10"
+                    },
+                    {
+                        "Key": "61436",
+                        "ID": "41:6:15"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            },
+            "يويلتى": {
+                "Verses": [
+                    {
+                        "Key": "14164",
+                        "ID": "5:31:13"
+                    },
+                    {
+                        "Key": "29291",
+                        "ID": "11:72:2"
+                    },
+                    {
+                        "Key": "46575",
+                        "ID": "25:28:1"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            },
+            "يويلتنا": {
+                "Verses": [
+                    {
+                        "Key": "38310",
+                        "ID": "18:49:9"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "ويلكم": {
+                "Verses": [
+                    {
+                        "Key": "40542",
+                        "ID": "20:61:4"
+                    },
+                    {
+                        "Key": "50864",
+                        "ID": "28:80:5"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "يويلنا": {
+                "Verses": [
+                    {
+                        "Key": "41551",
+                        "ID": "21:14:2"
+                    },
+                    {
+                        "Key": "41921",
+                        "ID": "21:46:8"
+                    },
+                    {
+                        "Key": "42433",
+                        "ID": "21:97:10"
+                    },
+                    {
+                        "Key": "57125",
+                        "ID": "36:52:2"
+                    },
+                    {
+                        "Key": "57498",
+                        "ID": "37:20:2"
+                    },
+                    {
+                        "Key": "72936",
+                        "ID": "68:31:2"
+                    }
+                ],
+                "WordCount": 6,
+                "VerseCount": 6
+            },
+            "الويل": {
+                "Verses": [
+                    {
+                        "Key": "41591",
+                        "ID": "21:18:11"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "ويل": {
+                "Verses": [
+                    {
+                        "Key": "64270",
+                        "ID": "45:7:1"
+                    },
+                    {
+                        "Key": "74980",
+                        "ID": "77:15:1"
+                    },
+                    {
+                        "Key": "74992",
+                        "ID": "77:19:1"
+                    },
+                    {
+                        "Key": "75010",
+                        "ID": "77:24:1"
+                    },
+                    {
+                        "Key": "75026",
+                        "ID": "77:28:1"
+                    },
+                    {
+                        "Key": "75054",
+                        "ID": "77:34:1"
+                    },
+                    {
+                        "Key": "75065",
+                        "ID": "77:37:1"
+                    },
+                    {
+                        "Key": "75078",
+                        "ID": "77:40:1"
+                    },
+                    {
+                        "Key": "75099",
+                        "ID": "77:45:1"
+                    },
+                    {
+                        "Key": "75107",
+                        "ID": "77:47:1"
+                    },
+                    {
+                        "Key": "75116",
+                        "ID": "77:49:1"
+                    },
+                    {
+                        "Key": "75792",
+                        "ID": "83:1:1"
+                    },
+                    {
+                        "Key": "75829",
+                        "ID": "83:10:1"
+                    },
+                    {
+                        "Key": "77197",
+                        "ID": "104:1:1"
+                    }
+                ],
+                "WordCount": 14,
+                "VerseCount": 14
+            },
+            "ويلك": {
+                "Verses": [
+                    {
+                        "Key": "65005",
+                        "ID": "46:17:17"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 40
     },
     "كسب": {
         "Word": {
@@ -199196,6 +200559,294 @@
         },
         "RootCount": 513
     },
+    "عيسى": {
+        "Word": {
+            "عيسى": {
+                "Verses": [
+                    {
+                        "Key": "1444",
+                        "ID": "2:87:10"
+                    },
+                    {
+                        "Key": "5115",
+                        "ID": "2:253:15"
+                    },
+                    {
+                        "Key": "6925",
+                        "ID": "3:45:12"
+                    },
+                    {
+                        "Key": "7043",
+                        "ID": "3:52:3"
+                    },
+                    {
+                        "Key": "7139",
+                        "ID": "3:59:3"
+                    },
+                    {
+                        "Key": "12971",
+                        "ID": "4:157:5"
+                    },
+                    {
+                        "Key": "13215",
+                        "ID": "4:171:15"
+                    },
+                    {
+                        "Key": "16021",
+                        "ID": "5:114:2"
+                    },
+                    {
+                        "Key": "39445",
+                        "ID": "19:34:2"
+                    },
+                    {
+                        "Key": "63641",
+                        "ID": "43:63:3"
+                    },
+                    {
+                        "Key": "71173",
+                        "ID": "61:6:3"
+                    },
+                    {
+                        "Key": "71303",
+                        "ID": "61:14:9"
+                    }
+                ],
+                "WordCount": 12,
+                "VerseCount": 12
+            },
+            "وعيسى": {
+                "Verses": [
+                    {
+                        "Key": "2421",
+                        "ID": "2:136:18"
+                    },
+                    {
+                        "Key": "7598",
+                        "ID": "3:84:18"
+                    },
+                    {
+                        "Key": "13094",
+                        "ID": "4:163:18"
+                    },
+                    {
+                        "Key": "15259",
+                        "ID": "5:78:10"
+                    },
+                    {
+                        "Key": "17602",
+                        "ID": "6:85:3"
+                    },
+                    {
+                        "Key": "53857",
+                        "ID": "33:7:11"
+                    },
+                    {
+                        "Key": "62353",
+                        "ID": "42:13:17"
+                    }
+                ],
+                "WordCount": 7,
+                "VerseCount": 7
+            },
+            "يعيسى": {
+                "Verses": [
+                    {
+                        "Key": "7079",
+                        "ID": "3:55:4"
+                    },
+                    {
+                        "Key": "15911",
+                        "ID": "5:110:4"
+                    },
+                    {
+                        "Key": "15987",
+                        "ID": "5:112:4"
+                    },
+                    {
+                        "Key": "16062",
+                        "ID": "5:116:4"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            },
+            "بعيسى": {
+                "Verses": [
+                    {
+                        "Key": "14542",
+                        "ID": "5:46:4"
+                    },
+                    {
+                        "Key": "69768",
+                        "ID": "57:27:7"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 25
+    },
+    "مريم": {
+        "Word": {
+            "مريم": {
+                "Verses": [
+                    {
+                        "Key": "1446",
+                        "ID": "2:87:12"
+                    },
+                    {
+                        "Key": "5117",
+                        "ID": "2:253:17"
+                    },
+                    {
+                        "Key": "6761",
+                        "ID": "3:36:17"
+                    },
+                    {
+                        "Key": "6908",
+                        "ID": "3:44:15"
+                    },
+                    {
+                        "Key": "6927",
+                        "ID": "3:45:14"
+                    },
+                    {
+                        "Key": "12964",
+                        "ID": "4:156:4"
+                    },
+                    {
+                        "Key": "12973",
+                        "ID": "4:157:7"
+                    },
+                    {
+                        "Key": "13217",
+                        "ID": "4:171:17"
+                    },
+                    {
+                        "Key": "13223",
+                        "ID": "4:171:23"
+                    },
+                    {
+                        "Key": "13882",
+                        "ID": "5:17:10"
+                    },
+                    {
+                        "Key": "13895",
+                        "ID": "5:17:23"
+                    },
+                    {
+                        "Key": "14544",
+                        "ID": "5:46:6"
+                    },
+                    {
+                        "Key": "15129",
+                        "ID": "5:72:10"
+                    },
+                    {
+                        "Key": "15189",
+                        "ID": "5:75:4"
+                    },
+                    {
+                        "Key": "15261",
+                        "ID": "5:78:12"
+                    },
+                    {
+                        "Key": "15913",
+                        "ID": "5:110:6"
+                    },
+                    {
+                        "Key": "15989",
+                        "ID": "5:112:6"
+                    },
+                    {
+                        "Key": "16023",
+                        "ID": "5:114:4"
+                    },
+                    {
+                        "Key": "16064",
+                        "ID": "5:116:6"
+                    },
+                    {
+                        "Key": "24353",
+                        "ID": "9:31:10"
+                    },
+                    {
+                        "Key": "39264",
+                        "ID": "19:16:4"
+                    },
+                    {
+                        "Key": "39447",
+                        "ID": "19:34:4"
+                    },
+                    {
+                        "Key": "44317",
+                        "ID": "23:50:3"
+                    },
+                    {
+                        "Key": "53859",
+                        "ID": "33:7:13"
+                    },
+                    {
+                        "Key": "63584",
+                        "ID": "43:57:4"
+                    },
+                    {
+                        "Key": "69770",
+                        "ID": "57:27:9"
+                    },
+                    {
+                        "Key": "71175",
+                        "ID": "61:6:5"
+                    },
+                    {
+                        "Key": "71305",
+                        "ID": "61:14:11"
+                    }
+                ],
+                "WordCount": 28,
+                "VerseCount": 28
+            },
+            "يمريم": {
+                "Verses": [
+                    {
+                        "Key": "6787",
+                        "ID": "3:37:19"
+                    },
+                    {
+                        "Key": "6878",
+                        "ID": "3:42:4"
+                    },
+                    {
+                        "Key": "6887",
+                        "ID": "3:43:1"
+                    },
+                    {
+                        "Key": "6917",
+                        "ID": "3:45:4"
+                    },
+                    {
+                        "Key": "39384",
+                        "ID": "19:27:6"
+                    }
+                ],
+                "WordCount": 5,
+                "VerseCount": 5
+            },
+            "ومريم": {
+                "Verses": [
+                    {
+                        "Key": "72445",
+                        "ID": "66:12:1"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 34
+    },
     "أيد": {
         "Word": {
             "وايدنه": {
@@ -205674,6 +207325,50 @@
         },
         "RootCount": 2
     },
+    "جبريل": {
+        "Word": {
+            "لجبريل": {
+                "Verses": [
+                    {
+                        "Key": "1649",
+                        "ID": "2:97:5"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "وجبريل": {
+                "Verses": [
+                    {
+                        "Key": "1669",
+                        "ID": "2:98:7"
+                    },
+                    {
+                        "Key": "72281",
+                        "ID": "66:4:15"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 3
+    },
+    "ميكال": {
+        "Word": {
+            "وميكىل": {
+                "Verses": [
+                    {
+                        "Key": "1670",
+                        "ID": "2:98:8"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "نبذ": {
         "Word": {
             "نبذه": {
@@ -205792,6 +207487,103 @@
             }
         },
         "RootCount": 12
+    },
+    "سليمان": {
+        "Word": {
+            "سليمن": {
+                "Verses": [
+                    {
+                        "Key": "1723",
+                        "ID": "2:102:7"
+                    },
+                    {
+                        "Key": "1726",
+                        "ID": "2:102:10"
+                    },
+                    {
+                        "Key": "42221",
+                        "ID": "21:79:2"
+                    },
+                    {
+                        "Key": "48604",
+                        "ID": "27:16:2"
+                    },
+                    {
+                        "Key": "48644",
+                        "ID": "27:18:15"
+                    },
+                    {
+                        "Key": "48786",
+                        "ID": "27:30:3"
+                    },
+                    {
+                        "Key": "48844",
+                        "ID": "27:36:3"
+                    },
+                    {
+                        "Key": "48997",
+                        "ID": "27:44:25"
+                    },
+                    {
+                        "Key": "58585",
+                        "ID": "38:30:3"
+                    },
+                    {
+                        "Key": "58615",
+                        "ID": "38:34:3"
+                    }
+                ],
+                "WordCount": 10,
+                "VerseCount": 10
+            },
+            "وسليمن": {
+                "Verses": [
+                    {
+                        "Key": "13098",
+                        "ID": "4:163:22"
+                    },
+                    {
+                        "Key": "17592",
+                        "ID": "6:84:14"
+                    },
+                    {
+                        "Key": "42207",
+                        "ID": "21:78:2"
+                    },
+                    {
+                        "Key": "48591",
+                        "ID": "27:15:4"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            },
+            "ولسليمن": {
+                "Verses": [
+                    {
+                        "Key": "42244",
+                        "ID": "21:81:1"
+                    },
+                    {
+                        "Key": "55207",
+                        "ID": "34:12:1"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "لسليمن": {
+                "Verses": [
+                    {
+                        "Key": "48622",
+                        "ID": "27:17:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 17
     },
     "سحر": {
         "Word": {
@@ -206199,6 +207991,51 @@
             }
         },
         "RootCount": 63
+    },
+    "بابل": {
+        "Word": {
+            "ببابل": {
+                "Verses": [
+                    {
+                        "Key": "1737",
+                        "ID": "2:102:21"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "هاروت": {
+        "Word": {
+            "هروت": {
+                "Verses": [
+                    {
+                        "Key": "1738",
+                        "ID": "2:102:22"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "ماروت": {
+        "Word": {
+            "ومروت": {
+                "Verses": [
+                    {
+                        "Key": "1739",
+                        "ID": "2:102:23"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
     },
     "فتن": {
         "Word": {
@@ -207486,10 +209323,14 @@
                     {
                         "Key": "55713",
                         "ID": "34:42:6"
+                    },
+                    {
+                        "Key": "66045",
+                        "ID": "48:11:31"
                     }
                 ],
-                "WordCount": 8,
-                "VerseCount": 8
+                "WordCount": 9,
+                "VerseCount": 9
             },
             "ينفعنا": {
                 "Verses": [
@@ -207620,16 +209461,6 @@
                     {
                         "Key": "47594",
                         "ID": "26:73:2"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
-            },
-            "نفعۢا": {
-                "Verses": [
-                    {
-                        "Key": "66045",
-                        "ID": "48:11:31"
                     }
                 ],
                 "WordCount": 1,
@@ -212820,6 +214651,323 @@
         },
         "RootCount": 18
     },
+    "إبراهيم": {
+        "Word": {
+            "ابرهم": {
+                "Verses": [
+                    {
+                        "Key": "2188",
+                        "ID": "2:124:3"
+                    },
+                    {
+                        "Key": "2214",
+                        "ID": "2:125:10"
+                    },
+                    {
+                        "Key": "2218",
+                        "ID": "2:125:14"
+                    },
+                    {
+                        "Key": "2229",
+                        "ID": "2:126:3"
+                    },
+                    {
+                        "Key": "2259",
+                        "ID": "2:127:3"
+                    },
+                    {
+                        "Key": "2308",
+                        "ID": "2:130:5"
+                    },
+                    {
+                        "Key": "2333",
+                        "ID": "2:132:3"
+                    },
+                    {
+                        "Key": "2366",
+                        "ID": "2:133:20"
+                    },
+                    {
+                        "Key": "2398",
+                        "ID": "2:135:10"
+                    },
+                    {
+                        "Key": "2413",
+                        "ID": "2:136:10"
+                    },
+                    {
+                        "Key": "2481",
+                        "ID": "2:140:4"
+                    },
+                    {
+                        "Key": "5277",
+                        "ID": "2:258:6"
+                    },
+                    {
+                        "Key": "5286",
+                        "ID": "2:258:15"
+                    },
+                    {
+                        "Key": "5296",
+                        "ID": "2:258:25"
+                    },
+                    {
+                        "Key": "5384",
+                        "ID": "2:260:3"
+                    }
+                ],
+                "WordCount": 15,
+                "VerseCount": 15
+            },
+            "ابرهيم": {
+                "Verses": [
+                    {
+                        "Key": "6715",
+                        "ID": "3:33:7"
+                    },
+                    {
+                        "Key": "7241",
+                        "ID": "3:65:6"
+                    },
+                    {
+                        "Key": "7272",
+                        "ID": "3:67:3"
+                    },
+                    {
+                        "Key": "7590",
+                        "ID": "3:84:10"
+                    },
+                    {
+                        "Key": "7763",
+                        "ID": "3:95:6"
+                    },
+                    {
+                        "Key": "7783",
+                        "ID": "3:97:5"
+                    },
+                    {
+                        "Key": "10875",
+                        "ID": "4:54:13"
+                    },
+                    {
+                        "Key": "12354",
+                        "ID": "4:125:12"
+                    },
+                    {
+                        "Key": "12358",
+                        "ID": "4:125:16"
+                    },
+                    {
+                        "Key": "13089",
+                        "ID": "4:163:13"
+                    },
+                    {
+                        "Key": "17424",
+                        "ID": "6:74:3"
+                    },
+                    {
+                        "Key": "17438",
+                        "ID": "6:75:3"
+                    },
+                    {
+                        "Key": "17568",
+                        "ID": "6:83:4"
+                    },
+                    {
+                        "Key": "19155",
+                        "ID": "6:161:11"
+                    },
+                    {
+                        "Key": "25098",
+                        "ID": "9:70:12"
+                    },
+                    {
+                        "Key": "25955",
+                        "ID": "9:114:4"
+                    },
+                    {
+                        "Key": "25971",
+                        "ID": "9:114:20"
+                    },
+                    {
+                        "Key": "29251",
+                        "ID": "11:69:4"
+                    },
+                    {
+                        "Key": "29319",
+                        "ID": "11:74:4"
+                    },
+                    {
+                        "Key": "29328",
+                        "ID": "11:75:2"
+                    },
+                    {
+                        "Key": "30105",
+                        "ID": "12:6:20"
+                    },
+                    {
+                        "Key": "30607",
+                        "ID": "12:38:4"
+                    },
+                    {
+                        "Key": "33259",
+                        "ID": "14:35:3"
+                    },
+                    {
+                        "Key": "33854",
+                        "ID": "15:51:4"
+                    },
+                    {
+                        "Key": "35877",
+                        "ID": "16:120:2"
+                    },
+                    {
+                        "Key": "35909",
+                        "ID": "16:123:7"
+                    },
+                    {
+                        "Key": "39522",
+                        "ID": "19:41:4"
+                    },
+                    {
+                        "Key": "39705",
+                        "ID": "19:58:17"
+                    },
+                    {
+                        "Key": "41970",
+                        "ID": "21:51:3"
+                    },
+                    {
+                        "Key": "42050",
+                        "ID": "21:60:7"
+                    },
+                    {
+                        "Key": "42123",
+                        "ID": "21:69:7"
+                    },
+                    {
+                        "Key": "43314",
+                        "ID": "22:43:2"
+                    },
+                    {
+                        "Key": "43834",
+                        "ID": "22:78:17"
+                    },
+                    {
+                        "Key": "47575",
+                        "ID": "26:69:4"
+                    },
+                    {
+                        "Key": "51448",
+                        "ID": "29:31:4"
+                    },
+                    {
+                        "Key": "57947",
+                        "ID": "37:109:3"
+                    },
+                    {
+                        "Key": "58709",
+                        "ID": "38:45:3"
+                    },
+                    {
+                        "Key": "62351",
+                        "ID": "42:13:15"
+                    },
+                    {
+                        "Key": "63280",
+                        "ID": "43:26:3"
+                    },
+                    {
+                        "Key": "67268",
+                        "ID": "51:24:5"
+                    },
+                    {
+                        "Key": "70841",
+                        "ID": "60:4:7"
+                    },
+                    {
+                        "Key": "70869",
+                        "ID": "60:4:35"
+                    },
+                    {
+                        "Key": "76308",
+                        "ID": "87:19:2"
+                    }
+                ],
+                "WordCount": 43,
+                "VerseCount": 43
+            },
+            "بابرهيم": {
+                "Verses": [
+                    {
+                        "Key": "7287",
+                        "ID": "3:68:4"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "يابرهيم": {
+                "Verses": [
+                    {
+                        "Key": "29332",
+                        "ID": "11:76:1"
+                    },
+                    {
+                        "Key": "39580",
+                        "ID": "19:46:6"
+                    },
+                    {
+                        "Key": "42064",
+                        "ID": "21:62:6"
+                    },
+                    {
+                        "Key": "57925",
+                        "ID": "37:104:3"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            },
+            "لابرهيم": {
+                "Verses": [
+                    {
+                        "Key": "43026",
+                        "ID": "22:26:3"
+                    },
+                    {
+                        "Key": "57811",
+                        "ID": "37:83:4"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "وابرهيم": {
+                "Verses": [
+                    {
+                        "Key": "51202",
+                        "ID": "29:16:1"
+                    },
+                    {
+                        "Key": "53855",
+                        "ID": "33:7:9"
+                    },
+                    {
+                        "Key": "68093",
+                        "ID": "53:37:1"
+                    },
+                    {
+                        "Key": "69751",
+                        "ID": "57:26:4"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            }
+        },
+        "RootCount": 69
+    },
     "تمم": {
         "Word": {
             "فاتمهن": {
@@ -213779,6 +215927,71 @@
             }
         },
         "RootCount": 73
+    },
+    "إسماعيل": {
+        "Word": {
+            "واسمعيل": {
+                "Verses": [
+                    {
+                        "Key": "2219",
+                        "ID": "2:125:15"
+                    },
+                    {
+                        "Key": "2263",
+                        "ID": "2:127:7"
+                    },
+                    {
+                        "Key": "2367",
+                        "ID": "2:133:21"
+                    },
+                    {
+                        "Key": "2414",
+                        "ID": "2:136:11"
+                    },
+                    {
+                        "Key": "2482",
+                        "ID": "2:140:5"
+                    },
+                    {
+                        "Key": "7591",
+                        "ID": "3:84:11"
+                    },
+                    {
+                        "Key": "13090",
+                        "ID": "4:163:14"
+                    },
+                    {
+                        "Key": "17607",
+                        "ID": "6:86:1"
+                    },
+                    {
+                        "Key": "42296",
+                        "ID": "21:85:1"
+                    }
+                ],
+                "WordCount": 9,
+                "VerseCount": 9
+            },
+            "اسمعيل": {
+                "Verses": [
+                    {
+                        "Key": "33336",
+                        "ID": "14:39:8"
+                    },
+                    {
+                        "Key": "39661",
+                        "ID": "19:54:4"
+                    },
+                    {
+                        "Key": "58726",
+                        "ID": "38:48:2"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            }
+        },
+        "RootCount": 12
     },
     "طوف": {
         "Word": {
@@ -215790,6 +218003,87 @@
         },
         "RootCount": 32
     },
+    "يعقوب": {
+        "Word": {
+            "ويعقوب": {
+                "Verses": [
+                    {
+                        "Key": "2335",
+                        "ID": "2:132:5"
+                    },
+                    {
+                        "Key": "2416",
+                        "ID": "2:136:13"
+                    },
+                    {
+                        "Key": "2484",
+                        "ID": "2:140:7"
+                    },
+                    {
+                        "Key": "7593",
+                        "ID": "3:84:13"
+                    },
+                    {
+                        "Key": "13092",
+                        "ID": "4:163:16"
+                    },
+                    {
+                        "Key": "17582",
+                        "ID": "6:84:4"
+                    },
+                    {
+                        "Key": "30609",
+                        "ID": "12:38:6"
+                    },
+                    {
+                        "Key": "39621",
+                        "ID": "19:49:11"
+                    },
+                    {
+                        "Key": "42140",
+                        "ID": "21:72:4"
+                    },
+                    {
+                        "Key": "51387",
+                        "ID": "29:27:4"
+                    },
+                    {
+                        "Key": "58711",
+                        "ID": "38:45:5"
+                    }
+                ],
+                "WordCount": 11,
+                "VerseCount": 11
+            },
+            "يعقوب": {
+                "Verses": [
+                    {
+                        "Key": "2352",
+                        "ID": "2:133:6"
+                    },
+                    {
+                        "Key": "29289",
+                        "ID": "11:71:9"
+                    },
+                    {
+                        "Key": "30098",
+                        "ID": "12:6:13"
+                    },
+                    {
+                        "Key": "31120",
+                        "ID": "12:68:19"
+                    },
+                    {
+                        "Key": "39165",
+                        "ID": "19:6:5"
+                    }
+                ],
+                "WordCount": 5,
+                "VerseCount": 5
+            }
+        },
+        "RootCount": 16
+    },
     "حضر": {
         "Word": {
             "حضر": {
@@ -216679,6 +218973,97 @@
             }
         },
         "RootCount": 117
+    },
+    "إسحاق": {
+        "Word": {
+            "واسحق": {
+                "Verses": [
+                    {
+                        "Key": "2368",
+                        "ID": "2:133:22"
+                    },
+                    {
+                        "Key": "2415",
+                        "ID": "2:136:12"
+                    },
+                    {
+                        "Key": "2483",
+                        "ID": "2:140:6"
+                    },
+                    {
+                        "Key": "7592",
+                        "ID": "3:84:12"
+                    },
+                    {
+                        "Key": "13091",
+                        "ID": "4:163:15"
+                    },
+                    {
+                        "Key": "30106",
+                        "ID": "12:6:21"
+                    },
+                    {
+                        "Key": "30608",
+                        "ID": "12:38:5"
+                    },
+                    {
+                        "Key": "33337",
+                        "ID": "14:39:9"
+                    },
+                    {
+                        "Key": "58710",
+                        "ID": "38:45:4"
+                    }
+                ],
+                "WordCount": 9,
+                "VerseCount": 9
+            },
+            "اسحق": {
+                "Verses": [
+                    {
+                        "Key": "17581",
+                        "ID": "6:84:3"
+                    },
+                    {
+                        "Key": "29288",
+                        "ID": "11:71:8"
+                    },
+                    {
+                        "Key": "39620",
+                        "ID": "19:49:10"
+                    },
+                    {
+                        "Key": "42139",
+                        "ID": "21:72:3"
+                    },
+                    {
+                        "Key": "51386",
+                        "ID": "29:27:3"
+                    },
+                    {
+                        "Key": "57963",
+                        "ID": "37:113:4"
+                    }
+                ],
+                "WordCount": 6,
+                "VerseCount": 6
+            },
+            "باسحق": {
+                "Verses": [
+                    {
+                        "Key": "29285",
+                        "ID": "11:71:5"
+                    },
+                    {
+                        "Key": "57956",
+                        "ID": "37:112:2"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 17
     },
     "حنف": {
         "Word": {
@@ -218741,6 +221126,21 @@
             }
         },
         "RootCount": 86
+    },
+    "صفا": {
+        "Word": {
+            "الصفا": {
+                "Verses": [
+                    {
+                        "Key": "2821",
+                        "ID": "2:158:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
     },
     "مرو": {
         "Word": {
@@ -231210,6 +233610,337 @@
         },
         "RootCount": 4
     },
+    "جهنم": {
+        "Word": {
+            "جهنم": {
+                "Verses": [
+                    {
+                        "Key": "3878",
+                        "ID": "2:206:10"
+                    },
+                    {
+                        "Key": "6317",
+                        "ID": "3:12:7"
+                    },
+                    {
+                        "Key": "8932",
+                        "ID": "3:162:11"
+                    },
+                    {
+                        "Key": "9563",
+                        "ID": "3:197:5"
+                    },
+                    {
+                        "Key": "11722",
+                        "ID": "4:93:6"
+                    },
+                    {
+                        "Key": "11837",
+                        "ID": "4:97:25"
+                    },
+                    {
+                        "Key": "12209",
+                        "ID": "4:115:18"
+                    },
+                    {
+                        "Key": "12281",
+                        "ID": "4:121:3"
+                    },
+                    {
+                        "Key": "12678",
+                        "ID": "4:140:32"
+                    },
+                    {
+                        "Key": "13169",
+                        "ID": "4:169:3"
+                    },
+                    {
+                        "Key": "19407",
+                        "ID": "7:18:10"
+                    },
+                    {
+                        "Key": "19844",
+                        "ID": "7:41:3"
+                    },
+                    {
+                        "Key": "22773",
+                        "ID": "8:16:18"
+                    },
+                    {
+                        "Key": "23075",
+                        "ID": "8:36:20"
+                    },
+                    {
+                        "Key": "23091",
+                        "ID": "8:37:15"
+                    },
+                    {
+                        "Key": "24429",
+                        "ID": "9:35:6"
+                    },
+                    {
+                        "Key": "24736",
+                        "ID": "9:49:13"
+                    },
+                    {
+                        "Key": "24968",
+                        "ID": "9:63:11"
+                    },
+                    {
+                        "Key": "25045",
+                        "ID": "9:68:7"
+                    },
+                    {
+                        "Key": "25169",
+                        "ID": "9:73:9"
+                    },
+                    {
+                        "Key": "25331",
+                        "ID": "9:81:22"
+                    },
+                    {
+                        "Key": "25588",
+                        "ID": "9:95:14"
+                    },
+                    {
+                        "Key": "25858",
+                        "ID": "9:109:22"
+                    },
+                    {
+                        "Key": "29979",
+                        "ID": "11:119:11"
+                    },
+                    {
+                        "Key": "32204",
+                        "ID": "13:18:25"
+                    },
+                    {
+                        "Key": "32944",
+                        "ID": "14:16:3"
+                    },
+                    {
+                        "Key": "33171",
+                        "ID": "14:29:1"
+                    },
+                    {
+                        "Key": "33803",
+                        "ID": "15:43:2"
+                    },
+                    {
+                        "Key": "34478",
+                        "ID": "16:29:3"
+                    },
+                    {
+                        "Key": "36102",
+                        "ID": "17:8:9"
+                    },
+                    {
+                        "Key": "36243",
+                        "ID": "17:18:15"
+                    },
+                    {
+                        "Key": "36518",
+                        "ID": "17:39:16"
+                    },
+                    {
+                        "Key": "36863",
+                        "ID": "17:63:7"
+                    },
+                    {
+                        "Key": "37340",
+                        "ID": "17:97:23"
+                    },
+                    {
+                        "Key": "38997",
+                        "ID": "18:100:2"
+                    },
+                    {
+                        "Key": "39023",
+                        "ID": "18:102:12"
+                    },
+                    {
+                        "Key": "39058",
+                        "ID": "18:106:3"
+                    },
+                    {
+                        "Key": "39826",
+                        "ID": "19:68:7"
+                    },
+                    {
+                        "Key": "39994",
+                        "ID": "19:86:4"
+                    },
+                    {
+                        "Key": "40706",
+                        "ID": "20:74:8"
+                    },
+                    {
+                        "Key": "41713",
+                        "ID": "21:29:10"
+                    },
+                    {
+                        "Key": "42450",
+                        "ID": "21:98:8"
+                    },
+                    {
+                        "Key": "44778",
+                        "ID": "23:103:9"
+                    },
+                    {
+                        "Key": "46640",
+                        "ID": "25:34:6"
+                    },
+                    {
+                        "Key": "46988",
+                        "ID": "25:65:7"
+                    },
+                    {
+                        "Key": "51804",
+                        "ID": "29:54:4"
+                    },
+                    {
+                        "Key": "51984",
+                        "ID": "29:68:15"
+                    },
+                    {
+                        "Key": "53517",
+                        "ID": "32:13:12"
+                    },
+                    {
+                        "Key": "56451",
+                        "ID": "35:36:5"
+                    },
+                    {
+                        "Key": "57213",
+                        "ID": "36:63:2"
+                    },
+                    {
+                        "Key": "58772",
+                        "ID": "38:56:1"
+                    },
+                    {
+                        "Key": "58970",
+                        "ID": "38:85:2"
+                    },
+                    {
+                        "Key": "59528",
+                        "ID": "39:32:13"
+                    },
+                    {
+                        "Key": "59947",
+                        "ID": "39:60:12"
+                    },
+                    {
+                        "Key": "60075",
+                        "ID": "39:71:5"
+                    },
+                    {
+                        "Key": "60108",
+                        "ID": "39:72:4"
+                    },
+                    {
+                        "Key": "60893",
+                        "ID": "40:49:6"
+                    },
+                    {
+                        "Key": "61032",
+                        "ID": "40:60:12"
+                    },
+                    {
+                        "Key": "61238",
+                        "ID": "40:76:3"
+                    },
+                    {
+                        "Key": "63743",
+                        "ID": "43:74:5"
+                    },
+                    {
+                        "Key": "64301",
+                        "ID": "45:10:3"
+                    },
+                    {
+                        "Key": "65966",
+                        "ID": "48:6:19"
+                    },
+                    {
+                        "Key": "66984",
+                        "ID": "50:24:3"
+                    },
+                    {
+                        "Key": "67565",
+                        "ID": "52:13:5"
+                    },
+                    {
+                        "Key": "68736",
+                        "ID": "55:43:2"
+                    },
+                    {
+                        "Key": "70046",
+                        "ID": "58:8:35"
+                    },
+                    {
+                        "Key": "72391",
+                        "ID": "66:9:9"
+                    },
+                    {
+                        "Key": "72526",
+                        "ID": "67:6:5"
+                    },
+                    {
+                        "Key": "74022",
+                        "ID": "72:23:13"
+                    },
+                    {
+                        "Key": "75192",
+                        "ID": "78:21:2"
+                    },
+                    {
+                        "Key": "76120",
+                        "ID": "85:10:11"
+                    },
+                    {
+                        "Key": "77006",
+                        "ID": "98:6:10"
+                    }
+                ],
+                "WordCount": 72,
+                "VerseCount": 72
+            },
+            "بجهنم": {
+                "Verses": [
+                    {
+                        "Key": "10890",
+                        "ID": "4:55:10"
+                    },
+                    {
+                        "Key": "76506",
+                        "ID": "89:23:3"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "لجهنم": {
+                "Verses": [
+                    {
+                        "Key": "22146",
+                        "ID": "7:179:3"
+                    },
+                    {
+                        "Key": "67030",
+                        "ID": "50:30:3"
+                    },
+                    {
+                        "Key": "73945",
+                        "ID": "72:15:4"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            }
+        },
+        "RootCount": 77
+    },
     "مهد": {
         "Word": {
             "المهاد": {
@@ -240234,12 +242965,18 @@
                 "WordCount": 4,
                 "VerseCount": 4
             },
-            "وملاي۟ه": {
+            "وملايه": {
                 "Verses": [
                     {
                         "Key": "20896",
                         "ID": "7:103:9"
-                    },
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "وملاي۟ه": {
+                "Verses": [
                     {
                         "Key": "27607",
                         "ID": "10:75:9"
@@ -240261,8 +242998,8 @@
                         "ID": "43:46:7"
                     }
                 ],
-                "WordCount": 6,
-                "VerseCount": 6
+                "WordCount": 5,
+                "VerseCount": 5
             },
             "وملاي۟هم": {
                 "Verses": [
@@ -240383,6 +243120,25 @@
         },
         "RootCount": 40
     },
+    "طالوت": {
+        "Word": {
+            "طالوت": {
+                "Verses": [
+                    {
+                        "Key": "4925",
+                        "ID": "2:247:9"
+                    },
+                    {
+                        "Key": "4992",
+                        "ID": "2:249:3"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 2
+    },
     "جسم": {
         "Word": {
             "والجسم": {
@@ -240404,6 +243160,25 @@
                 ],
                 "WordCount": 1,
                 "VerseCount": 1
+            }
+        },
+        "RootCount": 2
+    },
+    "تابوت": {
+        "Word": {
+            "التابوت": {
+                "Verses": [
+                    {
+                        "Key": "4968",
+                        "ID": "2:248:9"
+                    },
+                    {
+                        "Key": "40309",
+                        "ID": "20:39:4"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
             }
         },
         "RootCount": 2
@@ -240568,6 +243343,109 @@
             }
         },
         "RootCount": 21
+    },
+    "هارون": {
+        "Word": {
+            "هرون": {
+                "Verses": [
+                    {
+                        "Key": "4979",
+                        "ID": "2:248:20"
+                    },
+                    {
+                        "Key": "21359",
+                        "ID": "7:142:15"
+                    },
+                    {
+                        "Key": "39390",
+                        "ID": "19:28:2"
+                    },
+                    {
+                        "Key": "39656",
+                        "ID": "19:53:6"
+                    },
+                    {
+                        "Key": "40273",
+                        "ID": "20:30:1"
+                    },
+                    {
+                        "Key": "40638",
+                        "ID": "20:70:7"
+                    },
+                    {
+                        "Key": "40896",
+                        "ID": "20:90:4"
+                    },
+                    {
+                        "Key": "44287",
+                        "ID": "23:45:5"
+                    },
+                    {
+                        "Key": "46653",
+                        "ID": "25:35:8"
+                    },
+                    {
+                        "Key": "47211",
+                        "ID": "26:13:8"
+                    },
+                    {
+                        "Key": "50139",
+                        "ID": "28:34:2"
+                    }
+                ],
+                "WordCount": 11,
+                "VerseCount": 11
+            },
+            "وهرون": {
+                "Verses": [
+                    {
+                        "Key": "13097",
+                        "ID": "4:163:21"
+                    },
+                    {
+                        "Key": "17596",
+                        "ID": "6:84:18"
+                    },
+                    {
+                        "Key": "21047",
+                        "ID": "7:122:3"
+                    },
+                    {
+                        "Key": "27604",
+                        "ID": "10:75:6"
+                    },
+                    {
+                        "Key": "41948",
+                        "ID": "21:48:4"
+                    },
+                    {
+                        "Key": "47445",
+                        "ID": "26:48:3"
+                    },
+                    {
+                        "Key": "57974",
+                        "ID": "37:114:5"
+                    },
+                    {
+                        "Key": "57997",
+                        "ID": "37:120:4"
+                    }
+                ],
+                "WordCount": 8,
+                "VerseCount": 8
+            },
+            "يهرون": {
+                "Verses": [
+                    {
+                        "Key": "40919",
+                        "ID": "20:92:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 20
     },
     "حمل": {
         "Word": {
@@ -241393,6 +244271,41 @@
         },
         "RootCount": 5
     },
+    "جالوت": {
+        "Word": {
+            "بجالوت": {
+                "Verses": [
+                    {
+                        "Key": "5030",
+                        "ID": "2:249:41"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "لجالوت": {
+                "Verses": [
+                    {
+                        "Key": "5052",
+                        "ID": "2:250:3"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "جالوت": {
+                "Verses": [
+                    {
+                        "Key": "5070",
+                        "ID": "2:251:6"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 3
+    },
     "فأي": {
         "Word": {
             "فئة": {
@@ -242028,6 +244941,99 @@
             }
         },
         "RootCount": 3
+    },
+    "داود": {
+        "Word": {
+            "داود": {
+                "Verses": [
+                    {
+                        "Key": "5069",
+                        "ID": "2:251:5"
+                    },
+                    {
+                        "Key": "13100",
+                        "ID": "4:163:24"
+                    },
+                    {
+                        "Key": "15258",
+                        "ID": "5:78:9"
+                    },
+                    {
+                        "Key": "17591",
+                        "ID": "6:84:13"
+                    },
+                    {
+                        "Key": "36732",
+                        "ID": "17:55:14"
+                    },
+                    {
+                        "Key": "42228",
+                        "ID": "21:79:9"
+                    },
+                    {
+                        "Key": "48590",
+                        "ID": "27:15:3"
+                    },
+                    {
+                        "Key": "48605",
+                        "ID": "27:16:3"
+                    },
+                    {
+                        "Key": "55185",
+                        "ID": "34:10:3"
+                    },
+                    {
+                        "Key": "55247",
+                        "ID": "34:13:14"
+                    },
+                    {
+                        "Key": "58406",
+                        "ID": "38:17:7"
+                    },
+                    {
+                        "Key": "58439",
+                        "ID": "38:22:4"
+                    },
+                    {
+                        "Key": "58498",
+                        "ID": "38:24:25"
+                    }
+                ],
+                "WordCount": 13,
+                "VerseCount": 13
+            },
+            "وداود": {
+                "Verses": [
+                    {
+                        "Key": "42206",
+                        "ID": "21:78:1"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "يداود": {
+                "Verses": [
+                    {
+                        "Key": "58515",
+                        "ID": "38:26:1"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "لداود": {
+                "Verses": [
+                    {
+                        "Key": "58584",
+                        "ID": "38:30:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 16
     },
     "دفع": {
         "Word": {
@@ -244285,7 +247291,7 @@
                 "WordCount": 10,
                 "VerseCount": 10
             },
-            "طيرۢا": {
+            "طيرا": {
                 "Verses": [
                     {
                         "Key": "6989",
@@ -244294,10 +247300,14 @@
                     {
                         "Key": "15944",
                         "ID": "5:110:37"
+                    },
+                    {
+                        "Key": "77244",
+                        "ID": "105:3:3"
                     }
                 ],
-                "WordCount": 2,
-                "VerseCount": 2
+                "WordCount": 3,
+                "VerseCount": 3
             },
             "طئر": {
                 "Verses": [
@@ -244424,16 +247434,6 @@
                     {
                         "Key": "74754",
                         "ID": "76:7:7"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
-            },
-            "طيرا": {
-                "Verses": [
-                    {
-                        "Key": "77244",
-                        "ID": "105:3:3"
                     }
                 ],
                 "WordCount": 1,
@@ -247766,6 +250766,166 @@
         },
         "RootCount": 3
     },
+    "توراة": {
+        "Word": {
+            "التورىة": {
+                "Verses": [
+                    {
+                        "Key": "6163",
+                        "ID": "3:3:10"
+                    },
+                    {
+                        "Key": "7019",
+                        "ID": "3:50:6"
+                    },
+                    {
+                        "Key": "7244",
+                        "ID": "3:65:9"
+                    },
+                    {
+                        "Key": "7739",
+                        "ID": "3:93:17"
+                    },
+                    {
+                        "Key": "14455",
+                        "ID": "5:43:4"
+                    },
+                    {
+                        "Key": "14469",
+                        "ID": "5:44:3"
+                    },
+                    {
+                        "Key": "14550",
+                        "ID": "5:46:12"
+                    },
+                    {
+                        "Key": "14561",
+                        "ID": "5:46:23"
+                    },
+                    {
+                        "Key": "14987",
+                        "ID": "5:66:4"
+                    },
+                    {
+                        "Key": "15040",
+                        "ID": "5:68:9"
+                    },
+                    {
+                        "Key": "21707",
+                        "ID": "7:157:11"
+                    },
+                    {
+                        "Key": "25899",
+                        "ID": "9:111:21"
+                    },
+                    {
+                        "Key": "66419",
+                        "ID": "48:29:28"
+                    },
+                    {
+                        "Key": "71187",
+                        "ID": "61:6:17"
+                    },
+                    {
+                        "Key": "71384",
+                        "ID": "62:5:4"
+                    }
+                ],
+                "WordCount": 15,
+                "VerseCount": 15
+            },
+            "والتورىة": {
+                "Verses": [
+                    {
+                        "Key": "6967",
+                        "ID": "3:48:4"
+                    },
+                    {
+                        "Key": "15932",
+                        "ID": "5:110:25"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "بالتورىة": {
+                "Verses": [
+                    {
+                        "Key": "7742",
+                        "ID": "3:93:20"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 18
+    },
+    "إنجيل": {
+        "Word": {
+            "والانجيل": {
+                "Verses": [
+                    {
+                        "Key": "6164",
+                        "ID": "3:3:11"
+                    },
+                    {
+                        "Key": "6968",
+                        "ID": "3:48:5"
+                    },
+                    {
+                        "Key": "7245",
+                        "ID": "3:65:10"
+                    },
+                    {
+                        "Key": "14988",
+                        "ID": "5:66:5"
+                    },
+                    {
+                        "Key": "15041",
+                        "ID": "5:68:10"
+                    },
+                    {
+                        "Key": "15933",
+                        "ID": "5:110:26"
+                    },
+                    {
+                        "Key": "21708",
+                        "ID": "7:157:12"
+                    },
+                    {
+                        "Key": "25900",
+                        "ID": "9:111:22"
+                    }
+                ],
+                "WordCount": 8,
+                "VerseCount": 8
+            },
+            "الانجيل": {
+                "Verses": [
+                    {
+                        "Key": "14552",
+                        "ID": "5:46:14"
+                    },
+                    {
+                        "Key": "14567",
+                        "ID": "5:47:3"
+                    },
+                    {
+                        "Key": "66422",
+                        "ID": "48:29:31"
+                    },
+                    {
+                        "Key": "69772",
+                        "ID": "57:27:11"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            }
+        },
+        "RootCount": 12
+    },
     "نقم": {
         "Word": {
             "انتقام": {
@@ -250183,6 +253343,230 @@
         },
         "RootCount": 4
     },
+    "نوح": {
+        "Word": {
+            "ونوحا": {
+                "Verses": [
+                    {
+                        "Key": "6713",
+                        "ID": "3:33:5"
+                    },
+                    {
+                        "Key": "17585",
+                        "ID": "6:84:7"
+                    },
+                    {
+                        "Key": "42182",
+                        "ID": "21:76:1"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            },
+            "نوح": {
+                "Verses": [
+                    {
+                        "Key": "13083",
+                        "ID": "4:163:7"
+                    },
+                    {
+                        "Key": "20329",
+                        "ID": "7:69:18"
+                    },
+                    {
+                        "Key": "25094",
+                        "ID": "9:70:8"
+                    },
+                    {
+                        "Key": "27514",
+                        "ID": "10:71:4"
+                    },
+                    {
+                        "Key": "28700",
+                        "ID": "11:36:3"
+                    },
+                    {
+                        "Key": "28799",
+                        "ID": "11:42:8"
+                    },
+                    {
+                        "Key": "28852",
+                        "ID": "11:45:2"
+                    },
+                    {
+                        "Key": "29574",
+                        "ID": "11:89:11"
+                    },
+                    {
+                        "Key": "32802",
+                        "ID": "14:9:8"
+                    },
+                    {
+                        "Key": "36025",
+                        "ID": "17:3:5"
+                    },
+                    {
+                        "Key": "36222",
+                        "ID": "17:17:7"
+                    },
+                    {
+                        "Key": "39702",
+                        "ID": "19:58:14"
+                    },
+                    {
+                        "Key": "43310",
+                        "ID": "22:42:7"
+                    },
+                    {
+                        "Key": "46665",
+                        "ID": "25:37:2"
+                    },
+                    {
+                        "Key": "47753",
+                        "ID": "26:105:3"
+                    },
+                    {
+                        "Key": "47759",
+                        "ID": "26:106:5"
+                    },
+                    {
+                        "Key": "53854",
+                        "ID": "33:7:8"
+                    },
+                    {
+                        "Key": "57776",
+                        "ID": "37:75:3"
+                    },
+                    {
+                        "Key": "57794",
+                        "ID": "37:79:3"
+                    },
+                    {
+                        "Key": "58363",
+                        "ID": "38:12:4"
+                    },
+                    {
+                        "Key": "60204",
+                        "ID": "40:5:4"
+                    },
+                    {
+                        "Key": "60616",
+                        "ID": "40:31:4"
+                    },
+                    {
+                        "Key": "66886",
+                        "ID": "50:12:4"
+                    },
+                    {
+                        "Key": "67417",
+                        "ID": "51:46:2"
+                    },
+                    {
+                        "Key": "68156",
+                        "ID": "53:52:2"
+                    },
+                    {
+                        "Key": "68254",
+                        "ID": "54:9:4"
+                    },
+                    {
+                        "Key": "72400",
+                        "ID": "66:10:7"
+                    },
+                    {
+                        "Key": "73713",
+                        "ID": "71:21:2"
+                    },
+                    {
+                        "Key": "73762",
+                        "ID": "71:26:2"
+                    }
+                ],
+                "WordCount": 29,
+                "VerseCount": 29
+            },
+            "نوحا": {
+                "Verses": [
+                    {
+                        "Key": "20191",
+                        "ID": "7:59:3"
+                    },
+                    {
+                        "Key": "28517",
+                        "ID": "11:25:3"
+                    },
+                    {
+                        "Key": "44029",
+                        "ID": "23:23:3"
+                    },
+                    {
+                        "Key": "51182",
+                        "ID": "29:14:3"
+                    },
+                    {
+                        "Key": "62344",
+                        "ID": "42:13:8"
+                    },
+                    {
+                        "Key": "69750",
+                        "ID": "57:26:3"
+                    },
+                    {
+                        "Key": "73572",
+                        "ID": "71:1:3"
+                    }
+                ],
+                "WordCount": 7,
+                "VerseCount": 7
+            },
+            "ينوح": {
+                "Verses": [
+                    {
+                        "Key": "28646",
+                        "ID": "11:32:2"
+                    },
+                    {
+                        "Key": "28867",
+                        "ID": "11:46:2"
+                    },
+                    {
+                        "Key": "28909",
+                        "ID": "11:48:2"
+                    },
+                    {
+                        "Key": "47814",
+                        "ID": "26:116:5"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            }
+        },
+        "RootCount": 43
+    },
+    "عمران": {
+        "Word": {
+            "عمرن": {
+                "Verses": [
+                    {
+                        "Key": "6717",
+                        "ID": "3:33:9"
+                    },
+                    {
+                        "Key": "6730",
+                        "ID": "3:35:4"
+                    },
+                    {
+                        "Key": "72447",
+                        "ID": "66:12:3"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            }
+        },
+        "RootCount": 3
+    },
     "وضع": {
         "Word": {
             "وضعتها": {
@@ -250613,6 +253997,57 @@
             }
         },
         "RootCount": 10
+    },
+    "زكريا": {
+        "Word": {
+            "زكريا": {
+                "Verses": [
+                    {
+                        "Key": "6777",
+                        "ID": "3:37:9"
+                    },
+                    {
+                        "Key": "6781",
+                        "ID": "3:37:13"
+                    },
+                    {
+                        "Key": "6805",
+                        "ID": "3:38:3"
+                    },
+                    {
+                        "Key": "39128",
+                        "ID": "19:2:5"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            },
+            "وزكريا": {
+                "Verses": [
+                    {
+                        "Key": "17600",
+                        "ID": "6:85:1"
+                    },
+                    {
+                        "Key": "42340",
+                        "ID": "21:89:1"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "يزكريا": {
+                "Verses": [
+                    {
+                        "Key": "39169",
+                        "ID": "19:7:1"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 7
     },
     "غلم": {
         "Word": {
@@ -252648,6 +256083,21 @@
             }
         },
         "RootCount": 6
+    },
+    "بكة": {
+        "Word": {
+            "ببكة": {
+                "Verses": [
+                    {
+                        "Key": "7775",
+                        "ID": "3:96:7"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
     },
     "برك": {
         "Word": {
@@ -256041,6 +259491,31 @@
             }
         },
         "RootCount": 70
+    },
+    "بدر": {
+        "Word": {
+            "ببدر": {
+                "Verses": [
+                    {
+                        "Key": "8241",
+                        "ID": "3:123:4"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "وبدارا": {
+                "Verses": [
+                    {
+                        "Key": "9745",
+                        "ID": "4:6:17"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 2
     },
     "فور": {
         "Word": {
@@ -259465,21 +262940,6 @@
             }
         },
         "RootCount": 4
-    },
-    "بدر": {
-        "Word": {
-            "وبدارا": {
-                "Verses": [
-                    {
-                        "Key": "9745",
-                        "ID": "4:6:17"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
-            }
-        },
-        "RootCount": 1
     },
     "قسم": {
         "Word": {
@@ -264974,6 +268434,72 @@
             }
         },
         "RootCount": 15
+    },
+    "أيوب": {
+        "Word": {
+            "وايوب": {
+                "Verses": [
+                    {
+                        "Key": "13095",
+                        "ID": "4:163:19"
+                    },
+                    {
+                        "Key": "17593",
+                        "ID": "6:84:15"
+                    },
+                    {
+                        "Key": "42270",
+                        "ID": "21:83:1"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            },
+            "ايوب": {
+                "Verses": [
+                    {
+                        "Key": "58668",
+                        "ID": "38:41:3"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 4
+    },
+    "يونس": {
+        "Word": {
+            "ويونس": {
+                "Verses": [
+                    {
+                        "Key": "13096",
+                        "ID": "4:163:20"
+                    },
+                    {
+                        "Key": "17609",
+                        "ID": "6:86:3"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "يونس": {
+                "Verses": [
+                    {
+                        "Key": "27923",
+                        "ID": "10:98:9"
+                    },
+                    {
+                        "Key": "58071",
+                        "ID": "37:139:2"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 4
     },
     "طرق": {
         "Word": {
@@ -270846,6 +274372,21 @@
         },
         "RootCount": 1
     },
+    "آزر": {
+        "Word": {
+            "ازر": {
+                "Verses": [
+                    {
+                        "Key": "17426",
+                        "ID": "6:74:5"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "صنم": {
         "Word": {
             "اصناما": {
@@ -271138,6 +274679,340 @@
             }
         },
         "RootCount": 2
+    },
+    "يوسف": {
+        "Word": {
+            "ويوسف": {
+                "Verses": [
+                    {
+                        "Key": "17594",
+                        "ID": "6:84:16"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "يوسف": {
+                "Verses": [
+                    {
+                        "Key": "30058",
+                        "ID": "12:4:3"
+                    },
+                    {
+                        "Key": "30114",
+                        "ID": "12:7:4"
+                    },
+                    {
+                        "Key": "30134",
+                        "ID": "12:9:2"
+                    },
+                    {
+                        "Key": "30152",
+                        "ID": "12:10:6"
+                    },
+                    {
+                        "Key": "30170",
+                        "ID": "12:11:8"
+                    },
+                    {
+                        "Key": "30231",
+                        "ID": "12:17:7"
+                    },
+                    {
+                        "Key": "30434",
+                        "ID": "12:29:1"
+                    },
+                    {
+                        "Key": "30751",
+                        "ID": "12:46:1"
+                    },
+                    {
+                        "Key": "30840",
+                        "ID": "12:51:6"
+                    },
+                    {
+                        "Key": "30939",
+                        "ID": "12:58:3"
+                    },
+                    {
+                        "Key": "31135",
+                        "ID": "12:69:4"
+                    },
+                    {
+                        "Key": "31252",
+                        "ID": "12:77:11"
+                    },
+                    {
+                        "Key": "31316",
+                        "ID": "12:80:23"
+                    },
+                    {
+                        "Key": "31382",
+                        "ID": "12:84:6"
+                    },
+                    {
+                        "Key": "31393",
+                        "ID": "12:85:5"
+                    },
+                    {
+                        "Key": "31418",
+                        "ID": "12:87:5"
+                    },
+                    {
+                        "Key": "31468",
+                        "ID": "12:90:4"
+                    },
+                    {
+                        "Key": "31471",
+                        "ID": "12:90:7"
+                    },
+                    {
+                        "Key": "31528",
+                        "ID": "12:94:9"
+                    },
+                    {
+                        "Key": "31578",
+                        "ID": "12:99:4"
+                    },
+                    {
+                        "Key": "60651",
+                        "ID": "40:34:3"
+                    }
+                ],
+                "WordCount": 21,
+                "VerseCount": 21
+            },
+            "ليوسف": {
+                "Verses": [
+                    {
+                        "Key": "30120",
+                        "ID": "12:8:3"
+                    },
+                    {
+                        "Key": "30302",
+                        "ID": "12:21:17"
+                    },
+                    {
+                        "Key": "30915",
+                        "ID": "12:56:3"
+                    },
+                    {
+                        "Key": "31221",
+                        "ID": "12:76:13"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            },
+            "بيوسف": {
+                "Verses": [
+                    {
+                        "Key": "31460",
+                        "ID": "12:89:6"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 27
+    },
+    "إلياس": {
+        "Word": {
+            "والياس": {
+                "Verses": [
+                    {
+                        "Key": "17603",
+                        "ID": "6:85:4"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "ال": {
+                "Verses": [
+                    {
+                        "Key": "58038",
+                        "ID": "37:130:3"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "ياسين": {
+                "Verses": [
+                    {
+                        "Key": "58039",
+                        "ID": "37:130:4"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 3
+    },
+    "اليسع": {
+        "Word": {
+            "واليسع": {
+                "Verses": [
+                    {
+                        "Key": "17608",
+                        "ID": "6:86:2"
+                    },
+                    {
+                        "Key": "58727",
+                        "ID": "38:48:3"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 2
+    },
+    "لوط": {
+        "Word": {
+            "ولوطا": {
+                "Verses": [
+                    {
+                        "Key": "17610",
+                        "ID": "6:86:4"
+                    },
+                    {
+                        "Key": "20519",
+                        "ID": "7:80:1"
+                    },
+                    {
+                        "Key": "42130",
+                        "ID": "21:71:2"
+                    },
+                    {
+                        "Key": "42160",
+                        "ID": "21:74:1"
+                    },
+                    {
+                        "Key": "49095",
+                        "ID": "27:54:1"
+                    },
+                    {
+                        "Key": "51402",
+                        "ID": "29:28:1"
+                    }
+                ],
+                "WordCount": 6,
+                "VerseCount": 6
+            },
+            "لوط": {
+                "Verses": [
+                    {
+                        "Key": "29280",
+                        "ID": "11:70:18"
+                    },
+                    {
+                        "Key": "29326",
+                        "ID": "11:74:11"
+                    },
+                    {
+                        "Key": "29583",
+                        "ID": "11:89:20"
+                    },
+                    {
+                        "Key": "33907",
+                        "ID": "15:59:3"
+                    },
+                    {
+                        "Key": "33920",
+                        "ID": "15:61:4"
+                    },
+                    {
+                        "Key": "43316",
+                        "ID": "22:43:4"
+                    },
+                    {
+                        "Key": "48057",
+                        "ID": "26:160:3"
+                    },
+                    {
+                        "Key": "48063",
+                        "ID": "26:161:5"
+                    },
+                    {
+                        "Key": "49123",
+                        "ID": "27:56:10"
+                    },
+                    {
+                        "Key": "51374",
+                        "ID": "29:26:3"
+                    },
+                    {
+                        "Key": "58370",
+                        "ID": "38:13:3"
+                    },
+                    {
+                        "Key": "66893",
+                        "ID": "50:13:4"
+                    },
+                    {
+                        "Key": "68414",
+                        "ID": "54:34:7"
+                    },
+                    {
+                        "Key": "72402",
+                        "ID": "66:10:9"
+                    }
+                ],
+                "WordCount": 14,
+                "VerseCount": 14
+            },
+            "لوطا": {
+                "Verses": [
+                    {
+                        "Key": "29349",
+                        "ID": "11:77:4"
+                    },
+                    {
+                        "Key": "51463",
+                        "ID": "29:32:4"
+                    },
+                    {
+                        "Key": "51480",
+                        "ID": "29:33:5"
+                    },
+                    {
+                        "Key": "58049",
+                        "ID": "37:133:2"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            },
+            "يلوط": {
+                "Verses": [
+                    {
+                        "Key": "29410",
+                        "ID": "11:81:2"
+                    },
+                    {
+                        "Key": "48103",
+                        "ID": "26:167:5"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "لوطۭ": {
+                "Verses": [
+                    {
+                        "Key": "68406",
+                        "ID": "54:33:3"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 27
     },
     "قدو": {
         "Word": {
@@ -274060,6 +277935,145 @@
         },
         "RootCount": 1
     },
+    "ثمود": {
+        "Word": {
+            "ثمود": {
+                "Verses": [
+                    {
+                        "Key": "20395",
+                        "ID": "7:73:2"
+                    },
+                    {
+                        "Key": "29113",
+                        "ID": "11:61:2"
+                    },
+                    {
+                        "Key": "29674",
+                        "ID": "11:95:10"
+                    },
+                    {
+                        "Key": "36794",
+                        "ID": "17:59:12"
+                    },
+                    {
+                        "Key": "47948",
+                        "ID": "26:141:2"
+                    },
+                    {
+                        "Key": "49004",
+                        "ID": "27:45:4"
+                    },
+                    {
+                        "Key": "61596",
+                        "ID": "41:17:2"
+                    },
+                    {
+                        "Key": "67394",
+                        "ID": "51:43:2"
+                    },
+                    {
+                        "Key": "68340",
+                        "ID": "54:23:2"
+                    },
+                    {
+                        "Key": "73103",
+                        "ID": "69:4:2"
+                    },
+                    {
+                        "Key": "73107",
+                        "ID": "69:5:2"
+                    },
+                    {
+                        "Key": "76653",
+                        "ID": "91:11:2"
+                    }
+                ],
+                "WordCount": 12,
+                "VerseCount": 12
+            },
+            "وثمود": {
+                "Verses": [
+                    {
+                        "Key": "25096",
+                        "ID": "9:70:10"
+                    },
+                    {
+                        "Key": "32804",
+                        "ID": "14:9:10"
+                    },
+                    {
+                        "Key": "43312",
+                        "ID": "22:42:9"
+                    },
+                    {
+                        "Key": "58368",
+                        "ID": "38:13:1"
+                    },
+                    {
+                        "Key": "60618",
+                        "ID": "40:31:6"
+                    },
+                    {
+                        "Key": "61527",
+                        "ID": "41:13:9"
+                    },
+                    {
+                        "Key": "66889",
+                        "ID": "50:12:7"
+                    },
+                    {
+                        "Key": "76160",
+                        "ID": "85:18:2"
+                    },
+                    {
+                        "Key": "76431",
+                        "ID": "89:9:1"
+                    }
+                ],
+                "WordCount": 9,
+                "VerseCount": 9
+            },
+            "ثمودا": {
+                "Verses": [
+                    {
+                        "Key": "29242",
+                        "ID": "11:68:7"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "لثمود": {
+                "Verses": [
+                    {
+                        "Key": "29247",
+                        "ID": "11:68:12"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "وثمودا": {
+                "Verses": [
+                    {
+                        "Key": "46678",
+                        "ID": "25:38:2"
+                    },
+                    {
+                        "Key": "51542",
+                        "ID": "29:38:2"
+                    },
+                    {
+                        "Key": "68152",
+                        "ID": "53:51:1"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            }
+        },
+        "RootCount": 26
+    },
     "نوق": {
         "Word": {
             "ناقة": {
@@ -274529,6 +278543,73 @@
             }
         },
         "RootCount": 27
+    },
+    "شعيب": {
+        "Word": {
+            "شعيبا": {
+                "Verses": [
+                    {
+                        "Key": "20574",
+                        "ID": "7:85:4"
+                    },
+                    {
+                        "Key": "20722",
+                        "ID": "7:90:9"
+                    },
+                    {
+                        "Key": "20734",
+                        "ID": "7:92:3"
+                    },
+                    {
+                        "Key": "20741",
+                        "ID": "7:92:10"
+                    },
+                    {
+                        "Key": "29461",
+                        "ID": "11:84:4"
+                    },
+                    {
+                        "Key": "29651",
+                        "ID": "11:94:5"
+                    },
+                    {
+                        "Key": "51521",
+                        "ID": "29:36:4"
+                    }
+                ],
+                "WordCount": 7,
+                "VerseCount": 7
+            },
+            "يشعيب": {
+                "Verses": [
+                    {
+                        "Key": "20658",
+                        "ID": "7:88:8"
+                    },
+                    {
+                        "Key": "29510",
+                        "ID": "11:87:2"
+                    },
+                    {
+                        "Key": "29596",
+                        "ID": "11:91:2"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            },
+            "شعيب": {
+                "Verses": [
+                    {
+                        "Key": "48153",
+                        "ID": "26:177:4"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 11
     },
     "ضحو": {
         "Word": {
@@ -276894,6 +280975,21 @@
         },
         "RootCount": 1
     },
+    "حنين": {
+        "Word": {
+            "حنين": {
+                "Verses": [
+                    {
+                        "Key": "24219",
+                        "ID": "9:25:8"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "رحب": {
         "Word": {
             "رحبت": {
@@ -277081,6 +281177,21 @@
             }
         },
         "RootCount": 14
+    },
+    "عزير": {
+        "Word": {
+            "عزير": {
+                "Verses": [
+                    {
+                        "Key": "24323",
+                        "ID": "9:30:3"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
     },
     "ضهأ": {
         "Word": {
@@ -277550,6 +281661,61 @@
             }
         },
         "RootCount": 6
+    },
+    "عدن": {
+        "Word": {
+            "عدن": {
+                "Verses": [
+                    {
+                        "Key": "25152",
+                        "ID": "9:72:16"
+                    },
+                    {
+                        "Key": "32262",
+                        "ID": "13:23:2"
+                    },
+                    {
+                        "Key": "34505",
+                        "ID": "16:31:2"
+                    },
+                    {
+                        "Key": "38047",
+                        "ID": "18:31:4"
+                    },
+                    {
+                        "Key": "39742",
+                        "ID": "19:61:2"
+                    },
+                    {
+                        "Key": "40723",
+                        "ID": "20:76:2"
+                    },
+                    {
+                        "Key": "56410",
+                        "ID": "35:33:2"
+                    },
+                    {
+                        "Key": "58740",
+                        "ID": "38:50:2"
+                    },
+                    {
+                        "Key": "60262",
+                        "ID": "40:8:4"
+                    },
+                    {
+                        "Key": "71282",
+                        "ID": "61:12:14"
+                    },
+                    {
+                        "Key": "77026",
+                        "ID": "98:8:5"
+                    }
+                ],
+                "WordCount": 11,
+                "VerseCount": 11
+            }
+        },
+        "RootCount": 11
     },
     "ضحك": {
         "Word": {
@@ -278185,6 +282351,33 @@
         },
         "RootCount": 7
     },
+    "أمس": {
+        "Word": {
+            "بالامس": {
+                "Verses": [
+                    {
+                        "Key": "26784",
+                        "ID": "10:24:38"
+                    },
+                    {
+                        "Key": "49838",
+                        "ID": "28:18:9"
+                    },
+                    {
+                        "Key": "49863",
+                        "ID": "28:19:18"
+                    },
+                    {
+                        "Key": "50897",
+                        "ID": "28:82:5"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            }
+        },
+        "RootCount": 4
+    },
     "رهق": {
         "Word": {
             "يرهق": {
@@ -278527,6 +282720,25 @@
             }
         },
         "RootCount": 1
+    },
+    "تنور": {
+        "Word": {
+            "التنور": {
+                "Verses": [
+                    {
+                        "Key": "28760",
+                        "ID": "11:40:6"
+                    },
+                    {
+                        "Key": "44095",
+                        "ID": "23:27:12"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 2
     },
     "بلع": {
         "Word": {
@@ -282503,6 +286715,39 @@
         },
         "RootCount": 2
     },
+    "أيكة": {
+        "Word": {
+            "الايكة": {
+                "Verses": [
+                    {
+                        "Key": "34017",
+                        "ID": "15:78:4"
+                    },
+                    {
+                        "Key": "66895",
+                        "ID": "50:14:2"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "لـيكة": {
+                "Verses": [
+                    {
+                        "Key": "48148",
+                        "ID": "26:176:3"
+                    },
+                    {
+                        "Key": "58372",
+                        "ID": "38:13:5"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 4
+    },
     "خفض": {
         "Word": {
             "واخفض": {
@@ -283247,10 +287492,14 @@
                     {
                         "Key": "35631",
                         "ID": "16:103:12"
+                    },
+                    {
+                        "Key": "61985",
+                        "ID": "41:44:9"
                     }
                 ],
-                "WordCount": 1,
-                "VerseCount": 1
+                "WordCount": 2,
+                "VerseCount": 2
             },
             "الاعجمين": {
                 "Verses": [
@@ -283267,16 +287516,6 @@
                     {
                         "Key": "61980",
                         "ID": "41:44:4"
-                    }
-                ],
-                "WordCount": 1,
-                "VerseCount": 1
-            },
-            "ا۬عجمى": {
-                "Verses": [
-                    {
-                        "Key": "61985",
-                        "ID": "41:44:9"
                     }
                 ],
                 "WordCount": 1,
@@ -284936,6 +289175,62 @@
         },
         "RootCount": 2
     },
+    "سندس": {
+        "Word": {
+            "سندس": {
+                "Verses": [
+                    {
+                        "Key": "38062",
+                        "ID": "18:31:19"
+                    },
+                    {
+                        "Key": "64179",
+                        "ID": "44:53:3"
+                    },
+                    {
+                        "Key": "74849",
+                        "ID": "76:21:3"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            }
+        },
+        "RootCount": 3
+    },
+    "إستبرق": {
+        "Word": {
+            "واستبرق": {
+                "Verses": [
+                    {
+                        "Key": "38063",
+                        "ID": "18:31:20"
+                    },
+                    {
+                        "Key": "64180",
+                        "ID": "44:53:4"
+                    },
+                    {
+                        "Key": "74851",
+                        "ID": "76:21:5"
+                    }
+                ],
+                "WordCount": 3,
+                "VerseCount": 3
+            },
+            "استبرق": {
+                "Verses": [
+                    {
+                        "Key": "68786",
+                        "ID": "55:54:6"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 4
+    },
     "أرك": {
         "Word": {
             "الارائك": {
@@ -285535,6 +289830,44 @@
         },
         "RootCount": 1
     },
+    "يأجوج": {
+        "Word": {
+            "ياجوج": {
+                "Verses": [
+                    {
+                        "Key": "38916",
+                        "ID": "18:94:5"
+                    },
+                    {
+                        "Key": "42417",
+                        "ID": "21:96:4"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 2
+    },
+    "مأجوج": {
+        "Word": {
+            "وماجوج": {
+                "Verses": [
+                    {
+                        "Key": "38917",
+                        "ID": "18:94:6"
+                    },
+                    {
+                        "Key": "42418",
+                        "ID": "21:96:5"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 2
+    },
     "ردم": {
         "Word": {
             "ردما": {
@@ -285571,6 +289904,25 @@
                 ],
                 "WordCount": 1,
                 "VerseCount": 1
+            }
+        },
+        "RootCount": 2
+    },
+    "فردوس": {
+        "Word": {
+            "الفردوس": {
+                "Verses": [
+                    {
+                        "Key": "39073",
+                        "ID": "18:107:9"
+                    },
+                    {
+                        "Key": "43915",
+                        "ID": "23:11:3"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
             }
         },
         "RootCount": 2
@@ -285744,6 +290096,31 @@
                     {
                         "Key": "68787",
                         "ID": "55:54:7"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 2
+    },
+    "إدريس": {
+        "Word": {
+            "ادريس": {
+                "Verses": [
+                    {
+                        "Key": "39681",
+                        "ID": "19:56:4"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            },
+            "وادريس": {
+                "Verses": [
+                    {
+                        "Key": "42297",
+                        "ID": "21:85:2"
                     }
                 ],
                 "WordCount": 1,
@@ -287992,6 +292369,21 @@
         },
         "RootCount": 19
     },
+    "سيناء": {
+        "Word": {
+            "سينا": {
+                "Verses": [
+                    {
+                        "Key": "44003",
+                        "ID": "23:20:5"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "دهن": {
         "Word": {
             "بالدهن": {
@@ -289404,6 +293796,47 @@
         },
         "RootCount": 2
     },
+    "هامان": {
+        "Word": {
+            "وهمن": {
+                "Verses": [
+                    {
+                        "Key": "49641",
+                        "ID": "28:6:7"
+                    },
+                    {
+                        "Key": "49678",
+                        "ID": "28:8:10"
+                    },
+                    {
+                        "Key": "51559",
+                        "ID": "29:39:3"
+                    },
+                    {
+                        "Key": "60483",
+                        "ID": "40:24:3"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            },
+            "يهمن": {
+                "Verses": [
+                    {
+                        "Key": "50214",
+                        "ID": "28:38:13"
+                    },
+                    {
+                        "Key": "60704",
+                        "ID": "40:36:3"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 6
+    },
     "وكز": {
         "Word": {
             "فوكزه": {
@@ -289553,6 +293986,39 @@
         },
         "RootCount": 2
     },
+    "قارون": {
+        "Word": {
+            "قرون": {
+                "Verses": [
+                    {
+                        "Key": "50758",
+                        "ID": "28:76:2"
+                    },
+                    {
+                        "Key": "50855",
+                        "ID": "28:79:16"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            },
+            "وقرون": {
+                "Verses": [
+                    {
+                        "Key": "51557",
+                        "ID": "29:39:1"
+                    },
+                    {
+                        "Key": "60484",
+                        "ID": "40:24:4"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 4
+    },
     "نوأ": {
         "Word": {
             "لتنوا": {
@@ -289602,6 +294068,21 @@
         },
         "RootCount": 1
     },
+    "روم": {
+        "Word": {
+            "الروم": {
+                "Verses": [
+                    {
+                        "Key": "51998",
+                        "ID": "30:2:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "روض": {
         "Word": {
             "روضة": {
@@ -289641,6 +294122,25 @@
             }
         },
         "RootCount": 1
+    },
+    "لقمان": {
+        "Word": {
+            "لقمن": {
+                "Verses": [
+                    {
+                        "Key": "52931",
+                        "ID": "31:12:3"
+                    },
+                    {
+                        "Key": "52949",
+                        "ID": "31:13:3"
+                    }
+                ],
+                "WordCount": 2,
+                "VerseCount": 2
+            }
+        },
+        "RootCount": 2
     },
     "صعر": {
         "Word": {
@@ -289797,6 +294297,21 @@
             }
         },
         "RootCount": 2
+    },
+    "يثرب": {
+        "Word": {
+            "يثرب": {
+                "Verses": [
+                    {
+                        "Key": "53933",
+                        "ID": "33:13:6"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
     },
     "عوق": {
         "Word": {
@@ -290549,6 +295064,36 @@
         },
         "RootCount": 1
     },
+    "إل": {
+        "Word": {
+            "الياس": {
+                "Verses": [
+                    {
+                        "Key": "58007",
+                        "ID": "37:123:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "ياس": {
+        "Word": {
+            "الياس": {
+                "Verses": [
+                    {
+                        "Key": "58007",
+                        "ID": "37:123:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "أبق": {
         "Word": {
             "ابق": {
@@ -290586,6 +295131,21 @@
                     {
                         "Key": "58083",
                         "ID": "37:142:1"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "يقطين": {
+        "Word": {
+            "يقطين": {
+                "Verses": [
+                    {
+                        "Key": "58106",
+                        "ID": "37:146:5"
                     }
                 ],
                 "WordCount": 1,
@@ -291529,6 +296089,21 @@
         },
         "RootCount": 1
     },
+    "مكة": {
+        "Word": {
+            "مكة": {
+                "Verses": [
+                    {
+                        "Key": "66271",
+                        "ID": "48:24:9"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "محن": {
         "Word": {
             "امتحن": {
@@ -291897,6 +296472,21 @@
         },
         "RootCount": 1
     },
+    "اللات": {
+        "Word": {
+            "اللت": {
+                "Verses": [
+                    {
+                        "Key": "67913",
+                        "ID": "53:19:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "ضيز": {
         "Word": {
             "ضيزى": {
@@ -292067,6 +296657,33 @@
         },
         "RootCount": 1
     },
+    "سقر": {
+        "Word": {
+            "سقر": {
+                "Verses": [
+                    {
+                        "Key": "68502",
+                        "ID": "54:48:9"
+                    },
+                    {
+                        "Key": "74361",
+                        "ID": "74:26:2"
+                    },
+                    {
+                        "Key": "74365",
+                        "ID": "74:27:4"
+                    },
+                    {
+                        "Key": "74468",
+                        "ID": "74:42:4"
+                    }
+                ],
+                "WordCount": 4,
+                "VerseCount": 4
+            }
+        },
+        "RootCount": 4
+    },
     "أنم": {
         "Word": {
             "للانام": {
@@ -292199,6 +296816,21 @@
             }
         },
         "RootCount": 2
+    },
+    "ياقوت": {
+        "Word": {
+            "الياقوت": {
+                "Verses": [
+                    {
+                        "Key": "68808",
+                        "ID": "55:58:2"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
     },
     "دهم": {
         "Word": {
@@ -292878,6 +297510,21 @@
         },
         "RootCount": 2
     },
+    "لظى": {
+        "Word": {
+            "لظى": {
+                "Verses": [
+                    {
+                        "Key": "73417",
+                        "ID": "70:15:3"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "هلع": {
         "Word": {
             "هلوعا": {
@@ -292915,6 +297562,36 @@
                     {
                         "Key": "73560",
                         "ID": "70:43:9"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "يغوث": {
+        "Word": {
+            "يغوث": {
+                "Verses": [
+                    {
+                        "Key": "73738",
+                        "ID": "71:23:11"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "يعوق": {
+        "Word": {
+            "ويعوق": {
+                "Verses": [
+                    {
+                        "Key": "73739",
+                        "ID": "71:23:12"
                     }
                 ],
                 "WordCount": 1,
@@ -293366,6 +298043,36 @@
                     {
                         "Key": "74801",
                         "ID": "76:13:10"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "زنجبيل": {
+        "Word": {
+            "زنجبيلا": {
+                "Verses": [
+                    {
+                        "Key": "74826",
+                        "ID": "76:17:6"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "سلسبيل": {
+        "Word": {
+            "سلسبيلا": {
+                "Verses": [
+                    {
+                        "Key": "74830",
+                        "ID": "76:18:4"
                     }
                 ],
                 "WordCount": 1,
@@ -293993,6 +298700,21 @@
         },
         "RootCount": 1
     },
+    "إرم": {
+        "Word": {
+            "ارم": {
+                "Verses": [
+                    {
+                        "Key": "76422",
+                        "ID": "89:7:1"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
     "سوط": {
         "Word": {
             "سوط": {
@@ -294205,6 +298927,21 @@
                     {
                         "Key": "76813",
                         "ID": "95:1:1"
+                    }
+                ],
+                "WordCount": 1,
+                "VerseCount": 1
+            }
+        },
+        "RootCount": 1
+    },
+    "سينين": {
+        "Word": {
+            "سينين": {
+                "Verses": [
+                    {
+                        "Key": "76816",
+                        "ID": "95:2:2"
                     }
                 ],
                 "WordCount": 1,
