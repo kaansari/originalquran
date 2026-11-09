@@ -1,4 +1,4 @@
-const CACHE_NAME = 'originalquran-v6';
+const CACHE_NAME = 'originalquran-v7';
 const BASE_URL = new URL('./', self.location.href);
 
 const APP_ASSETS = [
@@ -13,7 +13,7 @@ const APP_ASSETS = [
   'json/en-word.json', 'json/pagination_map.json', 'json/quran_harakat_words.json',
   'json/quran_morphology.json', 'json/quran_words.json', 'json/quran_words_unique.json',
   'json/quranic_warsh_words.json', 'json/quranic_words.json', 'json/root_words.json',
-  'json/sura.json', 'manifest.webmanifest', 'page.html', 'quran.html', 'random.html',
+  'json/sura.json', 'json/root_notes.json', 'manifest.webmanifest', 'page.html', 'quran.html', 'random.html',
   'raqq.html', 'root.css', 'root.html', 'styles.css', 'styles_page.css',
   'styles_warsh.css', 'warsh.html', 'writing.css', 'writing.html',
   'writing_v2.html', 'writing_v2.js'
@@ -22,7 +22,13 @@ const APP_ASSETS = [
 const OFFLINE_PAGE = BASE_URL.href;
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_ASSETS)));
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(APP_ASSETS);
+    const response = await cache.match(new URL('json/root_notes.json', BASE_URL).href);
+    const notes = await response.json();
+    await cache.addAll(Object.values(notes).map(note => new URL(note.source, BASE_URL).href));
+  })());
 });
 
 self.addEventListener('message', event => {

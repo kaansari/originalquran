@@ -23,6 +23,37 @@
     if (opened) opened.opener = null;
   }
 
+  let rootNotesRequest;
+
+  function rootNotesRow(root) {
+    if (!root || root === "N/A") return "";
+    if (!rootNotesRequest) {
+      rootNotesRequest = loadJSON("json/root_notes.json").catch(error => {
+        console.warn("Root notes are unavailable:", error);
+        rootNotesRequest = null;
+        return {};
+      });
+    }
+    // Runs after the caller has appended the popup, without delaying morphology.
+    rootNotesRequest.then(index => {
+      document.querySelectorAll(".root-notes-row").forEach(row => {
+        const root = row.dataset.notesRoot;
+        const source = index[root]?.source;
+        if (typeof source !== "string" || !/^notes\/[^/]+\.md$/.test(source)) return;
+        const link = document.createElement("a");
+        link.href = source;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = `Read notes for ${root}`;
+        const cell = row.querySelector("td");
+        cell.textContent = "";
+        cell.appendChild(link);
+        row.hidden = false;
+      });
+    });
+    return `<tr class="root-notes-row" data-notes-root="${escapeHTML(root)}" hidden><th>Notes</th><td></td></tr>`;
+  }
+
   function externalNetworkRequired(url) {
     return /^https?:\/\//i.test(String(url || "")) && !navigator.onLine;
   }
@@ -58,6 +89,7 @@
     loadJSON,
     escapeHTML,
     openInNewTab,
+    rootNotesRow,
     externalNetworkRequired,
     notifyOnlineFeature,
   });
