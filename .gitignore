@@ -1,6 +1,9 @@
 # Ignore the build folder
 build/
 
+# Ignore the large cached Maqayis HTML source pages
+src/json/maqayis/raw/
+
 scripts/translation/.env
 .vscode/settings.json
 src/.DS_Store
