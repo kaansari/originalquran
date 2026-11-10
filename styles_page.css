@@ -170,7 +170,7 @@ h1, h2, h3 {
 }
 
 .nav-button i {
-  font-size: 12px;
+  font-size: inherit;
 }
 
 
@@ -334,8 +334,11 @@ h1, h2, h3 {
 
   
   .nav-button {
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
     justify-content: center;
+    font-size: 11px;
+    padding: 4px 6px;
   }
 
    .page-navigation {
@@ -347,11 +350,6 @@ h1, h2, h3 {
   .nav-center {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .nav-button {
-    font-size: 11px;
-    padding: 4px 6px;
   }
 
   select {
