@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
 <head>
   <meta name="page-info" content="Writing Practice">
   <meta charset="UTF-8">
@@ -8,30 +8,31 @@
 
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
-  <title>Quran Viewer</title>
+  <title>Writing Practice · Original Quran</title>
   <link rel="stylesheet" href="writing.css">
-  <script src="common.js?v=website-4"></script>
-  <link rel="stylesheet" href="site-theme.css?v=menu-2">
+  <script src="site.js?v=page-controls-1"></script>
+  <script src="common.js?v=page-controls-1"></script>
+  <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
   <script src="retire-offline.js" defer></script>
 </head>
 <body>
   <header class="site-masthead">
-    <a class="site-brand" href="index.html"><span><span class="site-eyebrow">Writing Practice</span><span class="site-brand-name">Original Quran</span></span></a>
+    <a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Writing Practice</span><span class="site-brand-name">Original Quran</span></span></a>
     <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html" aria-current="page">Writing</a></nav>
   </header>
 
   <div id="selectors" class="selectors">
-       <!-- Sura and Verse Selectors -->    
+       <!-- Sura and Verse Selectors -->
        <select id="sura-select"></select>
        <select id="verse-select"></select>
 
-       <label for="font-select">font:</label>
+       <label for="font-select">Reading font:</label>
        <select id="font-select">
          <option value="Qahiri">Qahiri</option>
          <option value="Amiri Quran">Amiri Quran</option>
        </select>
       </div>
   <div id="quran-container"></div>
-  <script src="writing_v2.js"></script>
+  <script src="writing_v2.js?v=page-controls-1"></script>
 </body>
 </html>

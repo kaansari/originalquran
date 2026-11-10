@@ -2,11 +2,21 @@
   "use strict";
 
   async function loadJSON(url) {
-    const response = await fetch(url, { cache: "default" });
-    if (!response.ok) {
-      throw new Error(`Failed to load ${url}: HTTP ${response.status}`);
+    const finish = window.SiteUI?.beginLoading() || (() => {});
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 30000);
+    try {
+      const response = await fetch(url, { cache: "default", signal: controller.signal });
+      if (!response.ok) throw new Error(`Failed to load ${url}: HTTP ${response.status}`);
+      const data = await response.json();
+      finish();
+      return data;
+    } catch (error) {
+      finish(error);
+      throw error;
+    } finally {
+      window.clearTimeout(timeout);
     }
-    return response.json();
   }
 
   function escapeHTML(value) {
@@ -95,40 +105,6 @@
   });
 
   document.addEventListener("DOMContentLoaded", installOfflineIndicator);
-})();
-
-// The header control shares the existing theme preference and settings checkbox.
-(() => {
-  function initTheme() {
-    const button = document.getElementById("site-theme-button");
-    const checkbox = document.getElementById("theme-toggle");
-    function syncTheme() {
-      const dark = document.body.classList.contains("dark-theme");
-      button?.setAttribute("aria-pressed", String(dark));
-      button?.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
-      if (checkbox) checkbox.checked = dark;
-    }
-    let saved;
-    try { saved = localStorage.getItem("theme"); } catch {}
-    const dark = saved ? saved === "dark" : window.matchMedia?.("(prefers-color-scheme: dark)").matches;
-    document.body.classList.toggle("dark-theme", Boolean(dark));
-    syncTheme();
-    button?.addEventListener("click", () => {
-      const dark = !document.body.classList.contains("dark-theme");
-      document.body.classList.toggle("dark-theme", dark);
-      try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch {}
-      syncTheme();
-    });
-    // Existing settings controls can still change the body's theme class.
-    new MutationObserver(syncTheme).observe(document.body, { attributes: true, attributeFilter: ["class"] });
-    window.addEventListener("storage", event => {
-      if (event.key !== "theme") return;
-      document.body.classList.toggle("dark-theme", event.newValue === "dark");
-      syncTheme();
-    });
-  }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initTheme);
-  else initTheme();
 })();
 
 // Page metadata supplies the small label above the site name.

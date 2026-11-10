@@ -25,7 +25,7 @@
     })
     .catch((error) => {
       console.error("Error loading JSON files:", error);
-      alert("Failed to load data. Please try refreshing the page.");
+      window.SiteUI.reportError(error);
     });
 
   // Populate Sura Selector
@@ -109,8 +109,6 @@ function displaySura(suraNumber, targetVerse = null) {
       verseToScroll.scrollIntoView({ behavior: "smooth" });
     }
   }
-  
-  
 
   // Display Sura
   function displaySuraOld(suraNumber, targetVerse = null) {
@@ -584,24 +582,11 @@ document.addEventListener("DOMContentLoaded", () => {
   updateFontClass(savedFont);
 });
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  const themeToggleBtn = document.getElementById("theme-toggle");
+
   const translationToggleBtn = document.getElementById("translation-toggle"); // Make sure this element exists
 
-  const currentTheme = localStorage.getItem("theme") || "light";
   const currentTranslate = localStorage.getItem("translate") || "notrans";
-
-  // Apply the saved theme on page load
-  if (currentTheme === "dark") {
-    document.body.classList.add("dark-theme");
-    themeToggleBtn.checked = true;
-  } else {
-    themeToggleBtn.checked = false;
-  }
 
   // Apply the saved translation status on page load
   if (currentTranslate === "en") {
@@ -611,17 +596,6 @@ document.addEventListener("DOMContentLoaded", () => {
     showTranslation = false;
     translationToggleBtn.checked = false; // Set it to unchecked if no translation is set
   }
-
-  // Toggle the theme when the button is clicked
-  themeToggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-
-    // Save the current theme in localStorage
-    const newTheme = document.body.classList.contains("dark-theme")
-      ? "dark"
-      : "light";
-    localStorage.setItem("theme", newTheme);
-  });
 
   // Toggle the translation visibility without page reload
   translationToggleBtn.addEventListener("change", () => {
@@ -640,7 +614,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 })();
-
-
-
 

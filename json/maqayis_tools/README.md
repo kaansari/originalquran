@@ -114,8 +114,9 @@ python3 src/json/maqayis_tools/build_page.py
 ```
 
 Then open `src/maqayis.html` directly in your browser, or visit
-`/maqayis.html` on the existing site. The standalone HTML embeds the dictionary,
-styles, and JavaScript. It needs no web server, external library, or API. When
+`/maqayis.html` on the existing site. The HTML embeds the dictionary and browser logic, and uses the shared site scripts
+and theme alongside it. Keep the page with the site assets; it needs no external
+library or API. Shared navigation and theme changes also apply to this page. When
 served by the existing site, its Quran roots link opens the existing root page.
 
 The browser supports Arabic letter selection, headword and definition search,

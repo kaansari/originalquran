@@ -1,4 +1,5 @@
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -31,6 +32,24 @@ class PageBuilderTests(unittest.TestCase):
         self.assertEqual(html.count('</script>'), 2)
         embedded = html.split('application/json">', 1)[1].split('</script>', 1)[0]
         self.assertEqual(json.loads(embedded)['entries'][0]['text'], '</script><img src=x onerror=alert(1)>')
+
+    def test_shared_assets_follow_custom_output_location(self):
+        template = (Path(build_page.__file__).parent / 'maqayis.template.html').read_text(encoding='utf-8')
+        page = build_page.render(template, {'entries': []}, '// core', root_url='../site/root.html')
+        self.assertIn('src="../site/site.js?v=page-controls-1"', page)
+        self.assertIn('href="../site/site-theme.css?v=compact-controls-1"', page)
+        self.assertIn('href="../site/index.html"', page)
+        self.assertNotIn('__SITE_BASE__', page)
+
+    def test_initialization_header_selectors_exist_in_markup(self):
+        for path in [Path(build_page.__file__).parent / 'maqayis.template.html',
+                     build_page.PROJECT / 'src/maqayis.html']:
+            page = path.read_text(encoding='utf-8')
+            classes = set()
+            for value in re.findall(r'class="([^"]+)"', page):
+                classes.update(value.split())
+            for selector in re.findall(r"document\.querySelector\('\.([a-zA-Z_-]+)'\)", page):
+                self.assertIn(selector, classes, str(path))
 
     def test_invalid_template_fails_before_overwriting_page(self):
         with self.assertRaises(ValueError):

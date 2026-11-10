@@ -24,7 +24,7 @@
     })
     .catch((error) => {
       console.error("Error loading JSON files:", error);
-      alert("Failed to load data. Please try refreshing the page.");
+      window.SiteUI.reportError(error);
     });
 
   // Populate Sura Selector
