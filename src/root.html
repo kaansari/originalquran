@@ -10,55 +10,27 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="root.css">
-  <title>Quran Root Words</title>
-  <script src="common.js?v=website-4"></script>
-  <link rel="stylesheet" href="site-theme.css?v=menu-2">
+  <title>Quran Root Words · Original Quran</title>
+  <script src="site.js?v=page-controls-1"></script>
+  <script src="common.js?v=page-controls-1"></script>
+  <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
   <script src="retire-offline.js" defer></script>
 </head>
-
-
 
 <body>
   <header class="site-masthead">
     <div class="site-brand-group">
-<div class="hamburger-menu">
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon" aria-label="Open settings menu">
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-      <span class="menu-line"></span>
-    </label>
-
-    <div class="menu-content">
-      <a href="./">
-        <i class="fas fa-book">Old Quran </i>
-      </a>
-      <a href="https://github.com/kaansari/originalquran" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-        <i class="fab fa-github"></i>
-      </a>
-      <span>Show Translation</span>
-      <label class="toggle-switch">
-        <input type="checkbox" id="translation-toggle">
-        <span class="slider"></span>
-      </label>
-      <span>Dark Theme</span>
-      <label class="toggle-switch">
-
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider"></span>
-      </label>
-      <!-- Font Selection Dropdown -->
-    </div>
-  </div>
-<a class="site-brand" href="index.html"><span><span class="site-eyebrow">Quran Root Words</span><span class="site-brand-name">Original Quran</span></span></a>
+<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Quran Root Words</span><span class="site-brand-name">Original Quran</span></span></a>
 </div>
     <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html" aria-current="page">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
   </header>
 
-
-
-
-
+  <section class="site-page-controls" aria-label="Reading options">
+    <label class="site-control-toggle" for="translation-toggle">
+      <input type="checkbox" id="translation-toggle">
+      <span>Show translation</span>
+    </label>
+  </section>
 
   <div class="book-container">
     <div id="letter-container" class="letter-container">
@@ -142,7 +114,7 @@
         })
         .catch((error) => {
           console.error("Error loading JSON files:", error);
-          alert("Failed to load data. Please try refreshing the page.");
+          window.SiteUI.reportError(error);
         });
 
 
@@ -156,7 +128,7 @@
           loadSavedSelections();
           tryInitSearch();
         })
-        .catch(error => console.error('Error loading root_words.json:', error));
+        .catch(error => { console.error('Error loading root_words.json:', error); window.SiteUI.reportError(error); });
 
       // Populate the clickable letters as labels
       function populateLetterLabels() {
@@ -233,8 +205,6 @@
           rootSelect.appendChild(option);
         });
 
-
-
         // Populate word selector for the first root word by default
         if (filteredRoots.length > 0) {
           rootSelect.value = filteredRoots[0]; // Default to the first root word
@@ -298,8 +268,6 @@
         localStorage.setItem('selectedRoot', rootSelect);
         localStorage.setItem('selectedWord', wordSelect);
       }
-
-
 
       function loadSavedSelections() {
         const savedRoot = localStorage.getItem('selectedRoot');
@@ -395,8 +363,6 @@
         return `${highlightedWords.join(" ")} ${verseLink} ${translation}`;
       }
 
-
-
       function parseRef(ref) {
         const [sura, verse] = ref.split(":").map(Number);
         return { sura, verse };
@@ -419,8 +385,6 @@
         }
         return 1;
       }
-
-
 
       // Show Morphology Popup
       function showWordMorphologyPopup(wordId, wordElement) {
@@ -612,8 +576,6 @@
         });
       }
 
-
-
       // Event Delegation for navigation.
       const _verseDataEl = document.getElementById("verse-data");
       if (_verseDataEl) {
@@ -647,40 +609,14 @@
         });
       }
 
-
-
       document.addEventListener("DOMContentLoaded", () => {
-        const themeToggleBtn = document.getElementById("theme-toggle");
+
         const translationToggleBtn = document.getElementById("translation-toggle");
 
-        const currentTheme = localStorage.getItem("theme") || "light";
         const currentTranslate = localStorage.getItem("translate") || "notrans";
-
-        // Apply the saved theme on page load (apply regardless of presence of toggles)
-        if (currentTheme === "dark") {
-          document.body.classList.add("dark-theme");
-        } else {
-          document.body.classList.remove("dark-theme");
-        }
-
-        // Reflect saved theme on checkbox if present
-        if (themeToggleBtn) themeToggleBtn.checked = (currentTheme === "dark");
 
         // Apply the saved translation status on page load
         if (translationToggleBtn) translationToggleBtn.checked = (currentTranslate === "en");
-
-        // Toggle the theme when the button is clicked
-        if (themeToggleBtn) {
-          themeToggleBtn.addEventListener("click", () => {
-            document.body.classList.toggle("dark-theme");
-
-            // Save the current theme in localStorage
-            const newTheme = document.body.classList.contains("dark-theme")
-              ? "dark"
-              : "light";
-            localStorage.setItem("theme", newTheme);
-          });
-        }
 
         // Toggle the translation visibility without page reload
         if (translationToggleBtn) {
@@ -736,9 +672,6 @@
           }
         });
       }
-
-
-
 
       function initSearch() {
         // Must have data loaded
@@ -909,9 +842,6 @@
         return verseHits.slice(0, 500); // UI cap
       }
 
-
-
-
       function searchRootWordsWordToVerseObjects(wordQuery) {
         const qTrim = (wordQuery || "").trim().replace(/[\u064B-\u0652\u0670\u0640]/g, "");;
         if (!qTrim) return [];
@@ -1009,9 +939,6 @@
       function setSearchStatus(msg) {
         document.getElementById("search-status").textContent = msg;
       }
-
-
-
 
     </script>
 

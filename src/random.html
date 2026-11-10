@@ -9,7 +9,7 @@
 
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
-  <title>Random Verse</title>
+  <title>Random Verse · Original Quran</title>
   <!-- Open Graph / Twitter meta for richer embeds -->
   <meta property="og:title" content="Random Quran Verse">
   <meta property="og:description" content="A randomly selected Quran verse — refresh for a new verse or share a specific one with ?verse=123">
@@ -27,14 +27,15 @@
     .actions { margin-top:18px; }
     .btn { display:inline-block; padding:8px 14px; border-radius:6px; background:#1da1f2; color:#fff; text-decoration:none; margin:0 6px; }
   </style>
-  <script src="common.js?v=website-4"></script>
-  <link rel="stylesheet" href="site-theme.css?v=menu-2">
+  <script src="site.js?v=page-controls-1"></script>
+  <script src="common.js?v=page-controls-1"></script>
+  <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
   <script src="retire-offline.js" defer></script>
 </head>
 
 <body class="font-qahiri site-random">
   <header class="site-masthead">
-    <a class="site-brand" href="index.html"><span><span class="site-eyebrow">Random Verse</span><span class="site-brand-name">Original Quran</span></span></a>
+    <a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Random Verse</span><span class="site-brand-name">Original Quran</span></span></a>
     <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
   </header>
 
@@ -51,6 +52,7 @@
   <script>
     // Fetch minimal data, pick a random verse (or use ?verse=) and render it.
     async function loadRandomVerse() {
+      const finishLoading = window.SiteUI.beginLoading();
       try {
         const [suraData, combined, words, enWords] = await Promise.all([
           QuranUtils.loadJSON('json/sura.json'),
@@ -128,8 +130,11 @@
         const esc = (s) => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
         async function embedFontAndRender(ttfPath) {
+          const controller = new AbortController();
+          const timeout = window.setTimeout(() => controller.abort(), 30000);
           try {
-            const resp = await fetch(ttfPath);
+            const resp = await fetch(ttfPath, { signal: controller.signal });
+            if (!resp.ok) throw new Error(`Unable to load font: HTTP ${resp.status}`);
             const ab = await resp.arrayBuffer();
             const b64 = btoa(String.fromCharCode(...new Uint8Array(ab)));
 
@@ -254,11 +259,13 @@
             svgContainer.innerHTML = svgFallback;
             document.getElementById('meta').textContent = meta;
             document.getElementById('en').textContent = en;
+          } finally {
+            window.clearTimeout(timeout);
           }
         }
 
         // Attempt to embed the font from local fonts folder; if missing, fallback will run.
-        embedFontAndRender('fonts/Qahiri-Regular.ttf');
+        await embedFontAndRender('fonts/Qahiri-Regular.ttf');
 
         const tweet = document.getElementById('tweet');
         // share the current full URL (includes ?verse= if used)
@@ -288,7 +295,10 @@
 
       } catch (err) {
         console.error(err);
-        document.getElementById('verse').textContent = 'Failed to load verse.';
+        document.getElementById('svg-container').textContent = 'Unable to load this verse.';
+        window.SiteUI.reportError(err);
+      } finally {
+        finishLoading();
       }
     }
 

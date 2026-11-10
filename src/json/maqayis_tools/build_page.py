@@ -47,6 +47,8 @@ def render(template, data, core, root_url="../root.html"):
         raise ValueError('Template must contain each dictionary placeholder exactly once.')
     serialized = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
     serialized = serialized.replace('&', '\\u0026').replace('<', '\\u003c').replace('>', '\\u003e')
+    site_base = root_url.rsplit('/', 1)[0] + '/' if '/' in root_url else ''
+    template = template.replace('__SITE_BASE__', escape(site_base, quote=True))
     return template.replace('href="__ROOT_URL__"', 'href="' + escape(root_url, quote=True) + '"').replace(tokens[1], core).replace(tokens[0], serialized)
 
 

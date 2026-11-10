@@ -15,31 +15,18 @@
 @media(max-width:620px){.wrap{padding-left:14px;padding-right:14px}.masthead{padding-top:17px;padding-bottom:16px;align-items:flex-start}.brand{gap:10px}.seal{width:42px;height:42px}.brand-name{font-size:15px}.eyebrow{font-size:9px}.toplinks{gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:130px;font-size:11px}.toplinks .quiet{padding:5px 8px}.browse-panel{padding:14px;margin-bottom:15px}select{font-size:12px;padding:6px}.letters{gap:2px}.letter{min-width:29px;min-height:33px;font-size:20px}.workspace{grid-template-columns:1fr;gap:16px}.catalog{position:static}.catalog-scroll{max-height:260px;min-height:100px}.entry-option{padding:9px 16px}.entry-heading{font-size:24px}.entry-preview{font-size:14px}.reader{min-height:420px;scroll-margin-top:12px}.reader-label{font-size:10px}.tool{font-size:12px;padding:5px 7px}.entry-body{font-size:calc(var(--reader-size) - 2px)}.entry-top{padding:20px}.entry-top h2{font-size:41px}.entry-body{padding:0 20px 20px}.footer{display:block;font-size:11px}.footer span{display:block;margin-bottom:8px}}
 @media(prefers-reduced-motion:no-preference){button,a{transition:background .15s,color .15s}}@media print{.masthead,.browse-panel,.catalog,.reader-toolbar,.reader-nav,.footer{display:none}.wrap{padding:0;max-width:none}.workspace{display:block}.reader{border:0}.entry-body{font-size:20px}.source{display:none}body{background:white;color:black}}
 
-/* Header settings menu, with fixed-size bars for mobile Safari. */
-.header-settings{position:relative;flex:none}
-.header-settings summary{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:50px;height:50px;border:1px solid var(--line);border-radius:7px;background:var(--paper);cursor:pointer;list-style:none}
-.header-settings summary::-webkit-details-marker{display:none}
-.header-settings summary::marker{content:""}
-.header-settings summary span{display:block;flex:0 0 2px;width:22px;height:2px;background:var(--accent)}
-.header-settings summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.header-settings[open] summary span:nth-child(1){transform:translateY(8px) rotate(45deg)}
-.header-settings[open] summary span:nth-child(2){opacity:0}
-.header-settings[open] summary span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-.header-settings-panel{position:absolute;top:calc(100% + 10px);left:0;z-index:1001;width:260px;max-width:calc(100vw - 48px);padding:16px;background:var(--paper);border:1px solid var(--line);border-radius:10px;font-size:13px}
-.header-settings-panel p{margin:0 0 10px;color:var(--muted)}
-.header-settings-panel .reading-controls{flex-wrap:wrap}
-.header-settings-panel>a{display:block;margin-top:14px}
-@media(max-width:620px){.header-settings summary{width:42px;height:42px}}
-@media print{.header-settings{display:none}}
 </style>
-  <script src="retire-offline.js" defer></script>
+  <script src="__SITE_BASE__retire-offline.js" defer></script>
+<script src="__SITE_BASE__site.js?v=page-controls-1"></script>
+<script src="__SITE_BASE__common.js?v=page-controls-1"></script>
+<link rel="stylesheet" href="__SITE_BASE__site-theme.css?v=compact-controls-1">
 </head>
-<body>
+<body class="site-dictionary">
 <a class="skip" href="#reader">Skip to dictionary entry</a>
 <div class="wrap">
-<header class="masthead">
-  <div class="brand"><details class="header-settings"><summary aria-label="Reading settings"><span></span><span></span><span></span></summary><div class="header-settings-panel"><p>Reading settings</p><div class="reading-controls" aria-label="Reading controls"><button class="tool" id="vowels" aria-pressed="false">Hide vowels</button><span class="tool-separator" aria-hidden="true"></span><button class="tool" id="smaller" aria-label="Decrease text size">A−</button><button class="tool" id="larger" aria-label="Increase text size">A+</button></div><a href="https://arabiclexicon.hawramani.com/ibn-faris-maqayis-al-lugha/" target="_blank" rel="noopener noreferrer">Original dictionary ↗</a></div></details><div><p class="eyebrow">Arabic Root Dictionary</p><div class="brand-name">Maqayis al-Lugha</div></div></div>
-  <nav class="toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="__ROOT_URL__">Roots</a><a href="maqayis.html" aria-current="page">Dictionary</a><a href="writing.html">Writing</a></nav>
+<header class="site-masthead">
+  <div class="site-brand-group"><a class="site-brand" href="__SITE_BASE__index.html"><img class="site-logo" src="__SITE_BASE__icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Arabic Root Dictionary</span><span class="site-brand-name">Original Quran</span></span></a></div>
+  <nav class="site-toplinks" aria-label="Site"><a href="__SITE_BASE__index.html">Quran</a><a href="__ROOT_URL__">Roots</a><a href="__SITE_BASE__maqayis.html" aria-current="page">Dictionary</a><a href="__SITE_BASE__writing.html">Writing</a></nav>
 </header>
 <section class="browse-panel" aria-label="Browse by letter">
   <div id="letters" class="letters" aria-label="Browse by initial letter"></div>
@@ -50,13 +37,13 @@
     <div class="catalog-scroll" id="catalog-scroll"><div id="results"></div><p class="empty" id="empty" hidden>No entries. Choose All letters to browse the dictionary.</p><button class="more" id="more" hidden>Show more</button></div>
   </aside>
   <article class="reader" id="reader" aria-labelledby="entry-title" tabindex="-1">
-    <div class="reader-toolbar"><span class="reader-label">Dictionary entry <button class="tool" id="browse">Headwords ↑</button></span></div>
+    <div class="reader-toolbar"><span class="reader-label">Dictionary entry <button class="tool" id="browse">Headwords ↑</button></span><div class="reading-controls" aria-label="Reading controls"><button class="tool" id="vowels" aria-pressed="false">Hide vowels</button><span class="tool-separator" aria-hidden="true"></span><button class="tool" id="smaller" aria-label="Decrease text size">A−</button><button class="tool" id="larger" aria-label="Increase text size">A+</button></div></div>
     <div id="entry-content"><div class="entry-top"><div><p class="entry-kicker">ابن فارس · مقاييس اللغة</p><h2 id="entry-title" lang="ar" dir="rtl">…</h2><div class="entry-number" id="entry-number"></div></div><a id="source" class="source" target="_blank" rel="noopener noreferrer">Read original ↗</a></div><div class="entry-body" id="entry-body" lang="ar" dir="rtl"></div></div>
     <p class="reader-empty" id="reader-empty" hidden>No entry to display. Choose a letter to continue browsing.</p>
     <nav class="reader-nav" aria-label="Browse matching entries"><button class="nav-button" id="previous">← Previous<span class="nav-heading" id="previous-heading" lang="ar" dir="rtl"></span></button><button class="nav-button" id="next">Next →<span class="nav-heading" id="next-heading" lang="ar" dir="rtl"></span></button></nav>
   </article>
 </main>
-<footer class="footer"><span>Ibn Faris, <i>Maqayis al-Lugha</i> · Arabic text from The Arabic Lexicon.</span><span id="snapshot-info">A dictionary to read and explore.</span></footer>
+<footer class="footer"><span><a href="https://arabiclexicon.hawramani.com/ibn-faris-maqayis-al-lugha/" target="_blank" rel="noopener noreferrer">Original dictionary ↗</a> · Ibn Faris, <i>Maqayis al-Lugha</i> · Arabic text from The Arabic Lexicon.</span><span id="snapshot-info">A dictionary to read and explore.</span></footer>
 <noscript><p>This dictionary needs JavaScript enabled to browse and display entries.</p></noscript>
 </div>
 <script id="dictionary-data" type="application/json">__DICTIONARY_DATA__</script>
@@ -65,7 +52,7 @@
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
-  document.querySelector('.eyebrow').textContent = document.querySelector('meta[name="page-info"]').content;
+  document.querySelector('.site-eyebrow').textContent = document.querySelector('meta[name="page-info"]').content;
   const data = JSON.parse($('dictionary-data').textContent);
   const entries = Maqayis.prepare(data.entries);
   const number = new Intl.NumberFormat('en');
@@ -78,7 +65,7 @@
     $('smaller').disabled = size <= 22; $('larger').disabled = size >= 42;
   }
   function setTheme(dark) {
-    document.body.classList.toggle('dark', dark);
+    window.SiteUI.applyTheme(dark ? 'dark' : 'light');
   }
   setTheme(storage.get('theme') === 'dark' || (!storage.get('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches));
   updateSize();
