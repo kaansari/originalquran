@@ -2,23 +2,26 @@
 <html lang="en">
 
 <head>
+  <meta name="page-info" content="Verse Reader">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#f5f4ee">
+
     <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
     <title>Quran Viewer</title>
     <link rel="stylesheet" href="./styles.css">
-  <script src="common.js"></script>
+  <script src="common.js?v=website-4"></script>
+  <link rel="stylesheet" href="site-theme.css?v=menu-2">
+  <script src="retire-offline.js" defer></script>
 </head>
 
 <body>
-
-
-    <div class="hamburger-menu">
+  <header class="site-masthead">
+    <div class="site-brand-group">
+<div class="hamburger-menu">
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
+      <label for="menu-toggle" class="menu-icon" aria-label="Open settings menu">
         <span class="menu-line"></span>
         <span class="menu-line"></span>
         <span class="menu-line"></span>
@@ -38,7 +41,7 @@
         <a href="https://github.com/kaansari/originalquran" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
           <i class="fab fa-github"> </i>
         </a>
-  
+
 
          <!-- Font Selection Dropdown -->
       <label for="font-select">Choose Font:</label>
@@ -56,14 +59,22 @@
       </div>
 
     </div>
+<a class="site-brand" href="index.html"><span><span class="site-eyebrow">Verse Reader</span><span class="site-brand-name">Original Quran</span></span></a>
+</div>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+  </header>
 
 
 
 
-   <span style="margin-left: 100px;">
+
+
+
+
+   <div class="site-reader-selectors">
     <select id="sura-select"></select>
     <select id="verse-select"></select>
-   </span>
+   </div>
 
 
 <blockquote id="quran-container"></blockquote>

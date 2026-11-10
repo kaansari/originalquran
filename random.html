@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
+  <meta name="page-info" content="Random Verse">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#f5f4ee">
+
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
   <title>Random Verse</title>
@@ -26,10 +27,17 @@
     .actions { margin-top:18px; }
     .btn { display:inline-block; padding:8px 14px; border-radius:6px; background:#1da1f2; color:#fff; text-decoration:none; margin:0 6px; }
   </style>
-  <script src="common.js"></script>
+  <script src="common.js?v=website-4"></script>
+  <link rel="stylesheet" href="site-theme.css?v=menu-2">
+  <script src="retire-offline.js" defer></script>
 </head>
 
-<body class="font-qahiri">
+<body class="font-qahiri site-random">
+  <header class="site-masthead">
+    <a class="site-brand" href="index.html"><span><span class="site-eyebrow">Random Verse</span><span class="site-brand-name">Original Quran</span></span></a>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+  </header>
+
   <div class="card">
     <div id="svg-container" style="width:100%; display:flex; justify-content:center;">Loading…</div>
     <div id="meta" class="meta" style="display:none"></div>

@@ -536,56 +536,6 @@ input:checked + .slider:before {
 }
 
 
-/* PWA install/update controls: isolated on the right so they never disturb navigation. */
-.pwa-actions {
-  position: fixed;
-  top: 10px;
-  right: 14px;
-  z-index: 1200;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 8px;
-  font-family: var(--latin-font);
-}
-
-.pwa-actions button {
-  appearance: none;
-  border: 1px solid rgba(31,138,98,.35);
-  background: var(--selector-bg-color);
-  color: var(--text-color);
-  border-radius: 999px;
-  padding: 7px 12px;
-  font: inherit;
-  font-size: 13px;
-  font-weight: 650;
-  cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0,0,0,.08);
-  white-space: nowrap;
-}
-.pwa-actions button:hover:not(:disabled) { border-color: var(--icon-hover-color); transform: translateY(-1px); }
-.pwa-actions button:disabled { cursor: default; opacity: .65; }
-#pwa-update-button:not([hidden]) { font-weight: 750; }
-#pwa-status {
-  position: absolute;
-  top: calc(100% + 7px);
-  right: 0;
-  width: max-content;
-  max-width: min(320px, 80vw);
-  padding: 5px 8px;
-  border-radius: 7px;
-  background: var(--selector-bg-color);
-  color: var(--secondary-text-color);
-  box-shadow: 0 4px 14px rgba(0,0,0,.08);
-  font-size: 12px;
-}
-#pwa-status:empty { display: none; }
-@media (max-width: 600px) {
-  .pwa-actions { top: 8px; right: 8px; }
-  .pwa-actions button { padding: 6px 9px; font-size: 12px; }
-}
-
-
 /* Original Quran loading experience */
 .quran-loader {
   position: fixed;
