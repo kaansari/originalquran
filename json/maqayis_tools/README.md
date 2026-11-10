@@ -8,13 +8,13 @@ Requires Python 3.9 or newer. No packages need installing.
 From the repository root, try two entries first:
 
 ```bash
-python3 src/json/maqayis_tools/download.py --output data/maqayis --limit 2
+python3 src/json/maqayis_tools/download.py --output src/json/maqayis --limit 2
 ```
 
 Inspect the resulting Markdown alongside the source pages. Then download all entries:
 
 ```bash
-python3 src/json/maqayis_tools/download.py --output data/maqayis
+python3 src/json/maqayis_tools/download.py --output src/json/maqayis
 ```
 
 The same command resumes an interrupted run using saved HTML. Cached entries are
@@ -71,7 +71,7 @@ If the site has an expired certificate, explicitly opt out of HTTPS certificate
 and hostname verification for this run:
 
 ```bash
-python3 src/json/maqayis_tools/download.py --output data/maqayis --limit 2 --insecure
+python3 src/json/maqayis_tools/download.py --output src/json/maqayis --limit 2 --insecure
 ```
 
 After inspecting the trial entries, remove `--limit 2` for the full download.
@@ -92,13 +92,13 @@ must be available before entry downloads can proceed.
 For a fast first pass:
 
 ```bash
-python3 src/json/maqayis_tools/download.py --output data/maqayis --insecure --timeout 15
+python3 src/json/maqayis_tools/download.py --output src/json/maqayis --insecure --timeout 15
 ```
 
 For a later pass with more patience:
 
 ```bash
-python3 src/json/maqayis_tools/download.py --output data/maqayis --insecure --timeout 60 --retries 1
+python3 src/json/maqayis_tools/download.py --output src/json/maqayis --insecure --timeout 60 --retries 1
 ```
 
 `--timeout` limits individual socket operations, not the total page duration.
@@ -134,7 +134,7 @@ the download finishes, or whenever more entries arrive, then reload the page.
 `--source` and `--output` can override the default paths:
 
 ```bash
-python3 src/json/maqayis_tools/build_page.py --source data/maqayis --output src/maqayis.html
+python3 src/json/maqayis_tools/build_page.py --source src/json/maqayis --output src/maqayis.html
 ```
 
 The latter puts it alongside `root.html`; the builder adjusts its Quran roots link

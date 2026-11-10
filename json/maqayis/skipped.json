@@ -1,0 +1,912 @@
+[
+  {
+    "heading": "رَعَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D8%B9%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَعَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D8%B9%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَغَمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D8%BA%D9%8E%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَغَنَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D8%BA%D9%8E%D9%86%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَمَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D9%85%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَمَشَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D9%85%D9%8E%D8%B4%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَمَصَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D9%85%D9%8E%D8%B5%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَمَغَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D9%85%D9%8E%D8%BA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَنَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D9%86%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "رَوَنَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B1%D9%8E%D9%88%D9%8E%D9%86%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "زَأَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B2%D9%8E%D8%A3%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "زَأَدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B2%D9%8E%D8%A3%D9%8E%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "زَعَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B2%D9%8E%D8%B9%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "زَعِلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B2%D9%8E%D8%B9%D9%90%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "زَغَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B2%D9%8E%D8%BA%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "زَيَدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B2%D9%8E%D9%8A%D9%8E%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "زَيَنَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B2%D9%8E%D9%8A%D9%8E%D9%86%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَبَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D8%A8%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَحَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D8%AD%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَدِكَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D8%AF%D9%90%D9%83%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَطَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D8%B7%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَطَنَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D8%B7%D9%8E%D9%86%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَعِفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D8%B9%D9%90%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَفَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%81%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَفَطَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%81%D9%8E%D8%B7%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَقَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%82%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَقَطَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%82%D9%8E%D8%B7%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَقَعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%82%D9%8E%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَلِسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%84%D9%90%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَمِعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%85%D9%90%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَمُكَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%85%D9%8F%D9%83%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَنَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%86%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَنَدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%86%D9%8E%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَهُمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%87%D9%8F%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَوُءَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%88%D9%8F%D8%A1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَوَخَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%88%D9%8E%D8%AE%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَوُغَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%88%D9%8F%D8%BA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَوُقَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%88%D9%8F%D9%82%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَوِلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%88%D9%90%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَيَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%8A%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَيَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%8A%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "سَيِلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B3%D9%8E%D9%8A%D9%90%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "شَأَزَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B4%D9%8E%D8%A3%D9%8E%D8%B2%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "شَأَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B4%D9%8E%D8%A3%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "صَخَمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B5%D9%8E%D8%AE%D9%8E%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "صَوَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D8%B5%D9%8E%D9%88%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "مَيَزَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%85%D9%8E%D9%8A%D9%8E%D8%B2%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "مَيَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%85%D9%8E%D9%8A%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "مَيَشَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%85%D9%8E%D9%8A%D9%8E%D8%B4%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "مَيَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%85%D9%8E%D9%8A%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "مَيَنَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%85%D9%8E%D9%8A%D9%8E%D9%86%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَأَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A3%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَأَدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A3%D9%8E%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَأَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A3%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَأَمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A3%D9%8E%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَأَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%A3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَخَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%AE%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَشَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%B4%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَضَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%B6%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَقَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D9%82%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَبَكَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%A8%D9%8E%D9%83%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَتَأَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AA%D9%8E%D8%A3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَتَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AA%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَتَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AA%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَتَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AA%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَتَغَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AA%D9%8E%D8%BA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَتَقَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AA%D9%8E%D9%82%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَتَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AA%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَثَا",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AB%D9%8E%D8%A7/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَثَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AB%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَجَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AC%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَجَثَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AC%D9%8E%D8%AB%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَجُدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AC%D9%8F%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَجَذَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AC%D9%8E%D8%B0%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَجَزَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AC%D9%8E%D8%B2%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَجَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AC%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَجَهَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AC%D9%8E%D9%87%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَحَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AD%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَحَتَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AD%D9%8E%D8%AA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَحَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AD%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَحَصَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AD%D9%8E%D8%B5%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَحَضَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AD%D9%8E%D8%B6%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَحَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AD%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نُحِّيَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8F%D8%AD%D9%91%D9%90%D9%8A%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَخَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AE%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَخَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AE%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَخَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AE%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَخَشَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AE%D9%8E%D8%B4%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَخَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AE%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَخَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AE%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَدَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AF%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَدَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AF%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَدَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AF%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَدَصَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AF%D9%8E%D8%B5%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَدَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AF%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَدَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AF%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَدَهَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%AF%D9%8E%D9%87%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَذَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B0%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَذَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B0%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَرَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B1%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَغَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D8%BA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَكَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D9%83%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَزَهَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B2%D9%8E%D9%87%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَغَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D8%BA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَقَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D9%82%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَكَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D9%83%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسَمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%8E%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَسِيَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B3%D9%90%D9%8A%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَزَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%B2%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَصَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%B5%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَغَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D8%BA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَشَمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B4%D9%8E%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَصَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B5%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَصَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B5%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَصَتَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B5%D9%8E%D8%AA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَصَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B5%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَصَعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B5%D9%8E%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَصَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B5%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَضَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B6%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَضَا",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B6%D9%8E%D8%A7/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَضَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B6%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَضَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B6%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَضَخَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B6%D9%8E%D8%AE%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَضَدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B6%D9%8E%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَضَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B6%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَطَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B7%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَطَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B7%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَطَشَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B7%D9%8E%D8%B4%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَطَعَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B7%D9%8E%D8%B9%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَطَقَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B7%D9%8E%D9%82%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَطَلَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B7%D9%8E%D9%84%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَطَيَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B7%D9%8E%D9%8A%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَظُفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B8%D9%8F%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَظَمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B8%D9%8E%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَتَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D8%AA%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَسَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D8%B3%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَشَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D8%B4%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَضَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D8%B6%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَظَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D8%B8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَفَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D9%81%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعَقَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%8E%D9%82%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَعِمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%B9%D9%90%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغَبَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%8E%D8%A8%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغِرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%90%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغَصَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%8E%D8%B5%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغَضَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%8E%D8%B6%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغَقَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%8E%D9%82%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغَمَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%8E%D9%85%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَغَى",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D8%BA%D9%8E%D9%89/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَفَّ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D9%81%D9%91%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَفَثَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D9%81%D9%8E%D8%AB%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَفَجَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D9%81%D9%8E%D8%AC%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَفَحَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D9%81%D9%8E%D8%AD%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَفِدَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D9%81%D9%90%D8%AF%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَفَرَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D9%81%D9%8E%D8%B1%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "heading": "نَفَزَ",
+    "url": "https://arabiclexicon.hawramani.com/%D9%86%D9%8E%D9%81%D9%8E%D8%B2%D9%8E/?book=9",
+    "error": "HTTP Error 429: Too Many Requests"
+  }
+]

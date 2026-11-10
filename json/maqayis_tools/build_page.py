@@ -52,7 +52,7 @@ def render(template, data, core, root_url="../root.html"):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--source', type=Path, default=PROJECT / 'data/maqayis')
+    parser.add_argument('--source', type=Path, default=PROJECT / 'src/json/maqayis')
     parser.add_argument('--output', type=Path, default=PROJECT / 'src/maqayis.html')
     args = parser.parse_args()
     data = collect(args.source)

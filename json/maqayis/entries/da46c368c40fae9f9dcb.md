@@ -1,0 +1,7 @@
+# تَمَّ كِتَابُ الضَّادِ
+
+Dictionary: Ibn Faris, Maqayis al-Lugha
+
+Source: https://arabiclexicon.hawramani.com/%D8%AA%D9%8E%D9%85%D9%91%D9%8E-%D9%83%D9%90%D8%AA%D9%8E%D8%A7%D8%A8%D9%8F-%D8%A7%D9%84%D8%B6%D9%91%D9%8E%D8%A7%D8%AF%D9%90/?book=9
+
+(تَمَّ كِتَابُ الضَّادِ) [بَابُ الطَّاءِ فِي الْمُضَاعَفِ وَالْمُطَابِقِ]
