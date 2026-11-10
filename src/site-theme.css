@@ -1,0 +1,252 @@
+/* Shared Maqayis palette and site chrome. Keep the script-specific Arabic fonts. */
+:root {
+  --bg: #f5f4ee;
+  --paper: #fffefb;
+  --ink: #233a33;
+  --muted: #69736b;
+  --line: #dedfd5;
+  --accent: #204d40;
+  --tint: #e9efe6;
+  --gold: #a68a4a;
+  --mark: #f6e4aa;
+  --site-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+body.dark-theme {
+  color-scheme: dark;
+  --bg: #17201d;
+  --paper: #202c26;
+  --ink: #ecede4;
+  --muted: #adb9ae;
+  --line: #3c4d40;
+  --accent: #bbd7bd;
+  --tint: #2b4033;
+  --gold: #c9b47a;
+  --mark: #5d5129;
+}
+body {
+  --background-color: var(--bg);
+  --text-color: var(--ink);
+  --verse-text-color: var(--ink);
+  --secondary-text-color: var(--muted);
+  --kufi-color: var(--ink);
+  --selector-bg-color: var(--paper);
+  --page-bg-color: var(--paper);
+  --page-bg: var(--paper);
+  --highlight-color: var(--tint);
+  --broder-color: var(--line);
+  --icon-hover-color: var(--accent);
+  --play-button-border-color: var(--line);
+  --morphology-popup-bg-color: var(--paper);
+  --menu-line: var(--accent);
+  margin: 0;
+  padding: 0 24px 32px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--site-font);
+}
+html { padding: 0; background: #f5f4ee; }
+a { color: var(--accent); text-underline-offset: 4px; }
+button, input, select { color: var(--ink); }
+button, select, input[type="search"], input[type="text"] {
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 9px 12px;
+}
+select option { color: var(--ink); background: var(--paper); }
+button { cursor: pointer; }
+button:hover, .nav-button:hover { background-color: var(--tint); }
+button:disabled { opacity: .4; cursor: default; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+.site-masthead { max-width: 1380px; margin: auto; box-sizing: border-box; }
+.site-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0 22px;
+  border-bottom: 1px solid var(--line);
+  font: 15px/1.5 var(--site-font);
+}
+.site-brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
+.site-seal {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  font: 28px "Geeza Pro", "Traditional Arabic", serif;
+  color: var(--accent);
+}
+.site-eyebrow { display: block; font-size: 11px; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); }
+.site-brand-name { display: block; font-size: 17px; font-weight: 650; letter-spacing: -.02em; }
+.site-toplinks { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 12px 24px; font-size: 13px; }
+.site-toplinks a { text-decoration: none; }
+.site-toplinks a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--gold); }
+body .page, body .book-container, body .card {
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background-color: var(--paper);
+  box-shadow: none;
+  margin: 20px auto 32px;
+  max-width: 1100px;
+  width: 100%;
+}
+body .search-panel, body #selectors, .site-reader-selectors {
+  box-sizing: border-box;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 0 auto 23px;
+  max-width: 1100px;
+}
+body #quran-container { max-width: 1100px; margin-inline: auto; }
+body .letter-container { background: transparent; }
+body .letter-container > div { border: 1px solid var(--line); border-radius: 5px; background: var(--tint); }
+body .verseid, body .clickable-root { color: var(--accent) !important; }
+body .translation, body .meta { color: var(--muted); }
+body .menu-content { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: none; }
+body .hamburger-menu { position: relative; display: block; margin: 0 auto 12px; max-width: 1100px; }
+body .menu-icon { width: fit-content; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); }
+body .menu-content { top: 50px; position: absolute; width: min(350px, calc(100vw - 60px)); }
+body .btn { background: var(--accent); color: var(--paper); border: 1px solid var(--accent); font: 13px/1.5 var(--site-font); }
+body.site-random { display: block; min-height: 100vh; }
+body.site-random .card { margin-top: 16px; }
+/* Preserve the writing guides and their exact line spacing. */
+body .page:has(.row) { border-color: var(--line); }
+body #quran-loader { background: var(--bg); color: var(--ink); }
+body #quran-loader .quran-loader-subtitle { color: var(--muted); }
+@media (max-width: 620px) {
+  body { padding: 0 14px 24px; }
+  .site-masthead { align-items: flex-start; padding: 17px 0 16px; gap: 12px; }
+  .site-brand { gap: 10px; flex-shrink: 0; }
+  .site-seal { width: 42px; height: 42px; }
+  .site-eyebrow { font-size: 9px; }
+  .site-brand-name { font-size: 15px; }
+  .site-toplinks { gap: 8px 12px; max-width: 165px; font-size: 11px; }
+  body .card { padding: 20px 14px; }
+  body .search-panel, body #selectors, .site-reader-selectors { padding: 14px; }
+  body .search-row input { min-width: 0; width: 100%; }
+  body .verse-container { padding-inline: 10px; }
+}
+@media print {
+  .site-masthead { display: none; }
+  body { background: white; color: black; padding: 0; }
+  body .page, body .book-container, body .card { border: 0; margin: 0; }
+}
+/* Hide the settings panel fully when closed, even inside centered layouts. */
+body .menu-content { visibility: hidden; pointer-events: none; }
+body #menu-toggle:checked ~ .menu-content { visibility: visible; pointer-events: auto; }
+body .page:has(.row) {
+  background-image: linear-gradient(to bottom,
+    var(--gold) 0px, var(--gold) 2px, var(--paper) 2px, var(--paper) 14px,
+    var(--line) 14px, var(--line) 16px, transparent 16px, transparent 29px,
+    var(--line) 29px, var(--line) 31px, transparent 31px, transparent 43px,
+    var(--gold) 43px, var(--gold) 45px, var(--paper) 45px, var(--paper) 64px);
+}
+
+.site-toplinks { align-items: center; }
+
+.site-toplinks .site-quiet {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 7px 12px;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.site-toplinks .site-quiet:hover { background: var(--tint); }
+@media (max-width: 620px) {
+  .site-toplinks .site-quiet { padding: 5px 8px; }
+}
+
+/* Settings occupy the former seal position beside the site name. */
+.site-brand-group { display: flex; align-items: center; gap: 14px; }
+body .site-masthead .hamburger-menu {
+  flex: none;
+  margin: 0;
+  max-width: none;
+}
+body .site-masthead .menu-icon {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+body .site-masthead .menu-line {
+  display: block;
+  flex: 0 0 2px;
+  width: 22px;
+  height: 2px;
+  margin: 0;
+  background-color: var(--accent);
+}
+body .site-masthead #menu-toggle:checked + .menu-icon .menu-line:nth-child(1) {
+  width: 22px;
+  transform: translateY(8px) rotate(45deg);
+}
+body .site-masthead #menu-toggle:checked + .menu-icon .menu-line:nth-child(3) {
+  width: 22px;
+  transform: translateY(-8px) rotate(-45deg);
+}
+body .site-masthead .menu-content {
+  top: calc(100% + 10px);
+  left: 0;
+  right: auto;
+  transform: none;
+  text-align: left;
+}
+@media (max-width: 620px) {
+  .site-brand-group { gap: 10px; }
+  body .site-masthead .menu-icon { width: 42px; height: 42px; }
+}
+@media print {
+  .site-masthead .hamburger-menu { display: none; }
+}
+
+.page-selectors {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.page-number { font: inherit; color: var(--ink); white-space: nowrap; }
+
+/* Use one panel inset rather than stacking padding on the reading sections. */
+body #quran-container.page,
+body blockquote#quran-container {
+  box-sizing: border-box;
+  padding: 18px 20px;
+}
+body #quran-container .arabic-text-container,
+body #quran-container .translations-container {
+  padding: 0;
+  background: transparent;
+}
+body #quran-container .arabic-text-container { margin-bottom: 0; }
+body #quran-container .translations-container { margin-top: 16px; }
+body #quran-container .verse-container { padding-inline: 0; }
+body .page-navigation {
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+@media (max-width: 620px) {
+  body #quran-container.page,
+  body blockquote#quran-container { padding: 14px; }
+  body .page-navigation { padding-inline: 14px; }
+}

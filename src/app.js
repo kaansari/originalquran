@@ -116,7 +116,9 @@
 
     const container = document.getElementById("quran-container");
     container.className = "page";
-    container.innerHTML = `<div class="page-header">Page ${pageNumber} (${pageData.word_count} words)</div>`;
+    container.replaceChildren();
+    const pageLabel = document.getElementById("page-number");
+    if (pageLabel) pageLabel.textContent = `Page ${pageNumber}`;
 
     const currentTranslate = localStorage.getItem("translate") || "notrans";
 

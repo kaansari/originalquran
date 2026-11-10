@@ -10,23 +10,27 @@
 >
 
 <head>
+  <meta name="page-info" content="Hafs Reading">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#f5f4ee">
+
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
   <meta name="quran-words-file" content="json/quranic_words.json">
   <title>Quran Viewer</title>
   <link rel="stylesheet" href="styles_page.css">
-  <script src="common.js"></script>
+  <script src="common.js?v=website-4"></script>
+  <link rel="stylesheet" href="site-theme.css?v=menu-2">
+  <script src="retire-offline.js" defer></script>
 </head>
 
 <body>
-
-    <div class="hamburger-menu">
+  <header class="site-masthead">
+    <div class="site-brand-group">
+<div class="hamburger-menu">
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
+      <label for="menu-toggle" class="menu-icon" aria-label="Open settings menu">
         <span class="menu-line"></span>
         <span class="menu-line"></span>
         <span class="menu-line"></span>
@@ -34,7 +38,7 @@
 
       <div class="menu-content">
 
-      
+
 
       <span>Show Translation</span>
       <label class="toggle-switch">
@@ -50,7 +54,7 @@
         <a href="https://github.com/kaansari/originalquran" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
           <i class="fab fa-github"> </i>
         </a>
-       
+
 
          <!-- Font Selection Dropdown -->
       <label for="font-select">Choose Font:</label>
@@ -73,19 +77,27 @@
 
 
   </div>
+<a class="site-brand" href="index.html"><span><span class="site-eyebrow">Hafs Reading</span><span class="site-brand-name">Original Quran</span></span></a>
+</div>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+  </header>
+
+
+
 
   <!-- Page Navigation Buttons -->
   <div class="page-navigation">
     <button id="prev-page" class="nav-button" disabled>
       <i class="fas fa-chevron-right"></i> 
     </button>
-    
-    <span style="margin-left: 100px;">
+
+    <span class="page-selectors">
       <!-- Sura and Verse Selectors -->
       <select id="sura-select"></select>
       <select id="verse-select"></select>
+      <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
     </span>
-    
+
     <button id="next-page" class="nav-button" disabled>
        <i class="fas fa-chevron-left"></i>
     </button>
@@ -93,7 +105,7 @@
 
   <div class="page" id="quran-container"></div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=page-nav-2"></script>
 </body>
 
 </html>

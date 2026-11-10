@@ -2,26 +2,28 @@
 <html lang="en">
 
 <head>
+  <meta name="page-info" content="Quran Root Words">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#f5f4ee">
+
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="root.css">
   <title>Quran Root Words</title>
-  <script src="common.js"></script>
+  <script src="common.js?v=website-4"></script>
+  <link rel="stylesheet" href="site-theme.css?v=menu-2">
+  <script src="retire-offline.js" defer></script>
 </head>
 
 
 
 <body>
-
-
-
-  <div class="hamburger-menu">
+  <header class="site-masthead">
+    <div class="site-brand-group">
+<div class="hamburger-menu">
     <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">
+    <label for="menu-toggle" class="menu-icon" aria-label="Open settings menu">
       <span class="menu-line"></span>
       <span class="menu-line"></span>
       <span class="menu-line"></span>
@@ -48,6 +50,15 @@
       <!-- Font Selection Dropdown -->
     </div>
   </div>
+<a class="site-brand" href="index.html"><span><span class="site-eyebrow">Quran Root Words</span><span class="site-brand-name">Original Quran</span></span></a>
+</div>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html" aria-current="page">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+  </header>
+
+
+
+
+
 
   <div class="book-container">
     <div id="letter-container" class="letter-container">
@@ -262,7 +273,7 @@
         const showTranslation = localStorage.getItem("translate") === "en";
 
         const verseContainer = document.getElementById('verse-data');
-       
+
         verseContainer.innerHTML = `
          <div>result(s) ${verseData.length}</div>
     <ul>
