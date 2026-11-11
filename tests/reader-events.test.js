@@ -23,7 +23,7 @@ for (const [filename,script] of [['index.html','app.js'],['simple.html','app.js'
       addEventListener(type,fn){(events[type]??=[]).push(fn);}};
     const window={location:{pathname:`/${filename}`},addEventListener(){}};
     const localStorage={getItem:key=>saved.get(key)||null,setItem:(key,value)=>saved.set(key,value)};
-    const source=script?fs.readFileSync(`src/${script}`,'utf8'):[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(match=>match[1]).join('\n');
+    const source=fs.readFileSync(script?`src/${script}`:'src/js/root.js','utf8');
     vm.runInNewContext(source,{
       window,document,localStorage,QuranUtils:{loadJSON:()=>new Promise(()=>{})},
       console:{log(){},error(){}},URLSearchParams,Event

@@ -76,7 +76,7 @@ test('root page hooks dictionary updates for direct selection, letter browsing a
     document:{getElementById:id=>nodes.get(id),createElement:()=>({}),addEventListener(){}},
     localStorage:{getItem:key=>saved.get(key)||null,setItem:(key,value)=>saved.set(key,value)},
     QuranUtils:{loadJSON:()=>new Promise(()=>{})},console});
-  const source=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]).join('\n');
+  const source=fs.readFileSync('src/js/root.js','utf8');
   vm.runInContext(source,context);
   vm.runInContext("rootWordsData={'رحم':{Word:{'رحمة':{}}},'رشد':{Word:{'رشد':{}}}};displayVerseData=()=>{};bindSelectListenersOnce();",context);
   nodes.get('root-select').value='رحم';nodes.get('root-select').events.change();

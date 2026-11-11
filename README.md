@@ -57,3 +57,7 @@ Font settings, translations, word details, audio, and loading behavior are share
 The default `index.html` is Eastern Reading (Hafs) using `json/quranic_words.json`.
 `page.html` remains available for existing bookmarks; site links now use `index.html`.
 The previous home reader is available as Old Quran at `simple.html`; `warsh.html` is labeled Western Reading.
+
+Root selection, search and verse rendering live in `src/js/root.js`; `root.html`
+contains the page markup. Both readers share audio playback and word-detail popups
+through `src/common.js`. The unreferenced legacy writing script has been removed.
