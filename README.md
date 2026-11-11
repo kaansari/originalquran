@@ -54,6 +54,6 @@ word and combined-data files through metadata. It displays the complete selected
 chapter without downloading pagination data; the other readers retain page mode.
 Font settings, translations, word details, audio, and loading behavior are shared.
 
-The default `index.html` is Eastern Quran (Hafs) using `json/quranic_words.json`.
+The default `index.html` is Eastern Reading (Hafs) using `json/quranic_words.json`.
 `page.html` remains available for existing bookmarks; site links now use `index.html`.
-The previous home reader is available as Simple Quran at `simple.html`; `warsh.html` is labeled Western Quran.
+The previous home reader is available as Old Quran at `simple.html`; `warsh.html` is labeled Western Reading.

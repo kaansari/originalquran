@@ -101,7 +101,7 @@ test('page selectors share the compact controls row and arrows belong to the ver
 test('default home page is the Hafs reader with the same vowelled word data',()=>{
  const home=fs.readFileSync('src/index.html','utf8');
  const hafs=fs.readFileSync('src/page.html','utf8');
- assert.match(home,/<meta name="page-info" content="Eastern Quran">/);
+ assert.match(home,/<meta name="page-info" content="Eastern Reading">/);
  const source=s=>s.match(/<meta name="quran-words-file" content="([^"]+)"/)[1];
  assert.equal(source(home),source(hafs));
  assert.equal(source(home),'json/quranic_words.json');
@@ -115,17 +115,17 @@ test('Hafs defaults apply at both home URLs and replace unavailable old font cho
  }
 });
 
-test('Simple Quran preserves the previous home data and reader variants have the requested names',()=>{
+test('Old Quran preserves the previous home data and reader variants have the requested names',()=>{
  const simple=fs.readFileSync('src/simple.html','utf8');
  assert.match(simple,/<meta name="quran-words-file" content="json\/quran_words.json">/);
- assert.match(simple,/<meta name="page-info" content="Simple Quran">/);
+ assert.match(simple,/<meta name="page-info" content="Old Quran">/);
  const home=fs.readFileSync('src/index.html','utf8');
- assert.match(home,/<meta name="page-info" content="Eastern Quran">/);
+ assert.match(home,/<meta name="page-info" content="Eastern Reading">/);
  const western=fs.readFileSync('src/warsh.html','utf8');
- assert.match(western,/<meta name="page-info" content="Western Quran">/);
+ assert.match(western,/<meta name="page-info" content="Western Reading">/);
 });
 
-test('restored Simple Quran renders with its original Qahiri default',async()=>{
+test('restored Old Quran renders with its original Qahiri default',async()=>{
  const h=await setup('1','simple.html');
  assert.equal(h.nodes.get('font-select').value,'Qahiri');
  assert.deepEqual(h.verses(),['verse-001001','verse-001002']);
