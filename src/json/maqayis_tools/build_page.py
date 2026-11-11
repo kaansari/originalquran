@@ -41,6 +41,17 @@ def collect(source):
             'total': len(entries), 'built': datetime.now(timezone.utc).isoformat(timespec='seconds')}
 
 
+def root_index(data, source):
+    """Publish only headings and file availability; root pages fetch definitions on demand."""
+    entries = []
+    for item in data['entries']:
+        entry = {'id': item['id'], 'heading': item['heading'], 'available': bool(item['text'])}
+        if item['text'] and not (Path(source) / 'entries' / (item['id'] + '.md')).is_file():
+            entry['fallback'] = item['text']
+        entries.append(entry)
+    return {'entries': entries}
+
+
 def render(template, data, core, root_url="../root.html"):
     tokens = ('__DICTIONARY_DATA__', '__DICTIONARY_CORE__')
     if any(template.count(token) != 1 for token in tokens):
@@ -56,11 +67,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path, default=PROJECT / 'src/json/maqayis')
     parser.add_argument('--output', type=Path, default=PROJECT / 'src/maqayis.html')
+    parser.add_argument('--root-index', type=Path, help='Root lookup output (default: json/maqayis-root-index.json beside the page)')
     args = parser.parse_args()
     data = collect(args.source)
     page = render((HERE / 'maqayis.template.html').read_text(encoding='utf-8'), data,
                   (HERE / 'browser_core.js').read_text(encoding='utf-8'),
                   root_url=Path(os.path.relpath(PROJECT / 'src/root.html', args.output.resolve().parent)).as_posix())
+    lookup_path = args.root_index or args.output.parent / 'json/maqayis-root-index.json'
+    lookup_path.parent.mkdir(parents=True, exist_ok=True)
+    lookup_temp = lookup_path.with_suffix('.json.tmp')
+    lookup_temp.write_text(json.dumps(root_index(data, args.source), ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    lookup_temp.replace(lookup_path)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_suffix(args.output.suffix + '.tmp')
     temporary.write_text(page, encoding='utf-8')

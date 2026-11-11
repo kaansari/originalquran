@@ -9,30 +9,54 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
   <title>Writing Practice · Original Quran</title>
-  <link rel="stylesheet" href="writing.css">
+  <link rel="stylesheet" href="styles_page.css">
+  <link rel="stylesheet" href="writing.css?v=tracing-style-7">
+  <meta name="quran-words-file" content="json/quran_words.json">
   <script src="site.js?v=page-controls-1"></script>
   <script src="common.js?v=page-controls-1"></script>
   <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
   <script src="retire-offline.js" defer></script>
 </head>
-<body>
+<body class="site-writing">
   <header class="site-masthead">
     <a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Writing Practice</span><span class="site-brand-name">Original Quran</span></span></a>
     <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html" aria-current="page">Writing</a></nav>
   </header>
 
-  <div id="selectors" class="selectors">
-       <!-- Sura and Verse Selectors -->
-       <select id="sura-select"></select>
-       <select id="verse-select"></select>
+  <section class="site-page-controls" aria-label="Writing options">
+    <label class="site-control-toggle" for="translation-toggle">
+      <input type="checkbox" id="translation-toggle">
+      <span>Show translation</span>
+    </label>
+    <label class="site-control" for="font-select">Writing font
+      <select id="font-select">
+        <option value="Qahiri">Qahiri</option>
+        <option value="Amiri Quran">Amiri Quran</option>
+      </select>
+    </label>
+    <label class="site-control" for="writing-style">Text style
+      <select id="writing-style">
+        <option value="italic">Italic</option>
+        <option value="normal">Straight</option>
+      </select>
+    </label>
+  </section>
 
-       <label for="font-select">Reading font:</label>
-       <select id="font-select">
-         <option value="Qahiri">Qahiri</option>
-         <option value="Amiri Quran">Amiri Quran</option>
-       </select>
-      </div>
-  <div id="quran-container"></div>
-  <script src="writing_v2.js?v=page-controls-1"></script>
+  <nav class="page-navigation" aria-label="Quran pages">
+    <button id="prev-page" class="nav-button" type="button" aria-label="Previous page" disabled>
+      <i class="fas fa-chevron-right" aria-hidden="true"></i>
+    </button>
+    <span class="page-selectors">
+      <select id="sura-select" aria-label="Surah"></select>
+      <select id="verse-select" aria-label="Verse"></select>
+      <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
+    </span>
+    <button id="next-page" class="nav-button" type="button" aria-label="Next page" disabled>
+      <i class="fas fa-chevron-left" aria-hidden="true"></i>
+    </button>
+  </nav>
+  <div id="quran-container" class="page"></div>
+  <script src="js/writing-options.js?v=1"></script>
+  <script src="app.js?v=page-controls-1"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ function element() {
   },addEventListener(type,fn){(listeners[type]??=[]).push(fn);},
   emit(type){(listeners[type]||[]).forEach(fn=>fn({target:this}));}};
 }
-for (const [filename,script] of [['index.html','app.js'],['page.html','app.js'],['warsh.html','app.js'],['quran.html','app_quran.js'],['root.html',null]]) {
+for (const [filename,script] of [['index.html','app.js'],['page.html','app.js'],['warsh.html','app.js'],['quran.html','app_quran.js'],['root.html',null],['writing.html','app.js']]) {
   test(`${filename}: visible ${script ? "translation and font" : "translation"} controls retain their event handlers`,()=>{
     const html=fs.readFileSync(`src/${filename}`,'utf8');
     const nodes=new Map([...html.matchAll(/\bid="([^"]+)"/g)].map(match=>[match[1],element()]));
@@ -40,8 +40,9 @@ for (const [filename,script] of [['index.html','app.js'],['page.html','app.js'],
     assert.equal(saved.get('translate'),'en');
     assert.equal(translated.style.display,'block');
     if (!script) return;
-    const font=nodes.get('font-select');font.value='Raqq';font.emit('change');
-    assert(arabic.classList.contains('font-raqq'));
-    assert([...saved.entries()].some(([key,value])=>key.startsWith('selectedFont_')&&value==='Raqq'));
+    const choice=filename==='writing.html'?'Amiri Quran':'Raqq';
+    const font=nodes.get('font-select');font.value=choice;font.emit('change');
+    assert(arabic.classList.contains(choice==='Raqq'?'font-raqq':'font-amiri'));
+    assert([...saved.entries()].some(([key,value])=>key.startsWith('selectedFont_')&&value===choice));
   });
 }

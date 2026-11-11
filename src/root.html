@@ -9,12 +9,14 @@
 
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
-  <link rel="stylesheet" href="root.css">
+  <link rel="stylesheet" href="root.css?v=flowing-verses-1">
   <title>Quran Root Words · Original Quran</title>
   <script src="site.js?v=page-controls-1"></script>
   <script src="common.js?v=page-controls-1"></script>
   <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
   <script src="retire-offline.js" defer></script>
+  <script src="json/maqayis_tools/browser_core.js"></script>
+  <script src="js/root-dictionary.js?v=definition-preview-1"></script>
 </head>
 
 <body>
@@ -32,19 +34,7 @@
     </label>
   </section>
 
-  <div class="book-container">
-    <div id="letter-container" class="letter-container">
-    </div>
-
-    <div class="selector">
-      <select id="root-select"></select>
-      <!-- This will be populated based on the selected letter -->
-
-
-      <select id="word-select">
-        <!-- This will be populated based on the selected root word -->
-      </select>
-    </div>
+  <div class="book-container root-workspace">
     <!-- SEARCH (NEW) -->
     <div id="search-panel" class="search-panel">
       <div class="search-row">
@@ -67,11 +57,30 @@
       </div>
     </div>
 
+
+    <div id="letter-container" class="letter-container">
+    </div>
+
+    <div class="selector">
+      <select id="root-select"></select>
+      <!-- This will be populated based on the selected letter -->
+
+
+      <select id="word-select">
+        <!-- This will be populated based on the selected root word -->
+      </select>
+    </div>
+    <section id="root-definition" class="root-definition" aria-labelledby="root-definition-title" hidden>
+      <h2 id="root-definition-title">Maqayis al-Lugha · <span id="root-definition-root" lang="ar" dir="rtl"></span></h2>
+      <p id="root-definition-status" role="status" aria-live="polite"></p>
+      <div id="root-definition-content" data-expanded="false"></div>
+      <button id="root-definition-more" class="root-definition-more" type="button" aria-controls="root-definition-content" aria-expanded="false" hidden>More…</button>
+      <button id="root-definition-retry" type="button" hidden>Try again</button>
+    </section>
+
     <div id="quran-container">
       <div id="verse-data" class="verse-data">
         <!-- Verse data will be displayed here -->
-      </div>
-      <div id="letter-container-inner" class="letter-container">
       </div>
 
     </div>
@@ -148,7 +157,6 @@
           letterLabel.textContent = letter;
           letterLabel.classList.add('letter-label'); // Add some styling class
           letterLabel.style.cursor = 'pointer'; // Make it look clickable
-          letterLabel.style.marginRight = '10px';
 
           // Add click event to each label
           letterLabel.addEventListener('click', () => {
@@ -215,6 +223,7 @@
       // Populate the word selector based on the selected root word
       function populateWordSelector() {
         const rootSelect = document.getElementById('root-select').value;
+        window.RootDictionary.show(rootSelect);
         const wordSelect = document.getElementById('word-select');
         wordSelect.innerHTML = '';
 
@@ -245,7 +254,7 @@
         const verseContainer = document.getElementById('verse-data');
 
         verseContainer.innerHTML = `
-         <div>result(s) ${verseData.length}</div>
+         <h2 class="verse-results-heading">Quran Verse(s): ${verseData.length}</h2>
     <ul>
       ${verseData.map(verse => {
           const verseContent = buildVerse(verse, showTranslation);

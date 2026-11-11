@@ -51,6 +51,22 @@ class PageBuilderTests(unittest.TestCase):
             for selector in re.findall(r"document\.querySelector\('\.([a-zA-Z_-]+)'\)", page):
                 self.assertIn(selector, classes, str(path))
 
+    def test_root_lookup_keeps_headwords_small_and_manifest_only_fallback(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp)
+            (source / 'entries').mkdir()
+            (source / 'entries/aaa.md').write_text('Source: https://example.com\n\nDefinition')
+            result = build_page.root_index({'entries': [
+                {'id': 'aaa', 'heading': 'رَحْم', 'text': 'Definition'},
+                {'id': 'bbb', 'heading': 'أَبَّ', 'text': 'Manifest only'},
+                {'id': 'ccc', 'heading': 'كَتَبَ', 'text': ''},
+            ]}, source)
+            self.assertNotIn('text', result['entries'][0])
+            self.assertNotIn('fallback', result['entries'][0])
+            self.assertTrue(result['entries'][0]['available'])
+            self.assertEqual(result['entries'][1]['fallback'], 'Manifest only')
+            self.assertFalse(result['entries'][2]['available'])
+
     def test_invalid_template_fails_before_overwriting_page(self):
         with self.assertRaises(ValueError):
             build_page.render('<html></html>', {'entries': []}, '// core')

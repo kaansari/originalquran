@@ -556,3 +556,84 @@ input:checked + .slider:before {
 
 
 
+
+
+/* Paginated writing: one line rhythm for every font and viewport. */
+body.site-writing { --background-position: left 12px; }
+body.site-writing #quran-container.page {
+  min-height: 0;
+  line-height: normal;
+  background-image: none;
+}
+body.site-writing #quran-container .arabic-text-container {
+  box-sizing: border-box;
+  padding: 0 12px;
+  font-family: var(--qahiri-family);
+  font-size: 40px;
+  line-height: 64px;
+  background-color: var(--paper);
+  background-image: linear-gradient(to bottom,
+    var(--gold) 0px, var(--gold) 2px, var(--paper) 2px, var(--paper) 14px,
+    var(--line) 14px, var(--line) 16px, transparent 16px, transparent 29px,
+    var(--line) 29px, var(--line) 31px, transparent 31px, transparent 43px,
+    var(--gold) 43px, var(--gold) 45px, var(--paper) 45px, var(--paper) 64px);
+  background-size: 100% 64px;
+  background-repeat: repeat-y;
+  background-position: var(--background-position);
+}
+body.site-writing:has(#quran-container .font-amiri) { --background-position: left 16px; }
+body.site-writing #quran-container .arabic {
+  font-size: 40px;
+  line-height: 0;
+  word-spacing: 10px;
+}
+/* The container's 64px strut alone sets row height. Inline boxes must not
+   enlarge it through different font metrics or vertically centered markers. */
+body.site-writing #quran-container .arabic-text-container:has(.font-amiri) {
+  font-family: var(--amiri-family);
+}
+body.site-writing #quran-container .verse-arabic,
+body.site-writing #quran-container .word,
+body.site-writing #quran-container .verse-number-inline {
+  line-height: 0;
+  vertical-align: baseline;
+}
+body.site-writing #quran-container .verse-number-inline {
+  display: inline;
+}
+body.site-writing #quran-container .sura-name {
+  margin: 0;
+  font-size: 24px;
+  line-height: 64px;
+}
+body.site-writing #quran-container .translations-container {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+body.site-writing #quran-container .translations-container:has(.translation):not(:has(.translation[style*="block"])) {
+  margin-top: 0;
+}
+
+
+/* Light tracing text only; navigation and translations retain their site colors. */
+body.site-writing #quran-container .arabic-text-container,
+body.site-writing #quran-container .arabic,
+body.site-writing #quran-container .word,
+body.site-writing #quran-container .sura-name,
+body.site-writing #quran-container .verse-number-inline,
+body.site-writing #quran-container .verse-link {
+  color: #aaa;
+}
+
+
+/* Override the reader's font-specific italic class when straight tracing is chosen. */
+body.site-writing[data-writing-style="normal"] #quran-container .arabic-text-container,
+body.site-writing[data-writing-style="normal"] #quran-container .arabic,
+body.site-writing[data-writing-style="normal"] #quran-container .word {
+  font-style: normal;
+}
+body.site-writing[data-writing-style="italic"] #quran-container .arabic-text-container,
+body.site-writing[data-writing-style="italic"] #quran-container .arabic,
+body.site-writing[data-writing-style="italic"] #quran-container .word {
+  font-style: italic;
+}
