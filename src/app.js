@@ -10,6 +10,10 @@
   const isChapterView = document.querySelector('meta[name="quran-view"]')?.content === 'chapter';
   const combinedDataPath = document.querySelector('meta[name="quran-combined-file"]')?.content || 'json/combined_quran.json';
 
+  // Preserve the same button nodes and listeners when a new page is rendered.
+  const pageHeading = document.getElementById('reader-page-heading');
+  const pageSuraTitle = document.getElementById('page-sura-title');
+
   // Global Variables
   let suraData, combinedData, wordsData, morphology, enWords, paginationData;
   let currentAudio = null;
@@ -170,7 +174,12 @@
         const strong = document.createElement("strong");
         strong.textContent = `${suraMeta.name} (${currentSura})`;
         suraNameElem.appendChild(strong);
-        arabicFragment.appendChild(suraNameElem);
+        if (lastSura === null && pageHeading) {
+          pageSuraTitle.textContent = strong.textContent;
+          arabicFragment.appendChild(pageHeading);
+        } else {
+          arabicFragment.appendChild(suraNameElem);
+        }
 
         lastSura = currentSura;
       }

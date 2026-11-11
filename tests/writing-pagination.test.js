@@ -30,6 +30,8 @@ class Element {
 async function setup(savedPage='1') {
   const source=html();assert.match(source,/<script src="app.js\?/);
   const nodes=new Map([...source.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],new Element()]));
+  const heading=nodes.get('reader-page-heading');
+  if(heading){heading.appendChild(nodes.get('prev-page'));heading.appendChild(nodes.get('page-sura-title'));heading.appendChild(nodes.get('next-page'));}
   const body=new Element('body'),events={},errors=[];
   const storage=new Map([['currentPage',savedPage],['translate','en']]);
   const walk=node=>[node,...node.children.flatMap(walk)];
@@ -52,15 +54,19 @@ async function setup(savedPage='1') {
   (events.DOMContentLoaded||[]).forEach(fn=>fn());
   await new Promise(setImmediate);
   assert.deepEqual(errors,[]);
-  return {nodes,storage,verses:()=>walk(nodes.get('quran-container')).filter(n=>n.id?.startsWith('verse-')).map(n=>n.id)};
+  return {nodes,storage,content:()=>walk(nodes.get('quran-container')),verses:()=>walk(nodes.get('quran-container')).filter(n=>n.id?.startsWith('verse-')).map(n=>n.id)};
 }
 test('writing navigation renders one mapped page, saves position, and respects boundaries',async()=>{
   const h=await setup();
   assert.deepEqual(h.verses(),['verse-001001','verse-001002']);
   assert.equal(h.nodes.get('prev-page').disabled,true);
+  assert(h.content().includes(h.nodes.get('reader-page-heading')));
+  assert.equal(h.nodes.get('page-sura-title').textContent,'Test surah (1)');
   h.nodes.get('next-page').emit('click');
   assert.deepEqual(h.verses(),['verse-001003','verse-001004']);
   assert.equal(h.nodes.get('next-page').disabled,true);
+  assert.equal(h.content().filter(n=>n===h.nodes.get('reader-page-heading')).length,1);
+  assert(h.content().includes(h.nodes.get('prev-page')));
   assert.equal(h.storage.get('currentPage'),'2');
   h.nodes.get('prev-page').emit('click');
   assert.equal(h.nodes.get('page-number').textContent,'Page 1');
@@ -73,4 +79,16 @@ test('selecting a writing verse opens its page and translation toggle stays func
   assert.deepEqual(h.verses(),['verse-001003','verse-001004']);
   h.nodes.get('translation-toggle').checked=false;h.nodes.get('translation-toggle').emit('change');
   assert.equal(h.storage.get('translate'),'notrans');
+});
+
+test('page selectors share the compact controls row and arrows belong to the verse container',()=>{
+  for(const filename of ['index.html','page.html','warsh.html','writing.html']) {
+    const page=fs.readFileSync(`src/${filename}`,'utf8');
+    const controls=page.match(/<section class="site-page-controls"[\s\S]*?<\/section>/)?.[0];
+    assert(controls?.includes('class="page-selectors"'),filename);
+    const container=page.slice(page.indexOf('id="quran-container"'));
+    assert(container.includes('id="prev-page"'),filename);
+    assert(container.includes('id="next-page"'),filename);
+    assert(container.includes('class="sura-name"'),filename);
+  }
 });

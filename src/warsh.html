@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="styles_page.css">
   <script src="site.js?v=navigation-4"></script>
   <script src="common.js?v=page-controls-1"></script>
-  <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
+  <link rel="stylesheet" href="site-theme.css?v=heading-navigation-2">
   <script src="retire-offline.js" defer></script>
 </head>
 
@@ -45,29 +45,28 @@
   <option value="Raqq">Abbasi Script</option>
 </select>
     </label>
-  </section>
-
-  <!-- Page Navigation Buttons -->
-  <div class="page-navigation">
-    <button id="prev-page" class="nav-button" disabled>
-      <i class="fas fa-chevron-right"></i>
-    </button>
-
     <span class="page-selectors">
       <!-- Sura and Verse Selectors -->
       <select id="sura-select"></select>
       <select id="verse-select"></select>
       <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
     </span>
+  </section>
 
-    <button id="next-page" class="nav-button" disabled>
-       <i class="fas fa-chevron-left"></i>
-    </button>
+
+  <div id="quran-container" class="page">
+    <nav id="reader-page-heading" class="page-navigation reader-page-heading" aria-label="Quran pages">
+      <button id="prev-page" class="nav-button" type="button" aria-label="Previous page" disabled>
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <span class="sura-name"><strong id="page-sura-title"></strong></span>
+      <button id="next-page" class="nav-button" type="button" aria-label="Next page" disabled>
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+    </nav>
   </div>
 
-  <div class="page" id="quran-container"></div>
-
-  <script src="app.js?v=chapter-mode-1"></script>
+  <script src="app.js?v=heading-navigation-2"></script>
 </body>
 
 </html>

@@ -375,3 +375,30 @@ body.site-dictionary .reader-toolbar .reading-controls { flex-wrap: wrap; }
 @media print {
   .site-page-controls { display: none !important; }
 }
+
+
+/* Page navigation shares the chapter heading instead of consuming a separate row. */
+body #quran-container .reader-page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+body #quran-container .reader-page-heading .sura-name {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+body #quran-container .reader-page-heading .nav-button {
+  flex: none;
+  width: auto;
+  line-height: 1;
+  padding: 6px 10px;
+}
+body .site-page-controls .page-selectors { min-width: 0; max-width: 100%; }
+body .site-page-controls .page-selectors select { min-width: 0; max-width: 100%; }
