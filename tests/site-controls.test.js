@@ -51,7 +51,9 @@ test('shared navigation marks the active page and exposes all existing reading m
   const h=setup();
   const links=h.nav.querySelectorAll('a');
   assert.equal(links.find(l=>l.href==='index.html').getAttribute('aria-current'),'page');
-  for(const target of ['page.html','warsh.html','quran.html','random.html','writing_v2.html','raqq.html'])assert(links.some(l=>l.href===target));
+  assert.equal(links.some(l=>l.href==='writing_v2.html'),false);
+  assert.equal(links.some(l=>l.href==='raqq.html'),false);
+  for(const target of ['page.html','warsh.html','quran.html','random.html'])assert(links.some(l=>l.href===target));
 });
 test('theme button persists preference and synchronizes dictionary colors without hidden controls',()=>{
   const h=setup({dictionary:true});
