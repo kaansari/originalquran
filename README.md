@@ -22,48 +22,29 @@ I need help in comparing the old manuscripts to this version of the Quran. In 99
 
 Also, the project is extremely simple single page html file.  Keep it simple so other people can easily integrate it in their works.
 
-```
-Directory Structure
+## Repository layout
 
-originalquran/
-├── .github/                # GitHub actions and workflows
-│   └── workflows/
-│       └── deploy.yml      # CI/CD workflow for building and deploying
-├── data/                   # Source files for processing
-│   ├── quran-morphology.txt
-│   └── arabic.md           # Quran md file
-│   └── english.md           # English translation
+- `src/` — the complete static website: HTML, CSS, JavaScript, fonts and browser data.
+- `scripts/` — Python data preparation tools.
+- `data/` — source data used by the preparation tools.
+- `tests/` — automated website checks.
+- `.github/workflows/` — static GitHub Pages deployment workflows.
 
-├── scripts/                # Python scripts for processing data
-│   ├── arabic-corpus.py    # script to parse and make json file for the morphology
-│   ├── ayahandword_parser.py  # this script takes the arabic.md file and parses the word
-├── src/                    # Development source code (HTML, CSS, JS, generated JSON)
-│   ├── index.html          # HTML file for development and the main page
-│   ├── styles.css          # CSS
-│   ├── app.js              # JS
-│   └── json/               # JSON files for development use
-│       ├── quran_morphology_output.json   #morphology file
-│       └── sura.json  # list of sura
-│       └── quran_words.json  # 77430 words of the quran
-│       └── combinned_quran.json  # combines the quran and english translation
-│       └── sura.json  # list of sura
-├── build/                  # Build folder created during CI/CD (ignored by git)
-│   ├── index.html
-│   ├── styles.css
-│   ├── app.js
-│   └── json/               # Final JSON files for production
-│       ├── quran_morphology_output.json
-│       └── other_json_files.json
-├── .gitignore              # Ignore build folder and other unnecessary files
-├── requirements.txt        # Python dependencies
-└── README.md               # Project information
+## Run locally
+
+Serve the website directly from `src/` using any static HTTP server. For example:
+
+```bash
+python3 -m http.server 8000 --directory src
 ```
+
+Open `http://localhost:8000/`. No application build or backend is required.
+Audio, sharing and externally hosted fonts require an internet connection.
+
 ## GitHub Pages deployment
 
-This repository is ready to deploy as an installable browser/PWA from GitHub Pages. Set **Settings → Pages → Source** to **GitHub Actions**, then push to `main`. The workflow in `.github/workflows/deploy-pages.yml` validates the Go source and publishes only `src/`.
-
-See `GITHUB_PAGES.md` for details. GitHub Pages itself does not run `main.go`; the Go server remains available for local use or deployment to a Go-capable host.
-
+Set **Settings → Pages → Source** to **GitHub Actions**, then push to `main`.
+`.github/workflows/static.yml` publishes `src/` directly to GitHub Pages.
 
 ### Shared Quran reader
 
