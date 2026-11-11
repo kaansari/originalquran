@@ -14,7 +14,7 @@
   <meta name="quran-words-file" content="json/quran_words.json">
   <script src="site.js?v=navigation-4"></script>
   <script src="common.js?v=page-controls-1"></script>
-  <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
+  <link rel="stylesheet" href="site-theme.css?v=heading-navigation-2">
   <script src="retire-offline.js" defer></script>
 </head>
 <body class="site-writing">
@@ -40,23 +40,25 @@
         <option value="normal">Straight</option>
       </select>
     </label>
-  </section>
-
-  <nav class="page-navigation" aria-label="Quran pages">
-    <button id="prev-page" class="nav-button" type="button" aria-label="Previous page" disabled>
-      <i class="fas fa-chevron-right" aria-hidden="true"></i>
-    </button>
     <span class="page-selectors">
       <select id="sura-select" aria-label="Surah"></select>
       <select id="verse-select" aria-label="Verse"></select>
       <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
     </span>
-    <button id="next-page" class="nav-button" type="button" aria-label="Next page" disabled>
-      <i class="fas fa-chevron-left" aria-hidden="true"></i>
-    </button>
-  </nav>
-  <div id="quran-container" class="page"></div>
+  </section>
+
+  <div id="quran-container" class="page">
+    <nav id="reader-page-heading" class="page-navigation reader-page-heading" aria-label="Quran pages">
+      <button id="prev-page" class="nav-button" type="button" aria-label="Previous page" disabled>
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <span class="sura-name"><strong id="page-sura-title"></strong></span>
+      <button id="next-page" class="nav-button" type="button" aria-label="Next page" disabled>
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </div>
   <script src="js/writing-options.js?v=1"></script>
-  <script src="app.js?v=chapter-mode-1"></script>
+  <script src="app.js?v=heading-navigation-2"></script>
 </body>
 </html>
