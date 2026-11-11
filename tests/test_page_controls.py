@@ -1,4 +1,4 @@
-"""Public page contracts: controls remain reachable without a settings menu."""
+"""Public page contracts: chapter and page remain visible; secondary options are disclosed."""
 import re
 import unittest
 from html.parser import HTMLParser
@@ -24,7 +24,7 @@ class Markup(HTMLParser):
                 break
 
 class PageControlsTests(unittest.TestCase):
-    def test_all_public_pages_have_logo_and_no_hamburger(self):
+    def test_all_public_pages_have_navigation_without_branding_or_hamburger(self):
         for path in (ROOT / 'src').glob('*.html'):
             with self.subTest(page=path.name):
                 elements = Markup(path.read_text()).elements
@@ -33,9 +33,9 @@ class PageControlsTests(unittest.TestCase):
                     for _, a, _ in elements))
                 logos = [(a, parents) for tag, a, parents in elements
                          if tag == 'img' and 'site-logo' in a.get('class', '').split()]
-                self.assertEqual(len(logos), 1)
-                self.assertTrue(any(tag == 'a' and 'site-brand' in a.get('class', '').split()
-                                    for tag, a in logos[0][1]))
+                self.assertEqual(len(logos), 0)
+                self.assertFalse(any('site-brand' in a.get('class', '').split() for _, a, _ in elements))
+                self.assertTrue(any('site-toplinks' in a.get('class', '').split() for _, a, _ in elements))
 
     def test_reader_options_are_visible_once_and_keep_font_choices(self):
         choices = {
@@ -45,6 +45,7 @@ class PageControlsTests(unittest.TestCase):
             'warsh.html': ['Amiri Quran', 'Raqq'],
             'quran.html': ['Amiri Quran', 'Raqq'],
             'root.html': None,
+            'indian.html': ['IndoPak Nastaleeq'],
             'writing.html': ['Qahiri', 'Amiri Quran', 'System Arabic', 'Raqq', 'Amiri', 'Noto Naskh Arabic', 'Noto Sans Arabic'],
         }
         for filename, fonts in choices.items():
@@ -54,12 +55,24 @@ class PageControlsTests(unittest.TestCase):
                 for identifier in ['translation-toggle'] + (['font-select'] if fonts else []):
                     matches = [(a, parents) for _, a, parents in elements if a.get('id') == identifier]
                     self.assertEqual(len(matches), 1)
-                    self.assertFalse(any(tag in ('header', 'details') for tag, _ in matches[0][1]))
+                    self.assertFalse(any(tag == 'header' for tag, _ in matches[0][1]))
+                    self.assertTrue(any(tag == 'details' and 'reader-filters' in a.get('class', '').split() for tag, a in matches[0][1]))
                     self.assertTrue(any(tag == 'label' and a.get('for') == identifier
                                         for tag, a, _ in elements))
                 if fonts:
                     select = re.search(r'<select[^>]*id="font-select"[^>]*>(.*?)</select>', text, re.S)[1]
                     self.assertEqual(re.findall(r'<option value="([^"]+)"', select), fonts)
+
+    def test_chapter_and_page_stay_outside_collapsed_filters(self):
+        for name in ['index.html', 'page.html', 'warsh.html', 'simple.html', 'indian.html', 'writing.html', 'quran.html']:
+            elements = Markup((ROOT / 'src' / name).read_text()).elements
+            for identifier in ['sura-select'] + ([] if name == 'quran.html' else ['page-number']):
+                nodes = [parents for _, attrs, parents in elements if attrs.get('id') == identifier]
+                self.assertEqual(len(nodes), 1, name)
+                self.assertFalse(any(tag == 'details' for tag, _ in nodes[0]), name)
+            filters = [attrs for tag, attrs, _ in elements if tag == 'details' and 'reader-filters' in attrs.get('class', '').split()]
+            self.assertEqual(len(filters), 1, name)
+            self.assertNotIn('open', filters[0])
 
     def test_dictionary_controls_live_in_reader_toolbar_in_page_and_template(self):
         for path in [ROOT / 'src/maqayis.html', ROOT / 'src/json/maqayis_tools/maqayis.template.html']:

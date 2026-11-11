@@ -36,8 +36,8 @@ class PageBuilderTests(unittest.TestCase):
     def test_shared_assets_follow_custom_output_location(self):
         template = (Path(build_page.__file__).parent / 'maqayis.template.html').read_text(encoding='utf-8')
         page = build_page.render(template, {'entries': []}, '// core', root_url='../site/root.html')
-        self.assertIn('src="../site/site.js?v=reader-range-labels-9"', page)
-        self.assertIn('href="../site/site-theme.css?v=physical-page-buttons-5"', page)
+        self.assertIn('src="../site/site.js?v=theme-icon-12"', page)
+        self.assertIn('href="../site/site-theme.css?v=theme-icon-7"', page)
         self.assertIn('href="../site/index.html"', page)
         self.assertNotIn('__SITE_BASE__', page)
 

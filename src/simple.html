@@ -14,23 +14,24 @@
   <meta name="quran-words-file" content="json/quran_words.json">
   <title>Old Quran · Original Quran</title>
   <link rel="stylesheet" href="styles_page.css">
-  <script src="site.js?v=indian-reading-10"></script>
+  <script src="site.js?v=theme-icon-12"></script>
   <script src="common.js?v=shared-interactions-2"></script>
 
-  <link rel="stylesheet" href="site-theme.css?v=physical-page-buttons-5">
+  <link rel="stylesheet" href="site-theme.css?v=theme-icon-7">
   <script src="retire-offline.js" defer></script>
 </head>
 
 <body>
   <header class="site-masthead">
-    <div class="site-brand-group">
-<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Old Quran</span><span class="site-brand-name">Original Quran</span></span></a>
-</div>
     <nav class="site-toplinks" aria-label="Site"><a href="index.html" >Eastern Reading</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
   </header>
 
   <section class="site-page-controls" aria-label="Reading options">
-    <label class="site-control-toggle" for="translation-toggle">
+    <span class="page-selectors"><label class="site-control reader-chapter" for="sura-select"><span>Chapter</span><select id="sura-select"></select></label><span id="page-number" class="page-number" role="status" aria-live="polite"></span></span>
+    <details class="reader-filters">
+      <summary>More filters</summary>
+      <div class="reader-filter-options">
+<label class="site-control-toggle" for="translation-toggle">
       <input type="checkbox" id="translation-toggle">
       <span>Show translation</span>
     </label>
@@ -41,9 +42,7 @@
   <option value="Raqq">Abbasi Script</option>
 </select>
     </label>
-    <span class="page-selectors">
-      <!-- Sura and Verse Selectors -->
-      <select id="sura-select"></select>
+
       <label class="site-control" for="reader-view">View
         <select id="reader-view">
           <option value="page">Mushaf pages</option>
@@ -56,8 +55,8 @@
       <label class="site-control" for="verse-end-select">To verse
         <select id="verse-end-select" aria-label="To verse" disabled></select>
       </label>
-      <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
-    </span>
+      </div>
+    </details>
   </section>
 
 

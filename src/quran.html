@@ -15,9 +15,9 @@
     <title>Full Chapters · Original Quran</title>
     <link rel="stylesheet" href="styles_page.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri+Quran&amp;display=swap">
-  <script src="site.js?v=indian-reading-10"></script>
+  <script src="site.js?v=theme-icon-12"></script>
   <script src="common.js?v=shared-interactions-2"></script>
-  <link rel="stylesheet" href="site-theme.css?v=physical-page-buttons-5">
+  <link rel="stylesheet" href="site-theme.css?v=theme-icon-7">
   <script src="retire-offline.js" defer></script>
   <style>
     /* Restore the original color font for the Amiri choice on Full Chapters. */
@@ -29,14 +29,15 @@
 
 <body class="site-chapters">
   <header class="site-masthead">
-    <div class="site-brand-group">
-<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Full Chapters</span><span class="site-brand-name">Original Quran</span></span></a>
-</div>
     <nav class="site-toplinks" aria-label="Site"><a href="index.html">Eastern Reading</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
   </header>
 
    <div class="site-reader-selectors site-page-controls" role="group" aria-label="Reading options">
-    <label class="site-control-toggle" for="translation-toggle">
+    <span class="page-selectors"><label class="site-control reader-chapter" for="sura-select"><span>Chapter</span><select id="sura-select"></select></label></span>
+    <details class="reader-filters">
+      <summary>More filters</summary>
+      <div class="reader-filter-options">
+<label class="site-control-toggle" for="translation-toggle">
       <input type="checkbox" id="translation-toggle">
       <span>Show translation</span>
     </label>
@@ -46,9 +47,11 @@
         <option value="Raqq">Raqq</option>
       </select>
     </label>
-    <select id="sura-select"></select>
-    <select id="verse-select"></select>
-   </div>
+
+    <label class="site-control" for="verse-select">Verse<select id="verse-select"></select></label>
+      </div>
+    </details>
+  </div>
 
 
 <div id="quran-container" class="page"></div>

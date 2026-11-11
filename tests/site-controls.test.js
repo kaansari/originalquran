@@ -25,7 +25,7 @@ class Element {
   click(){if(this.tagName==='input')this.checked=!this.checked;this.dispatchEvent({type:'click'});if(this.tagName==='input')this.dispatchEvent({type:'change'});}
   querySelectorAll(tag){return this.children.flatMap(node=>[...(node.tagName===tag?[node]:[]),...node.querySelectorAll(tag)]);}
 }
-function setup({dictionary=false,darkSystem=false,saved=null,base=''}={}) {
+function setup({dictionary=false,darkSystem=false,saved=null,base='',page='index.html'}={}) {
   const all=[], listeners={}, timers=new Map(), storage=new Map();
   if(saved)storage.set('theme',saved);
   const el=tag=>new Element(tag,all);
@@ -40,7 +40,7 @@ function setup({dictionary=false,darkSystem=false,saved=null,base=''}={}) {
   const window={matchMedia:()=>({matches:darkSystem}),addEventListener:(name,fn)=>(listeners[name]??=[]).push(fn),location:{reload(){}},
     setTimeout(fn){const id=timers.size+1;timers.set(id,fn);return id;},clearTimeout:id=>timers.delete(id)};
   const localStorage={getItem:key=>storage.get(key)||null,setItem:(key,value)=>storage.set(key,value)};
-  const context={window,document,location:{pathname:dictionary?'/originalquran/maqayis.html':'/originalquran/index.html'},localStorage,
+  const context={window,document,location:{pathname:dictionary?'/originalquran/maqayis.html':`/originalquran/${page}`},localStorage,
     setTimeout:window.setTimeout,clearTimeout:window.clearTimeout,Event:class{constructor(type){this.type=type;}}};
   vm.runInNewContext(fs.readFileSync('src/site.js','utf8'),context);
   const emit=(name,event={})=>(listeners[name]||[]).forEach(fn=>fn(event));
@@ -58,7 +58,12 @@ test('shared navigation marks the active page and exposes all existing reading m
 });
 test('theme button persists preference and synchronizes dictionary colors without hidden controls',()=>{
   const h=setup({dictionary:true});
+  const button=h.document.getElementById('site-theme-button');
+  assert.equal(button.textContent,'☾');
+  assert.equal(button.getAttribute('aria-label'),'Switch to dark mode');
   h.document.getElementById('site-theme-button').click();
+  assert.equal(button.textContent,'☀');
+  assert.equal(button.getAttribute('title'),'Switch to light mode');
   assert.equal(h.storage.get('theme'),'dark');
   assert(h.body.classList.contains('dark-theme'));
   assert(h.body.classList.contains('dark'));
@@ -108,4 +113,11 @@ test('More links follow the site base for dictionary output in another folder',(
 test('GitHub link stays available and absolute for custom dictionary output',()=>{
   const h=setup({dictionary:true,base:'../site/'});
   assert(h.nav.querySelectorAll('a').some(link=>link.href==='https://github.com/kaansari/originalquran'));
+});
+
+test('secondary reading page is visible and underlined through aria-current in main navigation',()=>{
+  const h=setup({page:'warsh.html'});
+  const active=h.nav.children.find(n=>n.tagName==='a'&&n.href==='warsh.html');
+  assert(active);
+  assert.equal(active.getAttribute('aria-current'),'page');
 });
