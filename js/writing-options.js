@@ -1,6 +1,29 @@
 /* Keep tracing style independent of the selected font and Quran page. */
 (() => {
   'use strict';
+  const families = {
+    'Qahiri': 'Qahiri, serif',
+    'Amiri Quran': 'hafs, serif',
+    'System Arabic': '"Geeza Pro", "Traditional Arabic", Tahoma, Arial, sans-serif',
+    'Raqq': 'Raqq, serif',
+    'Amiri': 'Amiri, serif',
+    'Noto Naskh Arabic': '"Noto Naskh Arabic", "Geeza Pro", serif',
+    'Noto Sans Arabic': '"Noto Sans Arabic", Tahoma, sans-serif'
+  };
+  const fontSelect = document.getElementById('font-select');
+  if (fontSelect) {
+    let savedFont;
+    try { savedFont = localStorage.getItem('selectedFont_writing.html'); } catch {}
+    fontSelect.value = Object.hasOwn(families, savedFont) ? savedFont : 'Qahiri';
+    const applyFont = () => {
+      const name = Object.hasOwn(families, fontSelect.value) ? fontSelect.value : 'Qahiri';
+      document.body.setAttribute('data-writing-font', name);
+      document.body.style.setProperty('--writing-font-family', families[name]);
+    };
+    applyFont();
+    // The shared reader continues to save the font selection.
+    fontSelect.addEventListener('change', applyFont);
+  }
   const select = document.getElementById('writing-style');
   if (!select) return;
   let saved;

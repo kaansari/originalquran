@@ -637,3 +637,22 @@ body.site-writing[data-writing-style="italic"] #quran-container .arabic,
 body.site-writing[data-writing-style="italic"] #quran-container .word {
   font-style: italic;
 }
+
+
+/* The container and inline words share font metrics, preserving the 64px rhythm. */
+body.site-writing[data-writing-font] #quran-container .arabic-text-container,
+body.site-writing[data-writing-font] #quran-container .arabic,
+body.site-writing[data-writing-font] #quran-container .word {
+  font-family: var(--writing-font-family);
+}
+body.site-writing[data-writing-font="Raqq"] { --background-position: left 12px; }
+/* Raqq has eight embedded colors; tracing uses gray for every palette entry. */
+@font-palette-values --tracing-gray {
+  font-family: Raqq;
+  base-palette: 0;
+  override-colors: 0 #aaa, 1 #aaa, 2 #aaa, 3 #aaa, 4 #aaa, 5 #aaa, 6 #aaa, 7 #aaa;
+}
+body.site-writing[data-writing-font="Raqq"] #quran-container .arabic-text-container,
+body.site-writing[data-writing-font="Raqq"] #quran-container .arabic-text-container * {
+  font-palette: --tracing-gray;
+}
