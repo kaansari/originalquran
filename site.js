@@ -107,7 +107,7 @@
       const links = document.createElement('div');
       links.className = 'site-more-links';
       for (const [href, text] of [
-        ['simple.html','Simple Quran'], ['warsh.html','Western Quran'],
+        ['simple.html','Old Quran'], ['warsh.html','Western Reading'],
         ['quran.html','Full Chapters'], ['random.html','Random verse'],
         ['https://github.com/kaansari/originalquran', 'GitHub repository']
       ]) {
