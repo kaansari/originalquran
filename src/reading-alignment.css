@@ -1,0 +1,33 @@
+/* Justify the existing Hafs/Warsh text while keeping responsive line wrapping. */
+body.site-flow-reader #quran-container .arabic-text-container {
+  width: 100%;
+  max-width: 880px;
+  min-width: 0;
+  margin-inline: auto;
+  font-family: var(--amiri-family);
+  font-size: clamp(24px, 3.7vw, 38px);
+  line-height: 2.1;
+  direction: rtl;
+  text-align: justify;
+  text-align-last: start;
+  text-justify: inter-word;
+}
+body.site-flow-reader #quran-container .arabic {
+  font-size: inherit;
+  line-height: inherit;
+  word-spacing: normal;
+}
+body.site-flow-reader #quran-container .word {
+  white-space: nowrap;
+}
+body.site-flow-reader #quran-container .verse-number-inline {
+  display: inline;
+  margin-inline: 0.15em;
+  font-size: 0.65em;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+body.site-flow-reader {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
