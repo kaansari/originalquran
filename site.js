@@ -108,8 +108,7 @@
       links.className = 'site-more-links';
       for (const [href, text] of [
         ['page.html','Hafs reading'], ['warsh.html','Warsh reading'],
-        ['quran.html','Verse reader'], ['random.html','Random verse'],
-        ['writing_v2.html','Writing with font choices'], ['raqq.html','Raqq practice'],
+        ['quran.html','Full Chapters'], ['random.html','Random verse'],
         ['https://github.com/kaansari/originalquran', 'GitHub repository']
       ]) {
         const link = document.createElement('a');

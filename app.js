@@ -611,8 +611,7 @@
     "page.html": "Amiri Quran",
     "warsh.html": "Amiri Quran",
     "quran.html": "Raqq",
-    "writing.html": "Qahiri",
-    "writing_v2.html": "Qahiri"
+    "writing.html": "Qahiri"
   };
 
   function updateFontClass(selectedFont) {
