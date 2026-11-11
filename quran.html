@@ -2,25 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta name="page-info" content="Verse Reader">
+  <meta name="page-info" content="Full Chapters">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="quran-view" content="chapter">
+  <meta name="quran-words-file" content="json/quran_harakat_words.json">
+  <meta name="quran-combined-file" content="json/combined_harakat_quran.json">
   <meta name="theme-color" content="#f5f4ee">
 
     <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
-    <title>Verse Reader · Original Quran</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Full Chapters · Original Quran</title>
+    <link rel="stylesheet" href="styles_page.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri+Quran&amp;display=swap">
   <script src="site.js?v=navigation-4"></script>
   <script src="common.js?v=page-controls-1"></script>
   <link rel="stylesheet" href="site-theme.css?v=compact-controls-1">
   <script src="retire-offline.js" defer></script>
+  <style>
+    /* Restore the original color font for the Amiri choice on Full Chapters. */
+    body.site-chapters { --amiri-family: "Amiri Quran", "hafs", serif; }
+    body.site-chapters #quran-container .font-amiri,
+    body.site-chapters #quran-container .font-amiri * { font-palette: normal; }
+  </style>
 </head>
 
-<body>
+<body class="site-chapters">
   <header class="site-masthead">
     <div class="site-brand-group">
-<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Verse Reader</span><span class="site-brand-name">Original Quran</span></span></a>
+<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Full Chapters</span><span class="site-brand-name">Original Quran</span></span></a>
 </div>
     <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
   </header>
@@ -41,9 +51,9 @@
    </div>
 
 
-<blockquote id="quran-container"></blockquote>
+<div id="quran-container" class="page"></div>
 
-<script src="app_quran.js?v=page-controls-1">
+<script src="app.js?v=chapter-mode-1">
 </script>
 </body>
 
