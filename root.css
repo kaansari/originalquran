@@ -395,17 +395,23 @@ input:checked + .slider:before {
 }
 
 
-.verse-data{
-  max-height: 80vh; /* Adjust height as needed */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 10px;
-
-  }
-.verse-data > ul{
-
-    padding: 5px;
-
-  }
+.verse-data {
+  max-height: none;
+  overflow: visible;
+  padding: 0;
+}
+.verse-data > ul {
+  margin: 0;
+  padding-block: 0;
+  padding-inline-start: 1.5em;
+  padding-inline-end: 0;
+  list-style-position: outside;
+}
+.verse-data > ul > li {
+  padding-inline-start: .25em;
+  margin-block: 12px;
+  overflow-wrap: anywhere;
+}
 
 
 /* Responsive media queries for mobile */
@@ -486,3 +492,123 @@ input:checked + .slider:before {
 
 
 
+
+
+/* Selected-root dictionary definition below the root selectors. */
+.root-definition {
+  margin: 16px 0;
+  padding: 16px 20px;
+  border-block: 1px solid var(--line);
+  color: var(--ink);
+}
+.root-definition h2 { margin: 0 0 10px; font: 600 14px/1.5 var(--site-font); }
+.root-definition h3 { margin: 12px 0 6px; font: 26px/1.5 "Geeza Pro", "Traditional Arabic", serif; }
+.root-definition-text { font: 24px/1.9 "Geeza Pro", "Traditional Arabic", serif; overflow-wrap: anywhere; }
+.root-definition-text p { margin: 0 0 .8em; white-space: pre-line; }
+#root-definition-status { margin: 0; color: var(--muted); font: 13px/1.6 var(--site-font); }
+#root-definition-status:empty { display: none; }
+@media (max-width: 620px) {
+  .root-definition { padding: 12px 0; }
+  .root-definition-text { font-size: 22px; }
+}
+
+
+/* One shared inset aligns search, letter browsing, definitions and verses. */
+body .root-workspace {
+  padding: 18px 20px;
+}
+body .root-workspace > #search-panel {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+}
+body .root-workspace > #letter-container {
+  margin: 0 0 10px;
+  padding: 0;
+  gap: 4px;
+  border-radius: 0;
+  box-shadow: none;
+}
+.root-workspace .letter-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  padding: 2px 4px;
+}
+.root-workspace > .selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0 0 12px;
+}
+.root-workspace > .selector select { min-width: 0; max-width: 100%; }
+.root-workspace > .root-definition { margin: 0 0 12px; padding: 12px 0; }
+body .root-workspace > #quran-container { margin: 0; padding: 0; max-width: none; }
+@media (max-width: 620px) {
+  body .root-workspace { padding: 12px; }
+}
+
+
+/* Keep the Quran in view until the reader chooses the full definition. */
+#root-definition-content[data-expanded="false"] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  max-height: 3.8em;
+  overflow: hidden;
+  font: 24px/1.9 "Geeza Pro", "Traditional Arabic", serif;
+  direction: rtl;
+}
+#root-definition-content[data-expanded="false"] h3 { display: none; }
+#root-definition-content[data-expanded="false"] article,
+#root-definition-content[data-expanded="false"] .root-definition-text,
+#root-definition-content[data-expanded="false"] p {
+  display: inline;
+  margin: 0;
+  white-space: normal;
+  font: inherit;
+}
+#root-definition-content[data-expanded="false"] p::after { content: ' '; }
+body .root-definition-more {
+  display: inline-block;
+  padding: 3px 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font: 13px/1.5 var(--site-font);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 620px) {
+  #root-definition-content[data-expanded="false"] { font-size: 22px; }
+}
+
+/* Phone search controls each get their own full-width row. */
+@media (max-width: 620px) {
+  body .root-workspace #search-panel .search-row {
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+  body .root-workspace #search-panel .search-row > select,
+  body .root-workspace #search-panel .search-row > input,
+  body .root-workspace #search-panel .search-row > button {
+    box-sizing: border-box;
+    flex: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+/* Match the site's compact section headings. */
+.verse-results-heading {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font: 700 14px/1.5 var(--site-font);
+}

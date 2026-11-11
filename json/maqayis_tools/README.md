@@ -147,3 +147,17 @@ Tests:
 python3 -B -m unittest discover -s src/json/maqayis_tools -v
 node src/json/maqayis_tools/test_browser_core.js
 ```
+
+
+## Definitions on the Roots page
+
+The builder also writes `json/maqayis-root-index.json` beside the generated page.
+The Roots page uses this compact headword index and loads matching Markdown entries
+on demand. Rebuild after adding downloaded definitions to refresh both views:
+
+```bash
+python3 src/json/maqayis_tools/build_page.py
+```
+
+`--root-index` overrides the lookup output path. Root matching uses the dictionary's
+Arabic normalization, ignores vowel marks and tatweel, and recognizes doubled roots.
