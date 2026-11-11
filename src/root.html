@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="icons.css">
   <link rel="stylesheet" href="root.css?v=flowing-verses-1">
   <title>Quran Root Words · Original Quran</title>
-  <script src="site.js?v=navigation-4"></script>
+  <script src="site.js?v=reader-names-6"></script>
   <script src="common.js?v=page-controls-1"></script>
   <link rel="stylesheet" href="site-theme.css?v=physical-page-buttons-5">
   <script src="retire-offline.js" defer></script>
@@ -24,7 +24,7 @@
     <div class="site-brand-group">
 <a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Quran Root Words</span><span class="site-brand-name">Original Quran</span></span></a>
 </div>
-    <nav class="site-toplinks" aria-label="Site"><a href="index.html">Quran</a><a href="root.html" aria-current="page">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html">Eastern Quran</a><a href="root.html" aria-current="page">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
   </header>
 
   <section class="site-page-controls" aria-label="Reading options">
@@ -604,12 +604,12 @@
 
               const pageNumber = findPageByVerse(suraNumber, verseNumber);
 
-              // Save everything page.html expects
+              // Save everything the Hafs home page expects
               localStorage.setItem("selectedSura", suraNumber);
               localStorage.setItem("selectedVerse", verseNumber);
               localStorage.setItem("currentPage", pageNumber);
 
-              QuranUtils.openInNewTab("page.html");
+              QuranUtils.openInNewTab("index.html");
             } catch (error) {
               console.error("Navigation error:", error);
             }
@@ -674,7 +674,7 @@
               localStorage.setItem("selectedVerse", verseNumber);
               localStorage.setItem("currentPage", pageNumber);
 
-              QuranUtils.openInNewTab("page.html");
+              QuranUtils.openInNewTab("index.html");
             } catch (error) {
               console.error("Navigation error:", error);
             }

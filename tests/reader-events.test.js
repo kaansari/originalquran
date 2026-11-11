@@ -11,7 +11,7 @@ function element() {
   },addEventListener(type,fn){(listeners[type]??=[]).push(fn);},
   emit(type){(listeners[type]||[]).forEach(fn=>fn({target:this}));}};
 }
-for (const [filename,script] of [['index.html','app.js'],['page.html','app.js'],['warsh.html','app.js'],['quran.html','app.js'],['root.html',null],['writing.html','app.js']]) {
+for (const [filename,script] of [['index.html','app.js'],['simple.html','app.js'],['page.html','app.js'],['warsh.html','app.js'],['quran.html','app.js'],['root.html',null],['writing.html','app.js']]) {
   test(`${filename}: visible ${script ? "translation and font" : "translation"} controls retain their event handlers`,()=>{
     const html=fs.readFileSync(`src/${filename}`,'utf8');
     const nodes=new Map([...html.matchAll(/\bid="([^"]+)"/g)].map(match=>[match[1],element()]));

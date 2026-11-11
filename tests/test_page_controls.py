@@ -39,7 +39,8 @@ class PageControlsTests(unittest.TestCase):
 
     def test_reader_options_are_visible_once_and_keep_font_choices(self):
         choices = {
-            'index.html': ['Qahiri', 'Amiri Quran', 'Raqq'],
+            'index.html': ['Amiri Quran', 'Raqq'],
+            'simple.html': ['Qahiri', 'Amiri Quran', 'Raqq'],
             'page.html': ['Amiri Quran', 'Raqq'],
             'warsh.html': ['Amiri Quran', 'Raqq'],
             'quran.html': ['Amiri Quran', 'Raqq'],
