@@ -94,7 +94,7 @@
     const nav = document.querySelector('.site-toplinks');
     const filename = location.pathname.split('/').pop() || 'index.html';
     nav?.querySelectorAll('a').forEach(link => {
-      if (link.getAttribute('href') === filename) link.setAttribute('aria-current', 'page');
+      if (link.getAttribute('href') === (filename === 'page.html' ? 'index.html' : filename)) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
     });
     if (nav) {
@@ -107,7 +107,7 @@
       const links = document.createElement('div');
       links.className = 'site-more-links';
       for (const [href, text] of [
-        ['page.html','Hafs reading'], ['warsh.html','Warsh reading'],
+        ['simple.html','Simple Quran'], ['warsh.html','Western Quran'],
         ['quran.html','Full Chapters'], ['random.html','Random verse'],
         ['https://github.com/kaansari/originalquran', 'GitHub repository']
       ]) {

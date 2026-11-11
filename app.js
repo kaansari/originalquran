@@ -645,7 +645,9 @@
 
   // Predefined default fonts for each page
   const pageDefaultFonts = {
-    "home": "Qahiri",
+    "home": "Amiri Quran",
+    "index.html": "Amiri Quran",
+    "simple.html": "Qahiri",
     "page.html": "Amiri Quran",
     "warsh.html": "Amiri Quran",
     "quran.html": "Amiri Quran",
@@ -679,9 +681,12 @@
     const page = window.location.pathname.split("/").pop() || "home";
     const savedFont = localStorage.getItem(`selectedFont_${page}`)
       || (isChapterView ? localStorage.getItem(`selectedFont_${window.location.pathname}`) : null);
+    const fontSelectElement = document.getElementById("font-select");
+    const validSavedFont = savedFont && (!fontSelectElement?.options
+      || Array.from(fontSelectElement.options).some(option => option.value === savedFont));
     let fontToApply;
 
-    if (savedFont) {
+    if (validSavedFont) {
       fontToApply = savedFont;
     } else {
       // If no font is saved, set the predefined default for the page
@@ -693,7 +698,6 @@
     updateFontClass(fontToApply);
 
     // Set the dropdown to reflect the applied font
-    const fontSelectElement = document.getElementById("font-select");
     if (fontSelectElement) {
       fontSelectElement.value = fontToApply;
     }

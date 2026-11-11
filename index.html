@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  style="
+    --heading-family: 'hafs', serif;
+    --amiri-family: 'hafs', serif;
+    --uthmaniHafs: 'hafs', serif;
+    --latin-font: 'DM Sans', 'hafs', serif;
+  "
+>
 
 <head>
-  <meta name="page-info" content="Quran Reader">
+  <meta name="page-info" content="Eastern Quran">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f4ee">
 
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
-  <meta name="quran-words-file" content="json/quran_words.json">
-  <title>Quran Reader · Original Quran</title>
+  <meta name="quran-words-file" content="json/quranic_words.json">
+  <title>Eastern Quran · Original Quran</title>
   <link rel="stylesheet" href="styles_page.css">
-  <script src="site.js?v=navigation-4"></script>
+  <script src="site.js?v=reader-names-6"></script>
   <script src="common.js?v=page-controls-1"></script>
-
   <link rel="stylesheet" href="site-theme.css?v=physical-page-buttons-5">
   <script src="retire-offline.js" defer></script>
 </head>
@@ -22,9 +29,9 @@
 <body>
   <header class="site-masthead">
     <div class="site-brand-group">
-<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Quran Reader</span><span class="site-brand-name">Original Quran</span></span></a>
+<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Eastern Quran</span><span class="site-brand-name">Original Quran</span></span></a>
 </div>
-    <nav class="site-toplinks" aria-label="Site"><a href="index.html" aria-current="page">Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html" aria-current="page">Eastern Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
   </header>
 
   <section class="site-page-controls" aria-label="Reading options">
@@ -34,7 +41,6 @@
     </label>
     <label class="site-control" for="font-select">Reading font
       <select id="font-select">
-  <option value="Qahiri">Jazm- Early Script</option>
   <option value="Amiri Quran">Uthmani- Turkish Script</option>
   <option value="Raqq">Abbasi Script</option>
 </select>
@@ -60,7 +66,7 @@
     </nav>
   </div>
 
-  <script src="app.js?v=heading-navigation-2"></script>
+  <script src="app.js?v=reader-names-4"></script>
 </body>
 
 </html>

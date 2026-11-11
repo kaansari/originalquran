@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="page-info" content="Simple Quran">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f4ee">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="icons.css">
+  <meta name="quran-words-file" content="json/quran_words.json">
+  <title>Simple Quran · Original Quran</title>
+  <link rel="stylesheet" href="styles_page.css">
+  <script src="site.js?v=reader-names-6"></script>
+  <script src="common.js?v=page-controls-1"></script>
+
+  <link rel="stylesheet" href="site-theme.css?v=physical-page-buttons-5">
+  <script src="retire-offline.js" defer></script>
+</head>
+
+<body>
+  <header class="site-masthead">
+    <div class="site-brand-group">
+<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Simple Quran</span><span class="site-brand-name">Original Quran</span></span></a>
+</div>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html" >Eastern Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+  </header>
+
+  <section class="site-page-controls" aria-label="Reading options">
+    <label class="site-control-toggle" for="translation-toggle">
+      <input type="checkbox" id="translation-toggle">
+      <span>Show translation</span>
+    </label>
+    <label class="site-control" for="font-select">Reading font
+      <select id="font-select">
+  <option value="Qahiri">Jazm- Early Script</option>
+  <option value="Amiri Quran">Uthmani- Turkish Script</option>
+  <option value="Raqq">Abbasi Script</option>
+</select>
+    </label>
+    <span class="page-selectors">
+      <!-- Sura and Verse Selectors -->
+      <select id="sura-select"></select>
+      <select id="verse-select"></select>
+      <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
+    </span>
+  </section>
+
+
+  <div id="quran-container" class="page">
+    <nav id="reader-page-heading" class="page-navigation reader-page-heading" aria-label="Quran pages">
+      <button id="prev-page" class="nav-button" type="button" aria-label="Previous page" disabled>
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <span class="sura-name"><strong id="page-sura-title"></strong></span>
+      <button id="next-page" class="nav-button" type="button" aria-label="Next page" disabled>
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </div>
+
+  <script src="app.js?v=reader-names-4"></script>
+</body>
+
+</html>
