@@ -63,3 +63,12 @@ originalquran/
 This repository is ready to deploy as an installable browser/PWA from GitHub Pages. Set **Settings → Pages → Source** to **GitHub Actions**, then push to `main`. The workflow in `.github/workflows/deploy-pages.yml` validates the Go source and publishes only `src/`.
 
 See `GITHUB_PAGES.md` for details. GitHub Pages itself does not run `main.go`; the Go server remains available for local use or deployment to a Go-capable host.
+
+
+### Shared Quran reader
+
+`index.html`, `page.html`, `warsh.html`, `writing.html`, and `quran.html` use
+`src/app.js`. `quran.html` sets `quran-view` to `chapter` and specifies the vowelled
+word and combined-data files through metadata. It displays the complete selected
+chapter without downloading pagination data; the other readers retain page mode.
+Font settings, translations, word details, audio, and loading behavior are shared.

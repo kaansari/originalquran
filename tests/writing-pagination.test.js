@@ -33,7 +33,7 @@ async function setup(savedPage='1') {
   const body=new Element('body'),events={},errors=[];
   const storage=new Map([['currentPage',savedPage],['translate','en']]);
   const walk=node=>[node,...node.children.flatMap(walk)];
-  const document={body,getElementById:id=>nodes.get(id),querySelector:()=>({content:'json/quran_words.json'}),
+  const document={body,getElementById:id=>nodes.get(id),querySelector:selector=>selector.includes('quran-words-file')?{content:'json/quran_words.json'}:null,
     createElement:tag=>new Element(tag),createDocumentFragment:()=>new Element('fragment'),createTextNode:text=>{const e=new Element('text');e.textContent=text;return e;},
     querySelectorAll:selector=>walk(nodes.get('quran-container')).filter(n=>n.classList.contains(selector.slice(1))),
     addEventListener(type,fn){(events[type]??=[]).push(fn);}};

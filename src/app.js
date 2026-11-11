@@ -7,6 +7,9 @@
   const wordsDataPath =
     wordsDataMeta?.content?.trim() || "json/quran_words.json";
 
+  const isChapterView = document.querySelector('meta[name="quran-view"]')?.content === 'chapter';
+  const combinedDataPath = document.querySelector('meta[name="quran-combined-file"]')?.content || 'json/combined_quran.json';
+
   // Global Variables
   let suraData, combinedData, wordsData, morphology, enWords, paginationData;
   let currentAudio = null;
@@ -15,16 +18,15 @@
   let currentPage = parseInt(localStorage.getItem("currentPage")) || 1;
   let currentSura = parseInt(localStorage.getItem("selectedSura")) || 1;
   let currentVerse = parseInt(localStorage.getItem("selectedVerse")) || 1;
-  let isPageView = true; // We'll use page view by default
 
   // Fetch all JSON data
   Promise.all([
     QuranUtils.loadJSON("json/sura.json"),
-    QuranUtils.loadJSON("json/combined_quran.json"),
+    QuranUtils.loadJSON(combinedDataPath),
     QuranUtils.loadJSON(wordsDataPath),
     QuranUtils.loadJSON("json/quran_morphology.json"),
     QuranUtils.loadJSON("json/en-word.json"),
-    QuranUtils.loadJSON("json/pagination_map.json")
+    isChapterView ? Promise.resolve([]) : QuranUtils.loadJSON("json/pagination_map.json")
   ])
     .then((data) => {
       [suraData, combinedData, wordsData, morphology, enWords, paginationData] =
@@ -111,14 +113,23 @@
       return;
     }
 
-    const fromRef = parseRef(pageData.from);
-    const toRef = parseRef(pageData.to);
+    displayRange(parseRef(pageData.from), parseRef(pageData.to), highlightSura, highlightVerse);
+    const pageLabel = document.getElementById("page-number");
+    if (pageLabel) pageLabel.textContent = `Page ${pageNumber}`;
+    currentPage = pageNumber;
+    localStorage.setItem("currentPage", currentPage);
+    updatePageButtons();
+  }
 
+  function displayChapter(suraNumber, verseNumber) {
+    displayRange({sura:suraNumber, verse:1}, {sura:suraNumber, verse:suraData[suraNumber].nAyah}, suraNumber, verseNumber);
+  }
+
+  // Both views share word rendering, verse links, translations, font and popup behavior.
+  function displayRange(fromRef, toRef, highlightSura = null, highlightVerse = null) {
     const container = document.getElementById("quran-container");
     container.className = "page";
     container.replaceChildren();
-    const pageLabel = document.getElementById("page-number");
-    if (pageLabel) pageLabel.textContent = `Page ${pageNumber}`;
 
     const currentTranslate = localStorage.getItem("translate") || "notrans";
 
@@ -183,7 +194,9 @@
       verseLink.target = "_blank";
       verseLink.rel = "noopener noreferrer";
       verseLink.className = "verse-link";
-      verseLink.textContent = `﴿${currentVerse}﴾`;
+      verseLink.textContent = isChapterView
+        ? `۝${String(currentVerse).replace(/\d/g, digit => '٠١٢٣٤٥٦٧٨٩'[digit])}`
+        : `﴿${currentVerse}﴾`;
       verseNumberElem.appendChild(verseLink);
 
       // Create Arabic text container for this verse
@@ -268,10 +281,6 @@
       verseToScroll.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 
-    // Update current page
-    currentPage = pageNumber;
-    localStorage.setItem("currentPage", currentPage);
-    updatePageButtons();
   }
 
   // Navigate to External Verse
@@ -331,6 +340,10 @@
     localStorage.setItem("selectedSura", currentSura);
     localStorage.setItem("selectedVerse", currentVerse);
 
+    if (isChapterView) {
+      displayChapter(suraNumber, verseNumber);
+      return;
+    }
     // Find and display the page containing this verse
     const pageNumber = findPageByVerse(suraNumber, verseNumber);
     displayPage(pageNumber, suraNumber, verseNumber);
@@ -377,6 +390,20 @@
       const savedVerse = localStorage.getItem("selectedVerse");
       const savedPage = localStorage.getItem("currentPage");
 
+      if (isChapterView) {
+        currentSura = suraData[savedSura] ? Number(savedSura) : 1;
+        currentVerse = Number(savedVerse) || 1;
+        // The former chapter reader stored global verse IDs; accept unambiguous values.
+        const sura = suraData[currentSura];
+        if (currentVerse > sura.nAyah && currentVerse >= sura.start && currentVerse <= sura.end) {
+          currentVerse -= sura.start - 1;
+        }
+        if (currentVerse < 1 || currentVerse > sura.nAyah) currentVerse = 1;
+        document.getElementById("sura-select").value = currentSura;
+        populateVerseSelector();
+        displayChapter(currentSura, currentVerse);
+        return;
+      }
       if (savedSura && savedVerse) {
         currentSura = parseInt(savedSura);
         currentVerse = parseInt(savedVerse);
@@ -401,7 +428,8 @@
       }
     } catch (error) {
       console.error("Error loading selections:", error);
-      displayPage(1);
+      if (isChapterView) displayChapter(1, 1);
+      else displayPage(1);
     }
   }
 
@@ -584,6 +612,7 @@
 
   // Initialize Event Listeners
   document.getElementById("sura-select").addEventListener("change", () => {
+    if (isChapterView) currentVerse = 1;
     populateVerseSelector();
     goToSelectedVerse();
   });
@@ -593,13 +622,13 @@
   });
 
   // Page Navigation Event Listeners
-  document.getElementById("prev-page").addEventListener("click", () => {
+  document.getElementById("prev-page")?.addEventListener("click", () => {
     if (currentPage > 1) {
       displayPage(currentPage - 1);
     }
   });
 
-  document.getElementById("next-page").addEventListener("click", () => {
+  document.getElementById("next-page")?.addEventListener("click", () => {
     if (currentPage < paginationData.length) {
       displayPage(currentPage + 1);
     }
@@ -610,7 +639,7 @@
     "home": "Qahiri",
     "page.html": "Amiri Quran",
     "warsh.html": "Amiri Quran",
-    "quran.html": "Raqq",
+    "quran.html": "Amiri Quran",
     "writing.html": "Qahiri"
   };
 
@@ -639,7 +668,8 @@
   // Function to load the default font for the page
   function loadDefaultFont() {
     const page = window.location.pathname.split("/").pop() || "home";
-    const savedFont = localStorage.getItem(`selectedFont_${page}`);
+    const savedFont = localStorage.getItem(`selectedFont_${page}`)
+      || (isChapterView ? localStorage.getItem(`selectedFont_${window.location.pathname}`) : null);
     let fontToApply;
 
     if (savedFont) {

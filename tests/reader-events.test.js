@@ -11,14 +11,14 @@ function element() {
   },addEventListener(type,fn){(listeners[type]??=[]).push(fn);},
   emit(type){(listeners[type]||[]).forEach(fn=>fn({target:this}));}};
 }
-for (const [filename,script] of [['index.html','app.js'],['page.html','app.js'],['warsh.html','app.js'],['quran.html','app_quran.js'],['root.html',null],['writing.html','app.js']]) {
+for (const [filename,script] of [['index.html','app.js'],['page.html','app.js'],['warsh.html','app.js'],['quran.html','app.js'],['root.html',null],['writing.html','app.js']]) {
   test(`${filename}: visible ${script ? "translation and font" : "translation"} controls retain their event handlers`,()=>{
     const html=fs.readFileSync(`src/${filename}`,'utf8');
     const nodes=new Map([...html.matchAll(/\bid="([^"]+)"/g)].map(match=>[match[1],element()]));
     const translated=element(), arabic=element(), body=element(), events={};
     const saved=new Map([['translate','en']]);
     const document={body,getElementById:id=>nodes.get(id)||null,
-      querySelector:()=>({content:'json/quran_words.json'}),
+      querySelector:selector=>{const name=selector.match(/name="([^"]+)"/)?.[1];const m=html.match(new RegExp(`<meta name="${name}" content="([^"]+)"`));return m?{content:m[1]}:null;},
       querySelectorAll:selector=>selector==='.translation'?[translated]:selector==='.arabic'?[arabic]:[],
       addEventListener(type,fn){(events[type]??=[]).push(fn);}};
     const window={location:{pathname:`/${filename}`},addEventListener(){}};
