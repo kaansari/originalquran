@@ -612,3 +612,18 @@ body .root-definition-more {
   color: var(--ink);
   font: 700 14px/1.5 var(--site-font);
 }
+
+
+/* Compact, left-to-right statistics directly beneath the Arabic selectors. */
+.selector-statistics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  margin: -4px 0 12px;
+  color: var(--muted);
+  direction: ltr;
+  text-align: left;
+  font: 13px/1.6 var(--site-font);
+}
+.selector-statistics p { margin: 0; }
+.selector-statistics strong { color: var(--ink); }

@@ -1,6 +1,6 @@
 (() => {
   // Constants
-  const AUDIO_BASE_URL = "https://audios.quranwbw.com/words/";
+
   const EXTERNAL_VERSE_BASE_URL =
     "https://corpuscoranicum.de/en/verse-navigator/";
   const wordsDataMeta = document.querySelector('meta[name="quran-words-file"]');
@@ -16,7 +16,7 @@
 
   // Global Variables
   let suraData, combinedData, wordsData, morphology, enWords, paginationData;
-  let currentAudio = null;
+
   let showTranslation =
     localStorage.getItem("translate") === "en" ? true : false;
   let currentPage = parseInt(localStorage.getItem("currentPage")) || 1;
@@ -299,44 +299,7 @@
   }
 
   // Play Audio
-  function playAudio(audioSrc) {
-    if (!audioSrc) {
-      console.error("Invalid audio source.");
-      return;
-    }
-
-    if (QuranUtils.externalNetworkRequired(audioSrc)) {
-      QuranUtils.notifyOnlineFeature("Audio playback");
-      return;
-    }
-
-    if (currentAudio) {
-      currentAudio.pause();
-      currentAudio.currentTime = 0;
-    }
-
-    currentAudio = new Audio(audioSrc);
-
-    currentAudio.addEventListener("play", () => {
-      // Optional: Visual feedback
-    });
-
-    currentAudio.addEventListener("ended", () => {
-      currentAudio = null;
-      // Optional: Remove visual feedback
-    });
-
-    currentAudio.addEventListener("error", (e) => {
-      console.error("Error playing audio:", e);
-      alert("Failed to play audio.");
-      currentAudio = null;
-    });
-
-    currentAudio.play().catch((error) => {
-      console.error("Playback failed:", error);
-      alert("Unable to play the selected audio.");
-    });
-  }
+  function playAudio(audioSrc) { return QuranUtils.playAudio(audioSrc); }
 
   // Go To Selected Verse (and display its page)
   function goToSelectedVerse() {
@@ -458,153 +421,16 @@
 
   // Show Morphology Popup
   function showWordMorphologyPopup(wordId, wordElement) {
-    const wordData = wordElement.textContent;
-    const enData = wordElement.getAttribute("data-en");
-    const wordMorphology = morphology[wordId];
+  return QuranUtils.showWordMorphologyPopup(wordId, wordElement, morphology);
+}
 
-    if (!wordData || !wordMorphology) {
-      console.error("No data found for wordId:", wordId);
-      return;
-    }
 
-    removeExistingPopup();
 
-    const wordObjects = wordMorphology.words;
-    playAudio(generateAudioUrl(wordMorphology.id));
 
-    const tableContent = buildMorphologyTable(wordObjects);
 
-    const popupContent = `
-      <span id="morphology-popup-title">
-        ${QuranUtils.escapeHTML(wordData)}, ${QuranUtils.escapeHTML(enData)}
-        <table>
-          ${tableContent}
-        </table>
-      </span>
-    `;
 
-    const popup = document.createElement("div");
-    popup.className = "morphology-popup";
-    popup.setAttribute("role", "dialog");
-    popup.setAttribute("aria-modal", "true");
-    popup.setAttribute("aria-labelledby", "morphology-popup-title");
-    popup.innerHTML = popupContent;
 
-    document.body.appendChild(popup);
 
-    // Add a click listener to remove the popup when clicking outside
-    document.addEventListener("click", handleOutsideClick);
-
-    const rect = wordElement.getBoundingClientRect();
-    const popupRect = popup.getBoundingClientRect();
-
-    let top = rect.bottom + window.scrollY;
-    let left = rect.left + window.scrollX;
-
-    // Adjust position if popup goes beyond viewport
-    if (left + popupRect.width > window.innerWidth) {
-      left = window.innerWidth - popupRect.width - 10;
-    }
-
-    if (top + popupRect.height > window.innerHeight + window.scrollY) {
-      top = rect.top + window.scrollY - popupRect.height;
-    }
-
-    popup.style.top = `${top}px`;
-    popup.style.left = `${left}px`;
-    popup.setAttribute("tabindex", "-1");
-    popup.focus();
-    popup.dataset.triggerId = wordId;
-  }
-
-  // Build Morphology Table
-  function buildMorphologyTable(wordObjects) {
-    let tableContent = "";
-
-    for (let wordId in wordObjects) {
-      const wordMorphology = wordObjects[wordId];
-
-      tableContent += `
-      <tr><th>Word</th><td>${QuranUtils.escapeHTML(wordMorphology.word || "N/A")}</td></tr>
-      <tr><th>POS</th><td>${QuranUtils.escapeHTML(wordMorphology.pos || "N/A")}</td></tr>
-      <tr><th>Root</th><td>${
-        wordMorphology.root && wordMorphology.root !== "N/A"
-          ? `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${QuranUtils.escapeHTML(wordMorphology.root)}</span>`
-          : "N/A"
-      }</td></tr>
-      ${QuranUtils.rootNotesRow(wordMorphology.root)}
-      <tr><th>Lemma</th><td>${QuranUtils.escapeHTML(wordMorphology.lemma || "N/A")}</td></tr>
-      <tr><th>Morphology</th><td>${QuranUtils.escapeHTML(wordMorphology.morphology || "N/A")}</td></tr>
-      <tr><td colspan="2"><hr></td></tr>
-      `;
-    }
-
-    // After generating the table content, attach the event listeners for root clicks
-    setTimeout(() => {
-      const clickableRoots = document.querySelectorAll(".clickable-root");
-
-      clickableRoots.forEach((rootElement) => {
-        rootElement.addEventListener("click", () => {
-          const rootWord = rootElement.textContent;
-
-          // Save the root word to localStorage
-          localStorage.setItem("selectedRoot", rootWord);
-
-          // Open the root.html page in a new tab
-          QuranUtils.openInNewTab("root.html");
-        });
-      });
-    }, 0);
-
-    return tableContent;
-  }
-
-  // Remove existing popups if any
-  function removeExistingPopup() {
-    const existingPopup = document.querySelector(".morphology-popup");
-    if (existingPopup) {
-      existingPopup.remove();
-      document.removeEventListener("click", handleOutsideClick);
-    }
-  }
-
-  // Handle clicking outside of the popup to close it
-  function handleOutsideClick(event) {
-    // Check if the clicked target is neither inside the popup nor a word element
-    if (
-      !event.target.closest(".morphology-popup") &&
-      !event.target.closest(".word")
-    ) {
-      removeExistingPopup();
-    }
-  }
-
-  // Generate Audio URL
-  function generateAudioUrl(key) {
-    if (typeof key !== "string" || !key.includes(":")) {
-      console.error("Invalid key format:", key);
-      return null;
-    }
-
-    const parts = key.split(":");
-    if (parts.length !== 3) {
-      console.error("Invalid key parts:", key);
-      return null;
-    }
-
-    const [surah, ayah, word] = parts.map(Number);
-    if (isNaN(surah) || isNaN(ayah) || isNaN(word)) {
-      console.error("Invalid numerical values in key:", key);
-      return null;
-    }
-
-    const surahStr = String(surah).padStart(3, "0");
-    const ayahStr = String(ayah).padStart(3, "0");
-    const wordStr = String(word).padStart(3, "0");
-
-    const url = `${AUDIO_BASE_URL}${surah}/${surahStr}_${ayahStr}_${wordStr}.mp3`;
-    return url;
-  }
 
   // Event Delegation for Play Buttons and Words
   document

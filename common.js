@@ -95,7 +95,197 @@
     update();
   }
 
+  // Shared audio and word details for paginated, chapter and root readers.
+  let currentAudio = null;
+  function playAudio(audioSrc) {
+    if (!audioSrc) {
+      console.error("Invalid audio source.");
+      return;
+    }
+
+    if (externalNetworkRequired(audioSrc)) {
+      notifyOnlineFeature("Audio playback");
+      return;
+    }
+
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+
+    const audio = new Audio(audioSrc);
+    currentAudio = audio;
+
+    audio.addEventListener("play", () => {
+      // Optional: Visual feedback
+    });
+
+    audio.addEventListener("ended", () => {
+      if (currentAudio === audio) currentAudio = null;
+      // Optional: Remove visual feedback
+    });
+
+    audio.addEventListener("error", (e) => {
+      console.error("Error playing audio:", e);
+      window.alert("Failed to play audio.");
+      if (currentAudio === audio) currentAudio = null;
+    });
+
+    audio.play().catch((error) => {
+      console.error("Playback failed:", error);
+      window.alert("Unable to play the selected audio.");
+    });
+  }
+
+  function showWordMorphologyPopup(wordId, wordElement, morphology) {
+    const wordData = wordElement.textContent;
+    const enData = wordElement.getAttribute("data-en");
+    const wordMorphology = morphology[wordId];
+
+    if (!wordData || !wordMorphology) {
+      console.error("No data found for wordId:", wordId);
+      return;
+    }
+
+    removeExistingPopup();
+
+    const wordObjects = wordMorphology.words;
+    playAudio(wordAudioURL(wordMorphology.id));
+
+    const tableContent = buildMorphologyTable(wordObjects);
+
+    const popupContent = `
+      <span id="morphology-popup-title">
+        ${escapeHTML(wordData)}, ${escapeHTML(enData)}
+        <table>
+          ${tableContent}
+        </table>
+      </span>
+    `;
+
+    const popup = document.createElement("div");
+    popup.className = "morphology-popup";
+    popup.setAttribute("role", "dialog");
+    popup.setAttribute("aria-modal", "true");
+    popup.setAttribute("aria-labelledby", "morphology-popup-title");
+    popup.innerHTML = popupContent;
+
+    document.body.appendChild(popup);
+
+    // Add a click listener to remove the popup when clicking outside
+    document.addEventListener("click", handleOutsideClick);
+
+    const rect = wordElement.getBoundingClientRect();
+    const popupRect = popup.getBoundingClientRect();
+
+    let top = rect.bottom + window.scrollY;
+    let left = rect.left + window.scrollX;
+
+    // Adjust position if popup goes beyond viewport
+    if (left + popupRect.width > window.innerWidth) {
+      left = window.innerWidth - popupRect.width - 10;
+    }
+
+    if (top + popupRect.height > window.innerHeight + window.scrollY) {
+      top = rect.top + window.scrollY - popupRect.height;
+    }
+
+    popup.style.top = `${top}px`;
+    popup.style.left = `${left}px`;
+    popup.setAttribute("tabindex", "-1");
+    popup.focus();
+    popup.dataset.triggerId = wordId;
+  }
+
+  function buildMorphologyTable(wordObjects) {
+    let tableContent = "";
+
+    for (let wordId in wordObjects) {
+      const wordMorphology = wordObjects[wordId];
+
+      tableContent += `
+      <tr><th>Word</th><td>${escapeHTML(wordMorphology.word || "N/A")}</td></tr>
+      <tr><th>POS</th><td>${escapeHTML(wordMorphology.pos || "N/A")}</td></tr>
+      <tr><th>Root</th><td>${
+        wordMorphology.root && wordMorphology.root !== "N/A"
+          ? `<span class="clickable-root" style="cursor:pointer; color:blue; text-decoration: underline;">${escapeHTML(wordMorphology.root)}</span>`
+          : "N/A"
+      }</td></tr>
+      ${rootNotesRow(wordMorphology.root)}
+      <tr><th>Lemma</th><td>${escapeHTML(wordMorphology.lemma || "N/A")}</td></tr>
+      <tr><th>Morphology</th><td>${escapeHTML(wordMorphology.morphology || "N/A")}</td></tr>
+      <tr><td colspan="2"><hr></td></tr>
+      `;
+    }
+
+    // After generating the table content, attach the event listeners for root clicks
+    setTimeout(() => {
+      const clickableRoots = document.querySelectorAll(".clickable-root");
+
+      clickableRoots.forEach((rootElement) => {
+        rootElement.addEventListener("click", () => {
+          const rootWord = rootElement.textContent;
+
+          // Save the root word to localStorage
+          localStorage.setItem("selectedRoot", rootWord);
+
+          // Open the root.html page in a new tab
+          openInNewTab("root.html");
+        });
+      });
+    }, 0);
+
+    return tableContent;
+  }
+
+  function removeExistingPopup() {
+    const existingPopup = document.querySelector(".morphology-popup");
+    if (existingPopup) {
+      existingPopup.remove();
+      document.removeEventListener("click", handleOutsideClick);
+    }
+  }
+
+  function handleOutsideClick(event) {
+    // Check if the clicked target is neither inside the popup nor a word element
+    if (
+      !event.target.closest(".morphology-popup") &&
+      !event.target.closest(".word")
+    ) {
+      removeExistingPopup();
+    }
+  }
+
+  function wordAudioURL(key) {
+    if (typeof key !== "string" || !key.includes(":")) {
+      console.error("Invalid key format:", key);
+      return null;
+    }
+
+    const parts = key.split(":");
+    if (parts.length !== 3) {
+      console.error("Invalid key parts:", key);
+      return null;
+    }
+
+    const [surah, ayah, word] = parts.map(Number);
+    if (isNaN(surah) || isNaN(ayah) || isNaN(word)) {
+      console.error("Invalid numerical values in key:", key);
+      return null;
+    }
+
+    const surahStr = String(surah).padStart(3, "0");
+    const ayahStr = String(ayah).padStart(3, "0");
+    const wordStr = String(word).padStart(3, "0");
+
+    const url = `https://audios.quranwbw.com/words/${surah}/${surahStr}_${ayahStr}_${wordStr}.mp3`;
+    return url;
+  }
+
   window.QuranUtils = Object.freeze({
+    playAudio,
+    wordAudioURL,
+    showWordMorphologyPopup,
     loadJSON,
     escapeHTML,
     openInNewTab,
