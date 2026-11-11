@@ -37,7 +37,7 @@ class PageBuilderTests(unittest.TestCase):
         template = (Path(build_page.__file__).parent / 'maqayis.template.html').read_text(encoding='utf-8')
         page = build_page.render(template, {'entries': []}, '// core', root_url='../site/root.html')
         self.assertIn('src="../site/site.js?v=navigation-4"', page)
-        self.assertIn('href="../site/site-theme.css?v=heading-navigation-2"', page)
+        self.assertIn('href="../site/site-theme.css?v=physical-page-buttons-5"', page)
         self.assertIn('href="../site/index.html"', page)
         self.assertNotIn('__SITE_BASE__', page)
 
