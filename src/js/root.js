@@ -25,7 +25,7 @@ Promise.all([
   QuranUtils.loadJSON("json/quran_harakat_words.json"),
   QuranUtils.loadJSON("json/quran_morphology.json"),
   QuranUtils.loadJSON("json/en-word.json"),
-  QuranUtils.loadJSON("json/pagination_map.json"),
+  QuranUtils.loadJSON("json/pagination_madinah.json"),
 ])
   .then((data) => {
     [suraData, combinedQuranData, quranWordsData, morphology, enData, paginationData] = data;
@@ -342,7 +342,7 @@ if (_verseDataEl) {
         // Save everything the Hafs home page expects
         localStorage.setItem("selectedSura", suraNumber);
         localStorage.setItem("selectedVerse", verseNumber);
-        localStorage.setItem("currentPage", pageNumber);
+        localStorage.setItem("currentPageMadinah", pageNumber);
 
         QuranUtils.openInNewTab("index.html");
       } catch (error) {
@@ -407,7 +407,7 @@ if (_searchVerseDataEl) {
 
         localStorage.setItem("selectedSura", suraNumber);
         localStorage.setItem("selectedVerse", verseNumber);
-        localStorage.setItem("currentPage", pageNumber);
+        localStorage.setItem("currentPageMadinah", pageNumber);
 
         QuranUtils.openInNewTab("index.html");
       } catch (error) {

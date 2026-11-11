@@ -107,7 +107,7 @@
       const links = document.createElement('div');
       links.className = 'site-more-links';
       for (const [href, text] of [
-        ['simple.html','Old Quran'], ['warsh.html','Western Reading'],
+        ['simple.html','Old Quran'], ['warsh.html','Western Reading'], ['indian.html','Indian Quran'],
         ['quran.html','Full Chapters'], ['random.html','Random verse'],
         ['https://github.com/kaansari/originalquran', 'GitHub repository']
       ]) {
@@ -128,7 +128,8 @@
     });
     // Preserve existing selectors while giving every page the same accessible names.
     for (const [id, label] of Object.entries({
-      'sura-select':'Surah', 'verse-select':'Verse', 'font-select':'Reading font',
+      'sura-select':'Surah', 'verse-select':document.getElementById('verse-end-select') ? 'From verse' : 'Verse',
+      'verse-end-select':'To verse', 'reader-view':'Reading view', 'font-select':'Reading font',
       'prev-page':'Previous page', 'next-page':'Next page',
       'translation-toggle':'Show translation'
     })) document.getElementById(id)?.setAttribute('aria-label', label);

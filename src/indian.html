@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  style="
+    --heading-family: 'hafs', serif;
+    --amiri-family: 'hafs', serif;
+    --uthmaniHafs: 'hafs', serif;
+    --latin-font: 'DM Sans', 'hafs', serif;
+  "
+>
+
+<head>
+  <meta name="page-info" content="Indian Quran">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f4ee">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="icons.css">
+  <meta name="quran-pagination-file" content="json/indian/pagination.json">
+  <meta name="quran-page-storage-key" content="currentPageIndian">
+  <meta name="quran-words-file" content="json/quranic_indian_words.json">
+  <meta name="quran-lines-file" content="json/indian/lines.json">
+  <meta name="quran-default-font" content="IndoPak Nastaleeq">
+  <meta name="quran-required-font" content="IndoPak Nastaleeq">
+  <title>Indian Quran · Original Quran</title>
+  <link rel="stylesheet" href="styles_page.css">
+  <script src="site.js?v=indian-reading-10"></script>
+  <script src="common.js?v=shared-interactions-2"></script>
+  <link rel="stylesheet" href="site-theme.css?v=physical-page-buttons-5">
+  <link rel="stylesheet" href="indian.css?v=iphone-fit-3">
+  <script src="js/reader-layout.js?v=word-translation-4"></script>
+  <script src="retire-offline.js" defer></script>
+</head>
+
+<body class="site-indian">
+  <header class="site-masthead">
+    <div class="site-brand-group">
+<a class="site-brand" href="index.html"><img class="site-logo" src="icon-192.png" alt="" width="44" height="44"><span><span class="site-eyebrow">Indian Quran</span><span class="site-brand-name">Original Quran</span></span></a>
+</div>
+    <nav class="site-toplinks" aria-label="Site"><a href="index.html">Eastern Reading</a><a href="indian.html" aria-current="page">Indian Quran</a><a href="root.html">Roots</a><a href="maqayis.html">Dictionary</a><a href="writing.html">Writing</a></nav>
+  </header>
+
+  <section class="site-page-controls" aria-label="Reading options">
+    <label class="site-control-toggle" for="translation-toggle">
+      <input type="checkbox" id="translation-toggle">
+      <span>Show translation</span>
+    </label>
+    <label class="site-control" for="font-select">Reading font
+      <select id="font-select">
+  <option value="IndoPak Nastaleeq">IndoPak Nastaleeq</option>
+</select>
+    </label>
+    <span class="page-selectors">
+      <!-- Sura and Verse Selectors -->
+      <select id="sura-select"></select>
+      <label class="site-control" for="reader-view">View
+        <select id="reader-view">
+          <option value="page">Mushaf pages</option>
+          <option value="verses">Selected verses</option>
+        </select>
+      </label>
+      <label class="site-control" for="verse-select">From verse
+        <select id="verse-select" aria-label="From verse"></select>
+      </label>
+      <label class="site-control" for="verse-end-select">To verse
+        <select id="verse-end-select" aria-label="To verse" disabled></select>
+      </label>
+      <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
+    </span>
+  </section>
+
+
+  <p id="indian-status" class="edition-credits" role="status">Loading Indian Quran…</p>
+  <script src="js/indian-status.js?v=2"></script>
+  <div id="quran-container" class="page">
+    <nav id="reader-page-heading" class="page-navigation reader-page-heading" aria-label="Quran pages">
+      <button id="prev-page" class="nav-button" type="button" aria-label="Previous page" disabled>
+        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+      </button>
+      <span class="sura-name"><strong id="page-sura-title"></strong></span>
+      <button id="next-page" class="nav-button" type="button" aria-label="Next page" disabled>
+        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </div>
+
+  <footer class="edition-credits">Qudratullah 15-line edition · Text and layout from <a href="https://qul.tarteel.ai/resources/mushaf-layout/12">QUL / Tarteel</a>. IndoPak text by Ayman Siddiqui and R. Siddiqua for QuranWBW.com and Quran.com. Quran fonts provided by <a href="https://api-docs.quran.foundation/docs/tutorials/fonts/font-rendering">Quran Foundation</a>.</footer>
+  <script src="app.js?v=word-translation-10"></script>
+</body>
+
+</html>
