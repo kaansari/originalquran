@@ -44,7 +44,7 @@ class PageControlsTests(unittest.TestCase):
             'warsh.html': ['Amiri Quran', 'Raqq'],
             'quran.html': ['Amiri Quran', 'Raqq'],
             'root.html': None,
-            'writing.html': ['Qahiri', 'Amiri Quran'],
+            'writing.html': ['Qahiri', 'Amiri Quran', 'System Arabic', 'Raqq', 'Amiri', 'Noto Naskh Arabic', 'Noto Sans Arabic'],
         }
         for filename, fonts in choices.items():
             with self.subTest(page=filename):

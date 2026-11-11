@@ -68,5 +68,5 @@ test('Full Chapters loads the original color Amiri face while writing keeps its 
  assert.match(page,/--amiri-family:\s*"Amiri Quran"/);
  assert.match(page,/font-palette:\s*normal/);
  const writing=fs.readFileSync('src/writing.html','utf8');
- assert(!writing.includes('fonts.googleapis.com'));
+ assert(!writing.includes('family=Amiri+Quran'));
 });
