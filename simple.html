@@ -9,10 +9,12 @@
 
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
+  <meta name="quran-pagination-file" content="json/pagination_madinah.json">
+  <meta name="quran-page-storage-key" content="currentPageMadinah">
   <meta name="quran-words-file" content="json/quran_words.json">
   <title>Old Quran · Original Quran</title>
   <link rel="stylesheet" href="styles_page.css">
-  <script src="site.js?v=reader-names-7"></script>
+  <script src="site.js?v=indian-reading-10"></script>
   <script src="common.js?v=shared-interactions-2"></script>
 
   <link rel="stylesheet" href="site-theme.css?v=physical-page-buttons-5">
@@ -42,7 +44,18 @@
     <span class="page-selectors">
       <!-- Sura and Verse Selectors -->
       <select id="sura-select"></select>
-      <select id="verse-select"></select>
+      <label class="site-control" for="reader-view">View
+        <select id="reader-view">
+          <option value="page">Mushaf pages</option>
+          <option value="verses">Selected verses</option>
+        </select>
+      </label>
+      <label class="site-control" for="verse-select">From verse
+        <select id="verse-select" aria-label="From verse"></select>
+      </label>
+      <label class="site-control" for="verse-end-select">To verse
+        <select id="verse-end-select" aria-label="To verse" disabled></select>
+      </label>
       <span id="page-number" class="page-number" role="status" aria-live="polite"></span>
     </span>
   </section>
@@ -60,7 +73,7 @@
     </nav>
   </div>
 
-  <script src="app.js?v=shared-interactions-5"></script>
+  <script src="app.js?v=reader-ranges-7"></script>
 </body>
 
 </html>

@@ -10,16 +10,25 @@
   const isChapterView = document.querySelector('meta[name="quran-view"]')?.content === 'chapter';
   const combinedDataPath = document.querySelector('meta[name="quran-combined-file"]')?.content || 'json/combined_quran.json';
 
+  const paginationDataPath = document.querySelector('meta[name="quran-pagination-file"]')?.content || 'json/pagination_map.json';
+  const pageStorageKey = document.querySelector('meta[name="quran-page-storage-key"]')?.content || 'currentPage';
+  const linesDataPath = document.querySelector('meta[name="quran-lines-file"]')?.content;
+  const requiredFont = document.querySelector('meta[name="quran-required-font"]')?.content;
+  const readerView = document.getElementById('reader-view');
+  const verseEndSelect = document.getElementById('verse-end-select');
+  const isSelectedRange = () => readerView?.value === 'verses';
+
   // Preserve the same button nodes and listeners when a new page is rendered.
   const pageHeading = document.getElementById('reader-page-heading');
   const pageSuraTitle = document.getElementById('page-sura-title');
 
   // Global Variables
   let suraData, combinedData, wordsData, morphology, enWords, paginationData;
+  let printedLayout;
 
   let showTranslation =
     localStorage.getItem("translate") === "en" ? true : false;
-  let currentPage = parseInt(localStorage.getItem("currentPage")) || 1;
+  let currentPage = parseInt(localStorage.getItem(pageStorageKey)) || 1;
   let currentSura = parseInt(localStorage.getItem("selectedSura")) || 1;
   let currentVerse = parseInt(localStorage.getItem("selectedVerse")) || 1;
 
@@ -30,11 +39,16 @@
     QuranUtils.loadJSON(wordsDataPath),
     QuranUtils.loadJSON("json/quran_morphology.json"),
     QuranUtils.loadJSON("json/en-word.json"),
-    isChapterView ? Promise.resolve([]) : QuranUtils.loadJSON("json/pagination_map.json")
+    isChapterView ? Promise.resolve([]) : QuranUtils.loadJSON(paginationDataPath),
+    linesDataPath ? QuranUtils.loadJSON(linesDataPath) : Promise.resolve(null),
+    requiredFont ? document.fonts.load(`32px "${requiredFont}"`).then(faces => {
+      if (!faces.length) throw new Error('The reading font could not be loaded. Please check your connection and try again.');
+    }) : Promise.resolve()
   ])
-    .then((data) => {
-      [suraData, combinedData, wordsData, morphology, enWords, paginationData] =
+    .then(async (data) => {
+      [suraData, combinedData, wordsData, morphology, enWords, paginationData, printedLayout] =
         data;
+      await migrateLegacyPage();
       populateSuraSelector();
       loadSelections();
       updatePageButtons();
@@ -77,6 +91,18 @@
     }
 
     verseSelect.value = currentVerse;
+    if (verseEndSelect) {
+      const end = Math.min(sura.nAyah, Math.max(currentVerse, Number(verseEndSelect.value) || currentVerse));
+      verseEndSelect.replaceChildren();
+      for (let verse = 1; verse <= sura.nAyah; verse++) {
+        const option = document.createElement('option');
+        option.value = verse;
+        option.textContent = verse;
+        verseEndSelect.appendChild(option);
+      }
+      verseEndSelect.value = end;
+      verseEndSelect.disabled = !isSelectedRange();
+    }
   }
 
   // Parse sura:verse reference
@@ -104,6 +130,31 @@
     return 1; // Default to first page
   }
 
+  async function migrateLegacyPage() {
+    if (isChapterView || pageStorageKey !== 'currentPageMadinah'
+      || localStorage.getItem(pageStorageKey)) return;
+    const legacyNumber = Number(localStorage.getItem('currentPage'));
+    if (!Number.isInteger(legacyNumber) || legacyNumber < 1) return;
+    try {
+      const legacyPages = await QuranUtils.loadJSON('json/pagination_map.json');
+      const legacyPage = legacyPages.find(page => page.page === legacyNumber);
+      if (!legacyPage) return;
+      const position = ref => ref.sura * 1000 + ref.verse;
+      const from = parseRef(legacyPage.from), to = parseRef(legacyPage.to);
+      const selected = {sura:Number(localStorage.getItem('selectedSura')), verse:Number(localStorage.getItem('selectedVerse'))};
+      const valid = suraData[selected.sura] && selected.verse >= 1
+        && selected.verse <= suraData[selected.sura].nAyah;
+      const target = valid && position(selected) >= position(from) && position(selected) <= position(to)
+        ? selected : from;
+      currentPage = findPageByVerse(target.sura, target.verse);
+      localStorage.setItem(pageStorageKey, currentPage);
+      localStorage.setItem('selectedSura', target.sura);
+      localStorage.setItem('selectedVerse', target.verse);
+    } catch (error) {
+      console.warn('Could not migrate the old page bookmark:', error);
+    }
+  }
+
   // Get page data by page number
   function getPageData(pageNumber) {
     return paginationData.find((page) => page.page === pageNumber);
@@ -117,11 +168,22 @@
       return;
     }
 
-    displayRange(parseRef(pageData.from), parseRef(pageData.to), highlightSura, highlightVerse);
+    displayRange(parseRef(pageData.from), parseRef(pageData.to),
+      printedLayout ? null : highlightSura, printedLayout ? null : highlightVerse);
+    if (printedLayout) {
+      const arabic = document.querySelector('#quran-container .arabic-text-container');
+      const highlightRef = highlightSura && highlightVerse ? `${highlightSura}:${highlightVerse}` : null;
+      arabic.replaceChildren();
+      if (pageHeading) arabic.appendChild(pageHeading);
+      arabic.appendChild(ReaderLayout.renderPage(document, printedLayout, pageNumber, suraData,
+        (sura, verse) => navigateToExternalVerse(verse, sura), highlightRef, enWords));
+      ReaderLayout.fitLines(arabic);
+      if (highlightRef) arabic.querySelector('.highlighted')?.scrollIntoView({behavior: 'smooth', block: 'center'});
+    }
     const pageLabel = document.getElementById("page-number");
-    if (pageLabel) pageLabel.textContent = `Page ${pageNumber}`;
+    if (pageLabel) pageLabel.textContent = readerView ? `Page ${pageNumber} of ${paginationData.length}` : `Page ${pageNumber}`;
     currentPage = pageNumber;
-    localStorage.setItem("currentPage", currentPage);
+    localStorage.setItem(pageStorageKey, currentPage);
     updatePageButtons();
   }
 
@@ -312,6 +374,18 @@
     localStorage.setItem("selectedSura", currentSura);
     localStorage.setItem("selectedVerse", currentVerse);
 
+    if (isSelectedRange()) {
+      const end = Math.max(verseNumber, Math.min(suraData[suraNumber].nAyah, Number(verseEndSelect.value) || verseNumber));
+      verseEndSelect.value = end;
+      // Keep the normal page bookmark aligned with the range's first verse.
+      currentPage = findPageByVerse(suraNumber, verseNumber);
+      localStorage.setItem(pageStorageKey, currentPage);
+      displayRange({sura:suraNumber, verse:verseNumber}, {sura:suraNumber, verse:end});
+      const label = document.getElementById('page-number');
+      if (label) label.textContent = `Verses ${suraNumber}:${verseNumber}–${end}`;
+      updatePageButtons();
+      return;
+    }
     if (isChapterView) {
       displayChapter(suraNumber, verseNumber);
       return;
@@ -360,7 +434,7 @@
     try {
       const savedSura = localStorage.getItem("selectedSura");
       const savedVerse = localStorage.getItem("selectedVerse");
-      const savedPage = localStorage.getItem("currentPage");
+      const savedPage = localStorage.getItem(pageStorageKey);
 
       if (isChapterView) {
         currentSura = suraData[savedSura] ? Number(savedSura) : 1;
@@ -411,11 +485,11 @@
     const nextButton = document.getElementById("next-page");
 
     if (prevButton) {
-      prevButton.disabled = currentPage <= 1;
+      prevButton.disabled = isSelectedRange() || currentPage <= 1;
     }
 
     if (nextButton) {
-      nextButton.disabled = currentPage >= paginationData.length;
+      nextButton.disabled = isSelectedRange() || currentPage >= paginationData.length;
     }
   }
 
@@ -447,7 +521,7 @@
 
   // Initialize Event Listeners
   document.getElementById("sura-select").addEventListener("change", () => {
-    if (isChapterView) currentVerse = 1;
+    if (isChapterView || readerView) currentVerse = 1;
     populateVerseSelector();
     goToSelectedVerse();
   });
@@ -456,15 +530,25 @@
     goToSelectedVerse();
   });
 
+  readerView?.addEventListener('change', () => {
+    verseEndSelect.disabled = !isSelectedRange();
+    goToSelectedVerse();
+  });
+  verseEndSelect?.addEventListener('change', () => {
+    const start = document.getElementById('verse-select');
+    if (Number(verseEndSelect.value) < Number(start.value)) start.value = verseEndSelect.value;
+    goToSelectedVerse();
+  });
+
   // Page Navigation Event Listeners
   document.getElementById("prev-page")?.addEventListener("click", () => {
-    if (currentPage > 1) {
+    if (!isSelectedRange() && currentPage > 1) {
       displayPage(currentPage - 1);
     }
   });
 
   document.getElementById("next-page")?.addEventListener("click", () => {
-    if (currentPage < paginationData.length) {
+    if (!isSelectedRange() && currentPage < paginationData.length) {
       displayPage(currentPage + 1);
     }
   });
@@ -516,7 +600,7 @@
       fontToApply = savedFont;
     } else {
       // If no font is saved, set the predefined default for the page
-      fontToApply = pageDefaultFonts[page] || "Amiri Quran";
+      fontToApply = document.querySelector('meta[name="quran-default-font"]')?.content || pageDefaultFonts[page] || "Amiri Quran";
       localStorage.setItem(`selectedFont_${page}`, fontToApply);
     }
 
@@ -566,4 +650,8 @@
       });
     });
   });
+  if (linesDataPath && typeof window.addEventListener === 'function') {
+    ReaderLayout.watchSize(document.getElementById('quran-container'), window,
+      typeof ResizeObserver !== 'undefined' ? ResizeObserver : null);
+  }
 })();
