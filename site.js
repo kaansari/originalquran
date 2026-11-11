@@ -66,7 +66,8 @@
     const button = document.getElementById('site-theme-button');
     button?.setAttribute('aria-pressed', String(dark));
     button?.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-    if (button) button.textContent = dark ? 'Light mode' : 'Dark mode';
+    button?.setAttribute('title', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    if (button) button.textContent = dark ? '☀' : '☾';
     if (save) try {localStorage.setItem('theme', theme);} catch {}
   }
   window.SiteUI = Object.freeze({
@@ -94,7 +95,7 @@
     const nav = document.querySelector('.site-toplinks');
     const filename = location.pathname.split('/').pop() || 'index.html';
     nav?.querySelectorAll('a').forEach(link => {
-      if (link.getAttribute('href') === (filename === 'page.html' ? 'index.html' : filename)) link.setAttribute('aria-current', 'page');
+      if (link.getAttribute('href')?.split('/').pop() === (filename === 'page.html' ? 'index.html' : filename)) link.setAttribute('aria-current', 'page');
       else link.removeAttribute('aria-current');
     });
     if (nav) {
@@ -113,7 +114,14 @@
       ]) {
         const link = document.createElement('a');
         link.href = href.startsWith('https://') ? href : siteBase + href; link.textContent = text;
-        if (href === filename) link.setAttribute('aria-current','page');
+        if (href === filename) {
+          link.setAttribute('aria-current','page');
+          const alreadyVisible = Array.from(nav.querySelectorAll('a')).some(existing => existing.getAttribute('href') === siteBase + href);
+          if (!alreadyVisible) {
+            nav.appendChild(link);
+          }
+          continue;
+        }
         links.appendChild(link);
       }
       more.append(summary, links);
@@ -134,13 +142,13 @@
       'translation-toggle':'Show translation'
     })) document.getElementById(id)?.setAttribute('aria-label', label);
     const closeMenus = () => {
-      document.querySelectorAll('.site-more[open]').forEach(menu => menu.open = false);
+      document.querySelectorAll('.site-more[open], .reader-filters[open]').forEach(menu => menu.open = false);
     };
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape') closeMenus();
     });
     document.addEventListener('click', event => {
-      if (!event.target.closest('.site-more')) closeMenus();
+      if (!event.target.closest('.site-more, .reader-filters')) closeMenus();
     });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
