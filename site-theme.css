@@ -379,7 +379,9 @@ body.site-dictionary .reader-toolbar .reading-controls { flex-wrap: wrap; }
 
 /* Page navigation shares the chapter heading instead of consuming a separate row. */
 body #quran-container .reader-page-heading {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  direction: ltr;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
@@ -389,6 +391,7 @@ body #quran-container .reader-page-heading {
   background: transparent;
 }
 body #quran-container .reader-page-heading .sura-name {
+  direction: rtl;
   flex: 1;
   min-width: 0;
   margin: 0;
@@ -402,3 +405,8 @@ body #quran-container .reader-page-heading .nav-button {
 }
 body .site-page-controls .page-selectors { min-width: 0; max-width: 100%; }
 body .site-page-controls .page-selectors select { min-width: 0; max-width: 100%; }
+
+/* Physical positions are deliberate: right decreases, left increases the page. */
+body #quran-container .reader-page-heading #prev-page { grid-column: 3; grid-row: 1; }
+body #quran-container .reader-page-heading .sura-name { grid-column: 2; grid-row: 1; }
+body #quran-container .reader-page-heading #next-page { grid-column: 1; grid-row: 1; }
