@@ -39,14 +39,14 @@ class PageControlsTests(unittest.TestCase):
 
     def test_reader_options_are_visible_once_and_keep_font_choices(self):
         choices = {
-            'index.html': ['Amiri Quran', 'Raqq'],
-            'simple.html': ['Qahiri', 'Amiri Quran', 'Raqq'],
-            'page.html': ['Amiri Quran', 'Raqq'],
+            'index.html': ['Amiri Quran', 'Raqq', 'Uthmani Hafs', 'System Arabic', 'Amiri', 'Noto Naskh Arabic', 'Noto Sans Arabic'],
+            'simple.html': ['Amiri Quran', 'Raqq'],
+            'page.html': ['Amiri Quran', 'Raqq', 'Uthmani Hafs', 'System Arabic', 'Amiri', 'Noto Naskh Arabic', 'Noto Sans Arabic'],
             'warsh.html': ['Amiri Quran', 'Raqq'],
-            'quran.html': ['Amiri Quran', 'Raqq'],
+            'quran.html': ['Amiri Quran', 'Raqq', 'Uthmani Hafs', 'System Arabic', 'Amiri', 'Noto Naskh Arabic', 'Noto Sans Arabic'],
             'root.html': None,
             'indian.html': ['IndoPak Nastaleeq'],
-            'writing.html': ['Qahiri', 'Amiri Quran', 'System Arabic', 'Raqq', 'Amiri', 'Noto Naskh Arabic', 'Noto Sans Arabic'],
+            'writing.html': ['Amiri Quran', 'System Arabic', 'Raqq', 'Amiri', 'Noto Naskh Arabic', 'Noto Sans Arabic'],
         }
         for filename, fonts in choices.items():
             with self.subTest(page=filename):

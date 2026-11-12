@@ -5,13 +5,6 @@
 }
 
 @font-face {
-  font-family: 'Qahiri';
-  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
-
-}
-
-
-@font-face {
   font-family: "hafs";
   src: url('fonts/hafs/hafs.woff2') format('woff2'),
        url('fonts/hafs/hafs.woff') format('woff'),
@@ -34,7 +27,7 @@
   --heading-family: system-ui, sans-serif;
   --reem-family: system-ui, sans-serif;
   --h1-font-size: 40px;
-  --qahiri-family:'Qahiri', sans-serif;
+
   --amiri-family: "hafs", serif;
   --background-color:#FEFFFE;
   --text-color: #333;
@@ -148,10 +141,6 @@ h1, h2, h3 {
 .font-raqq {
   font-family: var(--kufi-family);  /* Applies the Raqq font */
   font-feature-settings: 'ss01' 1;
-}
-
-.font-qahiri {
-  font-family: var(--qahiri-family) /* Applies the Qahiri font */
 }
 
 .font-amiri {

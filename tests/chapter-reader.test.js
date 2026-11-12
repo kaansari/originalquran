@@ -12,13 +12,13 @@ class Element {
  addEventListener(t,fn){(this.events[t]??=[]).push(fn);}emit(t){(this.events[t]||[]).forEach(fn=>fn({target:this}));}
  scrollIntoView(){this.scrolled=true;}
 }
-async function setup(verse='4'){
+async function setup(verse='4',font='Raqq'){
  const html=fs.readFileSync('src/quran.html','utf8');
  assert.match(html,/<script src="app.js\?/);
  const nodes=new Map([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],new Element()]));
  const walk=n=>[n,...n.children.flatMap(walk)];
  const events={},errors=[],requests=[];
- const saved=new Map([['selectedSura','2'],['selectedVerse',verse],['currentPage','2'],['translate','en'],['selectedFont_/quran.html','Raqq']]);
+ const saved=new Map([['selectedSura','2'],['selectedVerse',verse],['currentPage','2'],['translate','en'],['selectedFont_/quran.html',font]]);
  const meta=selector=>{const name=selector.match(/name="([^"]+)"/)?.[1];const match=html.match(new RegExp(`<meta name="${name}" content="([^"]+)"`));return match?{content:match[1]}:null;};
  const data={
   'json/sura.json':{1:{name:'First',start:1,end:2,nAyah:2},2:{name:'Second',start:3,end:6,nAyah:4}},
@@ -44,12 +44,11 @@ test('full chapters use one shared reader, vowelled data, and no pagination down
  assert.equal(h.saved.get('currentPage'),'2');
  assert(h.verses().at(-1).scrolled);
  assert(h.all().some(n=>n.classList.contains('font-raqq')));
- const marker=h.all().find(n=>n.classList.contains('chapter-verse-marker')&&n.getAttribute('aria-label')==='Verse 2:4');
+ const marker=h.all().find(n=>n.classList.contains('verse-link')&&n.textContent==='﴿4﴾');
  assert(marker);
- assert.equal(marker.children[0].textContent,'۝');
- assert.equal(marker.children[0].getAttribute('aria-hidden'),'true');
- assert.equal(marker.children[1].textContent,'٤');
  assert(marker.href.includes('sura/2/verse/4'));
+ assert.equal(marker.children.length,0);
+
 });
 test('chapter switching and verse jumps keep complete chapters and local verse numbering',async()=>{
  const h=await setup();h.nodes.get('sura-select').value='1';h.nodes.get('sura-select').emit('change');
@@ -74,4 +73,21 @@ test('Full Chapters loads the original color Amiri face while writing keeps its 
  assert.match(page,/font-palette:\s*normal/);
  const writing=fs.readFileSync('src/writing.html','utf8');
  assert(!writing.includes('family=Amiri+Quran'));
+});
+test('Full Chapters restores a Noto font, persists changes, and can return to colored Amiri',async()=>{
+ const h=await setup('4','Noto Naskh Arabic');
+ assert(h.all().filter(n=>n.classList.contains('verse-link')).every(n=>n.style.fontFamily.includes('Noto Naskh Arabic')));
+ assert(h.all().filter(n=>n.classList.contains('sura-name')).every(n=>n.style.fontFamily.includes('Noto Naskh Arabic')));
+ assert(h.all().filter(n=>n.classList.contains('arabic')).every(n=>n.style.fontFamily.includes('Noto Naskh Arabic')));
+ const select=h.nodes.get('font-select');select.value='System Arabic';select.emit('change');
+ assert.equal(h.saved.get('selectedFont_quran.html'),'System Arabic');
+ assert(h.all().filter(n=>n.classList.contains('arabic')).every(n=>n.style.fontFamily.includes('Geeza Pro')));
+ select.value='Amiri Quran';select.emit('change');
+ assert(h.all().filter(n=>n.classList.contains('arabic')).every(n=>!n.style.fontFamily&&n.classList.contains('font-amiri')));
+});
+
+test('Full Chapters replaces a saved Qahiri preference with a supported font',async()=>{
+ const h=await setup('4','Qahiri');
+ assert.equal(h.nodes.get('font-select').value,'Amiri Quran');
+ assert.equal(h.saved.get('selectedFont_quran.html'),'Amiri Quran');
 });

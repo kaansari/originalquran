@@ -10,7 +10,7 @@ test('writing page uses the shared paginated reader and keeps its writing fonts'
     assert.equal([...page.matchAll(new RegExp(`id="${id}"`,'g'))].length,1,id);
   }
   assert.match(page,/<body class="site-writing">/);
-  assert.match(page,/<option value="Qahiri">/);
+  assert.doesNotMatch(page,/<option value="Qahiri">/);
   assert.match(page,/<option value="Amiri Quran">/);
 });
 class Element {
@@ -33,7 +33,7 @@ async function setup(savedPage='1',filename='writing.html',savedFont=null,pathna
   if(printed)source=source.replace('</head>','<meta name="quran-lines-file" content="json/test-lines.json"></head>');
   const nodes=new Map([...source.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],new Element()]));
   const heading=nodes.get('reader-page-heading');
-  if(heading){heading.appendChild(nodes.get('prev-page'));heading.appendChild(nodes.get('page-sura-title'));heading.appendChild(nodes.get('next-page'));}
+  if(heading){const title=new Element('span');title.className='sura-name';title.appendChild(nodes.get('page-sura-title'));heading.appendChild(nodes.get('prev-page'));heading.appendChild(title);heading.appendChild(nodes.get('next-page'));}
   const body=new Element('body'),events={},errors=[];
   const storage=new Map([['currentPage',savedPage],['currentPageMadinah',savedPage],['writingPageMadinah',savedPage],['translate','en']]);
   const pageKey=source.match(/name="quran-page-storage-key" content="([^"]+)"/)?.[1];
@@ -84,6 +84,23 @@ async function setup(savedPage='1',filename='writing.html',savedFont=null,pathna
   assert.deepEqual(errors,[]);
   return {nodes,storage,requests,fontRequests,content:()=>walk(nodes.get('quran-container')),verses:()=>walk(nodes.get('quran-container')).filter(n=>n.id?.startsWith('verse-')).map(n=>n.id)};
 }
+test('surah names follow font changes and retain that font after page navigation',async()=>{
+  for(const filename of ['index.html','page.html','warsh.html','simple.html','writing.html']){
+    const h=await setup('1',filename);
+    const font=h.nodes.get('font-select');font.value='Raqq';font.emit('change');
+    let headings=h.content().filter(n=>n.classList.contains('sura-name'));
+    assert(headings.length,filename);
+    assert(headings.every(n=>n.style.fontFamily==='var(--kufi-family)'),filename);
+    const numbers=h.content().filter(n=>n.classList.contains('verse-link'));
+    assert(numbers.length,filename);
+    assert.deepEqual(numbers.map(n=>n.textContent),['﴿1﴾','﴿2﴾'],filename);
+    assert(numbers.every(n=>n.style.fontFamily==='var(--kufi-family)'),filename);
+    h.nodes.get('next-page').emit('click');
+    headings=h.content().filter(n=>n.classList.contains('sura-name'));
+    assert(headings.every(n=>n.style.fontFamily==='var(--kufi-family)'),filename);
+    assert(h.content().filter(n=>n.classList.contains('verse-link')).every(n=>n.style.fontFamily==='var(--kufi-family)'),filename);
+  }
+});
 test('Indian reader uses real printed pages, its own bookmark, matching font, and verse ranges',async()=>{
   const h=await setup('1','indian.html',null,'/indian.html',true);
   assert.equal(h.nodes.get('page-number').textContent,'Page 1 of 610');
@@ -179,9 +196,9 @@ test('Old Quran preserves the previous home data and reader variants have the re
  assert.match(western,/<meta name="page-info" content="Western Reading">/);
 });
 
-test('restored Old Quran renders with its original Qahiri default',async()=>{
+test('Old Quran uses a supported default font',async()=>{
  const h=await setup('1','simple.html');
- assert.equal(h.nodes.get('font-select').value,'Qahiri');
+ assert.equal(h.nodes.get('font-select').value,'Amiri Quran');
  assert.deepEqual(h.verses(),['verse-001001','verse-001002']);
 });
 
@@ -274,4 +291,18 @@ test('legacy arrow-navigation bookmarks migrate by verse instead of reusing old 
  assert(h.verses().includes(`verse-${String(sura).padStart(3,'0')}${String(verse).padStart(3,'0')}`));
  assert.equal(h.storage.get('currentPage'),'100');
  assert(h.requests.includes('json/pagination_map.json'));
+});
+
+test('retired Qahiri preferences migrate to supported defaults',async()=>{
+ for(const page of ['writing.html','simple.html']){
+  const h=await setup('1',page,'Qahiri');
+  assert.equal(h.nodes.get('font-select').value,'Amiri Quran');
+  assert.equal(h.storage.get(`selectedFont_${page}`),'Amiri Quran');
+ }
+});
+test('Eastern Reading exposes the same supported fonts as Full Chapters',()=>{
+ const values=name=>[...html(name).match(/<select id="font-select">([\s\S]*?)<\/select>/)[1].matchAll(/value="([^"]+)"/g)].map(m=>m[1]);
+ assert.deepEqual(values('index.html'),values('quran.html'));
+ assert.deepEqual(values('page.html'),values('quran.html'));
+ assert(!values('quran.html').includes('Qahiri'));
 });

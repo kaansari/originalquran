@@ -265,21 +265,7 @@
       verseLink.target = "_blank";
       verseLink.rel = "noopener noreferrer";
       verseLink.className = "verse-link";
-      if (isChapterView) {
-        verseLink.classList.add('chapter-verse-marker');
-        verseLink.setAttribute('aria-label', `Verse ${currentSura}:${currentVerse}`);
-        const ornament = document.createElement('span');
-        ornament.className = 'chapter-verse-ornament';
-        ornament.setAttribute('aria-hidden', 'true');
-        ornament.textContent = '۝';
-        const number = document.createElement('span');
-        number.className = 'chapter-verse-digits';
-        number.textContent = String(currentVerse).replace(/\d/g, digit => '٠١٢٣٤٥٦٧٨٩'[digit]);
-        verseLink.appendChild(ornament);
-        verseLink.appendChild(number);
-      } else {
-        verseLink.textContent = `﴿${currentVerse}﴾`;
-      }
+      verseLink.textContent = `﴿${currentVerse}﴾`;
       verseNumberElem.appendChild(verseLink);
 
       // Create Arabic text container for this verse
@@ -569,17 +555,25 @@
   const pageDefaultFonts = {
     "home": "Amiri Quran",
     "index.html": "Amiri Quran",
-    "simple.html": "Qahiri",
+    "simple.html": "Amiri Quran",
     "page.html": "Amiri Quran",
     "warsh.html": "Amiri Quran",
     "quran.html": "Amiri Quran",
-    "writing.html": "Qahiri"
+    "writing.html": "Amiri Quran"
   };
 
   function updateFontClass(selectedFont) {
     const arabicElements = document.querySelectorAll(".arabic");
+    const additionalFamilies = {
+      'Uthmani Hafs': 'hafs, serif',
+      'System Arabic': '"Geeza Pro", "Traditional Arabic", Tahoma, Arial, sans-serif',
+      'Amiri': 'Amiri, serif',
+      'Noto Naskh Arabic': '"Noto Naskh Arabic", "Geeza Pro", serif',
+      'Noto Sans Arabic': '"Noto Sans Arabic", Tahoma, sans-serif'
+    };
 
     arabicElements.forEach((element) => {
+      element.style.fontFamily = additionalFamilies[selectedFont] || '';
       // Reset font classes
       element.classList.remove(
         "font-raqq",
@@ -590,11 +584,21 @@
 
       if (selectedFont === "Raqq") {
         element.classList.add("font-raqq");
-      } else if (selectedFont === "Qahiri") {
-        element.classList.add("font-qahiri", "is-italic");
+
       } else if (selectedFont === "Amiri Quran") {
         element.classList.add("font-amiri");
       }
+    });
+    const selectedFamilies = {
+      ...additionalFamilies,
+      'Raqq': 'var(--kufi-family)',
+      'Amiri Quran': 'var(--amiri-family)',
+      'IndoPak Nastaleeq': '"IndoPak Nastaleeq"'
+    };
+    ['.sura-name', '.verse-number-inline', '.verse-link'].forEach(selector => {
+      document.querySelectorAll(selector).forEach(element => {
+        element.style.fontFamily = selectedFamilies[selectedFont] || 'inherit';
+      });
     });
   }
 
@@ -604,7 +608,7 @@
     const savedFont = localStorage.getItem(`selectedFont_${page}`)
       || (isChapterView ? localStorage.getItem(`selectedFont_${window.location.pathname}`) : null);
     const fontSelectElement = document.getElementById("font-select");
-    const validSavedFont = savedFont && (!fontSelectElement?.options
+    const validSavedFont = savedFont && savedFont !== "Qahiri" && (!fontSelectElement?.options
       || Array.from(fontSelectElement.options).some(option => option.value === savedFont));
     let fontToApply;
 

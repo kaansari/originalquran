@@ -2,7 +2,7 @@ const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const vm=require('node:vm');
 const fs=require('node:fs');
-function setup(saved=null,blocked=false,font="Qahiri"){
+function setup(saved=null,blocked=false,font="Amiri Quran"){
  const attrs={},values=new Map(saved?[['writingFontStyle',saved]]:[]);
  const select={value:'italic',addEventListener(type,fn){this.change=fn;}};
  const fontSelect={value:font,addEventListener(type,fn){this.change=fn;}};
@@ -30,7 +30,7 @@ test('style switching still works when storage is blocked',()=>{
 
 test('all writing fonts set the same family for the text and its line-height strut',()=>{
  const h=setup();
- for(const name of ['System Arabic','Raqq','Amiri','Noto Naskh Arabic','Noto Sans Arabic','Qahiri','Amiri Quran']) {
+ for(const name of ['System Arabic','Raqq','Amiri','Noto Naskh Arabic','Noto Sans Arabic','Amiri Quran']) {
   h.fontSelect.value=name;h.fontSelect.change();
   assert.equal(h.attrs['data-writing-font'],name);
   assert(h.properties['--writing-font-family']);
@@ -40,4 +40,10 @@ test('saved additional font is applied before chapter rendering',()=>{
  const h=setup(null,false,'Noto Naskh Arabic');
  assert.equal(h.attrs['data-writing-font'],'Noto Naskh Arabic');
  assert(h.properties['--writing-font-family'].includes('Noto Naskh Arabic'));
+});
+
+test('retired Qahiri writing preference falls back to Uthmani Hafs',()=>{
+ const h=setup(null,false,'Qahiri');
+ assert.equal(h.attrs['data-writing-font'],'Amiri Quran');
+ assert(h.properties['--writing-font-family'].includes('hafs'));
 });
