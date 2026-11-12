@@ -265,9 +265,21 @@
       verseLink.target = "_blank";
       verseLink.rel = "noopener noreferrer";
       verseLink.className = "verse-link";
-      verseLink.textContent = isChapterView
-        ? `۝${String(currentVerse).replace(/\d/g, digit => '٠١٢٣٤٥٦٧٨٩'[digit])}`
-        : `﴿${currentVerse}﴾`;
+      if (isChapterView) {
+        verseLink.classList.add('chapter-verse-marker');
+        verseLink.setAttribute('aria-label', `Verse ${currentSura}:${currentVerse}`);
+        const ornament = document.createElement('span');
+        ornament.className = 'chapter-verse-ornament';
+        ornament.setAttribute('aria-hidden', 'true');
+        ornament.textContent = '۝';
+        const number = document.createElement('span');
+        number.className = 'chapter-verse-digits';
+        number.textContent = String(currentVerse).replace(/\d/g, digit => '٠١٢٣٤٥٦٧٨٩'[digit]);
+        verseLink.appendChild(ornament);
+        verseLink.appendChild(number);
+      } else {
+        verseLink.textContent = `﴿${currentVerse}﴾`;
+      }
       verseNumberElem.appendChild(verseLink);
 
       // Create Arabic text container for this verse

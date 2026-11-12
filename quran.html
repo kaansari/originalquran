@@ -24,6 +24,22 @@
     body.site-chapters { --amiri-family: "Amiri Quran", "hafs", serif; }
     body.site-chapters #quran-container .font-amiri,
     body.site-chapters #quran-container .font-amiri * { font-palette: normal; }
+    /* Explicit layering keeps the number inside its ornament with either font. */
+    body.site-chapters #quran-container .chapter-verse-marker {
+      display: inline-grid;
+      place-items: center;
+      min-width: 2.6em;
+      min-height: 2.6em;
+      line-height: 1;
+      vertical-align: middle;
+      direction: ltr;
+      unicode-bidi: isolate;
+      font-family: "hafs", serif;
+      white-space: nowrap;
+    }
+    .chapter-verse-marker > span { grid-area: 1 / 1; }
+    .chapter-verse-ornament { font-size: 2.4em; line-height: 1; }
+    .chapter-verse-digits { position: relative; font-size: 1em; line-height: 1; }
   </style>
 </head>
 
@@ -56,7 +72,7 @@
 
 <div id="quran-container" class="page"></div>
 
-<script src="app.js?v=reader-ranges-7">
+<script src="app.js?v=chapter-markers-11">
 </script>
 </body>
 
