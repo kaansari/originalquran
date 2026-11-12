@@ -2,7 +2,6 @@
 (() => {
   'use strict';
   const families = {
-    'Qahiri': 'Qahiri, serif',
     'Amiri Quran': 'hafs, serif',
     'System Arabic': '"Geeza Pro", "Traditional Arabic", Tahoma, Arial, sans-serif',
     'Raqq': 'Raqq, serif',
@@ -14,9 +13,9 @@
   if (fontSelect) {
     let savedFont;
     try { savedFont = localStorage.getItem('selectedFont_writing.html'); } catch {}
-    fontSelect.value = Object.hasOwn(families, savedFont) ? savedFont : 'Qahiri';
+    fontSelect.value = Object.hasOwn(families, savedFont) ? savedFont : 'Amiri Quran';
     const applyFont = () => {
-      const name = Object.hasOwn(families, fontSelect.value) ? fontSelect.value : 'Qahiri';
+      const name = Object.hasOwn(families, fontSelect.value) ? fontSelect.value : 'Amiri Quran';
       document.body.setAttribute('data-writing-font', name);
       document.body.style.setProperty('--writing-font-family', families[name]);
     };

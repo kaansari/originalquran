@@ -16,7 +16,7 @@ url('fonts/hafs/hafs.otf') format('opentype');
   --heading-family: "hafs", sans-serif;
   --reem-family: "hafs", sans-serif;
   --h1-font-size: 40px;
-  --qahiri-family:"hafs", sans-serif;
+
   --amiri-family: "hafs", serif;
   --background-color:#FEFFFE;
   --text-color: #333;
@@ -157,10 +157,6 @@ h1, h2, h3 {
 .font-raqq {
   font-family: var(--kufi-family);  /* Applies the Raqq font */
   font-feature-settings: 'ss01' 1;
-}
-
-.font-qahiri {
-  font-family: var(--qahiri-family) /* Applies the Qahiri font */
 }
 
 .font-amiri {

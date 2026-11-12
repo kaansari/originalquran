@@ -21,7 +21,8 @@
   <meta name="quran-page-storage-key" content="currentPageMadinah">
   <meta name="quran-words-file" content="json/quranic_words.json">
   <title>Eastern Reading · Original Quran</title>
-  <link rel="stylesheet" href="styles_page.css">
+  <link rel="stylesheet" href="styles_page.css?v=font-choices-2">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&amp;family=Noto+Naskh+Arabic:wght@400&amp;family=Noto+Sans+Arabic&amp;display=swap">
   <script src="site.js?v=theme-icon-12"></script>
   <script src="common.js?v=shared-interactions-2"></script>
   <link rel="stylesheet" href="site-theme.css?v=theme-icon-7">
@@ -45,9 +46,15 @@
     </label>
     <label class="site-control" for="font-select">Reading font
       <select id="font-select">
-  <option value="Amiri Quran">Uthmani- Turkish Script</option>
-  <option value="Raqq">Abbasi Script</option>
-</select>
+        <option value="Amiri Quran">Amiri Quran</option>
+        <option value="Raqq">Raqq</option>
+
+        <option value="Uthmani Hafs">Uthmani Hafs</option>
+        <option value="System Arabic">System Arabic (plain)</option>
+        <option value="Amiri">Amiri Naskh</option>
+        <option value="Noto Naskh Arabic">Noto Naskh Arabic</option>
+        <option value="Noto Sans Arabic">Noto Sans Arabic</option>
+      </select>
     </label>
 
       <label class="site-control" for="reader-view">View
@@ -79,7 +86,7 @@
     </nav>
   </div>
 
-  <script src="app.js?v=reader-ranges-7"></script>
+  <script src="app.js?v=standard-markers-17"></script>
 </body>
 
 </html>

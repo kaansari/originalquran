@@ -59,7 +59,7 @@ body.site-indian #quran-container .mushaf-line .highlighted {
 body.site-indian #quran-container .mushaf-surah {
   display: block;
   text-align: center;
-  font-family: var(--heading-family);
+  font-family: var(--indian-family);
 }
 body.site-indian .edition-credits {
   max-width: 880px;

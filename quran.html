@@ -13,8 +13,9 @@
     <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="icons.css">
     <title>Full Chapters · Original Quran</title>
-    <link rel="stylesheet" href="styles_page.css">
+    <link rel="stylesheet" href="styles_page.css?v=font-choices-2">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri+Quran&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400&amp;family=Noto+Naskh+Arabic:wght@400&amp;family=Noto+Sans+Arabic&amp;display=swap">
   <script src="site.js?v=theme-icon-12"></script>
   <script src="common.js?v=shared-interactions-2"></script>
   <link rel="stylesheet" href="site-theme.css?v=theme-icon-7">
@@ -24,22 +25,6 @@
     body.site-chapters { --amiri-family: "Amiri Quran", "hafs", serif; }
     body.site-chapters #quran-container .font-amiri,
     body.site-chapters #quran-container .font-amiri * { font-palette: normal; }
-    /* Explicit layering keeps the number inside its ornament with either font. */
-    body.site-chapters #quran-container .chapter-verse-marker {
-      display: inline-grid;
-      place-items: center;
-      min-width: 2.6em;
-      min-height: 2.6em;
-      line-height: 1;
-      vertical-align: middle;
-      direction: ltr;
-      unicode-bidi: isolate;
-      font-family: "hafs", serif;
-      white-space: nowrap;
-    }
-    .chapter-verse-marker > span { grid-area: 1 / 1; }
-    .chapter-verse-ornament { font-size: 2.4em; line-height: 1; }
-    .chapter-verse-digits { position: relative; font-size: 1em; line-height: 1; }
   </style>
 </head>
 
@@ -61,6 +46,12 @@
       <select id="font-select">
         <option value="Amiri Quran">Amiri Quran</option>
         <option value="Raqq">Raqq</option>
+
+        <option value="Uthmani Hafs">Uthmani Hafs</option>
+        <option value="System Arabic">System Arabic (plain)</option>
+        <option value="Amiri">Amiri Naskh</option>
+        <option value="Noto Naskh Arabic">Noto Naskh Arabic</option>
+        <option value="Noto Sans Arabic">Noto Sans Arabic</option>
       </select>
     </label>
 
@@ -72,7 +63,7 @@
 
 <div id="quran-container" class="page"></div>
 
-<script src="app.js?v=chapter-markers-11">
+<script src="app.js?v=standard-markers-17">
 </script>
 </body>
 
