@@ -174,7 +174,7 @@
       const arabic = document.querySelector('#quran-container .arabic-text-container');
       const highlightRef = highlightSura && highlightVerse ? `${highlightSura}:${highlightVerse}` : null;
       arabic.replaceChildren();
-      if (pageHeading) arabic.appendChild(pageHeading);
+      if (pageHeading && !pageHeading.dataset.mobileDocked) arabic.appendChild(pageHeading);
       arabic.appendChild(ReaderLayout.renderPage(document, printedLayout, pageNumber, suraData,
         (sura, verse) => navigateToExternalVerse(verse, sura), highlightRef, enWords));
       ReaderLayout.fitLines(arabic);
@@ -238,7 +238,7 @@
         suraNameElem.appendChild(strong);
         if (lastSura === null && pageHeading) {
           pageSuraTitle.textContent = strong.textContent;
-          arabicFragment.appendChild(pageHeading);
+          if (!pageHeading.dataset.mobileDocked) arabicFragment.appendChild(pageHeading);
         } else {
           arabicFragment.appendChild(suraNameElem);
         }

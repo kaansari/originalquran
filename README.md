@@ -124,3 +124,16 @@ Sources: [QUL layout 12](https://qul.tarteel.ai/resources/mushaf-layout/12),
 [Quran Foundation font documentation](https://api-docs.quran.foundation/docs/tutorials/fonts/font-rendering/).
 
 Browser visual comparison is still needed: this environment cannot launch Chrome.
+
+## Credits
+
+The Indian Quran uses the Qudratullah Company's 15-line edition from Lahore,
+with text and layout resources provided by [QUL / Tarteel](https://qul.tarteel.ai/resources/mushaf-layout/12).
+IndoPak text is by **Ayman Siddiqui and R. Siddiqua**, for **QuranWBW.com and Quran.com**.
+Quran fonts are provided by [Quran Foundation](https://api-docs.quran.foundation/docs/tutorials/fonts/font-rendering/).
+The three approved word joins and the split at 37:130 are documented above and
+in the generated source metadata; original downloaded archives remain unchanged.
+
+Eastern, Western, Old Quran and Indian Quran use the mobile 85% reading area
+and 15% expandable bottom controls. Indian Quran retains its 15 printed line
+slots while scaling the full page. Desktop controls restore their original positions.

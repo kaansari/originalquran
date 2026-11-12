@@ -28,11 +28,12 @@ class Element {
   scrollIntoView(){}
   querySelector(selector){return this.children.flatMap(function walk(n){return [n,...n.children.flatMap(walk)];}).find(n=>n.classList.contains(selector.slice(1)))||null;}
 }
-async function setup(savedPage='1',filename='writing.html',savedFont=null,pathname=`/${filename}`,realData=false,legacyOnly=false,printed=false) {
+async function setup(savedPage='1',filename='writing.html',savedFont=null,pathname=`/${filename}`,realData=false,legacyOnly=false,printed=false,dockedHeading=false) {
   let source=html(filename);assert.match(source,/<script src="app.js\?/);
   if(printed)source=source.replace('</head>','<meta name="quran-lines-file" content="json/test-lines.json"></head>');
   const nodes=new Map([...source.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],new Element()]));
   const heading=nodes.get('reader-page-heading');
+  if(dockedHeading)heading.dataset.mobileDocked='true';
   if(heading){const title=new Element('span');title.className='sura-name';title.appendChild(nodes.get('page-sura-title'));heading.appendChild(nodes.get('prev-page'));heading.appendChild(title);heading.appendChild(nodes.get('next-page'));}
   const body=new Element('body'),events={},errors=[];
   const storage=new Map([['currentPage',savedPage],['currentPageMadinah',savedPage],['writingPageMadinah',savedPage],['translate','en']]);
@@ -84,6 +85,22 @@ async function setup(savedPage='1',filename='writing.html',savedFont=null,pathna
   assert.deepEqual(errors,[]);
   return {nodes,storage,requests,fontRequests,content:()=>walk(nodes.get('quran-container')),verses:()=>walk(nodes.get('quran-container')).filter(n=>n.id?.startsWith('verse-')).map(n=>n.id)};
 }
+test('page rendering keeps a mobile heading docked while updating its title and arrow handlers',async()=>{
+ for(const filename of ['index.html','page.html','warsh.html','simple.html']){
+ const h=await setup('1',filename,null,`/${filename}`,false,false,false,true);
+ const heading=h.nodes.get('reader-page-heading');
+ assert(!h.content().includes(heading));
+ assert.equal(h.nodes.get('page-sura-title').textContent,'Test surah (1)');
+ h.nodes.get('next-page').emit('click');
+ assert(!h.content().includes(heading));
+ assert.equal(h.nodes.get('page-number').textContent,'Page 2 of 2');
+ assert.deepEqual(h.verses(),['verse-001003','verse-001004']);
+ h.nodes.get('sura-select').value='5';h.nodes.get('sura-select').emit('change');
+ h.nodes.get('reader-view').value='verses';h.nodes.get('reader-view').emit('change');
+ assert.equal(h.nodes.get('page-sura-title').textContent,'Fifth (5)');
+ assert(!h.content().includes(heading));
+ }
+});
 test('surah names follow font changes and retain that font after page navigation',async()=>{
   for(const filename of ['index.html','page.html','warsh.html','simple.html','writing.html']){
     const h=await setup('1',filename);

@@ -61,7 +61,7 @@ body.site-indian #quran-container .mushaf-surah {
   text-align: center;
   font-family: var(--indian-family);
 }
-body.site-indian .edition-credits {
+body.site-indian .reader-status {
   max-width: 880px;
   margin: 1rem auto;
   padding-inline: 1rem;

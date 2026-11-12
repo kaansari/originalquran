@@ -73,6 +73,11 @@ test('line fitting reduces overflow and restores the default size after widening
     assert.equal(line.style.fontSize,'');
   } finally {global.getComputedStyle=previous;}
 });
+test('printed lines leave mobile whole-page scaling in charge and clear old line sizes',()=>{
+ const lines=[{style:{fontSize:'22px'}},{style:{fontSize:''}}];
+ fitLines({closest:selector=>selector==='[data-fit-page="true"]'?{}:null,querySelectorAll:()=>lines});
+ assert(lines.every(line=>line.style.fontSize===''));
+});
 test('RTL words fit even when scrollWidth omits their left-side overflow',()=>{
   const previous=global.getComputedStyle;
   global.getComputedStyle=()=>({fontSize:'40px',columnGap:'4px'});

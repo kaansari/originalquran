@@ -7,6 +7,11 @@
   font-display: swap;
 }
 
-body:has(#font-select option[value="Qahiri"]:checked) #quran-container :is(.arabic, .sura-name, .verse-number-inline) {
+body:has(#font-select option[value="Qahiri"]:checked) :is(#quran-container, .mobile-reader-dock) :is(.arabic, .sura-name, .verse-number-inline) {
   font-style: italic;
+}
+
+/* ss01 substitutes Qahiri's dot glyphs with an empty glyph. */
+body[data-qahiri-dots="off"]:has(#font-select option[value="Qahiri"]:checked) :is(#quran-container, .mobile-reader-dock) :is(.arabic, .sura-name, .verse-number-inline) {
+  font-feature-settings: 'ss01' 1;
 }
