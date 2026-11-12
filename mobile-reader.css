@@ -1,0 +1,132 @@
+/* Enabled only on the paginated readers which load the mobile controller. */
+body.mobile-reader-active {
+  --mobile-reader-height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  height: var(--mobile-reader-height);
+}
+@supports (height: 100dvh) {
+  body.mobile-reader-active { --mobile-reader-height: 100dvh; }
+}
+body.mobile-reader-active #quran-container.page {
+  position: fixed;
+  inset: 0 0 auto;
+  width: 100%;
+  max-width: none;
+  height: calc(var(--mobile-reader-height) * 0.85);
+  margin: 0;
+  padding: max(8px, env(safe-area-inset-top)) max(10px, env(safe-area-inset-right)) 8px max(10px, env(safe-area-inset-left));
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+}
+body.mobile-reader-active #quran-container .arabic-text-container {
+  font-size: calc(clamp(24px, 3.7vw, 38px) * var(--mobile-page-scale, 1));
+  line-height: 2.1;
+}
+body.mobile-reader-active #quran-container .arabic {
+  font-size: inherit;
+  line-height: inherit;
+}
+body.mobile-reader-active #quran-container .verse-number-inline {
+  display: inline;
+  font-size: 0.65em;
+  vertical-align: baseline;
+}
+body.mobile-reader-active #quran-container .mushaf-lines {
+  font-size: calc(clamp(12px, 4.3vw, 42px) * var(--mobile-page-scale, 1));
+}
+body.mobile-reader-active #quran-container .sura-name {
+  font-size: calc(24px * var(--mobile-page-scale, 1));
+}
+body.mobile-reader-active #quran-container .translations-container,
+body.mobile-reader-active #quran-container .translation,
+body.mobile-reader-active #quran-container .translation-content,
+body.mobile-reader-active #quran-container .translation-header {
+  font-size: calc(14px * var(--mobile-page-scale, 1));
+  line-height: 1.4;
+}
+body.mobile-reader-active .mobile-reader-dock {
+  position: fixed;
+  inset: auto 0 0;
+  height: calc(var(--mobile-reader-height) * 0.15);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 4px;
+  padding: 4px max(10px, env(safe-area-inset-right)) max(4px, env(safe-area-inset-bottom)) max(10px, env(safe-area-inset-left));
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  z-index: 100;
+}
+body.mobile-reader-active .mobile-reader-dock .reader-page-heading {
+  width: 100%;
+  min-height: 0;
+  gap: 8px;
+}
+body.mobile-reader-active .mobile-reader-dock .sura-name {
+  font-size: clamp(16px, 2.5vh, 22px);
+  line-height: 1.2;
+  text-align-last: center;
+}
+body.mobile-reader-active .mobile-reader-dock .nav-button {
+  min-height: 26px;
+  padding: 3px 10px;
+}
+body.mobile-reader-active .mobile-reader-dock .site-page-controls {
+  position: static;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 8px;
+  font-size: 12px;
+}
+body.mobile-reader-active .mobile-reader-dock .page-selectors { display: contents; }
+body.mobile-reader-active .mobile-reader-dock .reader-chapter > span { display: none; }
+body.mobile-reader-active .mobile-reader-dock .reader-chapter select {
+  width: 100%;
+  max-width: none;
+  min-height: 26px;
+}
+body.mobile-reader-active .mobile-reader-dock .reader-filters > summary { padding: 4px 8px; }
+body.mobile-reader-active .mobile-reader-dock .reader-filter-options {
+  top: auto;
+  bottom: calc(100% + 4px);
+  inset-inline: 0;
+  width: 100%;
+  max-height: calc(var(--mobile-reader-height) * 0.75);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+body.mobile-reader-active .mobile-reader-dock .site-masthead {
+  padding: 10px 0 0;
+  border-top: 1px solid var(--line);
+}
+body.mobile-reader-active .mobile-reader-dock .site-toplinks { font-size: 12px; }
+body.mobile-reader-active .mobile-reader-dock .site-more-links {
+  position: static;
+  box-shadow: none;
+  max-height: none;
+}
+body.mobile-reader-active .morphology-popup {
+  z-index: 200;
+  box-sizing: border-box;
+  max-width: calc(100vw - 20px);
+  max-height: calc(var(--mobile-reader-height) * 0.85 - 16px);
+  overflow-y: auto;
+}
+body.mobile-reader-active #indian-status {
+  position: fixed;
+  inset: 12px 12px auto;
+  z-index: 110;
+  margin: 0;
+  padding: 12px;
+  background: var(--paper);
+}

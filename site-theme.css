@@ -384,7 +384,7 @@ body #quran-container .mushaf-surah {
   /* Reader justification must not pull a single-line chapter title to the right. */
   text-align-last: center;
 }
-body #quran-container .reader-page-heading {
+body .reader-page-heading {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   direction: ltr;
@@ -396,14 +396,14 @@ body #quran-container .reader-page-heading {
   padding: 0;
   background: transparent;
 }
-body #quran-container .reader-page-heading .sura-name {
+body .reader-page-heading .sura-name {
   direction: rtl;
   flex: 1;
   min-width: 0;
   margin: 0;
   text-align: center;
 }
-body #quran-container .reader-page-heading .nav-button {
+body .reader-page-heading .nav-button {
   flex: none;
   width: auto;
   line-height: 1;
@@ -504,9 +504,9 @@ body .reader-filter-options select {
 }
 
 /* Physical positions are deliberate: right decreases, left increases the page. */
-body #quran-container .reader-page-heading #prev-page { grid-column: 3; grid-row: 1; }
-body #quran-container .reader-page-heading .sura-name { grid-column: 2; grid-row: 1; }
-body #quran-container .reader-page-heading #next-page { grid-column: 1; grid-row: 1; }
+body .reader-page-heading #prev-page { grid-column: 3; grid-row: 1; }
+body .reader-page-heading .sura-name { grid-column: 2; grid-row: 1; }
+body .reader-page-heading #next-page { grid-column: 1; grid-row: 1; }
 
 /* Reserve an icon slot on the first navigation line, even when links wrap. */
 body .site-masthead { position: relative; }

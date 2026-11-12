@@ -14,11 +14,12 @@
   <meta name="quran-words-file" content="json/quran_words.json">
   <title>Old Quran · Original Quran</title>
   <link rel="stylesheet" href="styles_page.css?v=font-choices-2">
-  <link rel="stylesheet" href="simple.css?v=qahiri-italic-2">
+  <link rel="stylesheet" href="simple.css?v=qahiri-dots-3">
   <script src="site.js?v=theme-icon-12"></script>
   <script src="common.js?v=shared-interactions-2"></script>
 
-  <link rel="stylesheet" href="site-theme.css?v=center-titles-8">
+  <link rel="stylesheet" href="site-theme.css?v=mobile-panel-11">
+  <link rel="stylesheet" href="mobile-reader.css?v=old-quran-fit-3">
   <script src="retire-offline.js" defer></script>
 </head>
 
@@ -35,6 +36,10 @@
 <label class="site-control-toggle" for="translation-toggle">
       <input type="checkbox" id="translation-toggle">
       <span>Show translation</span>
+    </label>
+    <label class="site-control-toggle" id="qahiri-dot-control" for="qahiri-dots-toggle">
+      <input type="checkbox" id="qahiri-dots-toggle" checked>
+      <span>Hide letter dots</span>
     </label>
     <label class="site-control" for="font-select">Reading font
       <select id="font-select">
@@ -73,7 +78,9 @@
     </nav>
   </div>
 
-  <script src="app.js?v=simple-qahiri-18"></script>
+  <script src="js/simple-options.js?v=1"></script>
+  <script src="js/mobile-reader.js?v=old-quran-fit-3"></script>
+  <script src="app.js?v=mobile-panel-19"></script>
 </body>
 
 </html>

@@ -63,6 +63,13 @@
   // Fit whole source lines after the actual font has loaded, including on resize.
   // Never trim text, insert invented breaks or transform the reading surface.
   function fitLines(container) {
+    if (container.closest?.('[data-fit-page="true"]')) {
+      // A full-page fit scales every printed line together, preserving 15 rows.
+      for (const line of container.querySelectorAll('.mushaf-line')) {
+        if (line.style.fontSize) line.style.fontSize = '';
+      }
+      return;
+    }
     for (const line of container.querySelectorAll('.mushaf-line')) {
       if (!line.clientWidth) continue;
       line.style.fontSize = '';
