@@ -44,7 +44,12 @@ test('full chapters use one shared reader, vowelled data, and no pagination down
  assert.equal(h.saved.get('currentPage'),'2');
  assert(h.verses().at(-1).scrolled);
  assert(h.all().some(n=>n.classList.contains('font-raqq')));
- assert(h.all().some(n=>n.className==='verse-link'&&n.textContent==='۝٤'));
+ const marker=h.all().find(n=>n.classList.contains('chapter-verse-marker')&&n.getAttribute('aria-label')==='Verse 2:4');
+ assert(marker);
+ assert.equal(marker.children[0].textContent,'۝');
+ assert.equal(marker.children[0].getAttribute('aria-hidden'),'true');
+ assert.equal(marker.children[1].textContent,'٤');
+ assert(marker.href.includes('sura/2/verse/4'));
 });
 test('chapter switching and verse jumps keep complete chapters and local verse numbering',async()=>{
  const h=await setup();h.nodes.get('sura-select').value='1';h.nodes.get('sura-select').emit('change');
