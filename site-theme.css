@@ -378,6 +378,12 @@ body.site-dictionary .reader-toolbar .reading-controls { flex-wrap: wrap; }
 
 
 /* Page navigation shares the chapter heading instead of consuming a separate row. */
+body #quran-container .sura-name,
+body #quran-container .mushaf-surah {
+  text-align: center;
+  /* Reader justification must not pull a single-line chapter title to the right. */
+  text-align-last: center;
+}
 body #quran-container .reader-page-heading {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
