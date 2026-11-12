@@ -1,0 +1,12 @@
+/* Qahiri is available only on the Old Quran reader. */
+@font-face {
+  font-family: Qahiri;
+  src: url('fonts/Qahiri-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body:has(#font-select option[value="Qahiri"]:checked) #quran-container :is(.arabic, .sura-name, .verse-number-inline) {
+  font-style: italic;
+}

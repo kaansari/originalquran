@@ -196,9 +196,11 @@ test('Old Quran preserves the previous home data and reader variants have the re
  assert.match(western,/<meta name="page-info" content="Western Reading">/);
 });
 
-test('Old Quran uses a supported default font',async()=>{
+test('Old Quran defaults to Qahiri and applies it to text and headings',async()=>{
  const h=await setup('1','simple.html');
- assert.equal(h.nodes.get('font-select').value,'Amiri Quran');
+ assert.equal(h.nodes.get('font-select').value,'Qahiri');
+ assert(h.content().filter(n=>n.classList.contains('arabic')).every(n=>n.style.fontFamily==='Qahiri, serif'));
+ assert(h.content().filter(n=>n.classList.contains('sura-name')).every(n=>n.style.fontFamily==='Qahiri, serif'));
  assert.deepEqual(h.verses(),['verse-001001','verse-001002']);
 });
 
@@ -294,7 +296,7 @@ test('legacy arrow-navigation bookmarks migrate by verse instead of reusing old 
 });
 
 test('retired Qahiri preferences migrate to supported defaults',async()=>{
- for(const page of ['writing.html','simple.html']){
+ for(const page of ['writing.html']){
   const h=await setup('1',page,'Qahiri');
   assert.equal(h.nodes.get('font-select').value,'Amiri Quran');
   assert.equal(h.storage.get(`selectedFont_${page}`),'Amiri Quran');
@@ -305,4 +307,11 @@ test('Eastern Reading exposes the same supported fonts as Full Chapters',()=>{
  assert.deepEqual(values('index.html'),values('quran.html'));
  assert.deepEqual(values('page.html'),values('quran.html'));
  assert(!values('quran.html').includes('Qahiri'));
+});
+
+test('Old Quran restores Qahiri and keeps other explicitly saved font choices',async()=>{
+ for(const font of ['Qahiri','Raqq','Amiri Quran']){
+  const h=await setup('1','simple.html',font);
+  assert.equal(h.nodes.get('font-select').value,font);
+ }
 });

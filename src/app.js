@@ -555,7 +555,7 @@
   const pageDefaultFonts = {
     "home": "Amiri Quran",
     "index.html": "Amiri Quran",
-    "simple.html": "Amiri Quran",
+    "simple.html": "Qahiri",
     "page.html": "Amiri Quran",
     "warsh.html": "Amiri Quran",
     "quran.html": "Amiri Quran",
@@ -565,6 +565,7 @@
   function updateFontClass(selectedFont) {
     const arabicElements = document.querySelectorAll(".arabic");
     const additionalFamilies = {
+      'Qahiri': 'Qahiri, serif',
       'Uthmani Hafs': 'hafs, serif',
       'System Arabic': '"Geeza Pro", "Traditional Arabic", Tahoma, Arial, sans-serif',
       'Amiri': 'Amiri, serif',
@@ -608,7 +609,7 @@
     const savedFont = localStorage.getItem(`selectedFont_${page}`)
       || (isChapterView ? localStorage.getItem(`selectedFont_${window.location.pathname}`) : null);
     const fontSelectElement = document.getElementById("font-select");
-    const validSavedFont = savedFont && savedFont !== "Qahiri" && (!fontSelectElement?.options
+    const validSavedFont = savedFont && (savedFont !== "Qahiri" || page === 'simple.html') && (!fontSelectElement?.options
       || Array.from(fontSelectElement.options).some(option => option.value === savedFont));
     let fontToApply;
 
