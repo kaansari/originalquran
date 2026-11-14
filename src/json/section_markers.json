@@ -1,0 +1,1454 @@
+{
+  "convention": "Indian / Qudratullah",
+  "interpretation": "Quarter/half/three-quarter/end meanings follow the repeated four-phase sequence of the embedded Indian signs.",
+  "counts": {
+    "quarter": 30,
+    "half": 30,
+    "three_quarters": 29,
+    "juz_end": 30
+  },
+  "markers": [
+    {
+      "juz": 1,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "2:46",
+      "afterWordId": 688,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 7,
+      "sourceLine": 12
+    },
+    {
+      "juz": 1,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "2:78",
+      "afterWordId": 1258,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 12,
+      "sourceLine": 3
+    },
+    {
+      "juz": 1,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "2:109",
+      "afterWordId": 1926,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 17,
+      "sourceLine": 9
+    },
+    {
+      "juz": 1,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "2:141",
+      "afterWordId": 2522,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 21,
+      "sourceLine": 15
+    },
+    {
+      "juz": 2,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "2:176",
+      "afterWordId": 3174,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 26,
+      "sourceLine": 9
+    },
+    {
+      "juz": 2,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "2:201",
+      "afterWordId": 3804,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 31,
+      "sourceLine": 11
+    },
+    {
+      "juz": 2,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "2:231",
+      "afterWordId": 4517,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 37,
+      "sourceLine": 11
+    },
+    {
+      "juz": 2,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "2:252",
+      "afterWordId": 5100,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 41,
+      "sourceLine": 15
+    },
+    {
+      "juz": 3,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "2:273",
+      "afterWordId": 5730,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 46,
+      "sourceLine": 13
+    },
+    {
+      "juz": 3,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "3:18",
+      "afterWordId": 6431,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 52,
+      "sourceLine": 5
+    },
+    {
+      "juz": 3,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "3:54",
+      "afterWordId": 7075,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 57,
+      "sourceLine": 1
+    },
+    {
+      "juz": 3,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "3:91",
+      "afterWordId": 7707,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 61,
+      "sourceLine": 15
+    },
+    {
+      "juz": 4,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "3:125",
+      "afterWordId": 8275,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 66,
+      "sourceLine": 6
+    },
+    {
+      "juz": 4,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "3:164",
+      "afterWordId": 8967,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 71,
+      "sourceLine": 13
+    },
+    {
+      "juz": 4,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "3:198",
+      "afterWordId": 9586,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 76,
+      "sourceLine": 11
+    },
+    {
+      "juz": 4,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "4:23",
+      "afterWordId": 10228,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 81,
+      "sourceLine": 15
+    },
+    {
+      "juz": 5,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "4:56",
+      "afterWordId": 10911,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 87,
+      "sourceLine": 4
+    },
+    {
+      "juz": 5,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "4:86",
+      "afterWordId": 11521,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 91,
+      "sourceLine": 14
+    },
+    {
+      "juz": 5,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "4:113",
+      "afterWordId": 12165,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 96,
+      "sourceLine": 15
+    },
+    {
+      "juz": 5,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "4:147",
+      "afterWordId": 12807,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 101,
+      "sourceLine": 15
+    },
+    {
+      "juz": 6,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "5:2",
+      "afterWordId": 13448,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 106,
+      "sourceLine": 15
+    },
+    {
+      "juz": 6,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "5:27",
+      "afterWordId": 14113,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 112,
+      "sourceLine": 8
+    },
+    {
+      "juz": 6,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "5:53",
+      "afterWordId": 14739,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 117,
+      "sourceLine": 8
+    },
+    {
+      "juz": 6,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "5:82",
+      "afterWordId": 15336,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 121,
+      "sourceLine": 15
+    },
+    {
+      "juz": 7,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "5:113",
+      "afterWordId": 16019,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 126,
+      "sourceLine": 15
+    },
+    {
+      "juz": 7,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "6:35",
+      "afterWordId": 16736,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 132,
+      "sourceLine": 3
+    },
+    {
+      "juz": 7,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "6:73",
+      "afterWordId": 17407,
+      "placement": "after_word",
+      "codePoint": "U+F64F",
+      "sourcePage": 136,
+      "sourceLine": 14
+    },
+    {
+      "juz": 7,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "6:110",
+      "afterWordId": 18084,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 141,
+      "sourceLine": 15
+    },
+    {
+      "juz": 8,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "6:140",
+      "afterWordId": 18642,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 146,
+      "sourceLine": 9
+    },
+    {
+      "juz": 8,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "6:165",
+      "afterWordId": 19227,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 150,
+      "sourceLine": 15
+    },
+    {
+      "juz": 8,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "7:43",
+      "afterWordId": 19902,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 155,
+      "sourceLine": 15
+    },
+    {
+      "juz": 8,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "7:87",
+      "afterWordId": 20650,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 161,
+      "sourceLine": 15
+    },
+    {
+      "juz": 9,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "7:137",
+      "afterWordId": 21284,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 166,
+      "sourceLine": 15
+    },
+    {
+      "juz": 9,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "7:163",
+      "afterWordId": 21885,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 171,
+      "sourceLine": 15
+    },
+    {
+      "juz": 9,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "7:206",
+      "afterWordId": 22547,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 176,
+      "sourceLine": 15
+    },
+    {
+      "juz": 9,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "8:40",
+      "afterWordId": 23136,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 181,
+      "sourceLine": 15
+    },
+    {
+      "juz": 10,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "8:75",
+      "afterWordId": 23780,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 186,
+      "sourceLine": 15
+    },
+    {
+      "juz": 10,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "9:33",
+      "afterWordId": 24395,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 192,
+      "sourceLine": 4
+    },
+    {
+      "juz": 10,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "9:62",
+      "afterWordId": 24957,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 197,
+      "sourceLine": 2
+    },
+    {
+      "juz": 10,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "9:93",
+      "afterWordId": 25544,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 201,
+      "sourceLine": 15
+    },
+    {
+      "juz": 11,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "9:123",
+      "afterWordId": 26182,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 207,
+      "sourceLine": 3
+    },
+    {
+      "juz": 11,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "10:30",
+      "afterWordId": 26887,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 212,
+      "sourceLine": 10
+    },
+    {
+      "juz": 11,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "10:70",
+      "afterWordId": 27510,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 216,
+      "sourceLine": 15
+    },
+    {
+      "juz": 11,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "11:5",
+      "afterWordId": 28182,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 221,
+      "sourceLine": 15
+    },
+    {
+      "juz": 12,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "11:44",
+      "afterWordId": 28850,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 226,
+      "sourceLine": 14
+    },
+    {
+      "juz": 12,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "11:83",
+      "afterWordId": 29457,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 231,
+      "sourceLine": 3
+    },
+    {
+      "juz": 12,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "12:17",
+      "afterWordId": 30242,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 237,
+      "sourceLine": 5
+    },
+    {
+      "juz": 12,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "12:52",
+      "afterWordId": 30875,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 241,
+      "sourceLine": 15
+    },
+    {
+      "juz": 13,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "12:95",
+      "afterWordId": 31537,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 246,
+      "sourceLine": 15
+    },
+    {
+      "juz": 13,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "13:18",
+      "afterWordId": 32206,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 252,
+      "sourceLine": 3
+    },
+    {
+      "juz": 13,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "14:9",
+      "afterWordId": 32831,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 256,
+      "sourceLine": 11
+    },
+    {
+      "juz": 13,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "15:1",
+      "afterWordId": 33494,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 261,
+      "sourceLine": 15
+    },
+    {
+      "juz": 14,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "15:93",
+      "afterWordId": 34108,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 267,
+      "sourceLine": 2
+    },
+    {
+      "juz": 14,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "16:44",
+      "afterWordId": 34725,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 272,
+      "sourceLine": 3
+    },
+    {
+      "juz": 14,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "16:86",
+      "afterWordId": 35363,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 276,
+      "sourceLine": 14
+    },
+    {
+      "juz": 14,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "16:128",
+      "afterWordId": 35987,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 281,
+      "sourceLine": 15
+    },
+    {
+      "juz": 15,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "17:48",
+      "afterWordId": 36640,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 286,
+      "sourceLine": 11
+    },
+    {
+      "juz": 15,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "17:97",
+      "afterWordId": 37344,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 291,
+      "sourceLine": 10
+    },
+    {
+      "juz": 15,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "18:28",
+      "afterWordId": 38003,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 296,
+      "sourceLine": 12
+    },
+    {
+      "juz": 15,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "18:74",
+      "afterWordId": 38671,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 301,
+      "sourceLine": 15
+    },
+    {
+      "juz": 16,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "19:20",
+      "afterWordId": 39309,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 306,
+      "sourceLine": 9
+    },
+    {
+      "juz": 16,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "19:98",
+      "afterWordId": 40083,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 312,
+      "sourceLine": 4
+    },
+    {
+      "juz": 16,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "20:73",
+      "afterWordId": 40698,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 316,
+      "sourceLine": 12
+    },
+    {
+      "juz": 16,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "20:135",
+      "afterWordId": 41418,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 321,
+      "sourceLine": 15
+    },
+    {
+      "juz": 17,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "21:50",
+      "afterWordId": 41967,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 326,
+      "sourceLine": 8
+    },
+    {
+      "juz": 17,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "21:112",
+      "afterWordId": 42587,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 331,
+      "sourceLine": 12
+    },
+    {
+      "juz": 17,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "22:38",
+      "afterWordId": 43241,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 337,
+      "sourceLine": 2
+    },
+    {
+      "juz": 17,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "22:78",
+      "afterWordId": 43861,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 341,
+      "sourceLine": 15
+    },
+    {
+      "juz": 18,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "23:73",
+      "afterWordId": 44517,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 346,
+      "sourceLine": 14
+    },
+    {
+      "juz": 18,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "24:20",
+      "afterWordId": 45193,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 352,
+      "sourceLine": 3
+    },
+    {
+      "juz": 18,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "24:50",
+      "afterWordId": 45847,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 356,
+      "sourceLine": 10
+    },
+    {
+      "juz": 18,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "25:20",
+      "afterWordId": 46502,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 361,
+      "sourceLine": 15
+    },
+    {
+      "juz": 19,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "25:77",
+      "afterWordId": 47120,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 366,
+      "sourceLine": 10
+    },
+    {
+      "juz": 19,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "26:117",
+      "afterWordId": 47822,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 371,
+      "sourceLine": 15
+    },
+    {
+      "juz": 19,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "27:6",
+      "afterWordId": 48483,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 377,
+      "sourceLine": 1
+    },
+    {
+      "juz": 19,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "27:59",
+      "afterWordId": 49153,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 381,
+      "sourceLine": 15
+    },
+    {
+      "juz": 20,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "28:13",
+      "afterWordId": 49759,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 386,
+      "sourceLine": 15
+    },
+    {
+      "juz": 20,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "28:52",
+      "afterWordId": 50430,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 392,
+      "sourceLine": 2
+    },
+    {
+      "juz": 20,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "28:88",
+      "afterWordId": 51019,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 396,
+      "sourceLine": 8
+    },
+    {
+      "juz": 20,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "29:44",
+      "afterWordId": 51646,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 401,
+      "sourceLine": 15
+    },
+    {
+      "juz": 21,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "30:27",
+      "afterWordId": 52310,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 407,
+      "sourceLine": 5
+    },
+    {
+      "juz": 21,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "31:14",
+      "afterWordId": 52977,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 412,
+      "sourceLine": 7
+    },
+    {
+      "juz": 21,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "32:27",
+      "afterWordId": 53707,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 417,
+      "sourceLine": 12
+    },
+    {
+      "juz": 21,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "33:30",
+      "afterWordId": 54249,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 421,
+      "sourceLine": 15
+    },
+    {
+      "juz": 22,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "33:62",
+      "afterWordId": 54889,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 426,
+      "sourceLine": 15
+    },
+    {
+      "juz": 22,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "34:30",
+      "afterWordId": 55516,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 431,
+      "sourceLine": 10
+    },
+    {
+      "juz": 22,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "35:14",
+      "afterWordId": 56189,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 436,
+      "sourceLine": 9
+    },
+    {
+      "juz": 22,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "36:21",
+      "afterWordId": 56841,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 441,
+      "sourceLine": 15
+    },
+    {
+      "juz": 23,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "37:23",
+      "afterWordId": 57522,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 446,
+      "sourceLine": 12
+    },
+    {
+      "juz": 23,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "37:144",
+      "afterWordId": 58097,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 451,
+      "sourceLine": 6
+    },
+    {
+      "juz": 23,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "38:53",
+      "afterWordId": 58759,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 456,
+      "sourceLine": 9
+    },
+    {
+      "juz": 23,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "39:31",
+      "afterWordId": 59515,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 461,
+      "sourceLine": 15
+    },
+    {
+      "juz": 24,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "39:75",
+      "afterWordId": 60166,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 467,
+      "sourceLine": 2
+    },
+    {
+      "juz": 24,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "40:41",
+      "afterWordId": 60784,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 472,
+      "sourceLine": 1
+    },
+    {
+      "juz": 24,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "41:5",
+      "afterWordId": 61421,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 477,
+      "sourceLine": 6
+    },
+    {
+      "juz": 24,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "41:46",
+      "afterWordId": 62035,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 481,
+      "sourceLine": 15
+    },
+    {
+      "juz": 25,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "42:29",
+      "afterWordId": 62687,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 486,
+      "sourceLine": 13
+    },
+    {
+      "juz": 25,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "43:25",
+      "afterWordId": 63277,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 491,
+      "sourceLine": 3
+    },
+    {
+      "juz": 25,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "44:22",
+      "afterWordId": 64006,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 496,
+      "sourceLine": 13
+    },
+    {
+      "juz": 25,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "45:37",
+      "afterWordId": 64703,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 501,
+      "sourceLine": 15
+    },
+    {
+      "juz": 26,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "46:35",
+      "afterWordId": 65346,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 506,
+      "sourceLine": 12
+    },
+    {
+      "juz": 26,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "48:17",
+      "afterWordId": 66180,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 513,
+      "sourceLine": 6
+    },
+    {
+      "juz": 26,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "49:10",
+      "afterWordId": 66612,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 516,
+      "sourceLine": 12
+    },
+    {
+      "juz": 26,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "51:30",
+      "afterWordId": 67315,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 521,
+      "sourceLine": 15
+    },
+    {
+      "juz": 27,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "53:30",
+      "afterWordId": 68027,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 527,
+      "sourceLine": 7
+    },
+    {
+      "juz": 27,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "55:25",
+      "afterWordId": 68634,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 532,
+      "sourceLine": 7
+    },
+    {
+      "juz": 27,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "57:29",
+      "afterWordId": 69843,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 541,
+      "sourceLine": 15
+    },
+    {
+      "juz": 28,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "59:10",
+      "afterWordId": 70539,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 547,
+      "sourceLine": 3
+    },
+    {
+      "juz": 28,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "60:13",
+      "afterWordId": 71108,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 551,
+      "sourceLine": 9
+    },
+    {
+      "juz": 28,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "64:10",
+      "afterWordId": 71830,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 557,
+      "sourceLine": 5
+    },
+    {
+      "juz": 28,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "66:12",
+      "afterWordId": 72461,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 561,
+      "sourceLine": 15
+    },
+    {
+      "juz": 29,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "68:52",
+      "afterWordId": 73094,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 567,
+      "sourceLine": 4
+    },
+    {
+      "juz": 29,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "71:28",
+      "afterWordId": 73795,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 573,
+      "sourceLine": 12
+    },
+    {
+      "juz": 29,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "74:56",
+      "afterWordId": 74534,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 580,
+      "sourceLine": 5
+    },
+    {
+      "juz": 29,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "77:50",
+      "afterWordId": 75122,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 585,
+      "sourceLine": 15
+    },
+    {
+      "juz": 30,
+      "kind": "quarter",
+      "symbol": "¼",
+      "verse": "83:19",
+      "afterWordId": 75884,
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 593,
+      "sourceLine": 7
+    },
+    {
+      "juz": 30,
+      "kind": "half",
+      "symbol": "½",
+      "verse": "88:26",
+      "afterWordId": 76401,
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 598,
+      "sourceLine": 9
+    },
+    {
+      "juz": 30,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "verse": "97:5",
+      "afterWordId": 76948,
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 604,
+      "sourceLine": 6
+    },
+    {
+      "juz": 30,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "verse": "114:6",
+      "afterWordId": 77430,
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 610,
+      "sourceLine": 10
+    }
+  ],
+  "juzStarts": [
+    {
+      "juz": 1,
+      "beforeWordId": 1
+    },
+    {
+      "juz": 2,
+      "beforeWordId": 2523
+    },
+    {
+      "juz": 3,
+      "beforeWordId": 5101
+    },
+    {
+      "juz": 4,
+      "beforeWordId": 7708
+    },
+    {
+      "juz": 5,
+      "beforeWordId": 10229
+    },
+    {
+      "juz": 6,
+      "beforeWordId": 12808
+    },
+    {
+      "juz": 7,
+      "beforeWordId": 15337
+    },
+    {
+      "juz": 8,
+      "beforeWordId": 18085
+    },
+    {
+      "juz": 9,
+      "beforeWordId": 20651
+    },
+    {
+      "juz": 10,
+      "beforeWordId": 23137
+    },
+    {
+      "juz": 11,
+      "beforeWordId": 25545
+    },
+    {
+      "juz": 12,
+      "beforeWordId": 28183
+    },
+    {
+      "juz": 13,
+      "beforeWordId": 30876
+    },
+    {
+      "juz": 14,
+      "beforeWordId": 33495
+    },
+    {
+      "juz": 15,
+      "beforeWordId": 35988
+    },
+    {
+      "juz": 16,
+      "beforeWordId": 38672
+    },
+    {
+      "juz": 17,
+      "beforeWordId": 41419
+    },
+    {
+      "juz": 18,
+      "beforeWordId": 43862
+    },
+    {
+      "juz": 19,
+      "beforeWordId": 46503
+    },
+    {
+      "juz": 20,
+      "beforeWordId": 49154
+    },
+    {
+      "juz": 21,
+      "beforeWordId": 51647
+    },
+    {
+      "juz": 22,
+      "beforeWordId": 54250
+    },
+    {
+      "juz": 23,
+      "beforeWordId": 56842
+    },
+    {
+      "juz": 24,
+      "beforeWordId": 59516
+    },
+    {
+      "juz": 25,
+      "beforeWordId": 62036
+    },
+    {
+      "juz": 26,
+      "beforeWordId": 64704
+    },
+    {
+      "juz": 27,
+      "beforeWordId": 67316
+    },
+    {
+      "juz": 28,
+      "beforeWordId": 69844
+    },
+    {
+      "juz": 29,
+      "beforeWordId": 72462
+    },
+    {
+      "juz": 30,
+      "beforeWordId": 75123
+    }
+  ],
+  "issues": [
+    {
+      "juz": 27,
+      "kind": "three_quarters",
+      "message": "No explicit sign found in the local Indian source; not inferred or inserted."
+    }
+  ],
+  "source": {
+    "file": "json/indian/lines.json",
+    "sha256": "3eca3fc69f5a26027735ca6982fb21aa849a179fde31a94031498105a57660e3"
+  }
+}

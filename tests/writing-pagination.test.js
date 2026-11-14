@@ -34,7 +34,7 @@ async function setup(savedPage='1',filename='writing.html',savedFont=null,pathna
   const nodes=new Map([...source.matchAll(/\bid="([^"]+)"/g)].map(m=>[m[1],new Element()]));
   const heading=nodes.get('reader-page-heading');
   if(dockedHeading)heading.dataset.mobileDocked='true';
-  if(heading){const title=new Element('span');title.className='sura-name';title.appendChild(nodes.get('page-sura-title'));heading.appendChild(nodes.get('prev-page'));heading.appendChild(title);heading.appendChild(nodes.get('next-page'));}
+  if(heading){const title=new Element('span');title.className='sura-name';title.appendChild(nodes.get('page-sura-title'));const group=new Element('span');group.className='reader-title';group.appendChild(title);if(nodes.has('page-number')){nodes.get('page-number').className='page-number';group.appendChild(nodes.get('page-number'));}heading.appendChild(nodes.get('prev-page'));heading.appendChild(group);heading.appendChild(nodes.get('next-page'));}
   const body=new Element('body'),events={},errors=[];
   const storage=new Map([['currentPage',savedPage],['currentPageMadinah',savedPage],['writingPageMadinah',savedPage],['translate','en']]);
   const pageKey=source.match(/name="quran-page-storage-key" content="([^"]+)"/)?.[1];
@@ -94,6 +94,7 @@ test('page rendering keeps a mobile heading docked while updating its title and 
  h.nodes.get('next-page').emit('click');
  assert(!h.content().includes(heading));
  assert.equal(h.nodes.get('page-number').textContent,'Page 2 of 2');
+ assert.equal(heading.querySelector('.page-number'),h.nodes.get('page-number'));
  assert.deepEqual(h.verses(),['verse-001003','verse-001004']);
  h.nodes.get('sura-select').value='5';h.nodes.get('sura-select').emit('change');
  h.nodes.get('reader-view').value='verses';h.nodes.get('reader-view').emit('change');

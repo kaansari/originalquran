@@ -65,10 +65,12 @@ body.mobile-reader-active .mobile-reader-dock .reader-page-heading {
   gap: 8px;
 }
 body.mobile-reader-active .mobile-reader-dock .sura-name {
-  font-size: clamp(16px, 2.5vh, 22px);
-  line-height: 1.2;
+  font-size: clamp(14px, 1.9vh, 18px);
+  line-height: 1.1;
   text-align-last: center;
 }
+body.mobile-reader-active .mobile-reader-dock .reader-title { gap: 0; }
+body.mobile-reader-active .mobile-reader-dock .page-number { font-size: 10px; line-height: 1.1; }
 body.mobile-reader-active .mobile-reader-dock .nav-button {
   min-height: 26px;
   padding: 3px 10px;
@@ -92,6 +94,7 @@ body.mobile-reader-active .mobile-reader-dock .reader-chapter select {
   max-width: none;
   min-height: 26px;
 }
+body.mobile-reader-active .mobile-reader-dock .reader-verse select { min-height: 26px; }
 body.mobile-reader-active .mobile-reader-dock .reader-filters > summary { padding: 4px 8px; }
 body.mobile-reader-active .mobile-reader-dock .reader-filter-options {
   top: auto;

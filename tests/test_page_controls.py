@@ -66,10 +66,14 @@ class PageControlsTests(unittest.TestCase):
     def test_chapter_and_page_stay_outside_collapsed_filters(self):
         for name in ['index.html', 'page.html', 'warsh.html', 'simple.html', 'indian.html', 'writing.html', 'quran.html']:
             elements = Markup((ROOT / 'src' / name).read_text()).elements
-            for identifier in ['sura-select'] + ([] if name == 'quran.html' else ['page-number']):
+            for identifier in ['sura-select', 'verse-select'] + ([] if name == 'quran.html' else ['page-number']):
                 nodes = [parents for _, attrs, parents in elements if attrs.get('id') == identifier]
                 self.assertEqual(len(nodes), 1, name)
                 self.assertFalse(any(tag == 'details' for tag, _ in nodes[0]), name)
+                if identifier == 'page-number':
+                    self.assertTrue(any(attrs.get('id') == 'reader-page-heading' for _, attrs in nodes[0]), name)
+            verse = [attrs for _, attrs, _ in elements if attrs.get('id') == 'verse-select'][0]
+            self.assertEqual(verse.get('aria-label'), 'Verse', name)
             filters = [attrs for tag, attrs, _ in elements if tag == 'details' and 'reader-filters' in attrs.get('class', '').split()]
             self.assertEqual(len(filters), 1, name)
             self.assertNotIn('open', filters[0])

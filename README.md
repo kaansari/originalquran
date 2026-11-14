@@ -125,6 +125,28 @@ Sources: [QUL layout 12](https://qul.tarteel.ai/resources/mushaf-layout/12),
 
 Browser visual comparison is still needed: this environment cannot launch Chrome.
 
+## Section markers
+
+Extracted reference data from the existing Indian Quran is retained for review
+and future use. It is not loaded or rendered by the reader pages. The shared
+word JSON files are not modified. These annotations use the Indian/Qudratullah division convention
+and are anchored to shared word IDs, not printed page numbers.
+
+```sh
+python3 scripts/extract_section_markers.py
+```
+
+This creates `src/json/section_markers.json` and the readable
+[position report](docs/section-markers.md). The local source contains 30 Juz
+endings, 30 quarter markers, 30 half markers and 29 three-quarter markers.
+The absent three-quarter marker in Juz 27 is reported rather than guessed.
+The marker at 6:73 is inside a verse and retains its exact word position.
+
+Only the four recognized section-sign categories are extracted. Other private
+glyphs, pause signs, verse numbers and undecoded symbols are left alone. Indian
+Quran keeps its original embedded signs. The extraction script, metadata and
+position report remain available independently of the HTML and JavaScript readers.
+
 ## Credits
 
 The Indian Quran uses the Qudratullah Company's 15-line edition from Lahore,
