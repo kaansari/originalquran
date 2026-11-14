@@ -136,7 +136,7 @@
     });
     // Preserve existing selectors while giving every page the same accessible names.
     for (const [id, label] of Object.entries({
-      'sura-select':'Surah', 'verse-select':document.getElementById('verse-end-select') ? 'From verse' : 'Verse',
+      'sura-select':'Surah', 'verse-select':'Verse',
       'verse-end-select':'To verse', 'reader-view':'Reading view', 'font-select':'Reading font',
       'prev-page':'Previous page', 'next-page':'Next page',
       'translation-toggle':'Show translation'

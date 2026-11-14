@@ -25,12 +25,12 @@
   <meta name="quran-required-font" content="IndoPak Nastaleeq">
   <title>Indian Quran · Original Quran</title>
   <link rel="stylesheet" href="styles_page.css?v=font-choices-2">
-  <script src="site.js?v=theme-icon-12"></script>
+  <script src="site.js?v=priority-controls-13"></script>
   <script src="common.js?v=shared-interactions-2"></script>
-  <link rel="stylesheet" href="site-theme.css?v=mobile-panel-11">
+  <link rel="stylesheet" href="site-theme.css?v=priority-controls-12">
   <link rel="stylesheet" href="indian.css?v=mobile-page-fit-5">
   <script src="js/reader-layout.js?v=mobile-page-fit-5"></script>
-  <link rel="stylesheet" href="mobile-reader.css?v=2">
+  <link rel="stylesheet" href="mobile-reader.css?v=priority-controls-4">
   <script src="retire-offline.js" defer></script>
 </head>
 
@@ -40,7 +40,7 @@
   </header>
 
   <section class="site-page-controls" aria-label="Reading options">
-    <span class="page-selectors"><label class="site-control reader-chapter" for="sura-select"><span>Chapter</span><select id="sura-select"></select></label><span id="page-number" class="page-number" role="status" aria-live="polite"></span></span>
+    <span class="page-selectors"><label class="site-control reader-chapter" for="sura-select"><span>Chapter</span><select id="sura-select"></select></label><label class="site-control reader-verse" for="verse-select"><span>Verse</span><select id="verse-select" aria-label="Verse"></select></label></span>
     <details class="reader-filters">
       <summary>More filters</summary>
       <div class="reader-filter-options">
@@ -60,9 +60,7 @@
           <option value="verses">Selected verses</option>
         </select>
       </label>
-      <label class="site-control" for="verse-select">From verse
-        <select id="verse-select" aria-label="From verse"></select>
-      </label>
+
       <label class="site-control" for="verse-end-select">To verse
         <select id="verse-end-select" aria-label="To verse" disabled></select>
       </label>
@@ -78,7 +76,7 @@
       <button id="prev-page" class="nav-button" type="button" aria-label="Previous page" disabled>
         <i class="fas fa-chevron-right" aria-hidden="true"></i>
       </button>
-      <span class="sura-name"><strong id="page-sura-title"></strong></span>
+      <span class="reader-title"><span class="sura-name"><strong id="page-sura-title"></strong></span><span id="page-number" class="page-number" role="status" aria-live="polite"></span></span>
       <button id="next-page" class="nav-button" type="button" aria-label="Next page" disabled>
         <i class="fas fa-chevron-left" aria-hidden="true"></i>
       </button>

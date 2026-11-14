@@ -403,6 +403,21 @@ body .reader-page-heading .sura-name {
   margin: 0;
   text-align: center;
 }
+body .reader-page-heading .reader-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-width: 0;
+  text-align: center;
+  text-align-last: center;
+}
+body .reader-page-heading .page-number {
+  font: 11px/1.2 var(--site-font);
+  color: var(--muted);
+  direction: ltr;
+}
 body .reader-page-heading .nav-button {
   flex: none;
   width: auto;
@@ -453,6 +468,17 @@ body .site-page-controls .reader-chapter select {
   background: var(--paper);
 }
 .reader-filters { margin-inline-start: auto; }
+body .site-page-controls .reader-verse {
+  flex-wrap: nowrap;
+  gap: 4px;
+}
+body .site-page-controls .reader-verse::before { content: none; }
+body .site-page-controls .reader-verse select {
+  width: 5em;
+  min-height: 36px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
 .reader-filters > summary {
   padding: 8px 10px;
   border: 1px solid var(--line);
@@ -505,7 +531,7 @@ body .reader-filter-options select {
 
 /* Physical positions are deliberate: right decreases, left increases the page. */
 body .reader-page-heading #prev-page { grid-column: 3; grid-row: 1; }
-body .reader-page-heading .sura-name { grid-column: 2; grid-row: 1; }
+body .reader-page-heading .reader-title { grid-column: 2; grid-row: 1; }
 body .reader-page-heading #next-page { grid-column: 1; grid-row: 1; }
 
 /* Reserve an icon slot on the first navigation line, even when links wrap. */
