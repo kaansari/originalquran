@@ -142,6 +142,25 @@ endings, 30 quarter markers, 30 half markers and 29 three-quarter markers.
 The absent three-quarter marker in Juz 27 is reported rather than guessed.
 The marker at 6:73 is inside a verse and retains its exact word position.
 
+For later merges, [quran_sections.json](src/json/quran_sections.json) provides:
+
+- `chapters`: 114 records keyed like `sura.json`, with the original chapter fields,
+  shared `start_word` / `end_word` indexes and the Juz numbers covering that chapter.
+- `juz`: 30 inclusive ranges using pagination-style `from` / `to` references plus
+  shared word boundaries and local word positions.
+- `markers`: 119 records with numeric `sura`, `verse`, `verseId`, `word`, `wordId`,
+  `juz` and marker kind. `placement` retains the distinction between after a word
+  inside a verse and after the verse ending.
+- `issues`: the missing source marker, carried forward without guessing a boundary.
+
+Regenerate this offline reference with:
+
+```sh
+python3 scripts/build_quran_sections.py
+```
+
+The file is not loaded by the site. No word, surah or pagination data is overwritten.
+
 Only the four recognized section-sign categories are extracted. Other private
 glyphs, pause signs, verse numbers and undecoded symbols are left alone. Indian
 Quran keeps its original embedded signs. The extraction script, metadata and

@@ -66,7 +66,9 @@ class PageControlsTests(unittest.TestCase):
     def test_chapter_and_page_stay_outside_collapsed_filters(self):
         for name in ['index.html', 'page.html', 'warsh.html', 'simple.html', 'indian.html', 'writing.html', 'quran.html']:
             elements = Markup((ROOT / 'src' / name).read_text()).elements
-            for identifier in ['sura-select', 'verse-select'] + ([] if name == 'quran.html' else ['page-number']):
+            if name == 'writing.html':
+                self.assertFalse(any(attrs.get('id') == 'page-number' for _, attrs, _ in elements))
+            for identifier in ['sura-select', 'verse-select'] + ([] if name in ['quran.html', 'writing.html'] else ['page-number']):
                 nodes = [parents for _, attrs, parents in elements if attrs.get('id') == identifier]
                 self.assertEqual(len(nodes), 1, name)
                 self.assertFalse(any(tag == 'details' for tag, _ in nodes[0]), name)

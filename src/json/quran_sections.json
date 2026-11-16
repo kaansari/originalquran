@@ -1,0 +1,3560 @@
+{
+  "schemaVersion": 1,
+  "convention": "Indian / Qudratullah",
+  "interpretation": "Quarter/half/three-quarter/end meanings follow the repeated four-phase sequence of the embedded Indian signs.",
+  "indexing": {
+    "wordId": "One-based shared Quran word index; markers occur after this word.",
+    "verseId": "One-based global verse index used by combined_quran.json.",
+    "word": "One-based word position within the verse.",
+    "chapters": "String keys match sura.json; start/end are global verse IDs.",
+    "juz": "String keys 1–30; from/to match pagination-style sura:verse references."
+  },
+  "chapters": {
+    "1": {
+      "name": "الفاتحة",
+      "nAyah": 7,
+      "revelationOrder": 5,
+      "type": "meccan",
+      "start": 1,
+      "end": 7,
+      "start_word": 1,
+      "end_word": 29,
+      "juz": [
+        1
+      ]
+    },
+    "2": {
+      "name": "البقرة",
+      "nAyah": 286,
+      "revelationOrder": 87,
+      "type": "medinan",
+      "start": 8,
+      "end": 293,
+      "start_word": 30,
+      "end_word": 6145,
+      "juz": [
+        1,
+        2,
+        3
+      ]
+    },
+    "3": {
+      "name": "آل عمران",
+      "nAyah": 200,
+      "revelationOrder": 89,
+      "type": "medinan",
+      "start": 294,
+      "end": 493,
+      "start_word": 6146,
+      "end_word": 9626,
+      "juz": [
+        3,
+        4
+      ]
+    },
+    "4": {
+      "name": "النساء",
+      "nAyah": 176,
+      "revelationOrder": 92,
+      "type": "medinan",
+      "start": 494,
+      "end": 669,
+      "start_word": 9627,
+      "end_word": 13373,
+      "juz": [
+        4,
+        5,
+        6
+      ]
+    },
+    "5": {
+      "name": "المائدة",
+      "nAyah": 120,
+      "revelationOrder": 112,
+      "type": "medinan",
+      "start": 670,
+      "end": 789,
+      "start_word": 13374,
+      "end_word": 16177,
+      "juz": [
+        6,
+        7
+      ]
+    },
+    "6": {
+      "name": "الأنعام",
+      "nAyah": 165,
+      "revelationOrder": 55,
+      "type": "meccan",
+      "start": 790,
+      "end": 954,
+      "start_word": 16178,
+      "end_word": 19227,
+      "juz": [
+        7,
+        8
+      ]
+    },
+    "7": {
+      "name": "الأعراف",
+      "nAyah": 206,
+      "revelationOrder": 39,
+      "type": "meccan",
+      "start": 955,
+      "end": 1160,
+      "start_word": 19228,
+      "end_word": 22547,
+      "juz": [
+        8,
+        9
+      ]
+    },
+    "8": {
+      "name": "الأنفال",
+      "nAyah": 75,
+      "revelationOrder": 88,
+      "type": "medinan",
+      "start": 1161,
+      "end": 1235,
+      "start_word": 22548,
+      "end_word": 23780,
+      "juz": [
+        9,
+        10
+      ]
+    },
+    "9": {
+      "name": "التوبة",
+      "nAyah": 129,
+      "revelationOrder": 113,
+      "type": "medinan",
+      "start": 1236,
+      "end": 1364,
+      "start_word": 23781,
+      "end_word": 26278,
+      "juz": [
+        10,
+        11
+      ]
+    },
+    "10": {
+      "name": "يونس",
+      "nAyah": 109,
+      "revelationOrder": 51,
+      "type": "meccan",
+      "start": 1365,
+      "end": 1473,
+      "start_word": 26279,
+      "end_word": 28111,
+      "juz": [
+        11
+      ]
+    },
+    "11": {
+      "name": "هود",
+      "nAyah": 123,
+      "revelationOrder": 52,
+      "type": "meccan",
+      "start": 1474,
+      "end": 1596,
+      "start_word": 28112,
+      "end_word": 30028,
+      "juz": [
+        11,
+        12
+      ]
+    },
+    "12": {
+      "name": "يوسف",
+      "nAyah": 111,
+      "revelationOrder": 53,
+      "type": "meccan",
+      "start": 1597,
+      "end": 1707,
+      "start_word": 30029,
+      "end_word": 31805,
+      "juz": [
+        12,
+        13
+      ]
+    },
+    "13": {
+      "name": "الرعد",
+      "nAyah": 43,
+      "revelationOrder": 96,
+      "type": "medinan",
+      "start": 1708,
+      "end": 1750,
+      "start_word": 31806,
+      "end_word": 32658,
+      "juz": [
+        13
+      ]
+    },
+    "14": {
+      "name": "ابراهيم",
+      "nAyah": 52,
+      "revelationOrder": 72,
+      "type": "meccan",
+      "start": 1751,
+      "end": 1802,
+      "start_word": 32659,
+      "end_word": 33488,
+      "juz": [
+        13
+      ]
+    },
+    "15": {
+      "name": "الحجر",
+      "nAyah": 99,
+      "revelationOrder": 54,
+      "type": "meccan",
+      "start": 1803,
+      "end": 1901,
+      "start_word": 33489,
+      "end_word": 34143,
+      "juz": [
+        13,
+        14
+      ]
+    },
+    "16": {
+      "name": "النحل",
+      "nAyah": 128,
+      "revelationOrder": 70,
+      "type": "meccan",
+      "start": 1902,
+      "end": 2029,
+      "start_word": 34144,
+      "end_word": 35987,
+      "juz": [
+        14
+      ]
+    },
+    "17": {
+      "name": "الإسراء",
+      "nAyah": 111,
+      "revelationOrder": 50,
+      "type": "meccan",
+      "start": 2030,
+      "end": 2140,
+      "start_word": 35988,
+      "end_word": 37543,
+      "juz": [
+        15
+      ]
+    },
+    "18": {
+      "name": "الكهف",
+      "nAyah": 110,
+      "revelationOrder": 69,
+      "type": "meccan",
+      "start": 2141,
+      "end": 2250,
+      "start_word": 37544,
+      "end_word": 39122,
+      "juz": [
+        15,
+        16
+      ]
+    },
+    "19": {
+      "name": "مريم",
+      "nAyah": 98,
+      "revelationOrder": 44,
+      "type": "meccan",
+      "start": 2251,
+      "end": 2348,
+      "start_word": 39123,
+      "end_word": 40083,
+      "juz": [
+        16
+      ]
+    },
+    "20": {
+      "name": "طه",
+      "nAyah": 135,
+      "revelationOrder": 45,
+      "type": "meccan",
+      "start": 2349,
+      "end": 2483,
+      "start_word": 40084,
+      "end_word": 41418,
+      "juz": [
+        16
+      ]
+    },
+    "21": {
+      "name": "الأنبياء",
+      "nAyah": 112,
+      "revelationOrder": 73,
+      "type": "meccan",
+      "start": 2484,
+      "end": 2595,
+      "start_word": 41419,
+      "end_word": 42587,
+      "juz": [
+        17
+      ]
+    },
+    "22": {
+      "name": "الحج",
+      "nAyah": 78,
+      "revelationOrder": 103,
+      "type": "medinan",
+      "start": 2596,
+      "end": 2673,
+      "start_word": 42588,
+      "end_word": 43861,
+      "juz": [
+        17
+      ]
+    },
+    "23": {
+      "name": "المؤمنون",
+      "nAyah": 118,
+      "revelationOrder": 74,
+      "type": "meccan",
+      "start": 2674,
+      "end": 2791,
+      "start_word": 43862,
+      "end_word": 44911,
+      "juz": [
+        18
+      ]
+    },
+    "24": {
+      "name": "النور",
+      "nAyah": 64,
+      "revelationOrder": 102,
+      "type": "medinan",
+      "start": 2792,
+      "end": 2855,
+      "start_word": 44912,
+      "end_word": 46227,
+      "juz": [
+        18
+      ]
+    },
+    "25": {
+      "name": "الفرقان",
+      "nAyah": 77,
+      "revelationOrder": 42,
+      "type": "meccan",
+      "start": 2856,
+      "end": 2932,
+      "start_word": 46228,
+      "end_word": 47120,
+      "juz": [
+        18,
+        19
+      ]
+    },
+    "26": {
+      "name": "الشعراء",
+      "nAyah": 227,
+      "revelationOrder": 47,
+      "type": "meccan",
+      "start": 2933,
+      "end": 3159,
+      "start_word": 47121,
+      "end_word": 48438,
+      "juz": [
+        19
+      ]
+    },
+    "27": {
+      "name": "النمل",
+      "nAyah": 93,
+      "revelationOrder": 48,
+      "type": "meccan",
+      "start": 3160,
+      "end": 3252,
+      "start_word": 48439,
+      "end_word": 49589,
+      "juz": [
+        19,
+        20
+      ]
+    },
+    "28": {
+      "name": "القصص",
+      "nAyah": 88,
+      "revelationOrder": 49,
+      "type": "meccan",
+      "start": 3253,
+      "end": 3340,
+      "start_word": 49590,
+      "end_word": 51019,
+      "juz": [
+        20
+      ]
+    },
+    "29": {
+      "name": "العنكبوت",
+      "nAyah": 69,
+      "revelationOrder": 85,
+      "type": "meccan",
+      "start": 3341,
+      "end": 3409,
+      "start_word": 51020,
+      "end_word": 51995,
+      "juz": [
+        20,
+        21
+      ]
+    },
+    "30": {
+      "name": "الروم",
+      "nAyah": 60,
+      "revelationOrder": 84,
+      "type": "meccan",
+      "start": 3410,
+      "end": 3469,
+      "start_word": 51996,
+      "end_word": 52812,
+      "juz": [
+        21
+      ]
+    },
+    "31": {
+      "name": "لقمان",
+      "nAyah": 34,
+      "revelationOrder": 57,
+      "type": "meccan",
+      "start": 3470,
+      "end": 3503,
+      "start_word": 52813,
+      "end_word": 53358,
+      "juz": [
+        21
+      ]
+    },
+    "32": {
+      "name": "السجدة",
+      "nAyah": 30,
+      "revelationOrder": 75,
+      "type": "meccan",
+      "start": 3504,
+      "end": 3533,
+      "start_word": 53359,
+      "end_word": 53730,
+      "juz": [
+        21
+      ]
+    },
+    "33": {
+      "name": "الأحزاب",
+      "nAyah": 73,
+      "revelationOrder": 90,
+      "type": "medinan",
+      "start": 3534,
+      "end": 3606,
+      "start_word": 53731,
+      "end_word": 55017,
+      "juz": [
+        21,
+        22
+      ]
+    },
+    "34": {
+      "name": "سبإ",
+      "nAyah": 54,
+      "revelationOrder": 58,
+      "type": "meccan",
+      "start": 3607,
+      "end": 3660,
+      "start_word": 55018,
+      "end_word": 55900,
+      "juz": [
+        22
+      ]
+    },
+    "35": {
+      "name": "فاطر",
+      "nAyah": 45,
+      "revelationOrder": 43,
+      "type": "meccan",
+      "start": 3661,
+      "end": 3705,
+      "start_word": 55901,
+      "end_word": 56675,
+      "juz": [
+        22
+      ]
+    },
+    "36": {
+      "name": "يس",
+      "nAyah": 83,
+      "revelationOrder": 41,
+      "type": "meccan",
+      "start": 3706,
+      "end": 3788,
+      "start_word": 56676,
+      "end_word": 57400,
+      "juz": [
+        22,
+        23
+      ]
+    },
+    "37": {
+      "name": "الصافات",
+      "nAyah": 182,
+      "revelationOrder": 56,
+      "type": "meccan",
+      "start": 3789,
+      "end": 3970,
+      "start_word": 57401,
+      "end_word": 58261,
+      "juz": [
+        23
+      ]
+    },
+    "38": {
+      "name": "ص",
+      "nAyah": 88,
+      "revelationOrder": 38,
+      "type": "meccan",
+      "start": 3971,
+      "end": 4058,
+      "start_word": 58262,
+      "end_word": 58994,
+      "juz": [
+        23
+      ]
+    },
+    "39": {
+      "name": "الزمر",
+      "nAyah": 75,
+      "revelationOrder": 59,
+      "type": "meccan",
+      "start": 4059,
+      "end": 4133,
+      "start_word": 58995,
+      "end_word": 60166,
+      "juz": [
+        23,
+        24
+      ]
+    },
+    "40": {
+      "name": "غافر",
+      "nAyah": 85,
+      "revelationOrder": 60,
+      "type": "meccan",
+      "start": 4134,
+      "end": 4218,
+      "start_word": 60167,
+      "end_word": 61385,
+      "juz": [
+        24
+      ]
+    },
+    "41": {
+      "name": "فصلت",
+      "nAyah": 54,
+      "revelationOrder": 61,
+      "type": "meccan",
+      "start": 4219,
+      "end": 4272,
+      "start_word": 61386,
+      "end_word": 62179,
+      "juz": [
+        24,
+        25
+      ]
+    },
+    "42": {
+      "name": "الشورى",
+      "nAyah": 53,
+      "revelationOrder": 62,
+      "type": "meccan",
+      "start": 4273,
+      "end": 4325,
+      "start_word": 62180,
+      "end_word": 63039,
+      "juz": [
+        25
+      ]
+    },
+    "43": {
+      "name": "الزخرف",
+      "nAyah": 89,
+      "revelationOrder": 63,
+      "type": "meccan",
+      "start": 4326,
+      "end": 4414,
+      "start_word": 63040,
+      "end_word": 63869,
+      "juz": [
+        25
+      ]
+    },
+    "44": {
+      "name": "الدخان",
+      "nAyah": 59,
+      "revelationOrder": 64,
+      "type": "meccan",
+      "start": 4415,
+      "end": 4473,
+      "start_word": 63870,
+      "end_word": 64215,
+      "juz": [
+        25
+      ]
+    },
+    "45": {
+      "name": "الجاثية",
+      "nAyah": 37,
+      "revelationOrder": 65,
+      "type": "meccan",
+      "start": 4474,
+      "end": 4510,
+      "start_word": 64216,
+      "end_word": 64703,
+      "juz": [
+        25
+      ]
+    },
+    "46": {
+      "name": "الأحقاف",
+      "nAyah": 35,
+      "revelationOrder": 66,
+      "type": "meccan",
+      "start": 4511,
+      "end": 4545,
+      "start_word": 64704,
+      "end_word": 65346,
+      "juz": [
+        26
+      ]
+    },
+    "47": {
+      "name": "محمد",
+      "nAyah": 38,
+      "revelationOrder": 95,
+      "type": "medinan",
+      "start": 4546,
+      "end": 4583,
+      "start_word": 65347,
+      "end_word": 65885,
+      "juz": [
+        26
+      ]
+    },
+    "48": {
+      "name": "الفتح",
+      "nAyah": 29,
+      "revelationOrder": 111,
+      "type": "medinan",
+      "start": 4584,
+      "end": 4612,
+      "start_word": 65886,
+      "end_word": 66445,
+      "juz": [
+        26
+      ]
+    },
+    "49": {
+      "name": "الحجرات",
+      "nAyah": 18,
+      "revelationOrder": 106,
+      "type": "medinan",
+      "start": 4613,
+      "end": 4630,
+      "start_word": 66446,
+      "end_word": 66792,
+      "juz": [
+        26
+      ]
+    },
+    "50": {
+      "name": "ق",
+      "nAyah": 45,
+      "revelationOrder": 34,
+      "type": "meccan",
+      "start": 4631,
+      "end": 4675,
+      "start_word": 66793,
+      "end_word": 67165,
+      "juz": [
+        26
+      ]
+    },
+    "51": {
+      "name": "الذاريات",
+      "nAyah": 60,
+      "revelationOrder": 67,
+      "type": "meccan",
+      "start": 4676,
+      "end": 4735,
+      "start_word": 67166,
+      "end_word": 67525,
+      "juz": [
+        26,
+        27
+      ]
+    },
+    "52": {
+      "name": "الطور",
+      "nAyah": 49,
+      "revelationOrder": 76,
+      "type": "meccan",
+      "start": 4736,
+      "end": 4784,
+      "start_word": 67526,
+      "end_word": 67837,
+      "juz": [
+        27
+      ]
+    },
+    "53": {
+      "name": "النجم",
+      "nAyah": 62,
+      "revelationOrder": 23,
+      "type": "meccan",
+      "start": 4785,
+      "end": 4846,
+      "start_word": 67838,
+      "end_word": 68197,
+      "juz": [
+        27
+      ]
+    },
+    "54": {
+      "name": "القمر",
+      "nAyah": 55,
+      "revelationOrder": 37,
+      "type": "meccan",
+      "start": 4847,
+      "end": 4901,
+      "start_word": 68198,
+      "end_word": 68539,
+      "juz": [
+        27
+      ]
+    },
+    "55": {
+      "name": "الرحمن",
+      "nAyah": 78,
+      "revelationOrder": 97,
+      "type": "medinan",
+      "start": 4902,
+      "end": 4979,
+      "start_word": 68540,
+      "end_word": 68890,
+      "juz": [
+        27
+      ]
+    },
+    "56": {
+      "name": "الواقعة",
+      "nAyah": 96,
+      "revelationOrder": 46,
+      "type": "meccan",
+      "start": 4980,
+      "end": 5075,
+      "start_word": 68891,
+      "end_word": 69269,
+      "juz": [
+        27
+      ]
+    },
+    "57": {
+      "name": "الحديد",
+      "nAyah": 29,
+      "revelationOrder": 94,
+      "type": "medinan",
+      "start": 5076,
+      "end": 5104,
+      "start_word": 69270,
+      "end_word": 69843,
+      "juz": [
+        27
+      ]
+    },
+    "58": {
+      "name": "المجادلة",
+      "nAyah": 22,
+      "revelationOrder": 105,
+      "type": "medinan",
+      "start": 5105,
+      "end": 5126,
+      "start_word": 69844,
+      "end_word": 70315,
+      "juz": [
+        28
+      ]
+    },
+    "59": {
+      "name": "الحشر",
+      "nAyah": 24,
+      "revelationOrder": 101,
+      "type": "medinan",
+      "start": 5127,
+      "end": 5150,
+      "start_word": 70316,
+      "end_word": 70760,
+      "juz": [
+        28
+      ]
+    },
+    "60": {
+      "name": "الممتحنة",
+      "nAyah": 13,
+      "revelationOrder": 91,
+      "type": "medinan",
+      "start": 5151,
+      "end": 5163,
+      "start_word": 70761,
+      "end_word": 71108,
+      "juz": [
+        28
+      ]
+    },
+    "61": {
+      "name": "الصف",
+      "nAyah": 14,
+      "revelationOrder": 109,
+      "type": "medinan",
+      "start": 5164,
+      "end": 5177,
+      "start_word": 71109,
+      "end_word": 71329,
+      "juz": [
+        28
+      ]
+    },
+    "62": {
+      "name": "الجمعة",
+      "nAyah": 11,
+      "revelationOrder": 110,
+      "type": "medinan",
+      "start": 5178,
+      "end": 5188,
+      "start_word": 71330,
+      "end_word": 71504,
+      "juz": [
+        28
+      ]
+    },
+    "63": {
+      "name": "المنافقون",
+      "nAyah": 11,
+      "revelationOrder": 104,
+      "type": "medinan",
+      "start": 5189,
+      "end": 5199,
+      "start_word": 71505,
+      "end_word": 71684,
+      "juz": [
+        28
+      ]
+    },
+    "64": {
+      "name": "التغابن",
+      "nAyah": 18,
+      "revelationOrder": 108,
+      "type": "medinan",
+      "start": 5200,
+      "end": 5217,
+      "start_word": 71685,
+      "end_word": 71925,
+      "juz": [
+        28
+      ]
+    },
+    "65": {
+      "name": "الطلاق",
+      "nAyah": 12,
+      "revelationOrder": 99,
+      "type": "medinan",
+      "start": 5218,
+      "end": 5229,
+      "start_word": 71926,
+      "end_word": 72212,
+      "juz": [
+        28
+      ]
+    },
+    "66": {
+      "name": "التحريم",
+      "nAyah": 12,
+      "revelationOrder": 107,
+      "type": "medinan",
+      "start": 5230,
+      "end": 5241,
+      "start_word": 72213,
+      "end_word": 72461,
+      "juz": [
+        28
+      ]
+    },
+    "67": {
+      "name": "الملك",
+      "nAyah": 30,
+      "revelationOrder": 77,
+      "type": "meccan",
+      "start": 5242,
+      "end": 5271,
+      "start_word": 72462,
+      "end_word": 72794,
+      "juz": [
+        29
+      ]
+    },
+    "68": {
+      "name": "القلم",
+      "nAyah": 52,
+      "revelationOrder": 2,
+      "type": "meccan",
+      "start": 5272,
+      "end": 5323,
+      "start_word": 72795,
+      "end_word": 73094,
+      "juz": [
+        29
+      ]
+    },
+    "69": {
+      "name": "الحاقة",
+      "nAyah": 52,
+      "revelationOrder": 78,
+      "type": "meccan",
+      "start": 5324,
+      "end": 5375,
+      "start_word": 73095,
+      "end_word": 73352,
+      "juz": [
+        29
+      ]
+    },
+    "70": {
+      "name": "المعارج",
+      "nAyah": 44,
+      "revelationOrder": 79,
+      "type": "meccan",
+      "start": 5376,
+      "end": 5419,
+      "start_word": 73353,
+      "end_word": 73569,
+      "juz": [
+        29
+      ]
+    },
+    "71": {
+      "name": "نوح",
+      "nAyah": 28,
+      "revelationOrder": 71,
+      "type": "meccan",
+      "start": 5420,
+      "end": 5447,
+      "start_word": 73570,
+      "end_word": 73795,
+      "juz": [
+        29
+      ]
+    },
+    "72": {
+      "name": "الجن",
+      "nAyah": 28,
+      "revelationOrder": 40,
+      "type": "meccan",
+      "start": 5448,
+      "end": 5475,
+      "start_word": 73796,
+      "end_word": 74080,
+      "juz": [
+        29
+      ]
+    },
+    "73": {
+      "name": "المزمل",
+      "nAyah": 20,
+      "revelationOrder": 3,
+      "type": "meccan",
+      "start": 5476,
+      "end": 5495,
+      "start_word": 74081,
+      "end_word": 74279,
+      "juz": [
+        29
+      ]
+    },
+    "74": {
+      "name": "المدثر",
+      "nAyah": 56,
+      "revelationOrder": 4,
+      "type": "meccan",
+      "start": 5496,
+      "end": 5551,
+      "start_word": 74280,
+      "end_word": 74534,
+      "juz": [
+        29
+      ]
+    },
+    "75": {
+      "name": "القيامة",
+      "nAyah": 40,
+      "revelationOrder": 31,
+      "type": "meccan",
+      "start": 5552,
+      "end": 5591,
+      "start_word": 74535,
+      "end_word": 74698,
+      "juz": [
+        29
+      ]
+    },
+    "76": {
+      "name": "الانسان",
+      "nAyah": 31,
+      "revelationOrder": 98,
+      "type": "medinan",
+      "start": 5592,
+      "end": 5622,
+      "start_word": 74699,
+      "end_word": 74941,
+      "juz": [
+        29
+      ]
+    },
+    "77": {
+      "name": "المرسلات",
+      "nAyah": 50,
+      "revelationOrder": 33,
+      "type": "meccan",
+      "start": 5623,
+      "end": 5672,
+      "start_word": 74942,
+      "end_word": 75122,
+      "juz": [
+        29
+      ]
+    },
+    "78": {
+      "name": "النبإ",
+      "nAyah": 40,
+      "revelationOrder": 80,
+      "type": "meccan",
+      "start": 5673,
+      "end": 5712,
+      "start_word": 75123,
+      "end_word": 75295,
+      "juz": [
+        30
+      ]
+    },
+    "79": {
+      "name": "النازعات",
+      "nAyah": 46,
+      "revelationOrder": 81,
+      "type": "meccan",
+      "start": 5713,
+      "end": 5758,
+      "start_word": 75296,
+      "end_word": 75474,
+      "juz": [
+        30
+      ]
+    },
+    "80": {
+      "name": "عبس",
+      "nAyah": 42,
+      "revelationOrder": 24,
+      "type": "meccan",
+      "start": 5759,
+      "end": 5800,
+      "start_word": 75475,
+      "end_word": 75607,
+      "juz": [
+        30
+      ]
+    },
+    "81": {
+      "name": "التكوير",
+      "nAyah": 29,
+      "revelationOrder": 7,
+      "type": "meccan",
+      "start": 5801,
+      "end": 5829,
+      "start_word": 75608,
+      "end_word": 75711,
+      "juz": [
+        30
+      ]
+    },
+    "82": {
+      "name": "الإنفطار",
+      "nAyah": 19,
+      "revelationOrder": 82,
+      "type": "meccan",
+      "start": 5830,
+      "end": 5848,
+      "start_word": 75712,
+      "end_word": 75791,
+      "juz": [
+        30
+      ]
+    },
+    "83": {
+      "name": "المطففين",
+      "nAyah": 36,
+      "revelationOrder": 86,
+      "type": "meccan",
+      "start": 5849,
+      "end": 5884,
+      "start_word": 75792,
+      "end_word": 75960,
+      "juz": [
+        30
+      ]
+    },
+    "84": {
+      "name": "الإنشقاق",
+      "nAyah": 25,
+      "revelationOrder": 83,
+      "type": "meccan",
+      "start": 5885,
+      "end": 5909,
+      "start_word": 75961,
+      "end_word": 76067,
+      "juz": [
+        30
+      ]
+    },
+    "85": {
+      "name": "البروج",
+      "nAyah": 22,
+      "revelationOrder": 27,
+      "type": "meccan",
+      "start": 5910,
+      "end": 5931,
+      "start_word": 76068,
+      "end_word": 76176,
+      "juz": [
+        30
+      ]
+    },
+    "86": {
+      "name": "الطارق",
+      "nAyah": 17,
+      "revelationOrder": 36,
+      "type": "meccan",
+      "start": 5932,
+      "end": 5948,
+      "start_word": 76177,
+      "end_word": 76237,
+      "juz": [
+        30
+      ]
+    },
+    "87": {
+      "name": "الأعلى",
+      "nAyah": 19,
+      "revelationOrder": 8,
+      "type": "meccan",
+      "start": 5949,
+      "end": 5967,
+      "start_word": 76238,
+      "end_word": 76309,
+      "juz": [
+        30
+      ]
+    },
+    "88": {
+      "name": "الغاشية",
+      "nAyah": 26,
+      "revelationOrder": 68,
+      "type": "meccan",
+      "start": 5968,
+      "end": 5993,
+      "start_word": 76310,
+      "end_word": 76401,
+      "juz": [
+        30
+      ]
+    },
+    "89": {
+      "name": "الفجر",
+      "nAyah": 30,
+      "revelationOrder": 10,
+      "type": "meccan",
+      "start": 5994,
+      "end": 6023,
+      "start_word": 76402,
+      "end_word": 76538,
+      "juz": [
+        30
+      ]
+    },
+    "90": {
+      "name": "البلد",
+      "nAyah": 20,
+      "revelationOrder": 35,
+      "type": "meccan",
+      "start": 6024,
+      "end": 6043,
+      "start_word": 76539,
+      "end_word": 76620,
+      "juz": [
+        30
+      ]
+    },
+    "91": {
+      "name": "الشمس",
+      "nAyah": 15,
+      "revelationOrder": 26,
+      "type": "meccan",
+      "start": 6044,
+      "end": 6058,
+      "start_word": 76621,
+      "end_word": 76674,
+      "juz": [
+        30
+      ]
+    },
+    "92": {
+      "name": "الليل",
+      "nAyah": 21,
+      "revelationOrder": 9,
+      "type": "meccan",
+      "start": 6059,
+      "end": 6079,
+      "start_word": 76675,
+      "end_word": 76745,
+      "juz": [
+        30
+      ]
+    },
+    "93": {
+      "name": "الضحى",
+      "nAyah": 11,
+      "revelationOrder": 11,
+      "type": "meccan",
+      "start": 6080,
+      "end": 6090,
+      "start_word": 76746,
+      "end_word": 76785,
+      "juz": [
+        30
+      ]
+    },
+    "94": {
+      "name": "الشرح",
+      "nAyah": 8,
+      "revelationOrder": 12,
+      "type": "meccan",
+      "start": 6091,
+      "end": 6098,
+      "start_word": 76786,
+      "end_word": 76812,
+      "juz": [
+        30
+      ]
+    },
+    "95": {
+      "name": "التين",
+      "nAyah": 8,
+      "revelationOrder": 28,
+      "type": "meccan",
+      "start": 6099,
+      "end": 6106,
+      "start_word": 76813,
+      "end_word": 76846,
+      "juz": [
+        30
+      ]
+    },
+    "96": {
+      "name": "العلق",
+      "nAyah": 19,
+      "revelationOrder": 1,
+      "type": "meccan",
+      "start": 6107,
+      "end": 6125,
+      "start_word": 76847,
+      "end_word": 76918,
+      "juz": [
+        30
+      ]
+    },
+    "97": {
+      "name": "القدر",
+      "nAyah": 5,
+      "revelationOrder": 25,
+      "type": "meccan",
+      "start": 6126,
+      "end": 6130,
+      "start_word": 76919,
+      "end_word": 76948,
+      "juz": [
+        30
+      ]
+    },
+    "98": {
+      "name": "البينة",
+      "nAyah": 8,
+      "revelationOrder": 100,
+      "type": "medinan",
+      "start": 6131,
+      "end": 6138,
+      "start_word": 76949,
+      "end_word": 77042,
+      "juz": [
+        30
+      ]
+    },
+    "99": {
+      "name": "الزلزلة",
+      "nAyah": 8,
+      "revelationOrder": 93,
+      "type": "medinan",
+      "start": 6139,
+      "end": 6146,
+      "start_word": 77043,
+      "end_word": 77078,
+      "juz": [
+        30
+      ]
+    },
+    "100": {
+      "name": "العاديات",
+      "nAyah": 11,
+      "revelationOrder": 14,
+      "type": "meccan",
+      "start": 6147,
+      "end": 6157,
+      "start_word": 77079,
+      "end_word": 77118,
+      "juz": [
+        30
+      ]
+    },
+    "101": {
+      "name": "القارعة",
+      "nAyah": 11,
+      "revelationOrder": 30,
+      "type": "meccan",
+      "start": 6158,
+      "end": 6168,
+      "start_word": 77119,
+      "end_word": 77154,
+      "juz": [
+        30
+      ]
+    },
+    "102": {
+      "name": "التكاثر",
+      "nAyah": 8,
+      "revelationOrder": 16,
+      "type": "meccan",
+      "start": 6169,
+      "end": 6176,
+      "start_word": 77155,
+      "end_word": 77182,
+      "juz": [
+        30
+      ]
+    },
+    "103": {
+      "name": "العصر",
+      "nAyah": 3,
+      "revelationOrder": 13,
+      "type": "meccan",
+      "start": 6177,
+      "end": 6179,
+      "start_word": 77183,
+      "end_word": 77196,
+      "juz": [
+        30
+      ]
+    },
+    "104": {
+      "name": "الهمزة",
+      "nAyah": 9,
+      "revelationOrder": 32,
+      "type": "meccan",
+      "start": 6180,
+      "end": 6188,
+      "start_word": 77197,
+      "end_word": 77229,
+      "juz": [
+        30
+      ]
+    },
+    "105": {
+      "name": "الفيل",
+      "nAyah": 5,
+      "revelationOrder": 19,
+      "type": "meccan",
+      "start": 6189,
+      "end": 6193,
+      "start_word": 77230,
+      "end_word": 77252,
+      "juz": [
+        30
+      ]
+    },
+    "106": {
+      "name": "قريش",
+      "nAyah": 4,
+      "revelationOrder": 29,
+      "type": "meccan",
+      "start": 6194,
+      "end": 6197,
+      "start_word": 77253,
+      "end_word": 77269,
+      "juz": [
+        30
+      ]
+    },
+    "107": {
+      "name": "الماعون",
+      "nAyah": 7,
+      "revelationOrder": 17,
+      "type": "meccan",
+      "start": 6198,
+      "end": 6204,
+      "start_word": 77270,
+      "end_word": 77294,
+      "juz": [
+        30
+      ]
+    },
+    "108": {
+      "name": "الكوثر",
+      "nAyah": 3,
+      "revelationOrder": 15,
+      "type": "meccan",
+      "start": 6205,
+      "end": 6207,
+      "start_word": 77295,
+      "end_word": 77304,
+      "juz": [
+        30
+      ]
+    },
+    "109": {
+      "name": "الكافرون",
+      "nAyah": 6,
+      "revelationOrder": 18,
+      "type": "meccan",
+      "start": 6208,
+      "end": 6213,
+      "start_word": 77305,
+      "end_word": 77330,
+      "juz": [
+        30
+      ]
+    },
+    "110": {
+      "name": "النصر",
+      "nAyah": 3,
+      "revelationOrder": 114,
+      "type": "medinan",
+      "start": 6214,
+      "end": 6216,
+      "start_word": 77331,
+      "end_word": 77349,
+      "juz": [
+        30
+      ]
+    },
+    "111": {
+      "name": "اللهب",
+      "altName": "المسد",
+      "nAyah": 5,
+      "revelationOrder": 6,
+      "type": "meccan",
+      "start": 6217,
+      "end": 6221,
+      "start_word": 77350,
+      "end_word": 77372,
+      "juz": [
+        30
+      ]
+    },
+    "112": {
+      "name": "الإخلاص",
+      "nAyah": 4,
+      "revelationOrder": 22,
+      "type": "meccan",
+      "start": 6222,
+      "end": 6225,
+      "start_word": 77373,
+      "end_word": 77387,
+      "juz": [
+        30
+      ]
+    },
+    "113": {
+      "name": "الفلق",
+      "nAyah": 5,
+      "revelationOrder": 20,
+      "type": "meccan",
+      "start": 6226,
+      "end": 6230,
+      "start_word": 77388,
+      "end_word": 77410,
+      "juz": [
+        30
+      ]
+    },
+    "114": {
+      "name": "الناس",
+      "nAyah": 6,
+      "revelationOrder": 21,
+      "type": "meccan",
+      "start": 6231,
+      "end": 6236,
+      "start_word": 77411,
+      "end_word": 77430,
+      "juz": [
+        30
+      ]
+    }
+  },
+  "juz": {
+    "1": {
+      "from": "1:1",
+      "to": "2:141",
+      "start_word": 1,
+      "end_word": 2522,
+      "fromWord": 1,
+      "toWord": 15
+    },
+    "2": {
+      "from": "2:142",
+      "to": "2:252",
+      "start_word": 2523,
+      "end_word": 5100,
+      "fromWord": 1,
+      "toWord": 9
+    },
+    "3": {
+      "from": "2:253",
+      "to": "3:91",
+      "start_word": 5101,
+      "end_word": 7707,
+      "fromWord": 1,
+      "toWord": 24
+    },
+    "4": {
+      "from": "3:92",
+      "to": "4:23",
+      "start_word": 7708,
+      "end_word": 10228,
+      "fromWord": 1,
+      "toWord": 54
+    },
+    "5": {
+      "from": "4:24",
+      "to": "4:147",
+      "start_word": 10229,
+      "end_word": 12807,
+      "fromWord": 1,
+      "toWord": 11
+    },
+    "6": {
+      "from": "4:148",
+      "to": "5:82",
+      "start_word": 12808,
+      "end_word": 15336,
+      "fromWord": 1,
+      "toWord": 26
+    },
+    "7": {
+      "from": "5:83",
+      "to": "6:110",
+      "start_word": 15337,
+      "end_word": 18084,
+      "fromWord": 1,
+      "toWord": 13
+    },
+    "8": {
+      "from": "6:111",
+      "to": "7:87",
+      "start_word": 18085,
+      "end_word": 20650,
+      "fromWord": 1,
+      "toWord": 19
+    },
+    "9": {
+      "from": "7:88",
+      "to": "8:40",
+      "start_word": 20651,
+      "end_word": 23136,
+      "fromWord": 1,
+      "toWord": 10
+    },
+    "10": {
+      "from": "8:41",
+      "to": "9:93",
+      "start_word": 23137,
+      "end_word": 25544,
+      "fromWord": 1,
+      "toWord": 19
+    },
+    "11": {
+      "from": "9:94",
+      "to": "11:5",
+      "start_word": 25545,
+      "end_word": 28182,
+      "fromWord": 1,
+      "toWord": 19
+    },
+    "12": {
+      "from": "11:6",
+      "to": "12:52",
+      "start_word": 28183,
+      "end_word": 30875,
+      "fromWord": 1,
+      "toWord": 12
+    },
+    "13": {
+      "from": "12:53",
+      "to": "15:1",
+      "start_word": 30876,
+      "end_word": 33494,
+      "fromWord": 1,
+      "toWord": 6
+    },
+    "14": {
+      "from": "15:2",
+      "to": "16:128",
+      "start_word": 33495,
+      "end_word": 35987,
+      "fromWord": 1,
+      "toWord": 8
+    },
+    "15": {
+      "from": "17:1",
+      "to": "18:74",
+      "start_word": 35988,
+      "end_word": 38671,
+      "fromWord": 1,
+      "toWord": 16
+    },
+    "16": {
+      "from": "18:75",
+      "to": "20:135",
+      "start_word": 38672,
+      "end_word": 41418,
+      "fromWord": 1,
+      "toWord": 11
+    },
+    "17": {
+      "from": "21:1",
+      "to": "22:78",
+      "start_word": 41419,
+      "end_word": 43861,
+      "fromWord": 1,
+      "toWord": 44
+    },
+    "18": {
+      "from": "23:1",
+      "to": "25:20",
+      "start_word": 43862,
+      "end_word": 46502,
+      "fromWord": 1,
+      "toWord": 20
+    },
+    "19": {
+      "from": "25:21",
+      "to": "27:59",
+      "start_word": 46503,
+      "end_word": 49153,
+      "fromWord": 1,
+      "toWord": 12
+    },
+    "20": {
+      "from": "27:60",
+      "to": "29:44",
+      "start_word": 49154,
+      "end_word": 51646,
+      "fromWord": 1,
+      "toWord": 10
+    },
+    "21": {
+      "from": "29:45",
+      "to": "33:30",
+      "start_word": 51647,
+      "end_word": 54249,
+      "fromWord": 1,
+      "toWord": 16
+    },
+    "22": {
+      "from": "33:31",
+      "to": "36:21",
+      "start_word": 54250,
+      "end_word": 56841,
+      "fromWord": 1,
+      "toWord": 7
+    },
+    "23": {
+      "from": "36:22",
+      "to": "39:31",
+      "start_word": 56842,
+      "end_word": 59515,
+      "fromWord": 1,
+      "toWord": 7
+    },
+    "24": {
+      "from": "39:32",
+      "to": "41:46",
+      "start_word": 59516,
+      "end_word": 62035,
+      "fromWord": 1,
+      "toWord": 11
+    },
+    "25": {
+      "from": "41:47",
+      "to": "45:37",
+      "start_word": 62036,
+      "end_word": 64703,
+      "fromWord": 1,
+      "toWord": 8
+    },
+    "26": {
+      "from": "46:1",
+      "to": "51:30",
+      "start_word": 64704,
+      "end_word": 67315,
+      "fromWord": 1,
+      "toWord": 8
+    },
+    "27": {
+      "from": "51:31",
+      "to": "57:29",
+      "start_word": 67316,
+      "end_word": 69843,
+      "fromWord": 1,
+      "toWord": 22
+    },
+    "28": {
+      "from": "58:1",
+      "to": "66:12",
+      "start_word": 69844,
+      "end_word": 72461,
+      "fromWord": 1,
+      "toWord": 17
+    },
+    "29": {
+      "from": "67:1",
+      "to": "77:50",
+      "start_word": 72462,
+      "end_word": 75122,
+      "fromWord": 1,
+      "toWord": 4
+    },
+    "30": {
+      "from": "78:1",
+      "to": "114:6",
+      "start_word": 75123,
+      "end_word": 77430,
+      "fromWord": 1,
+      "toWord": 3
+    }
+  },
+  "markers": [
+    {
+      "juz": 1,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 7,
+      "sourceLine": 12,
+      "sura": 2,
+      "verse": 46,
+      "verseKey": "2:46",
+      "verseId": 53,
+      "word": 8,
+      "wordId": 688
+    },
+    {
+      "juz": 1,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 12,
+      "sourceLine": 3,
+      "sura": 2,
+      "verse": 78,
+      "verseKey": "2:78",
+      "verseId": 85,
+      "word": 11,
+      "wordId": 1258
+    },
+    {
+      "juz": 1,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 17,
+      "sourceLine": 9,
+      "sura": 2,
+      "verse": 109,
+      "verseKey": "2:109",
+      "verseId": 116,
+      "word": 33,
+      "wordId": 1926
+    },
+    {
+      "juz": 1,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 21,
+      "sourceLine": 15,
+      "sura": 2,
+      "verse": 141,
+      "verseKey": "2:141",
+      "verseId": 148,
+      "word": 15,
+      "wordId": 2522
+    },
+    {
+      "juz": 2,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 26,
+      "sourceLine": 9,
+      "sura": 2,
+      "verse": 176,
+      "verseKey": "2:176",
+      "verseId": 183,
+      "word": 14,
+      "wordId": 3174
+    },
+    {
+      "juz": 2,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 31,
+      "sourceLine": 11,
+      "sura": 2,
+      "verse": 201,
+      "verseKey": "2:201",
+      "verseId": 208,
+      "word": 14,
+      "wordId": 3804
+    },
+    {
+      "juz": 2,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 37,
+      "sourceLine": 11,
+      "sura": 2,
+      "verse": 231,
+      "verseKey": "2:231",
+      "verseId": 238,
+      "word": 45,
+      "wordId": 4517
+    },
+    {
+      "juz": 2,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 41,
+      "sourceLine": 15,
+      "sura": 2,
+      "verse": 252,
+      "verseKey": "2:252",
+      "verseId": 259,
+      "word": 9,
+      "wordId": 5100
+    },
+    {
+      "juz": 3,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 46,
+      "sourceLine": 13,
+      "sura": 2,
+      "verse": 273,
+      "verseKey": "2:273",
+      "verseId": 280,
+      "word": 30,
+      "wordId": 5730
+    },
+    {
+      "juz": 3,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 52,
+      "sourceLine": 5,
+      "sura": 3,
+      "verse": 18,
+      "verseKey": "3:18",
+      "verseId": 311,
+      "word": 18,
+      "wordId": 6431
+    },
+    {
+      "juz": 3,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 57,
+      "sourceLine": 1,
+      "sura": 3,
+      "verse": 54,
+      "verseKey": "3:54",
+      "verseId": 347,
+      "word": 6,
+      "wordId": 7075
+    },
+    {
+      "juz": 3,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 61,
+      "sourceLine": 15,
+      "sura": 3,
+      "verse": 91,
+      "verseKey": "3:91",
+      "verseId": 384,
+      "word": 24,
+      "wordId": 7707
+    },
+    {
+      "juz": 4,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 66,
+      "sourceLine": 6,
+      "sura": 3,
+      "verse": 125,
+      "verseKey": "3:125",
+      "verseId": 418,
+      "word": 15,
+      "wordId": 8275
+    },
+    {
+      "juz": 4,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 71,
+      "sourceLine": 13,
+      "sura": 3,
+      "verse": 164,
+      "verseKey": "3:164",
+      "verseId": 457,
+      "word": 25,
+      "wordId": 8967
+    },
+    {
+      "juz": 4,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 76,
+      "sourceLine": 11,
+      "sura": 3,
+      "verse": 198,
+      "verseKey": "3:198",
+      "verseId": 491,
+      "word": 21,
+      "wordId": 9586
+    },
+    {
+      "juz": 4,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 81,
+      "sourceLine": 15,
+      "sura": 4,
+      "verse": 23,
+      "verseKey": "4:23",
+      "verseId": 516,
+      "word": 54,
+      "wordId": 10228
+    },
+    {
+      "juz": 5,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 87,
+      "sourceLine": 4,
+      "sura": 4,
+      "verse": 56,
+      "verseKey": "4:56",
+      "verseId": 549,
+      "word": 20,
+      "wordId": 10911
+    },
+    {
+      "juz": 5,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 91,
+      "sourceLine": 14,
+      "sura": 4,
+      "verse": 86,
+      "verseKey": "4:86",
+      "verseId": 579,
+      "word": 15,
+      "wordId": 11521
+    },
+    {
+      "juz": 5,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 96,
+      "sourceLine": 15,
+      "sura": 4,
+      "verse": 113,
+      "verseKey": "4:113",
+      "verseId": 606,
+      "word": 33,
+      "wordId": 12165
+    },
+    {
+      "juz": 5,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 101,
+      "sourceLine": 15,
+      "sura": 4,
+      "verse": 147,
+      "verseKey": "4:147",
+      "verseId": 640,
+      "word": 11,
+      "wordId": 12807
+    },
+    {
+      "juz": 6,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 106,
+      "sourceLine": 15,
+      "sura": 5,
+      "verse": 2,
+      "verseKey": "5:2",
+      "verseId": 671,
+      "word": 52,
+      "wordId": 13448
+    },
+    {
+      "juz": 6,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 112,
+      "sourceLine": 8,
+      "sura": 5,
+      "verse": 27,
+      "verseKey": "5:27",
+      "verseId": 696,
+      "word": 24,
+      "wordId": 14113
+    },
+    {
+      "juz": 6,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 117,
+      "sourceLine": 8,
+      "sura": 5,
+      "verse": 53,
+      "verseKey": "5:53",
+      "verseId": 722,
+      "word": 15,
+      "wordId": 14739
+    },
+    {
+      "juz": 6,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 121,
+      "sourceLine": 15,
+      "sura": 5,
+      "verse": 82,
+      "verseKey": "5:82",
+      "verseId": 751,
+      "word": 26,
+      "wordId": 15336
+    },
+    {
+      "juz": 7,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 126,
+      "sourceLine": 15,
+      "sura": 5,
+      "verse": 113,
+      "verseKey": "5:113",
+      "verseId": 782,
+      "word": 15,
+      "wordId": 16019
+    },
+    {
+      "juz": 7,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 132,
+      "sourceLine": 3,
+      "sura": 6,
+      "verse": 35,
+      "verseKey": "6:35",
+      "verseId": 824,
+      "word": 28,
+      "wordId": 16736
+    },
+    {
+      "juz": 7,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_word",
+      "codePoint": "U+F64F",
+      "sourcePage": 136,
+      "sourceLine": 14,
+      "sura": 6,
+      "verse": 73,
+      "verseKey": "6:73",
+      "verseId": 862,
+      "word": 10,
+      "wordId": 17407
+    },
+    {
+      "juz": 7,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 141,
+      "sourceLine": 15,
+      "sura": 6,
+      "verse": 110,
+      "verseKey": "6:110",
+      "verseId": 899,
+      "word": 13,
+      "wordId": 18084
+    },
+    {
+      "juz": 8,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 146,
+      "sourceLine": 9,
+      "sura": 6,
+      "verse": 140,
+      "verseKey": "6:140",
+      "verseId": 929,
+      "word": 20,
+      "wordId": 18642
+    },
+    {
+      "juz": 8,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 150,
+      "sourceLine": 15,
+      "sura": 6,
+      "verse": 165,
+      "verseKey": "6:165",
+      "verseId": 954,
+      "word": 21,
+      "wordId": 19227
+    },
+    {
+      "juz": 8,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 155,
+      "sourceLine": 15,
+      "sura": 7,
+      "verse": 43,
+      "verseKey": "7:43",
+      "verseId": 997,
+      "word": 36,
+      "wordId": 19902
+    },
+    {
+      "juz": 8,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 161,
+      "sourceLine": 15,
+      "sura": 7,
+      "verse": 87,
+      "verseKey": "7:87",
+      "verseId": 1041,
+      "word": 19,
+      "wordId": 20650
+    },
+    {
+      "juz": 9,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 166,
+      "sourceLine": 15,
+      "sura": 7,
+      "verse": 137,
+      "verseKey": "7:137",
+      "verseId": 1091,
+      "word": 29,
+      "wordId": 21284
+    },
+    {
+      "juz": 9,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 171,
+      "sourceLine": 15,
+      "sura": 7,
+      "verse": 163,
+      "verseKey": "7:163",
+      "verseId": 1117,
+      "word": 27,
+      "wordId": 21885
+    },
+    {
+      "juz": 9,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 176,
+      "sourceLine": 15,
+      "sura": 7,
+      "verse": 206,
+      "verseKey": "7:206",
+      "verseId": 1160,
+      "word": 11,
+      "wordId": 22547
+    },
+    {
+      "juz": 9,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 181,
+      "sourceLine": 15,
+      "sura": 8,
+      "verse": 40,
+      "verseKey": "8:40",
+      "verseId": 1200,
+      "word": 10,
+      "wordId": 23136
+    },
+    {
+      "juz": 10,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 186,
+      "sourceLine": 15,
+      "sura": 8,
+      "verse": 75,
+      "verseKey": "8:75",
+      "verseId": 1235,
+      "word": 22,
+      "wordId": 23780
+    },
+    {
+      "juz": 10,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 192,
+      "sourceLine": 4,
+      "sura": 9,
+      "verse": 33,
+      "verseKey": "9:33",
+      "verseId": 1268,
+      "word": 14,
+      "wordId": 24395
+    },
+    {
+      "juz": 10,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 197,
+      "sourceLine": 2,
+      "sura": 9,
+      "verse": 62,
+      "verseKey": "9:62",
+      "verseId": 1297,
+      "word": 12,
+      "wordId": 24957
+    },
+    {
+      "juz": 10,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 201,
+      "sourceLine": 15,
+      "sura": 9,
+      "verse": 93,
+      "verseKey": "9:93",
+      "verseId": 1328,
+      "word": 19,
+      "wordId": 25544
+    },
+    {
+      "juz": 11,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 207,
+      "sourceLine": 3,
+      "sura": 9,
+      "verse": 123,
+      "verseKey": "9:123",
+      "verseId": 1358,
+      "word": 16,
+      "wordId": 26182
+    },
+    {
+      "juz": 11,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 212,
+      "sourceLine": 10,
+      "sura": 10,
+      "verse": 30,
+      "verseKey": "10:30",
+      "verseId": 1394,
+      "word": 16,
+      "wordId": 26887
+    },
+    {
+      "juz": 11,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 216,
+      "sourceLine": 15,
+      "sura": 10,
+      "verse": 70,
+      "verseKey": "10:70",
+      "verseId": 1434,
+      "word": 13,
+      "wordId": 27510
+    },
+    {
+      "juz": 11,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 221,
+      "sourceLine": 15,
+      "sura": 11,
+      "verse": 5,
+      "verseKey": "11:5",
+      "verseId": 1478,
+      "word": 19,
+      "wordId": 28182
+    },
+    {
+      "juz": 12,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 226,
+      "sourceLine": 14,
+      "sura": 11,
+      "verse": 44,
+      "verseKey": "11:44",
+      "verseId": 1517,
+      "word": 17,
+      "wordId": 28850
+    },
+    {
+      "juz": 12,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 231,
+      "sourceLine": 3,
+      "sura": 11,
+      "verse": 83,
+      "verseKey": "11:83",
+      "verseId": 1556,
+      "word": 8,
+      "wordId": 29457
+    },
+    {
+      "juz": 12,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 237,
+      "sourceLine": 5,
+      "sura": 12,
+      "verse": 17,
+      "verseKey": "12:17",
+      "verseId": 1613,
+      "word": 18,
+      "wordId": 30242
+    },
+    {
+      "juz": 12,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 241,
+      "sourceLine": 15,
+      "sura": 12,
+      "verse": 52,
+      "verseKey": "12:52",
+      "verseId": 1648,
+      "word": 12,
+      "wordId": 30875
+    },
+    {
+      "juz": 13,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 246,
+      "sourceLine": 15,
+      "sura": 12,
+      "verse": 95,
+      "verseKey": "12:95",
+      "verseId": 1691,
+      "word": 6,
+      "wordId": 31537
+    },
+    {
+      "juz": 13,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 252,
+      "sourceLine": 3,
+      "sura": 13,
+      "verse": 18,
+      "verseKey": "13:18",
+      "verseId": 1725,
+      "word": 27,
+      "wordId": 32206
+    },
+    {
+      "juz": 13,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 256,
+      "sourceLine": 11,
+      "sura": 14,
+      "verse": 9,
+      "verseKey": "14:9",
+      "verseId": 1759,
+      "word": 37,
+      "wordId": 32831
+    },
+    {
+      "juz": 13,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 261,
+      "sourceLine": 15,
+      "sura": 15,
+      "verse": 1,
+      "verseKey": "15:1",
+      "verseId": 1803,
+      "word": 6,
+      "wordId": 33494
+    },
+    {
+      "juz": 14,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 267,
+      "sourceLine": 2,
+      "sura": 15,
+      "verse": 93,
+      "verseKey": "15:93",
+      "verseId": 1895,
+      "word": 3,
+      "wordId": 34108
+    },
+    {
+      "juz": 14,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 272,
+      "sourceLine": 3,
+      "sura": 16,
+      "verse": 44,
+      "verseKey": "16:44",
+      "verseId": 1945,
+      "word": 12,
+      "wordId": 34725
+    },
+    {
+      "juz": 14,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 276,
+      "sourceLine": 14,
+      "sura": 16,
+      "verse": 86,
+      "verseKey": "16:86",
+      "verseId": 1987,
+      "word": 19,
+      "wordId": 35363
+    },
+    {
+      "juz": 14,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 281,
+      "sourceLine": 15,
+      "sura": 16,
+      "verse": 128,
+      "verseKey": "16:128",
+      "verseId": 2029,
+      "word": 8,
+      "wordId": 35987
+    },
+    {
+      "juz": 15,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 286,
+      "sourceLine": 11,
+      "sura": 17,
+      "verse": 48,
+      "verseKey": "17:48",
+      "verseId": 2077,
+      "word": 9,
+      "wordId": 36640
+    },
+    {
+      "juz": 15,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 291,
+      "sourceLine": 10,
+      "sura": 17,
+      "verse": 97,
+      "verseKey": "17:97",
+      "verseId": 2126,
+      "word": 27,
+      "wordId": 37344
+    },
+    {
+      "juz": 15,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 296,
+      "sourceLine": 12,
+      "sura": 18,
+      "verse": 28,
+      "verseKey": "18:28",
+      "verseId": 2168,
+      "word": 30,
+      "wordId": 38003
+    },
+    {
+      "juz": 15,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 301,
+      "sourceLine": 15,
+      "sura": 18,
+      "verse": 74,
+      "verseKey": "18:74",
+      "verseId": 2214,
+      "word": 16,
+      "wordId": 38671
+    },
+    {
+      "juz": 16,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 306,
+      "sourceLine": 9,
+      "sura": 19,
+      "verse": 20,
+      "verseKey": "19:20",
+      "verseId": 2270,
+      "word": 11,
+      "wordId": 39309
+    },
+    {
+      "juz": 16,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 312,
+      "sourceLine": 4,
+      "sura": 19,
+      "verse": 98,
+      "verseKey": "19:98",
+      "verseId": 2348,
+      "word": 14,
+      "wordId": 40083
+    },
+    {
+      "juz": 16,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 316,
+      "sourceLine": 12,
+      "sura": 20,
+      "verse": 73,
+      "verseKey": "20:73",
+      "verseId": 2421,
+      "word": 14,
+      "wordId": 40698
+    },
+    {
+      "juz": 16,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 321,
+      "sourceLine": 15,
+      "sura": 20,
+      "verse": 135,
+      "verseKey": "20:135",
+      "verseId": 2483,
+      "word": 11,
+      "wordId": 41418
+    },
+    {
+      "juz": 17,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 326,
+      "sourceLine": 8,
+      "sura": 21,
+      "verse": 50,
+      "verseKey": "21:50",
+      "verseId": 2533,
+      "word": 7,
+      "wordId": 41967
+    },
+    {
+      "juz": 17,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 331,
+      "sourceLine": 12,
+      "sura": 21,
+      "verse": 112,
+      "verseKey": "21:112",
+      "verseId": 2595,
+      "word": 10,
+      "wordId": 42587
+    },
+    {
+      "juz": 17,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 337,
+      "sourceLine": 2,
+      "sura": 22,
+      "verse": 38,
+      "verseKey": "22:38",
+      "verseId": 2633,
+      "word": 13,
+      "wordId": 43241
+    },
+    {
+      "juz": 17,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 341,
+      "sourceLine": 15,
+      "sura": 22,
+      "verse": 78,
+      "verseKey": "22:78",
+      "verseId": 2673,
+      "word": 44,
+      "wordId": 43861
+    },
+    {
+      "juz": 18,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 346,
+      "sourceLine": 14,
+      "sura": 23,
+      "verse": 73,
+      "verseKey": "23:73",
+      "verseId": 2746,
+      "word": 5,
+      "wordId": 44517
+    },
+    {
+      "juz": 18,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 352,
+      "sourceLine": 3,
+      "sura": 24,
+      "verse": 20,
+      "verseKey": "24:20",
+      "verseId": 2811,
+      "word": 9,
+      "wordId": 45193
+    },
+    {
+      "juz": 18,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 356,
+      "sourceLine": 10,
+      "sura": 24,
+      "verse": 50,
+      "verseKey": "24:50",
+      "verseId": 2841,
+      "word": 16,
+      "wordId": 45847
+    },
+    {
+      "juz": 18,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 361,
+      "sourceLine": 15,
+      "sura": 25,
+      "verse": 20,
+      "verseKey": "25:20",
+      "verseId": 2875,
+      "word": 20,
+      "wordId": 46502
+    },
+    {
+      "juz": 19,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 366,
+      "sourceLine": 10,
+      "sura": 25,
+      "verse": 77,
+      "verseKey": "25:77",
+      "verseId": 2932,
+      "word": 12,
+      "wordId": 47120
+    },
+    {
+      "juz": 19,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 371,
+      "sourceLine": 15,
+      "sura": 26,
+      "verse": 117,
+      "verseKey": "26:117",
+      "verseId": 3049,
+      "word": 5,
+      "wordId": 47822
+    },
+    {
+      "juz": 19,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 377,
+      "sourceLine": 1,
+      "sura": 27,
+      "verse": 6,
+      "verseKey": "27:6",
+      "verseId": 3165,
+      "word": 7,
+      "wordId": 48483
+    },
+    {
+      "juz": 19,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 381,
+      "sourceLine": 15,
+      "sura": 27,
+      "verse": 59,
+      "verseKey": "27:59",
+      "verseId": 3218,
+      "word": 12,
+      "wordId": 49153
+    },
+    {
+      "juz": 20,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 386,
+      "sourceLine": 15,
+      "sura": 28,
+      "verse": 13,
+      "verseKey": "28:13",
+      "verseId": 3265,
+      "word": 17,
+      "wordId": 49759
+    },
+    {
+      "juz": 20,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 392,
+      "sourceLine": 2,
+      "sura": 28,
+      "verse": 52,
+      "verseKey": "28:52",
+      "verseId": 3304,
+      "word": 8,
+      "wordId": 50430
+    },
+    {
+      "juz": 20,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 396,
+      "sourceLine": 8,
+      "sura": 28,
+      "verse": 88,
+      "verseKey": "28:88",
+      "verseId": 3340,
+      "word": 19,
+      "wordId": 51019
+    },
+    {
+      "juz": 20,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 401,
+      "sourceLine": 15,
+      "sura": 29,
+      "verse": 44,
+      "verseKey": "29:44",
+      "verseId": 3384,
+      "word": 10,
+      "wordId": 51646
+    },
+    {
+      "juz": 21,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 407,
+      "sourceLine": 5,
+      "sura": 30,
+      "verse": 27,
+      "verseKey": "30:27",
+      "verseId": 3436,
+      "word": 18,
+      "wordId": 52310
+    },
+    {
+      "juz": 21,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 412,
+      "sourceLine": 7,
+      "sura": 31,
+      "verse": 14,
+      "verseKey": "31:14",
+      "verseId": 3483,
+      "word": 17,
+      "wordId": 52977
+    },
+    {
+      "juz": 21,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 417,
+      "sourceLine": 12,
+      "sura": 32,
+      "verse": 27,
+      "verseKey": "32:27",
+      "verseId": 3530,
+      "word": 17,
+      "wordId": 53707
+    },
+    {
+      "juz": 21,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 421,
+      "sourceLine": 15,
+      "sura": 33,
+      "verse": 30,
+      "verseKey": "33:30",
+      "verseId": 3563,
+      "word": 16,
+      "wordId": 54249
+    },
+    {
+      "juz": 22,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 426,
+      "sourceLine": 15,
+      "sura": 33,
+      "verse": 62,
+      "verseKey": "33:62",
+      "verseId": 3595,
+      "word": 12,
+      "wordId": 54889
+    },
+    {
+      "juz": 22,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 431,
+      "sourceLine": 10,
+      "sura": 34,
+      "verse": 30,
+      "verseKey": "34:30",
+      "verseId": 3636,
+      "word": 10,
+      "wordId": 55516
+    },
+    {
+      "juz": 22,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 436,
+      "sourceLine": 9,
+      "sura": 35,
+      "verse": 14,
+      "verseKey": "35:14",
+      "verseId": 3674,
+      "word": 18,
+      "wordId": 56189
+    },
+    {
+      "juz": 22,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 441,
+      "sourceLine": 15,
+      "sura": 36,
+      "verse": 21,
+      "verseKey": "36:21",
+      "verseId": 3726,
+      "word": 7,
+      "wordId": 56841
+    },
+    {
+      "juz": 23,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 446,
+      "sourceLine": 12,
+      "sura": 37,
+      "verse": 23,
+      "verseKey": "37:23",
+      "verseId": 3811,
+      "word": 7,
+      "wordId": 57522
+    },
+    {
+      "juz": 23,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 451,
+      "sourceLine": 6,
+      "sura": 37,
+      "verse": 144,
+      "verseKey": "37:144",
+      "verseId": 3932,
+      "word": 6,
+      "wordId": 58097
+    },
+    {
+      "juz": 23,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 456,
+      "sourceLine": 9,
+      "sura": 38,
+      "verse": 53,
+      "verseKey": "38:53",
+      "verseId": 4023,
+      "word": 5,
+      "wordId": 58759
+    },
+    {
+      "juz": 23,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 461,
+      "sourceLine": 15,
+      "sura": 39,
+      "verse": 31,
+      "verseKey": "39:31",
+      "verseId": 4089,
+      "word": 7,
+      "wordId": 59515
+    },
+    {
+      "juz": 24,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 467,
+      "sourceLine": 2,
+      "sura": 39,
+      "verse": 75,
+      "verseKey": "39:75",
+      "verseId": 4133,
+      "word": 17,
+      "wordId": 60166
+    },
+    {
+      "juz": 24,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 472,
+      "sourceLine": 1,
+      "sura": 40,
+      "verse": 41,
+      "verseKey": "40:41",
+      "verseId": 4174,
+      "word": 9,
+      "wordId": 60784
+    },
+    {
+      "juz": 24,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 477,
+      "sourceLine": 6,
+      "sura": 41,
+      "verse": 5,
+      "verseKey": "41:5",
+      "verseId": 4223,
+      "word": 17,
+      "wordId": 61421
+    },
+    {
+      "juz": 24,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 481,
+      "sourceLine": 15,
+      "sura": 41,
+      "verse": 46,
+      "verseKey": "41:46",
+      "verseId": 4264,
+      "word": 11,
+      "wordId": 62035
+    },
+    {
+      "juz": 25,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 486,
+      "sourceLine": 13,
+      "sura": 42,
+      "verse": 29,
+      "verseKey": "42:29",
+      "verseId": 4301,
+      "word": 16,
+      "wordId": 62687
+    },
+    {
+      "juz": 25,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 491,
+      "sourceLine": 3,
+      "sura": 43,
+      "verse": 25,
+      "verseKey": "43:25",
+      "verseId": 4350,
+      "word": 7,
+      "wordId": 63277
+    },
+    {
+      "juz": 25,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 496,
+      "sourceLine": 13,
+      "sura": 44,
+      "verse": 22,
+      "verseKey": "44:22",
+      "verseId": 4436,
+      "word": 6,
+      "wordId": 64006
+    },
+    {
+      "juz": 25,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 501,
+      "sourceLine": 15,
+      "sura": 45,
+      "verse": 37,
+      "verseKey": "45:37",
+      "verseId": 4510,
+      "word": 8,
+      "wordId": 64703
+    },
+    {
+      "juz": 26,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 506,
+      "sourceLine": 12,
+      "sura": 46,
+      "verse": 35,
+      "verseKey": "46:35",
+      "verseId": 4545,
+      "word": 27,
+      "wordId": 65346
+    },
+    {
+      "juz": 26,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 513,
+      "sourceLine": 6,
+      "sura": 48,
+      "verse": 17,
+      "verseKey": "48:17",
+      "verseId": 4600,
+      "word": 27,
+      "wordId": 66180
+    },
+    {
+      "juz": 26,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 516,
+      "sourceLine": 12,
+      "sura": 49,
+      "verse": 10,
+      "verseKey": "49:10",
+      "verseId": 4622,
+      "word": 10,
+      "wordId": 66612
+    },
+    {
+      "juz": 26,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 521,
+      "sourceLine": 15,
+      "sura": 51,
+      "verse": 30,
+      "verseKey": "51:30",
+      "verseId": 4705,
+      "word": 8,
+      "wordId": 67315
+    },
+    {
+      "juz": 27,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 527,
+      "sourceLine": 7,
+      "sura": 53,
+      "verse": 30,
+      "verseKey": "53:30",
+      "verseId": 4814,
+      "word": 16,
+      "wordId": 68027
+    },
+    {
+      "juz": 27,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 532,
+      "sourceLine": 7,
+      "sura": 55,
+      "verse": 25,
+      "verseKey": "55:25",
+      "verseId": 4926,
+      "word": 4,
+      "wordId": 68634
+    },
+    {
+      "juz": 27,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 541,
+      "sourceLine": 15,
+      "sura": 57,
+      "verse": 29,
+      "verseKey": "57:29",
+      "verseId": 5104,
+      "word": 22,
+      "wordId": 69843
+    },
+    {
+      "juz": 28,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 547,
+      "sourceLine": 3,
+      "sura": 59,
+      "verse": 10,
+      "verseKey": "59:10",
+      "verseId": 5136,
+      "word": 23,
+      "wordId": 70539
+    },
+    {
+      "juz": 28,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 551,
+      "sourceLine": 9,
+      "sura": 60,
+      "verse": 13,
+      "verseKey": "60:13",
+      "verseId": 5163,
+      "word": 19,
+      "wordId": 71108
+    },
+    {
+      "juz": 28,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 557,
+      "sourceLine": 5,
+      "sura": 64,
+      "verse": 10,
+      "verseKey": "64:10",
+      "verseId": 5209,
+      "word": 11,
+      "wordId": 71830
+    },
+    {
+      "juz": 28,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 561,
+      "sourceLine": 15,
+      "sura": 66,
+      "verse": 12,
+      "verseKey": "66:12",
+      "verseId": 5241,
+      "word": 17,
+      "wordId": 72461
+    },
+    {
+      "juz": 29,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 567,
+      "sourceLine": 4,
+      "sura": 68,
+      "verse": 52,
+      "verseKey": "68:52",
+      "verseId": 5323,
+      "word": 5,
+      "wordId": 73094
+    },
+    {
+      "juz": 29,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 573,
+      "sourceLine": 12,
+      "sura": 71,
+      "verse": 28,
+      "verseKey": "71:28",
+      "verseId": 5447,
+      "word": 15,
+      "wordId": 73795
+    },
+    {
+      "juz": 29,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 580,
+      "sourceLine": 5,
+      "sura": 74,
+      "verse": 56,
+      "verseKey": "74:56",
+      "verseId": 5551,
+      "word": 11,
+      "wordId": 74534
+    },
+    {
+      "juz": 29,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 585,
+      "sourceLine": 15,
+      "sura": 77,
+      "verse": 50,
+      "verseKey": "77:50",
+      "verseId": 5672,
+      "word": 4,
+      "wordId": 75122
+    },
+    {
+      "juz": 30,
+      "kind": "quarter",
+      "symbol": "¼",
+      "placement": "after_verse",
+      "codePoint": "U+F64C",
+      "sourcePage": 593,
+      "sourceLine": 7,
+      "sura": 83,
+      "verse": 19,
+      "verseKey": "83:19",
+      "verseId": 5867,
+      "word": 4,
+      "wordId": 75884
+    },
+    {
+      "juz": 30,
+      "kind": "half",
+      "symbol": "½",
+      "placement": "after_verse",
+      "codePoint": "U+F64D",
+      "sourcePage": 598,
+      "sourceLine": 9,
+      "sura": 88,
+      "verse": 26,
+      "verseKey": "88:26",
+      "verseId": 5993,
+      "word": 4,
+      "wordId": 76401
+    },
+    {
+      "juz": 30,
+      "kind": "three_quarters",
+      "symbol": "¾",
+      "placement": "after_verse",
+      "codePoint": "U+F64E",
+      "sourcePage": 604,
+      "sourceLine": 6,
+      "sura": 97,
+      "verse": 5,
+      "verseKey": "97:5",
+      "verseId": 6130,
+      "word": 5,
+      "wordId": 76948
+    },
+    {
+      "juz": 30,
+      "kind": "juz_end",
+      "symbol": "Juz",
+      "placement": "after_verse",
+      "codePoint": "U+F650",
+      "sourcePage": 610,
+      "sourceLine": 10,
+      "sura": 114,
+      "verse": 6,
+      "verseKey": "114:6",
+      "verseId": 6236,
+      "word": 3,
+      "wordId": 77430
+    }
+  ],
+  "issues": [
+    {
+      "juz": 27,
+      "kind": "three_quarters",
+      "message": "No explicit sign found in the local Indian source; not inferred or inserted."
+    }
+  ],
+  "sources": {
+    "section_markers.json": "65dc916101ef53d5f4b5d1bc3a8b44a95175b6152298c430d3ada1e43aeb6580",
+    "sura.json": "b7f36823208154643489dcc96f245832dd09a6c1a9c92963bf456128beca80c4",
+    "combined_quran.json": "8cc5c70e048abf5fd719d15f13e659c3d32a4a286dc1f22af388829f3c27d4b0"
+  }
+}
